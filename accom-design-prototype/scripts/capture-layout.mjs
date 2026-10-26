@@ -25,6 +25,8 @@ try {
     const nav = await page.locator('.section-nav').boundingBox();
     const toolbar = await page.locator('.gallery-actions').boundingBox();
     const intro = await page.locator('.property-intro').boundingBox();
+    const identity = await page.locator('.property-identity').boundingBox();
+    const stats = await page.locator('.property-headline-stats').boundingBox();
     assert.ok(intro && intro.y < g.y, `${label}: property title must precede gallery`);
     const landmarkElements = page.locator('.landmark-card');
     assert.equal(await landmarkElements.count(), 7, `${label}: seven nearby landmarks expected`);
@@ -88,6 +90,7 @@ try {
       assert.equal(rail, null, `${label}: desktop CTA should be hidden`);
       assert.ok(mobileRail, `${label}: bottom CTA missing`);
       assert.ok(dimensions.title < height, `${label}: property name should appear in first viewport`);
+      assert.ok(identity && stats && stats.y - (identity.y+identity.height) < 42, `${label}: gap beneath heading is too large: ${stats.y-(identity.y+identity.height)}`);
       results.push({label, propertyTitleTop:dimensions.title, mobileCtaTop:mobileRail.y});
     }
     assert.ok(dimensions.bodyScroll <= dimensions.viewport + 1, `${label}: horizontal overflow ${dimensions.bodyScroll} > ${dimensions.viewport}`);
