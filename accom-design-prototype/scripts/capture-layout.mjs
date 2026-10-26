@@ -20,6 +20,7 @@ try {
     page.on('pageerror', err => errors.push(err.message));
     await page.goto(target, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
+    assert.deepEqual(errors, [], `${label}: JavaScript failed during page initialization`);
     const g = await page.locator('.gallery-shell').boundingBox();
     const nav = await page.locator('.section-nav').boundingBox();
     const toolbar = await page.locator('.gallery-actions').boundingBox();
