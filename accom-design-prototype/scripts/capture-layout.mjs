@@ -26,30 +26,25 @@ try {
     const galleryGridSize = await page.locator('.gallery-grid').boundingBox();
     assert.ok(galleryGridSize, `${label}: gallery missing`);
     if (width <= 768) {
-      assert.ok(galleryGridSize.height <= 316, `${label}: overly tall mobile gallery blocks student decisions`);
+      assert.ok(galleryGridSize.height <= 301, `${label}: overly tall mobile gallery blocks student decisions`);
     } else if (width > 1024) {
-      assert.ok(galleryGridSize.height <= 406, `${label}: oversized desktop gallery crowds sections`);
+      assert.ok(galleryGridSize.height <= 391, `${label}: oversized desktop gallery crowds sections`);
     }
 
     const toolbar = await page.locator('.gallery-actions').boundingBox();
     const intro = await page.locator('.property-intro').boundingBox();
     const identity = await page.locator('.property-identity').boundingBox();
-    const stats = await page.locator('.property-headline-stats').boundingBox();
     assert.ok(intro && intro.y < g.y, `${label}: property title must precede gallery`);
-    const metrics = page.locator('.property-headline-stats .headline-stat');
-    assert.equal(await metrics.count(),2,`${label}: must have rating and rent metrics`);
-    const metricBounds = await Promise.all((await metrics.all()).map(el => el.boundingBox()));
-    assert.ok(metricBounds.every(b => b && b.width >= 125 && b.height >= 95),`${label}: cramped rating or rent card`);
-    assert.ok(Math.abs(metricBounds[0].height-metricBounds[1].height) < 3,`${label}: metric cards have mismatched heights`);
-    const fontFamilies = await page.evaluate(() => ({
-       title: getComputedStyle(document.querySelector('#property-title')).fontFamily,
-       amount: getComputedStyle(document.querySelector('.headline-stat-value strong')).fontFamily,
-       body: getComputedStyle(document.body).fontFamily,
-       label: getComputedStyle(document.querySelector('.headline-label')).fontFamily
-    }));
-    assert.ok(fontFamilies.title.includes('Bricolage Grotesque') && fontFamilies.amount.includes('Bricolage Grotesque'),`${label}: heading font incorrect`);
-    assert.ok(fontFamilies.body.includes('Montserrat') && fontFamilies.label.includes('Montserrat'),`${label}: body font incorrect`);
 
+    assert.equal(await page.locator('.property-headline-stats').count(),0,`${label}: duplicate top rating/rent should be removed`);
+    const nameStyle = await page.locator('#property-title').evaluate(el => ({
+      transform: getComputedStyle(el).textTransform,
+      font: getComputedStyle(el).fontFamily
+    }));
+    assert.equal(nameStyle.transform,'uppercase',`${label}: property title must be visually uppercase`);
+    assert.ok(nameStyle.font.includes('Bricolage Grotesque'),`${label}: Bricolage heading missing`);
+    assert.equal(await page.locator('.cta-rating').count(),1,`${label}: sidebar rating removed`);
+    assert.equal(await page.locator('.cta-price-hero').count(),1,`${label}: sidebar price removed`);
     const landmarkElements = page.locator('.landmark-card');
     assert.equal(await landmarkElements.count(), 7, `${label}: seven nearby landmarks expected`);
     const bounds = await Promise.all((await landmarkElements.all()).map(element => element.boundingBox()));
@@ -70,7 +65,8 @@ try {
       assert.ok(rail.x >= g.x + g.width - 2, `${label}: CTA must be beside, not overlapping/below gallery`);
       assert.ok(nav && g && nav.y >= g.y + g.height - 1, `${label}: section menu must follow gallery`);
       assert.ok(toolbar && toolbar.y < g.y, `${label}: Save and Compare must be beside property heading`);
-      assert.ok(Math.abs(g.y - rail.y) <= 14, `${label}: sticky info card should start alongside the gallery: ${g.y}, ${rail.y}`);
+      assert.ok(rail.y >= intro.y - 15 && rail.y <= g.y - 28, `${label}: sidebar should begin alongside property heading, above gallery: ${rail.y}, ${intro.y}, ${g.y}`);
+      assert.ok(nav.y < height - 55, `${label}: overview tabs should be visible above the fold`);
       const begin = rail.y;
       await page.screenshot({ path: new URL(`./reference-${label}-hero.png`, output).pathname });
       await page.evaluate(() => window.scrollTo({top:900, behavior:'instant'}));
@@ -144,7 +140,7 @@ try {
       assert.ok(dimensions.title < height, `${label}: property name should appear in first viewport`);
       assert.ok(nav && nav.y < mobileRail.y, `${label}: section navigation should begin above the bottom CTA`);
 
-      assert.ok(identity && stats && stats.y - (identity.y+identity.height) < 42, `${label}: gap beneath heading is too large: ${stats.y-(identity.y+identity.height)}`);
+      assert.ok(identity && g.y - (identity.y+identity.height) < 105, `${label}: gallery should closely follow property title`);
       results.push({label, propertyTitleTop:dimensions.title, mobileCtaTop:mobileRail.y});
     }
     assert.ok(dimensions.bodyScroll <= dimensions.viewport + 1, `${label}: horizontal overflow ${dimensions.bodyScroll} > ${dimensions.viewport}`);

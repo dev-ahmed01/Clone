@@ -110,7 +110,7 @@ test('source-like facts and demo disclaimers remain visible', async () => {
   const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('15 min walk'));
-  assert.ok(html.includes('Sample price · check current rates'));
+  assert.ok(html.includes('From · demo'));
   assert.ok(html.includes('Illustrative room images') || html.includes('Illustrative rates and media'));
   assert.ok(html.includes('No room selected') || html.includes('Choose a room to see its tenancy total.'));
 });
@@ -173,9 +173,9 @@ test('Bricolage headings and Montserrat metric captions have clear demo/source l
  assert.match(html,/Bricolage\+Grotesque/);
  assert.match(html,/Montserrat/);
  assert.equal((html.match(/class="headline-stat headline-/g)||[]).length,2);
- assert.ok(html.includes('11 reviews² · Amber snapshot'));
+ assert.ok(html.includes('11 reviews²'));
  assert.ok(html.includes('Starting rent'));
- assert.ok(html.includes('Sample price · check current rates'));
+ assert.ok(html.includes('From · demo'));
  assert.ok(html.includes('headline-demo-pill'));
  assert.ok(css.includes('font: 800 35px/.98 var(--font-heading)'));
  assert.ok(css.includes('font: 700 10.5px/1.3 var(--font-body)'));
@@ -211,6 +211,24 @@ test('design-board pass keeps the first screen decision-focused and readable',as
  assert.ok(html.includes('href="#rooms"'));
  assert.ok(html.includes('class="section-nav glass-panel"'));
  assert.ok(html.includes('class="cta-google-map"'));
- assert.ok(html.includes('11 reviews² · Amber snapshot'));
+ assert.ok(html.includes('11 reviews²'));
  assert.ok(html.includes('Sample price · check current rates'));
+});
+
+test('compact first fold places Save and Compare by uppercase property name, removes duplicate metric cards',async()=>{
+ const [html,css,js]=await Promise.all([
+  readFile(new URL('../public/index.html',import.meta.url),'utf8'),
+  readFile(new URL('../public/site.css',import.meta.url),'utf8'),
+  readFile(new URL('../public/app.js',import.meta.url),'utf8')
+ ]);
+ const hero=html.indexOf('class="hero-topline"'), name=html.indexOf('id="property-title"',hero), actions=html.indexOf('class="gallery-actions"',hero);
+ const gallery=html.indexOf('id="top" class="gallery-shell"',actions);
+ assert.ok(hero<name && name<actions && actions<gallery);
+ assert.ok(!html.includes('class="property-headline-stats"'));
+ assert.ok(!html.includes('id="intro-start-price"'));
+ assert.ok(!js.includes("$('#intro-start-price')"));
+ assert.ok(html.includes('id="cta-from-price"')); // sidebar remains the place for pricing
+ assert.ok(css.includes('text-transform: uppercase'));
+ assert.ok(css.includes('grid-row: 1 / 3'));
+ assert.ok(css.includes('margin-top: 8px'));
 });
