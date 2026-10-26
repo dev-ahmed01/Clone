@@ -75,7 +75,7 @@ test('first visit is unselected and location tiles have seven consistent entries
   const selectedCSS = await readFile(new URL('../public/concept-one.css', import.meta.url), 'utf8');
   assert.ok(selectedCSS.includes('flex: 0 0 calc((100% - 27px)/4)'));
   assert.ok(selectedCSS.includes('max-height: none'));
-  assert.ok(selectedCSS.includes('overflow: visible'));
+  assert.ok(selectedCSS.includes('overflow: clip')); // Clipping a glow without creating a scrollable box
   assert.ok(html.includes('class="verified-mark"'));
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('id="cta-selected-details" hidden'));
