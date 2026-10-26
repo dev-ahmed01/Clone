@@ -198,3 +198,19 @@ test('sticky property card embeds actual Google Maps address and keeps a direct 
   assert.ok(css.includes('.cta-panel-bottom .cta-google-map-card'));
   assert.ok(css.includes('grid-template-rows: 151px auto'));
 });
+
+test('design-board pass keeps the first screen decision-focused and readable',async()=>{
+ const [css,html]=await Promise.all([
+   readFile(new URL('../public/site.css',import.meta.url),'utf8'),
+   readFile(new URL('../public/index.html',import.meta.url),'utf8')
+ ]);
+ assert.ok(css.includes('Design Board pass'));
+ assert.ok(css.includes('height: clamp(265px, 36vh, 315px)'));
+ assert.ok(css.includes('.cta-panel-top .cta-address { font-size: 11px; }'));
+ assert.ok(css.includes('.section-nav a { min-height: 44px; }'));
+ assert.ok(html.includes('href="#rooms"'));
+ assert.ok(html.includes('class="section-nav glass-panel"'));
+ assert.ok(html.includes('class="cta-google-map"'));
+ assert.ok(html.includes('11 reviews² · Amber snapshot'));
+ assert.ok(html.includes('Sample price · check current rates'));
+});

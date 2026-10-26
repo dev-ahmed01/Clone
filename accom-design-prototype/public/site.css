@@ -1852,3 +1852,32 @@ body,button,input,textarea,select { font-family: var(--font-body); }
   .cta-panel-bottom .cta-google-map-card { grid-template-rows: 145px auto; margin-top: 6px; }
   .cta-google-map-card .cta-google-map { min-height: 145px; }
 }
+
+
+/* Design Board pass — 26 October 2026
+ * Student-first first-fold and legibility corrections. Keep the approved
+ * Bricolage/Montserrat, glass nav, 75:25 split, and red/yellow palette.
+ * Narrow overrides avoid disrupting functional selected-room states. */
+.section-nav a { min-height: 44px; }
+.overview-priority-intro > p:not(.section-kicker) { font-size: 13px; line-height: 1.65; }
+.overview-section .overview-highlight small { font-size: 10.5px; }
+@media (min-width: 1025px) {
+  .gallery-grid { height: clamp(342px, 28.1vw, 405px); }
+  .cta-panel-top .cta-kicker { font-size: 10px; }
+  .cta-panel-top .cta-address { font-size: 11px; }
+  .cta-panel-top .cta-rating small,
+  .cta-panel-top .cta-price-hero small { font-size: 10px; }
+  .cta-panel-bottom .cta-quickfacts h3 { font-size: 15px; }
+  .cta-panel-bottom .cta-benefit-copy strong { font-size: 11.5px; }
+  .cta-panel-bottom .cta-benefit-copy > span { font-size: 10px; }
+  .cta-google-map-place strong { font-size: 11px; }
+  .cta-google-map-place small { font-size: 9.5px; }
+  .cta-google-map-caption > a { font-size: 10px; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-grid { height: clamp(305px, 35vw, 375px); }
+}
+@media (max-width: 768px) {
+  .gallery-grid { height: clamp(265px, 36vh, 315px); }
+  .gallery-meta button { min-height: 44px; }
+}
