@@ -70,7 +70,7 @@ test('first visit is unselected and location tiles have seven consistent entries
   ]);
   assert.ok(!html.includes('class="breadcrumbs"'));
   assert.ok(html.includes('id="landmarks-title"'));
-  assert.ok(html.includes('Nearby Landmarks'));
+  assert.ok(html.includes('Nearby landmarks'));
   assert.equal((html.match(/class="landmark-card /g) || []).length, 7);
   const selectedCSS = await readFile(new URL('../public/concept-one.css', import.meta.url), 'utf8');
   assert.ok(selectedCSS.includes('flex: 0 0 calc((100% - 27px)/4)'));
