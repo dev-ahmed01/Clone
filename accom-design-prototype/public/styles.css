@@ -860,3 +860,9 @@ body { background: radial-gradient(ellipse at 42% 20%, #fffcf8, var(--paper) 58%
   .landmarks-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
   .landmark-card { width: 100%; flex: none; }
 }
+
+/* Maintain separation between the floating section links and sticky enquiry panel. */
+@media (min-width: 1025px) {
+  .page-layout:has(.section-nav.is-floating) .desktop-cta { top: 74px; }
+  .page-layout:has(.section-nav.is-floating) .cta-card { max-height: calc(100vh - 90px); }
+}
