@@ -172,13 +172,14 @@ test('Bricolage headings and Montserrat metric captions have clear demo/source l
  ]);
  assert.match(html,/Bricolage\+Grotesque/);
  assert.match(html,/Montserrat/);
- assert.equal((html.match(/class="headline-stat headline-/g)||[]).length,2);
+ assert.equal((html.match(/class="headline-stat headline-/g)||[]).length,0);
+ assert.ok(html.includes('class="cta-rating"'));
+ assert.ok(html.includes('class="cta-price-hero"'));
+ assert.ok(html.includes('id="cta-from-price"'));
  assert.ok(html.includes('11 reviews²'));
- assert.ok(html.includes('Starting rent'));
  assert.ok(html.includes('From · demo'));
- assert.ok(html.includes('headline-demo-pill'));
+ assert.ok(css.includes('text-transform: uppercase'));
  assert.ok(css.includes('font: 800 35px/.98 var(--font-heading)'));
- assert.ok(css.includes('font: 700 10.5px/1.3 var(--font-body)'));
 });
 
 test('sticky property card embeds actual Google Maps address and keeps a direct full-map link', async () => {
@@ -212,7 +213,7 @@ test('design-board pass keeps the first screen decision-focused and readable',as
  assert.ok(html.includes('class="section-nav glass-panel"'));
  assert.ok(html.includes('class="cta-google-map"'));
  assert.ok(html.includes('11 reviews²'));
- assert.ok(html.includes('Sample price · check current rates'));
+ assert.ok(html.includes('From · demo'));
 });
 
 test('compact first fold places Save and Compare by uppercase property name, removes duplicate metric cards',async()=>{
