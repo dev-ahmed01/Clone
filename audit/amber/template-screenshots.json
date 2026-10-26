@@ -1,0 +1,142 @@
+[
+  {
+    "name": "how-it-works",
+    "path": "/how-it-works",
+    "marker": "Understand how\namber\nactually works.",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\how-it-works-1280x800.jpg",
+    "scroll": {
+      "height": 3744,
+      "width": 1265
+    }
+  },
+  {
+    "name": "how-it-works",
+    "path": "/how-it-works",
+    "marker": "Understand how\namber\nactually works.",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\how-it-works-390x844.jpg",
+    "scroll": {
+      "height": 3475,
+      "width": 375
+    }
+  },
+  {
+    "name": "list-with-us",
+    "path": "/list",
+    "marker": "Fill your \n rooms,\nnot your inbox.",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\list-with-us-1280x800.jpg",
+    "scroll": {
+      "height": 8748,
+      "width": 1265
+    }
+  },
+  {
+    "name": "list-with-us",
+    "path": "/list",
+    "marker": "Fill your \n rooms,\nnot your inbox.",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\list-with-us-390x844.jpg",
+    "scroll": {
+      "height": 8947,
+      "width": 375
+    }
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "marker": "Chinese Students Top the UK Intake as Other Markets Shrink",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\news-1280x800.jpg",
+    "scroll": {
+      "height": 4443,
+      "width": 1265
+    }
+  },
+  {
+    "name": "news",
+    "path": "/news",
+    "marker": "Chinese Students Top the UK Intake as Other Markets Shrink",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\news-390x844.jpg",
+    "scroll": {
+      "height": 6829,
+      "width": 375
+    }
+  },
+  {
+    "name": "plus",
+    "path": "/plus",
+    "marker": "Australia's Big. Your Budget's Not.",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\plus-1280x800.jpg",
+    "scroll": {
+      "height": 3785,
+      "width": 50316
+    }
+  },
+  {
+    "name": "plus",
+    "path": "/plus",
+    "marker": "Australia's Big. Your Budget's Not.",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\plus-390x844.jpg",
+    "scroll": {
+      "height": 5752,
+      "width": 50389
+    }
+  },
+  {
+    "name": "ambassador",
+    "path": "/ambassador",
+    "marker": "Become an\namber ambassador",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\ambassador-1280x800.jpg",
+    "scroll": {
+      "height": 3790,
+      "width": 1265
+    }
+  },
+  {
+    "name": "ambassador",
+    "path": "/ambassador",
+    "marker": "Become an\namber ambassador",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\ambassador-390x844.jpg",
+    "scroll": {
+      "height": 4317,
+      "width": 375
+    }
+  }
+]

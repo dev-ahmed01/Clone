@@ -1,0 +1,2131 @@
+[
+  {
+    "step": "home.search.fill",
+    "input": "London",
+    "submitted": false
+  },
+  {
+    "step": "home.search.suggestions",
+    "method": "pressSequentially",
+    "query": "London",
+    "visibleMatches": [
+      {
+        "className": "",
+        "rect": {
+          "h": 4861,
+          "w": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "tag": "div",
+        "text": "Download App Support En Login Home away from home Book student accommodations near top universities and cities across the globe Verified Properties 24x7 Assistance Lowest Price Guarantee Search by City University Property City University or Property 2M+ Beds Book your perfect place from an extensive"
+      },
+      {
+        "className": "",
+        "rect": {
+          "h": 4861,
+          "w": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "tag": "div",
+        "text": "Download App Support En Login Home away from home Book student accommodations near top universities and cities across the globe Verified Properties 24x7 Assistance Lowest Price Guarantee Search by City University Property City University or Property 2M+ Beds Book your perfect place from an extensive"
+      },
+      {
+        "className": "",
+        "rect": {
+          "h": 4861,
+          "w": 1425,
+          "x": 0,
+          "y": 0
+        },
+        "tag": "div",
+        "text": "Download App Support En Login Home away from home Book student accommodations near top universities and cities across the globe Verified Properties 24x7 Assistance Lowest Price Guarantee Search by City University Property City University or Property 2M+ Beds Book your perfect place from an extensive"
+      },
+      {
+        "className": "[object Object] subsection-module__subsectionContainer [object Object] subsection-module__desktop",
+        "rect": {
+          "h": 679,
+          "w": 1425,
+          "x": 0,
+          "y": 679
+        },
+        "tag": "div",
+        "text": "Popular Cities Across The Globe Book student accommodations near top cities and universities around the world. United Kingdom Australia Germany United States Canada Spain Ireland France New Zealand Singapore United Arab Emirates Italy China London Coventry Sheffield Liverpool Nottingham Leeds Birmin"
+      },
+      {
+        "className": "subsection-module__largeScreenResponsive",
+        "rect": {
+          "h": 583,
+          "w": 1265,
+          "x": 80,
+          "y": 727
+        },
+        "tag": "div",
+        "text": "Popular Cities Across The Globe Book student accommodations near top cities and universities around the world. United Kingdom Australia Germany United States Canada Spain Ireland France New Zealand Singapore United Arab Emirates Italy China London Coventry Sheffield Liverpool Nottingham Leeds Birmin"
+      },
+      {
+        "className": "",
+        "rect": {
+          "h": 489,
+          "w": 1265,
+          "x": 80,
+          "y": 821
+        },
+        "tag": "div",
+        "text": "United Kingdom Australia Germany United States Canada Spain Ireland France New Zealand Singapore United Arab Emirates Italy China London Coventry Sheffield Liverpool Nottingham Leeds Birmingham Leicester Glasgow Newcastle Upon Tyne Cardiff Aberdeen Edinburgh Southampton Huddersfield Bristol Manchest"
+      },
+      {
+        "className": "popularCitites-module__hrscContainer popularCitites-module__desktop",
+        "rect": {
+          "h": 424,
+          "w": 1265,
+          "x": 80,
+          "y": 886
+        },
+        "tag": "div",
+        "text": "London Coventry Sheffield Liverpool Nottingham Leeds Birmingham Leicester Glasgow Newcastle Upon Tyne Cardiff Aberdeen Edinburgh Southampton Huddersfield Bristol Manchester Sunderland Plymouth Luton"
+      },
+      {
+        "className": "popularCitites-module__citiesGrid popularCitites-module__citiesGridDesktop",
+        "rect": {
+          "h": 424,
+          "w": 1265,
+          "x": 80,
+          "y": 886
+        },
+        "tag": "div",
+        "text": "London Coventry Sheffield Liverpool Nottingham Leeds Birmingham Leicester Glasgow Newcastle Upon Tyne Cardiff Aberdeen Edinburgh Southampton Huddersfield Bristol Manchester Sunderland Plymouth Luton"
+      },
+      {
+        "className": "popularCitites-module__cityTile popularCitites-module__cityTileDesktop",
+        "rect": {
+          "h": 200,
+          "w": 200,
+          "x": 80,
+          "y": 886
+        },
+        "tag": "a",
+        "text": "London"
+      }
+    ]
+  },
+  {
+    "step": "listing.sort.open"
+  },
+  {
+    "step": "listing.sort.select",
+    "option": "Price (Low to High)",
+    "outcome": {
+      "url": "https://amberstudent.com/places/search/london-1811028205760",
+      "firstHeading": "Sort By\nReset",
+      "topText": "Sort By\nReset\nRecommended\nNearest\nPrice (Low to High)\nPrice (High to Low)\nNewly Added\nDownload App\nSupport\nEn\nLogin\nSmart Filters\nFilters\nSort\nUniversity\nBudget\nMove in Month\nStay Duration\nRoom Type\nAmenities\nBills Included\nClear All\nList\nGrid\nExplore On Map\nInstant Booking\nLowest Price Guaranteed\nVerified Properties\n24x7 Personal Assistance\n11.3K+ Reviews\nFrequently Asked Questions (FAQs)\nAre pet-friendly London accommodations costlier than non-pet-friendly ones?\nWhat is the process to be followed to book student accommodation in London early with amber?\nHow long does a tenancy agreement for student housing in London last for international students?\nWhat are some of the popular neighbourhoods in London to live in for a good student life?\nAre the student flats in London near the city centre fully furnished?\nView All Questions (6)\nNearby Places\nCities\nLocalities\nUniversities\nProperties\nStudent Accommodation in Croydon\nStudent Accommodation in Kingston upon Thames\nStudent Accommodation in Egham\nStudent Accommodation in Hertfordshire\nStudent Accommodation in Surrey\nStudent Accommodation in Guildford\nStudent Accommodation in Stevenage\nStudent Accommodation in High Wycombe\nShow More (12)\namber © 2026. All rights reserved.\nGet the app\nPayment Options\nCompany\nAbout\nHow it works\nRefer a Friend\nGroup Bookings\nNew\nList with us\nNew\nPartner with us\nNew\nUniversities\nNew\nCareers\nWe are hiring!\nDiscover\nPodcast\nNewsroom\nAmber Plus\nMedia Mention\nAmbassador\nScholarships\nApply Now\nExams\nNew\nSupport\nHelp Center\nContact\nT&C\nPrivacy Policy\nSitemap\nContact us\ncontact@amberstudent.com\nWhatsApp\n+91 8035735724\nFollow us on:"
+    }
+  },
+  {
+    "step": "listing.filters.open"
+  },
+  {
+    "step": "listing.filters.tab",
+    "tab": "Budget"
+  },
+  {
+    "step": "listing.filters.budget.select",
+    "range": "£160 - £180",
+    "preview": "Show 228 results",
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\listing-filter-budget-1440x900.jpg"
+  },
+  {
+    "step": "listing.filters.apply",
+    "filter": "budget £160-£180",
+    "outcome": {
+      "url": "https://amberstudent.com/places/search/london-1811028205760?sort_key=available_price&sort_order=asc",
+      "heading": "Student Accommodations in London",
+      "clearVisible": true
+    }
+  },
+  {
+    "step": "listing.map.open"
+  },
+  {
+    "step": "listing.map.inspect",
+    "probe": {
+      "canvases": [
+        {
+          "className": "mapboxgl-canvas",
+          "rect": {
+            "h": 768,
+            "w": 1039,
+            "x": 401,
+            "y": 121
+          }
+        }
+      ],
+      "mapLike": [
+        {
+          "aria": null,
+          "className": "SearchDesktopV2-module__searchListMapContainer",
+          "rect": {
+            "h": 768,
+            "w": 1440,
+            "x": 0,
+            "y": 121
+          },
+          "tag": "div",
+          "text": "Student Accommodations in London  |   Showing 228 places\n4.0\n(1)\nRoom in a 5 Bedroom Apartment, MacGregor Rd, London E16 3LL\nMacGregor Rd, London, E16 3LL\n7.8 mi from City Center\n(\n30min\n.\n43min\n.\n2h "
+        },
+        {
+          "aria": null,
+          "className": "SearchListContainer-module__mapViewListScroll",
+          "rect": {
+            "h": 736,
+            "w": 399,
+            "x": 0,
+            "y": 137
+          },
+          "tag": "div",
+          "text": "Student Accommodations in London  |   Showing 228 places\n4.0\n(1)\nRoom in a 5 Bedroom Apartment, MacGregor Rd, London E16 3LL\nMacGregor Rd, London, E16 3LL\n7.8 mi from City Center\n(\n30min\n.\n43min\n.\n2h "
+        },
+        {
+          "aria": null,
+          "className": "searchList-module__container searchList-module__gridView searchList-module__mapView",
+          "rect": {
+            "h": 4661,
+            "w": 336,
+            "x": 24,
+            "y": 213
+          },
+          "tag": "div",
+          "text": "4.0\n(1)\nRoom in a 5 Bedroom Apartment, MacGregor Rd, London E16 3LL\nMacGregor Rd, London, E16 3LL\n7.8 mi from City Center\n(\n30min\n.\n43min\n.\n2h 57min\n)\n1.25 mi from Newham College (East Ham Campus)\n6 O"
+        },
+        {
+          "aria": null,
+          "className": "searchListItemV2-module__distanceOnMap",
+          "rect": {
+            "h": 14,
+            "w": 123,
+            "x": 41,
+            "y": 472
+          },
+          "tag": "div",
+          "text": "7.8 mi from City Center"
+        },
+        {
+          "aria": null,
+          "className": "SearchDesktopV2-module__mapSection",
+          "rect": {
+            "h": 768,
+            "w": 1040,
+            "x": 400,
+            "y": 121
+          },
+          "tag": "div",
+          "text": "© Mapbox © OpenStreetMap Improve this map\nClose Map\n3D"
+        },
+        {
+          "aria": null,
+          "className": "MapSection-module__search_map_component_container",
+          "rect": {
+            "h": 768,
+            "w": 1040,
+            "x": 400,
+            "y": 121
+          },
+          "tag": "div",
+          "text": "© Mapbox © OpenStreetMap Improve this map\nClose Map\n3D"
+        },
+        {
+          "aria": null,
+          "className": "MapSection-module__map-loader-container",
+          "rect": {
+            "h": 768,
+            "w": 1039,
+            "x": 401,
+            "y": 121
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "MapSection-module__map mapboxgl-map",
+          "rect": {
+            "h": 768,
+            "w": 1039,
+            "x": 401,
+            "y": 121
+          },
+          "tag": "div",
+          "text": "© Mapbox © OpenStreetMap Improve this map"
+        },
+        {
+          "aria": "Map",
+          "className": "mapboxgl-canvas",
+          "rect": {
+            "h": 768,
+            "w": 1039,
+            "x": 401,
+            "y": 121
+          },
+          "tag": "canvas",
+          "text": ""
+        },
+        {
+          "aria": "Map marker",
+          "className": "mapboxgl-marker mapboxgl-marker-anchor-center",
+          "rect": {
+            "h": 40,
+            "w": 27,
+            "x": 980,
+            "y": 407
+          },
+          "tag": "img",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl-bottom-right",
+          "rect": {
+            "h": 20,
+            "w": 270,
+            "x": 1170,
+            "y": 869
+          },
+          "tag": "div",
+          "text": "© Mapbox © OpenStreetMap Improve this map"
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl mapboxgl-ctrl-attrib",
+          "rect": {
+            "h": 20,
+            "w": 270,
+            "x": 1170,
+            "y": 869
+          },
+          "tag": "div",
+          "text": "© Mapbox © OpenStreetMap Improve this map"
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl-attrib-inner",
+          "rect": {
+            "h": 20,
+            "w": 260,
+            "x": 1175,
+            "y": 869
+          },
+          "tag": "div",
+          "text": "© Mapbox © OpenStreetMap Improve this map"
+        },
+        {
+          "aria": "Mapbox",
+          "className": "",
+          "rect": {
+            "h": 13,
+            "w": 55,
+            "x": 1175,
+            "y": 872
+          },
+          "tag": "a",
+          "text": "© Mapbox"
+        },
+        {
+          "aria": "OpenStreetMap",
+          "className": "",
+          "rect": {
+            "h": 13,
+            "w": 97,
+            "x": 1233,
+            "y": 872
+          },
+          "tag": "a",
+          "text": "© OpenStreetMap"
+        },
+        {
+          "aria": "Improve this map",
+          "className": "mapbox-improve-map",
+          "rect": {
+            "h": 13,
+            "w": 99,
+            "x": 1336,
+            "y": 872
+          },
+          "tag": "a",
+          "text": "Improve this map"
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl-bottom-left",
+          "rect": {
+            "h": 29,
+            "w": 94,
+            "x": 401,
+            "y": 860
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl",
+          "rect": {
+            "h": 19,
+            "w": 84,
+            "x": 411,
+            "y": 860
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "aria": "Mapbox homepage",
+          "className": "mapboxgl-ctrl-logo",
+          "rect": {
+            "h": 23,
+            "w": 88,
+            "x": 407,
+            "y": 860
+          },
+          "tag": "a",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "MapSection-module__mapControlsColumn",
+          "rect": {
+            "h": 174,
+            "w": 29,
+            "x": 1401,
+            "y": 131
+          },
+          "tag": "div",
+          "text": "Close Map\n3D"
+        },
+        {
+          "aria": null,
+          "className": "MapSection-module__mapNavGroup",
+          "rect": {
+            "h": 174,
+            "w": 29,
+            "x": 1401,
+            "y": 131
+          },
+          "tag": "div",
+          "text": "Close Map\n3D"
+        },
+        {
+          "aria": "Close map",
+          "className": "MapSection-module__closeMapButton",
+          "rect": {
+            "h": 32,
+            "w": 117,
+            "x": 1313,
+            "y": 131
+          },
+          "tag": "button",
+          "text": "Close Map"
+        },
+        {
+          "aria": null,
+          "className": "MapSection-module__navControlsSlot",
+          "rect": {
+            "h": 97,
+            "w": 29,
+            "x": 1409,
+            "y": 171
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl mapboxgl-ctrl-group",
+          "rect": {
+            "h": 87,
+            "w": 29,
+            "x": 1399,
+            "y": 181
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "aria": "Zoom in",
+          "className": "mapboxgl-ctrl-zoom-in",
+          "rect": {
+            "h": 29,
+            "w": 29,
+            "x": 1399,
+            "y": 181
+          },
+          "tag": "button",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl-icon",
+          "rect": {
+            "h": 29,
+            "w": 29,
+            "x": 1399,
+            "y": 181
+          },
+          "tag": "span",
+          "text": ""
+        },
+        {
+          "aria": "Zoom out",
+          "className": "mapboxgl-ctrl-zoom-out",
+          "rect": {
+            "h": 29,
+            "w": 29,
+            "x": 1399,
+            "y": 210
+          },
+          "tag": "button",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl-icon",
+          "rect": {
+            "h": 28,
+            "w": 29,
+            "x": 1399,
+            "y": 210
+          },
+          "tag": "span",
+          "text": ""
+        },
+        {
+          "aria": "Reset bearing to north",
+          "className": "mapboxgl-ctrl-compass",
+          "rect": {
+            "h": 29,
+            "w": 29,
+            "x": 1399,
+            "y": 239
+          },
+          "tag": "button",
+          "text": ""
+        },
+        {
+          "aria": null,
+          "className": "mapboxgl-ctrl-icon",
+          "rect": {
+            "h": 28,
+            "w": 29,
+            "x": 1399,
+            "y": 239
+          },
+          "tag": "span",
+          "text": ""
+        },
+        {
+          "aria": "Switch to 3D map view",
+          "className": "MapSection-module__mapViewToggle",
+          "rect": {
+            "h": 29,
+            "w": 29,
+            "x": 1401,
+            "y": 276
+          },
+          "tag": "button",
+          "text": "3D"
+        }
+      ]
+    },
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\listing-map-open-1440x900.jpg"
+  },
+  {
+    "step": "listing.map.zoom_in"
+  },
+  {
+    "step": "listing.map.marker_click",
+    "popup": []
+  },
+  {
+    "step": "listing.map.close"
+  },
+  {
+    "step": "property.gallery.open",
+    "tab": "Photos"
+  },
+  {
+    "step": "property.gallery.inspect",
+    "probe": [
+      {
+        "className": "Modal-module__modalOverlay",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tag": "div",
+        "text": "iQ Vega, London Overview Room Types Amenities Videos 3D Exterior Common Area Shot By Residents Floor Plans Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Sm",
+        "z": "1000"
+      },
+      {
+        "className": "Modal-module__modalOverlayContainer Modal-module__show Modal-module__fullScreen Modal-module__bottomToTopAnimation",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tag": "div",
+        "text": "iQ Vega, London Overview Room Types Amenities Videos 3D Exterior Common Area Shot By Residents Floor Plans Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Sm",
+        "z": "auto"
+      },
+      {
+        "className": "Modal-module__modalCloseBtn",
+        "rect": {
+          "h": 28,
+          "w": 28,
+          "x": 1400,
+          "y": 12
+        },
+        "role": "none",
+        "tag": "i",
+        "text": "",
+        "z": "10"
+      },
+      {
+        "className": "GalleryV2-module__modal",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tag": "div",
+        "text": "iQ Vega, London Overview Room Types Amenities Videos 3D Exterior Common Area Shot By Residents Floor Plans Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Sm",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__heading",
+        "rect": {
+          "h": 116,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tag": "div",
+        "text": "iQ Vega, London Overview Room Types Amenities Videos 3D Exterior Common Area Shot By Residents Floor Plans",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__modalHeader",
+        "rect": {
+          "h": 57,
+          "w": 1280,
+          "x": 80,
+          "y": 0
+        },
+        "role": null,
+        "tag": "h4",
+        "text": "iQ Vega, London",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__container SectionNavigation-module__addStatic SectionNavigation-module__backgroundTab GalleryV2-module__wrapperNav",
+        "rect": {
+          "h": 59,
+          "w": 1280,
+          "x": 80,
+          "y": 57
+        },
+        "role": null,
+        "tag": "ul",
+        "text": "Overview Room Types Amenities Videos 3D Exterior Common Area Shot By Residents Floor Plans",
+        "z": "9"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName SectionNavigation-module__active GalleryV2-module__activelistItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 93,
+          "x": 96,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Overview",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 108,
+          "x": 197,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Room Types",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 94,
+          "x": 313,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Amenities",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 75,
+          "x": 416,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Videos",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 51,
+          "x": 499,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "3D",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 80,
+          "x": 558,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Exterior",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 123,
+          "x": 646,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Common Area",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 143,
+          "x": 776,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Shot By Residents",
+        "z": "auto"
+      },
+      {
+        "className": "SectionNavigation-module__listItem GalleryV2-module__listItemClassName",
+        "rect": {
+          "h": 35,
+          "w": 101,
+          "x": 927,
+          "y": 65
+        },
+        "role": "none",
+        "tag": "li",
+        "text": "Floor Plans",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__sectionWrapper",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 116
+        },
+        "role": "none",
+        "tag": "div",
+        "text": "Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Small Double Bed Wardrobe Chest Of Drawers Study Desk & Chair Underbed Storage Noticeboard View Room Silver E",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__section",
+        "rect": {
+          "h": 589,
+          "w": 1400,
+          "x": 12,
+          "y": 116
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__sectionHeader",
+        "rect": {
+          "h": 509,
+          "w": 304,
+          "x": 110,
+          "y": 156
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__headerText",
+        "rect": {
+          "h": 284,
+          "w": 304,
+          "x": 110,
+          "y": 156
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Overview Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__overviewWrap",
+        "rect": {
+          "h": 244,
+          "w": 304,
+          "x": 110,
+          "y": 196
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students. Water Wifi Electricity Heating Content Insurance",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__spotLight",
+        "rect": {
+          "h": 160,
+          "w": 304,
+          "x": 110,
+          "y": 196
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze. Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students.",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__description",
+        "rect": {
+          "h": 65,
+          "w": 304,
+          "x": 110,
+          "y": 196
+        },
+        "role": null,
+        "tag": "p",
+        "text": "Prime Location - Just Steps Away From Top Universities Like LSE And The University Of The Arts, Making Commuting A Breeze.",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__description",
+        "rect": {
+          "h": 87,
+          "w": 304,
+          "x": 110,
+          "y": 269
+        },
+        "role": null,
+        "tag": "p",
+        "text": "Dynamic Community Life - Engage In Social Spaces Including A Cinema Room, Games Room, And Regularly Organized Events With Other Students.",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__tagWrapper GalleryV2-module__noHeight",
+        "rect": {
+          "h": 72,
+          "w": 304,
+          "x": 110,
+          "y": 368
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Water Wifi Electricity Heating Content Insurance",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 75,
+          "x": 110,
+          "y": 368
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Water",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 64,
+          "x": 193,
+          "y": 368
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Wifi",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 94,
+          "x": 265,
+          "y": 368
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Electricity",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 85,
+          "x": 110,
+          "y": 408
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Heating",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 140,
+          "x": 203,
+          "y": 408
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Content Insurance",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__imageSection",
+        "rect": {
+          "h": 509,
+          "w": 876,
+          "x": 438,
+          "y": 156
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__section",
+        "rect": {
+          "h": 1018,
+          "w": 1400,
+          "x": 12,
+          "y": 706
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Small Double Bed Wardrobe Chest Of Drawers Study Desk & Chair Underbed Storage Noticeboard View Room",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__sectionHeader",
+        "rect": {
+          "h": 938,
+          "w": 304,
+          "x": 110,
+          "y": 746
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Small Double Bed Wardrobe Chest Of Drawers Study Desk & Chair Underbed Storage Noticeboard View Room",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__headerText",
+        "rect": {
+          "h": 256,
+          "w": 304,
+          "x": 110,
+          "y": 746
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Bronze En Suite EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Small Double Bed Wardrobe Chest Of Drawers Study Desk & Chair Underbed Storage Noticeboard View Room",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__roomTypeExtraInfoWrap",
+        "rect": {
+          "h": 220,
+          "w": 304,
+          "x": 110,
+          "y": 782
+        },
+        "role": null,
+        "tag": "div",
+        "text": "EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm Small Double Bed Wardrobe Chest Of Drawers Study Desk & Chair Underbed Storage Noticeboard View Room",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__roomInfo",
+        "rect": {
+          "h": 42,
+          "w": 304,
+          "x": 110,
+          "y": 782
+        },
+        "role": null,
+        "tag": "div",
+        "text": "EnsuitePrivate RoomPrivate BathroomShared Kitchen13 Sqm",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__dot",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 159,
+          "y": 792
+        },
+        "role": null,
+        "tag": "span",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__dot",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 250,
+          "y": 792
+        },
+        "role": null,
+        "tag": "span",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__dot",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 367,
+          "y": 792
+        },
+        "role": null,
+        "tag": "span",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__dot",
+        "rect": {
+          "h": 1,
+          "w": 1,
+          "x": 207,
+          "y": 813
+        },
+        "role": null,
+        "tag": "span",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__tagWrapper",
+        "rect": {
+          "h": 112,
+          "w": 304,
+          "x": 110,
+          "y": 836
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Small Double Bed Wardrobe Chest Of Drawers Study Desk & Chair Underbed Storage Noticeboard",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 137,
+          "x": 110,
+          "y": 836
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Small Double Bed",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 96,
+          "x": 256,
+          "y": 836
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Wardrobe",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 135,
+          "x": 110,
+          "y": 876
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Chest Of Drawers",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__iconWrap",
+        "rect": {
+          "h": 32,
+          "w": 146,
+          "x": 254,
+          "y": 876
+        },
+        "role": null,
+        "tag": "span",
+        "text": "Study Desk & Chair",
+        "z": "auto"
+      },
+      {
+        "className": "GalleryV2-module__imageSection",
+        "rect": {
+          "h": 938,
+          "w": 876,
+          "x": 438,
+          "y": 746
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      }
+    ],
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\property-gallery-open-1440x900.jpg"
+  },
+  {
+    "step": "property.gallery.close"
+  },
+  {
+    "step": "property.room.open_details",
+    "room": "Bronze En Suite"
+  },
+  {
+    "step": "property.room.book.open",
+    "room": "Bronze En Suite",
+    "submitted": false
+  },
+  {
+    "step": "property.room.tenancy.select",
+    "duration": "38 weeks",
+    "submitted": false
+  },
+  {
+    "step": "property.enquiry.open",
+    "source": "room details contact us",
+    "submitted": false
+  },
+  {
+    "step": "property.room.close"
+  },
+  {
+    "step": "listing.enquiry.open",
+    "property": "first result",
+    "submitted": false
+  },
+  {
+    "step": "listing.enquiry.inspect",
+    "probe": [
+      {
+        "className": "searchModalMobile-module__desktop",
+        "rect": {
+          "h": 42,
+          "w": 550,
+          "x": 164,
+          "y": 11
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "searchModalMobile-module__searchContainer",
+        "rect": {
+          "h": 42,
+          "w": 550,
+          "x": 164,
+          "y": 11
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "searchModalMobile-module__searchInput",
+        "rect": {
+          "h": 42,
+          "w": 550,
+          "x": 164,
+          "y": 11
+        },
+        "role": null,
+        "tag": "input",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "searchModalMobile-module__searchIcon",
+        "rect": {
+          "h": 28,
+          "w": 28,
+          "x": 680,
+          "y": 18
+        },
+        "role": null,
+        "tag": "i",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "Modal-module__modalOverlay",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Enquire Now Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit iQ Vega, London London, England, GB Rent From £433 / week Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "1001"
+      },
+      {
+        "className": "Modal-module__modalOuterContainer Modal-module__show",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": "none",
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "Modal-module__modalOverlayContainer Modal-module__show LeadFormModalWrapper-module__leadFormModalContainer LeadFormModalWrapper-module__leadFormModalContainerDesktop LeadFormModalWrapper-module__leadFormHappyFlowStyles LeadFormModalWrapper-module__le",
+        "rect": {
+          "h": 740,
+          "w": 960,
+          "x": 240,
+          "y": 80
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Enquire Now Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit iQ Vega, London London, England, GB Rent From £433 / week Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__leadFormOuterContainer LeadFormDesktop-module__leadFormOuterContainerNew",
+        "rect": {
+          "h": 708,
+          "w": 928,
+          "x": 256,
+          "y": 96
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Enquire Now Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit iQ Vega, London London, England, GB Rent From £433 / week Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__newLayoutHeader",
+        "rect": {
+          "h": 30,
+          "w": 928,
+          "x": 256,
+          "y": 96
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Enquire Now",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__modalHeader",
+        "rect": {
+          "h": 30,
+          "w": 145,
+          "x": 256,
+          "y": 96
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Enquire Now",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__closeButtonWrapper",
+        "rect": {
+          "h": 16,
+          "w": 16,
+          "x": 1168,
+          "y": 103
+        },
+        "role": "button",
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__twoColumnContainer",
+        "rect": {
+          "h": 670,
+          "w": 928,
+          "x": 256,
+          "y": 134
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit iQ Vega, London London, England, GB Rent From £433 / week Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__leadFormContainer LeadFormDesktop-module__leadFormContainerNew",
+        "rect": {
+          "h": 670,
+          "w": 521,
+          "x": 256,
+          "y": 134
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit",
+        "z": "auto"
+      },
+      {
+        "className": "PersonalDetailsFormWithStepper-module__container PersonalDetailsFormWithStepper-module__containerDesktopNew",
+        "rect": {
+          "h": 637,
+          "w": 488,
+          "x": 273,
+          "y": 151
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__container LeadFormDesktop-module__inputSection",
+        "rect": {
+          "h": 637,
+          "w": 488,
+          "x": 273,
+          "y": 151
+        },
+        "role": null,
+        "tag": "form",
+        "text": "Your Full Name* Your Email Address* Code* Your Mobile Number* Got Questions? 0/150 characters Best Way To Reach You Whatsapp Email Call I agree with all the terms and privacy of amberstudent. Submit",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__contactSection",
+        "rect": {
+          "h": 50,
+          "w": 488,
+          "x": 273,
+          "y": 309
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Code* Your Mobile Number*",
+        "z": "auto"
+      },
+      {
+        "className": "Input-module__container LeadFormDesktop-module__inpContainerClassName",
+        "rect": {
+          "h": 50,
+          "w": 146,
+          "x": 273,
+          "y": 309
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Code*",
+        "z": "auto"
+      },
+      {
+        "className": "Input-module__label LeadFormDesktop-module__queryBoxLabel",
+        "rect": {
+          "h": 20,
+          "w": 414,
+          "x": 289,
+          "y": 397
+        },
+        "role": "none",
+        "tag": "label",
+        "text": "Got Questions?",
+        "z": "7"
+      },
+      {
+        "className": "Input-module__input Input-module__textArea LeadFormDesktop-module__increasedHeightQuery",
+        "rect": {
+          "h": 91,
+          "w": 488,
+          "x": 273,
+          "y": 383
+        },
+        "role": null,
+        "tag": "textarea",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__charLimit",
+        "rect": {
+          "h": 18,
+          "w": 472,
+          "x": 281,
+          "y": 482
+        },
+        "role": null,
+        "tag": "div",
+        "text": "0/150 characters",
+        "z": "auto"
+      },
+      {
+        "className": "LeadForm-module__actionButtonSection LeadFormDesktop-module__desktopActionButtonSection LeadForm-module__withStepper",
+        "rect": {
+          "h": 87,
+          "w": 488,
+          "x": 273,
+          "y": 701
+        },
+        "role": null,
+        "tag": "div",
+        "text": "I agree with all the terms and privacy of amberstudent. Submit",
+        "z": "2"
+      },
+      {
+        "className": "LeadForm-module__checkboxContainer",
+        "rect": {
+          "h": 31,
+          "w": 488,
+          "x": 273,
+          "y": 709
+        },
+        "role": null,
+        "tag": "div",
+        "text": "I agree with all the terms and privacy of amberstudent.",
+        "z": "auto"
+      },
+      {
+        "className": "LeadForm-module__subText",
+        "rect": {
+          "h": 19,
+          "w": 295,
+          "x": 273,
+          "y": 709
+        },
+        "role": null,
+        "tag": "div",
+        "text": "I agree with all the terms and privacy of amberstudent.",
+        "z": "auto"
+      },
+      {
+        "className": "LeadForm-module__link",
+        "rect": {
+          "h": 16,
+          "w": 32,
+          "x": 374,
+          "y": 710
+        },
+        "role": "none",
+        "tag": "strong",
+        "text": "terms",
+        "z": "auto"
+      },
+      {
+        "className": "LeadForm-module__link",
+        "rect": {
+          "h": 16,
+          "w": 41,
+          "x": 432,
+          "y": 710
+        },
+        "role": "none",
+        "tag": "strong",
+        "text": "privacy",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__desktopButtonContainer",
+        "rect": {
+          "h": 48,
+          "w": 488,
+          "x": 273,
+          "y": 739
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Submit",
+        "z": "auto"
+      },
+      {
+        "className": "Button-module__btn Button-module__primary Button-module__lg Button-module__hideHover LeadForm-module__submitButton",
+        "rect": {
+          "h": 48,
+          "w": 488,
+          "x": 273,
+          "y": 739
+        },
+        "role": "button",
+        "tag": "button",
+        "text": "Submit",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormDesktop-module__inventoryInfoContainer LeadFormDesktop-module__inventoryInfoContainerNew",
+        "rect": {
+          "h": 670,
+          "w": 399,
+          "x": 785,
+          "y": 134
+        },
+        "role": null,
+        "tag": "div",
+        "text": "iQ Vega, London London, England, GB Rent From £433 / week Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "Image-module__animateOpacity InventoryCard-module__inventoryImg InventoryCard-module__isEnquireCTASource Image-module__show",
+        "rect": {
+          "h": 212,
+          "w": 378,
+          "x": 798,
+          "y": 147
+        },
+        "role": "none",
+        "tag": "img",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspContainerWithStepper",
+        "rect": {
+          "h": 183,
+          "w": 399,
+          "x": 785,
+          "y": 485
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspList",
+        "rect": {
+          "h": 150,
+          "w": 366,
+          "x": 802,
+          "y": 501
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Lowest Price Guarantee Verified Properties 24x7 Personal Assistance 11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspItem",
+        "rect": {
+          "h": 36,
+          "w": 366,
+          "x": 802,
+          "y": 501
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Lowest Price Guarantee",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__iconContainer",
+        "rect": {
+          "h": 36,
+          "w": 36,
+          "x": 802,
+          "y": 501
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspTitle",
+        "rect": {
+          "h": 21,
+          "w": 145,
+          "x": 846,
+          "y": 509
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Lowest Price Guarantee",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspItem",
+        "rect": {
+          "h": 36,
+          "w": 366,
+          "x": 802,
+          "y": 539
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Verified Properties",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__iconContainer",
+        "rect": {
+          "h": 36,
+          "w": 36,
+          "x": 802,
+          "y": 539
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspTitle",
+        "rect": {
+          "h": 21,
+          "w": 114,
+          "x": 846,
+          "y": 547
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Verified Properties",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspItem",
+        "rect": {
+          "h": 36,
+          "w": 366,
+          "x": 802,
+          "y": 577
+        },
+        "role": null,
+        "tag": "div",
+        "text": "24x7 Personal Assistance",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__iconContainer",
+        "rect": {
+          "h": 36,
+          "w": 36,
+          "x": 802,
+          "y": 577
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspTitle",
+        "rect": {
+          "h": 21,
+          "w": 153,
+          "x": 846,
+          "y": 585
+        },
+        "role": null,
+        "tag": "div",
+        "text": "24x7 Personal Assistance",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspItem",
+        "rect": {
+          "h": 36,
+          "w": 366,
+          "x": 802,
+          "y": 615
+        },
+        "role": null,
+        "tag": "div",
+        "text": "11.3K+ Reviews",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__iconContainer",
+        "rect": {
+          "h": 36,
+          "w": 36,
+          "x": 802,
+          "y": 615
+        },
+        "role": null,
+        "tag": "div",
+        "text": "",
+        "z": "auto"
+      },
+      {
+        "className": "LeadFormUSP-module__uspTitle",
+        "rect": {
+          "h": 21,
+          "w": 96,
+          "x": 846,
+          "y": 623
+        },
+        "role": null,
+        "tag": "div",
+        "text": "11.3K+ Reviews",
+        "z": "auto"
+      }
+    ],
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\listing-enquiry-open-1440x900.jpg"
+  },
+  {
+    "step": "listing.enquiry.fields",
+    "submitted": false,
+    "fields": [
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": "name",
+        "placeholder": "",
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "text"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": "email",
+        "placeholder": "",
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "email"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": null,
+        "placeholder": "",
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "dropdown"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": "phone",
+        "placeholder": "",
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "tel"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": null,
+        "placeholder": "",
+        "required": false,
+        "tag": "textarea",
+        "text": "",
+        "type": null
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": "modal-preferredCommunicationModes",
+        "placeholder": null,
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": "modal-preferredCommunicationModes",
+        "placeholder": null,
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": "modal-preferredCommunicationModes",
+        "placeholder": null,
+        "required": false,
+        "tag": "input",
+        "text": "",
+        "type": "checkbox"
+      },
+      {
+        "ariaLabel": null,
+        "disabled": false,
+        "name": null,
+        "placeholder": null,
+        "required": false,
+        "tag": "button",
+        "text": "Submit",
+        "type": "submit"
+      }
+    ]
+  },
+  {
+    "step": "listing.enquiry.close"
+  },
+  {
+    "step": "auth.login_modal.open",
+    "submitted": false
+  },
+  {
+    "step": "auth.login_modal.inspect",
+    "probe": [
+      {
+        "className": "Modal-module__modalOverlay",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Login to Amber Code* Mobile Number* Continue or log in using Continue with Email Sign in with Google Continue with Facebook Continue with Apple By signing in you agree to our Privacy Policy and Terms & Conditions"
+      },
+      {
+        "className": "Modal-module__modalOuterContainer Modal-module__show",
+        "rect": {
+          "h": 900,
+          "w": 1440,
+          "x": 0,
+          "y": 0
+        },
+        "role": "none",
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "Modal-module__modalOverlayContainer Modal-module__show Modal-module__center Modal-module__loginModalWidth",
+        "rect": {
+          "h": 568,
+          "w": 440,
+          "x": 500,
+          "y": 166
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Login to Amber Code* Mobile Number* Continue or log in using Continue with Email Sign in with Google Continue with Facebook Continue with Apple By signing in you agree to our Privacy Policy and Terms & Conditions"
+      },
+      {
+        "className": "Modal-module__modalTitle",
+        "rect": {
+          "h": 64,
+          "w": 440,
+          "x": 500,
+          "y": 166
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Login to Amber"
+      },
+      {
+        "className": "Modal-module__titleDesktop",
+        "rect": {
+          "h": 25,
+          "w": 147,
+          "x": 516,
+          "y": 186
+        },
+        "role": null,
+        "tag": "h4",
+        "text": "Login to Amber"
+      },
+      {
+        "className": "Modal-module__modalCloseBtn",
+        "rect": {
+          "h": 28,
+          "w": 28,
+          "x": 896,
+          "y": 184
+        },
+        "role": "none",
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "Login-module__container",
+        "rect": {
+          "h": 504,
+          "w": 440,
+          "x": 500,
+          "y": 230
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Code* Mobile Number* Continue or log in using Continue with Email Sign in with Google Continue with Facebook Continue with Apple By signing in you agree to our Privacy Policy and Terms & Conditions"
+      },
+      {
+        "className": "LoginPhone-module__inputContainer",
+        "rect": {
+          "h": 50,
+          "w": 408,
+          "x": 516,
+          "y": 254
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Code* Mobile Number*"
+      },
+      {
+        "className": "CountryCodeDropdown-module__dropdownContainer LoginPhone-module__phoneCodeInput",
+        "rect": {
+          "h": 50,
+          "w": 133,
+          "x": 516,
+          "y": 254
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Code*"
+      },
+      {
+        "className": "Input-module__container LoginPhone-module__emailInput",
+        "rect": {
+          "h": 50,
+          "w": 267,
+          "x": 657,
+          "y": 254
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Mobile Number*"
+      },
+      {
+        "className": "Button-module__btn Button-module__primary Button-module__medium Button-module__disabled LoginPhone-module__continueBtn",
+        "rect": {
+          "h": 42,
+          "w": 408,
+          "x": 516,
+          "y": 332
+        },
+        "role": "button",
+        "tag": "button",
+        "text": "Continue"
+      },
+      {
+        "className": "Login-module__seprator",
+        "rect": {
+          "h": 20,
+          "w": 408,
+          "x": 516,
+          "y": 398
+        },
+        "role": null,
+        "tag": "div",
+        "text": "or log in using"
+      },
+      {
+        "className": "Login-module__loginWithSocialWrap",
+        "rect": {
+          "h": 216,
+          "w": 408,
+          "x": 516,
+          "y": 442
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Continue with Email Sign in with Google Continue with Facebook Continue with Apple"
+      },
+      {
+        "className": "Login-module__googleLogin",
+        "rect": {
+          "h": 44,
+          "w": 400,
+          "x": 520,
+          "y": 498
+        },
+        "role": null,
+        "tag": "div",
+        "text": "Sign in with Google"
+      },
+      {
+        "className": "Login-module__disclaimerWrapper",
+        "rect": {
+          "h": 22,
+          "w": 408,
+          "x": 516,
+          "y": 688
+        },
+        "role": null,
+        "tag": "div",
+        "text": "By signing in you agree to our Privacy Policy and Terms & Conditions"
+      },
+      {
+        "className": "Login-module__disclaimer",
+        "rect": {
+          "h": 14,
+          "w": 304,
+          "x": 548,
+          "y": 692
+        },
+        "role": null,
+        "tag": "div",
+        "text": "By signing in you agree to our Privacy Policy and Terms & Conditions"
+      },
+      {
+        "className": "Login-module__highlight",
+        "rect": {
+          "h": 14,
+          "w": 59,
+          "x": 684,
+          "y": 692
+        },
+        "role": null,
+        "tag": "a",
+        "text": "Privacy Policy"
+      },
+      {
+        "className": "Login-module__highlight",
+        "rect": {
+          "h": 14,
+          "w": 87,
+          "x": 765,
+          "y": 692
+        },
+        "role": null,
+        "tag": "a",
+        "text": "Terms & Conditions"
+      },
+      {
+        "className": "searchModalMobile-module__desktop",
+        "rect": {
+          "h": 42,
+          "w": 550,
+          "x": 164,
+          "y": 11
+        },
+        "role": null,
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "searchModalMobile-module__searchContainer",
+        "rect": {
+          "h": 42,
+          "w": 550,
+          "x": 164,
+          "y": 11
+        },
+        "role": null,
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "searchModalMobile-module__searchInput",
+        "rect": {
+          "h": 42,
+          "w": 550,
+          "x": 164,
+          "y": 11
+        },
+        "role": null,
+        "tag": "input",
+        "text": ""
+      },
+      {
+        "className": "searchModalMobile-module__searchIcon",
+        "rect": {
+          "h": 28,
+          "w": 28,
+          "x": 680,
+          "y": 18
+        },
+        "role": null,
+        "tag": "i",
+        "text": ""
+      }
+    ],
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\login-modal-1440x900.jpg",
+    "credentialsEntered": false
+  },
+  {
+    "step": "auth.login_modal.close"
+  }
+]

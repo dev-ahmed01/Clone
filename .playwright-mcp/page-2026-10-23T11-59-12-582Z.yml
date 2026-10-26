@@ -1,0 +1,309 @@
+- generic [ref=f75e2]:
+  - navigation [ref=f75e3]:
+    - link [ref=f75e4] [cursor=pointer]:
+      - /url: /
+      - img "amber" [ref=f75e5]
+    - generic [ref=f75e6]:
+      - button [aria-hidden]: Partner with us
+      - button "Open menu" [ref=f75e7] [cursor=pointer]
+  - main [ref=f75e10]:
+    - generic [ref=f75e11]:
+      - generic [ref=f75e12]:
+        - heading "Your audience. Our global housing network." [level=1] [ref=f75e13]: Your audience.Our global housing network.
+        - generic [ref=f75e15]:
+          - paragraph [ref=f75e16]: Make the most out of this partnership and avail the benefits
+          - button "Partner with us" [ref=f75e17] [cursor=pointer]
+      - img "A student working at a desk in their room, with a laptop, notes and a shelf of books behind them" [ref=f75e19]
+    - generic [ref=f75e21]:
+      - heading "Housing, solved at global scale." [level=2] [ref=f75e22]
+      - generic [ref=f75e23]:
+        - generic [ref=f75e24]:
+          - generic [ref=f75e28]:
+            - paragraph [ref=f75e29]: 2M+
+            - paragraph [ref=f75e30]: Beds listed
+          - generic [ref=f75e34]:
+            - paragraph [ref=f75e35]: 5K+
+            - paragraph [ref=f75e36]: Properties live
+          - generic [ref=f75e40]:
+            - paragraph [ref=f75e41]: 260+
+            - paragraph [ref=f75e42]: Cities covered
+          - generic [ref=f75e46]:
+            - paragraph [ref=f75e47]: 10+
+            - paragraph [ref=f75e48]: Countries live
+          - generic [ref=f75e52]:
+            - paragraph [ref=f75e53]: 160+
+            - paragraph [ref=f75e54]: Countries of demand
+          - generic [ref=f75e58]:
+            - paragraph [ref=f75e59]: 9.2M+
+            - paragraph [ref=f75e60]: Monthly site visits
+          - generic [ref=f75e64]:
+            - paragraph [ref=f75e65]: 277%
+            - paragraph [ref=f75e66]: Web traffic growth
+          - generic [ref=f75e70]:
+            - paragraph [ref=f75e71]: $1Bn+
+            - paragraph [ref=f75e72]: Bookings delivered
+          - generic [ref=f75e76]:
+            - paragraph [ref=f75e77]: $1.8K
+            - paragraph [ref=f75e78]: Avg. booking value
+          - generic [ref=f75e82]:
+            - paragraph [ref=f75e83]: 2x
+            - paragraph [ref=f75e84]: Booking rate
+        - generic [ref=f75e85]:
+          - paragraph [ref=f75e86]: “Accommodation is where a student’s journey either settles or stays unsettled — and Amber has consistently gotten it right.”
+          - generic [ref=f75e88]:
+            - paragraph [ref=f75e89]: Mayank Gupta
+            - paragraph [ref=f75e90]: COO, Leap GeeBee
+    - generic [ref=f75e92]:
+      - heading "How Does It Work" [level=2] [ref=f75e93]
+      - generic [ref=f75e95]:
+        - generic [ref=f75e96]:
+          - generic [ref=f75e99]:
+            - generic [ref=f75e100]:
+              - generic [ref=f75e101]: CONTACT FORM
+              - generic [ref=f75e102]: STEP 1 OF 3
+            - generic [ref=f75e104]:
+              - generic [ref=f75e105]: Organisation
+              - generic [ref=f75e106]: Acme Education
+            - generic [ref=f75e108]:
+              - generic [ref=f75e109]: Work email
+              - generic [ref=f75e110]: partners@acme.edu
+            - generic [ref=f75e112]: Get started
+          - generic [ref=f75e113]:
+            - heading "Signup with us" [level=3] [ref=f75e114]
+            - paragraph [ref=f75e115]: Share a few details about your business and the customers you serve.
+        - generic [ref=f75e116]:
+          - generic [ref=f75e119]:
+            - generic [ref=f75e120]:
+              - generic [ref=f75e121]: ONBOARDING
+              - generic [ref=f75e122]: STEP 2 OF 3
+            - generic [ref=f75e124]:
+              - generic [ref=f75e125]:
+                - generic [ref=f75e126]: amber Partnerships
+                - generic [ref=f75e127]: Reaching out within 24 hours
+              - generic [ref=f75e128]: CONTACTED
+            - generic [ref=f75e131]:
+              - generic [ref=f75e132]: Details received
+              - generic [ref=f75e135]: DONE
+            - generic [ref=f75e138]:
+              - generic [ref=f75e139]: Intro call
+              - generic [ref=f75e142]: TODAY 4:30 PM
+            - generic [ref=f75e145]:
+              - generic [ref=f75e146]: Commission & agreement
+              - generic [ref=f75e149]: NEXT
+          - generic [ref=f75e150]:
+            - heading "We get you set up" [level=3] [ref=f75e151]
+            - paragraph [ref=f75e152]: Our partnerships team aligns on the model, commercials and integration that works best for you.
+        - generic [ref=f75e153]:
+          - generic [ref=f75e156]:
+            - generic [ref=f75e157]:
+              - generic [ref=f75e158]: YOUR PORTFOLIO
+              - generic [ref=f75e159]: +3 ADDED
+            - generic [ref=f75e161]:
+              - generic [ref=f75e162]:
+                - generic [ref=f75e163]: Properties listed
+                - generic [ref=f75e164]: 16,000+
+              - generic [ref=f75e166]:
+                - generic [ref=f75e167]: Beds available
+                - generic [ref=f75e168]: 1M+
+            - generic [ref=f75e172]:
+              - generic [ref=f75e174]:
+                - generic [ref=f75e175]: LONDON · 42 BEDS
+                - generic [ref=f75e176]: Studio & en-suite rooms
+              - generic [ref=f75e177]: ADDED
+            - generic [ref=f75e180]:
+              - generic [ref=f75e182]:
+                - generic [ref=f75e183]: MANCHESTER · 18 BEDS
+                - generic [ref=f75e184]: Shared apartments
+              - generic [ref=f75e185]: ADDED
+          - generic [ref=f75e186]:
+            - heading "Start helping students book" [level=3] [ref=f75e187]
+            - paragraph [ref=f75e188]: Give your students access to our global housing network and earn from completed bookings.
+    - generic [ref=f75e190]:
+      - heading "Everything you get as a partner." [level=2] [ref=f75e192]
+      - generic [ref=f75e194]:
+        - article [ref=f75e195]:
+          - generic [ref=f75e196]:
+            - heading "Global housing inventory" [level=3] [ref=f75e197]
+            - paragraph [ref=f75e198]: Give students access to 1M+ beds across major destinations and countries.
+          - generic [ref=f75e199]: amber lists student housing across major study destinations in North and South America, Europe, Africa, the Middle East, Asia and Oceania.
+        - article [ref=f75e203]:
+          - generic [ref=f75e204]:
+            - heading [level=3] [ref=f75e205]:
+              - img "amber flex" [ref=f75e206]
+              - text: Dashboard
+            - paragraph [ref=f75e207]: Track referrals, bookings, status and earnings from one place.
+          - img "The amber flex dashboard listing student referrals with their status and destination city" [ref=f75e217]
+        - article [ref=f75e218]:
+          - generic [ref=f75e219]:
+            - heading "White-label experiences" [level=3] [ref=f75e220]
+            - paragraph [ref=f75e221]: Offer our housing inventory under your own brand and domain.
+          - img "A university-branded off-campus housing page powered by amber" [ref=f75e231]
+        - article [ref=f75e232]:
+          - generic [ref=f75e233]:
+            - heading "Flexible integrations" [level=3] [ref=f75e234]
+            - paragraph [ref=f75e235]: Start with a simple referral link or integrate deeper through widgets, APIs or white-label solutions.
+          - generic [ref=f75e237]:
+            - generic [ref=f75e238]:
+              - generic [ref=f75e239]: Integrations
+              - generic [ref=f75e240]: 0 of 4 live
+            - list [ref=f75e241]:
+              - listitem [ref=f75e242]:
+                - generic [ref=f75e246]:
+                  - generic [ref=f75e247]: Referral link
+                  - generic [ref=f75e248]: Live in minutes
+                - generic [ref=f75e249]:
+                  - generic [ref=f75e250]: Connect
+                  - generic [ref=f75e255]: Connected
+              - listitem [ref=f75e259]:
+                - generic [ref=f75e264]:
+                  - generic [ref=f75e265]: Widget
+                  - generic [ref=f75e266]: Drop-in search
+                - generic [ref=f75e267]:
+                  - generic [ref=f75e268]: Embed
+                  - generic [ref=f75e273]: Embedded
+              - listitem [ref=f75e277]:
+                - generic [ref=f75e281]:
+                  - generic [ref=f75e282]: API
+                  - generic [ref=f75e283]: Full control
+                - generic [ref=f75e284]:
+                  - generic [ref=f75e285]: Connect
+                  - generic [ref=f75e290]: Connected
+              - listitem [ref=f75e294]:
+                - generic [ref=f75e298]:
+                  - generic [ref=f75e299]: White-label
+                  - generic [ref=f75e300]: Your brand, your domain
+                - generic [ref=f75e301]:
+                  - generic [ref=f75e302]: Enable
+                  - generic [ref=f75e307]: Enabled
+        - article [ref=f75e311]:
+          - generic [ref=f75e312]:
+            - heading "Student support, handled" [level=3] [ref=f75e313]
+            - paragraph [ref=f75e314]: Amber helps students through search, comparison, booking and post-booking support.
+          - generic [ref=f75e317]:
+            - generic [ref=f75e318]: Can I book the second one?
+            - generic [ref=f75e320]: Held for you. Contract ready to sign.
+            - generic [ref=f75e322]: My move-in slipped a week.
+            - generic [ref=f75e324]: Rebooked for the 14th. No fee.
+            - generic [ref=f75e326]: Anything near campus under £180?
+        - article [ref=f75e328]:
+          - generic [ref=f75e329]:
+            - heading "amber+ services" [level=3] [ref=f75e330]
+            - paragraph [ref=f75e331]: Extend your offering with flights, forex, SIMs, airport transfers and other student essentials.
+          - img "The amber Plus marketplace offering forex, flights, SIM cards and airport pickup" [ref=f75e341]
+    - generic [ref=f75e343]:
+      - generic [ref=f75e345]:
+        - generic [ref=f75e346]:
+          - heading "Built for partners like you" [level=2] [ref=f75e347]
+          - paragraph [ref=f75e348]: Built for every student ecosystem partner.
+        - list [ref=f75e349]:
+          - listitem [ref=f75e350]:
+            - heading "Universities" [level=3] [ref=f75e356]
+            - paragraph [ref=f75e357]: Extend student support beyond campus.
+          - listitem [ref=f75e358]:
+            - heading "Education consultants" [level=3] [ref=f75e365]
+            - paragraph [ref=f75e366]: Help students solve accommodation alongside admissions.
+          - listitem [ref=f75e367]:
+            - heading "Student platforms" [level=3] [ref=f75e373]
+            - paragraph [ref=f75e374]: Add housing directly into your existing journey.
+          - listitem [ref=f75e375]:
+            - heading "Creators & communities" [level=3] [ref=f75e384]
+            - paragraph [ref=f75e385]: Recommend trusted accommodation and earn from bookings.
+          - listitem [ref=f75e386]:
+            - heading "Fintech / travel / student services companies" [level=3] [ref=f75e391]
+            - paragraph [ref=f75e392]: Embed accommodation into a broader study-abroad offering.
+      - generic [ref=f75e394]:
+        - img "Educred" [ref=f75e396]
+        - img "ErasmusPlay" [ref=f75e398]
+        - img "Study Smart" [ref=f75e400]
+        - img "LeapScholar" [ref=f75e402]
+        - img "iSchoolConnect" [ref=f75e404]
+        - img "MiM-Essay" [ref=f75e406]
+    - generic [ref=f75e414]:
+      - heading "Testimonials" [level=2] [ref=f75e416]
+      - generic [ref=f75e418]:
+        - article [ref=f75e419]:
+          - generic [ref=f75e421]:
+            - generic [ref=f75e422]: Catherine McHugh
+            - generic [ref=f75e423]: Commercial Partnerships Manager, IDP Education
+          - blockquote [ref=f75e424]:
+            - paragraph [ref=f75e425]: “Over the past 12 months, IDP and Amber have built a strong partnership grounded in a shared commitment to helping students find a home away from home through a service that is trusted, responsive, secure and reliable.
+            - paragraph [ref=f75e426]: What stands out most about our partnership is the depth of collaboration beyond student bookings. Together, we have strengthened collaboration through technology integration, operational alignment, and meaningful engagement with teams across our global market.
+          - button "Read more" [ref=f75e427] [cursor=pointer]
+        - article [ref=f75e428]:
+          - generic [ref=f75e430]:
+            - generic [ref=f75e431]: Chetan Jain
+            - generic [ref=f75e432]: Managing Director, Study Smart
+          - blockquote [ref=f75e433]:
+            - paragraph [ref=f75e434]: “Our experience working with Amber Student has been excellent. Their team has consistently been professional, responsive, and supportive throughout our association. What really stands out is their student-first approach and their commitment to providing reliable accommodation solutions for students moving abroad.
+            - paragraph [ref=f75e435]: Amber has been a valuable partner for us, helping make the accommodation journey smoother for our students and our team. We truly appreciate their seamless coordination, quick support, and understanding of the needs of international students. We look forward to continuing this successful partnership and creating even more value for students together.”
+        - article [ref=f75e436]:
+          - generic [ref=f75e438]:
+            - generic [ref=f75e439]: Mayank Gupta
+            - generic [ref=f75e440]: COO, Leap GeeBee
+          - blockquote [ref=f75e441]:
+            - paragraph [ref=f75e442]: "“Accommodation is where a student’s journey either settles or stays unsettled — and Amber has consistently gotten it right. Bookings are up nearly 80% this year, with the UK scaled at volume and Australia and Ireland turning around options faster than anyone else we work with. Beyond the numbers, they operate as true partners: quick to respond, quick to own escalations, transparent on commercials, and generous with data through their dashboard visibility. A special thanks to Prakhar and Brijesh, whose responsiveness anchors this relationship day to day. Most tellingly, very few complaints ever reach us — and that’s the only metric that matters. Glad to have Amber in the Leap GeeBee journey, and looking forward to scaling further.”"
+      - generic [ref=f75e444]:
+        - button "Go to testimonial 1" [ref=f75e445] [cursor=pointer]
+        - button "Go to testimonial 2" [ref=f75e446] [cursor=pointer]
+        - button "Go to testimonial 3" [ref=f75e447] [cursor=pointer]
+    - generic [ref=f75e449]:
+      - heading "Frequently Asked Questions (FAQs)" [level=2] [ref=f75e450]
+      - generic [ref=f75e451]:
+        - generic [ref=f75e452]:
+          - button "Who can partner with amber?" [expanded] [ref=f75e453] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f75e455]: –
+          - paragraph [ref=f75e456]: amber partners with education consultants, study-abroad agencies, universities, student communities and other organisations that support students travelling overseas. Whether you are a large education group or an independent consultant, you can partner with amber to help your students find trusted student accommodation.
+        - button "How do I become an official amber partner?" [ref=f75e458] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e460]: +
+        - button "Is there any cost to becoming an amber partner?" [ref=f75e462] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e464]: +
+        - button "How does the amber partner commission structure work?" [ref=f75e466] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e468]: +
+        - button "How can I refer students to amber?" [ref=f75e470] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e472]: +
+        - button "How does amber track and attribute my student referrals?" [ref=f75e474] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e476]: +
+        - button "What is the amber Partner Dashboard and what can I do with it?" [ref=f75e478] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e480]: +
+        - button "Which countries, cities and universities can I offer accommodation for?" [ref=f75e482] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e484]: +
+        - button "What support does amber provide to partners and their students?" [ref=f75e486] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e488]: +
+        - button "Does amber offer white-label or API integration for partners?" [ref=f75e490] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f75e492]: +
+    - generic [ref=f75e499]:
+      - generic [ref=f75e500]:
+        - heading "Become an official partner of amber." [level=2] [ref=f75e501]
+        - paragraph [ref=f75e502]: Fill out a simple contact form and get started instantly.
+      - button "Partner with us" [ref=f75e503] [cursor=pointer]
+  - contentinfo [ref=f75e504]:
+    - generic [ref=f75e505]:
+      - generic [ref=f75e506]:
+        - link [ref=f75e507] [cursor=pointer]:
+          - /url: /partner
+          - img "amber" [ref=f75e508]
+        - paragraph [ref=f75e509]: amber © 2026. All rights reserved.
+      - generic:
+        - button:
+          - generic:
+            - link:
+              - /url: https://uk.trustpilot.com/review/amberstudent.com
+      - generic [ref=f75e510]:
+        - generic [ref=f75e511]:
+          - generic [ref=f75e512]: Get the app
+          - generic [ref=f75e513]:
+            - link [ref=f75e514] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.amber.student
+              - img "Play Store" [ref=f75e515]
+            - link [ref=f75e516] [cursor=pointer]:
+              - /url: https://apps.apple.com/app/amber-student-accommodation/id1234567890
+              - img "App Store" [ref=f75e517]
+        - generic [ref=f75e519]:
+          - generic [ref=f75e520]: "Payment options:"
+          - img "Payment Partners" [ref=f75e521]
+      - generic [ref=f75e522]:
+        - button "Company" [ref=f75e524]
+        - button "Discover" [ref=f75e529]
+        - button "Support" [ref=f75e534]
+        - button "Contact us" [ref=f75e539]
+  - region "Notifications alt+T"

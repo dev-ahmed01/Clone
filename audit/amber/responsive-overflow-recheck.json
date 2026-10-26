@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-23",
+  "measurements": [
+    {
+      "route": "/plus",
+      "viewport": [
+        390,
+        844
+      ],
+      "scrollWidth": 50341,
+      "source": "partnersSection-module__partnerCard"
+    },
+    {
+      "route": "/places/iq-vega-london-2101138507106",
+      "viewport": [
+        390,
+        844
+      ],
+      "scrollWidth": 451
+    },
+    {
+      "route": "/places/iq-vega-london-2101138507106",
+      "viewport": [
+        360,
+        800
+      ],
+      "scrollWidth": 451
+    },
+    {
+      "route": "/",
+      "viewport": [
+        390,
+        844
+      ],
+      "scrollWidth": 409
+    },
+    {
+      "route": "/",
+      "viewport": [
+        360,
+        800
+      ],
+      "scrollWidth": 409
+    }
+  ],
+  "note": "Very distant carousel descendants can be visually clipped; scrollWidth, rather than farthest descendant bounding box, is the horizontal-overflow measure."
+}

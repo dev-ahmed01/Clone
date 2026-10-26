@@ -1,0 +1,64 @@
+- generic [ref=f60e4]:
+  - navigation [ref=f60e5]:
+    - link [ref=f60e6] [cursor=pointer]:
+      - /url: /
+    - button "Open menu" [ref=f60e8] [cursor=pointer]
+  - generic [ref=f60e12]:
+    - heading "Understand how amber actually works." [level=1] [ref=f60e13]:
+      - text: Understand howamber
+      - button [ref=f60e14] [cursor=pointer]
+      - text: actually works.
+    - paragraph [ref=f60e18]: Helping students find a place to call home before they even arrive
+  - generic [ref=f60e20]:
+    - heading "From search to keys Three steps, no surprises." [level=2] [ref=f60e22]: From search to keysThree steps, no surprises.
+    - list [ref=f60e23]:
+      - listitem [ref=f60e25]:
+        - generic [ref=f60e26]:
+          - generic [ref=f60e27]: "1"
+          - heading "Discover and Finalise" [level=3] [ref=f60e28]
+          - paragraph [ref=f60e29]: Choose from a plethora of verified student home listings near your university, compare them side by side, and finalise the one that fits you best.
+      - listitem [ref=f60e32]:
+        - generic [ref=f60e33]:
+          - generic [ref=f60e34]: "2"
+          - heading "Get your paperwork done" [level=3] [ref=f60e35]
+          - paragraph [ref=f60e36]: Paperwork’s on us, no need to fuss — we handle the contracts, the deposit and every form in between, and keep you posted at every step.
+      - listitem [ref=f60e39]:
+        - generic [ref=f60e40]:
+          - generic [ref=f60e41]: "3"
+          - heading "Accommodation Booked!" [level=3] [ref=f60e42]
+          - paragraph [ref=f60e43]: Relax, pack your bags, and unravel a new life chapter — your room is confirmed, your move-in date is set, and our team stays a message away.
+  - generic [ref=f60e47]:
+    - heading "Why book with amber What every booking comes with." [level=2] [ref=f60e49]: Why book with amberWhat every booking comes with.
+    - list [ref=f60e50]:
+      - listitem [ref=f60e51]:
+        - heading "Instant & Easy Bookings" [level=3] [ref=f60e60]
+        - paragraph [ref=f60e61]: Time is money. Save both when you book with us.
+      - listitem [ref=f60e62]:
+        - heading "Lowest Price Guarantee" [level=3] [ref=f60e75]
+        - paragraph [ref=f60e76]: Find a lower price and we'll match it. No questions asked.
+      - listitem [ref=f60e77]:
+        - heading "24x7 Assistance" [level=3] [ref=f60e86]
+        - paragraph [ref=f60e87]: If you have a doubt or a query, we're always a call away.
+      - listitem [ref=f60e88]:
+        - heading "100% Verified Listings" [level=3] [ref=f60e97]
+        - paragraph [ref=f60e98]: We promise to deliver what you see on the website.
+  - generic [ref=f60e102]:
+    - generic [ref=f60e103]: amber © 2026. All rights reserved.
+    - generic [ref=f60e106] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f60e107]:
+      - generic [ref=f60e108]:
+        - generic [ref=f60e109]: Get the app
+        - generic [ref=f60e110]:
+          - link [ref=f60e111] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f60e112] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f60e114]: Payment Options
+    - generic [ref=f60e117]:
+      - button [ref=f60e119] [cursor=pointer]
+      - button [ref=f60e125] [cursor=pointer]
+      - button [ref=f60e131] [cursor=pointer]
+      - button [ref=f60e137] [cursor=pointer]

@@ -1,0 +1,10 @@
+Use case: photorealistic-natural
+Asset type: website property gallery studio image
+Primary request: self-contained UK student studio showing bed, desk and compact private kitchenette in one honest wide view
+Scene/backdrop: modern but space-efficient student studio
+Subject: room only, no people
+Style/medium: natural editorial accommodation photography, true-to-life
+Composition/framing: wide landscape, clearly show kitchenette separation and usable floor area
+Lighting/mood: warm daylight, quiet and studious
+Color palette: warm stone, walnut, navy, terracotta accent
+Constraints: no logos, no text, no watermark, avoid distorted architecture

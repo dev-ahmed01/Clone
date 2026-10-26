@@ -1,0 +1,199 @@
+- generic [ref=f57e4]:
+  - navigation [ref=f57e5]:
+    - link [ref=f57e6] [cursor=pointer]:
+      - /url: /
+    - button "Open menu" [ref=f57e8] [cursor=pointer]
+  - generic [ref=f57e11]:
+    - heading "Become an amber ambassador" [level=1] [ref=f57e12]: Become anamber ambassador
+    - generic [ref=f57e13]:
+      - paragraph [ref=f57e14]: Connect with students worldwide, grow your personal brand, and earn exciting rewards while studying abroad.
+      - link "Join the ambertribe" [ref=f57e15] [cursor=pointer]:
+        - /url: https://form.typeform.com/to/apa5FqDW?typeform-source=amberstudent.com
+  - region "Ambassador reels" [ref=f57e16]:
+    - generic [ref=f57e18]:
+      - link "Watch @rclangeline's reel on Instagram" [ref=f57e19] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DbqEByAx21z/
+        - generic [ref=f57e22]:
+          - generic [ref=f57e23]: "@rclangeline"
+          - generic [ref=f57e24]: 2K followers
+      - link "Watch @mr_kenling's reel on Instagram" [ref=f57e25] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DaqPIU0h3X4/
+        - generic [ref=f57e28]:
+          - generic [ref=f57e29]: "@mr_kenling"
+          - generic [ref=f57e30]: 3K followers
+      - link "Watch @rclangeline's reel on Instagram" [ref=f57e31] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DasCMPcRDG3/
+        - generic [ref=f57e34]:
+          - generic [ref=f57e35]: "@rclangeline"
+          - generic [ref=f57e36]: 2K followers
+      - link "Watch @damolaa_x's reel on Instagram" [ref=f57e37] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DadsqvEpquc/
+        - generic [ref=f57e40]:
+          - generic [ref=f57e41]: "@damolaa_x"
+          - generic [ref=f57e42]: 98K followers
+      - link "Watch @itsmeameliaa._'s reel on Instagram" [ref=f57e43] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DaQFFNNvA2M/
+        - generic [ref=f57e46]:
+          - generic [ref=f57e47]: "@itsmeameliaa._"
+          - generic [ref=f57e48]: 4K followers
+      - link "Watch @pretty.ay0_'s reel on Instagram" [ref=f57e49] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DZNCO75I2K4/
+        - generic [ref=f57e52]:
+          - generic [ref=f57e53]: "@pretty.ay0_"
+          - generic [ref=f57e54]: 1K followers
+      - link "Watch @boss_ellarh's reel on Instagram" [ref=f57e55] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DZMdratIIBP/
+        - generic [ref=f57e58]:
+          - generic [ref=f57e59]: "@boss_ellarh"
+          - generic [ref=f57e60]: 3K followers
+      - link "Watch @dabrien3's reel on Instagram" [ref=f57e61] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DXl1d0TjGsi/
+        - generic [ref=f57e64]:
+          - generic [ref=f57e65]: "@dabrien3"
+          - generic [ref=f57e66]: 9,659 followers
+      - link [aria-hidden] [ref=f57e67] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DbqEByAx21z/
+        - generic [ref=f57e70]:
+          - generic [ref=f57e71]: "@rclangeline"
+          - generic [ref=f57e72]: 2K followers
+      - link [aria-hidden] [ref=f57e73] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DaqPIU0h3X4/
+        - generic [ref=f57e76]:
+          - generic [ref=f57e77]: "@mr_kenling"
+          - generic [ref=f57e78]: 3K followers
+      - link [aria-hidden] [ref=f57e79] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DasCMPcRDG3/
+        - generic [ref=f57e82]:
+          - generic [ref=f57e83]: "@rclangeline"
+          - generic [ref=f57e84]: 2K followers
+      - link [aria-hidden] [ref=f57e85] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DadsqvEpquc/
+        - generic [ref=f57e88]:
+          - generic [ref=f57e89]: "@damolaa_x"
+          - generic [ref=f57e90]: 98K followers
+      - link [aria-hidden] [ref=f57e91] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DaQFFNNvA2M/
+        - generic [ref=f57e94]:
+          - generic [ref=f57e95]: "@itsmeameliaa._"
+          - generic [ref=f57e96]: 4K followers
+      - link [aria-hidden] [ref=f57e97] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DZNCO75I2K4/
+        - generic [ref=f57e100]:
+          - generic [ref=f57e101]: "@pretty.ay0_"
+          - generic [ref=f57e102]: 1K followers
+      - link [aria-hidden] [ref=f57e103] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DZMdratIIBP/
+        - generic [ref=f57e106]:
+          - generic [ref=f57e107]: "@boss_ellarh"
+          - generic [ref=f57e108]: 3K followers
+      - link [aria-hidden] [ref=f57e109] [cursor=pointer]:
+        - /url: https://www.instagram.com/reel/DXl1d0TjGsi/
+        - generic [ref=f57e112]:
+          - generic [ref=f57e113]: "@dabrien3"
+          - generic [ref=f57e114]: 9,659 followers
+  - generic [ref=f57e116]:
+    - generic [ref=f57e117]:
+      - heading "Why should you join" [level=2] [ref=f57e118]
+      - paragraph [ref=f57e119]: We're looking for talented and dedicated individuals to add to our campus ambassador program.
+    - generic [ref=f57e120]:
+      - list [ref=f57e121]:
+        - listitem [ref=f57e122]:
+          - heading "Earn" [level=3] [ref=f57e130]
+          - paragraph [ref=f57e131]: Get paid for property tours, reviews and campus campaigns — plus exclusive amber goodies.
+        - listitem [ref=f57e132]:
+          - heading "Jobs" [level=3] [ref=f57e144]
+          - paragraph [ref=f57e145]: Real, documented work experience on your CV, not a line about a society.
+        - listitem [ref=f57e146]:
+          - heading "Personal brand" [level=3] [ref=f57e160]
+          - paragraph [ref=f57e161]: Be the face of amber on your campus while building an audience of your own.
+      - generic [ref=f57e165]:
+        - generic [ref=f57e166]: Ambassadors
+        - list [ref=f57e167]:
+          - listitem [ref=f57e168]:
+            - generic [ref=f57e169]: "@rclangeline"
+            - generic [ref=f57e170]: 2K
+          - listitem [ref=f57e171]:
+            - generic [ref=f57e172]: "@damolaa_x"
+            - generic [ref=f57e173]: 98K
+          - listitem [ref=f57e174]:
+            - generic [ref=f57e175]: "@itsmeameliaa._"
+            - generic [ref=f57e176]: 4K
+          - listitem [ref=f57e177]:
+            - generic [ref=f57e178]: "@mr_kenling"
+            - generic [ref=f57e179]: 3K
+          - listitem [ref=f57e180]:
+            - generic [ref=f57e181]: "@dabrien3"
+            - generic [ref=f57e182]: 9,659
+      - list [ref=f57e183]:
+        - listitem [ref=f57e184]:
+          - heading "Upskill" [level=3] [ref=f57e199]
+          - paragraph [ref=f57e200]: Hands-on practice in PR, marketing and content — campaigns, reels and property reviews.
+        - listitem [ref=f57e201]:
+          - heading "Hustle" [level=3] [ref=f57e225]
+          - paragraph [ref=f57e226]: Work directly with amber's leadership on live projects, with real briefs and deadlines.
+        - listitem [ref=f57e227]:
+          - heading "Network" [level=3] [ref=f57e239]
+          - paragraph [ref=f57e240]: Meet students from every background, plus ambassadors across dozens of campuses.
+  - generic [ref=f57e242]:
+    - generic [ref=f57e243]:
+      - heading "Join in 3 easy steps" [level=2] [ref=f57e244]
+      - paragraph [ref=f57e245]: Here's how to join amber's campus ambassador program
+    - generic [ref=f57e248]:
+      - generic [ref=f57e249]:
+        - generic [ref=f57e250]: "1"
+        - generic [ref=f57e251]: Enroll
+        - generic [ref=f57e252]: Sign up and join amber's student ambassador program
+      - generic [ref=f57e253]:
+        - generic [ref=f57e254]: "2"
+        - generic [ref=f57e255]: Engage
+        - generic [ref=f57e256]: Talk about amber in your circle
+      - generic [ref=f57e257]:
+        - generic [ref=f57e258]: "3"
+        - generic [ref=f57e259]: Expand
+        - generic [ref=f57e260]: Grow your network and net-worth
+  - generic [ref=f57e262]:
+    - generic [ref=f57e263]:
+      - heading "Words from our ambassadors" [level=2] [ref=f57e264]
+      - paragraph [ref=f57e265]: Discover how ambassadors grow with us
+    - list [ref=f57e266]:
+      - listitem [ref=f57e267]:
+        - paragraph [ref=f57e269]: What I love most is talking with students from different backgrounds and hearing how they found their university and their accommodation. Travelling for work and meeting new people along the way has helped me grow personally and professionally.
+        - generic [ref=f57e271]:
+          - generic [ref=f57e272]: Shivali Choyal
+          - generic [ref=f57e273]: University of Strathclyde
+      - listitem [ref=f57e274]:
+        - paragraph [ref=f57e276]: My favourite part is doing property tours and helping students find a place that feels right for them. I went through the whole process of moving into student accommodation myself, so being able to share that and make the decision less overwhelming for someone else feels really good.
+        - generic [ref=f57e278]:
+          - generic [ref=f57e279]: Anshi Agarwala
+          - generic [ref=f57e280]: Adelaide University
+      - listitem [ref=f57e281]:
+        - paragraph [ref=f57e283]: The work never feels repetitive — visiting properties, speaking to students, collecting reviews, and seeing it turn into paid opportunities alongside university. Staying on the ambassador leaderboard since I joined has been a highlight.
+        - generic [ref=f57e285]:
+          - generic [ref=f57e286]: Simran Panda
+          - generic [ref=f57e287]: University of Birmingham
+  - generic [ref=f57e288]:
+    - generic [ref=f57e295]:
+      - heading "Ready to be an ambassador?" [level=2] [ref=f57e296]
+      - paragraph [ref=f57e297]: Simplify moving and studying abroad for students like you.
+    - link "Join the ambertribe" [ref=f57e299] [cursor=pointer]:
+      - /url: https://form.typeform.com/to/apa5FqDW?typeform-source=amberstudent.com
+  - generic [ref=f57e303]:
+    - generic [ref=f57e304]: amber © 2026. All rights reserved.
+    - generic [ref=f57e307] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f57e308]:
+      - generic [ref=f57e309]:
+        - generic [ref=f57e310]: Get the app
+        - generic [ref=f57e311]:
+          - link [ref=f57e312] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f57e313] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f57e315]: Payment Options
+    - generic [ref=f57e318]:
+      - button [ref=f57e320] [cursor=pointer]
+      - button [ref=f57e326] [cursor=pointer]
+      - button [ref=f57e332] [cursor=pointer]
+      - button [ref=f57e338] [cursor=pointer]

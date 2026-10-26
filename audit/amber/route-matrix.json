@@ -1,0 +1,605 @@
+[
+  {
+    "buttons": 7,
+    "forms": 0,
+    "h1": [
+      "About Us"
+    ],
+    "h2": [],
+    "images": 9,
+    "links": 29,
+    "name": "about",
+    "path": "/about",
+    "scroll": {
+      "height": 3067,
+      "width": 1265
+    },
+    "title": "About Us | Amber",
+    "url": "https://amberstudent.com/about",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 1,
+    "forms": 0,
+    "h1": [
+      "Understand how\namber\nactually works."
+    ],
+    "h2": [
+      "From search to keys\nThree steps, no surprises.",
+      "Why book with amber\nWhat every booking comes with."
+    ],
+    "images": 21,
+    "links": 36,
+    "name": "how-it-works",
+    "path": "/how-it-works",
+    "scroll": {
+      "height": 3747,
+      "width": 1265
+    },
+    "title": "How It Works | amber",
+    "url": "https://amberstudent.com/how-it-works",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 2,
+    "forms": 0,
+    "h1": [
+      "Refer a friend, and you both get £50 each"
+    ],
+    "h2": [
+      "Referring is as easy as 1,2,3",
+      "Terms and Conditions"
+    ],
+    "images": 22,
+    "links": 35,
+    "name": "referral",
+    "path": "/referral-programme",
+    "scroll": {
+      "height": 1700,
+      "width": 1265
+    },
+    "title": "Unlock Rewards with Amber’s Referral Programme - Refer and Earn Today!",
+    "url": "https://amberstudent.com/referral-programme",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 1,
+    "forms": 0,
+    "h1": [
+      "Friends who book together\nsave \n£\n400\n together"
+    ],
+    "h2": [
+      "It’s easy to book with group"
+    ],
+    "images": 24,
+    "links": 37,
+    "name": "group-booking",
+    "path": "/group-booking",
+    "scroll": {
+      "height": 1910,
+      "width": 1265
+    },
+    "title": "Group Booking | amber",
+    "url": "https://amberstudent.com/group-booking",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 18,
+    "forms": 0,
+    "h1": [
+      "Fill your \nrooms,\nnot your inbox."
+    ],
+    "h2": [
+      "Global reach\nbuilt for bookings",
+      "What you get when you list",
+      "Listing with amber in 3 easy steps",
+      "Tools to manage your property",
+      "Who we work with",
+      "What our partners say",
+      "How partnerships pay off",
+      "Frequently asked questions",
+      "Sign up now with amber"
+    ],
+    "images": 79,
+    "links": 39,
+    "name": "list-with-us",
+    "path": "/list",
+    "scroll": {
+      "height": 8677,
+      "width": 1265
+    },
+    "title": "List your property with amber | amber",
+    "url": "https://amberstudent.com/list",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "partner",
+    "path": "/partner",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "Amber Flex",
+    "url": "https://amberstudent.com/partner",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 12,
+    "forms": 0,
+    "h1": [
+      "amber HE Partnerships",
+      "Want to learn more?"
+    ],
+    "h2": [
+      "Contact us",
+      "Meet",
+      "Build & Deliver Solution",
+      "Frequently Asked Questions (FAQs)"
+    ],
+    "images": 47,
+    "links": 25,
+    "name": "university-partnerships",
+    "path": "/university-partnerships",
+    "scroll": {
+      "height": 800,
+      "width": 1265
+    },
+    "title": "Partner with amber",
+    "url": "https://amberstudent.com/university-partnerships",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 24,
+    "forms": 0,
+    "h1": [
+      "Help millions find their place.\nFind yours with us."
+    ],
+    "h2": [
+      "A team creating tremendous value",
+      "Because a good job should feel good too",
+      "Our operating principles",
+      "Meet the people behind amber",
+      "Life at amber",
+      "Frequently asked questions",
+      "Come join the amber crew."
+    ],
+    "images": 187,
+    "links": 39,
+    "name": "career",
+    "path": "/career",
+    "scroll": {
+      "height": 8692,
+      "width": 1265
+    },
+    "title": "Careers | amber",
+    "url": "https://amberstudent.com/career",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 1,
+    "forms": 0,
+    "h1": [
+      "Conversations that shape better student living"
+    ],
+    "h2": [
+      "LATEST EPISODES",
+      "About the Blueprint",
+      "What our listeners say"
+    ],
+    "images": 27,
+    "links": 42,
+    "name": "podcast",
+    "path": "/podcast",
+    "scroll": {
+      "height": 3066,
+      "width": 1265
+    },
+    "title": "The Blueprint Podcast series by amber",
+    "url": "https://amberstudent.com/podcast",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 9,
+    "forms": 1,
+    "h1": [
+      "Chinese Students Top the UK Intake as Other Markets Shrink",
+      "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update",
+      "US Maintains Soft Power Lead in HEPI Index, UK Ranks Second",
+      "Chinese Students Top the UK Intake as Other Markets Shrink",
+      "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update"
+    ],
+    "h2": [
+      "Read From Thousands Of News",
+      "Amber Reports",
+      "Amber Radar",
+      "Partner With Us",
+      "List With Us"
+    ],
+    "images": 56,
+    "links": 68,
+    "name": "news",
+    "path": "/news",
+    "scroll": {
+      "height": 4443,
+      "width": 1265
+    },
+    "title": "Amber News - Student Housing News, Updates & Insights",
+    "url": "https://amberstudent.com/news",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 1,
+    "forms": 0,
+    "h1": [],
+    "h2": [
+      "Australia's Big. Your Budget's Not.",
+      "40% off (3 months of savings)",
+      "Your AI Study Buddy for Life Abroad",
+      "Practice Smarter. Interview with Confidence.",
+      "Affordable flights, booked at short notice.",
+      "Get the Right Education Loan Faster",
+      "Get 100GB data for only £10 a month",
+      "50% off your first Degusta Box!",
+      "Move Money Globally with Ease",
+      "Travel connected, without the roaming fees.",
+      "Abroad and unlimited, from day one.",
+      "Up to $251 across 8 HelloFresh boxes!"
+    ],
+    "images": 391,
+    "links": 32,
+    "name": "plus",
+    "path": "/plus",
+    "scroll": {
+      "height": 3785,
+      "width": 50445
+    },
+    "title": "Explore Student Services With Benefits And Perks With Amber+",
+    "url": "https://amberstudent.com/plus",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 1,
+    "forms": 0,
+    "h1": [
+      "Our presence\n by your observance"
+    ],
+    "h2": [],
+    "images": 28,
+    "links": 36,
+    "name": "media",
+    "path": "/media",
+    "scroll": {
+      "height": 2111,
+      "width": 1265
+    },
+    "title": "Media Mentions | Amber",
+    "url": "https://amberstudent.com/media",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 1,
+    "forms": 0,
+    "h1": [
+      "Become an\namber ambassador"
+    ],
+    "h2": [
+      "Why should you join",
+      "Join in 3 easy steps",
+      "Words from our ambassadors",
+      "Ready to be an ambassador?"
+    ],
+    "images": 57,
+    "links": 54,
+    "name": "ambassador",
+    "path": "/ambassador",
+    "scroll": {
+      "height": 3790,
+      "width": 1265
+    },
+    "title": "amber Ambassador | amber",
+    "url": "https://amberstudent.com/ambassador",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "scholarship",
+    "path": "/scholarship",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/scholarship",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "exams",
+    "path": "/exams",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/exams",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "help",
+    "path": "/help",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/help",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "contact",
+    "path": "/contact",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/contact",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "terms",
+    "path": "/terms",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/terms",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "privacy",
+    "path": "/privacy",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/privacy",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "plus-kit",
+    "path": "/plus-cross/kit",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/plus-cross/kit",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 0,
+    "forms": 0,
+    "h1": [],
+    "h2": [],
+    "images": 0,
+    "links": 0,
+    "name": "sitemap",
+    "path": "/sitemap",
+    "scroll": {
+      "height": 800,
+      "width": 1280
+    },
+    "title": "",
+    "url": "https://amberstudent.com/sitemap",
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    },
+    "ok": true,
+    "rendered": false,
+    "verification": "URL loaded but rendered DOM was empty in the audit session"
+  },
+  {
+    "buttons": 2,
+    "forms": 1,
+    "h1": [
+      "Chinese Students Top the UK Intake as Other Markets Shrink"
+    ],
+    "h2": [
+      "Domestic Pressure Drives Outbound Mobility",
+      "Employability Sits At The Centre Of The Decision",
+      "Industrial Policy Now Shapes Subject Demand",
+      "Asia Absorbs Chinese Students The Big Four Miss",
+      "How Chinese Students Search And Decide",
+      "Onshore Chinese Provision May Pose Challenges",
+      "Chinese Student Mobility And UK Housing",
+      "What’s Next?"
+    ],
+    "images": 19,
+    "links": 28,
+    "name": "news-article",
+    "ok": true,
+    "path": "/news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink",
+    "scroll": {
+      "height": 9995,
+      "width": 375
+    },
+    "title": "Chinese Students Top the UK Intake as Other Markets Shrink",
+    "url": "https://amberstudent.com/news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "rendered": true,
+    "verification": "rendered DOM observed"
+  }
+]

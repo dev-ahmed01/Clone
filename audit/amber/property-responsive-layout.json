@@ -1,0 +1,973 @@
+[
+  {
+    "name": "1440x900",
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\property-iq-vega-1440x900.jpg",
+    "elements": [
+      {
+        "display": "block",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "relative",
+        "rect": {
+          "height": 420,
+          "width": 635,
+          "x": 57,
+          "y": 116
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "width": 573,
+          "x": -547,
+          "y": 117
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 420,
+          "width": 635,
+          "x": 57,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "width": 428,
+          "x": 716,
+          "y": 117
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 420,
+          "width": 635,
+          "x": 176679,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 95,
+          "x": 57,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "Photos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 94,
+          "x": 164,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "Videos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 110,
+          "x": 270,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "3D Views"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 115,
+          "x": 392,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "Map View"
+      },
+      {
+        "display": "block",
+        "fontSize": "24px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 34,
+          "width": 287,
+          "x": 57,
+          "y": 604
+        },
+        "tag": "h1",
+        "text": "iQ Vega, London"
+      },
+      {
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "1px 10px 1px 0px",
+        "position": "static",
+        "rect": {
+          "height": 32,
+          "width": 61,
+          "x": 727,
+          "y": 797
+        },
+        "tag": "button",
+        "text": "View All"
+      },
+      {
+        "display": "block",
+        "fontSize": "18px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 33,
+          "width": 53,
+          "x": 57,
+          "y": 878
+        },
+        "tag": "h2",
+        "text": "Offers"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 391,
+          "x": 977,
+          "y": 147
+        },
+        "tag": "button",
+        "text": "View Rooms"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 391,
+          "x": 977,
+          "y": 207
+        },
+        "tag": "button",
+        "text": "Enquire Now"
+      },
+      {
+        "display": "flex",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "fixed",
+        "rect": {
+          "height": 70,
+          "width": 70,
+          "x": 1355,
+          "y": 830
+        },
+        "tag": "button",
+        "text": "Open chat"
+      }
+    ],
+    "scroll": {
+      "height": 15567,
+      "width": 1425
+    },
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  {
+    "name": "1280x800",
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\property-iq-vega-1280x800.jpg",
+    "elements": [
+      {
+        "display": "block",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "relative",
+        "rect": {
+          "height": 420,
+          "width": 555,
+          "x": 57,
+          "y": 116
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 418,
+          "width": 553,
+          "x": -497,
+          "y": 117
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 420,
+          "width": 555,
+          "x": 57,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "width": 428,
+          "x": 636,
+          "y": 117
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 420,
+          "width": 555,
+          "x": 154439,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 95,
+          "x": 57,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "Photos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 94,
+          "x": 164,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "Videos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 110,
+          "x": 270,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "3D Views"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 115,
+          "x": 392,
+          "y": 552
+        },
+        "tag": "button",
+        "text": "Map View"
+      },
+      {
+        "display": "block",
+        "fontSize": "24px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 34,
+          "width": 287,
+          "x": 57,
+          "y": 604
+        },
+        "tag": "h1",
+        "text": "iQ Vega, London"
+      },
+      {
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "1px 10px 1px 0px",
+        "position": "static",
+        "rect": {
+          "height": 32,
+          "width": 61,
+          "x": 727,
+          "y": 797
+        },
+        "tag": "button",
+        "text": "View All"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 338,
+          "x": 870,
+          "y": 147
+        },
+        "tag": "button",
+        "text": "View Rooms"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 338,
+          "x": 870,
+          "y": 207
+        },
+        "tag": "button",
+        "text": "Enquire Now"
+      },
+      {
+        "display": "flex",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "fixed",
+        "rect": {
+          "height": 70,
+          "width": 70,
+          "x": 1195,
+          "y": 730
+        },
+        "tag": "button",
+        "text": "Open chat"
+      }
+    ],
+    "scroll": {
+      "height": 15627,
+      "width": 1265
+    },
+    "viewport": {
+      "height": 800,
+      "width": 1280
+    }
+  },
+  {
+    "name": "390x844",
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\property-iq-vega-390x844.jpg",
+    "elements": [
+      {
+        "display": "block",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "relative",
+        "rect": {
+          "height": 164,
+          "width": 309,
+          "x": 33,
+          "y": 116
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 164,
+          "width": 309,
+          "x": -277,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 164,
+          "width": 309,
+          "x": 33,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "width": 413,
+          "x": 365,
+          "y": 117
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 164,
+          "width": 309,
+          "x": 86027,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 95,
+          "x": 33,
+          "y": 374
+        },
+        "tag": "button",
+        "text": "Photos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 94,
+          "x": 140,
+          "y": 374
+        },
+        "tag": "button",
+        "text": "Videos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 110,
+          "x": 246,
+          "y": 374
+        },
+        "tag": "button",
+        "text": "3D Views"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 115,
+          "x": 368,
+          "y": 374
+        },
+        "tag": "button",
+        "text": "Map View"
+      },
+      {
+        "display": "block",
+        "fontSize": "24px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 34,
+          "width": 231,
+          "x": 33,
+          "y": 426
+        },
+        "tag": "h1",
+        "text": "iQ Vega, London"
+      },
+      {
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "1px 10px 1px 0px",
+        "position": "static",
+        "rect": {
+          "height": 22,
+          "width": 61,
+          "x": 597,
+          "y": 603
+        },
+        "tag": "button",
+        "text": "View All"
+      },
+      {
+        "display": "block",
+        "fontSize": "15px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 28,
+          "width": 44,
+          "x": 40,
+          "y": 682
+        },
+        "tag": "h2",
+        "text": "Offers"
+      },
+      {
+        "display": "flex",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "16px 24px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 52,
+          "x": 16,
+          "y": 780
+        },
+        "tag": "button",
+        "text": ""
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 136,
+          "x": 76,
+          "y": 780
+        },
+        "tag": "button",
+        "text": "View Rooms"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 138,
+          "x": 220,
+          "y": 780
+        },
+        "tag": "button",
+        "text": "Enquire Now"
+      },
+      {
+        "display": "flex",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "fixed",
+        "rect": {
+          "height": 70,
+          "width": 70,
+          "x": 305,
+          "y": 774
+        },
+        "tag": "button",
+        "text": "Open chat"
+      }
+    ],
+    "scroll": {
+      "height": 18414,
+      "width": 451
+    },
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  {
+    "name": "360x800",
+    "screenshot": "C:\\Users\\Admin\\Desktop\\Clone\\audit\\amber\\screenshots\\property-iq-vega-360x800.jpg",
+    "elements": [
+      {
+        "display": "block",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "relative",
+        "rect": {
+          "height": 151,
+          "width": 279,
+          "x": 33,
+          "y": 116
+        },
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 151,
+          "width": 279,
+          "x": -247,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 151,
+          "width": 279,
+          "x": 33,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "width": 413,
+          "x": 335,
+          "y": 117
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "inline",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 151,
+          "width": 279,
+          "x": 77687,
+          "y": 116
+        },
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 95,
+          "x": 33,
+          "y": 355
+        },
+        "tag": "button",
+        "text": "Photos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 94,
+          "x": 140,
+          "y": 355
+        },
+        "tag": "button",
+        "text": "Videos"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 110,
+          "x": 246,
+          "y": 355
+        },
+        "tag": "button",
+        "text": "3D Views"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "8px",
+        "padding": "8px 12px",
+        "position": "static",
+        "rect": {
+          "height": 36,
+          "width": 115,
+          "x": 368,
+          "y": 355
+        },
+        "tag": "button",
+        "text": "Map View"
+      },
+      {
+        "display": "block",
+        "fontSize": "24px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 34,
+          "width": 201,
+          "x": 33,
+          "y": 407
+        },
+        "tag": "h1",
+        "text": "iQ Vega, London"
+      },
+      {
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "1px 10px 1px 0px",
+        "position": "static",
+        "rect": {
+          "height": 22,
+          "width": 61,
+          "x": 597,
+          "y": 584
+        },
+        "tag": "button",
+        "text": "View All"
+      },
+      {
+        "display": "block",
+        "fontSize": "15px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "static",
+        "rect": {
+          "height": 28,
+          "width": 44,
+          "x": 40,
+          "y": 663
+        },
+        "tag": "h2",
+        "text": "Offers"
+      },
+      {
+        "display": "flex",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "16px 24px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 52,
+          "x": 16,
+          "y": 736
+        },
+        "tag": "button",
+        "text": ""
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 121,
+          "x": 76,
+          "y": 736
+        },
+        "tag": "button",
+        "text": "View Rooms"
+      },
+      {
+        "display": "flex",
+        "fontSize": "14px",
+        "gap": "normal",
+        "padding": "16px",
+        "position": "relative",
+        "rect": {
+          "height": 48,
+          "width": 123,
+          "x": 205,
+          "y": 736
+        },
+        "tag": "button",
+        "text": "Enquire Now"
+      },
+      {
+        "display": "flex",
+        "fontSize": "16px",
+        "gap": "normal",
+        "padding": "0px",
+        "position": "fixed",
+        "rect": {
+          "height": 70,
+          "width": 70,
+          "x": 275,
+          "y": 730
+        },
+        "tag": "button",
+        "text": "Open chat"
+      }
+    ],
+    "scroll": {
+      "height": 19113,
+      "width": 451
+    },
+    "viewport": {
+      "height": 800,
+      "width": 360
+    }
+  }
+]

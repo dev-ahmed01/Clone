@@ -1,0 +1,485 @@
+- generic [ref=f66e3]:
+  - generic [ref=f66e4]:
+    - link "home" [ref=f66e6] [cursor=pointer]:
+      - /url: /news
+    - generic [ref=f66e7]:
+      - button "Search News" [ref=f66e8]
+      - button "menu" [ref=f66e14]
+  - generic [ref=f66e18]:
+    - generic [ref=f66e19]:
+      - generic [ref=f66e21]:
+        - generic [ref=f66e22]:
+          - link "Global News 8 mins · Sep 22, 2026 Chinese Students Top the UK Intake as Other Markets Shrink China regained first place in the UK's international intake in the 12 month... 1/3" [ref=f66e24] [cursor=pointer]:
+            - /url: /news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink
+            - generic [ref=f66e26]:
+              - generic [ref=f66e27]:
+                - generic [ref=f66e28]: Global News
+                - generic [ref=f66e29]:
+                  - generic [ref=f66e30]: 8 mins
+                  - generic [ref=f66e31]: ·
+                  - generic [ref=f66e32]: Sep 22, 2026
+              - heading "Chinese Students Top the UK Intake as Other Markets Shrink" [level=1] [ref=f66e33]
+              - paragraph [ref=f66e34]: China regained first place in the UK's international intake in the 12 month...
+              - generic [ref=f66e35]: 1/3
+          - 'link "UK News 8 min read · Sep 30, 2026 Demand Declines Eased, Occupancy Neared 92%: September 2026 Update Every month amberRadar tracks student housing demand, pricing and occupancy... 1/3" [ref=f66e42] [cursor=pointer]':
+            - /url: /news/post/demand-declines-eased-occupancy-climbed-september-2026-update
+            - generic [ref=f66e44]:
+              - generic [ref=f66e45]:
+                - generic [ref=f66e46]: UK News
+                - generic [ref=f66e47]:
+                  - generic [ref=f66e48]: 8 min read
+                  - generic [ref=f66e49]: ·
+                  - generic [ref=f66e50]: Sep 30, 2026
+              - 'heading "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update" [level=1] [ref=f66e51]'
+              - paragraph [ref=f66e52]: Every month amberRadar tracks student housing demand, pricing and occupancy...
+              - generic [ref=f66e53]: 1/3
+          - link "UK News 5 mins · Sep 30, 2026 US Maintains Soft Power Lead in HEPI Index, UK Ranks Second Key Highlights:The 2026 Soft Power Index report published by the Higher Edu... 1/3" [ref=f66e60] [cursor=pointer]:
+            - /url: /news/post/us-maintains-soft-power-lead-in-hepi-index-uk-ranks-second
+            - generic [ref=f66e62]:
+              - generic [ref=f66e63]:
+                - generic [ref=f66e64]: UK News
+                - generic [ref=f66e65]:
+                  - generic [ref=f66e66]: 5 mins
+                  - generic [ref=f66e67]: ·
+                  - generic [ref=f66e68]: Sep 30, 2026
+              - heading "US Maintains Soft Power Lead in HEPI Index, UK Ranks Second" [level=1] [ref=f66e69]
+              - paragraph [ref=f66e70]: Key Highlights:The 2026 Soft Power Index report published by the Higher Edu...
+              - generic [ref=f66e71]: 1/3
+          - link "Global News 8 mins · Sep 22, 2026 Chinese Students Top the UK Intake as Other Markets Shrink China regained first place in the UK's international intake in the 12 month... 1/3" [ref=f66e78] [cursor=pointer]:
+            - /url: /news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink
+            - generic [ref=f66e80]:
+              - generic [ref=f66e81]:
+                - generic [ref=f66e82]: Global News
+                - generic [ref=f66e83]:
+                  - generic [ref=f66e84]: 8 mins
+                  - generic [ref=f66e85]: ·
+                  - generic [ref=f66e86]: Sep 22, 2026
+              - heading "Chinese Students Top the UK Intake as Other Markets Shrink" [level=1] [ref=f66e87]
+              - paragraph [ref=f66e88]: China regained first place in the UK's international intake in the 12 month...
+              - generic [ref=f66e89]: 1/3
+          - 'link "UK News 8 min read · Sep 30, 2026 Demand Declines Eased, Occupancy Neared 92%: September 2026 Update Every month amberRadar tracks student housing demand, pricing and occupancy... 1/3" [ref=f66e96] [cursor=pointer]':
+            - /url: /news/post/demand-declines-eased-occupancy-climbed-september-2026-update
+            - generic [ref=f66e98]:
+              - generic [ref=f66e99]:
+                - generic [ref=f66e100]: UK News
+                - generic [ref=f66e101]:
+                  - generic [ref=f66e102]: 8 min read
+                  - generic [ref=f66e103]: ·
+                  - generic [ref=f66e104]: Sep 30, 2026
+              - 'heading "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update" [level=1] [ref=f66e105]'
+              - paragraph [ref=f66e106]: Every month amberRadar tracks student housing demand, pricing and occupancy...
+              - generic [ref=f66e107]: 1/3
+        - generic:
+          - img [ref=f66e113] [cursor=pointer]
+          - img [ref=f66e115] [cursor=pointer]
+      - generic [ref=f66e118]:
+        - generic [ref=f66e119]:
+          - heading "Read From Thousands Of News" [level=2] [ref=f66e120]
+          - paragraph [ref=f66e121]: Explore Thousands of News Covering Every Topic You Could Imagine
+        - generic [ref=f66e122]:
+          - button "Latest" [ref=f66e123] [cursor=pointer]
+          - button "Canada News" [ref=f66e125] [cursor=pointer]
+          - button "European News" [ref=f66e127] [cursor=pointer]
+          - button "Industry News" [ref=f66e129] [cursor=pointer]
+          - button [ref=f66e132]:
+            - button "More" [ref=f66e133] [cursor=pointer]
+        - generic [ref=f66e139]:
+          - generic [ref=f66e140]:
+            - link "Asia & Australia News 6 mins · Oct 21, 2026 Australia Passes Universities Accord Bill, Reforms Funding System" [ref=f66e141] [cursor=pointer]:
+              - /url: /news/post/australia-passes-universities-accord-bill-reforms-funding-system
+              - generic [ref=f66e143]:
+                - generic [ref=f66e144]:
+                  - generic [ref=f66e145]: Asia & Australia News
+                  - generic [ref=f66e146]:
+                    - generic [ref=f66e147]: 6 mins
+                    - generic [ref=f66e148]: ·
+                    - generic [ref=f66e149]: Oct 21, 2026
+                - heading "Australia Passes Universities Accord Bill, Reforms Funding System" [level=3] [ref=f66e150]
+            - link "Amber Radar 6 min read · Oct 15, 2026 amberRadar Student Mobility & Higher Education News Roundup | 16th Sept-15th Oct" [ref=f66e151] [cursor=pointer]:
+              - /url: /news/amberradar/amberradar-student-mobility-higher-education-news-roundup-16th-sept-15th-oct-2026
+              - generic [ref=f66e153]:
+                - generic [ref=f66e154]:
+                  - generic [ref=f66e155]: Amber Radar
+                  - generic [ref=f66e156]:
+                    - generic [ref=f66e157]: 6 min read
+                    - generic [ref=f66e158]: ·
+                    - generic [ref=f66e159]: Oct 15, 2026
+                - heading "amberRadar Student Mobility & Higher Education News Roundup | 16th Sept-15th Oct" [level=3] [ref=f66e160]
+            - link "UK News 6 mins · Oct 14, 2026 Unite Group Reiterates Outlook Despite Q3 Portfolio Valuation Dip" [ref=f66e161] [cursor=pointer]:
+              - /url: /news/post/unite-group-reiterates-outlook-despite-q3-portfolio-valuation-dip
+              - generic [ref=f66e163]:
+                - generic [ref=f66e164]:
+                  - generic [ref=f66e165]: UK News
+                  - generic [ref=f66e166]:
+                    - generic [ref=f66e167]: 6 mins
+                    - generic [ref=f66e168]: ·
+                    - generic [ref=f66e169]: Oct 14, 2026
+                - heading "Unite Group Reiterates Outlook Despite Q3 Portfolio Valuation Dip" [level=3] [ref=f66e170]
+            - link "USA News 6 mins · Oct 13, 2026 DHS Proposes US$70,000 OPT Fee; Draws Legal Concerns" [ref=f66e171] [cursor=pointer]:
+              - /url: /news/post/dhs-us-opt-fee-proposal-draws-legal-concerns
+              - generic [ref=f66e173]:
+                - generic [ref=f66e174]:
+                  - generic [ref=f66e175]: USA News
+                  - generic [ref=f66e176]:
+                    - generic [ref=f66e177]: 6 mins
+                    - generic [ref=f66e178]: ·
+                    - generic [ref=f66e179]: Oct 13, 2026
+                - heading "DHS Proposes US$70,000 OPT Fee; Draws Legal Concerns" [level=3] [ref=f66e180]
+            - link "Asia & Australia News 5 mins · Oct 10, 2026 Australia Cracks Down on Rushed Graduate Diploma Enrolments" [ref=f66e181] [cursor=pointer]:
+              - /url: /news/post/australia-cracks-down-on-rushed-graduate-diploma-enrolments
+              - generic [ref=f66e183]:
+                - generic [ref=f66e184]:
+                  - generic [ref=f66e185]: Asia & Australia News
+                  - generic [ref=f66e186]:
+                    - generic [ref=f66e187]: 5 mins
+                    - generic [ref=f66e188]: ·
+                    - generic [ref=f66e189]: Oct 10, 2026
+                - heading "Australia Cracks Down on Rushed Graduate Diploma Enrolments" [level=3] [ref=f66e190]
+            - link "UK News 9 mins · Oct 9, 2026 UK Student Sponsors Face Tighter Compliance Rules" [ref=f66e191] [cursor=pointer]:
+              - /url: /news/post/uk-student-sponsors-face-tighter-compliance-rules
+              - generic [ref=f66e193]:
+                - generic [ref=f66e194]:
+                  - generic [ref=f66e195]: UK News
+                  - generic [ref=f66e196]:
+                    - generic [ref=f66e197]: 9 mins
+                    - generic [ref=f66e198]: ·
+                    - generic [ref=f66e199]: Oct 9, 2026
+                - heading "UK Student Sponsors Face Tighter Compliance Rules" [level=3] [ref=f66e200]
+            - link "USA News 5 mins · Oct 7, 2026 Higher Education Groups Sue US Over Curricular Practical Training" [ref=f66e201] [cursor=pointer]:
+              - /url: /news/post/higher-education-groups-sue-us-over-curricular-practical-training
+              - generic [ref=f66e203]:
+                - generic [ref=f66e204]:
+                  - generic [ref=f66e205]: USA News
+                  - generic [ref=f66e206]:
+                    - generic [ref=f66e207]: 5 mins
+                    - generic [ref=f66e208]: ·
+                    - generic [ref=f66e209]: Oct 7, 2026
+                - heading "Higher Education Groups Sue US Over Curricular Practical Training" [level=3] [ref=f66e210]
+            - 'link "UK News 8 min read · Oct 1, 2026 Demand Declines Eased, Occupancy Neared 92%: September 2026 Update" [ref=f66e211] [cursor=pointer]':
+              - /url: /news/post/demand-declines-eased-occupancy-climbed-september-2026-update
+              - generic [ref=f66e213]:
+                - generic [ref=f66e214]:
+                  - generic [ref=f66e215]: UK News
+                  - generic [ref=f66e216]:
+                    - generic [ref=f66e217]: 8 min read
+                    - generic [ref=f66e218]: ·
+                    - generic [ref=f66e219]: Oct 1, 2026
+                - 'heading "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update" [level=3] [ref=f66e220]'
+            - link "UK News 5 mins · Sep 30, 2026 US Maintains Soft Power Lead in HEPI Index, UK Ranks Second" [ref=f66e221] [cursor=pointer]:
+              - /url: /news/post/us-maintains-soft-power-lead-in-hepi-index-uk-ranks-second
+              - generic [ref=f66e223]:
+                - generic [ref=f66e224]:
+                  - generic [ref=f66e225]: UK News
+                  - generic [ref=f66e226]:
+                    - generic [ref=f66e227]: 5 mins
+                    - generic [ref=f66e228]: ·
+                    - generic [ref=f66e229]: Sep 30, 2026
+                - heading "US Maintains Soft Power Lead in HEPI Index, UK Ranks Second" [level=3] [ref=f66e230]
+            - link "Asia & Australia News 5 mins · Sep 28, 2026 HILDA Maps Domestic Graduate Pay Gap as Visa Rules Tighten" [ref=f66e231] [cursor=pointer]:
+              - /url: /news/post/hilda-maps-domestic-graduate-pay-gap-as-visa-rules-tighten
+              - generic [ref=f66e233]:
+                - generic [ref=f66e234]:
+                  - generic [ref=f66e235]: Asia & Australia News
+                  - generic [ref=f66e236]:
+                    - generic [ref=f66e237]: 5 mins
+                    - generic [ref=f66e238]: ·
+                    - generic [ref=f66e239]: Sep 28, 2026
+                - heading "HILDA Maps Domestic Graduate Pay Gap as Visa Rules Tighten" [level=3] [ref=f66e240]
+            - link "Global News 5 mins · Sep 24, 2026 ILAC Bankruptcy Leaves Over a Thousand Students in Limbo" [ref=f66e241] [cursor=pointer]:
+              - /url: /news/post/ilac-bankruptcy-leaves-over-a-thousand-students-in-limbo
+              - generic [ref=f66e243]:
+                - generic [ref=f66e244]:
+                  - generic [ref=f66e245]: Global News
+                  - generic [ref=f66e246]:
+                    - generic [ref=f66e247]: 5 mins
+                    - generic [ref=f66e248]: ·
+                    - generic [ref=f66e249]: Sep 24, 2026
+                - heading "ILAC Bankruptcy Leaves Over a Thousand Students in Limbo" [level=3] [ref=f66e250]
+            - link "Global News 8 mins · Sep 22, 2026 Chinese Students Top the UK Intake as Other Markets Shrink" [ref=f66e251] [cursor=pointer]:
+              - /url: /news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink
+              - generic [ref=f66e253]:
+                - generic [ref=f66e254]:
+                  - generic [ref=f66e255]: Global News
+                  - generic [ref=f66e256]:
+                    - generic [ref=f66e257]: 8 mins
+                    - generic [ref=f66e258]: ·
+                    - generic [ref=f66e259]: Sep 22, 2026
+                - heading "Chinese Students Top the UK Intake as Other Markets Shrink" [level=3] [ref=f66e260]
+          - link "See All Latest News" [ref=f66e261] [cursor=pointer]:
+            - /url: /news/latest
+    - generic [ref=f66e265]:
+      - generic [ref=f66e266]:
+        - heading "⭐️ FEATURED NEWS" [level=3] [ref=f66e268]
+        - generic [ref=f66e270]:
+          - 'link "UK News Demand Declines Eased, Occupancy Neared 92%: September 2026 Update 8 min read · Oct 1, 2026" [ref=f66e272] [cursor=pointer]':
+            - /url: /news/post/demand-declines-eased-occupancy-climbed-september-2026-update
+            - generic [ref=f66e274]:
+              - generic [ref=f66e275]: UK News
+              - 'heading "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update" [level=4] [ref=f66e276]'
+              - generic [ref=f66e277]:
+                - generic [ref=f66e278]: 8 min read
+                - generic [ref=f66e279]: ·
+                - generic [ref=f66e280]: Oct 1, 2026
+          - link "Asia & Australia News Government Maintains Migration Levels, Boosts International Student Intake in Australia 4 min read · Sep 15, 2025" [ref=f66e283] [cursor=pointer]:
+            - /url: /news/post/government-maintains-migration-levels-boosts-international-student-intake-in-australia
+            - generic [ref=f66e285]:
+              - generic [ref=f66e286]: Asia & Australia News
+              - heading "Government Maintains Migration Levels, Boosts International Student Intake in Australia" [level=4] [ref=f66e287]
+              - generic [ref=f66e288]:
+                - generic [ref=f66e289]: 4 min read
+                - generic [ref=f66e290]: ·
+                - generic [ref=f66e291]: Sep 15, 2025
+          - link "Student Housing Article Amber's UK Student Housing Annual Report (2024-25) 2 mins · Jan 22, 2025" [ref=f66e294] [cursor=pointer]:
+            - /url: /news/post/ambers-uk-student-housing-annual-report-2024-25
+            - generic [ref=f66e296]:
+              - generic [ref=f66e297]: Student Housing Article
+              - heading "Amber's UK Student Housing Annual Report (2024-25)" [level=4] [ref=f66e298]
+              - generic [ref=f66e299]:
+                - generic [ref=f66e300]: 2 mins
+                - generic [ref=f66e301]: ·
+                - generic [ref=f66e302]: Jan 22, 2025
+      - region [ref=f66e304]:
+        - generic [ref=f66e305]:
+          - heading "Stay updated with industry news!" [level=3] [ref=f66e306]
+          - paragraph [ref=f66e307]: Sign up to our monthly newsletters for important updates and market insights on student accommodation.
+        - generic [ref=f66e308]:
+          - generic [ref=f66e309]: Enter your email address
+          - textbox "Enter your email address" [ref=f66e311]
+          - button "Subscribe" [ref=f66e312] [cursor=pointer]
+  - generic [ref=f66e314]:
+    - generic [ref=f66e315]:
+      - heading "Amber Reports" [level=2] [ref=f66e316]
+      - paragraph [ref=f66e317]: Actionable Reports for Every Step of the Journey
+    - generic [ref=f66e318]:
+      - generic [ref=f66e319]:
+        - link "UK News 5 min read · Jul 8, 2026 Amber's Student Success & Wellbeing Report 2026" [ref=f66e321] [cursor=pointer]:
+          - /url: /news/amberreport/ambers-student-success-wellbeing-report-2026
+          - generic [ref=f66e323]:
+            - generic [ref=f66e324]:
+              - generic [ref=f66e325]: UK News
+              - generic [ref=f66e326]:
+                - generic [ref=f66e327]: 5 min read
+                - generic [ref=f66e328]: ·
+                - generic [ref=f66e329]: Jul 8, 2026
+            - heading "Amber's Student Success & Wellbeing Report 2026" [level=3] [ref=f66e330]
+        - link "UK News 5 min read · Mar 30, 2026 Amber’s UK PBSA Demand & Pricing Update (Jan’26 vs Mar’26)" [ref=f66e332] [cursor=pointer]:
+          - /url: /news/amberreport/ambers-uk-pbsa-pricing-update-jan-26-vs-mar-26
+          - generic [ref=f66e334]:
+            - generic [ref=f66e335]:
+              - generic [ref=f66e336]: UK News
+              - generic [ref=f66e337]:
+                - generic [ref=f66e338]: 5 min read
+                - generic [ref=f66e339]: ·
+                - generic [ref=f66e340]: Mar 30, 2026
+            - heading "Amber’s UK PBSA Demand & Pricing Update (Jan’26 vs Mar’26)" [level=3] [ref=f66e341]
+        - link "UK News 5 min read · Dec 9, 2025 Amber’s UK PBSA Launch Price Report (AY 2026-27)" [ref=f66e343] [cursor=pointer]:
+          - /url: /news/amberreport/ambers-uk-pbsa-launch-price-report-ay-2026-27
+          - generic [ref=f66e345]:
+            - generic [ref=f66e346]:
+              - generic [ref=f66e347]: UK News
+              - generic [ref=f66e348]:
+                - generic [ref=f66e349]: 5 min read
+                - generic [ref=f66e350]: ·
+                - generic [ref=f66e351]: Dec 9, 2025
+            - heading "Amber’s UK PBSA Launch Price Report (AY 2026-27)" [level=3] [ref=f66e352]
+        - link "UK News 5 min read · Oct 17, 2025 Amber's UK PBSA Pricing Intel Report (AY 2026-27)" [ref=f66e354] [cursor=pointer]:
+          - /url: /news/amberreport/ambers-uk-pbsa-pricing-intel-report-ay-2026-27
+          - generic [ref=f66e356]:
+            - generic [ref=f66e357]:
+              - generic [ref=f66e358]: UK News
+              - generic [ref=f66e359]:
+                - generic [ref=f66e360]: 5 min read
+                - generic [ref=f66e361]: ·
+                - generic [ref=f66e362]: Oct 17, 2025
+            - heading "Amber's UK PBSA Pricing Intel Report (AY 2026-27)" [level=3] [ref=f66e363]
+        - link "Student Housing Article 2 mins · Jan 22, 2025 Amber's UK Student Housing Annual Report (2024-25)" [ref=f66e365] [cursor=pointer]:
+          - /url: /news/amberreport/ambers-uk-student-housing-annual-report-2024-25
+          - generic [ref=f66e367]:
+            - generic [ref=f66e368]:
+              - generic [ref=f66e369]: Student Housing Article
+              - generic [ref=f66e370]:
+                - generic [ref=f66e371]: 2 mins
+                - generic [ref=f66e372]: ·
+                - generic [ref=f66e373]: Jan 22, 2025
+            - heading "Amber's UK Student Housing Annual Report (2024-25)" [level=3] [ref=f66e374]
+        - link "Asia & Australia News 2 mins · Sep 26, 2024 Amber's Australia Student Accommodation Annual Report (2024-25)" [ref=f66e376] [cursor=pointer]:
+          - /url: /news/amberreport/ambers-australia-student-accommodation-annual-report-2024-25
+          - generic [ref=f66e378]:
+            - generic [ref=f66e379]:
+              - generic [ref=f66e380]: Asia & Australia News
+              - generic [ref=f66e381]:
+                - generic [ref=f66e382]: 2 mins
+                - generic [ref=f66e383]: ·
+                - generic [ref=f66e384]: Sep 26, 2024
+            - heading "Amber's Australia Student Accommodation Annual Report (2024-25)" [level=3] [ref=f66e385]
+        - link "Student Housing News 2mins · Feb 2, 2024 Amber's US International Student Housing Annual Report 2023-24" [ref=f66e387] [cursor=pointer]:
+          - /url: /news/amberreport/amber-us-international-student-housing-report-2023-24
+          - generic [ref=f66e389]:
+            - generic [ref=f66e390]:
+              - generic [ref=f66e391]: Student Housing News
+              - generic [ref=f66e392]:
+                - generic [ref=f66e393]: 2mins
+                - generic [ref=f66e394]: ·
+                - generic [ref=f66e395]: Feb 2, 2024
+            - heading "Amber's US International Student Housing Annual Report 2023-24" [level=3] [ref=f66e396]
+        - link "Student Housing News 2 mins · Dec 12, 2023 Connect with amber" [ref=f66e398] [cursor=pointer]:
+          - /url: /news/amberreport/connect-with-amber
+          - generic [ref=f66e400]:
+            - generic [ref=f66e401]:
+              - generic [ref=f66e402]: Student Housing News
+              - generic [ref=f66e403]:
+                - generic [ref=f66e404]: 2 mins
+                - generic [ref=f66e405]: ·
+                - generic [ref=f66e406]: Dec 12, 2023
+            - heading "Connect with amber" [level=3] [ref=f66e407]
+        - 'link "Student Housing News 2 min read · Jul 17, 2023 Student Housing Partners Report: Insider Analysis Of Current Industry Trends & Opportunities" [ref=f66e409] [cursor=pointer]':
+          - /url: /news/amberreport/student-housing-partners-report-2023
+          - generic [ref=f66e411]:
+            - generic [ref=f66e412]:
+              - generic [ref=f66e413]: Student Housing News
+              - generic [ref=f66e414]:
+                - generic [ref=f66e415]: 2 min read
+                - generic [ref=f66e416]: ·
+                - generic [ref=f66e417]: Jul 17, 2023
+            - 'heading "Student Housing Partners Report: Insider Analysis Of Current Industry Trends & Opportunities" [level=3] [ref=f66e418]'
+      - generic [ref=f66e419] [cursor=pointer]
+  - generic [ref=f66e423]:
+    - generic [ref=f66e424]:
+      - heading "Amber Radar" [level=2] [ref=f66e425]
+      - paragraph [ref=f66e426]: Your Weekly Radar on Student Accommodation Trends
+    - generic [ref=f66e427]:
+      - generic [ref=f66e428]:
+        - link "Amber Radar 6 min read · Oct 15, 2026 amberRadar Student Mobility & Higher Education News Roundup | 16th Sept-15th Oct" [ref=f66e430] [cursor=pointer]:
+          - /url: /news/amberradar/amberradar-student-mobility-higher-education-news-roundup-16th-sept-15th-oct-2026
+          - generic [ref=f66e432]:
+            - generic [ref=f66e433]:
+              - generic [ref=f66e434]: Amber Radar
+              - generic [ref=f66e435]:
+                - generic [ref=f66e436]: 6 min read
+                - generic [ref=f66e437]: ·
+                - generic [ref=f66e438]: Oct 15, 2026
+            - heading "amberRadar Student Mobility & Higher Education News Roundup | 16th Sept-15th Oct" [level=3] [ref=f66e439]
+        - link "Amber Radar 5 min read · Sep 22, 2026 amberRadar Global Student Accommodation Market News - September 2026, Week 03" [ref=f66e441] [cursor=pointer]:
+          - /url: /news/amberradar/amberradar-global-student-accommodation-market-news-september-week-03
+          - generic [ref=f66e443]:
+            - generic [ref=f66e444]:
+              - generic [ref=f66e445]: Amber Radar
+              - generic [ref=f66e446]:
+                - generic [ref=f66e447]: 5 min read
+                - generic [ref=f66e448]: ·
+                - generic [ref=f66e449]: Sep 22, 2026
+            - heading "amberRadar Global Student Accommodation Market News - September 2026, Week 03" [level=3] [ref=f66e450]
+        - link "Amber Radar 5 min read · Sep 15, 2026 amberRadar Global Student Accommodation Market News - September 2026, Week 02" [ref=f66e452] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-september-week-02
+          - generic [ref=f66e454]:
+            - generic [ref=f66e455]:
+              - generic [ref=f66e456]: Amber Radar
+              - generic [ref=f66e457]:
+                - generic [ref=f66e458]: 5 min read
+                - generic [ref=f66e459]: ·
+                - generic [ref=f66e460]: Sep 15, 2026
+            - heading "amberRadar Global Student Accommodation Market News - September 2026, Week 02" [level=3] [ref=f66e461]
+        - link "Amber Radar 5 min read · Sep 8, 2026 amberRadar Global Student Accommodation Market News - September 2026, Week 01" [ref=f66e463] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-september-week-01
+          - generic [ref=f66e465]:
+            - generic [ref=f66e466]:
+              - generic [ref=f66e467]: Amber Radar
+              - generic [ref=f66e468]:
+                - generic [ref=f66e469]: 5 min read
+                - generic [ref=f66e470]: ·
+                - generic [ref=f66e471]: Sep 8, 2026
+            - heading "amberRadar Global Student Accommodation Market News - September 2026, Week 01" [level=3] [ref=f66e472]
+        - link "Amber Radar 5 min read · Aug 28, 2026 Amber Radar Global Student Accommodation Market News - August 2026, Week 04" [ref=f66e474] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-04
+          - generic [ref=f66e476]:
+            - generic [ref=f66e477]:
+              - generic [ref=f66e478]: Amber Radar
+              - generic [ref=f66e479]:
+                - generic [ref=f66e480]: 5 min read
+                - generic [ref=f66e481]: ·
+                - generic [ref=f66e482]: Aug 28, 2026
+            - heading "Amber Radar Global Student Accommodation Market News - August 2026, Week 04" [level=3] [ref=f66e483]
+        - link "Amber Radar 5 min read · Aug 21, 2026 Amber Radar Global Student Accommodation Market News - August 2026, Week 03" [ref=f66e485] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-03
+          - generic [ref=f66e487]:
+            - generic [ref=f66e488]:
+              - generic [ref=f66e489]: Amber Radar
+              - generic [ref=f66e490]:
+                - generic [ref=f66e491]: 5 min read
+                - generic [ref=f66e492]: ·
+                - generic [ref=f66e493]: Aug 21, 2026
+            - heading "Amber Radar Global Student Accommodation Market News - August 2026, Week 03" [level=3] [ref=f66e494]
+        - link "Amber Radar 5 min read · Aug 14, 2026 Amber Radar Global Student Accommodation Market News - August 2026, Week 02" [ref=f66e496] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-02
+          - generic [ref=f66e498]:
+            - generic [ref=f66e499]:
+              - generic [ref=f66e500]: Amber Radar
+              - generic [ref=f66e501]:
+                - generic [ref=f66e502]: 5 min read
+                - generic [ref=f66e503]: ·
+                - generic [ref=f66e504]: Aug 14, 2026
+            - heading "Amber Radar Global Student Accommodation Market News - August 2026, Week 02" [level=3] [ref=f66e505]
+        - link "Amber Radar 5 min read · Aug 7, 2026 Amber Radar Global Student Accommodation Market News - August 2026, Week 01" [ref=f66e507] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-01
+          - generic [ref=f66e509]:
+            - generic [ref=f66e510]:
+              - generic [ref=f66e511]: Amber Radar
+              - generic [ref=f66e512]:
+                - generic [ref=f66e513]: 5 min read
+                - generic [ref=f66e514]: ·
+                - generic [ref=f66e515]: Aug 7, 2026
+            - heading "Amber Radar Global Student Accommodation Market News - August 2026, Week 01" [level=3] [ref=f66e516]
+        - link "Amber Radar 5 min read · Jul 29, 2026 Amber Radar Global Student Accommodation Market News - July 2026, Week 04" [ref=f66e518] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-july-week-04
+          - generic [ref=f66e520]:
+            - generic [ref=f66e521]:
+              - generic [ref=f66e522]: Amber Radar
+              - generic [ref=f66e523]:
+                - generic [ref=f66e524]: 5 min read
+                - generic [ref=f66e525]: ·
+                - generic [ref=f66e526]: Jul 29, 2026
+            - heading "Amber Radar Global Student Accommodation Market News - July 2026, Week 04" [level=3] [ref=f66e527]
+        - link "Amber Radar 5 min read · Jul 22, 2026 Amber Radar Global Student Accommodation Market News - July 2026, Week 03" [ref=f66e529] [cursor=pointer]:
+          - /url: /news/amberradar/amber-radar-global-student-accommodation-market-news-july-week-03
+          - generic [ref=f66e531]:
+            - generic [ref=f66e532]:
+              - generic [ref=f66e533]: Amber Radar
+              - generic [ref=f66e534]:
+                - generic [ref=f66e535]: 5 min read
+                - generic [ref=f66e536]: ·
+                - generic [ref=f66e537]: Jul 22, 2026
+            - heading "Amber Radar Global Student Accommodation Market News - July 2026, Week 03" [level=3] [ref=f66e538]
+      - generic [ref=f66e539] [cursor=pointer]
+  - generic [ref=f66e545]:
+    - generic [ref=f66e546]:
+      - generic [ref=f66e547]:
+        - heading "Partner With Us" [level=2] [ref=f66e548]
+        - generic [ref=f66e549]: At amber, we offer seamless booking process and a robust sales support.
+      - button "Partner With Us" [ref=f66e551] [cursor=pointer]:
+        - button [ref=f66e552]
+    - generic [ref=f66e555]:
+      - generic [ref=f66e556]:
+        - heading "List With Us" [level=2] [ref=f66e557]
+        - generic [ref=f66e558]: List your properties efficiently with amber.
+      - button "List Properties" [ref=f66e560] [cursor=pointer]:
+        - button [ref=f66e561]
+  - generic [ref=f66e567]:
+    - generic [ref=f66e568]: amber © 2026. All rights reserved.
+    - generic [ref=f66e571] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f66e572]:
+      - generic [ref=f66e573]:
+        - generic [ref=f66e574]: Get the app
+        - generic [ref=f66e575]:
+          - link [ref=f66e576] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f66e577] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f66e579]: Payment Options
+    - generic [ref=f66e582]:
+      - button [ref=f66e584] [cursor=pointer]
+      - button [ref=f66e590] [cursor=pointer]
+      - button [ref=f66e596] [cursor=pointer]
+      - button [ref=f66e602] [cursor=pointer]

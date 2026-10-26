@@ -1,0 +1,10 @@
+Use case: photorealistic-natural
+Asset type: website property gallery hero
+Primary request: contemporary UK student accommodation common lounge in Kingston upon Thames, editorial architectural photography
+Scene/backdrop: airy communal living room with large windows, study nook, subtle plants, city rooftops beyond
+Subject: the space only, no identifiable people
+Style/medium: premium natural interior photography, realistic materials, not a render
+Composition/framing: wide landscape, strong architectural lines, generous depth
+Lighting/mood: bright late-afternoon natural light, welcoming, calm, youthful
+Color palette: warm neutrals, deep navy details, one restrained red object
+Constraints: no logos, no text, no watermark, no brand imitation, plausible UK student residence

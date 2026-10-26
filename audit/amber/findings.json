@@ -1,0 +1,49 @@
+{
+  "audit_date": "2026-10-23",
+  "target": "https://amberstudent.com/",
+  "screenshot_count": 69,
+  "recheck": {
+    "video": "video-observation-trace.json",
+    "routes": "route-matrix-recheck.json",
+    "network": "network-metadata-recheck.json",
+    "screenshot_validation": "screenshot-validation.json"
+  },
+  "issues": [
+    {
+      "severity": "high",
+      "id": "responsive-plus-extreme-overflow",
+      "route": "/plus",
+      "summary": "Document scroll width reached about 50,316 px at 1280 px and 50,389 px at 390 px.",
+      "evidence": ["responsive-overflow.json", "responsive-overflow-recheck.json", "screenshots/plus-verified-1280x800.jpg", "screenshots/plus-verified-390x844.jpg"]
+    },
+    {
+      "severity": "high",
+      "id": "responsive-property-mobile-overflow",
+      "route": "/places/iq-vega-london-2101138507106",
+      "summary": "The property page reached 451 px document width at both 390 px and 360 px viewports.",
+      "evidence": ["property-responsive-layout.json", "responsive-overflow-exact.json"]
+    },
+    {
+      "severity": "medium",
+      "id": "responsive-home-mobile-overflow",
+      "route": "/",
+      "summary": "The home page reached 409 px document width at a 390 px viewport.",
+      "evidence": ["design-token-inventories.json", "responsive-overflow-exact.json"]
+    },
+    {
+      "severity": "medium",
+      "id": "a11y-interactive-semantics",
+      "route": "multiple",
+      "summary": "Nested buttons, unnamed controls, an accessible name of [object Object], and visually modal overlays without consistent dialog semantics were observed.",
+      "evidence": ["interaction-trace.json"]
+    },
+    {
+      "severity": "medium",
+      "id": "enquiry-required-semantics",
+      "route": "/places/search/london-1811028205760",
+      "summary": "Fields marked with a visual asterisk did not expose native required attributes in the inspected DOM.",
+      "evidence": ["interaction-trace.json", "screenshots/listing-enquiry-open-1440x900.jpg"]
+    }
+  ]
+}
+

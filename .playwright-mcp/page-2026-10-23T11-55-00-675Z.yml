@@ -1,0 +1,150 @@
+- generic [ref=f44e4]:
+  - navigation [ref=f44e5]:
+    - link [ref=f44e6] [cursor=pointer]:
+      - /url: /
+    - button "Open menu" [ref=f44e8] [cursor=pointer]
+  - generic [ref=f44e12]:
+    - heading "Privacy Policy" [level=1] [ref=f44e14]
+    - paragraph [ref=f44e15]: How amber collects, uses and protects the information you give us
+  - generic [ref=f44e17]:
+    - generic [ref=f44e18]:
+      - paragraph [ref=f44e19]: "We, Amber Internet solutions Inc. Hereinafter also referred to as \"Amber\", a company incorporated under the laws of USA, having its registered office at 40 E Main St #1215 Newark DE, USA is the creator of this Privacy Policy. For the purpose of data protection act, Amber Internet solutions Inc. is the data controller."
+      - paragraph [ref=f44e20]:
+        - text: To ensure better protection of your privacy, we provide this notice explaining our information collection and disclosing policies, and the choices you make and your rights about the way your information is collected and used. By visiting
+        - link "www.amberstudent.com" [ref=f44e21] [cursor=pointer]:
+          - /url: https://www.amberstudent.com
+        - text: you are accepting and consenting to the practices described in this policy.
+      - paragraph [ref=f44e22]:
+        - text: If You have any queries or concerns regarding this privacy policy, You should contact Our Customer Support Desk at
+        - link "+44 7456741634" [ref=f44e23] [cursor=pointer]:
+          - /url: tel:+447456741634
+        - text: / email Us at
+        - link "contact@amberstudent.com" [ref=f44e24] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: .
+    - paragraph [ref=f44e26]: ANY CAPITALIZED WORDS USED HENCEFORTH SHALL HAVE THE MEANING ACCORDED TO THEM UNDER THIS AGREEMENT.
+    - generic [ref=f44e28]:
+      - heading "1. Definitions" [level=2] [ref=f44e29]
+      - list [ref=f44e30]:
+        - listitem [ref=f44e31]:
+          - generic [aria-hidden] [ref=f44e32]: (a)
+          - generic [ref=f44e33]: "\"We\", \"Our\", and \"Us\" shall mean and refer to the creators of this privacy policy."
+        - listitem [ref=f44e34]:
+          - generic [aria-hidden] [ref=f44e35]: (b)
+          - generic [ref=f44e36]: "\"You\", \"Your\", \"Yourself\" and \"User\" shall mean individuals who use the website."
+        - listitem [ref=f44e37]:
+          - generic [aria-hidden] [ref=f44e38]: (c)
+          - generic [ref=f44e39]: "\"Third Parties\" refer to any application, website, company or individual apart from Amber."
+        - listitem [ref=f44e40]:
+          - generic [aria-hidden] [ref=f44e41]: (d)
+          - generic [ref=f44e42]: "\"Accommodation\" refers to student rooms, individual apartments, houses etc"
+        - listitem [ref=f44e43]:
+          - generic [aria-hidden] [ref=f44e44]: (e)
+          - generic [ref=f44e45]: "\"third party accommodation partner\" refers to the our accommodation partners which includes property management groups, individual property managers, landlords etc"
+    - generic [ref=f44e46]:
+      - heading "2. Information Given by You" [level=2] [ref=f44e47]
+      - paragraph [ref=f44e48]: You can give us the information by filling the request form at Amber, over call, email or at various offline promotional events. The informational you give us may include your name, phone number, email id. For booking your accommodation at Amber you may need to give further personal information (ex. Birth date, country of origin, guarantor's details, University name etc) on call or email or other messaging services as necessary
+    - generic [ref=f44e49]:
+      - heading "3. Information We Collect From You" [level=2] [ref=f44e50]
+      - paragraph [ref=f44e51]: "We collect the following information:"
+      - list [ref=f44e52]:
+        - listitem [ref=f44e53]:
+          - generic [aria-hidden] [ref=f44e54]: •
+          - generic [ref=f44e55]: IP address, browser type, operating system type and platforms
+        - listitem [ref=f44e56]:
+          - generic [aria-hidden] [ref=f44e57]: •
+          - generic [ref=f44e58]: Login information
+        - listitem [ref=f44e59]:
+          - generic [aria-hidden] [ref=f44e60]: •
+          - generic [ref=f44e61]: URL informational
+        - listitem [ref=f44e62]:
+          - generic [aria-hidden] [ref=f44e63]: •
+          - generic [ref=f44e64]: Page interactions like clicking and scrolling
+        - listitem [ref=f44e65]:
+          - generic [aria-hidden] [ref=f44e66]: •
+          - generic [ref=f44e67]: Phone number or email you used to call or email amberstudent
+        - listitem [ref=f44e68]:
+          - generic [aria-hidden] [ref=f44e69]: •
+          - generic [ref=f44e70]: Information about your visit through and from our website
+      - paragraph [ref=f44e71]: We are working with advertising networks and business partners (other sources) and may receive information about you from them.
+    - generic [ref=f44e72]:
+      - heading "4. Cookies" [level=2] [ref=f44e73]
+      - paragraph [ref=f44e74]: We use data collection device known as "cookies" at our website. "Cookies" are small files situated on Your mobile/ computer/ device's hard disk that assists Us in providing customised services. A cookie helps us analyse your preferences by, for example, recording the number of times you have used the Website, and help us in tailoring our services to suit your interests. We use various analytics tools and social media engagement tool which sets a cookie on your device. Data may be collected by social media companies that may enable them showing advertisements. A "cookie" does not give Us access to your device. You may choose to disable the "cookie" feature on Your device.
+      - paragraph [ref=f44e75]: Using our online chat functionality may also mean that we collect information on your country and IP address. This information will not be used for any purpose other than to enhance the functionality the website.
+    - generic [ref=f44e76]:
+      - heading "5. Our Use of Your Information" [level=2] [ref=f44e77]
+      - paragraph [ref=f44e78]: No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. The information given by you shall be used to contact You when necessary. After your oral or written confirmation, information will be passed on to our third party accommodation partners or your university or relevant authorities for booking your Accommodation. Please read third party accommodation partner's privacy policy before giving oral or written confirmation
+      - paragraph [ref=f44e79]: We can send you details about our services or blog posts and to notify about changes in service.
+      - paragraph [ref=f44e80]: The information we collected from you can be used to improve our services, analytics, research, survey, advertisement and make suggestions to you and other users of the accommodations.
+      - paragraph [ref=f44e81]: We may combine information given by other sources with information you give to us and information we collect about you. We may use information given by other sources and the combined information for the above purposes
+    - generic [ref=f44e82]:
+      - heading "6. Disclosure of Your Information to Third Parties" [level=2] [ref=f44e83]
+      - list [ref=f44e84]:
+        - listitem [ref=f44e85]:
+          - generic [aria-hidden] [ref=f44e86]: •
+          - generic [ref=f44e87]: Information will be passed on to our third party accommodation partners for booking your Accommodation after your oral or written confirmation.
+        - listitem [ref=f44e88]:
+          - generic [aria-hidden] [ref=f44e89]: •
+          - generic [ref=f44e90]: Analytics and search engine providers that assist us in the improvement and optimisation of our site.
+        - listitem [ref=f44e91]:
+          - generic [aria-hidden] [ref=f44e92]: •
+          - generic [ref=f44e93]: In case We get acquired by a company, we may share your information to that company
+        - listitem [ref=f44e94]:
+          - generic [aria-hidden] [ref=f44e95]: •
+          - generic [ref=f44e96]: If we are under a duty to disclose or share your personal data in order to comply with any legal obligation or to protect privacy and safety of Amber or other user we can disclose your information to various government agencies and/or third party enforcement agencies
+    - generic [ref=f44e97]:
+      - heading "7. Accessing, Reviewing, Changing Your Information and Your Rights" [level=2] [ref=f44e98]
+      - paragraph [ref=f44e99]:
+        - text: If you believe that any information we are holding on you is incorrect or incomplete please write to or email us as soon as possible, at
+        - link "contact@amberstudent.com" [ref=f44e100] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: or contact us at
+        - link "+44 7456741634" [ref=f44e101] [cursor=pointer]:
+          - /url: tel:+447456741634
+        - text: . We shall promptly correct any information found to be incorrect.
+      - paragraph [ref=f44e102]:
+        - text: You have a right to ask us not to use your personal information for marketing purpose. Please contact
+        - link "contact@amberstudent.com" [ref=f44e103] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: if you wish to opt out of marketing campaigns or any other services.
+      - paragraph [ref=f44e104]:
+        - text: You have right to access your data. Please send us an email at
+        - link "contact@amberstudent.com" [ref=f44e105] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: if you want to access your data which is with us. We will provide you the your information free of cost.
+      - paragraph [ref=f44e106]:
+        - text: You have right to ask us not to process your data or to delete your data. Please send us an email at
+        - link "contact@amberstudent.com" [ref=f44e107] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: if you want to exercise any of the rights.
+    - generic [ref=f44e108]:
+      - heading "8. Where We Save Your Data" [level=2] [ref=f44e109]
+      - paragraph [ref=f44e110]: The data that we collect from you is processed by staff operating outside the EEA who work for us. Such staff maybe engaged in, among other things, the fulfilment of your accommodation booking. By submitting your personal data, you agree to this transfer, storing or processing. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this privacy policy.
+      - paragraph [ref=f44e111]: All information you provide to us is stored on secure servers. where you have chosen a password which enables you to access certain parts of our site, you are responsible for keeping this password confidential. We ask you not to share a password with anyone.
+      - paragraph [ref=f44e112]: Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to our site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.
+    - generic [ref=f44e113]:
+      - heading "9. Third Party Sites" [level=2] [ref=f44e114]
+      - paragraph [ref=f44e115]: Our Site may contain links to third party sites, including sites with which we have affiliate agreements. We have no control and hence not responsible for the privacy practices or the content of such third party websites. This Privacy Policy extends only to personal data we collect from you either via our website. We recommend that you check the privacy and security policies and procedures of each and every other website that you visit.
+    - generic [ref=f44e116]:
+      - heading "10. Amendment" [level=2] [ref=f44e117]
+      - paragraph [ref=f44e118]: Our Privacy Policy may change from time to time. Hence we shall post any privacy policy changes on this page
+  - generic [ref=f44e128]:
+    - generic [ref=f44e129]: amber © 2026. All rights reserved.
+    - generic [ref=f44e132] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f44e133]:
+      - generic [ref=f44e134]:
+        - generic [ref=f44e135]: Get the app
+        - generic [ref=f44e136]:
+          - link [ref=f44e137] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f44e138] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f44e140]: Payment Options
+    - generic [ref=f44e143]:
+      - button [ref=f44e145] [cursor=pointer]
+      - button [ref=f44e151] [cursor=pointer]
+      - button [ref=f44e157] [cursor=pointer]
+      - button [ref=f44e163] [cursor=pointer]

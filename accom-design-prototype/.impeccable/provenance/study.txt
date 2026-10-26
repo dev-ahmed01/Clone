@@ -1,0 +1,10 @@
+Use case: photorealistic-natural
+Asset type: website property gallery amenity image
+Primary request: contemporary student study lounge in a UK accommodation building, long shared table and acoustic booths
+Scene/backdrop: communal study and collaboration space with large windows
+Subject: a few diverse students in the distance, faces not prominent
+Style/medium: candid editorial lifestyle photography
+Composition/framing: wide landscape with clear foreground table, architectural rhythm
+Lighting/mood: focused, social, calm daylight
+Color palette: warm timber, cream, sage, small red accents
+Constraints: no logos, no text, no watermark, natural human proportions

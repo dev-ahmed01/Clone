@@ -1,0 +1,465 @@
+- generic [ref=f63e4]:
+  - navigation [ref=f63e5]:
+    - link [ref=f63e6] [cursor=pointer]:
+      - /url: /
+    - button "Open menu" [ref=f63e8] [cursor=pointer]
+  - generic [ref=f63e12]:
+    - img "Rotating globe showing 37,947 student enquiries arriving into amber's 21 cities across 13 countries" [ref=f63e14]:
+      - region "Map" [ref=f63e15]
+    - paragraph [ref=f63e16]: "amber lists student accommodation in 21 cities across 13 countries: London, UK (4,182 enquiries); Manchester, UK (2,736 enquiries); Dublin, Ireland (1,904 enquiries); Paris, France (1,357 enquiries); Berlin, Germany (1,238 enquiries); Barcelona, Spain (1,061 enquiries); Florence, Italy (638 enquiries); New York, USA (3,364 enquiries); Chicago, USA (1,792 enquiries); Los Angeles, USA (1,573 enquiries); Toronto, Canada (2,468 enquiries); Vancouver, Canada (1,714 enquiries); Sydney, Australia (2,613 enquiries); Melbourne, Australia (2,179 enquiries); Auckland, New Zealand (983 enquiries); Dubai, UAE (897 enquiries); Singapore, Singapore (812 enquiries); Hong Kong, Hong Kong (726 enquiries); Coventry, UK (3,105 enquiries); Brisbane, Australia (1,864 enquiries); Cork, Ireland (741 enquiries). Demand arrives from India, China, Nigeria, Kenya, Egypt, Pakistan, Bangladesh, Nepal, Sri Lanka, Vietnam, Indonesia, Philippines, Brazil, Turkey, Russia, Kazakhstan, South Korea, Japan, United Kingdom, Ireland, France, Germany, Spain, Italy, Netherlands, United States, Canada, Australia and beyond. Property partners listing on amber include Unite Students, CRM Students, Scape, Varsity, iQ Student Accommodation, Student Roost, Fresh, Homes for Students. Figures are illustrative."
+  - generic [ref=f63e18]:
+    - heading [level=1] [ref=f63e19]: Fill your rooms,not your inbox.
+    - generic [ref=f63e47]:
+      - paragraph [ref=f63e48]: Make the most out of this partnership and avail the benefits
+      - link "List on amber" [ref=f63e49] [cursor=pointer]:
+        - /url: /list
+  - generic [ref=f63e52]:
+    - generic [ref=f63e54]:
+      - heading [level=2] [ref=f63e55]
+      - generic [ref=f63e153]:
+        - generic [ref=f63e155]:
+          - paragraph [ref=f63e156]:
+            - text: 0.0M+
+            - generic [ref=f63e157]: 2M+
+          - paragraph [ref=f63e158]: Beds listed
+        - generic [ref=f63e160]:
+          - paragraph [ref=f63e161]:
+            - text: 0.0K+
+            - generic [ref=f63e162]: 5K+
+          - paragraph [ref=f63e163]: Properties live
+        - generic [ref=f63e165]:
+          - paragraph [ref=f63e166]:
+            - text: 0+
+            - generic [ref=f63e167]: 260+
+          - paragraph [ref=f63e168]: Cities covered
+        - generic [ref=f63e170]:
+          - paragraph [ref=f63e171]:
+            - text: 0+
+            - generic [ref=f63e172]: 10+
+          - paragraph [ref=f63e173]: Countries live
+        - generic [ref=f63e175]:
+          - paragraph [ref=f63e176]:
+            - text: 0+
+            - generic [ref=f63e177]: 500+
+          - paragraph [ref=f63e178]: Supply partners
+        - generic [ref=f63e180]:
+          - paragraph [ref=f63e181]:
+            - text: "0.0"
+            - generic [ref=f63e182]: "4.8"
+          - paragraph [ref=f63e183]: Stars on Trustpilot
+        - generic [ref=f63e185]:
+          - paragraph [ref=f63e186]:
+            - text: 0+
+            - generic [ref=f63e187]: 80+
+          - paragraph [ref=f63e188]: Nationalities served
+        - generic [ref=f63e190]:
+          - paragraph [ref=f63e191]:
+            - text: 0K+
+            - generic [ref=f63e192]: 200K+
+          - paragraph [ref=f63e193]: Bookings and counting
+        - generic [ref=f63e195]:
+          - paragraph [ref=f63e196]:
+            - text: 0K+
+            - generic [ref=f63e197]: 600K+
+          - paragraph [ref=f63e198]: Students served annually
+        - generic [ref=f63e200]:
+          - paragraph [ref=f63e201]:
+            - text: 0+
+            - generic [ref=f63e202]: 300+
+          - paragraph [ref=f63e203]: Nights per booking
+    - generic [ref=f63e205]:
+      - heading "What you get when you list" [level=2] [ref=f63e206]
+      - generic [ref=f63e208]:
+        - article [ref=f63e209]:
+          - generic [ref=f63e210]:
+            - heading "Access global demand" [level=3] [ref=f63e211]
+            - paragraph [ref=f63e212]: Put your rooms in front of millions of students searching across key education markets worldwide.
+          - generic [ref=f63e215]:
+            - generic [ref=f63e216]:
+              - generic [ref=f63e217]: SOURCE MARKETS
+              - generic [ref=f63e218]: 160+ COUNTRIES
+            - generic [ref=f63e220]:
+              - generic [ref=f63e221]: India
+              - generic [ref=f63e224]: 28%
+            - generic [ref=f63e225]:
+              - generic [ref=f63e226]: Nigeria
+              - generic [ref=f63e229]: 14%
+            - generic [ref=f63e230]:
+              - generic [ref=f63e231]: China
+              - generic [ref=f63e234]: 11%
+            - generic [ref=f63e235]:
+              - generic [ref=f63e236]: Vietnam
+              - generic [ref=f63e239]: 9%
+        - article [ref=f63e240]:
+          - generic [ref=f63e241]:
+            - heading "Zero listing fees" [level=3] [ref=f63e242]
+            - paragraph [ref=f63e243]: Get started without upfront listing costs. You pay for outcomes, not visibility.
+          - generic [ref=f63e246]:
+            - generic [ref=f63e247]:
+              - generic [ref=f63e248]: AMBER · LIST WITH US
+              - generic [ref=f63e249]: NO. 0000
+            - generic [ref=f63e251]:
+              - generic [ref=f63e252]:
+                - generic [ref=f63e253]: Listing fee
+                - generic [ref=f63e255]: "0.00"
+              - generic [ref=f63e256]:
+                - generic [ref=f63e257]: Onboarding
+                - generic [ref=f63e259]: "0.00"
+              - generic [ref=f63e260]:
+                - generic [ref=f63e261]: Platform access
+                - generic [ref=f63e263]: "0.00"
+              - generic [ref=f63e264]:
+                - generic [ref=f63e265]: Account manager
+                - generic [ref=f63e267]: "0.00"
+            - generic [ref=f63e268]:
+              - generic [ref=f63e269]: TOTAL TO LIST
+              - generic [ref=f63e270]: $0.00
+            - generic [ref=f63e272]:
+              - generic [ref=f63e273]: Commission
+              - generic [ref=f63e274]: On confirmed bookings
+            - generic [ref=f63e276]: NOTHING TO PAY TO GO LIVE
+        - article [ref=f63e313]:
+          - generic [ref=f63e314]:
+            - heading "Fully integrated bookings" [level=3] [ref=f63e315]
+            - paragraph [ref=f63e316]: No chasing enquiries, calls, or overflowing inboxes. amber takes students from discovery through to confirmed booking.
+          - generic [ref=f63e318]:
+            - generic [ref=f63e319]:
+              - generic [ref=f63e320]: BOOKING
+              - generic [ref=f63e321]: "#48210"
+            - generic [ref=f63e322]:
+              - generic [ref=f63e323]:
+                - generic [ref=f63e324]: Aarav S.
+                - generic [ref=f63e325]: Chapter Spitalfields
+              - generic [ref=f63e326]: 3 of 4
+            - generic [ref=f63e327]:
+              - generic [ref=f63e328]:
+                - generic [ref=f63e333]: Enquiry received
+                - generic [ref=f63e334]: Mon 09:14
+              - generic [ref=f63e335]:
+                - generic [ref=f63e340]: Viewing arranged
+                - generic [ref=f63e341]: Mon 16:02
+              - generic [ref=f63e342]:
+                - generic [ref=f63e347]: Offer accepted
+                - generic [ref=f63e348]: Tue 11:20
+              - generic [ref=f63e349]:
+                - generic [ref=f63e353]: Booking confirmed
+                - generic [ref=f63e354]: —
+            - generic [ref=f63e356]:
+              - generic [ref=f63e357]: Studio · 51 weeks
+              - generic [ref=f63e358]: Docs signed
+        - article [ref=f63e359]:
+          - generic [ref=f63e360]:
+            - heading "Track performance" [level=3] [ref=f63e361]
+            - paragraph [ref=f63e362]: Monitor demand, bookings, conversion and property performance with clear, actionable insights.
+          - generic [ref=f63e364]:
+            - generic [ref=f63e365]:
+              - generic [ref=f63e366]: PERFORMANCE
+              - generic [ref=f63e367]: LAST 30 DAYS
+            - generic [ref=f63e368]:
+              - generic [ref=f63e369]: Enquiries
+              - generic [ref=f63e370]:
+                - generic [ref=f63e371]: 1,284
+                - generic [ref=f63e372]: 18%
+                - generic [ref=f63e374]: vs prev 30d
+            - generic [ref=f63e382]:
+              - generic [ref=f63e384]:
+                - generic [ref=f63e385]: Viewings
+                - generic [ref=f63e386]: "612"
+                - generic [ref=f63e387]: ▲ 9%
+              - generic [ref=f63e391]:
+                - generic [ref=f63e392]: Conversion
+                - generic [ref=f63e393]: 31%
+                - generic [ref=f63e394]: ▼ 2%
+            - generic [ref=f63e397]:
+              - generic [ref=f63e398]: 1 AUG
+              - generic [ref=f63e399]: 15 AUG
+              - generic [ref=f63e400]: 30 AUG
+        - article [ref=f63e401]:
+          - generic [ref=f63e402]:
+            - heading "Support when you need it" [level=3] [ref=f63e403]
+            - paragraph [ref=f63e404]: From onboarding to ongoing growth, our team is available 24/7 to help you succeed.
+          - generic [ref=f63e407]:
+            - generic [ref=f63e408]: Added — they will be live within the hour.
+            - generic [ref=f63e410]: Two listings are showing as full.
+            - generic [ref=f63e412]: Availability resynced. Both are back.
+            - generic [ref=f63e414]: Why did bookings dip last week?
+            - generic [ref=f63e416]: Early-bird ended Friday. Want it extended?
+            - generic [ref=f63e418]: Need the August invoice.
+            - generic [ref=f63e420]: Sent to your billing contact just now.
+            - generic [ref=f63e422]: Can we add 12 more studios for Sept?
+            - generic [ref=f63e424]: Added — they will be live within the hour.
+    - generic [ref=f63e427]:
+      - heading "Listing with amber in 3 easy steps" [level=2] [ref=f63e428]
+      - generic [ref=f63e430]:
+        - generic [ref=f63e431]:
+          - generic [ref=f63e432]: Step 1
+          - generic [ref=f63e438]:
+            - generic [ref=f63e439]:
+              - generic [ref=f63e440]: LIST YOUR PROPERTY
+              - generic [ref=f63e441]: STEP 1 OF 3
+            - generic [ref=f63e443]:
+              - generic [ref=f63e444]: Property name
+              - generic [ref=f63e445]: Chapter Spitalfields
+            - generic [ref=f63e447]:
+              - generic [ref=f63e448]: City
+              - generic [ref=f63e449]: London
+            - generic [ref=f63e451]: Next
+          - generic [ref=f63e452]:
+            - heading "Signup with us" [level=3] [ref=f63e453]
+            - paragraph [ref=f63e454]: Tell us about your rooms, availability, and portfolio.
+        - generic [ref=f63e455]:
+          - generic [ref=f63e456]: Step 2
+          - generic [ref=f63e462]:
+            - generic [ref=f63e463]:
+              - generic [ref=f63e464]: LISTINGS
+              - generic [ref=f63e465]: 3 ACTIVE
+            - generic [ref=f63e467]:
+              - generic [ref=f63e468]: PROPERTY
+              - generic [ref=f63e469]: STATUS
+            - generic [ref=f63e472]:
+              - generic [ref=f63e474]:
+                - generic [ref=f63e475]: "#4 RANKED IN LONDON"
+                - generic [ref=f63e476]: Chapter Spitalfields
+              - generic [ref=f63e477]: ACTIVE
+            - generic [ref=f63e480]:
+              - generic [ref=f63e482]:
+                - generic [ref=f63e483]: "#11 RANKED IN LONDON"
+                - generic [ref=f63e484]: Urbanest Tower Bridge
+              - generic [ref=f63e485]: ACTIVE
+            - generic [ref=f63e488]:
+              - generic [ref=f63e490]:
+                - generic [ref=f63e491]: "#18 RANKED IN LONDON"
+                - generic [ref=f63e492]: iQ Shoreditch
+              - generic [ref=f63e493]: ACTIVE
+          - generic [ref=f63e494]:
+            - heading "We set you up" [level=3] [ref=f63e495]
+            - paragraph [ref=f63e496]: Our team handles onboarding, commercials, and getting your property live.
+        - generic [ref=f63e497]:
+          - generic [ref=f63e498]: Step 3
+          - generic [ref=f63e504]:
+            - generic [ref=f63e505]:
+              - generic [ref=f63e506]: BOOKINGS
+              - generic [ref=f63e507]: THIS MONTH
+            - generic [ref=f63e509]:
+              - generic [ref=f63e510]:
+                - generic [ref=f63e511]: Total bookings
+                - generic [ref=f63e512]: 4,849
+                - generic [ref=f63e513]:
+                  - generic [ref=f63e514]: 3%
+                  - generic [ref=f63e515]: vs last week
+              - generic [ref=f63e517]:
+                - generic [ref=f63e518]: Invoiced
+                - generic [ref=f63e519]: "243"
+                - generic [ref=f63e520]:
+                  - generic [ref=f63e521]: 1%
+                  - generic [ref=f63e522]: vs last week
+            - generic [ref=f63e526]:
+              - generic [ref=f63e527]:
+                - generic [ref=f63e528]: Patrick John
+                - generic [ref=f63e529]: Chapter Spitalfields
+              - generic [ref=f63e530]: IN PROGRESS
+            - generic [ref=f63e533]:
+              - generic [ref=f63e534]:
+                - generic [ref=f63e535]: Sarah Mitchell
+                - generic [ref=f63e536]: Urbanest Tower Bridge
+              - generic [ref=f63e537]: INVOICED
+          - generic [ref=f63e538]:
+            - heading "You get booked" [level=3] [ref=f63e539]
+            - paragraph [ref=f63e540]: Reach students across 160+ source countries and turn demand into bookings.
+    - generic [ref=f63e542]:
+      - generic [ref=f63e543]:
+        - heading "Tools to manage your property" [level=2] [ref=f63e544]
+        - paragraph [ref=f63e545]: Powered by
+      - generic [ref=f63e547]:
+        - article [ref=f63e548]:
+          - generic [ref=f63e550]:
+            - generic [ref=f63e552]:
+              - generic [ref=f63e553]: Chapter Spitalfields
+              - generic [ref=f63e554]: London · 24 rooms
+            - generic [ref=f63e556]: Published
+          - generic [ref=f63e560]:
+            - heading "Manage listings" [level=3] [ref=f63e561]
+            - paragraph [ref=f63e562]: Create and update listings easily through our integrated content management system.
+        - article [ref=f63e563]:
+          - generic [ref=f63e565]:
+            - generic [ref=f63e566]:
+              - generic [ref=f63e567]: Early bird 2026/27
+              - generic [ref=f63e568]: Live
+            - generic [ref=f63e570]:
+              - generic [ref=f63e571]: 15%
+              - generic [ref=f63e572]: "off"
+            - generic [ref=f63e576]: Sept intake · all studios
+          - generic [ref=f63e577]:
+            - heading "Boost your listings" [level=3] [ref=f63e578]
+            - paragraph [ref=f63e579]: Use our campaign tools to run early-bird pricing, seasonal offers and returning-guest rates across any part of your portfolio.
+        - article [ref=f63e580]:
+          - generic [ref=f63e582]:
+            - generic [ref=f63e583]:
+              - generic [ref=f63e584]: Bookings
+              - generic [ref=f63e585]: 30 days
+            - generic [ref=f63e588]:
+              - generic [ref=f63e589]: 4,849
+              - generic [ref=f63e590]: 12%
+          - generic [ref=f63e595]:
+            - heading "Analytics" [level=3] [ref=f63e596]
+            - paragraph [ref=f63e597]: Get instant insights into performance trends so you can act quickly and make informed business decisions.
+        - article [ref=f63e598]:
+          - generic [ref=f63e600]:
+            - generic [ref=f63e601]:
+              - generic [ref=f63e602]: "4.7"
+              - generic [ref=f63e605]: 312 reviews
+            - generic [aria-hidden] [ref=f63e606]:
+              - generic [ref=f63e607]:
+                - generic [ref=f63e608]: "5"
+                - generic [ref=f63e611]: 68%
+              - generic [ref=f63e612]:
+                - generic [ref=f63e613]: "4"
+                - generic [ref=f63e616]: 21%
+              - generic [ref=f63e617]:
+                - generic [ref=f63e618]: "3"
+                - generic [ref=f63e621]: 8%
+            - generic [ref=f63e624]:
+              - generic [ref=f63e625]: Patrick John
+              - generic [ref=f63e626]: Urbanest Tower Bridge
+          - generic [ref=f63e627]:
+            - heading "Guest reviews & ratings" [level=3] [ref=f63e628]
+            - paragraph [ref=f63e629]: See every review as it lands, across Google, Facebook and amber's own student ambassadors.
+    - generic [ref=f63e631]:
+      - generic [ref=f63e633]:
+        - generic [ref=f63e634]:
+          - heading "Who we work with" [level=2] [ref=f63e635]
+          - paragraph [ref=f63e636]: From a single room to a national portfolio.
+        - list [ref=f63e637]:
+          - listitem [ref=f63e638]:
+            - heading "Student housing operators" [level=3] [ref=f63e645]
+            - paragraph [ref=f63e646]: "PBSA, student residences, and portfolio operators: reach more students and fill more beds across your properties."
+          - listitem [ref=f63e647]:
+            - heading "Rental housing operators" [level=3] [ref=f63e654]
+            - paragraph [ref=f63e655]: Connect multifamily, BTR, co-living, and managed rental inventory with global student demand.
+          - listitem [ref=f63e656]:
+            - heading "Private landlords" [level=3] [ref=f63e663]
+            - paragraph [ref=f63e664]: From individual rooms, HMOs to full properties, list for free and turn availability into bookings.
+      - paragraph [ref=f63e666]: You are in good company
+    - generic [ref=f63e709]:
+      - heading "What our partners say" [level=2] [ref=f63e710]
+      - generic [ref=f63e711]:
+        - figure [ref=f63e713]:
+          - blockquote [ref=f63e715]: Amber Student have supported us filling voids across the portfolio for many years. We worked closely through Covid to reduce the impact of the pandemic on our students and continue to work in partnership to provide excellent accommodation to a global audience. We look forward to a positive ongoing relationship.
+          - generic [ref=f63e717]:
+            - paragraph [ref=f63e718]: Linsey Cullen
+            - paragraph [ref=f63e719]: Head of Customer Experience, Fresh
+        - figure [ref=f63e721]:
+          - blockquote [ref=f63e723]: During the 5 years, Amber Student has always been our Top 10 Agent partner, there are around 1,500 students book Homes for Students properties through the Amber Student's platform every year. We have maintained a close working relationship with Amber Student over the years, and we are excited to establish common goals and work together to expand the diversity of our collaborations.
+          - generic [ref=f63e725]:
+            - paragraph [ref=f63e726]: Bo Jia
+            - paragraph [ref=f63e727]: Homes for Students
+        - figure [ref=f63e729]:
+          - blockquote [ref=f63e731]: Amber have fast become our number one global strategic partner having worked with the team for just over 4 years. They are an integral part of our international development achieving unprecedented results opening new source markets whilst impeccably representing our diverse portfolio of 70 properties across 29 cities embracing the iQ brand standards and values, putting the student first.
+          - generic [ref=f63e733]:
+            - paragraph [ref=f63e734]: David Seymour
+            - paragraph [ref=f63e735]: Head of International Partnerships, iQ Student Accommodation
+    - generic [ref=f63e737]:
+      - heading "How partnerships pay off" [level=2] [ref=f63e738]
+      - generic [ref=f63e740]:
+        - article [ref=f63e741]:
+          - generic [ref=f63e744]:
+            - paragraph [ref=f63e745]: Unlocking Success with the Growth Accelerator Program
+            - paragraph [ref=f63e746]: Amber & Londonist's digital campaigns boosted views, inquiries and revenue in just 3 months.
+          - link "Read Case Study" [ref=f63e748] [cursor=pointer]:
+            - /url: https://prod-static-assets.amberstudent.com/other/londonist-amber.pdf
+        - article [ref=f63e749]:
+          - generic [ref=f63e752]:
+            - paragraph [ref=f63e753]: June Homes' Strategic Partnership with amber
+            - paragraph [ref=f63e754]: Expanding International Reach, Boosting Conversion Rates, and Amplifying Brand Visibility.
+          - link "Read Case Study" [ref=f63e756] [cursor=pointer]:
+            - /url: https://prod-static-assets.amberstudent.com/other/amber-june-homes-case-study.pdf
+        - article [ref=f63e757]:
+          - generic [ref=f63e760]:
+            - paragraph [ref=f63e761]: Zuma Housing's Strategic Partnership with amber
+            - paragraph [ref=f63e762]: Increasing qualified bookings from new student source countries and driving sustained growth.
+          - link "Read Case Study" [ref=f63e764] [cursor=pointer]:
+            - /url: https://prod-static-assets.amberstudent.com/other/amber-zuma-housing-case-study.pdf
+        - article [ref=f63e765]:
+          - generic [ref=f63e768]:
+            - paragraph [ref=f63e769]: Axo Student Living's Strategic Partnership with amber
+            - paragraph [ref=f63e770]: "Exceeding Expectations: More Bookings, Less Risk, and Growth from Market Challenges!"
+          - link "Read Case Study" [ref=f63e772] [cursor=pointer]:
+            - /url: https://prod-static-assets.amberstudent.com/other/amber-strategic-partnership-with-axo-student-living-case-study.pdf
+      - generic [ref=f63e773]:
+        - generic [ref=f63e774]:
+          - button "Go to testimonial 1" [ref=f63e775] [cursor=pointer]
+          - button "Go to testimonial 2" [ref=f63e776] [cursor=pointer]
+          - button "Go to testimonial 3" [ref=f63e777] [cursor=pointer]
+          - button "Go to testimonial 4" [ref=f63e778] [cursor=pointer]
+        - generic [ref=f63e779]:
+          - button "Previous testimonial" [disabled] [ref=f63e780]
+          - button "Next testimonial" [ref=f63e783] [cursor=pointer]
+    - generic [ref=f63e787]:
+      - heading "Frequently asked questions" [level=2] [ref=f63e788]
+      - generic [ref=f63e789]:
+        - heading "Getting started" [level=3] [ref=f63e790]
+        - generic [ref=f63e791]:
+          - button "Who can list with amber?" [expanded] [ref=f63e792] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f63e794]: –
+          - paragraph [ref=f63e795]: "Anyone with student accommodation to fill: individual landlords with a single room, mid-sized operators, and large PBSA and BTR groups. There is no minimum portfolio size."
+        - button "How does listing with amber work?" [ref=f63e797] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e799]: +
+        - button "What information do I need to provide to get started?" [ref=f63e801] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e803]: +
+        - button "What photos and videos should I provide?" [ref=f63e805] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e807]: +
+        - button "How quickly can my property go live?" [ref=f63e809] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e811]: +
+        - heading "Costs and commission" [level=3] [ref=f63e812]
+        - button "Is there a fee to list on amber?" [ref=f63e814] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e816]: +
+        - button "What commission does amber charge?" [ref=f63e818] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e820]: +
+        - heading "Managing your property" [level=3] [ref=f63e821]
+        - button "Can I manage my prices, availability and offers?" [ref=f63e823] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e825]: +
+        - button "Can amber work with my existing PMS or booking system?" [ref=f63e827] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e829]: +
+        - button "How are bookings managed?" [ref=f63e831] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e833]: +
+        - button "Can I track my property's performance?" [ref=f63e835] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e837]: +
+        - button "Can I run promotions or special offers on amber?" [ref=f63e839] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e841]: +
+        - heading "Growth and support" [level=3] [ref=f63e842]
+        - button "How does amber help me get more bookings?" [ref=f63e844] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e846]: +
+        - button "Where will my property be shown?" [ref=f63e848] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e850]: +
+        - button "How will my account be managed?" [ref=f63e852] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e854]: +
+        - button "What support does amber provide?" [ref=f63e856] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e858]: +
+        - button "What makes amber different from other listing platforms?" [ref=f63e860] [cursor=pointer]:
+          - generic [aria-hidden] [ref=f63e862]: +
+    - generic [ref=f63e869]:
+      - generic [ref=f63e870]:
+        - heading "Sign up now with amber" [level=2] [ref=f63e871]
+        - paragraph [ref=f63e872]: A dedicated team. Student demand from 160+ countries.
+      - link "List on amber" [ref=f63e873] [cursor=pointer]:
+        - /url: /list
+    - generic [ref=f63e877]:
+      - generic [ref=f63e878]: amber © 2026. All rights reserved.
+      - generic [ref=f63e881] [cursor=pointer]:
+        - generic:
+          - link:
+            - /url: https://uk.trustpilot.com/review/amberstudent.com
+      - generic [ref=f63e882]:
+        - generic [ref=f63e883]:
+          - generic [ref=f63e884]: Get the app
+          - generic [ref=f63e885]:
+            - link [ref=f63e886] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+            - link [ref=f63e887] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+        - generic [ref=f63e889]: Payment Options
+      - generic [ref=f63e892]:
+        - button [ref=f63e894] [cursor=pointer]
+        - button [ref=f63e900] [cursor=pointer]
+        - button [ref=f63e906] [cursor=pointer]
+        - button [ref=f63e912] [cursor=pointer]

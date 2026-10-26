@@ -1,0 +1,2 @@
+[    2256ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[    2257ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'document-domain'. @ :0

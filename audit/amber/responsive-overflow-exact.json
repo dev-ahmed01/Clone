@@ -1,0 +1,243 @@
+[
+  {
+    "name": "home",
+    "offenders": [
+      {
+        "className": "PropertyTags-module__soldOutTag",
+        "overflowX": "visible",
+        "position": "absolute",
+        "rect": {
+          "height": 24,
+          "left": 289,
+          "right": 412,
+          "top": 970,
+          "width": 123
+        },
+        "tag": "div",
+        "text": "Property of the Day",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__pill popularCitites-module__pillsDesktop",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 41,
+          "left": 309,
+          "right": 409,
+          "top": 1340,
+          "width": 100
+        },
+        "tag": "div",
+        "text": "Ireland",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 40,
+          "left": 290,
+          "right": 410,
+          "top": 3736,
+          "width": 120
+        },
+        "tag": "span",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "Image-module__animateOpacity bestPartners-module__logo Image-module__show",
+        "overflowX": "clip",
+        "position": "static",
+        "rect": {
+          "height": 40,
+          "left": 290,
+          "right": 410,
+          "top": 3736,
+          "width": 120
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "ContactCard-module__contactCardAnchor",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 98,
+          "left": 218,
+          "right": 409,
+          "top": 4280,
+          "width": 190
+        },
+        "tag": "span",
+        "text": "Chat on Whatsapp 24×7 Assistance",
+        "transform": "none"
+      },
+      {
+        "className": "ContactCard-module__contactCardInner ContactCard-module__whatsappBorder ContactCard-module__desktop",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 98,
+          "left": 218,
+          "right": 409,
+          "top": 4280,
+          "width": 190
+        },
+        "tag": "div",
+        "text": "Chat on Whatsapp 24×7 Assistance",
+        "transform": "none"
+      },
+      {
+        "className": "ContactCard-module__contactCardAnchor",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 98,
+          "left": 218,
+          "right": 409,
+          "top": 4395,
+          "width": 190
+        },
+        "tag": "span",
+        "text": "+91 8035735724",
+        "transform": "none"
+      },
+      {
+        "className": "ContactCard-module__contactCardInner ContactCard-module__plainBorder ContactCard-module__desktop",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 98,
+          "left": 218,
+          "right": 409,
+          "top": 4395,
+          "width": 190
+        },
+        "tag": "div",
+        "text": "+91 8035735724",
+        "transform": "none"
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 409,
+    "viewport": 390
+  },
+  {
+    "name": "property",
+    "offenders": [
+      {
+        "className": "listItemStyles-module__cancellationListItemContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 98,
+          "left": 287,
+          "right": 452,
+          "top": 8119,
+          "width": 165
+        },
+        "tag": "li",
+        "text": "University Course Cancellation/Modification If your course has been cancelled by your university, please reach out to the Amber team with the relevant supportin",
+        "transform": "none"
+      },
+      {
+        "className": "listItemStyles-module__cancellationListItem",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 98,
+          "left": 287,
+          "right": 452,
+          "top": 8119,
+          "width": 165
+        },
+        "tag": "div",
+        "text": "University Course Cancellation/Modification If your course has been cancelled by your university, please reach out to the Amber team with the relevant supportin",
+        "transform": "none"
+      },
+      {
+        "className": "listItemStyles-module__cancellationItemContent",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 82,
+          "left": 287,
+          "right": 452,
+          "top": 8119,
+          "width": 165
+        },
+        "tag": "div",
+        "text": "University Course Cancellation/Modification If your course has been cancelled by your university, please reach out to the Amber team with the relevant supportin",
+        "transform": "none"
+      },
+      {
+        "className": "listItemStyles-module__listHeading listItemStyles-module__desktop listItemStyles-module__cancellationTitle",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 35,
+          "left": 287,
+          "right": 452,
+          "top": 8119,
+          "width": 165
+        },
+        "tag": "div",
+        "text": "University Course Cancellation/Modification",
+        "transform": "none"
+      },
+      {
+        "className": "listItemStyles-module__cancellationDetailsContainer",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 47,
+          "left": 287,
+          "right": 452,
+          "top": 8154,
+          "width": 165
+        },
+        "tag": "div",
+        "text": "If your course has been cancelled by your university, please reach out to the Amber team with the relevant supporting documentation. We will liaise with the pro",
+        "transform": "none"
+      },
+      {
+        "className": "listItemStyles-module__cancellationDescription",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 19,
+          "left": 287,
+          "right": 452,
+          "top": 8158,
+          "width": 165
+        },
+        "tag": "div",
+        "text": "If your course has been cancelled by your university, please reach out to the Amber team with the relevant supporting documentation. We will liaise with the pro",
+        "transform": "none"
+      },
+      {
+        "className": "listItemStyles-module__cancellationViewMoreLink",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 17,
+          "left": 287,
+          "right": 452,
+          "top": 8185,
+          "width": 165
+        },
+        "tag": "div",
+        "text": "View more",
+        "transform": "none"
+      }
+    ],
+    "path": "/places/iq-vega-london-2101138507106",
+    "scrollWidth": 451,
+    "viewport": 390
+  }
+]

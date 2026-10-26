@@ -1,0 +1,1518 @@
+[
+  {
+    "name": "home",
+    "offenders": [
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 40,
+          "left": 578,
+          "right": 698,
+          "top": 3736,
+          "width": 120
+        },
+        "tag": "span",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "Image-module__animateOpacity bestPartners-module__logo Image-module__show",
+        "overflowX": "clip",
+        "position": "static",
+        "rect": {
+          "height": 40,
+          "left": 578,
+          "right": 698,
+          "top": 3736,
+          "width": 120
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__pill popularCitites-module__pillsDesktop",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 41,
+          "left": 573,
+          "right": 676,
+          "top": 1340,
+          "width": 104
+        },
+        "tag": "div",
+        "text": "Canada",
+        "transform": "none"
+      },
+      {
+        "className": "ThousandPropertiesNewRails-module__pills ThousandPropertiesNewRails-module__pillsDesktop",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 40,
+          "left": 544,
+          "right": 653,
+          "top": 1959,
+          "width": 109
+        },
+        "tag": "div",
+        "text": "Nottingham",
+        "transform": "none"
+      },
+      {
+        "className": "CompactInventoryCard-module__priceContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 541,
+          "right": 649,
+          "top": 1178,
+          "width": 109
+        },
+        "tag": "div",
+        "text": "From £239/ week",
+        "transform": "none"
+      },
+      {
+        "className": "CompactInventoryCard-module__priceContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 541,
+          "right": 649,
+          "top": 2246,
+          "width": 109
+        },
+        "tag": "div",
+        "text": "From £433/ week",
+        "transform": "none"
+      },
+      {
+        "className": "HorizontalScroll-module__hrContainer",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 182,
+          "left": 0,
+          "right": 648,
+          "top": 3798,
+          "width": 648
+        },
+        "tag": "div",
+        "text": "Partner With Us At amber, we offer seamless booking process and a robust sales support. Partner With Us List With Us List your properties ef",
+        "transform": "none"
+      },
+      {
+        "className": "ListWithUs-module__horizontalScroll HorizontalScroll-module__horizontalScroll",
+        "overflowX": "auto",
+        "position": "relative",
+        "rect": {
+          "height": 182,
+          "left": 0,
+          "right": 648,
+          "top": 3798,
+          "width": 648
+        },
+        "tag": "div",
+        "text": "Partner With Us At amber, we offer seamless booking process and a robust sales support. Partner With Us List With Us List your properties ef",
+        "transform": "none"
+      },
+      {
+        "className": "ListWithUsCard-module__lwsCardContainer",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 150,
+          "left": 332,
+          "right": 632,
+          "top": 3814,
+          "width": 300
+        },
+        "tag": "div",
+        "text": "List With Us List your properties efficiently with amber. List Properties",
+        "transform": "none"
+      },
+      {
+        "className": "ListWithUsCard-module__content",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 134,
+          "left": 332,
+          "right": 632,
+          "top": 3814,
+          "width": 300
+        },
+        "tag": "div",
+        "text": "List With Us List your properties efficiently with amber. List Properties",
+        "transform": "none"
+      },
+      {
+        "className": "HundredsOfCities-module__cityLink",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 21,
+          "left": 568,
+          "right": 630,
+          "top": 4091,
+          "width": 62
+        },
+        "tag": "a",
+        "text": "Leicester",
+        "transform": "none"
+      },
+      {
+        "className": "HomepageCollectionSkeleton-module__pillsDefault",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 40,
+          "left": 552,
+          "right": 629,
+          "top": 518,
+          "width": 77
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__cityTile popularCitites-module__cityTileDesktop",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 140,
+          "left": 484,
+          "right": 624,
+          "top": 1397,
+          "width": 140
+        },
+        "tag": "a",
+        "text": "Sheffield",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__overlay",
+        "overflowX": "visible",
+        "position": "absolute",
+        "rect": {
+          "height": 140,
+          "left": 484,
+          "right": 624,
+          "top": 1397,
+          "width": 140
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__textWrap",
+        "overflowX": "hidden",
+        "position": "absolute",
+        "rect": {
+          "height": 38,
+          "left": 484,
+          "right": 624,
+          "top": 1498,
+          "width": 140
+        },
+        "tag": "span",
+        "text": "Sheffield",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__cityTile popularCitites-module__cityTileDesktop",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 140,
+          "left": 484,
+          "right": 624,
+          "top": 1553,
+          "width": 140
+        },
+        "tag": "a",
+        "text": "Leeds",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__overlay",
+        "overflowX": "visible",
+        "position": "absolute",
+        "rect": {
+          "height": 140,
+          "left": 484,
+          "right": 624,
+          "top": 1553,
+          "width": 140
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "popularCitites-module__textWrap",
+        "overflowX": "hidden",
+        "position": "absolute",
+        "rect": {
+          "height": 38,
+          "left": 484,
+          "right": 624,
+          "top": 1654,
+          "width": 140
+        },
+        "tag": "span",
+        "text": "Leeds",
+        "transform": "none"
+      },
+      {
+        "className": "Image-module__animateOpacity popularCitites-module__icon Image-module__fallbackClass",
+        "overflowX": "clip",
+        "position": "absolute",
+        "rect": {
+          "height": 126,
+          "left": 491,
+          "right": 617,
+          "top": 1404,
+          "width": 126
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+      },
+      {
+        "className": "Image-module__animateOpacity popularCitites-module__icon Image-module__fallbackClass",
+        "overflowX": "clip",
+        "position": "absolute",
+        "rect": {
+          "height": 126,
+          "left": 491,
+          "right": 617,
+          "top": 1560,
+          "width": 126
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+      },
+      {
+        "className": "Image-module__animateOpacity Image-module__fallbackClass",
+        "overflowX": "clip",
+        "position": "absolute",
+        "rect": {
+          "height": 135,
+          "left": 347,
+          "right": 617,
+          "top": 3821,
+          "width": 270
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 573,
+          "right": 617,
+          "top": 1178,
+          "width": 44
+        },
+        "tag": "span",
+        "text": "£239/",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 573,
+          "right": 617,
+          "top": 2246,
+          "width": 44
+        },
+        "tag": "span",
+        "text": "£433/",
+        "transform": "none"
+      },
+      {
+        "className": "HundredsOfCities-module__cityLink",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 21,
+          "left": 538,
+          "right": 608,
+          "top": 4120,
+          "width": 71
+        },
+        "tag": "a",
+        "text": "Ann Arbor",
+        "transform": "none"
+      },
+      {
+        "className": "Image-module__animateOpacity Image-module__fallbackClass",
+        "overflowX": "clip",
+        "position": "static",
+        "rect": {
+          "height": 14,
+          "left": 590,
+          "right": 605,
+          "top": 1353,
+          "width": 14
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 595,
+          "right": 601,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 595,
+          "right": 601,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 591,
+          "right": 597,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 591,
+          "right": 597,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 33,
+          "left": 378,
+          "right": 594,
+          "top": 2513,
+          "width": 216
+        },
+        "tag": "div",
+        "text": "sindhu yeluri Royal Melbourne Institute Of Technology",
+        "transform": "none"
+      },
+      {
+        "className": "TrustPilotBanner-module__trustPilotUser",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 378,
+          "right": 594,
+          "top": 2513,
+          "width": 216
+        },
+        "tag": "div",
+        "text": "sindhu yeluri",
+        "transform": "none"
+      },
+      {
+        "className": "TrustPilotBanner-module__trustPilotUniHome",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 15,
+          "left": 378,
+          "right": 594,
+          "top": 2530,
+          "width": 216
+        },
+        "tag": "div",
+        "text": "Royal Melbourne Institute Of Technology",
+        "transform": "none"
+      },
+      {
+        "className": "TrustPilotBanner-module__trustPilotCarouselItem TrustPilotBanner-module__trustpilotHomeItem",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 180,
+          "left": 312,
+          "right": 592,
+          "top": 2382,
+          "width": 280
+        },
+        "tag": "div",
+        "text": "Got an amazing agent who was always available and made an effort to help me whenever needed. Thank you AmberStudent! sindhu yeluri Royal Mel",
+        "transform": "none"
+      },
+      {
+        "className": "TrustPilotBanner-module__carouselItemBorder",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 180,
+          "left": 312,
+          "right": 592,
+          "top": 2382,
+          "width": 280
+        },
+        "tag": "div",
+        "text": "Got an amazing agent who was always available and made an effort to help me whenever needed. Thank you AmberStudent! sindhu yeluri Royal Mel",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 583,
+          "right": 589,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 583,
+          "right": 589,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 579,
+          "right": 585,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 579,
+          "right": 585,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 571,
+          "right": 577,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 571,
+          "right": 577,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 80,
+          "left": 328,
+          "right": 576,
+          "top": 2394,
+          "width": 248
+        },
+        "tag": "div",
+        "text": "Got an amazing agent who was always available and made an effort to help me whenever needed. Thank you AmberStudent!",
+        "transform": "none"
+      },
+      {
+        "className": "TrustPilotBanner-module__trustPilotCarouselReviewText ",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 80,
+          "left": 328,
+          "right": 576,
+          "top": 2394,
+          "width": 248
+        },
+        "tag": "div",
+        "text": "Got an amazing agent who was always available and made an effort to help me whenever needed. Thank you AmberStudent!",
+        "transform": "none"
+      },
+      {
+        "className": "TrustPilotBanner-module__trustPilotBottom",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 42,
+          "left": 328,
+          "right": 576,
+          "top": 2508,
+          "width": 248
+        },
+        "tag": "div",
+        "text": "sindhu yeluri Royal Melbourne Institute Of Technology",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 567,
+          "right": 573,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 567,
+          "right": 573,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 541,
+          "right": 568,
+          "top": 1182,
+          "width": 27
+        },
+        "tag": "div",
+        "text": "From",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 541,
+          "right": 568,
+          "top": 2250,
+          "width": 27
+        },
+        "tag": "div",
+        "text": "From",
+        "transform": "none"
+      },
+      {
+        "className": "HundredsOfCities-module__cityLink",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 21,
+          "left": 497,
+          "right": 568,
+          "top": 4091,
+          "width": 71
+        },
+        "tag": "a",
+        "text": "Edinburgh",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 559,
+          "right": 565,
+          "top": 1101,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 559,
+          "right": 565,
+          "top": 2169,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      }
+    ],
+    "path": "/",
+    "scrollWidth": 409,
+    "viewport": 390
+  },
+  {
+    "name": "property",
+    "offenders": [
+      {
+        "className": "reviewCard-module__innerContent",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 176,
+          "left": 383,
+          "right": 692,
+          "top": 14740,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "Seamless Check-In 5.0 /5 Platinum En Suite Plus · From Sep 19, 2026 - Jul 16, 2027 My check-in experience has been smooth, and I’m really ha",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 45,
+          "left": 383,
+          "right": 692,
+          "top": 14740,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "Seamless Check-In 5.0 /5 Platinum En Suite Plus · From Sep 19, 2026 - Jul 16, 2027",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__header",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 25,
+          "left": 383,
+          "right": 692,
+          "top": 14740,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "Seamless Check-In 5.0 /5",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__roomDetails",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "left": 383,
+          "right": 692,
+          "top": 14765,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "Platinum En Suite Plus · From Sep 19, 2026 - Jul 16, 2027",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__body",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 55,
+          "left": 383,
+          "right": 692,
+          "top": 14797,
+          "width": 309
+        },
+        "tag": "p",
+        "text": "My check-in experience has been smooth, and I’m really happy with the room. It’s clean, comfortable, and exactly as expected. Thanks!",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__photos",
+        "overflowX": "scroll",
+        "position": "static",
+        "rect": {
+          "height": 52,
+          "left": 383,
+          "right": 692,
+          "top": 14864,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__actions",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 29,
+          "left": 383,
+          "right": 692,
+          "top": 14932,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "Helpful Posted on Sep' 26",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCardsList-module__cardWrapper",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 354,
+          "left": 367,
+          "right": 677,
+          "top": 14723,
+          "width": 310
+        },
+        "tag": "div",
+        "text": "Seamless Check-In 5.0 /5 Platinum En Suite Plus · From Sep 19, 2026 - Jul 16, 2027 My check-in experience has been smooth, and I’m really ha",
+        "transform": "none"
+      },
+      {
+        "className": "Button-module__btn Button-module__outline tabs-module__tab mapInfoTabs-module__tab tabs-module__withoutBorder ",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 45,
+          "left": 552,
+          "right": 677,
+          "top": 12823,
+          "width": 124
+        },
+        "tag": "button",
+        "text": "Pharmacies",
+        "transform": "none"
+      },
+      {
+        "className": "Ripple-module__container",
+        "overflowX": "hidden",
+        "position": "absolute",
+        "rect": {
+          "height": 45,
+          "left": 552,
+          "right": 677,
+          "top": 12823,
+          "width": 124
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "VideoSection-module__videoContainerWrapper",
+        "overflowX": "visible",
+        "position": "relative",
+        "rect": {
+          "height": 170,
+          "left": 359,
+          "right": 670,
+          "top": 1288,
+          "width": 311
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "VideoPlayer-module__videoContainer VideoSection-module__container",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 170,
+          "left": 359,
+          "right": 670,
+          "top": 1288,
+          "width": 311
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "VideoPlayer-module__videoPlayer VideoSection-module__video",
+        "overflowX": "clip",
+        "position": "static",
+        "rect": {
+          "height": 170,
+          "left": 359,
+          "right": 670,
+          "top": 1288,
+          "width": 311
+        },
+        "tag": "video",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "CompactInventoryCard-module__priceContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 557,
+          "right": 666,
+          "top": 16729,
+          "width": 109
+        },
+        "tag": "div",
+        "text": "From £353/ week",
+        "transform": "none"
+      },
+      {
+        "className": "CompactInventoryCard-module__priceContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 557,
+          "right": 666,
+          "top": 17421,
+          "width": 109
+        },
+        "tag": "div",
+        "text": "From £319/ week",
+        "transform": "none"
+      },
+      {
+        "className": "Button-module__btnInnerContent",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 568,
+          "right": 665,
+          "top": 12837,
+          "width": 96
+        },
+        "tag": "span",
+        "text": "Pharmacies",
+        "transform": "none"
+      },
+      {
+        "className": "PropertyDetailsSectionStyles-module__viewAllButton",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 22,
+          "left": 597,
+          "right": 658,
+          "top": 603,
+          "width": 61
+        },
+        "tag": "button",
+        "text": "View All",
+        "transform": "none"
+      },
+      {
+        "className": "carousel-module__slide",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 164,
+          "left": 342,
+          "right": 651,
+          "top": 116,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "SectionFeaturedDesktop-module__imgWrap",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 164,
+          "left": 342,
+          "right": 651,
+          "top": 116,
+          "width": 309
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "chip-module__chip chip-module__chipDesktop",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 15,
+          "left": 449,
+          "right": 639,
+          "top": 17662,
+          "width": 190
+        },
+        "tag": "a",
+        "text": "Student Accommodation in Hatfield",
+        "transform": "none"
+      },
+      {
+        "className": "photoGallery-module__thumbnailWrapper",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 80,
+          "left": 557,
+          "right": 637,
+          "top": 14611,
+          "width": 80
+        },
+        "tag": "div",
+        "text": "+13 Photos",
+        "transform": "none"
+      },
+      {
+        "className": "photoGallery-module__textOverlay",
+        "overflowX": "visible",
+        "position": "absolute",
+        "rect": {
+          "height": 80,
+          "left": 557,
+          "right": 637,
+          "top": 14611,
+          "width": 80
+        },
+        "tag": "div",
+        "text": "+13 Photos",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 590,
+          "right": 634,
+          "top": 16729,
+          "width": 44
+        },
+        "tag": "span",
+        "text": "£353/",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 23,
+          "left": 590,
+          "right": 634,
+          "top": 17421,
+          "width": 44
+        },
+        "tag": "span",
+        "text": "£319/",
+        "transform": "none"
+      },
+      {
+        "className": "photoGallery-module__overlayText",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 20,
+          "left": 561,
+          "right": 632,
+          "top": 14641,
+          "width": 71
+        },
+        "tag": "span",
+        "text": "+13 Photos",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__parentContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 22,
+          "left": 387,
+          "right": 624,
+          "top": 573,
+          "width": 237
+        },
+        "tag": "div",
+        "text": "Chelsea College Of Arts (Chelse... | 0.53 Mi",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__journeyContainer",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 22,
+          "left": 387,
+          "right": 616,
+          "top": 573,
+          "width": 229
+        },
+        "tag": "div",
+        "text": "Chelsea College Of Arts (Chelse... | 0.53 Mi",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__photoWrapper",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 52,
+          "left": 557,
+          "right": 609,
+          "top": 14864,
+          "width": 52
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__roomText",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 15,
+          "left": 407,
+          "right": 607,
+          "top": 14768,
+          "width": 200
+        },
+        "tag": "span",
+        "text": "Platinum En Suite Plus · From Sep 19, 2026 - Jul 16, 2027",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__info",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 415,
+          "right": 607,
+          "top": 575,
+          "width": 192
+        },
+        "tag": "div",
+        "text": "Chelsea College Of Arts (Chelse... | 0.53 Mi",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__cityName",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 415,
+          "right": 607,
+          "top": 575,
+          "width": 192
+        },
+        "tag": "div",
+        "text": "Chelsea College Of Arts (Chelse... | 0.53 Mi",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 591,
+          "right": 597,
+          "top": 254,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__parentContainer",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 22,
+          "left": 509,
+          "right": 589,
+          "top": 603,
+          "width": 79
+        },
+        "tag": "div",
+        "text": "Cinema",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 579,
+          "right": 585,
+          "top": 254,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 557,
+          "right": 585,
+          "top": 16733,
+          "width": 27
+        },
+        "tag": "div",
+        "text": "From",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 557,
+          "right": 585,
+          "top": 17426,
+          "width": 27
+        },
+        "tag": "div",
+        "text": "From",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 16,
+          "left": 568,
+          "right": 584,
+          "top": 12838,
+          "width": 16
+        },
+        "tag": "svg",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "PriceTrend-module__trendCard PriceTrend-module__desktop",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 141,
+          "left": 320,
+          "right": 584,
+          "top": 15275,
+          "width": 264
+        },
+        "tag": "div",
+        "text": "Book now 23.98% This property price has gone down by 23.98% in the past 12 months.",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 12,
+          "left": 569,
+          "right": 584,
+          "top": 12840,
+          "width": 15
+        },
+        "tag": "g",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 12,
+          "left": 569,
+          "right": 584,
+          "top": 12840,
+          "width": 15
+        },
+        "tag": "path",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__journeyContainer",
+        "overflowX": "hidden",
+        "position": "relative",
+        "rect": {
+          "height": 22,
+          "left": 509,
+          "right": 581,
+          "top": 603,
+          "width": 71
+        },
+        "tag": "div",
+        "text": "Cinema",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__reviewerDetails",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 35,
+          "left": 435,
+          "right": 580,
+          "top": 14992,
+          "width": 145
+        },
+        "tag": "div",
+        "text": "Maxime D Student in iQ Vega, London",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__reviewerName",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 16,
+          "left": 435,
+          "right": 580,
+          "top": 14992,
+          "width": 145
+        },
+        "tag": "span",
+        "text": "Maxime D",
+        "transform": "none"
+      },
+      {
+        "className": "reviewCard-module__reviewerMeta",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 15,
+          "left": 435,
+          "right": 580,
+          "top": 15012,
+          "width": 145
+        },
+        "tag": "span",
+        "text": "Student in iQ Vega, London",
+        "transform": "none"
+      },
+      {
+        "className": "CarouselIndicator-module__line",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 6,
+          "left": 567,
+          "right": 573,
+          "top": 254,
+          "width": 6
+        },
+        "tag": "div",
+        "text": "",
+        "transform": "none"
+      },
+      {
+        "className": "Image-module__animateOpacity reviewCard-module__photoThumbnail Image-module__fallbackClass",
+        "overflowX": "clip",
+        "position": "static",
+        "rect": {
+          "height": 14,
+          "left": 558,
+          "right": 573,
+          "top": 14865,
+          "width": 14
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+      },
+      {
+        "className": "ScrollStyles-module__info",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 538,
+          "right": 572,
+          "top": 605,
+          "width": 34
+        },
+        "tag": "div",
+        "text": "Cinema",
+        "transform": "none"
+      },
+      {
+        "className": "ScrollStyles-module__cityName",
+        "overflowX": "hidden",
+        "position": "static",
+        "rect": {
+          "height": 18,
+          "left": 538,
+          "right": 572,
+          "top": 605,
+          "width": 34
+        },
+        "tag": "div",
+        "text": "Cinema",
+        "transform": "none"
+      },
+      {
+        "className": "Image-module__animateOpacity photoGallery-module__thumbnail Image-module__fallbackClass",
+        "overflowX": "clip",
+        "position": "static",
+        "rect": {
+          "height": 14,
+          "left": 557,
+          "right": 572,
+          "top": 14612,
+          "width": 14
+        },
+        "tag": "img",
+        "text": "",
+        "transform": "matrix(0.9, 0, 0, 0.9, 0, 0)"
+      },
+      {
+        "className": "PriceTrend-module__trendCardText",
+        "overflowX": "visible",
+        "position": "static",
+        "rect": {
+          "height": 108,
+          "left": 453,
+          "right": 568,
+          "top": 15291,
+          "width": 115
+        },
+        "tag": "div",
+        "text": "This property price has gone down by 23.98% in the past 12 months.",
+        "transform": "none"
+      }
+    ],
+    "path": "/places/iq-vega-london-2101138507106",
+    "scrollWidth": 451,
+    "viewport": 390
+  }
+]

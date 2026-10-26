@@ -1,0 +1,3 @@
+[    1079ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://base.amberstudent.com/api/v0/users/details:0
+[    1778ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://amberstudent.com/fonts/Geist-Variable.woff2:0
+[    1779ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://amberstudent.com/fonts/GeistMono-Variable.woff2:0

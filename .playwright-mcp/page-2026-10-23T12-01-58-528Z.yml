@@ -1,0 +1,1634 @@
+- generic [ref=f86e3]:
+  - generic [ref=f86e4]:
+    - generic [ref=f86e5]:
+      - button "close" [ref=f86e6] [cursor=pointer]
+      - heading "£20 cashback on the app!" [level=2] [ref=f86e9]
+      - generic [ref=f86e10]: Scan to Download App
+      - generic [ref=f86e11]:
+        - generic [ref=f86e14]: 4.5/5
+        - text: "| 180K+ Downloads"
+      - generic [ref=f86e15]:
+        - generic [ref=f86e16]: Download from
+        - link [ref=f86e17] [cursor=pointer]:
+          - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+        - link [ref=f86e18] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+    - generic [ref=f86e19]:
+      - generic [ref=f86e20]:
+        - link "home" [ref=f86e21] [cursor=pointer]:
+          - /url: /
+        - textbox "Search by City University or Property" [ref=f86e27]
+      - generic [ref=f86e31]:
+        - button "Download App" [ref=f86e32] [cursor=pointer]
+        - button [ref=f86e34]:
+          - button "[object Object]" [ref=f86e35] [cursor=pointer]: Support
+        - button "En" [ref=f86e42] [cursor=pointer]
+        - generic [ref=f86e45]:
+          - button "Login" [ref=f86e46] [cursor=pointer]
+          - button [ref=f86e50]:
+            - button [ref=f86e51] [cursor=pointer]
+  - generic [ref=f86e59]:
+    - generic [ref=f86e60]:
+      - generic [ref=f86e62]:
+        - generic [ref=f86e63]:
+          - generic [ref=f86e64]:
+            - list [ref=f86e66]:
+              - listitem [ref=f86e67]:
+                - link "Home" [ref=f86e68] [cursor=pointer]:
+                  - /url: /
+                - text: /
+              - listitem [ref=f86e69]:
+                - link "United Kingdom" [ref=f86e70] [cursor=pointer]:
+                  - /url: /places/search/united-kingdom-1811011902157
+                - text: /
+              - listitem [ref=f86e71]:
+                - link "London" [ref=f86e72] [cursor=pointer]:
+                  - /url: /places/search/london-1811028205760
+            - generic [ref=f86e73]:
+              - generic [ref=f86e74] [cursor=pointer]
+              - generic [ref=f86e646]:
+                - generic [ref=f86e648] [cursor=pointer]
+                - generic [ref=f86e649] [cursor=pointer]
+                - generic [ref=f86e653] [cursor=pointer]
+                - generic [ref=f86e660] [cursor=pointer]: "+279"
+          - generic [ref=f86e661]:
+            - generic [ref=f86e662]:
+              - button "Photos" [ref=f86e663] [cursor=pointer]
+              - button "Videos" [ref=f86e666] [cursor=pointer]
+              - button "3D Views" [ref=f86e670] [cursor=pointer]
+              - button "Map View" [ref=f86e674] [cursor=pointer]
+            - generic "4.5 out of 5 stars, 8 reviews" [ref=f86e677] [cursor=pointer]:
+              - generic [ref=f86e678]: "4.5"
+              - generic [ref=f86e700]: (8)
+          - generic [ref=f86e701]:
+            - generic [ref=f86e703]:
+              - generic [ref=f86e704]:
+                - heading "iQ Vega, London" [level=1] [ref=f86e705]
+                - generic [ref=f86e706]: 6, Miles St, London, SW8 1RZ, United Kingdom
+              - generic [ref=f86e707]:
+                - generic [ref=f86e708]: From
+                - generic [ref=f86e709]:
+                  - generic [ref=f86e710]: £433
+                  - generic [ref=f86e711]: £412
+                - text: per week
+            - generic [ref=f86e715]:
+              - generic [ref=f86e718]:
+                - generic [ref=f86e719]: 2.0 mi from London City Center
+                - generic [ref=f86e720]:
+                  - generic [ref=f86e722]:
+                    - text: (
+                    - generic [ref=f86e723]: 13min
+                    - generic [ref=f86e728]: .
+                    - generic [ref=f86e729]: 18min
+                    - generic [ref=f86e733]: .
+                    - generic [ref=f86e734]: 42min
+                    - text: )
+                  - button "View map" [ref=f86e738] [cursor=pointer]
+              - generic [ref=f86e739]:
+                - generic [ref=f86e740]: 831 Total Units
+                - generic [ref=f86e748]: Highest Floor 37
+                - generic [ref=f86e756]: Built in 2021
+                - generic [ref=f86e764]: Chelsea College of Arts (Chelse... | 0.53 mi
+                - generic [ref=f86e772]: City and Guilds of London Art S... | 0.8 mi
+                - generic [ref=f86e780]: Ada. National College for Digit... | 1.06 mi
+                - generic [ref=f86e788]: Italia Conti Academy | 1.19 mi
+                - generic [ref=f86e796]: Morley college | 1.23 mi
+              - generic [ref=f86e805]:
+                - generic [ref=f86e806]: No Visa No Pay
+                - generic [ref=f86e814]: Pay In Instalment
+                - generic [ref=f86e822]: laundry facility
+                - generic [ref=f86e830]: bills included
+                - generic [ref=f86e837]: cinema
+                - button "View All" [ref=f86e845] [cursor=pointer]
+        - generic [ref=f86e846]:
+          - generic [ref=f86e847]:
+            - heading "Offers" [level=2] [ref=f86e848]
+            - generic [ref=f86e849]:
+              - generic "Save up to £1,050 + £40 in Extra Benefits" [ref=f86e850]:
+                - generic [aria-hidden] [ref=f86e851]: Save up to £1,050 + £40 in Extra Benefits
+              - generic [ref=f86e852]: Save up to £1,050 + £40 in Extra Benefits
+          - generic [ref=f86e854]:
+            - 'button "£700 Property Cashback with an Additional £100: Limited Time" [ref=f86e856] [cursor=pointer]'
+            - 'button "Bonus Deal: Exclusive: £40 Cashback on Every Booking with Amber!" [ref=f86e869] [cursor=pointer]':
+              - generic [ref=f86e877]:
+                - generic [ref=f86e878]: "Bonus Deal:"
+                - text: "Exclusive: £40 Cashback on Every Booking with Amber!"
+            - 'button "Bonus Deal: Save Up to £1500 When You Bundle Your Student Essentials!" [ref=f86e884] [cursor=pointer]':
+              - generic [ref=f86e892]:
+                - generic [ref=f86e893]: "Bonus Deal:"
+                - text: Save Up to £1500 When You Bundle Your Student Essentials!
+          - button "View more offers" [ref=f86e898] [cursor=pointer]
+        - generic [ref=f86e904]:
+          - heading "About the Property" [level=2] [ref=f86e905]
+          - generic [ref=f86e907]:
+            - generic [ref=f86e908]:
+              - paragraph [ref=f86e909]:
+                - strong [ref=f86e910]: iQ Vega
+                - text: ", located at 6 Miles St, London, SW8 1RZ,"
+                - strong [ref=f86e911]
+                - link [ref=f86e912] [cursor=pointer]:
+                  - /url: https://amberstudent.com/places/search/united-kingdom-1811011902157
+                  - strong [ref=f86e913]: United Kingdom
+                - text: ", offers modern"
+                - strong [ref=f86e914]: en-suites and studios
+                - text: tailored to meet the needs of today’s students. These
+                - strong [ref=f86e915]: iQ Vega
+                - text: rooms are among the most sought-after
+                - link [ref=f86e916] [cursor=pointer]:
+                  - /url: https://amberstudent.com/places/search/london-1811028205760
+                  - strong [ref=f86e917]: student accommodations in London
+                - text: ", providing a perfect mix of comfort, convenience, and city access. The"
+                - link [ref=f86e918] [cursor=pointer]:
+                  - /url: https://amberstudent.com/places/search/chelsea-college-of-arts-1811226048557
+                  - strong [ref=f86e919]: Chelsea College of Arts
+                - text: is just a
+                - strong [ref=f86e920]: 5-minute drive away
+                - text: ", while the"
+                - strong [ref=f86e921]: City and Guilds of London Art School
+                - text: is only an
+                - strong [ref=f86e922]: 8-minute
+                - strong [ref=f86e923]: drive away
+                - text: ", making iQ Vega London ideal for students in creative and academic fields who value both proximity and a lively environment. With its modern facilities, safe surroundings, and community-focused atmosphere, iQ Vega stands out as a top choice for those seeking accommodations near the Chelsea College of Arts and other leading universities in London."
+              - paragraph [ref=f86e924]:
+                - text: London,
+                - link [ref=f86e925] [cursor=pointer]:
+                  - /url: https://amberstudent.com/places/search/england-1811027398578
+                  - strong [ref=f86e926]: England
+                - text: ", is home to over"
+                - strong [ref=f86e927]: 400,000 students
+                - text: ", creating one of the largest and most diverse academic communities globally. The city maintains an"
+                - strong [ref=f86e928]: employment rate of 76%
+                - text: ", giving students excellent opportunities to explore internships, part-time work, and long-term career options, especially in sectors such as arts, business, and technology. The average"
+                - strong [ref=f86e929]: cost of living in London
+                - text: for students ranges between
+                - strong [ref=f86e930]: £1,200 and £1,400 per month
+                - text: ", covering essentials like rent, food, and transport. For more tips on budgeting and finding accommodation, check out the"
+                - strong [ref=f86e931]: student housing guide London
+                - text: . London’s
+                - strong [ref=f86e932]: safety index
+                - text: of
+                - strong [ref=f86e933]: "54"
+                - text: ensures that students can live with confidence while enjoying the city's cultural and professional opportunities. If you’re planning to move, take a look at the
+                - strong [ref=f86e934]: best neighbourhoods in London
+                - text: for a clearer idea of where to live. What makes iQ Vega London accommodation special is its prime location in
+                - link [ref=f86e935] [cursor=pointer]:
+                  - /url: https://amberstudent.com/places/search/vauxhall-1811028101453
+                  - strong [ref=f86e936]: Vauxhall
+                - text: ", one of London’s most well-connected neighbourhoods. Students can easily access the"
+                - strong [ref=f86e937]: Vauxhall Underground Station
+                - text: ", major art galleries, cafes, and green spaces like"
+                - strong [ref=f86e938]: Vauxhall Park
+                - text: .
+            - button "Show more" [ref=f86e939] [cursor=pointer]:
+              - button [ref=f86e940]
+        - generic [ref=f86e946]:
+          - generic [ref=f86e947]:
+            - paragraph [ref=f86e948]: Step inside the property?
+            - generic [ref=f86e949]: Experience the place with a virtual walkthrough.
+          - generic [ref=f86e951]:
+            - button "Play video" [ref=f86e952] [cursor=pointer]
+            - button "Play video" [ref=f86e958] [cursor=pointer]
+            - button "Play video" [ref=f86e964] [cursor=pointer]
+            - button "Play video" [ref=f86e970] [cursor=pointer]
+            - button "Play video" [ref=f86e976] [cursor=pointer]
+        - generic [ref=f86e982]:
+          - heading "Amenities" [level=2] [ref=f86e983]
+          - generic [ref=f86e984]:
+            - generic [ref=f86e985]:
+              - heading "Bills Included (In Rent)" [level=3] [ref=f86e986]
+              - generic [ref=f86e987]:
+                - generic [ref=f86e988]:
+                  - generic [ref=f86e995]:
+                    - generic [ref=f86e996]: Wifi
+                    - generic [ref=f86e997]: £7/week
+                  - generic [ref=f86e1009]:
+                    - generic [ref=f86e1010]: Electricity
+                    - generic [ref=f86e1011]: £5/week
+                  - generic [ref=f86e1023]:
+                    - generic [ref=f86e1024]: Heating
+                    - generic [ref=f86e1025]: £3/week
+                  - generic [ref=f86e1037]:
+                    - generic [ref=f86e1038]: Content Insurance
+                    - generic [ref=f86e1039]: £3/week
+                  - generic [ref=f86e1051]:
+                    - generic [ref=f86e1052]: Water
+                    - generic [ref=f86e1053]: £3/week
+                - generic [ref=f86e1059]:
+                  - generic [ref=f86e1060]: Savings from included utility bills (estimated based on average bills in London)
+                  - generic [ref=f86e1062]:
+                    - generic [ref=f86e1063]: FREE
+                    - generic [ref=f86e1064]: £21/week
+            - generic [ref=f86e1066]:
+              - heading "Shared Community And Utilities" [level=3] [ref=f86e1067]
+              - generic [ref=f86e1068]:
+                - generic "Seating Area" [ref=f86e1072]
+                - generic "Breakfast Bar" [ref=f86e1076]
+                - generic "Social Spaces" [ref=f86e1080]
+                - generic "Cinema room" [ref=f86e1084]
+                - generic "Games Room" [ref=f86e1088]
+                - generic "Study Area" [ref=f86e1092]
+            - generic [ref=f86e1094]:
+              - heading "Fitness And Recreation" [level=3] [ref=f86e1095]
+              - generic "Free Gym" [ref=f86e1100]
+            - generic [ref=f86e1102]:
+              - heading "Security" [level=3] [ref=f86e1103]
+              - generic [ref=f86e1104]:
+                - generic "24/7 Staff Presence" [ref=f86e1108]
+                - generic "24/7 Security" [ref=f86e1112]
+                - generic "CCTV" [ref=f86e1116]
+                - generic "Pets Not Allowed" [ref=f86e1120]
+                - generic "No Smoking Allowed" [ref=f86e1124]
+            - button "View all amenities (22)" [ref=f86e1126] [cursor=pointer]:
+              - button [ref=f86e1127]
+          - generic [ref=f86e1132]:
+            - generic [ref=f86e1133]:
+              - heading "Property Services" [level=3] [ref=f86e1134]
+              - generic [ref=f86e1135]:
+                - generic "Close To Universities" [ref=f86e1139]
+                - generic "Laundry Facility" [ref=f86e1143]
+                - generic "Great Public Transport Links" [ref=f86e1147]
+            - generic [ref=f86e1149]:
+              - heading "Bills Included" [level=3] [ref=f86e1150]
+              - generic [ref=f86e1151]:
+                - generic "Water" [ref=f86e1155]
+                - generic "Wifi" [ref=f86e1159]
+                - generic "Electricity" [ref=f86e1163]
+                - generic "Heating" [ref=f86e1167]
+                - generic "Content Insurance" [ref=f86e1171]
+        - generic [ref=f86e1172]:
+          - heading "Room Types (28)" [level=2] [ref=f86e1173]
+          - generic [ref=f86e1177]:
+            - generic [ref=f86e1179]:
+              - button [ref=f86e1181]:
+                - button "Stay Duration" [ref=f86e1182] [cursor=pointer]
+              - button [ref=f86e1185]:
+                - button "Move in Month" [ref=f86e1186] [cursor=pointer]
+              - button [ref=f86e1189]:
+                - button "Room Type" [ref=f86e1190] [cursor=pointer]
+              - button [ref=f86e1193]:
+                - button "Dual Occupancy" [ref=f86e1194] [cursor=pointer]
+              - button "Clear"
+            - generic [ref=f86e1196]: All (28) Ensuite (13) Studio (15)
+            - generic [ref=f86e1198]:
+              - generic [ref=f86e1199]:
+                - generic [ref=f86e1200] [cursor=pointer]
+                - generic [ref=f86e1205] [cursor=pointer]:
+                  - heading "Ensuite" [level=3] [ref=f86e1206]
+                  - generic [ref=f86e1207]: A private room with its own bathroom — Offers maximum privacy and comfort
+                - generic [ref=f86e1208] [cursor=pointer]
+                - generic [ref=f86e1212]:
+                  - generic [ref=f86e1214]:
+                    - generic [ref=f86e1215]:
+                      - button [ref=f86e1216] [cursor=pointer]:
+                        - generic [ref=f86e1217]:
+                          - generic [ref=f86e1218]: "8"
+                          - button "3D Tour" [ref=f86e1221]
+                      - generic [ref=f86e1225]:
+                        - heading "Bronze En Suite" [level=3] [ref=f86e1226]
+                        - generic [ref=f86e1227]:
+                          - generic [ref=f86e1228]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1229]: 24 Oct, 2026
+                          - generic [ref=f86e1230]: ·
+                          - generic [ref=f86e1231]: "From: £401/week"
+                        - generic [ref=f86e1232]:
+                          - generic [ref=f86e1233]: Ensuite
+                          - generic [ref=f86e1237]: Private Room
+                          - generic [ref=f86e1241]: Private Bathroom
+                          - generic [ref=f86e1245]: Shared Kitchen
+                          - generic [ref=f86e1249]: 13 sqm
+                        - button "View More Details" [ref=f86e1253] [cursor=pointer]
+                    - generic [ref=f86e1259]:
+                      - generic [ref=f86e1260] [cursor=pointer]:
+                        - generic [ref=f86e1261]:
+                          - generic [ref=f86e1262]:
+                            - generic [ref=f86e1263]: Duration
+                            - generic [ref=f86e1264]: 38 weeks
+                          - generic [ref=f86e1265]:
+                            - generic [ref=f86e1266]: Move In
+                            - generic [ref=f86e1267]: 24 Oct, 2026
+                          - generic [ref=f86e1268]:
+                            - generic [ref=f86e1269]: Move Out
+                            - generic [ref=f86e1270]: 16 Jul, 2027
+                        - generic [ref=f86e1271]:
+                          - generic [ref=f86e1272]:
+                            - generic [ref=f86e1273]: £433
+                            - text: £412/week
+                          - button "Book" [ref=f86e1277]:
+                            - button [ref=f86e1278]
+                      - generic [ref=f86e1280] [cursor=pointer]:
+                        - generic [ref=f86e1281]:
+                          - generic [ref=f86e1282]:
+                            - generic [ref=f86e1283]: Duration
+                            - generic [ref=f86e1284]: 9 weeks
+                          - generic [ref=f86e1285]:
+                            - generic [ref=f86e1286]: Move In
+                            - generic [ref=f86e1287]: 24 Oct, 2026
+                          - generic [ref=f86e1288]:
+                            - generic [ref=f86e1289]: Move Out
+                            - generic [ref=f86e1290]: 25 Dec, 2026
+                        - generic [ref=f86e1291]:
+                          - generic [ref=f86e1292]: £442/week
+                          - button "Book" [ref=f86e1293]:
+                            - button [ref=f86e1294]
+                      - button "View more tenancies (2)" [ref=f86e1298] [cursor=pointer]:
+                        - button [ref=f86e1299]
+                  - generic [ref=f86e1305]:
+                    - generic [ref=f86e1306]:
+                      - button "7" [ref=f86e1307] [cursor=pointer]
+                      - generic [ref=f86e1312]:
+                        - heading "Silver En Suite" [level=3] [ref=f86e1313]
+                        - generic [ref=f86e1314]:
+                          - generic [ref=f86e1315]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1316]: 2 Jan, 2027
+                          - generic [ref=f86e1317]: ·
+                          - generic [ref=f86e1318]: "From: £411/week"
+                        - generic [ref=f86e1319]:
+                          - generic [ref=f86e1320]: Ensuite
+                          - generic [ref=f86e1324]: Private Room
+                          - generic [ref=f86e1328]: Private Bathroom
+                          - generic [ref=f86e1332]: Shared Kitchen
+                          - generic [ref=f86e1336]: 13 sqm
+                        - button "View More Details" [ref=f86e1340] [cursor=pointer]
+                    - generic [ref=f86e1346]:
+                      - generic [ref=f86e1347] [cursor=pointer]:
+                        - generic [ref=f86e1348]:
+                          - generic [ref=f86e1349]:
+                            - generic [ref=f86e1350]: Duration
+                            - generic [ref=f86e1351]: 28 weeks
+                          - generic [ref=f86e1352]:
+                            - generic [ref=f86e1353]: Move In
+                            - generic [ref=f86e1354]: 2 Jan, 2027
+                          - generic [ref=f86e1355]:
+                            - generic [ref=f86e1356]: Move Out
+                            - generic [ref=f86e1357]: 16 Jul, 2027
+                        - generic [ref=f86e1358]:
+                          - generic [ref=f86e1359]: £463/week
+                          - button "Book" [ref=f86e1360]:
+                            - button [ref=f86e1361]
+                      - button "View more tenancies (4)" [ref=f86e1365] [cursor=pointer]:
+                        - button [ref=f86e1366]
+                  - generic [ref=f86e1372]:
+                    - generic [ref=f86e1373]:
+                      - button "6" [ref=f86e1374] [cursor=pointer]
+                      - generic [ref=f86e1379]:
+                        - heading "Silver En Suite Plus" [level=3] [ref=f86e1380]
+                        - generic [ref=f86e1381]:
+                          - generic [ref=f86e1382]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1383]: 24 Oct, 2026
+                          - generic [ref=f86e1384]: ·
+                          - generic [ref=f86e1385]: "From: £417/week"
+                        - generic [ref=f86e1386]:
+                          - generic [ref=f86e1387]: Ensuite
+                          - generic [ref=f86e1391]: Private Room
+                          - generic [ref=f86e1395]: Private Bathroom
+                          - generic [ref=f86e1399]: Shared Kitchen
+                          - generic [ref=f86e1403]: 13 sqm
+                        - button "View More Details" [ref=f86e1407] [cursor=pointer]
+                    - generic [ref=f86e1414] [cursor=pointer]:
+                      - generic [ref=f86e1415]:
+                        - generic [ref=f86e1416]:
+                          - generic [ref=f86e1417]: Duration
+                          - generic [ref=f86e1418]: 38 weeks
+                        - generic [ref=f86e1419]:
+                          - generic [ref=f86e1420]: Move In
+                          - generic [ref=f86e1421]: 24 Oct, 2026
+                        - generic [ref=f86e1422]:
+                          - generic [ref=f86e1423]: Move Out
+                          - generic [ref=f86e1424]: 16 Jul, 2027
+                      - generic [ref=f86e1425]:
+                        - generic [ref=f86e1426]:
+                          - generic [ref=f86e1427]: £450
+                          - text: £429/week
+                        - button "Book" [ref=f86e1431]:
+                          - button [ref=f86e1432]
+                  - generic [ref=f86e1435]:
+                    - generic [ref=f86e1436]:
+                      - button [ref=f86e1437] [cursor=pointer]:
+                        - generic [ref=f86e1438]:
+                          - generic [ref=f86e1439]: "8"
+                          - button "3D Tour" [ref=f86e1442]
+                      - generic [ref=f86e1446]:
+                        - heading "Gold En Suite Plus" [level=3] [ref=f86e1447]
+                        - generic [ref=f86e1448]:
+                          - generic [ref=f86e1449]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1450]: 24 Oct, 2026
+                          - generic [ref=f86e1451]: ·
+                          - generic [ref=f86e1452]: "From: £429/week"
+                        - generic [ref=f86e1453]:
+                          - generic [ref=f86e1454]: Ensuite
+                          - generic [ref=f86e1458]: Private Room
+                          - generic [ref=f86e1462]: Private Bathroom
+                          - generic [ref=f86e1466]: Shared Kitchen
+                          - generic [ref=f86e1470]: 13 sqm
+                        - button "View More Details" [ref=f86e1474] [cursor=pointer]
+                    - generic [ref=f86e1481] [cursor=pointer]:
+                      - generic [ref=f86e1482]:
+                        - generic [ref=f86e1483]:
+                          - generic [ref=f86e1484]: Duration
+                          - generic [ref=f86e1485]: 38 weeks
+                        - generic [ref=f86e1486]:
+                          - generic [ref=f86e1487]: Move In
+                          - generic [ref=f86e1488]: 24 Oct, 2026
+                        - generic [ref=f86e1489]:
+                          - generic [ref=f86e1490]: Move Out
+                          - generic [ref=f86e1491]: 16 Jul, 2027
+                      - generic [ref=f86e1492]:
+                        - generic [ref=f86e1493]:
+                          - generic [ref=f86e1494]: £462
+                          - text: £441/week
+                        - button "Book" [ref=f86e1498]:
+                          - button [ref=f86e1499]
+                  - generic [ref=f86e1502]:
+                    - generic [ref=f86e1503]:
+                      - button [ref=f86e1504] [cursor=pointer]:
+                        - generic [ref=f86e1505]:
+                          - generic [ref=f86e1506]: "14"
+                          - button "Video Tour" [ref=f86e1509]
+                          - button "3D Tour" [ref=f86e1512]
+                      - generic [ref=f86e1516]:
+                        - heading "Platinum En Suite" [level=3] [ref=f86e1517]
+                        - generic [ref=f86e1518]:
+                          - generic [ref=f86e1519]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1520]: 24 Oct, 2026
+                          - generic [ref=f86e1521]: ·
+                          - generic [ref=f86e1522]: "From: £438/week"
+                        - generic [ref=f86e1523]:
+                          - generic [ref=f86e1524]: Ensuite
+                          - generic [ref=f86e1528]: Private Room
+                          - generic [ref=f86e1532]: Private Bathroom
+                          - generic [ref=f86e1536]: Shared Kitchen
+                          - generic [ref=f86e1540]: 13 sqm
+                        - button "View More Details" [ref=f86e1544] [cursor=pointer]
+                    - generic [ref=f86e1550]:
+                      - generic [ref=f86e1551] [cursor=pointer]:
+                        - generic [ref=f86e1552]:
+                          - generic [ref=f86e1553]:
+                            - generic [ref=f86e1554]: Duration
+                            - generic [ref=f86e1555]: 45 weeks
+                          - generic [ref=f86e1556]:
+                            - generic [ref=f86e1557]: Move In
+                            - generic [ref=f86e1558]: 24 Oct, 2026
+                          - generic [ref=f86e1559]:
+                            - generic [ref=f86e1560]: Move Out
+                            - generic [ref=f86e1561]: 3 Sep, 2027
+                        - generic [ref=f86e1562]:
+                          - generic [ref=f86e1563]:
+                            - generic [ref=f86e1564]: £438
+                            - text: £420/week
+                          - button "Book" [ref=f86e1568]:
+                            - button [ref=f86e1569]
+                      - generic [ref=f86e1571] [cursor=pointer]:
+                        - generic [ref=f86e1572]:
+                          - generic [ref=f86e1573]:
+                            - generic [ref=f86e1574]: Duration
+                            - generic [ref=f86e1575]: 38 weeks
+                          - generic [ref=f86e1576]:
+                            - generic [ref=f86e1577]: Move In
+                            - generic [ref=f86e1578]: 24 Oct, 2026
+                          - generic [ref=f86e1579]:
+                            - generic [ref=f86e1580]: Move Out
+                            - generic [ref=f86e1581]: 16 Jul, 2027
+                        - generic [ref=f86e1582]:
+                          - generic [ref=f86e1583]:
+                            - generic [ref=f86e1584]: £470
+                            - text: £449/week
+                          - button "Book" [ref=f86e1588]:
+                            - button [ref=f86e1589]
+                      - button "View more tenancies (2)" [ref=f86e1593] [cursor=pointer]:
+                        - button [ref=f86e1594]
+                  - generic [ref=f86e1600]:
+                    - generic [ref=f86e1601]:
+                      - button [ref=f86e1602] [cursor=pointer]:
+                        - generic [ref=f86e1603]:
+                          - generic [ref=f86e1604]: "5"
+                          - button "3D Tour" [ref=f86e1607]
+                      - generic [ref=f86e1611]:
+                        - heading "Platinum En Suite Plus" [level=3] [ref=f86e1612]
+                        - generic [ref=f86e1613]:
+                          - generic [ref=f86e1614]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1615]: 24 Oct, 2026
+                          - generic [ref=f86e1616]: ·
+                          - generic [ref=f86e1617]: "From: £443/week"
+                        - generic [ref=f86e1618]:
+                          - generic [ref=f86e1619]: Ensuite
+                          - generic [ref=f86e1623]: Private Room
+                          - generic [ref=f86e1627]: Private Bathroom
+                          - generic [ref=f86e1631]: Shared Kitchen
+                          - generic [ref=f86e1635]: 13 sqm
+                        - button "View More Details" [ref=f86e1639] [cursor=pointer]
+                    - generic [ref=f86e1645]:
+                      - generic [ref=f86e1646] [cursor=pointer]:
+                        - generic [ref=f86e1647]:
+                          - generic [ref=f86e1648]:
+                            - generic [ref=f86e1649]: Duration
+                            - generic [ref=f86e1650]: 45 weeks
+                          - generic [ref=f86e1651]:
+                            - generic [ref=f86e1652]: Move In
+                            - generic [ref=f86e1653]: 24 Oct, 2026
+                          - generic [ref=f86e1654]:
+                            - generic [ref=f86e1655]: Move Out
+                            - generic [ref=f86e1656]: 3 Sep, 2027
+                        - generic [ref=f86e1657]:
+                          - generic [ref=f86e1658]:
+                            - generic [ref=f86e1659]: £443
+                            - text: £425/week
+                          - button "Book" [ref=f86e1663]:
+                            - button [ref=f86e1664]
+                      - generic [ref=f86e1666] [cursor=pointer]:
+                        - generic [ref=f86e1667]:
+                          - generic [ref=f86e1668]:
+                            - generic [ref=f86e1669]: Duration
+                            - generic [ref=f86e1670]: 38 weeks
+                          - generic [ref=f86e1671]:
+                            - generic [ref=f86e1672]: Move In
+                            - generic [ref=f86e1673]: 24 Oct, 2026
+                          - generic [ref=f86e1674]:
+                            - generic [ref=f86e1675]: Move Out
+                            - generic [ref=f86e1676]: 16 Jul, 2027
+                        - generic [ref=f86e1677]:
+                          - generic [ref=f86e1678]:
+                            - generic [ref=f86e1679]: £475
+                            - text: £454/week
+                          - button "Book" [ref=f86e1683]:
+                            - button [ref=f86e1684]
+                      - button "View more tenancies (2)" [ref=f86e1688] [cursor=pointer]:
+                        - button [ref=f86e1689]
+                  - generic [ref=f86e1695]:
+                    - generic [ref=f86e1696]:
+                      - button [ref=f86e1697] [cursor=pointer]:
+                        - generic [ref=f86e1698]:
+                          - generic [ref=f86e1699]: "10"
+                          - button "3D Tour" [ref=f86e1702]
+                      - generic [ref=f86e1706]:
+                        - heading "Penthouse En Suite" [level=3] [ref=f86e1707]
+                        - generic [ref=f86e1708]:
+                          - generic [ref=f86e1709]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1710]: 24 Oct, 2026
+                          - generic [ref=f86e1711]: ·
+                          - generic [ref=f86e1712]: "From: £448/week"
+                        - generic [ref=f86e1713]:
+                          - generic [ref=f86e1714]: Ensuite
+                          - generic [ref=f86e1718]: Private Room
+                          - generic [ref=f86e1722]: Private Bathroom
+                          - generic [ref=f86e1726]: Shared Kitchen
+                          - generic [ref=f86e1730]: 13 sqm
+                        - button "View More Details" [ref=f86e1734] [cursor=pointer]
+                    - generic [ref=f86e1741] [cursor=pointer]:
+                      - generic [ref=f86e1742]:
+                        - generic [ref=f86e1743]:
+                          - generic [ref=f86e1744]: Duration
+                          - generic [ref=f86e1745]: 45 weeks
+                        - generic [ref=f86e1746]:
+                          - generic [ref=f86e1747]: Move In
+                          - generic [ref=f86e1748]: 24 Oct, 2026
+                        - generic [ref=f86e1749]:
+                          - generic [ref=f86e1750]: Move Out
+                          - generic [ref=f86e1751]: 3 Sep, 2027
+                      - generic [ref=f86e1752]:
+                        - generic [ref=f86e1753]:
+                          - generic [ref=f86e1754]: £448
+                          - text: £430/week
+                        - button "Book" [ref=f86e1758]:
+                          - button [ref=f86e1759]
+                  - generic [ref=f86e1762]:
+                    - generic [ref=f86e1763]:
+                      - button [ref=f86e1764] [cursor=pointer]:
+                        - generic [ref=f86e1765]:
+                          - generic [ref=f86e1766]: "7"
+                          - button "3D Tour" [ref=f86e1769]
+                      - generic [ref=f86e1773]:
+                        - heading "Penthouse En Suite Plus" [level=3] [ref=f86e1774]
+                        - generic [ref=f86e1775]:
+                          - generic [ref=f86e1776]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1777]: 24 Oct, 2026
+                          - generic [ref=f86e1778]: ·
+                          - generic [ref=f86e1779]: "From: £453/week"
+                        - generic [ref=f86e1780]:
+                          - generic [ref=f86e1781]: Ensuite
+                          - generic [ref=f86e1785]: Private Room
+                          - generic [ref=f86e1789]: Private Bathroom
+                          - generic [ref=f86e1793]: Shared Kitchen
+                          - generic [ref=f86e1797]: 13 sqm
+                        - button "View More Details" [ref=f86e1801] [cursor=pointer]
+                    - generic [ref=f86e1808] [cursor=pointer]:
+                      - generic [ref=f86e1809]:
+                        - generic [ref=f86e1810]:
+                          - generic [ref=f86e1811]: Duration
+                          - generic [ref=f86e1812]: 45 weeks
+                        - generic [ref=f86e1813]:
+                          - generic [ref=f86e1814]: Move In
+                          - generic [ref=f86e1815]: 24 Oct, 2026
+                        - generic [ref=f86e1816]:
+                          - generic [ref=f86e1817]: Move Out
+                          - generic [ref=f86e1818]: 3 Sep, 2027
+                      - generic [ref=f86e1819]:
+                        - generic [ref=f86e1820]:
+                          - generic [ref=f86e1821]: £453
+                          - text: £435/week
+                        - button "Book" [ref=f86e1825]:
+                          - button [ref=f86e1826]
+                  - generic [ref=f86e1829]:
+                    - generic [ref=f86e1830]:
+                      - button "10" [ref=f86e1831] [cursor=pointer]
+                      - generic [ref=f86e1836]:
+                        - heading "Silver 3 Bed Apartment" [level=3] [ref=f86e1837]
+                        - generic [ref=f86e1838]:
+                          - generic [ref=f86e1839]: Sold Out
+                          - generic [ref=f86e1840]: ·
+                          - generic [ref=f86e1841]: "From: £346/week"
+                        - generic [ref=f86e1842]:
+                          - generic [ref=f86e1843]: Ensuite
+                          - generic [ref=f86e1847]: Private Room
+                          - generic [ref=f86e1851]: Private Bathroom
+                          - generic [ref=f86e1855]: Shared Kitchen
+                        - button "View More Details" [ref=f86e1859] [cursor=pointer]
+                    - generic [ref=f86e1866]:
+                      - generic [ref=f86e1867]: Looking for different dates?
+                      - button "Join Waitlist" [ref=f86e1868] [cursor=pointer]:
+                        - button [ref=f86e1869]
+                  - generic [ref=f86e1871]:
+                    - generic [ref=f86e1872]: Sold out
+                    - button "View Sold Out Rooms (4)" [ref=f86e1873] [cursor=pointer]:
+                      - button [ref=f86e1874]
+              - generic [ref=f86e1880]:
+                - generic [ref=f86e1881] [cursor=pointer]
+                - generic [ref=f86e1887] [cursor=pointer]:
+                  - heading "Studio" [level=3] [ref=f86e1888]
+                  - generic [ref=f86e1889]: All-in-one space with a bedroom, private bathroom, living area, and kitchenette — Ideal for complete independence
+                - generic [ref=f86e1890] [cursor=pointer]
+                - generic [ref=f86e1894]:
+                  - generic [ref=f86e1896]:
+                    - generic [ref=f86e1897]:
+                      - button [ref=f86e1898] [cursor=pointer]:
+                        - generic [ref=f86e1899]:
+                          - generic [ref=f86e1900]: "5"
+                          - button "3D Tour" [ref=f86e1903]
+                      - generic [ref=f86e1907]:
+                        - heading "Silver Studio" [level=3] [ref=f86e1908]
+                        - generic [ref=f86e1909]:
+                          - generic [ref=f86e1910]:
+                            - text: "Available from:"
+                            - generic [ref=f86e1911]: 24 Oct, 2026
+                          - generic [ref=f86e1912]: ·
+                          - generic [ref=f86e1913]: "From: £523/week"
+                        - generic [ref=f86e1914]:
+                          - generic [ref=f86e1915]: Studio
+                          - generic [ref=f86e1919]: Entire Place
+                          - generic [ref=f86e1923]: Private Bathroom
+                          - generic [ref=f86e1927]: Private Kitchen
+                          - generic [ref=f86e1931]: 15 sqm
+                        - button "View More Details" [ref=f86e1935] [cursor=pointer]
+                    - generic [ref=f86e1941]:
+                      - generic [ref=f86e1942] [cursor=pointer]:
+                        - generic [ref=f86e1943]:
+                          - generic [ref=f86e1944]:
+                            - generic [ref=f86e1945]: Duration
+                            - generic [ref=f86e1946]: 38 weeks
+                          - generic [ref=f86e1947]:
+                            - generic [ref=f86e1948]: Move In
+                            - generic [ref=f86e1949]: 24 Oct, 2026
+                          - generic [ref=f86e1950]:
+                            - generic [ref=f86e1951]: Move Out
+                            - generic [ref=f86e1952]: 16 Jul, 2027
+                        - generic [ref=f86e1953]:
+                          - generic [ref=f86e1954]:
+                            - generic [ref=f86e1955]: £523
+                            - text: £502/week
+                          - button "Book" [ref=f86e1959]:
+                            - button [ref=f86e1960]
+                      - generic [ref=f86e1962] [cursor=pointer]:
+                        - generic [ref=f86e1963]:
+                          - generic [ref=f86e1964]:
+                            - generic [ref=f86e1965]: Duration
+                            - generic [ref=f86e1966]: 35 weeks
+                          - generic [ref=f86e1967]:
+                            - generic [ref=f86e1968]: Move In
+                            - generic [ref=f86e1969]: 2 Jan, 2027
+                          - generic [ref=f86e1970]:
+                            - generic [ref=f86e1971]: Move Out
+                            - generic [ref=f86e1972]: 3 Sep, 2027
+                        - generic [ref=f86e1973]:
+                          - generic [ref=f86e1974]: £544/week
+                          - button "Book" [ref=f86e1975]:
+                            - button [ref=f86e1976]
+                      - button "View more tenancies (2)" [ref=f86e1980] [cursor=pointer]:
+                        - button [ref=f86e1981]
+                  - generic [ref=f86e1987]:
+                    - generic [ref=f86e1988]:
+                      - button [ref=f86e1989] [cursor=pointer]:
+                        - generic [ref=f86e1990]:
+                          - generic [ref=f86e1991]: "1"
+                          - button "3D Tour" [ref=f86e1994]
+                      - generic [ref=f86e1998]:
+                        - heading "Platinum Studio" [level=3] [ref=f86e1999]
+                        - generic [ref=f86e2000]:
+                          - generic [ref=f86e2001]: Sold Out
+                          - generic [ref=f86e2002]: ·
+                          - generic [ref=f86e2003]: "From: £548/week"
+                        - generic [ref=f86e2004]:
+                          - generic [ref=f86e2005]: Studio
+                          - generic [ref=f86e2009]: Entire Place
+                          - generic [ref=f86e2013]: Private Bathroom
+                          - generic [ref=f86e2017]: Private Kitchen
+                          - generic [ref=f86e2021]: 15 sqm
+                        - button "View More Details" [ref=f86e2025] [cursor=pointer]
+                    - generic [ref=f86e2032]:
+                      - generic [ref=f86e2033]: Looking for different dates?
+                      - button "Join Waitlist" [ref=f86e2034] [cursor=pointer]:
+                        - button [ref=f86e2035]
+                  - generic [ref=f86e2037]:
+                    - generic [ref=f86e2038]: Sold out
+                    - button "View Sold Out Rooms (13)" [ref=f86e2039] [cursor=pointer]:
+                      - button [ref=f86e2040]
+        - generic [ref=f86e2048]:
+          - heading "House Rules" [level=2] [ref=f86e2049]
+          - generic [ref=f86e2051]:
+            - generic [ref=f86e2052]:
+              - generic [ref=f86e2053]: Cancellation Policies
+              - generic [ref=f86e2060]:
+                - listitem [ref=f86e2061] [cursor=pointer]:
+                  - button "Delayed Arrivals & travel restrictions If you are unable to travel due to government-imposed travel restrictions, please contact the Amber team with the relevant supporting documentation. We will facilitate the request to review your circumstances and explore the possibility of cancellation/contract amendment. Requests are considered individually, and any outcome will depend on the property's review and applicable booking terms. View more" [ref=f86e2062]:
+                    - generic [ref=f86e2063]:
+                      - generic [ref=f86e2064]: Delayed Arrivals & travel restrictions
+                      - generic [ref=f86e2065]:
+                        - generic [ref=f86e2066]: If you are unable to travel due to government-imposed travel restrictions, please contact the Amber team with the relevant supporting documentation. We will facilitate the request to review your circumstances and explore the possibility of cancellation/contract amendment. Requests are considered individually, and any outcome will depend on the property's review and applicable booking terms.
+                        - generic [ref=f86e2067]: View more
+                - listitem [ref=f86e2071] [cursor=pointer]:
+                  - button "University Course Cancellation/Modification If your course has been cancelled by your university, please reach out to the Amber team with the relevant supporting documentation. We will liaise with the property team to review your request on a case-by-case basis for cancellation. The resolution will be subject to the property's assessment and the terms of your booking. View more" [ref=f86e2072]:
+                    - generic [ref=f86e2073]:
+                      - generic [ref=f86e2074]: University Course Cancellation/Modification
+                      - generic [ref=f86e2075]:
+                        - generic [ref=f86e2076]: If your course has been cancelled by your university, please reach out to the Amber team with the relevant supporting documentation. We will liaise with the property team to review your request on a case-by-case basis for cancellation. The resolution will be subject to the property's assessment and the terms of your booking.
+                        - generic [ref=f86e2077]: View more
+                - listitem [ref=f86e2081] [cursor=pointer]:
+                  - 'button "Cooling Off Period The property does not provide a cooling-off period once the booking is processed. Note: Booking Fee (if paid) will be retained. View more" [ref=f86e2082]':
+                    - generic [ref=f86e2083]:
+                      - generic [ref=f86e2084]: Cooling Off Period
+                      - generic [ref=f86e2085]:
+                        - generic [ref=f86e2086]: "The property does not provide a cooling-off period once the booking is processed. Note: Booking Fee (if paid) will be retained."
+                        - generic [ref=f86e2087]: View more
+                - listitem [ref=f86e2091] [cursor=pointer]:
+                  - 'button "No Visa No Pay Cancellation is allowed if the student does not obtain the required qualifications for their first-choice university. Must provide: Written confirmation of cancellation. Official evidence of visa refusal. The cancellation request and supporting evidence must be submitted within 72 hours of the exam results being published. Refund: Any rent paid will be refunded. Any Booking Fee (if paid) will be refunded. View more" [ref=f86e2092]':
+                    - generic [ref=f86e2093]:
+                      - generic [ref=f86e2094]: No Visa No Pay
+                      - generic [ref=f86e2095]:
+                        - generic [ref=f86e2096]: "Cancellation is allowed if the student does not obtain the required qualifications for their first-choice university. Must provide: Written confirmation of cancellation. Official evidence of visa refusal. The cancellation request and supporting evidence must be submitted within 72 hours of the exam results being published. Refund: Any rent paid will be refunded. Any Booking Fee (if paid) will be refunded."
+                        - generic [ref=f86e2097]: View more
+                - listitem [ref=f86e2101] [cursor=pointer]:
+                  - 'button "No Place No Pay Cancellation is allowed if the student does not obtain the required qualifications for their first-choice university. Must provide: Written confirmation of cancellation. Supporting written evidence from the university or UCAS. The cancellation request and supporting evidence must be submitted within 72 hours of the exam results being published. Refund: Any Booking Fee (if paid) will be refunded. Any rent paid will be refunded. If evide View more" [ref=f86e2102]':
+                    - generic [ref=f86e2103]:
+                      - generic [ref=f86e2104]: No Place No Pay
+                      - generic [ref=f86e2105]:
+                        - generic [ref=f86e2106]: "Cancellation is allowed if the student does not obtain the required qualifications for their first-choice university. Must provide: Written confirmation of cancellation. Supporting written evidence from the university or UCAS. The cancellation request and supporting evidence must be submitted within 72 hours of the exam results being published. Refund: Any Booking Fee (if paid) will be refunded. Any rent paid will be refunded. If evide"
+                        - generic [ref=f86e2107]: View more
+                - listitem [ref=f86e2111] [cursor=pointer]:
+                  - 'button "Early termination by students Not allowed after tenancy start unless a replacement tenant is found. Tenant remains liable for full contractual rent until a replacement tenant is secured. Tenancy Takeover allowed: Only between 1 month after the Tenancy Start Date and 2 months before the Tenancy End Date. Conditions: Replacement tenant must take over full contractual obligations. Outstanding rent must be cleared before release. Liability ends: From the start dat View more" [ref=f86e2112]':
+                    - generic [ref=f86e2113]:
+                      - generic [ref=f86e2114]: Early termination by students
+                      - generic [ref=f86e2115]:
+                        - generic [ref=f86e2116]: "Not allowed after tenancy start unless a replacement tenant is found. Tenant remains liable for full contractual rent until a replacement tenant is secured. Tenancy Takeover allowed: Only between 1 month after the Tenancy Start Date and 2 months before the Tenancy End Date. Conditions: Replacement tenant must take over full contractual obligations. Outstanding rent must be cleared before release. Liability ends: From the start dat"
+                        - generic [ref=f86e2117]: View more
+                - listitem [ref=f86e2121] [cursor=pointer]:
+                  - 'button "Replacement Tenant Accepted Tenant is responsible for finding a replacement tenant. Tenant must assume the full contractual obligations of the Tenancy Agreement. Replacement requires approval from the property. Release conditions: The replacement tenant must sign the tenancy agreement. The replacement tenant must pay the due rent. Replacement tenant must move in. Liability ends: From the start date of the replacement tenant’s tenancy. Refund: Any ove View more" [ref=f86e2122]':
+                    - generic [ref=f86e2123]:
+                      - generic [ref=f86e2124]: Replacement Tenant Accepted
+                      - generic [ref=f86e2125]:
+                        - generic [ref=f86e2126]: "Tenant is responsible for finding a replacement tenant. Tenant must assume the full contractual obligations of the Tenancy Agreement. Replacement requires approval from the property. Release conditions: The replacement tenant must sign the tenancy agreement. The replacement tenant must pay the due rent. Replacement tenant must move in. Liability ends: From the start date of the replacement tenant’s tenancy. Refund: Any ove"
+                        - generic [ref=f86e2127]: View more
+                - listitem [ref=f86e2131] [cursor=pointer]:
+                  - 'button "Deferring Studies Cancellation allowed if the student defers university entry to the next academic year before the Tenancy Start Date. Must provide: Written confirmation of deferral. Supporting evidence from the university or UCAS. Evidence must be provided at least 1 week prior to the Tenancy Start Date. Refund: Any rent paid will be refunded. Booking Fee (if paid) will be retained as a cancellation fee. View more" [ref=f86e2132]':
+                    - generic [ref=f86e2133]:
+                      - generic [ref=f86e2134]: Deferring Studies
+                      - generic [ref=f86e2135]:
+                        - generic [ref=f86e2136]: "Cancellation allowed if the student defers university entry to the next academic year before the Tenancy Start Date. Must provide: Written confirmation of deferral. Supporting evidence from the university or UCAS. Evidence must be provided at least 1 week prior to the Tenancy Start Date. Refund: Any rent paid will be refunded. Booking Fee (if paid) will be retained as a cancellation fee."
+                        - generic [ref=f86e2137]: View more
+                - listitem [ref=f86e2141] [cursor=pointer]:
+                  - button "Extenuating Circumstances Cancellation may be requested due to extenuating circumstances, such as ill health or family circumstances. The student must provide a written explanation and relevant independent supporting evidence, such as medical documentation or other official records confirming the circumstances. Each request will be assessed individually by the local or regional management team. View more" [ref=f86e2142]:
+                    - generic [ref=f86e2143]:
+                      - generic [ref=f86e2144]: Extenuating Circumstances
+                      - generic [ref=f86e2145]:
+                        - generic [ref=f86e2146]: Cancellation may be requested due to extenuating circumstances, such as ill health or family circumstances. The student must provide a written explanation and relevant independent supporting evidence, such as medical documentation or other official records confirming the circumstances. Each request will be assessed individually by the local or regional management team.
+                        - generic [ref=f86e2147]: View more
+                - listitem [ref=f86e2151] [cursor=pointer]:
+                  - 'button "Other cancellation policies If the Tenancy Agreement is not signed before the Deadline: Booking Fee (if paid) will be retained. If the student cancels for reasons outside the defined categories: Full rent liability applies until a replacement tenant is found. Cancellation request must be submitted via: Resident portal, or official email. Property may cancel booking before key collection if: Student fails to complete the tenancy agreement before th View more" [ref=f86e2152]':
+                    - generic [ref=f86e2153]:
+                      - generic [ref=f86e2154]: Other cancellation policies
+                      - generic [ref=f86e2155]:
+                        - generic [ref=f86e2156]: "If the Tenancy Agreement is not signed before the Deadline: Booking Fee (if paid) will be retained. If the student cancels for reasons outside the defined categories: Full rent liability applies until a replacement tenant is found. Cancellation request must be submitted via: Resident portal, or official email. Property may cancel booking before key collection if: Student fails to complete the tenancy agreement before th"
+                        - generic [ref=f86e2157]: View more
+            - generic [ref=f86e2162]:
+              - generic [ref=f86e2163]:
+                - generic [ref=f86e2164]: Smoking
+                - listitem [ref=f86e2173] [cursor=pointer]:
+                  - button "No, all iq accommodation is non-smoking. you may smoke outside in designated smoking areas. please do not smoke anywhere near other residents’ windows, as the unwelcome smell of smoke can drift into their rooms. View more" [ref=f86e2174]:
+                    - generic [ref=f86e2176]:
+                      - generic [ref=f86e2177]: No, all iq accommodation is non-smoking. you may smoke outside in designated smoking areas. please do not smoke anywhere near other residents’ windows, as the unwelcome smell of smoke can drift into their rooms.
+                      - generic [ref=f86e2178]: View more
+              - generic [ref=f86e2182]:
+                - generic [ref=f86e2183]: Room allocation
+                - listitem [ref=f86e2192] [cursor=pointer]:
+                  - button "Students can indicate specific room number or location preferences during the booking process, and the Amber team will accommodate these preferences wherever possible, based on availability. View more" [ref=f86e2193]:
+                    - generic [ref=f86e2195]:
+                      - generic [ref=f86e2196]: Students can indicate specific room number or location preferences during the booking process, and the Amber team will accommodate these preferences wherever possible, based on availability.
+                      - generic [ref=f86e2197]: View more
+              - generic [ref=f86e2201]:
+                - generic [ref=f86e2202]: Check in guide
+                - listitem [ref=f86e2211] [cursor=pointer]:
+                  - button "Approximately 2–4 weeks prior to the scheduled move-in date, students will receive check-in instructions via email. This communication will include the steps required to select a check-in date and time slot, complete necessary documentation, and settle any outstanding payments prior to arrival.In case of any questions or queries, please feel free to contact the Amber team, and our team will assist to ensure a smooth check-in process. View more" [ref=f86e2212]:
+                    - generic [ref=f86e2214]:
+                      - generic [ref=f86e2215]: Approximately 2–4 weeks prior to the scheduled move-in date, students will receive check-in instructions via email. This communication will include the steps required to select a check-in date and time slot, complete necessary documentation, and settle any outstanding payments prior to arrival.In case of any questions or queries, please feel free to contact the Amber team, and our team will assist to ensure a smooth check-in process.
+                      - generic [ref=f86e2216]: View more
+              - generic [ref=f86e2220]:
+                - generic [ref=f86e2221]: Renewal policy
+                - listitem [ref=f86e2230] [cursor=pointer]:
+                  - button "Students who wish to extend their stay can contact the Amber team for renewal or rebooking at the same accommodation. Our team will support the renewal process and help students secure a suitable room of their choice. Students are encouraged to reach out early to ensure they can rebook the same room or another room of their choice at the same property. View more" [ref=f86e2231]:
+                    - generic [ref=f86e2233]:
+                      - generic [ref=f86e2234]: Students who wish to extend their stay can contact the Amber team for renewal or rebooking at the same accommodation. Our team will support the renewal process and help students secure a suitable room of their choice. Students are encouraged to reach out early to ensure they can rebook the same room or another room of their choice at the same property.
+                      - generic [ref=f86e2235]: View more
+              - generic [ref=f86e2239]:
+                - generic [ref=f86e2240]: Early check in policy
+                - listitem [ref=f86e2249] [cursor=pointer]:
+                  - button "Early check-in requests can be shared in advance with the Amber team. Our team will do a feasibility check to facilitate early check-in requests based on room readiness and availability. Additional charges may apply where applicable. View more" [ref=f86e2250]:
+                    - generic [ref=f86e2252]:
+                      - generic [ref=f86e2253]: Early check-in requests can be shared in advance with the Amber team. Our team will do a feasibility check to facilitate early check-in requests based on room readiness and availability. Additional charges may apply where applicable.
+                      - generic [ref=f86e2254]: View more
+              - generic [ref=f86e2258]:
+                - generic [ref=f86e2259]: Guest policy
+                - listitem [ref=f86e2268] [cursor=pointer]:
+                  - button "Guests may stay with you where permitted by the property. Always notify the property 1 to 2 weeks in advance to complete the required formalities. View more" [ref=f86e2269]:
+                    - generic [ref=f86e2271]:
+                      - generic [ref=f86e2272]: Guests may stay with you where permitted by the property. Always notify the property 1 to 2 weeks in advance to complete the required formalities.
+                      - generic [ref=f86e2273]: View more
+              - generic [ref=f86e2277]:
+                - generic [ref=f86e2278]: Minimum age
+                - listitem [ref=f86e2287] [cursor=pointer]:
+                  - button "You must be 18 years or older on your move-in date to stay at this property. Please ensure you meet the age requirement before booking. In case you do not meet the minimum age requirement, inform the Amber team while enquiring with us, and we can suggest you accordingly. View more" [ref=f86e2288]:
+                    - generic [ref=f86e2290]:
+                      - generic [ref=f86e2291]: You must be 18 years or older on your move-in date to stay at this property. Please ensure you meet the age requirement before booking. In case you do not meet the minimum age requirement, inform the Amber team while enquiring with us, and we can suggest you accordingly.
+                      - generic [ref=f86e2292]: View more
+              - generic [ref=f86e2296]:
+                - generic [ref=f86e2297]: Student eligibility
+                - listitem [ref=f86e2306] [cursor=pointer]:
+                  - button "This accommodation is exclusively available to students. Non-students are not eligible to stay at the property. View more" [ref=f86e2307]:
+                    - generic [ref=f86e2309]:
+                      - generic [ref=f86e2310]: This accommodation is exclusively available to students. Non-students are not eligible to stay at the property.
+                      - generic [ref=f86e2311]: View more
+        - generic [ref=f86e2315]:
+          - heading "Payment and Fees" [level=2] [ref=f86e2317]
+          - generic [ref=f86e2318]:
+            - generic [ref=f86e2319]:
+              - heading "Pay In Instalment" [level=3] [ref=f86e2327]
+              - generic [ref=f86e2329]:
+                - paragraph [ref=f86e2330]: "The tenant may choose to pay their rent in Full payment 4 instalment Note: The tenant requires a guarantor to pay their rent in instalments."
+                - button [ref=f86e2331] [cursor=pointer]
+            - generic [ref=f86e2336]:
+              - heading "Guarantor Requirement" [level=3] [ref=f86e2344]
+              - generic [ref=f86e2346]:
+                - paragraph [ref=f86e2347]: "Required if paying in instalments. Guarantor must: Complete agreement. Submit required documentation within 7 days of booking or Booking Fee payment. Guarantor can be local or international If the guarantor fails to comply: The student must pay the full rent upfront."
+                - button [ref=f86e2348] [cursor=pointer]
+            - generic [ref=f86e2353]:
+              - heading "Booking Deposit" [level=3] [ref=f86e2361]
+              - generic [ref=f86e2363]:
+                - paragraph [ref=f86e2364]: "For 2025/26 AY The student has to pay £375 to book this property. Must be paid at the time of booking (where applicable). Credited toward the first rent payment. Non-refundable in most cancellation scenarios unless specific conditions are met (e.g., visa refusal, no place no pay). Deadline: The Tenancy Agreement must be completed within 7 days of payment (or agreed period). For 2026/27 AY The student has to pay £399 to book this property. Must be paid at the time of booking (where applicable). Credited toward the first rent payment. Non-refundable in most cancellation scenarios unless specific conditions are met (e.g., visa refusal, no place no pay). Deadline: The Tenancy Agreement must be completed within 7 days of payment (or agreed period)."
+                - button [ref=f86e2365] [cursor=pointer]
+            - generic [ref=f86e2370]:
+              - heading "Mode Of Payment" [level=3] [ref=f86e2378]
+              - generic [ref=f86e2380]:
+                - paragraph [ref=f86e2381]: Tenant can make their payments online using popular and secure payment methods available in their home country, including credit and debit cards, WeChat Pay, Visa, Mastercard, UnionPay, Trustly, and other supported payment options.
+                - generic [ref=f86e2382]:
+                  - img [ref=f86e2384]:
+                    - generic [ref=f86e2386]: PayPal
+                  - img [ref=f86e2388]:
+                    - generic [ref=f86e2390]: VISA
+                  - img [ref=f86e2397]:
+                    - generic [ref=f86e2399]: AMEX
+                - button [ref=f86e2400] [cursor=pointer]
+        - generic [ref=f86e2408]:
+          - heading "Floor Plan" [level=4] [ref=f86e2410]
+          - generic [ref=f86e2412]:
+            - generic [ref=f86e2413]:
+              - group "Floor plan image viewer" [ref=f86e2415]:
+                - button "View full image" [ref=f86e2417] [cursor=pointer]
+              - button "Previous floor plan" [disabled]
+              - button "Next floor plan" [ref=f86e2419] [cursor=pointer]
+            - generic [ref=f86e2428]:
+              - generic [ref=f86e2429]: Unit Layout
+              - generic [ref=f86e2430]: 1 / 40
+        - generic [ref=f86e2432]:
+          - heading "Meet the Residents" [level=2] [ref=f86e2433]
+          - generic [ref=f86e2436]:
+            - generic [ref=f86e2437]: Multicultural Student Community
+            - generic [ref=f86e2444]:
+              - generic [ref=f86e2446]:
+                - generic [ref=f86e2447]: King's College London(Strand Campus)
+                - generic [ref=f86e2448]: 33%
+              - generic [ref=f86e2452]:
+                - generic [ref=f86e2453]: Chelsea College of Arts (Chelsea), UAL
+                - generic [ref=f86e2454]: 19%
+              - generic [ref=f86e2458]:
+                - generic [ref=f86e2459]: Royal College of Art
+                - generic [ref=f86e2460]: 19%
+              - generic [ref=f86e2464]:
+                - generic [ref=f86e2465]: Others
+                - generic [ref=f86e2466]: 28%
+            - separator [ref=f86e2469]
+            - generic [ref=f86e2470]: "Data Source: As per historical booking data"
+        - generic [ref=f86e2478]:
+          - heading "Frequently Asked Questions" [level=2] [ref=f86e2479]
+          - generic [ref=f86e2482]:
+            - textbox "Enter your query or topic here" [ref=f86e2488]
+            - generic [ref=f86e2489]:
+              - group [ref=f86e2491]:
+                - heading "Are sites of iQ Vega secure?" [level=3] [ref=f86e2493] [cursor=pointer]
+                - paragraph [ref=f86e2502]: Each site of iQ Vega is covered by CCTV and has onsite security staff, with staff present 24 hours a day. There is also a digital entry system at each building. You should not allow people to ‘tailgate’ – that is, hold the door open for people behind you as you enter.
+              - group [ref=f86e2505]:
+                - heading "Can I book iQ Vega if I'm under 18?" [level=3] [ref=f86e2507] [cursor=pointer]
+              - group [ref=f86e2515]:
+                - heading "Can I bring a tv at iQ Vega?" [level=3] [ref=f86e2517] [cursor=pointer]
+              - group [ref=f86e2525]:
+                - heading "Can I bring my bike at iQ Vega?" [level=3] [ref=f86e2527] [cursor=pointer]
+              - group [ref=f86e2535]:
+                - heading "Can I bring my car at iQ Vega?" [level=3] [ref=f86e2537] [cursor=pointer]
+            - generic [ref=f86e2544]:
+              - checkbox "View all Questions (41) View less Questions" [ref=f86e2545]
+              - generic [ref=f86e2546] [cursor=pointer]: View all Questions (41)
+      - generic [ref=f86e2551]:
+        - generic [ref=f86e2552]:
+          - generic [ref=f86e2553]:
+            - paragraph [ref=f86e2555]: iQ Vega, London
+            - generic [ref=f86e2556]:
+              - button [ref=f86e2557] [cursor=pointer]
+              - img [ref=f86e2561] [cursor=pointer]
+          - button "View Rooms" [ref=f86e2564] [cursor=pointer]:
+            - button [ref=f86e2565]
+          - button "Enquire Now" [ref=f86e2567] [cursor=pointer]:
+            - button [ref=f86e2568]
+          - generic [ref=f86e2571]:
+            - generic [ref=f86e2572]: Shortlisted by 456+ students
+            - generic [ref=f86e2587] [cursor=pointer]:
+              - text: "3"
+              - generic [ref=f86e2588]: Indian students
+              - text: booked this property recently
+            - generic [ref=f86e2589]: Shortlisted by 456+ students
+            - generic [ref=f86e2604] [cursor=pointer]:
+              - text: "3"
+              - generic [ref=f86e2605]: Indian students
+              - text: booked this property recently
+        - generic [ref=f86e2607]:
+          - generic [ref=f86e2608]:
+            - generic [ref=f86e2609] [cursor=pointer]: Instant Booking
+            - generic [ref=f86e2616] [cursor=pointer]
+          - generic [ref=f86e2620]:
+            - generic [ref=f86e2621] [cursor=pointer]: Lowest Price Guaranteed
+            - generic [ref=f86e2632] [cursor=pointer]
+          - generic [ref=f86e2636]:
+            - generic [ref=f86e2637] [cursor=pointer]: Verified Properties
+            - generic [ref=f86e2645] [cursor=pointer]
+          - generic [ref=f86e2649]:
+            - generic [ref=f86e2650] [cursor=pointer]: 24x7 Personal Assistance
+            - generic [ref=f86e2659] [cursor=pointer]
+          - generic [ref=f86e2663]:
+            - generic [ref=f86e2664] [cursor=pointer]: Move-In Buddy
+            - generic [ref=f86e2672] [cursor=pointer]
+          - generic [ref=f86e2676]:
+            - generic [ref=f86e2677] [cursor=pointer]: 11.3K+ Reviews
+            - generic [ref=f86e2680] [cursor=pointer]
+    - generic [ref=f86e2684]:
+      - generic [ref=f86e2686]:
+        - heading "Nearby Locations and Map" [level=4] [ref=f86e2687]
+        - generic [ref=f86e2690]:
+          - tablist "Distance unit toggle" [ref=f86e2692]:
+            - tab "Miles" [selected] [ref=f86e2693] [cursor=pointer]
+            - tab "Kilometers" [ref=f86e2694] [cursor=pointer]
+          - generic [ref=f86e2695]:
+            - generic [ref=f86e2696]:
+              - tab "Universities" [selected] [ref=f86e2697] [cursor=pointer]:
+                - button [ref=f86e2698]
+              - tab "Bus Stations" [ref=f86e2702] [cursor=pointer]:
+                - button [ref=f86e2703]
+              - tab "Train Stations" [ref=f86e2708] [cursor=pointer]:
+                - button [ref=f86e2709]
+              - tab "Supermarkets" [ref=f86e2713] [cursor=pointer]:
+                - button [ref=f86e2714]
+              - tab "Pharmacies" [ref=f86e2719] [cursor=pointer]:
+                - button [ref=f86e2720]
+              - tab "Restaurants" [ref=f86e2725] [cursor=pointer]:
+                - button [ref=f86e2726]
+              - tab "Hospitals" [ref=f86e2731] [cursor=pointer]:
+                - button [ref=f86e2732]
+              - tab "Police Stations" [ref=f86e2736] [cursor=pointer]:
+                - button [ref=f86e2737]
+              - tab "Shopping Malls" [ref=f86e2741] [cursor=pointer]:
+                - button [ref=f86e2742]
+            - generic [ref=f86e2747]:
+              - button [ref=f86e2756]:
+                - searchbox "Search for Universities" [ref=f86e2759]
+              - generic [ref=f86e2760]:
+                - generic [ref=f86e2761] [cursor=pointer]: Chelsea College of Arts (Chelsea), UAL
+                - generic [ref=f86e2762] [cursor=pointer]: 0.8 mi
+                - generic [ref=f86e2763] [cursor=pointer]: City and Guilds of London Art School
+                - generic [ref=f86e2764] [cursor=pointer]: 1.0 mi
+                - generic [ref=f86e2765] [cursor=pointer]: Ada. National College for Digital Skills
+                - generic [ref=f86e2766] [cursor=pointer]: 1.5 mi
+                - generic [ref=f86e2767] [cursor=pointer]: Italia Conti Academy
+                - generic [ref=f86e2768] [cursor=pointer]: 1.4 mi
+                - generic [ref=f86e2769] [cursor=pointer]: Morley college
+                - generic [ref=f86e2770] [cursor=pointer]: 1.4 mi
+                - generic [ref=f86e2771] [cursor=pointer]: DLD College
+                - generic [ref=f86e2772] [cursor=pointer]: 1.4 mi
+                - generic [ref=f86e2773] [cursor=pointer]: Bucksmore Education
+                - generic [ref=f86e2774] [cursor=pointer]: 1.6 mi
+                - generic [ref=f86e2775] [cursor=pointer]: London College of Communication, UAL
+                - generic [ref=f86e2776] [cursor=pointer]: 1.5 mi
+                - generic [ref=f86e2777] [cursor=pointer]: ONCAMPUS London South Bank
+                - generic [ref=f86e2778] [cursor=pointer]: 1.6 mi
+                - generic [ref=f86e2779] [cursor=pointer]: London South Bank University
+                - generic [ref=f86e2780] [cursor=pointer]: 1.7 mi
+      - generic [ref=f86e2781]:
+        - heading "Reviews" [level=3] [ref=f86e2783]
+        - generic [ref=f86e2785]:
+          - generic [ref=f86e2786]:
+            - generic [ref=f86e2787]:
+              - generic [ref=f86e2788]:
+                - generic [ref=f86e2789]:
+                  - generic [ref=f86e2790]: "4.5"
+                  - generic [ref=f86e2791]: /5
+                - generic [ref=f86e2792]:
+                  - generic [ref=f86e2793]: Excellent Stay
+                  - generic [ref=f86e2794]: 8 Reviews
+              - generic [ref=f86e2796]: Only Verified Students Reviews
+            - generic [ref=f86e2805]:
+              - generic [ref=f86e2807]:
+                - generic [ref=f86e2808]: Cleanliness
+                - generic [ref=f86e2809]: "4.5"
+              - generic [ref=f86e2812]:
+                - generic [ref=f86e2813]: Amenities
+                - generic [ref=f86e2814]: "4.5"
+              - generic [ref=f86e2817]:
+                - generic [ref=f86e2818]: Location
+                - generic [ref=f86e2819]: "4.5"
+              - generic [ref=f86e2822]:
+                - generic [ref=f86e2823]: Staff
+                - generic [ref=f86e2824]: "4.5"
+              - generic [ref=f86e2827]:
+                - generic [ref=f86e2828]: Social
+                - generic [ref=f86e2829]: "4.5"
+              - generic [ref=f86e2832]:
+                - generic [ref=f86e2833]: Internet
+                - generic [ref=f86e2834]: "4.5"
+          - generic [ref=f86e2836]:
+            - paragraph [ref=f86e2837]:
+              - generic [ref=f86e2838]: The
+              - generic [ref=f86e2839]: property
+              - generic [ref=f86e2840]: offers
+              - generic [ref=f86e2841]: a
+              - generic [ref=f86e2842]: beautiful
+              - generic [ref=f86e2843]: view
+              - generic [ref=f86e2844]: and
+              - generic [ref=f86e2845]: modern,
+              - generic [ref=f86e2846]: chic
+              - generic [ref=f86e2847]: interiors
+              - generic [ref=f86e2848]: with
+              - generic [ref=f86e2849]: exceptional
+              - generic [ref=f86e2850]: student
+              - generic [ref=f86e2851]: facilities.
+              - generic [ref=f86e2852]: Residents
+              - generic [ref=f86e2853]: appreciate
+              - generic [ref=f86e2854]: the
+              - generic [ref=f86e2855]: welcoming
+              - generic [ref=f86e2856]: and
+              - generic [ref=f86e2857]: helpful
+              - generic [ref=f86e2858]: staff
+              - generic [ref=f86e2859]: who
+              - generic [ref=f86e2860]: go
+              - generic [ref=f86e2861]: above
+              - generic [ref=f86e2862]: and
+              - generic [ref=f86e2863]: beyond
+              - generic [ref=f86e2864]: to
+              - generic [ref=f86e2865]: address
+              - generic [ref=f86e2866]: any
+              - generic [ref=f86e2867]: issues.
+              - generic [ref=f86e2868]: The
+              - generic [ref=f86e2869]: building
+              - generic [ref=f86e2870]: boasts
+              - generic [ref=f86e2871]: wonderful
+              - generic [ref=f86e2872]: amenities
+              - generic [ref=f86e2873]: and
+              - generic [ref=f86e2874]: residents
+              - generic [ref=f86e2875]: enjoy
+              - generic [ref=f86e2876]: the
+              - generic [ref=f86e2877]: warm
+              - generic [ref=f86e2878]: and
+              - generic [ref=f86e2879]: comfortable
+              - generic [ref=f86e2880]: environment.
+              - generic [ref=f86e2881]: Surrounding
+              - generic [ref=f86e2882]: supermarkets
+              - generic [ref=f86e2883]: and
+              - generic [ref=f86e2884]: restaurants
+              - generic [ref=f86e2885]: provide
+              - generic [ref=f86e2886]: convenient
+              - generic [ref=f86e2887]: access
+              - generic [ref=f86e2888]: to
+              - generic [ref=f86e2889]: necessities,
+              - generic [ref=f86e2890]: making
+              - generic [ref=f86e2891]: living
+              - generic [ref=f86e2892]: here
+              - generic [ref=f86e2893]: a
+              - generic [ref=f86e2894]: great
+              - generic [ref=f86e2895]: experience.
+            - button "Summary curated from web" [ref=f86e2896]:
+              - img [ref=f86e2898] [cursor=pointer]
+          - generic [ref=f86e2902]:
+            - button "View photo 1" [ref=f86e2903] [cursor=pointer]
+            - button "View photo 2" [ref=f86e2904] [cursor=pointer]
+            - button "View photo 3" [ref=f86e2905] [cursor=pointer]
+            - button "View photo 4" [ref=f86e2906] [cursor=pointer]
+            - button "View photo 5" [ref=f86e2907] [cursor=pointer]
+            - button "View photo 6" [ref=f86e2908] [cursor=pointer]
+            - button "View photo 7" [ref=f86e2909] [cursor=pointer]:
+              - generic [ref=f86e2910]: +13 Photos
+        - generic [ref=f86e2914]:
+          - generic [ref=f86e2915]:
+            - generic [ref=f86e2917]:
+              - generic [ref=f86e2918]:
+                - generic [ref=f86e2919]:
+                  - generic [ref=f86e2920]:
+                    - generic [ref=f86e2921]:
+                      - heading "Scenic and Sociable Living" [level=3] [ref=f86e2922]
+                      - generic [ref=f86e2923]:
+                        - generic [ref=f86e2924]: "4.0"
+                        - generic [ref=f86e2925]: /5
+                    - generic [ref=f86e2926]: Silver En Suite Plus · From Sep 12, 2026 - Jul 16, 2027
+                  - paragraph [ref=f86e2930]: the area (the views and how well connected it is) and everything I can do with my flatmates in the facilities (from the kitchen to the gym or the sky lounge)
+                  - generic [ref=f86e2931]:
+                    - button "View photo" [ref=f86e2932] [cursor=pointer]
+                    - button "View photo" [ref=f86e2933] [cursor=pointer]
+                    - button "View photo" [ref=f86e2934] [cursor=pointer]
+                    - button "View photo" [ref=f86e2935] [cursor=pointer]
+                - generic [ref=f86e2936]:
+                  - button "Helpful" [ref=f86e2937] [cursor=pointer]
+                  - generic [ref=f86e2941]: Posted on Oct' 26
+              - generic [ref=f86e2944]:
+                - generic [ref=f86e2945]: Erin H
+                - generic [ref=f86e2946]: Student in iQ Vega, London
+            - generic [ref=f86e2948]:
+              - generic [ref=f86e2949]:
+                - generic [ref=f86e2950]:
+                  - generic [ref=f86e2951]:
+                    - generic [ref=f86e2952]:
+                      - heading "Seamless Check-In" [level=3] [ref=f86e2953]
+                      - generic [ref=f86e2954]:
+                        - generic [ref=f86e2955]: "5.0"
+                        - generic [ref=f86e2956]: /5
+                    - generic [ref=f86e2957]: Platinum En Suite Plus · From Sep 19, 2026 - Jul 16, 2027
+                  - paragraph [ref=f86e2961]: My check-in experience has been smooth, and I’m really happy with the room. It’s clean, comfortable, and exactly as expected. Thanks!
+                  - generic [ref=f86e2962]:
+                    - button "View photo" [ref=f86e2963] [cursor=pointer]
+                    - button "View photo" [ref=f86e2964] [cursor=pointer]
+                    - button "View photo" [ref=f86e2965] [cursor=pointer]
+                    - button "View photo" [ref=f86e2966] [cursor=pointer]
+                    - button "View photo" [ref=f86e2967] [cursor=pointer]
+                    - button "View photo" [ref=f86e2968] [cursor=pointer]
+                    - button "View photo" [ref=f86e2969] [cursor=pointer]
+                    - button "View photo" [ref=f86e2970] [cursor=pointer]
+                    - button "View photo" [ref=f86e2971] [cursor=pointer]
+                - generic [ref=f86e2972]:
+                  - button "Helpful" [ref=f86e2973] [cursor=pointer]
+                  - generic [ref=f86e2977]: Posted on Sep' 26
+              - generic [ref=f86e2980]:
+                - generic [ref=f86e2981]: Maxime D
+                - generic [ref=f86e2982]: Student in iQ Vega, London
+            - generic [ref=f86e2984]:
+              - generic [ref=f86e2985]:
+                - generic [ref=f86e2986]:
+                  - generic [ref=f86e2988]:
+                    - heading "Fun-Filled Amenities" [level=3] [ref=f86e2989]
+                    - generic [ref=f86e2990]:
+                      - generic [ref=f86e2991]: "3.0"
+                      - generic [ref=f86e2992]: /5
+                  - paragraph [ref=f86e2993]:
+                    - text: I enjoyed my stay here a lot. I stayed with my 2 friends in the 3-bed flat and we had blast. The gym, cinema room, game rooms, and even the study room we made the most of it. Had countless fun. I would say, though the area is developing so its loud and not-lon....
+                    - button "Read more" [ref=f86e2994] [cursor=pointer]: Read More
+                  - generic [ref=f86e2997]:
+                    - button "View photo" [ref=f86e2998] [cursor=pointer]
+                    - button "View photo" [ref=f86e2999] [cursor=pointer]
+                - generic [ref=f86e3000]:
+                  - button "Helpful" [ref=f86e3001] [cursor=pointer]
+                  - generic [ref=f86e3005]: Posted on Jul' 26
+              - generic [ref=f86e3008]:
+                - generic [ref=f86e3009]: J. W
+                - generic [ref=f86e3010]: University of Westminster
+            - generic [ref=f86e3012]:
+              - generic [ref=f86e3013]:
+                - generic [ref=f86e3014]:
+                  - generic [ref=f86e3016]:
+                    - heading "Vibrant Location" [level=3] [ref=f86e3017]
+                    - generic [ref=f86e3018]:
+                      - generic [ref=f86e3019]: "4.0"
+                      - generic [ref=f86e3020]: /5
+                  - paragraph [ref=f86e3021]:
+                    - text: It's alright honestly. The location for transport is genuinely amazing, 2 mins to a Victoria Line Zone 1 tube is the kind of thing that justifies a London rent, and the iQ amenities (gym, cinema, games) all check out. But the area is a real mixed bag. Vauxhall....
+                    - button "Read more" [ref=f86e3022] [cursor=pointer]: Read More
+                  - generic [ref=f86e3025]:
+                    - button "View photo" [ref=f86e3026] [cursor=pointer]
+                    - button "View photo" [ref=f86e3027] [cursor=pointer]
+                - generic [ref=f86e3028]:
+                  - button "Helpful" [ref=f86e3029] [cursor=pointer]
+                  - generic [ref=f86e3033]: Posted on Jul' 26
+              - generic [ref=f86e3036]:
+                - generic [ref=f86e3037]: Freddie M
+                - generic [ref=f86e3038]: KCL
+            - generic [ref=f86e3040]:
+              - generic [ref=f86e3041]:
+                - generic [ref=f86e3042]:
+                  - generic [ref=f86e3044]:
+                    - heading "Surprisingly Good Experience" [level=3] [ref=f86e3045]
+                    - generic [ref=f86e3046]:
+                      - generic [ref=f86e3047]: "5.0"
+                      - generic [ref=f86e3048]: /5
+                  - paragraph [ref=f86e3049]:
+                    - text: Vega has been heaps better than I expected. The area is better than people reckon. The studio is modern and bright, my plants like that a lot. The kitchenette’s got decent appliances, and the bathroom’s well done. The gym’s properly kitted out too. Oxford Circ....
+                    - button "Read more" [ref=f86e3050] [cursor=pointer]: Read More
+                  - generic [ref=f86e3053]:
+                    - button "View photo" [ref=f86e3054] [cursor=pointer]
+                    - button "View photo" [ref=f86e3055] [cursor=pointer]
+                - generic [ref=f86e3056]:
+                  - button "Helpful" [ref=f86e3057] [cursor=pointer]
+                  - generic [ref=f86e3061]: Posted on Jul' 26
+              - generic [ref=f86e3064]:
+                - generic [ref=f86e3065]: Dhruv D
+                - generic [ref=f86e3066]: LSBU
+            - generic [ref=f86e3068]:
+              - generic [ref=f86e3069]:
+                - generic [ref=f86e3070]:
+                  - generic [ref=f86e3072]:
+                    - heading "Scenic & Modern Living" [level=3] [ref=f86e3073]
+                    - generic [ref=f86e3074]:
+                      - generic [ref=f86e3075]: "5.0"
+                      - generic [ref=f86e3076]: /5
+                  - paragraph [ref=f86e3077]: This place has a beautiful view, the student facilities available are great and the interior is modern and chic.
+                - generic [ref=f86e3078]:
+                  - button "Helpful" [ref=f86e3079] [cursor=pointer]
+                  - generic [ref=f86e3083]: Posted on Sep' 21
+              - generic [ref=f86e3086]:
+                - generic [ref=f86e3087]: Tristan
+                - generic [ref=f86e3088]: Regent's University
+            - generic [ref=f86e3090]:
+              - generic [ref=f86e3091]:
+                - generic [ref=f86e3092]:
+                  - generic [ref=f86e3094]:
+                    - heading "Impeccable Facilities and Exceptional Service" [level=3] [ref=f86e3095]
+                    - generic [ref=f86e3096]:
+                      - generic [ref=f86e3097]: "5.0"
+                      - generic [ref=f86e3098]: /5
+                  - paragraph [ref=f86e3099]: Beautiful building and wonderful facilities, the staff go above and beyond to help with any issue.
+                - generic [ref=f86e3100]:
+                  - button "Helpful" [ref=f86e3101] [cursor=pointer]
+                  - generic [ref=f86e3105]: Posted on Sep' 21
+              - generic [ref=f86e3108]:
+                - generic [ref=f86e3109]: Gracy
+                - generic [ref=f86e3110]: Royal College of Art
+            - generic [ref=f86e3112]:
+              - generic [ref=f86e3113]:
+                - generic [ref=f86e3114]:
+                  - generic [ref=f86e3116]:
+                    - heading "Exceptional Interior & Friendly Atmosphere" [level=3] [ref=f86e3117]
+                    - generic [ref=f86e3118]:
+                      - generic [ref=f86e3119]: "5.0"
+                      - generic [ref=f86e3120]: /5
+                  - paragraph [ref=f86e3121]: The interior of the place is just exceptional, People here are good and friendly, and the staff is really helpful.
+                - generic [ref=f86e3122]:
+                  - button "Helpful" [ref=f86e3123] [cursor=pointer]
+                  - generic [ref=f86e3127]: Posted on Sep' 21
+              - generic [ref=f86e3130]:
+                - generic [ref=f86e3131]: Brandon
+                - generic [ref=f86e3132]: King's College London - Guy's Campus
+          - generic [ref=f86e3133] [cursor=pointer]
+        - button "Read All Reviews" [ref=f86e3138] [cursor=pointer]
+      - generic [ref=f86e3141]:
+        - heading "Price Trend" [level=2] [ref=f86e3142]
+        - generic [ref=f86e3144]:
+          - generic [ref=f86e3145]:
+            - button [ref=f86e3147]:
+              - button "All Room Types" [ref=f86e3148] [cursor=pointer]
+            - button "Reset" [disabled]
+          - generic [ref=f86e3153]:
+            - generic [ref=f86e3154]:
+              - generic [ref=f86e3155]: Book now
+              - generic [ref=f86e3162]: 3.07%
+            - generic [ref=f86e3167]: This property price has gone up by 3.07% in the past 12 months.
+      - generic [ref=f86e3174]:
+        - heading "Nearby Properties" [level=2] [ref=f86e3175]
+        - generic [ref=f86e3178]:
+          - generic [ref=f86e3179]:
+            - button "The Hub, London London, England, GB From £390/ week" [ref=f86e3181] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3205]:
+                - link "The Hub, London London, England, GB" [ref=f86e3206]:
+                  - /url: /places/the-hub-london-1608300814036
+                  - heading "The Hub, London" [level=4] [ref=f86e3207]
+                  - generic [ref=f86e3208]: London, England, GB
+                - generic [ref=f86e3210]:
+                  - generic [ref=f86e3211]: From
+                  - generic [ref=f86e3212]: £390/
+                  - text: week
+            - button "LST Spring Mews, London From £425/ week" [ref=f86e3214] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3238]:
+                - link [ref=f86e3239]:
+                  - /url: /places/lst-spring-mews-london-2605145364079
+                  - heading "LST Spring Mews, London" [level=4] [ref=f86e3240]
+                - generic [ref=f86e3242]:
+                  - generic [ref=f86e3243]: From
+                  - generic [ref=f86e3244]: £425/
+                  - text: week
+            - button "International Students House Vauxhall, London London, England, GB From £353/ week" [ref=f86e3246] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3270]:
+                - link "International Students House Vauxhall, London London, England, GB" [ref=f86e3271]:
+                  - /url: /places/international-students-house-vauxhall-london-2610050824002
+                  - heading "International Students House Vauxhall, London" [level=4] [ref=f86e3272]
+                  - generic [ref=f86e3273]: London, England, GB
+                - generic [ref=f86e3275]:
+                  - generic [ref=f86e3276]: From
+                  - generic [ref=f86e3277]: £353/
+                  - text: week
+            - button "Chapter Westminster, London London, England, GB From £584/ week" [ref=f86e3279] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3303]:
+                - link "Chapter Westminster, London London, England, GB" [ref=f86e3304]:
+                  - /url: /places/chapter-westminster-2207199972072
+                  - heading "Chapter Westminster, London" [level=4] [ref=f86e3305]
+                  - generic [ref=f86e3306]: London, England, GB
+                - generic [ref=f86e3308]:
+                  - generic [ref=f86e3309]: From
+                  - generic [ref=f86e3310]: £584/
+                  - text: week
+            - button "Gobritanya Westminster Residence, London London, England, GB From £598/ week" [ref=f86e3312] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3336]:
+                - link "Gobritanya Westminster Residence, London London, England, GB" [ref=f86e3337]:
+                  - /url: /places/gobritanya-westminster-residence-london-2503086215270
+                  - heading "Gobritanya Westminster Residence, London" [level=4] [ref=f86e3338]
+                  - generic [ref=f86e3339]: London, England, GB
+                - generic [ref=f86e3341]:
+                  - generic [ref=f86e3342]: From
+                  - generic [ref=f86e3343]: £598/
+                  - text: week
+            - button "Glassyard Building, London London, England, GB From £415/ week" [ref=f86e3345] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3369]:
+                - link "Glassyard Building, London London, England, GB" [ref=f86e3370]:
+                  - /url: /places/glassyard-building-london-1608308724021
+                  - heading "Glassyard Building, London" [level=4] [ref=f86e3371]
+                  - generic [ref=f86e3372]: London, England, GB
+                - generic [ref=f86e3374]:
+                  - generic [ref=f86e3375]: From
+                  - generic [ref=f86e3376]: £415/
+                  - text: week
+            - button "Halsmere Studios, London London, England, GB From £390/ week" [ref=f86e3378] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3402]:
+                - link "Halsmere Studios, London London, England, GB" [ref=f86e3403]:
+                  - /url: /places/halsmere-studios-london-1608308001711
+                  - heading "Halsmere Studios, London" [level=4] [ref=f86e3404]
+                  - generic [ref=f86e3405]: London, England, GB
+                - generic [ref=f86e3407]:
+                  - generic [ref=f86e3408]: From
+                  - generic [ref=f86e3409]: £390/
+                  - text: week
+            - button "Brooke Hall, London London, England, GB From £285/ week" [ref=f86e3411] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3435]:
+                - link "Brooke Hall, London London, England, GB" [ref=f86e3436]:
+                  - /url: /places/brooke-hall-london-2305268223262
+                  - heading "Brooke Hall, London" [level=4] [ref=f86e3437]
+                  - generic [ref=f86e3438]: London, England, GB
+                - generic [ref=f86e3440]:
+                  - generic [ref=f86e3441]: From
+                  - generic [ref=f86e3442]: £285/
+                  - text: week
+            - button "Urbanest Westminster Bridge, London London, England, GB From £329/ week" [ref=f86e3444] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3468]:
+                - link "Urbanest Westminster Bridge, London London, England, GB" [ref=f86e3469]:
+                  - /url: /places/urbanest-westminster-bridge-london-1608303433492
+                  - heading "Urbanest Westminster Bridge, London" [level=4] [ref=f86e3470]
+                  - generic [ref=f86e3471]: London, England, GB
+                - generic [ref=f86e3473]:
+                  - generic [ref=f86e3474]: From
+                  - generic [ref=f86e3475]: £329/
+                  - text: week
+            - button "Manna Ash House, London London, England, GB From £340/ week" [ref=f86e3477] [cursor=pointer]:
+              - button
+              - generic [ref=f86e3501]:
+                - link "Manna Ash House, London London, England, GB" [ref=f86e3502]:
+                  - /url: /places/manna-ash-house-london-2505036005600
+                  - heading "Manna Ash House, London" [level=4] [ref=f86e3503]
+                  - generic [ref=f86e3504]: London, England, GB
+                - generic [ref=f86e3506]:
+                  - generic [ref=f86e3507]: From
+                  - generic [ref=f86e3508]: £340/
+                  - text: week
+          - generic [ref=f86e3509] [cursor=pointer]
+      - generic [ref=f86e3515]:
+        - heading "Budget Friendly Properties" [level=2] [ref=f86e3516]
+        - generic [ref=f86e3520]:
+          - button "GoBritanya Lewisham Residence, London London, England, GB From £382/ week 5.0 (4)" [ref=f86e3522] [cursor=pointer]:
+            - button
+            - generic [ref=f86e3546]:
+              - link "GoBritanya Lewisham Residence, London London, England, GB" [ref=f86e3547]:
+                - /url: /places/lewisham-residence-london-2206069854956
+                - heading "GoBritanya Lewisham Residence, London" [level=4] [ref=f86e3548]
+                - generic [ref=f86e3549]: London, England, GB
+              - generic [ref=f86e3550]:
+                - generic [ref=f86e3551]:
+                  - generic [ref=f86e3552]: From
+                  - generic [ref=f86e3553]: £382/
+                  - text: week
+                - generic [ref=f86e3557]:
+                  - text: "5.0"
+                  - generic [ref=f86e3558]: (4)
+          - button "Venti House, London London, England, GB From £375/ week 4.0 (1)" [ref=f86e3560] [cursor=pointer]:
+            - button
+            - generic [ref=f86e3584]:
+              - link "Venti House, London London, England, GB" [ref=f86e3585]:
+                - /url: /places/venti-house-london-2511208827747
+                - heading "Venti House, London" [level=4] [ref=f86e3586]
+                - generic [ref=f86e3587]: London, England, GB
+              - generic [ref=f86e3588]:
+                - generic [ref=f86e3589]:
+                  - generic [ref=f86e3590]: From
+                  - generic [ref=f86e3591]: £375/
+                  - text: week
+                - generic [ref=f86e3595]:
+                  - text: "4.0"
+                  - generic [ref=f86e3596]: (1)
+          - button "Hawley Crescent, London London, England, GB From £319/ week 4.5 (11)" [ref=f86e3598] [cursor=pointer]:
+            - button
+            - generic [ref=f86e3622]:
+              - link "Hawley Crescent, London London, England, GB" [ref=f86e3623]:
+                - /url: /places/hawley-crescent-london-1708174027832
+                - heading "Hawley Crescent, London" [level=4] [ref=f86e3624]
+                - generic [ref=f86e3625]: London, England, GB
+              - generic [ref=f86e3626]:
+                - generic [ref=f86e3627]:
+                  - generic [ref=f86e3628]: From
+                  - generic [ref=f86e3629]: £319/
+                  - text: week
+                - generic [ref=f86e3633]:
+                  - text: "4.5"
+                  - generic [ref=f86e3634]: (11)
+          - button "iQ Highbury, London London, England, GB From £310/ week 4.7 (14)" [ref=f86e3636] [cursor=pointer]:
+            - button
+            - generic [ref=f86e3660]:
+              - link "iQ Highbury, London London, England, GB" [ref=f86e3661]:
+                - /url: /places/iq-highbury-london-1811163333778
+                - heading "iQ Highbury, London" [level=4] [ref=f86e3662]
+                - generic [ref=f86e3663]: London, England, GB
+              - generic [ref=f86e3664]:
+                - generic [ref=f86e3665]:
+                  - generic [ref=f86e3666]: From
+                  - generic [ref=f86e3667]: £310/
+                  - text: week
+                - generic [ref=f86e3671]:
+                  - text: "4.7"
+                  - generic [ref=f86e3672]: (14)
+          - button "LST Louise House, London London, England, GB From £310/ week" [ref=f86e3674] [cursor=pointer]:
+            - button
+            - generic [ref=f86e3698]:
+              - link "LST Louise House, London London, England, GB" [ref=f86e3699]:
+                - /url: /places/lst-louise-house-london-2607318818475
+                - heading "LST Louise House, London" [level=4] [ref=f86e3700]
+                - generic [ref=f86e3701]: London, England, GB
+              - generic [ref=f86e3703]:
+                - generic [ref=f86e3704]: From
+                - generic [ref=f86e3705]: £310/
+                - text: week
+      - generic [ref=f86e3707]:
+        - heading "Nearby Places" [level=2] [ref=f86e3708]
+        - generic [ref=f86e3709]:
+          - generic [ref=f86e3710]:
+            - tab "Cities" [selected] [ref=f86e3711] [cursor=pointer]:
+              - button [ref=f86e3712]
+            - tab "Localities" [ref=f86e3714] [cursor=pointer]:
+              - button [ref=f86e3715]
+            - tab "Universities" [ref=f86e3717] [cursor=pointer]:
+              - button [ref=f86e3718]
+          - generic [ref=f86e3721]:
+            - heading "Cities" [level=3] [ref=f86e3722]
+            - generic [ref=f86e3723]:
+              - checkbox "Show More (12) Show Less" [ref=f86e3724]
+              - generic [ref=f86e3725]:
+                - link "Student Accommodation in London" [ref=f86e3727] [cursor=pointer]:
+                  - /url: /places/search/london-1811028205760
+                - link "Student Accommodation in Croydon" [ref=f86e3729] [cursor=pointer]:
+                  - /url: /places/search/croydon-1811229254876
+                - link "Student Accommodation in Kingston upon Thames" [ref=f86e3731] [cursor=pointer]:
+                  - /url: /places/search/kingston-upon-thames-1811025616665
+                - link "Student Accommodation in Borehamwood" [ref=f86e3733] [cursor=pointer]:
+                  - /url: /places/search/borehamwood-2510087186443
+                - link "Student Accommodation in Watford" [ref=f86e3735] [cursor=pointer]:
+                  - /url: /places/search/watford-1905111988293
+                - link "Student Accommodation in Egham" [ref=f86e3737] [cursor=pointer]:
+                  - /url: /places/search/egham-1811022240968
+                - link "Student Accommodation in Hatfield" [ref=f86e3739] [cursor=pointer]:
+                  - /url: /places/search/hatfield-1811227320022
+                - link "Student Accommodation in Surrey" [ref=f86e3741] [cursor=pointer]:
+                  - /url: /places/search/surrey-2502047483763
+              - generic [ref=f86e3743] [cursor=pointer]: Show More (12)
+  - generic [ref=f86e3750]:
+    - generic [ref=f86e3751]:
+      - generic [ref=f86e3752]: amber © 2026. All rights reserved.
+      - generic [ref=f86e3754] [cursor=pointer]:
+        - generic:
+          - link:
+            - /url: https://uk.trustpilot.com/review/amberstudent.com
+      - generic [ref=f86e3755]:
+        - generic [ref=f86e3756]:
+          - generic [ref=f86e3757]: Get the app
+          - generic [ref=f86e3758]:
+            - link [ref=f86e3759] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+            - link [ref=f86e3760] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+        - generic [ref=f86e3762]: Payment Options
+    - generic [ref=f86e3765]:
+      - generic [ref=f86e3766]:
+        - generic [ref=f86e3767]: Company
+        - link "About" [ref=f86e3770] [cursor=pointer]:
+          - /url: /about
+        - link "How it works" [ref=f86e3772] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Refer a Friend" [ref=f86e3774] [cursor=pointer]:
+          - /url: /referral-programme
+        - generic [ref=f86e3775]:
+          - link "Group Bookings" [ref=f86e3776] [cursor=pointer]:
+            - /url: /group-booking
+          - generic [ref=f86e3777]: New
+        - generic [ref=f86e3778]:
+          - link "List with us" [ref=f86e3779] [cursor=pointer]:
+            - /url: /list
+          - generic [ref=f86e3780]: New
+        - generic [ref=f86e3781]:
+          - link "Partner with us" [ref=f86e3782] [cursor=pointer]:
+            - /url: /partner
+          - generic [ref=f86e3783]: New
+        - generic [ref=f86e3784]:
+          - link "Universities" [ref=f86e3785] [cursor=pointer]:
+            - /url: /university-partnerships
+          - generic [ref=f86e3786]: New
+        - generic [ref=f86e3787]:
+          - link "Careers" [ref=f86e3788] [cursor=pointer]:
+            - /url: /career
+          - generic [ref=f86e3789]: We are hiring!
+      - generic [ref=f86e3790]:
+        - generic [ref=f86e3791]: Discover
+        - link "Podcast" [ref=f86e3794] [cursor=pointer]:
+          - /url: /podcast
+        - link "Newsroom" [ref=f86e3796] [cursor=pointer]:
+          - /url: /news
+        - link "Amber Plus" [ref=f86e3798] [cursor=pointer]:
+          - /url: /plus
+        - link "Media Mention" [ref=f86e3800] [cursor=pointer]:
+          - /url: /media
+        - link "Ambassador" [ref=f86e3802] [cursor=pointer]:
+          - /url: /ambassador
+        - generic [ref=f86e3803]:
+          - link "Scholarships" [ref=f86e3804] [cursor=pointer]:
+            - /url: /scholarship
+          - generic [ref=f86e3805]: Apply Now
+        - generic [ref=f86e3806]:
+          - link "Exams":
+            - /url: /exams
+          - generic [ref=f86e3807]: New
+    - generic [ref=f86e3808]:
+      - generic [ref=f86e3809]: Support
+      - link "Help Center" [ref=f86e3812] [cursor=pointer]:
+        - /url: /help
+      - link "Contact" [ref=f86e3814] [cursor=pointer]:
+        - /url: /contact
+      - link "T&C" [ref=f86e3816] [cursor=pointer]:
+        - /url: /terms
+      - link "Privacy Policy" [ref=f86e3818] [cursor=pointer]:
+        - /url: /privacy
+      - link "Sitemap" [ref=f86e3820] [cursor=pointer]:
+        - /url: /sitemap
+    - generic [ref=f86e3821]:
+      - generic [ref=f86e3822]: Contact us
+      - link "contact@amberstudent.com" [ref=f86e3823] [cursor=pointer]:
+        - /url: mailto:contact@amberstudent.com
+      - link "WhatsApp" [ref=f86e3827] [cursor=pointer]:
+        - /url: https://wa.me/447888863490
+      - link "+91 8035735724" [ref=f86e3831] [cursor=pointer]:
+        - /url: tel:+918035735724
+      - generic [ref=f86e3835]: "Follow us on:"
+  - button "Open chat" [ref=f86e3845] [cursor=pointer]

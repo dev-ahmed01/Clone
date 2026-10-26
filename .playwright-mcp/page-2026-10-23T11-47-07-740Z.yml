@@ -1,0 +1,1773 @@
+- generic [ref=f8e3]:
+  - generic [ref=f8e6503]:
+    - heading "University Reset" [level=3] [ref=f8e6504]:
+      - generic [ref=f8e6505]: University
+      - generic [ref=f8e6506]:
+        - button "Reset":
+          - button
+    - generic [ref=f8e6507]:
+      - textbox "Search University" [ref=f8e6512]
+      - generic [ref=f8e6513]:
+        - button "ABC School Of English" [ref=f8e6515] [cursor=pointer]
+        - button "Access Creative College" [ref=f8e6517] [cursor=pointer]
+        - button "Ada. National College for Digital Skills" [ref=f8e6519] [cursor=pointer]
+        - button "Alpha Meridian College" [ref=f8e6521] [cursor=pointer]
+        - button "American Musical Theatre Academy London" [ref=f8e6523] [cursor=pointer]
+        - button "Amity University London Campus" [ref=f8e6525] [cursor=pointer]
+        - button "Amos London International" [ref=f8e6527] [cursor=pointer]
+        - button "Anglia Ruskin University, London" [ref=f8e6529] [cursor=pointer]
+        - button "Architectural Association School of Architecture" [ref=f8e6531] [cursor=pointer]
+        - button "Arden University (Tower Hill Campus)" [ref=f8e6533] [cursor=pointer]
+        - button "Arizona State University London" [ref=f8e6535] [cursor=pointer]
+        - button "Arts Educational Schools London" [ref=f8e6537] [cursor=pointer]
+        - button "Asante Academy of Chinese Medicine" [ref=f8e6539] [cursor=pointer]
+        - button "Aston University London Campus" [ref=f8e6541] [cursor=pointer]
+        - button "Barking and Dagenham College" [ref=f8e6543] [cursor=pointer]
+        - button "Barnet and Southgate College" [ref=f8e6545] [cursor=pointer]
+        - button "Barnet and Southgate College - Edmonton Green Campus" [ref=f8e6547] [cursor=pointer]
+        - button "Barts and the London School of Medicine and Dentistry" [ref=f8e6549] [cursor=pointer]
+        - button "Bayes Business School" [ref=f8e6551] [cursor=pointer]
+        - button "BIMM, London" [ref=f8e6553] [cursor=pointer]
+        - button "Bird College" [ref=f8e6555] [cursor=pointer]
+        - button "Birkbeck (Stratford Campus)" [ref=f8e6557] [cursor=pointer]
+        - button "Birkbeck, University of London" [ref=f8e6559] [cursor=pointer]
+        - button "Bishopshalt School" [ref=f8e6561] [cursor=pointer]
+        - button "Bloomsbury Institute London" [ref=f8e6563] [cursor=pointer]
+        - button "BPP London Liverpool Street" [ref=f8e6565] [cursor=pointer]
+        - button "BPP university - London" [ref=f8e6567] [cursor=pointer]
+        - button "BPP University London (Holborn)" [ref=f8e6569] [cursor=pointer]
+        - button "BPP University (Shepherd's Bush Centre)" [ref=f8e6571] [cursor=pointer]
+        - button "British Academy of Interior Design" [ref=f8e6573] [cursor=pointer]
+        - button "British College of Osteopathic Medicine" [ref=f8e6575] [cursor=pointer]
+        - button "British Institute of Technology" [ref=f8e6577] [cursor=pointer]
+        - button "British Summer School" [ref=f8e6579] [cursor=pointer]
+        - button "Bromley College of Further & Higher Education" [ref=f8e6581] [cursor=pointer]
+        - button "Brooklands College" [ref=f8e6583] [cursor=pointer]
+        - button "Brooklands Technical College - Ashford Campus" [ref=f8e6585] [cursor=pointer]
+        - button "Brunel University" [ref=f8e6587] [cursor=pointer]
+        - button "Bucksmore Education" [ref=f8e6589] [cursor=pointer]
+        - button "Bucks New University (Uxbridge Campus)" [ref=f8e6591] [cursor=pointer]
+        - button "Camberwell College of Arts (Camberwell), UAL" [ref=f8e6593] [cursor=pointer]
+        - button "Capel Manor College" [ref=f8e6595] [cursor=pointer]
+        - button "Capel Manor College Crystal Palace Park Campus" [ref=f8e6597] [cursor=pointer]
+        - button "Capel Manor College Enfield Campus" [ref=f8e6599] [cursor=pointer]
+        - button "Capel Manor College Mottingham Campus" [ref=f8e6601] [cursor=pointer]
+        - button "Capital City College" [ref=f8e6603] [cursor=pointer]
+        - button "Carshalton College" [ref=f8e6605] [cursor=pointer]
+        - button "Center for Transitional Legal Studies" [ref=f8e6607] [cursor=pointer]
+        - button "Central Saint Martins" [ref=f8e6609] [cursor=pointer]
+        - button "Charles Bekeev International University" [ref=f8e6611] [cursor=pointer]
+        - button "Chelsea College of Arts (Chelsea), UAL" [ref=f8e6613] [cursor=pointer]
+        - button "Chelsea Independent College" [ref=f8e6615] [cursor=pointer]
+        - button "City and Guilds of London Art School" [ref=f8e6617] [cursor=pointer]
+        - button "City Law School" [ref=f8e6619] [cursor=pointer]
+        - button "City Lit" [ref=f8e6621] [cursor=pointer]
+        - button "City of Westminster College (Paddington Green Campus)" [ref=f8e6623] [cursor=pointer]
+        - button "City St. George's, University of London" [ref=f8e6625] [cursor=pointer]
+        - button "College of Fashion" [ref=f8e6627] [cursor=pointer]
+        - button "College of North West London" [ref=f8e6629] [cursor=pointer]
+        - button "Connaught Hall" [ref=f8e6631] [cursor=pointer]
+        - button "Coulsdon Sixth Form College" [ref=f8e6633] [cursor=pointer]
+        - button "Coventry University" [ref=f8e6635] [cursor=pointer]
+        - button "Cronton Sixth Form College" [ref=f8e6637] [cursor=pointer]
+        - button "Croydon College" [ref=f8e6639] [cursor=pointer]
+        - button "CTK Emmanuel Sixth Form" [ref=f8e6641] [cursor=pointer]
+        - button "CTK St Mary's Sixth Form" [ref=f8e6643] [cursor=pointer]
+        - button "Delamar Academy of Make-up & Hair" [ref=f8e6645] [cursor=pointer]
+        - button "DLD College" [ref=f8e6647] [cursor=pointer]
+        - button "Docklands Academy London" [ref=f8e6649] [cursor=pointer]
+        - button "Dulwich College" [ref=f8e6651] [cursor=pointer]
+        - button "EC language school" [ref=f8e6653] [cursor=pointer]
+        - button "English National Ballet School" [ref=f8e6655] [cursor=pointer]
+        - button "Escape Studios London" [ref=f8e6657] [cursor=pointer]
+        - button "Ethames Graduate School" [ref=f8e6659] [cursor=pointer]
+        - button "European Business School" [ref=f8e6661] [cursor=pointer]
+        - button "European School Of Economics" [ref=f8e6663] [cursor=pointer]
+        - button "Europe Business School" [ref=f8e6665] [cursor=pointer]
+        - button "Farringtons School" [ref=f8e6667] [cursor=pointer]
+        - button "Fordham University London" [ref=f8e6669] [cursor=pointer]
+        - button "Francis Crick Institute" [ref=f8e6671] [cursor=pointer]
+        - button "Glasgow Caledonian University (London Campus)" [ref=f8e6673] [cursor=pointer]
+        - button "Global Education Oregon in London" [ref=f8e6675] [cursor=pointer]
+        - button "Goldsmiths (University of London)" [ref=f8e6677] [cursor=pointer]
+        - button "Groupe Inseec" [ref=f8e6679] [cursor=pointer]
+        - button "GSM London" [ref=f8e6681] [cursor=pointer]
+        - button "Guildhall School of Music and Drama" [ref=f8e6683] [cursor=pointer]
+        - button "Hampstead Garden Suburb Institute" [ref=f8e6685] [cursor=pointer]
+        - button "Haringey Sixth Form College" [ref=f8e6687] [cursor=pointer]
+        - button "Harrow College Harrow Weald Campus" [ref=f8e6689] [cursor=pointer]
+        - button "Health Sciences University London Campus" [ref=f8e6691] [cursor=pointer]
+        - button "Heythrop College" [ref=f8e6693] [cursor=pointer]
+        - button "Hult International Business School" [ref=f8e6695] [cursor=pointer]
+        - button "ICMP London - The Institute of Contemporary Music Performance" [ref=f8e6697] [cursor=pointer]
+        - button "Identity School of Acting" [ref=f8e6699] [cursor=pointer]
+        - button "Imperial College Business School" [ref=f8e6701] [cursor=pointer]
+        - button "Imperial College London" [ref=f8e6703] [cursor=pointer]
+        - button "Imperial College London Charing Cross Campus" [ref=f8e6705] [cursor=pointer]
+        - button "Inchbald School of Design" [ref=f8e6707] [cursor=pointer]
+        - button "Institute of Cancer Research" [ref=f8e6709] [cursor=pointer]
+        - button "International Foundation Group" [ref=f8e6711] [cursor=pointer]
+        - button "International House London" [ref=f8e6713] [cursor=pointer]
+        - button "INTO City St George's" [ref=f8e6715] [cursor=pointer]
+        - button "INTO London" [ref=f8e6717] [cursor=pointer]
+        - button "INTO LONDON WORLD EDUCATION CENTRE" [ref=f8e6719] [cursor=pointer]
+        - button "Istituto Marangoni" [ref=f8e6721] [cursor=pointer]
+        - button "Italia Conti Academy" [ref=f8e6723] [cursor=pointer]
+        - button "Ithaca College London" [ref=f8e6725] [cursor=pointer]
+        - button "Kaplan International College" [ref=f8e6727] [cursor=pointer]
+        - button "Kaplan International English (London Covent Garden)" [ref=f8e6729] [cursor=pointer]
+        - button "King's College London - Guy's Campus" [ref=f8e6731] [cursor=pointer]
+        - button "King's College London(Strand Campus)" [ref=f8e6733] [cursor=pointer]
+        - button "King's College London (Waterloo Campus)" [ref=f8e6735] [cursor=pointer]
+        - button "Kingston Business School" [ref=f8e6737] [cursor=pointer]
+        - button "Kingston School of Art, Knights Park" [ref=f8e6739] [cursor=pointer]
+        - button "Kingston University" [ref=f8e6741] [cursor=pointer]
+        - button "KLC School of Design" [ref=f8e6743] [cursor=pointer]
+        - button "Lambeth College" [ref=f8e6745] [cursor=pointer]
+        - button "Lambeth College Brixton Centre" [ref=f8e6747] [cursor=pointer]
+        - button "Le Wagon London" [ref=f8e6749] [cursor=pointer]
+        - button "Lewisham College" [ref=f8e6751] [cursor=pointer]
+        - button "Lewisham College Deptford Campus" [ref=f8e6753] [cursor=pointer]
+        - button "Leyton Sixth Form College" [ref=f8e6755] [cursor=pointer]
+        - button "London Academy of Management Sciences" [ref=f8e6757] [cursor=pointer]
+        - button "London Academy of Music and Dramatic Arts" [ref=f8e6759] [cursor=pointer]
+        - button "London Business School" [ref=f8e6761] [cursor=pointer]
+        - button "London College of Communication, UAL" [ref=f8e6763] [cursor=pointer]
+        - button "London College of Contemporary Arts" [ref=f8e6765] [cursor=pointer]
+        - button "London College of Creative Media" [ref=f8e6767] [cursor=pointer]
+        - button "London College of Fashion, UAL" [ref=f8e6769] [cursor=pointer]
+        - button "London College of Performing Arts" [ref=f8e6771] [cursor=pointer]
+        - button "London College of Style" [ref=f8e6773] [cursor=pointer]
+        - button "London Contemporary Dance School" [ref=f8e6775] [cursor=pointer]
+        - button "London Film Academy" [ref=f8e6777] [cursor=pointer]
+        - button "London Film School" [ref=f8e6779] [cursor=pointer]
+        - button "London International University" [ref=f8e6781] [cursor=pointer]
+        - button "London Metropolitan University (Aldgate)" [ref=f8e6783] [cursor=pointer]
+        - button "London Metropolitan University (Holloway Road)" [ref=f8e6785] [cursor=pointer]
+        - button "London Metropolitan University (Shoreditch)" [ref=f8e6787] [cursor=pointer]
+        - button "London North West University Healthcare NHS Trust" [ref=f8e6789] [cursor=pointer]
+        - button "London School of Commerce" [ref=f8e6791] [cursor=pointer]
+        - button "London School of Economics and Political Science" [ref=f8e6793] [cursor=pointer]
+        - button "London School of Hygiene & Tropical Medicine" [ref=f8e6795] [cursor=pointer]
+        - button "London School of Jewish Studies" [ref=f8e6797] [cursor=pointer]
+        - button "London School of Theology" [ref=f8e6799] [cursor=pointer]
+        - button "London South Bank University" [ref=f8e6801] [cursor=pointer]
+        - button "London South East Colleges" [ref=f8e6803] [cursor=pointer]
+        - 'button "London South East Colleges: Bexley" [ref=f8e6805] [cursor=pointer]'
+        - 'button "London South East Colleges: Orpington" [ref=f8e6807] [cursor=pointer]'
+        - button "London Studio Centre" [ref=f8e6809] [cursor=pointer]
+        - button "Loughborough University (London campus)" [ref=f8e6811] [cursor=pointer]
+        - button "Luton Sixth Form College" [ref=f8e6813] [cursor=pointer]
+        - button "Malvern House London" [ref=f8e6815] [cursor=pointer]
+        - button "Mander Portman Woodward" [ref=f8e6817] [cursor=pointer]
+        - button "Met Film School" [ref=f8e6819] [cursor=pointer]
+        - button "Middlesex University" [ref=f8e6821] [cursor=pointer]
+        - button "Middlesex University London (Hendon Campus)" [ref=f8e6823] [cursor=pointer]
+        - button "Morley college" [ref=f8e6825] [cursor=pointer]
+        - button "National Film and Television School" [ref=f8e6827] [cursor=pointer]
+        - button "Nelson College London Ilford Campus" [ref=f8e6829] [cursor=pointer]
+        - button "Nescot (North East Surrey College Of Technology)" [ref=f8e6831] [cursor=pointer]
+        - button "New City College" [ref=f8e6833] [cursor=pointer]
+        - button "New City College, Ardleigh Green" [ref=f8e6835] [cursor=pointer]
+        - button "New City College Epping Forest Campus" [ref=f8e6837] [cursor=pointer]
+        - button "New City College, Havering Sixth Form" [ref=f8e6839] [cursor=pointer]
+        - button "New City College, Ilford" [ref=f8e6841] [cursor=pointer]
+        - button "New City College, Rainham Construction & Engineering Campus" [ref=f8e6843] [cursor=pointer]
+        - button "Newham College (East Ham Campus)" [ref=f8e6845] [cursor=pointer]
+        - button "New York University in London" [ref=f8e6847] [cursor=pointer]
+        - button "Northeastern University London" [ref=f8e6849] [cursor=pointer]
+        - button "Northumbria University (London Campus)" [ref=f8e6851] [cursor=pointer]
+        - button "Nottingham Trent University - London Campus" [ref=f8e6853] [cursor=pointer]
+        - button "OI Digital Institute" [ref=f8e6855] [cursor=pointer]
+        - button "ONCAMPUS London" [ref=f8e6857] [cursor=pointer]
+        - button "ONCAMPUS London South Bank" [ref=f8e6859] [cursor=pointer]
+        - button "Oxford International Education Group" [ref=f8e6861] [cursor=pointer]
+        - button "Pearson College London" [ref=f8e6863] [cursor=pointer]
+        - button "Point Blank Music School" [ref=f8e6865] [cursor=pointer]
+        - button "Queen Mary University (Lincoln's Inn Fields Campus)" [ref=f8e6867] [cursor=pointer]
+        - button "Queen Mary University of London(Mile End)" [ref=f8e6869] [cursor=pointer]
+        - button "Queen Mary University (Whitechapel)" [ref=f8e6871] [cursor=pointer]
+        - button "Rambert School of Ballet and Contemporary Dance" [ref=f8e6873] [cursor=pointer]
+        - button "Ravensbourne University" [ref=f8e6875] [cursor=pointer]
+        - button "RCA Battersea" [ref=f8e6877] [cursor=pointer]
+        - button "RED Academy London" [ref=f8e6879] [cursor=pointer]
+        - button "Redbridge Institute of Adult Education" [ref=f8e6881] [cursor=pointer]
+        - button "Regent College London - Fitzrovia" [ref=f8e6883] [cursor=pointer]
+        - button "Regent College London - Holborn" [ref=f8e6885] [cursor=pointer]
+        - button "Regent College London - Kingsbury" [ref=f8e6887] [cursor=pointer]
+        - button "Regent College London - Southall" [ref=f8e6889] [cursor=pointer]
+        - button "Regent College London - Wembley" [ref=f8e6891] [cursor=pointer]
+        - button "Regent's University" [ref=f8e6893] [cursor=pointer]
+        - button "Richmond University" [ref=f8e6895] [cursor=pointer]
+        - button "Richmond University (Kensington Campus)" [ref=f8e6897] [cursor=pointer]
+        - button "Richmond Upon Thames College" [ref=f8e6899] [cursor=pointer]
+        - button "Rose Bruford College" [ref=f8e6901] [cursor=pointer]
+        - button "Rose Bruford College of Theatre & Performance" [ref=f8e6903] [cursor=pointer]
+        - button "Rosedale College" [ref=f8e6905] [cursor=pointer]
+        - button "Royal Academy of Dramatic Art" [ref=f8e6907] [cursor=pointer]
+        - button "Royal Academy of Music" [ref=f8e6909] [cursor=pointer]
+        - button "Royal Central School of Speech and Drama" [ref=f8e6911] [cursor=pointer]
+        - button "Royal College of Art" [ref=f8e6913] [cursor=pointer]
+        - button "Royal College of Music" [ref=f8e6915] [cursor=pointer]
+        - button "Royal Veterinary College" [ref=f8e6917] [cursor=pointer]
+        - button "Saint Josephs College" [ref=f8e6919] [cursor=pointer]
+        - button "Schiller International University" [ref=f8e6921] [cursor=pointer]
+        - button "School of Advanced Study" [ref=f8e6923] [cursor=pointer]
+        - button "School of Oriental and African Studies" [ref=f8e6925] [cursor=pointer]
+        - button "Shooters Hill Sixth Form College" [ref=f8e6927] [cursor=pointer]
+        - button "Sir George Monoux Sixth Form College" [ref=f8e6929] [cursor=pointer]
+        - button "Sotheby’s Institute of Art" [ref=f8e6931] [cursor=pointer]
+        - button "South Essex College" [ref=f8e6933] [cursor=pointer]
+        - button "Southgate College Colindale Campus" [ref=f8e6935] [cursor=pointer]
+        - button "South Thames College" [ref=f8e6937] [cursor=pointer]
+        - button "Speak Up London" [ref=f8e6939] [cursor=pointer]
+        - button "SPEOS London Photo School" [ref=f8e6941] [cursor=pointer]
+        - button "SP Jain London School of Management" [ref=f8e6943] [cursor=pointer]
+        - button "Stanmore College" [ref=f8e6945] [cursor=pointer]
+        - button "St Charles Catholic Sixth Form College" [ref=f8e6947] [cursor=pointer]
+        - button "St Dominic's Sixth Form College" [ref=f8e6949] [cursor=pointer]
+        - button "St Giles London Central School" [ref=f8e6951] [cursor=pointer]
+        - button "St. Lawrence University London Campus" [ref=f8e6953] [cursor=pointer]
+        - button "St Mary's University" [ref=f8e6955] [cursor=pointer]
+        - button "St. Patrick's College" [ref=f8e6957] [cursor=pointer]
+        - button "Sutton College" [ref=f8e6959] [cursor=pointer]
+        - button "Syracuse University London Campus" [ref=f8e6961] [cursor=pointer]
+        - button "Teesside University London" [ref=f8e6963] [cursor=pointer]
+        - button "The College of Haringey" [ref=f8e6965] [cursor=pointer]
+        - button "The Courtauld Institute of Art" [ref=f8e6967] [cursor=pointer]
+        - button "The Dickson Poon School of Law" [ref=f8e6969] [cursor=pointer]
+        - button "The English Studio" [ref=f8e6971] [cursor=pointer]
+        - button "The London Institute of Banking & Finance" [ref=f8e6973] [cursor=pointer]
+        - button "The London Interdisciplinary School" [ref=f8e6975] [cursor=pointer]
+        - button "The London School of Make Up" [ref=f8e6977] [cursor=pointer]
+        - button "The University of Huddersfield" [ref=f8e6979] [cursor=pointer]
+        - button "The University of Huddersfield - London" [ref=f8e6981] [cursor=pointer]
+        - button "The University of Law" [ref=f8e6983] [cursor=pointer]
+        - button "The Warburg Institute" [ref=f8e6985] [cursor=pointer]
+        - button "Trinity Laban Conservatoire of Music and Dance" [ref=f8e6987] [cursor=pointer]
+        - button "UCL Institute of Education" [ref=f8e6989] [cursor=pointer]
+        - button "UCL School of Management" [ref=f8e6991] [cursor=pointer]
+        - button "Ulster University (London Branch Campus)" [ref=f8e6993] [cursor=pointer]
+        - button "Université Paris-Dauphine (London campus)" [ref=f8e6995] [cursor=pointer]
+        - button "University Campus of Football Business" [ref=f8e6997] [cursor=pointer]
+        - button "University College London" [ref=f8e6999] [cursor=pointer]
+        - button "University of Arts Curtain Road" [ref=f8e7001] [cursor=pointer]
+        - button "University of Brighton(Eastbourne campus)" [ref=f8e7003] [cursor=pointer]
+        - button "University of Brighton (Falmer campus)" [ref=f8e7005] [cursor=pointer]
+        - button "University of Brighton (Grand Parade Campus)" [ref=f8e7007] [cursor=pointer]
+        - button "University of Buckingham" [ref=f8e7009] [cursor=pointer]
+        - button "University of Chicago Booth School of Business London Campus" [ref=f8e7011] [cursor=pointer]
+        - button "University of Cumbria London Campus" [ref=f8e7013] [cursor=pointer]
+        - button "University of East London" [ref=f8e7015] [cursor=pointer]
+        - button "University of East London Stratford Campus" [ref=f8e7017] [cursor=pointer]
+        - button "University of Essex Southend Campus" [ref=f8e7019] [cursor=pointer]
+        - button "University of Greenwich" [ref=f8e7021] [cursor=pointer]
+        - button "University of Greenwich (Medway Campus)" [ref=f8e7023] [cursor=pointer]
+        - button "University of Law - London" [ref=f8e7025] [cursor=pointer]
+        - button "University of London" [ref=f8e7027] [cursor=pointer]
+        - button "University of London (St George's Campus)" [ref=f8e7029] [cursor=pointer]
+        - button "University of Notre Dame London Campus" [ref=f8e7031] [cursor=pointer]
+        - button "University of Portsmouth London" [ref=f8e7033] [cursor=pointer]
+        - button "University of Roehampton" [ref=f8e7035] [cursor=pointer]
+        - button "University of Staffordshire - London Campus" [ref=f8e7037] [cursor=pointer]
+        - button "University of Sunderland" [ref=f8e7039] [cursor=pointer]
+        - button "University Of The Arts London" [ref=f8e7041] [cursor=pointer]
+        - button "University of the West of Scotland (London Campus)" [ref=f8e7043] [cursor=pointer]
+        - button "University of Wales Trinity Saint David (London Campus)" [ref=f8e7045] [cursor=pointer]
+        - button "University of West London (Brentford Campus)" [ref=f8e7047] [cursor=pointer]
+        - button "University of West London(Ealing Campus)" [ref=f8e7049] [cursor=pointer]
+        - button "University of West London (Thames Valley University)" [ref=f8e7051] [cursor=pointer]
+        - button "University of Westminster (Cavendish Campus)" [ref=f8e7053] [cursor=pointer]
+        - button "University of Westminster Harrow Campus" [ref=f8e7055] [cursor=pointer]
+        - button "University of Westminster (Marylebone Campus)" [ref=f8e7057] [cursor=pointer]
+        - button "University of Westminster (Regent Campus)" [ref=f8e7059] [cursor=pointer]
+        - button "Urdang Academy London" [ref=f8e7061] [cursor=pointer]
+        - button "Uxbridge College" [ref=f8e7063] [cursor=pointer]
+        - button "Uxbridge College - Hayes Campus" [ref=f8e7065] [cursor=pointer]
+        - button "Waltham Forest College" [ref=f8e7067] [cursor=pointer]
+        - button "West Herts College Watford Campus" [ref=f8e7069] [cursor=pointer]
+        - button "Westminster Kingsway College" [ref=f8e7071] [cursor=pointer]
+        - button "West Thames College" [ref=f8e7073] [cursor=pointer]
+        - button "William Morris Sixth Form College" [ref=f8e7075] [cursor=pointer]
+        - button "Wimbledon College of Arts (Wimbledon), UAL" [ref=f8e7077] [cursor=pointer]
+        - button "Wine & Spirit Education Trust" [ref=f8e7079] [cursor=pointer]
+        - button "York St. John University London Campus" [ref=f8e7081] [cursor=pointer]
+  - generic [ref=f8e4]:
+    - generic [ref=f8e5]:
+      - generic [ref=f8e6]:
+        - button "close" [ref=f8e7] [cursor=pointer]
+        - heading "£20 cashback on the app!" [level=2] [ref=f8e10]
+        - generic [ref=f8e11]: Scan to Download App
+        - generic [ref=f8e12]:
+          - generic [ref=f8e15]: 4.5/5
+          - text: "| 180K+ Downloads"
+        - generic [ref=f8e16]:
+          - generic [ref=f8e17]: Download from
+          - link [ref=f8e18] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+          - link [ref=f8e19] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+      - generic [ref=f8e20]:
+        - generic [ref=f8e21]:
+          - link "home" [ref=f8e22] [cursor=pointer]:
+            - /url: /
+          - textbox "Search by City University or Property" [ref=f8e28]
+        - generic [ref=f8e32]:
+          - button "Download App" [ref=f8e33] [cursor=pointer]
+          - button [ref=f8e35]:
+            - button "[object Object]" [ref=f8e36] [cursor=pointer]: Support
+          - button "En" [ref=f8e43] [cursor=pointer]
+          - generic [ref=f8e46]:
+            - button "Login" [ref=f8e47] [cursor=pointer]
+            - button [ref=f8e51]:
+              - button [ref=f8e52] [cursor=pointer]
+    - generic [ref=f8e61]:
+      - button "Smart Filters - Search with natural language" [ref=f8e62] [cursor=pointer]:
+        - generic [ref=f8e72]: Smart Filters
+      - button "Filters" [ref=f8e73] [cursor=pointer]
+      - button [ref=f8e79]:
+        - button "Sort" [ref=f8e80] [cursor=pointer]
+      - button [ref=f8e85]:
+        - button "University" [active] [ref=f8e86] [cursor=pointer]
+      - button [ref=f8e89]:
+        - button "Budget" [ref=f8e90] [cursor=pointer]
+      - button [ref=f8e93]:
+        - button "Move in Month" [ref=f8e94] [cursor=pointer]
+      - button [ref=f8e97]:
+        - button "Stay Duration" [ref=f8e98] [cursor=pointer]
+      - button [ref=f8e101]:
+        - button "Room Type" [ref=f8e102] [cursor=pointer]
+      - button [ref=f8e105]:
+        - button "Amenities" [ref=f8e106] [cursor=pointer]
+      - button [ref=f8e109]:
+        - button "Bills Included" [ref=f8e110] [cursor=pointer]
+      - generic [ref=f8e112]:
+        - button "Clear All":
+          - button
+    - generic [ref=f8e113]:
+      - generic [ref=f8e115]:
+        - generic [ref=f8e117]:
+          - generic [ref=f8e118]:
+            - list [ref=f8e119]:
+              - listitem [ref=f8e120]:
+                - link "Home" [ref=f8e121] [cursor=pointer]:
+                  - /url: /
+                - text: /
+              - listitem [ref=f8e122]:
+                - link "United Kingdom" [ref=f8e123] [cursor=pointer]:
+                  - /url: /places/search/united-kingdom-1811011902157
+                - text: /
+              - listitem [ref=f8e124]:
+                - generic: London
+            - generic [ref=f8e125]:
+              - heading [level=1] [ref=f8e126]:
+                - text: Student Accommodations in
+                - strong [ref=f8e127]: London
+              - generic [ref=f8e128]:
+                - text: "| Showing"
+                - strong [ref=f8e129]: "226"
+                - text: places
+          - generic [ref=f8e130]:
+            - img [ref=f8e131] [cursor=pointer]
+            - text: List
+            - img [ref=f8e133] [cursor=pointer]
+            - text: Grid
+        - generic [ref=f8e135]:
+          - generic [ref=f8e2504]:
+            - button "4.5 (8) iQ Vega, London Miles St, London, SW8 1RZ 2.0 mi from City Center ( 13min . 18min . 42min ) 0.53 mi from Chelsea College of Arts (Chelsea), UAL 7 Offers Pay In Instalment 28 Room Options bills included Seating Area Social Spaces Study Area Bicycle Storage 24/7 Staff Presence CCTV No Smoking Allowed Great Public Transport Links Instant Booking No Visa No Pay laundry facility cinema Breakfast Bar Games Room Sky Lounge Free Gym 24/7 Security Pets Not Allowed Close To Universities From£433 £412/ week Enquire" [ref=f8e2505] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e2528]:
+                - generic [ref=f8e2534]: "4.5"
+                - generic [ref=f8e2535]: (8)
+              - generic [ref=f8e2536]:
+                - link [ref=f8e2537]:
+                  - /url: /places/iq-vega-london-2101138507106
+                  - heading "iQ Vega, London" [level=2] [ref=f8e2538]
+                - generic [ref=f8e2539]: Miles St, London, SW8 1RZ
+                - generic [ref=f8e2541]:
+                  - generic [ref=f8e2542]:
+                    - generic [ref=f8e2543]: 2.0 mi from City Center
+                    - generic [ref=f8e2549]:
+                      - text: (
+                      - generic [ref=f8e2550]: 13min
+                      - generic [ref=f8e2555]: .
+                      - generic [ref=f8e2556]: 18min
+                      - generic [ref=f8e2560]: .
+                      - generic [ref=f8e2561]: 42min
+                      - text: )
+                  - generic [ref=f8e2565]: 0.53 mi from Chelsea College of Arts (Chelsea), UAL
+                - generic [ref=f8e2571]:
+                  - generic [ref=f8e2572]:
+                    - generic [ref=f8e2573]: 7 Offers
+                    - generic [ref=f8e2581]: Pay In Instalment
+                    - generic [ref=f8e2587]: 28 Room Options
+                    - generic [ref=f8e2591]: bills included
+                    - generic [ref=f8e2596]: Seating Area
+                    - generic [ref=f8e2600]: Social Spaces
+                    - generic [ref=f8e2604]: Study Area
+                    - generic [ref=f8e2608]: Bicycle Storage
+                    - generic [ref=f8e2612]: 24/7 Staff Presence
+                    - generic [ref=f8e2616]: CCTV
+                    - generic [ref=f8e2620]: No Smoking Allowed
+                    - generic [ref=f8e2624]: Great Public Transport Links
+                  - generic [ref=f8e2628]:
+                    - generic [ref=f8e2629]: Instant Booking
+                    - generic [ref=f8e2634]: No Visa No Pay
+                    - generic [ref=f8e2640]: laundry facility
+                    - generic [ref=f8e2646]: cinema
+                    - generic [ref=f8e2650]: Breakfast Bar
+                    - generic [ref=f8e2654]: Games Room
+                    - generic [ref=f8e2658]: Sky Lounge
+                    - generic [ref=f8e2662]: Free Gym
+                    - generic [ref=f8e2666]: 24/7 Security
+                    - generic [ref=f8e2670]: Pets Not Allowed
+                    - generic [ref=f8e2674]: Close To Universities
+                - generic [ref=f8e2678]:
+                  - generic [ref=f8e2680]:
+                    - generic [ref=f8e2681]: From£433
+                    - generic [ref=f8e2682]:
+                      - generic [ref=f8e2683]: £412
+                      - generic [ref=f8e2684]: / week
+                  - button "Enquire" [ref=f8e2686]:
+                    - button [ref=f8e2687]
+            - button "4.3 (9) GoBritanya McMillan Residence, London Creek Rd, London, SE8 3BU 5.5 mi from City Center ( 34min . 35min . 1h 52min ) 0.43 mi from Lewisham College Deptford Campus 11 Offers Pay In Instalment 3 Room Options study area Dual-Band Wi-Fi Social Areas Reception Secure Entry 24/7 Security Pets Are Not Allowed Excellent Facilities Instant Booking No Visa No Pay game room laundry facility Bike Storage common room Student Insurance 24/7 Onsite Team CCTV City Center From£329 £318/ week Enquire" [ref=f8e2689] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e2712]:
+                - generic [ref=f8e2718]: "4.3"
+                - generic [ref=f8e2719]: (9)
+              - generic [ref=f8e2720]:
+                - link [ref=f8e2721]:
+                  - /url: /places/mcmillan-residence-go-britanya-london-2303234603388
+                  - heading "GoBritanya McMillan Residence, London" [level=2] [ref=f8e2722]
+                - generic [ref=f8e2723]: Creek Rd, London, SE8 3BU
+                - generic [ref=f8e2725]:
+                  - generic [ref=f8e2726]:
+                    - generic [ref=f8e2727]: 5.5 mi from City Center
+                    - generic [ref=f8e2733]:
+                      - text: (
+                      - generic [ref=f8e2734]: 34min
+                      - generic [ref=f8e2739]: .
+                      - generic [ref=f8e2740]: 35min
+                      - generic [ref=f8e2744]: .
+                      - generic [ref=f8e2745]: 1h 52min
+                      - text: )
+                  - generic [ref=f8e2749]: 0.43 mi from Lewisham College Deptford Campus
+                - generic [ref=f8e2755]:
+                  - generic [ref=f8e2756]:
+                    - generic [ref=f8e2757]: 11 Offers
+                    - generic [ref=f8e2765]: Pay In Instalment
+                    - generic [ref=f8e2771]: 3 Room Options
+                    - generic [ref=f8e2775]: study area
+                    - generic [ref=f8e2781]: Dual-Band Wi-Fi
+                    - generic [ref=f8e2785]: Social Areas
+                    - generic [ref=f8e2789]: Reception
+                    - generic [ref=f8e2793]: Secure Entry
+                    - generic [ref=f8e2797]: 24/7 Security
+                    - generic [ref=f8e2801]: Pets Are Not Allowed
+                    - generic [ref=f8e2805]: Excellent Facilities
+                  - generic [ref=f8e2809]:
+                    - generic [ref=f8e2810]: Instant Booking
+                    - generic [ref=f8e2815]: No Visa No Pay
+                    - generic [ref=f8e2821]: game room
+                    - generic [ref=f8e2827]: laundry facility
+                    - generic [ref=f8e2831]: Bike Storage
+                    - generic [ref=f8e2835]: common room
+                    - generic [ref=f8e2839]: Student Insurance
+                    - generic [ref=f8e2843]: 24/7 Onsite Team
+                    - generic [ref=f8e2847]: CCTV
+                    - generic [ref=f8e2851]: City Center
+                - generic [ref=f8e2855]:
+                  - generic [ref=f8e2857]:
+                    - generic [ref=f8e2858]: From£329
+                    - generic [ref=f8e2859]:
+                      - generic [ref=f8e2860]: £318
+                      - generic [ref=f8e2861]: / week
+                  - button "Enquire" [ref=f8e2863]:
+                    - button [ref=f8e2864]
+            - button "4.8 (12) Yugo Therese House, London Glasshouse Yard, London, EC1A 4JW 1.8 mi from City Center ( 14min . 28min . 37min ) 0.2 mi from Arizona State University London 7 Offers Pay In Instalment 4 Room Options study area Common room Games Room Elevator CCTV 24-Hour Reception Post Collection Train Station Accessible Entrance Park Instant Booking No Visa No Pay laundry facility cinema High Speed Internet TV Lounge Table Football Keycard Access 24 Hours Security Beauty Spot Underground Station Bike Storage From £440/ week Enquire" [ref=f8e2866] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e2889]:
+                - generic [ref=f8e2895]: "4.8"
+                - generic [ref=f8e2896]: (12)
+              - generic [ref=f8e2897]:
+                - link [ref=f8e2898]:
+                  - /url: /places/therese-house-london-1906186914451
+                  - heading "Yugo Therese House, London" [level=2] [ref=f8e2899]
+                - generic [ref=f8e2900]: Glasshouse Yard, London, EC1A 4JW
+                - generic [ref=f8e2902]:
+                  - generic [ref=f8e2903]:
+                    - generic [ref=f8e2904]: 1.8 mi from City Center
+                    - generic [ref=f8e2910]:
+                      - text: (
+                      - generic [ref=f8e2911]: 14min
+                      - generic [ref=f8e2916]: .
+                      - generic [ref=f8e2917]: 28min
+                      - generic [ref=f8e2921]: .
+                      - generic [ref=f8e2922]: 37min
+                      - text: )
+                  - generic [ref=f8e2926]: 0.2 mi from Arizona State University London
+                - generic [ref=f8e2932]:
+                  - generic [ref=f8e2933]:
+                    - generic [ref=f8e2934]: 7 Offers
+                    - generic [ref=f8e2942]: Pay In Instalment
+                    - generic [ref=f8e2948]: 4 Room Options
+                    - generic [ref=f8e2952]: study area
+                    - generic [ref=f8e2958]: Common room
+                    - generic [ref=f8e2962]: Games Room
+                    - generic [ref=f8e2966]: Elevator
+                    - generic [ref=f8e2970]: CCTV
+                    - generic [ref=f8e2974]: 24-Hour Reception
+                    - generic [ref=f8e2978]: Post Collection
+                    - generic [ref=f8e2982]: Train Station
+                    - generic [ref=f8e2986]: Accessible Entrance
+                    - generic [ref=f8e2990]: Park
+                  - generic [ref=f8e2994]:
+                    - generic [ref=f8e2995]: Instant Booking
+                    - generic [ref=f8e3000]: No Visa No Pay
+                    - generic [ref=f8e3006]: laundry facility
+                    - generic [ref=f8e3012]: cinema
+                    - generic [ref=f8e3016]: High Speed Internet
+                    - generic [ref=f8e3020]: TV Lounge
+                    - generic [ref=f8e3024]: Table Football
+                    - generic [ref=f8e3028]: Keycard Access
+                    - generic [ref=f8e3032]: 24 Hours Security
+                    - generic [ref=f8e3036]: Beauty Spot
+                    - generic [ref=f8e3040]: Underground Station
+                    - generic [ref=f8e3044]: Bike Storage
+                - generic [ref=f8e3048]:
+                  - generic [ref=f8e3050]:
+                    - generic [ref=f8e3051]: From
+                    - generic [ref=f8e3052]:
+                      - text: £440
+                      - generic [ref=f8e3053]: / week
+                  - button "Enquire" [ref=f8e3055]:
+                    - button [ref=f8e3056]
+            - button "4.3 (4) Manna Ash House, London Pocock St, London, SE1 0BW 1.3 mi from City Center ( 12min . 19min . 32min ) 0.13 mi from London College of Creative Media 6 Offers Pay In Instalment laundry facility CCTV Bike Storage Smoking Not Allowed Instant Booking 2 Room Options bills included Common Room Pets Not Allowed On-Site Security From £340/ week Enquire" [ref=f8e3058] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3081]:
+                - generic [ref=f8e3087]: "4.3"
+                - generic [ref=f8e3088]: (4)
+              - generic [ref=f8e3089]:
+                - link [ref=f8e3090]:
+                  - /url: /places/manna-ash-house-london-2505036005600
+                  - heading "Manna Ash House, London" [level=2] [ref=f8e3091]
+                - generic [ref=f8e3092]: Pocock St, London, SE1 0BW
+                - generic [ref=f8e3094]:
+                  - generic [ref=f8e3095]:
+                    - generic [ref=f8e3096]: 1.3 mi from City Center
+                    - generic [ref=f8e3102]:
+                      - text: (
+                      - generic [ref=f8e3103]: 12min
+                      - generic [ref=f8e3108]: .
+                      - generic [ref=f8e3109]: 19min
+                      - generic [ref=f8e3113]: .
+                      - generic [ref=f8e3114]: 32min
+                      - text: )
+                  - generic [ref=f8e3118]: 0.13 mi from London College of Creative Media
+                - generic [ref=f8e3124]:
+                  - generic [ref=f8e3125]:
+                    - generic [ref=f8e3126]: 6 Offers
+                    - generic [ref=f8e3130]: Pay In Instalment
+                    - generic [ref=f8e3134]: laundry facility
+                    - generic [ref=f8e3138]: CCTV
+                    - generic [ref=f8e3142]: Bike Storage
+                    - generic [ref=f8e3146]: Smoking Not Allowed
+                  - generic [ref=f8e3150]:
+                    - generic [ref=f8e3151]: Instant Booking
+                    - generic [ref=f8e3155]: 2 Room Options
+                    - generic [ref=f8e3159]: bills included
+                    - generic [ref=f8e3163]: Common Room
+                    - generic [ref=f8e3167]: Pets Not Allowed
+                    - generic [ref=f8e3171]: On-Site Security
+                - generic [ref=f8e3175]:
+                  - generic [ref=f8e3177]:
+                    - generic [ref=f8e3178]: From
+                    - generic [ref=f8e3179]:
+                      - text: £340
+                      - generic [ref=f8e3180]: / week
+                  - button "Enquire" [ref=f8e3182]:
+                    - button [ref=f8e3183]
+            - button "LST Pavilion Court, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 0.2 mi from University Campus of Football Business 8 Offers Pay In Instalment gym laundry facility Games Area Private Dining Area Social Lounges CCTV Instant Booking 1 Room Option game room Secure Bike Storage Cinema Room Study Spaces 24/7 Support From£309 £304/ week Enquire" [ref=f8e3185] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3207]:
+                - link [ref=f8e3208]:
+                  - /url: /places/lst-pavilion-court-london-2607314042632
+                  - heading "LST Pavilion Court, London" [level=2] [ref=f8e3209]
+                - generic [ref=f8e3210]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e3212]:
+                  - generic [ref=f8e3213]:
+                    - generic [ref=f8e3214]: 1.2 mi from City Center
+                    - generic [ref=f8e3220]:
+                      - text: (
+                      - generic [ref=f8e3221]: 13min
+                      - generic [ref=f8e3226]: .
+                      - generic [ref=f8e3227]: 22min
+                      - generic [ref=f8e3231]: .
+                      - generic [ref=f8e3232]: 28min
+                      - text: )
+                  - generic [ref=f8e3236]: 0.2 mi from University Campus of Football Business
+                - generic [ref=f8e3242]:
+                  - generic [ref=f8e3243]:
+                    - generic [ref=f8e3244]: 8 Offers
+                    - generic [ref=f8e3248]: Pay In Instalment
+                    - generic [ref=f8e3252]: gym
+                    - generic [ref=f8e3256]: laundry facility
+                    - generic [ref=f8e3260]: Games Area
+                    - generic [ref=f8e3264]: Private Dining Area
+                    - generic [ref=f8e3268]: Social Lounges
+                    - generic [ref=f8e3272]: CCTV
+                  - generic [ref=f8e3276]:
+                    - generic [ref=f8e3277]: Instant Booking
+                    - generic [ref=f8e3281]: 1 Room Option
+                    - generic [ref=f8e3285]: game room
+                    - generic [ref=f8e3289]: Secure Bike Storage
+                    - generic [ref=f8e3293]: Cinema Room
+                    - generic [ref=f8e3297]: Study Spaces
+                    - generic [ref=f8e3301]: 24/7 Support
+                - generic [ref=f8e3305]:
+                  - generic [ref=f8e3307]:
+                    - generic [ref=f8e3308]: From£309
+                    - generic [ref=f8e3309]:
+                      - generic [ref=f8e3310]: £304
+                      - generic [ref=f8e3311]: / week
+                  - button "Enquire" [ref=f8e3313]:
+                    - button [ref=f8e3314]
+            - button "LST Fusion Brent Cross, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 1.23 mi from London School of Jewish Studies 8 Offers Pay In Instalment wifi Coffee Lounge Cinema Room Study Space Basketball Court Cardio Studio Zen Meditation Room Secure Key Fob Access On-site Maintenance Team Free Laundry Facilities Instant Booking 1 Room Option gym Co Working Area Gaming Zone Wi-Fi Boxing Studio Karaoke Room CCTV 24/7 Reception Housekeeping Service Roof Terrace From£365 £361/ week Enquire" [ref=f8e3316] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3338]:
+                - link [ref=f8e3339]:
+                  - /url: /places/lst-fusion-brent-cross-london-2606010704305
+                  - heading "LST Fusion Brent Cross, London" [level=2] [ref=f8e3340]
+                - generic [ref=f8e3341]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e3343]:
+                  - generic [ref=f8e3344]:
+                    - generic [ref=f8e3345]: 1.2 mi from City Center
+                    - generic [ref=f8e3351]:
+                      - text: (
+                      - generic [ref=f8e3352]: 13min
+                      - generic [ref=f8e3357]: .
+                      - generic [ref=f8e3358]: 22min
+                      - generic [ref=f8e3362]: .
+                      - generic [ref=f8e3363]: 28min
+                      - text: )
+                  - generic [ref=f8e3367]: 1.23 mi from London School of Jewish Studies
+                - generic [ref=f8e3373]:
+                  - generic [ref=f8e3374]:
+                    - generic [ref=f8e3375]: 8 Offers
+                    - generic [ref=f8e3379]: Pay In Instalment
+                    - generic [ref=f8e3383]: wifi
+                    - generic [ref=f8e3387]: Coffee Lounge
+                    - generic [ref=f8e3391]: Cinema Room
+                    - generic [ref=f8e3395]: Study Space
+                    - generic [ref=f8e3399]: Basketball Court
+                    - generic [ref=f8e3403]: Cardio Studio
+                    - generic [ref=f8e3407]: Zen Meditation Room
+                    - generic [ref=f8e3411]: Secure Key Fob Access
+                    - generic [ref=f8e3415]: On-site Maintenance Team
+                    - generic [ref=f8e3419]: Free Laundry Facilities
+                  - generic [ref=f8e3423]:
+                    - generic [ref=f8e3424]: Instant Booking
+                    - generic [ref=f8e3428]: 1 Room Option
+                    - generic [ref=f8e3432]: gym
+                    - generic [ref=f8e3436]: Co Working Area
+                    - generic [ref=f8e3440]: Gaming Zone
+                    - generic [ref=f8e3444]: Wi-Fi
+                    - generic [ref=f8e3448]: Boxing Studio
+                    - generic [ref=f8e3452]: Karaoke Room
+                    - generic [ref=f8e3456]: CCTV
+                    - generic [ref=f8e3460]: 24/7 Reception
+                    - generic [ref=f8e3464]: Housekeeping Service
+                    - generic [ref=f8e3468]: Roof Terrace
+                - generic [ref=f8e3472]:
+                  - generic [ref=f8e3474]:
+                    - generic [ref=f8e3475]: From£365
+                    - generic [ref=f8e3476]:
+                      - generic [ref=f8e3477]: £361
+                      - generic [ref=f8e3478]: / week
+                  - button "Enquire" [ref=f8e3480]:
+                    - button [ref=f8e3481]
+            - generic [ref=f8e3484]:
+              - generic [ref=f8e3485]:
+                - generic [ref=f8e3486]:
+                  - generic [ref=f8e3487]: Filters
+                  - generic [ref=f8e3488]: For You
+                - button "Reset" [disabled]
+              - generic [ref=f8e3489]:
+                - generic [ref=f8e3490]:
+                  - tab "Budget" [selected] [ref=f8e3491] [cursor=pointer]:
+                    - button [ref=f8e3492]
+                  - tab "Room Type" [ref=f8e3494] [cursor=pointer]:
+                    - button [ref=f8e3495]
+                  - tab "Move in Month" [ref=f8e3497] [cursor=pointer]:
+                    - button [ref=f8e3498]
+                - generic [ref=f8e3501]:
+                  - generic:
+                    - slider [ref=f8e3502]: "0"
+                    - slider [ref=f8e3503]: "700"
+                  - generic [ref=f8e3504]: £170 - £840+
+              - generic [ref=f8e3505]:
+                - button "Apply Filter":
+                  - button
+            - button "4.3 (3) LST Finsbury House, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 1.03 mi from Malvern House London 8 Offers Pay In Instalment WiFi bills included Instant Booking 4 Room Options Laundry 24hr Security From£295 £291/ week Enquire" [ref=f8e3506] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3529]:
+                - generic [ref=f8e3535]: "4.3"
+                - generic [ref=f8e3536]: (3)
+              - generic [ref=f8e3537]:
+                - link [ref=f8e3538]:
+                  - /url: /places/londonist-finsbury-house-london-2003139228332
+                  - heading "LST Finsbury House, London" [level=2] [ref=f8e3539]
+                - generic [ref=f8e3540]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e3542]:
+                  - generic [ref=f8e3543]:
+                    - generic [ref=f8e3544]: 1.2 mi from City Center
+                    - generic [ref=f8e3550]:
+                      - text: (
+                      - generic [ref=f8e3551]: 13min
+                      - generic [ref=f8e3556]: .
+                      - generic [ref=f8e3557]: 22min
+                      - generic [ref=f8e3561]: .
+                      - generic [ref=f8e3562]: 28min
+                      - text: )
+                  - generic [ref=f8e3566]: 1.03 mi from Malvern House London
+                - generic [ref=f8e3572]:
+                  - generic [ref=f8e3573]:
+                    - generic [ref=f8e3574]: 8 Offers
+                    - generic [ref=f8e3578]: Pay In Instalment
+                    - generic [ref=f8e3582]: WiFi
+                    - generic [ref=f8e3586]: bills included
+                  - generic [ref=f8e3590]:
+                    - generic [ref=f8e3591]: Instant Booking
+                    - generic [ref=f8e3595]: 4 Room Options
+                    - generic [ref=f8e3599]: Laundry
+                    - generic [ref=f8e3603]: 24hr Security
+                - generic [ref=f8e3607]:
+                  - generic [ref=f8e3609]:
+                    - generic [ref=f8e3610]: From£295
+                    - generic [ref=f8e3611]:
+                      - generic [ref=f8e3612]: £291
+                      - generic [ref=f8e3613]: / week
+                  - button "Enquire" [ref=f8e3615]:
+                    - button [ref=f8e3616]
+            - button "Student's Choice LST McMillan Student Village, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 0.44 mi from Lewisham College Deptford Campus 8 Offers Pay In Instalment study area laundry facility Secure Bike Storage Communal Kitchens Games 24/7 Security Instant Booking 4 Room Options game room Common Room Regular Resident Events High-speed Wi-Fi CCTV On-Site Support From£295 £291/ week Enquire" [ref=f8e3618] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3622]: Student's Choice
+              - generic [ref=f8e3642]:
+                - link [ref=f8e3643]:
+                  - /url: /places/londonist-mcmillan-village-london-2404014729506
+                  - heading "LST McMillan Student Village, London" [level=2] [ref=f8e3644]
+                - generic [ref=f8e3645]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e3647]:
+                  - generic [ref=f8e3648]:
+                    - generic [ref=f8e3649]: 1.2 mi from City Center
+                    - generic [ref=f8e3655]:
+                      - text: (
+                      - generic [ref=f8e3656]: 13min
+                      - generic [ref=f8e3661]: .
+                      - generic [ref=f8e3662]: 22min
+                      - generic [ref=f8e3666]: .
+                      - generic [ref=f8e3667]: 28min
+                      - text: )
+                  - generic [ref=f8e3671]: 0.44 mi from Lewisham College Deptford Campus
+                - generic [ref=f8e3677]:
+                  - generic [ref=f8e3678]:
+                    - generic [ref=f8e3679]: 8 Offers
+                    - generic [ref=f8e3683]: Pay In Instalment
+                    - generic [ref=f8e3687]: study area
+                    - generic [ref=f8e3691]: laundry facility
+                    - generic [ref=f8e3695]: Secure Bike Storage
+                    - generic [ref=f8e3699]: Communal Kitchens
+                    - generic [ref=f8e3703]: Games
+                    - generic [ref=f8e3707]: 24/7 Security
+                  - generic [ref=f8e3711]:
+                    - generic [ref=f8e3712]: Instant Booking
+                    - generic [ref=f8e3716]: 4 Room Options
+                    - generic [ref=f8e3720]: game room
+                    - generic [ref=f8e3724]: Common Room
+                    - generic [ref=f8e3728]: Regular Resident Events
+                    - generic [ref=f8e3732]: High-speed Wi-Fi
+                    - generic [ref=f8e3736]: CCTV
+                    - generic [ref=f8e3740]: On-Site Support
+                - generic [ref=f8e3744]:
+                  - generic [ref=f8e3746]:
+                    - generic [ref=f8e3747]: From£295
+                    - generic [ref=f8e3748]:
+                      - generic [ref=f8e3749]: £291
+                      - generic [ref=f8e3750]: / week
+                  - button "Enquire" [ref=f8e3752]:
+                    - button [ref=f8e3753]
+            - button "4.4 (13) iQ City, London Bastwick St, London, EC1V 3AQ 2.0 mi from City Center ( 16min . 36min . 45min ) 0.04 mi from Arizona State University London 7 Offers Pay In Instalment 18 Room Options bills included 24/7 security Games Room Study Area Seating Area Karaoke Room 24/7 Staff Presence No Smoking Allowed Laundry Facilities Instant Booking No Visa No Pay Dual Occupancy City centre location Social Spaces Cinema Room Breakfast Bar Onsite Gym CCTV No Pets Allowed Close To Universities Great Public Transport Links From £396/ week Enquire" [ref=f8e3755] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3778]:
+                - generic [ref=f8e3784]: "4.4"
+                - generic [ref=f8e3785]: (13)
+              - generic [ref=f8e3786]:
+                - link [ref=f8e3787]:
+                  - /url: /places/iq-city-london-1811192172260
+                  - heading "iQ City, London" [level=2] [ref=f8e3788]
+                - generic [ref=f8e3789]: Bastwick St, London, EC1V 3AQ
+                - generic [ref=f8e3791]:
+                  - generic [ref=f8e3792]:
+                    - generic [ref=f8e3793]: 2.0 mi from City Center
+                    - generic [ref=f8e3799]:
+                      - text: (
+                      - generic [ref=f8e3800]: 16min
+                      - generic [ref=f8e3805]: .
+                      - generic [ref=f8e3806]: 36min
+                      - generic [ref=f8e3810]: .
+                      - generic [ref=f8e3811]: 45min
+                      - text: )
+                  - generic [ref=f8e3815]: 0.04 mi from Arizona State University London
+                - generic [ref=f8e3821]:
+                  - generic [ref=f8e3822]:
+                    - generic [ref=f8e3823]: 7 Offers
+                    - generic [ref=f8e3827]: Pay In Instalment
+                    - generic [ref=f8e3831]: 18 Room Options
+                    - generic [ref=f8e3835]: bills included
+                    - generic [ref=f8e3839]: 24/7 security
+                    - generic [ref=f8e3843]: Games Room
+                    - generic [ref=f8e3847]: Study Area
+                    - generic [ref=f8e3851]: Seating Area
+                    - generic [ref=f8e3855]: Karaoke Room
+                    - generic [ref=f8e3859]: 24/7 Staff Presence
+                    - generic [ref=f8e3863]: No Smoking Allowed
+                    - generic [ref=f8e3867]: Laundry Facilities
+                  - generic [ref=f8e3871]:
+                    - generic [ref=f8e3872]: Instant Booking
+                    - generic [ref=f8e3876]: No Visa No Pay
+                    - generic [ref=f8e3880]: Dual Occupancy
+                    - generic [ref=f8e3884]: City centre location
+                    - generic [ref=f8e3888]: Social Spaces
+                    - generic [ref=f8e3892]: Cinema Room
+                    - generic [ref=f8e3896]: Breakfast Bar
+                    - generic [ref=f8e3900]: Onsite Gym
+                    - generic [ref=f8e3904]: CCTV
+                    - generic [ref=f8e3908]: No Pets Allowed
+                    - generic [ref=f8e3912]: Close To Universities
+                    - generic [ref=f8e3916]: Great Public Transport Links
+                - generic [ref=f8e3920]:
+                  - generic [ref=f8e3922]:
+                    - generic [ref=f8e3923]: From
+                    - generic [ref=f8e3924]:
+                      - text: £396
+                      - generic [ref=f8e3925]: / week
+                  - button "Enquire" [ref=f8e3927]:
+                    - button [ref=f8e3928]
+            - button "4.0 (1) Canto Court, London Old St, London, EC1V 9BD 2.1 mi from City Center ( 18min . 27min . 48min ) 0.23 mi from Bayes Business School 8 Offers Pay In Instalment 5 Room Options laundry facility Social Space Flat screen TV Events Secure Fob/card Access CCTV Secure Door Entry 3 Minutes Walk To Old St. Station Washing Machine and Dryer (at an additional cost) Instant Booking No Visa No Pay gym study area 100mb Broadband Internet Common Room 24/7 Support Experienced & Friendly Team Free Content Insurance Smoking not allowed Onsite Maintenance From £429/ week Enquire" [ref=f8e3930] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e3953]:
+                - generic [ref=f8e3959]: "4.0"
+                - generic [ref=f8e3960]: (1)
+              - generic [ref=f8e3961]:
+                - link [ref=f8e3962]:
+                  - /url: /places/canto-court-london-2508225796192
+                  - heading "Canto Court, London" [level=2] [ref=f8e3963]
+                - generic [ref=f8e3964]: Old St, London, EC1V 9BD
+                - generic [ref=f8e3966]:
+                  - generic [ref=f8e3967]:
+                    - generic [ref=f8e3968]: 2.1 mi from City Center
+                    - generic [ref=f8e3974]:
+                      - text: (
+                      - generic [ref=f8e3975]: 18min
+                      - generic [ref=f8e3980]: .
+                      - generic [ref=f8e3981]: 27min
+                      - generic [ref=f8e3985]: .
+                      - generic [ref=f8e3986]: 48min
+                      - text: )
+                  - generic [ref=f8e3990]: 0.23 mi from Bayes Business School
+                - generic [ref=f8e3996]:
+                  - generic [ref=f8e3997]:
+                    - generic [ref=f8e3998]: 8 Offers
+                    - generic [ref=f8e4002]: Pay In Instalment
+                    - generic [ref=f8e4006]: 5 Room Options
+                    - generic [ref=f8e4010]: laundry facility
+                    - generic [ref=f8e4014]: Social Space
+                    - generic [ref=f8e4018]: Flat screen TV
+                    - generic [ref=f8e4022]: Events
+                    - generic [ref=f8e4026]: Secure Fob/card Access
+                    - generic [ref=f8e4030]: CCTV
+                    - generic [ref=f8e4034]: Secure Door Entry
+                    - generic [ref=f8e4038]: 3 Minutes Walk To Old St. Station
+                    - generic [ref=f8e4042]: Washing Machine and Dryer (at an additional cost)
+                  - generic [ref=f8e4046]:
+                    - generic [ref=f8e4047]: Instant Booking
+                    - generic [ref=f8e4051]: No Visa No Pay
+                    - generic [ref=f8e4055]: gym
+                    - generic [ref=f8e4059]: study area
+                    - generic [ref=f8e4063]: 100mb Broadband Internet
+                    - generic [ref=f8e4067]: Common Room
+                    - generic [ref=f8e4071]: 24/7 Support
+                    - generic [ref=f8e4075]: Experienced & Friendly Team
+                    - generic [ref=f8e4079]: Free Content Insurance
+                    - generic [ref=f8e4083]: Smoking not allowed
+                    - generic [ref=f8e4087]: Onsite Maintenance
+                - generic [ref=f8e4091]:
+                  - generic [ref=f8e4093]:
+                    - generic [ref=f8e4094]: From
+                    - generic [ref=f8e4095]:
+                      - text: £429
+                      - generic [ref=f8e4096]: / week
+                  - button "Enquire" [ref=f8e4098]:
+                    - button [ref=f8e4099]
+            - button "4.0 (2) East Central House, London Lever St, London, EC1V 3RH 2.3 mi from City Center ( 19min . 32min . 52min ) 0.24 mi from Arizona State University London 7 Offers Pay In Instalment 9 Room Options Bike storage Vending machine Common Area Communal Study Space Secure Access Onsite Service Team CCTV Recycling Instant Booking No Visa No Pay Laundry Printing Service Wi-Fi in Your Flat & Communal Areas Outdoor Social Space Pool Table 24/7 assistance Fire System Contents Insurance Maintenance Support From £360/ week Enquire" [ref=f8e4666] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e4689]:
+                - generic [ref=f8e4695]: "4.0"
+                - generic [ref=f8e4696]: (2)
+              - generic [ref=f8e4697]:
+                - link [ref=f8e4698]:
+                  - /url: /places/east-central-house-london-2311140711466
+                  - heading "East Central House, London" [level=2] [ref=f8e4699]
+                - generic [ref=f8e4700]: Lever St, London, EC1V 3RH
+                - generic [ref=f8e4702]:
+                  - generic [ref=f8e4703]:
+                    - generic [ref=f8e4704]: 2.3 mi from City Center
+                    - generic [ref=f8e4710]:
+                      - text: (
+                      - generic [ref=f8e4711]: 19min
+                      - generic [ref=f8e4716]: .
+                      - generic [ref=f8e4717]: 32min
+                      - generic [ref=f8e4721]: .
+                      - generic [ref=f8e4722]: 52min
+                      - text: )
+                  - generic [ref=f8e4726]: 0.24 mi from Arizona State University London
+                - generic [ref=f8e4732]:
+                  - generic [ref=f8e4733]:
+                    - generic [ref=f8e4734]: 7 Offers
+                    - generic [ref=f8e4738]: Pay In Instalment
+                    - generic [ref=f8e4742]: 9 Room Options
+                    - generic [ref=f8e4746]: Bike storage
+                    - generic [ref=f8e4750]: Vending machine
+                    - generic [ref=f8e4754]: Common Area
+                    - generic [ref=f8e4758]: Communal Study Space
+                    - generic [ref=f8e4762]: Secure Access
+                    - generic [ref=f8e4766]: Onsite Service Team
+                    - generic [ref=f8e4770]: CCTV
+                    - generic [ref=f8e4774]: Recycling
+                  - generic [ref=f8e4778]:
+                    - generic [ref=f8e4779]: Instant Booking
+                    - generic [ref=f8e4783]: No Visa No Pay
+                    - generic [ref=f8e4787]: Laundry
+                    - generic [ref=f8e4791]: Printing Service
+                    - generic [ref=f8e4795]: Wi-Fi in Your Flat & Communal Areas
+                    - generic [ref=f8e4799]: Outdoor Social Space
+                    - generic [ref=f8e4803]: Pool Table
+                    - generic [ref=f8e4807]: 24/7 assistance
+                    - generic [ref=f8e4811]: Fire System
+                    - generic [ref=f8e4815]: Contents Insurance
+                    - generic [ref=f8e4819]: Maintenance Support
+                - generic [ref=f8e4823]:
+                  - generic [ref=f8e4825]:
+                    - generic [ref=f8e4826]: From
+                    - generic [ref=f8e4827]:
+                      - text: £360
+                      - generic [ref=f8e4828]: / week
+                  - button "Enquire" [ref=f8e4830]:
+                    - button [ref=f8e4831]
+            - 'button "LST Ark Canning Town, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 0.74 mi from University of the West of Scotland (London Campus) 8 Offers Pay In Instalment gym laundry facility Podcast Studio Regular Community Events Canary Wharf: 22 min by tube ExCeL London: 23 min by DLRE Westfield Stratford City: 20 min by tube Instant Booking 1 Room Option game room Communal Kitchen Co-Working Spaces On-site Maintenance Team The O2 Arena: 14 min by tube Mirates Air Line Cable Car (royal Docks): 20 Min by Bus From£395 £391/ week Enquire" [ref=f8e4833] [cursor=pointer]':
+              - generic:
+                - button
+              - generic [ref=f8e4855]:
+                - link [ref=f8e4856]:
+                  - /url: /places/lst-ark-canning-town-london-2608224984762
+                  - heading "LST Ark Canning Town, London" [level=2] [ref=f8e4857]
+                - generic [ref=f8e4858]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e4860]:
+                  - generic [ref=f8e4861]:
+                    - generic [ref=f8e4862]: 1.2 mi from City Center
+                    - generic [ref=f8e4868]:
+                      - text: (
+                      - generic [ref=f8e4869]: 13min
+                      - generic [ref=f8e4874]: .
+                      - generic [ref=f8e4875]: 22min
+                      - generic [ref=f8e4879]: .
+                      - generic [ref=f8e4880]: 28min
+                      - text: )
+                  - generic [ref=f8e4884]: 0.74 mi from University of the West of Scotland (London Campus)
+                - generic [ref=f8e4890]:
+                  - generic [ref=f8e4891]:
+                    - generic [ref=f8e4892]: 8 Offers
+                    - generic [ref=f8e4896]: Pay In Instalment
+                    - generic [ref=f8e4900]: gym
+                    - generic [ref=f8e4904]: laundry facility
+                    - generic [ref=f8e4908]: Podcast Studio
+                    - generic [ref=f8e4912]: Regular Community Events
+                    - generic [ref=f8e4916]: "Canary Wharf: 22 min by tube"
+                    - generic [ref=f8e4920]: "ExCeL London: 23 min by DLRE"
+                    - generic [ref=f8e4924]: "Westfield Stratford City: 20 min by tube"
+                  - generic [ref=f8e4928]:
+                    - generic [ref=f8e4929]: Instant Booking
+                    - generic [ref=f8e4933]: 1 Room Option
+                    - generic [ref=f8e4937]: game room
+                    - generic [ref=f8e4941]: Communal Kitchen
+                    - generic [ref=f8e4945]: Co-Working Spaces
+                    - generic [ref=f8e4949]: On-site Maintenance Team
+                    - generic [ref=f8e4953]: "The O2 Arena: 14 min by tube"
+                    - generic [ref=f8e4957]: "Mirates Air Line Cable Car (royal Docks): 20 Min by Bus"
+                - generic [ref=f8e4961]:
+                  - generic [ref=f8e4963]:
+                    - generic [ref=f8e4964]: From£395
+                    - generic [ref=f8e4965]:
+                      - generic [ref=f8e4966]: £391
+                      - generic [ref=f8e4967]: / week
+                  - button "Enquire" [ref=f8e4969]:
+                    - button [ref=f8e4970]
+            - generic [ref=f8e4973]:
+              - generic [ref=f8e4974]:
+                - generic [ref=f8e4975]:
+                  - generic [ref=f8e4976]: Filters
+                  - generic [ref=f8e4977]: For You
+                - button "Reset" [disabled]
+              - generic [ref=f8e4978]:
+                - generic [ref=f8e4979]:
+                  - tab "University" [selected] [ref=f8e4980] [cursor=pointer]:
+                    - button [ref=f8e4981]
+                  - tab "Stay Duration" [ref=f8e4983] [cursor=pointer]:
+                    - button [ref=f8e4984]
+                  - tab "Distance from City Centre" [ref=f8e4986] [cursor=pointer]:
+                    - button [ref=f8e4987]
+                - generic [ref=f8e4990]:
+                  - textbox "Search by university name" [ref=f8e4995]
+                  - generic [ref=f8e4996]:
+                    - button "University of Greenwich" [ref=f8e4997] [cursor=pointer]:
+                      - radio [ref=f8e4998]
+                    - button "University of London" [ref=f8e5000] [cursor=pointer]:
+                      - radio [ref=f8e5001]
+                    - button "City St. George's, University of London" [ref=f8e5003] [cursor=pointer]:
+                      - radio [ref=f8e5004]
+                    - button "London Business School" [ref=f8e5006] [cursor=pointer]:
+                      - radio [ref=f8e5007]
+                    - button "London Metropolitan University (Holloway Road)" [ref=f8e5009] [cursor=pointer]:
+                      - radio [ref=f8e5010]
+              - generic [ref=f8e5012]:
+                - button "Apply Filter":
+                  - button
+            - 'button "4.5 (2) LST Ivy Halls, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 0.79 mi from Europe Business School 8 Offers Pay In Instalment lounge bills included 24/7 Secure Entry University College London (UCL) – 18 minutes via Thameslink University of Westminster (Marylebone Campus) – 20 minutes via Tube London School of Economics (LSE) – 30 minutes via train Hampstead Heath – 20 minutes by bus The O2 Centre Finchley Road – 15 minutes by bus Nearest Train Station: Cricklewood (Thameslink) Instant Booking 1 Room Option study area Social Room Maintenance Middlesex University – 20 minutes via bus King’s College London (Strand Campus) – 25 minutes via train Brent Cross Shopping Centre – 10 minutes by bus Camden Market – 25 minutes by train Regent’s Park – 30 minutes by public transport From£260 £256/ week Enquire" [ref=f8e5013] [cursor=pointer]':
+              - generic:
+                - button
+              - generic [ref=f8e5036]:
+                - generic [ref=f8e5042]: "4.5"
+                - generic [ref=f8e5043]: (2)
+              - generic [ref=f8e5044]:
+                - link [ref=f8e5045]:
+                  - /url: /places/londonist-ivy-halls-london-2507100836095
+                  - heading "LST Ivy Halls, London" [level=2] [ref=f8e5046]
+                - generic [ref=f8e5047]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e5049]:
+                  - generic [ref=f8e5050]:
+                    - generic [ref=f8e5051]: 1.2 mi from City Center
+                    - generic [ref=f8e5057]:
+                      - text: (
+                      - generic [ref=f8e5058]: 13min
+                      - generic [ref=f8e5063]: .
+                      - generic [ref=f8e5064]: 22min
+                      - generic [ref=f8e5068]: .
+                      - generic [ref=f8e5069]: 28min
+                      - text: )
+                  - generic [ref=f8e5073]: 0.79 mi from Europe Business School
+                - generic [ref=f8e5079]:
+                  - generic [ref=f8e5080]:
+                    - generic [ref=f8e5081]: 8 Offers
+                    - generic [ref=f8e5085]: Pay In Instalment
+                    - generic [ref=f8e5089]: lounge
+                    - generic [ref=f8e5093]: bills included
+                    - generic [ref=f8e5097]: 24/7 Secure Entry
+                    - generic [ref=f8e5101]: University College London (UCL) – 18 minutes via Thameslink
+                    - generic [ref=f8e5105]: University of Westminster (Marylebone Campus) – 20 minutes via Tube
+                    - generic [ref=f8e5109]: London School of Economics (LSE) – 30 minutes via train
+                    - generic [ref=f8e5113]: Hampstead Heath – 20 minutes by bus
+                    - generic [ref=f8e5117]: The O2 Centre Finchley Road – 15 minutes by bus
+                    - generic [ref=f8e5121]: "Nearest Train Station: Cricklewood (Thameslink)"
+                  - generic [ref=f8e5125]:
+                    - generic [ref=f8e5126]: Instant Booking
+                    - generic [ref=f8e5130]: 1 Room Option
+                    - generic [ref=f8e5134]: study area
+                    - generic [ref=f8e5138]: Social Room
+                    - generic [ref=f8e5142]: Maintenance
+                    - generic [ref=f8e5146]: Middlesex University – 20 minutes via bus
+                    - generic [ref=f8e5150]: King’s College London (Strand Campus) – 25 minutes via train
+                    - generic [ref=f8e5154]: Brent Cross Shopping Centre – 10 minutes by bus
+                    - generic [ref=f8e5158]: Camden Market – 25 minutes by train
+                    - generic [ref=f8e5162]: Regent’s Park – 30 minutes by public transport
+                - generic [ref=f8e5166]:
+                  - generic [ref=f8e5168]:
+                    - generic [ref=f8e5169]: From£260
+                    - generic [ref=f8e5170]:
+                      - generic [ref=f8e5171]: £256
+                      - generic [ref=f8e5172]: / week
+                  - button "Enquire" [ref=f8e5174]:
+                    - button [ref=f8e5175]
+            - button "4.5 (17) Chapter Kings Cross, London Pentonville Rd, London, N1 9JP 2.2 mi from City Center ( 19min . 24min . 50min ) 0.3 mi from Capital City College 7 Offers Pay In Instalment 6 Room Options laundry facility Up To 200 Mb Dual-band Wifi Games Area 24/7 On Site Team Onsite Laundry Free Bi-Weekly Cleaning Instant Booking No Visa No Pay cinema study area Social Spaces On-Site Gym Secure Entry Post & Parcels Service Courtyard From £368/ week Enquire" [ref=f8e5177] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e5200]:
+                - generic [ref=f8e5206]: "4.5"
+                - generic [ref=f8e5207]: (17)
+              - generic [ref=f8e5208]:
+                - link [ref=f8e5209]:
+                  - /url: /places/chapter-kings-cross-london-1707293068339
+                  - heading "Chapter Kings Cross, London" [level=2] [ref=f8e5210]
+                - generic [ref=f8e5211]: Pentonville Rd, London, N1 9JP
+                - generic [ref=f8e5213]:
+                  - generic [ref=f8e5214]:
+                    - generic [ref=f8e5215]: 2.2 mi from City Center
+                    - generic [ref=f8e5221]:
+                      - text: (
+                      - generic [ref=f8e5222]: 19min
+                      - generic [ref=f8e5227]: .
+                      - generic [ref=f8e5228]: 24min
+                      - generic [ref=f8e5232]: .
+                      - generic [ref=f8e5233]: 50min
+                      - text: )
+                  - generic [ref=f8e5237]: 0.3 mi from Capital City College
+                - generic [ref=f8e5243]:
+                  - generic [ref=f8e5244]:
+                    - generic [ref=f8e5245]: 7 Offers
+                    - generic [ref=f8e5249]: Pay In Instalment
+                    - generic [ref=f8e5253]: 6 Room Options
+                    - generic [ref=f8e5257]: laundry facility
+                    - generic [ref=f8e5261]: Up To 200 Mb Dual-band Wifi
+                    - generic [ref=f8e5265]: Games Area
+                    - generic [ref=f8e5269]: 24/7 On Site Team
+                    - generic [ref=f8e5273]: Onsite Laundry
+                    - generic [ref=f8e5277]: Free Bi-Weekly Cleaning
+                  - generic [ref=f8e5281]:
+                    - generic [ref=f8e5282]: Instant Booking
+                    - generic [ref=f8e5286]: No Visa No Pay
+                    - generic [ref=f8e5290]: cinema
+                    - generic [ref=f8e5294]: study area
+                    - generic [ref=f8e5298]: Social Spaces
+                    - generic [ref=f8e5302]: On-Site Gym
+                    - generic [ref=f8e5306]: Secure Entry
+                    - generic [ref=f8e5310]: Post & Parcels Service
+                    - generic [ref=f8e5314]: Courtyard
+                - generic [ref=f8e5318]:
+                  - generic [ref=f8e5320]:
+                    - generic [ref=f8e5321]: From
+                    - generic [ref=f8e5322]:
+                      - text: £368
+                      - generic [ref=f8e5323]: / week
+                  - button "Enquire" [ref=f8e5325]:
+                    - button [ref=f8e5326]
+            - button "4.7 (13) Lightfoot Hall, London Manresa Rd, London, SW3 6NA 2.6 mi from City Center ( 16min . 39min . 59min ) 0.52 mi from Institute of Cancer Research 8 Offers Pay In Instalment 7 Room Options lounge study area Ultra-fast WiFi Bike Storage Washing and Drying Machines On-Site Hospitality Team Security Doors Maintenance Team Instant Booking No Visa No Pay Dual Occupancy laundry facility Communal TV Large Common Rooms Social Events Flat-screen TVs CCTV Central Location From £228/ week Enquire" [ref=f8e5328] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e5351]:
+                - generic [ref=f8e5357]: "4.7"
+                - generic [ref=f8e5358]: (13)
+              - generic [ref=f8e5359]:
+                - link [ref=f8e5360]:
+                  - /url: /places/lightfoot-hall-london-1708171895198
+                  - heading "Lightfoot Hall, London" [level=2] [ref=f8e5361]
+                - generic [ref=f8e5362]: Manresa Rd, London, SW3 6NA
+                - generic [ref=f8e5364]:
+                  - generic [ref=f8e5365]:
+                    - generic [ref=f8e5366]: 2.6 mi from City Center
+                    - generic [ref=f8e5372]:
+                      - text: (
+                      - generic [ref=f8e5373]: 16min
+                      - generic [ref=f8e5378]: .
+                      - generic [ref=f8e5379]: 39min
+                      - generic [ref=f8e5383]: .
+                      - generic [ref=f8e5384]: 59min
+                      - text: )
+                  - generic [ref=f8e5388]: 0.52 mi from Institute of Cancer Research
+                - generic [ref=f8e5394]:
+                  - generic [ref=f8e5395]:
+                    - generic [ref=f8e5396]: 8 Offers
+                    - generic [ref=f8e5400]: Pay In Instalment
+                    - generic [ref=f8e5404]: 7 Room Options
+                    - generic [ref=f8e5408]: lounge
+                    - generic [ref=f8e5412]: study area
+                    - generic [ref=f8e5416]: Ultra-fast WiFi
+                    - generic [ref=f8e5420]: Bike Storage
+                    - generic [ref=f8e5424]: Washing and Drying Machines
+                    - generic [ref=f8e5428]: On-Site Hospitality Team
+                    - generic [ref=f8e5432]: Security Doors
+                    - generic [ref=f8e5436]: Maintenance Team
+                  - generic [ref=f8e5440]:
+                    - generic [ref=f8e5441]: Instant Booking
+                    - generic [ref=f8e5445]: No Visa No Pay
+                    - generic [ref=f8e5449]: Dual Occupancy
+                    - generic [ref=f8e5453]: laundry facility
+                    - generic [ref=f8e5457]: Communal TV
+                    - generic [ref=f8e5461]: Large Common Rooms
+                    - generic [ref=f8e5465]: Social Events
+                    - generic [ref=f8e5469]: Flat-screen TVs
+                    - generic [ref=f8e5473]: CCTV
+                    - generic [ref=f8e5477]: Central Location
+                - generic [ref=f8e5481]:
+                  - generic [ref=f8e5483]:
+                    - generic [ref=f8e5484]: From
+                    - generic [ref=f8e5485]:
+                      - text: £228
+                      - generic [ref=f8e5486]: / week
+                  - button "Enquire" [ref=f8e5488]:
+                    - button [ref=f8e5489]
+            - button "LST Greenwich Student Collective, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 1.01 mi from Trinity Laban Conservatoire of Music and Dance 8 Offers Pay In Instalment gym Wi-Fi Bicycle Storage Dining Room 24 Hours Security On-Site Management Instant Booking 3 Room Options laundry facility Movie Room Communal Lounge Exercise Studio CCTV From£389 £375/ week Enquire" [ref=f8e5491] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e5513]:
+                - link [ref=f8e5514]:
+                  - /url: /places/lst-greenwich-student-collective-london-2606034012979
+                  - heading "LST Greenwich Student Collective, London" [level=2] [ref=f8e5515]
+                - generic [ref=f8e5516]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e5518]:
+                  - generic [ref=f8e5519]:
+                    - generic [ref=f8e5520]: 1.2 mi from City Center
+                    - generic [ref=f8e5526]:
+                      - text: (
+                      - generic [ref=f8e5527]: 13min
+                      - generic [ref=f8e5532]: .
+                      - generic [ref=f8e5533]: 22min
+                      - generic [ref=f8e5537]: .
+                      - generic [ref=f8e5538]: 28min
+                      - text: )
+                  - generic [ref=f8e5542]: 1.01 mi from Trinity Laban Conservatoire of Music and Dance
+                - generic [ref=f8e5548]:
+                  - generic [ref=f8e5549]:
+                    - generic [ref=f8e5550]: 8 Offers
+                    - generic [ref=f8e5554]: Pay In Instalment
+                    - generic [ref=f8e5558]: gym
+                    - generic [ref=f8e5562]: Wi-Fi
+                    - generic [ref=f8e5566]: Bicycle Storage
+                    - generic [ref=f8e5570]: Dining Room
+                    - generic [ref=f8e5574]: 24 Hours Security
+                    - generic [ref=f8e5578]: On-Site Management
+                  - generic [ref=f8e5582]:
+                    - generic [ref=f8e5583]: Instant Booking
+                    - generic [ref=f8e5587]: 3 Room Options
+                    - generic [ref=f8e5591]: laundry facility
+                    - generic [ref=f8e5595]: Movie Room
+                    - generic [ref=f8e5599]: Communal Lounge
+                    - generic [ref=f8e5603]: Exercise Studio
+                    - generic [ref=f8e5607]: CCTV
+                - generic [ref=f8e5611]:
+                  - generic [ref=f8e5613]:
+                    - generic [ref=f8e5614]: From£389
+                    - generic [ref=f8e5615]:
+                      - generic [ref=f8e5616]: £375
+                      - generic [ref=f8e5617]: / week
+                  - button "Enquire" [ref=f8e5619]:
+                    - button [ref=f8e5620]
+            - button "4.8 (12) iQ Paris Gardens, London Paris Garden, London, SE1 8ND 1.2 mi from City Center ( 11min . 16min . 24min ) 0.22 mi from London College of Creative Media 7 Offers Pay In Instalment 19 Room Options bills included Social Spaces 24/7 Staff Presence No Pets Allowed Close To Universities Great Public Transport Links Instant Booking No Visa No Pay 24/7 Security Breakfast Bar Cinema Room CCTV No Smoking Allowed City Centre Location Laundry Facilities From£441 £423/ week Enquire" [ref=f8e5622] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e5645]:
+                - generic [ref=f8e5651]: "4.8"
+                - generic [ref=f8e5652]: (12)
+              - generic [ref=f8e5653]:
+                - link [ref=f8e5654]:
+                  - /url: /places/iq-paris-gardens-london-1608304485980
+                  - heading "iQ Paris Gardens, London" [level=2] [ref=f8e5655]
+                - generic [ref=f8e5656]: Paris Garden, London, SE1 8ND
+                - generic [ref=f8e5658]:
+                  - generic [ref=f8e5659]:
+                    - generic [ref=f8e5660]: 1.2 mi from City Center
+                    - generic [ref=f8e5666]:
+                      - text: (
+                      - generic [ref=f8e5667]: 11min
+                      - generic [ref=f8e5672]: .
+                      - generic [ref=f8e5673]: 16min
+                      - generic [ref=f8e5677]: .
+                      - generic [ref=f8e5678]: 24min
+                      - text: )
+                  - generic [ref=f8e5682]: 0.22 mi from London College of Creative Media
+                - generic [ref=f8e5688]:
+                  - generic [ref=f8e5689]:
+                    - generic [ref=f8e5690]: 7 Offers
+                    - generic [ref=f8e5694]: Pay In Instalment
+                    - generic [ref=f8e5698]: 19 Room Options
+                    - generic [ref=f8e5702]: bills included
+                    - generic [ref=f8e5706]: Social Spaces
+                    - generic [ref=f8e5710]: 24/7 Staff Presence
+                    - generic [ref=f8e5714]: No Pets Allowed
+                    - generic [ref=f8e5718]: Close To Universities
+                    - generic [ref=f8e5722]: Great Public Transport Links
+                  - generic [ref=f8e5726]:
+                    - generic [ref=f8e5727]: Instant Booking
+                    - generic [ref=f8e5731]: No Visa No Pay
+                    - generic [ref=f8e5735]: 24/7 Security
+                    - generic [ref=f8e5739]: Breakfast Bar
+                    - generic [ref=f8e5743]: Cinema Room
+                    - generic [ref=f8e5747]: CCTV
+                    - generic [ref=f8e5751]: No Smoking Allowed
+                    - generic [ref=f8e5755]: City Centre Location
+                    - generic [ref=f8e5759]: Laundry Facilities
+                - generic [ref=f8e5763]:
+                  - generic [ref=f8e5765]:
+                    - generic [ref=f8e5766]: From£441
+                    - generic [ref=f8e5767]:
+                      - generic [ref=f8e5768]: £423
+                      - generic [ref=f8e5769]: / week
+                  - button "Enquire" [ref=f8e5771]:
+                    - button [ref=f8e5772]
+            - button "5.0 (3) LST Lewisham Residence, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min . 28min ) 0.44 mi from Lewisham College 8 Offers Pay In Instalment Gym bills included Entertainment Wheelchair Access Bike Storage Instant Booking 2 Room Options Laundry Wifi Games Area 24/7 Assistance Roof Terrace From£430 £426/ week Enquire" [ref=f8e5774] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e5797]:
+                - generic [ref=f8e5803]: "5.0"
+                - generic [ref=f8e5804]: (3)
+              - generic [ref=f8e5805]:
+                - link [ref=f8e5806]:
+                  - /url: /places/londonist-lewisham-residence-london-2003138583689
+                  - heading "LST Lewisham Residence, London" [level=2] [ref=f8e5807]
+                - generic [ref=f8e5808]: Great James St, London, WC1N 3DB
+                - generic [ref=f8e5810]:
+                  - generic [ref=f8e5811]:
+                    - generic [ref=f8e5812]: 1.2 mi from City Center
+                    - generic [ref=f8e5818]:
+                      - text: (
+                      - generic [ref=f8e5819]: 13min
+                      - generic [ref=f8e5824]: .
+                      - generic [ref=f8e5825]: 22min
+                      - generic [ref=f8e5829]: .
+                      - generic [ref=f8e5830]: 28min
+                      - text: )
+                  - generic [ref=f8e5834]: 0.44 mi from Lewisham College
+                - generic [ref=f8e5840]:
+                  - generic [ref=f8e5841]:
+                    - generic [ref=f8e5842]: 8 Offers
+                    - generic [ref=f8e5846]: Pay In Instalment
+                    - generic [ref=f8e5850]: Gym
+                    - generic [ref=f8e5854]: bills included
+                    - generic [ref=f8e5858]: Entertainment
+                    - generic [ref=f8e5862]: Wheelchair Access
+                    - generic [ref=f8e5866]: Bike Storage
+                  - generic [ref=f8e5870]:
+                    - generic [ref=f8e5871]: Instant Booking
+                    - generic [ref=f8e5875]: 2 Room Options
+                    - generic [ref=f8e5879]: Laundry
+                    - generic [ref=f8e5883]: Wifi
+                    - generic [ref=f8e5887]: Games Area
+                    - generic [ref=f8e5891]: 24/7 Assistance
+                    - generic [ref=f8e5895]: Roof Terrace
+                - generic [ref=f8e5899]:
+                  - generic [ref=f8e5901]:
+                    - generic [ref=f8e5902]: From£430
+                    - generic [ref=f8e5903]:
+                      - generic [ref=f8e5904]: £426
+                      - generic [ref=f8e5905]: / week
+                  - button "Enquire" [ref=f8e5907]:
+                    - button [ref=f8e5908]
+            - generic [ref=f8e5912]:
+              - generic [ref=f8e5913]:
+                - generic [ref=f8e5914]: Trust of 2 Million+ students
+                - generic [ref=f8e5915] [cursor=pointer]:
+                  - generic:
+                    - link:
+                      - /url: https://uk.trustpilot.com/review/amberstudent.com
+              - generic [ref=f8e5916]:
+                - generic [ref=f8e7083]:
+                  - generic [ref=f8e7085]:
+                    - text: Quick and easy response from the Amber team. The Amber representative answered all my questions when questions were aske.....
+                    - button "Read More" [ref=f8e7086] [cursor=pointer]
+                  - generic [ref=f8e7090]:
+                    - generic [ref=f8e7091]: Harry
+                    - generic [ref=f8e7092]: London
+                - generic [ref=f8e7094]:
+                  - generic [ref=f8e7095]: Kind, helpful and patient staff. Thanks so much for all the help.
+                  - generic [ref=f8e7100]:
+                    - generic [ref=f8e7101]: sumehra arif
+                    - generic [ref=f8e7102]: university-college-london-1811059954160
+                - generic [ref=f8e7104]:
+                  - generic [ref=f8e7106]:
+                    - text: It made the application process a lot easier and clearer for me. The response was really quick and I appreciate the kind.....
+                    - button "Read More" [ref=f8e7107] [cursor=pointer]
+                  - generic [ref=f8e7111]:
+                    - generic [ref=f8e7112]: Nicole
+                    - generic [ref=f8e7113]: Rambert School of Ballet and Contemporary Dance
+                - generic [ref=f8e7115]:
+                  - generic [ref=f8e7117]:
+                    - text: Was struggling to find decent accommodation but amber made the whole process stress free! Would definitely recommend thi.....
+                    - button "Read More" [ref=f8e7118] [cursor=pointer]
+                  - generic [ref=f8e7122]:
+                    - generic [ref=f8e7123]: Mahjurah
+                    - generic [ref=f8e7124]: London Metropolitan University
+                - generic [ref=f8e7126]:
+                  - generic [ref=f8e7127]: The Amber team was extremely helpful and made the whole process easy and efficient. Would recommend to others.
+                  - generic [ref=f8e7132]:
+                    - generic [ref=f8e7133]: Neal
+                    - generic [ref=f8e7134]: king-s-college-london-strand-campus-1811058395297
+                - generic [ref=f8e7136]:
+                  - generic [ref=f8e7137]: The Amber team was really professional, patient, understanding.
+                  - generic [ref=f8e7142]:
+                    - generic [ref=f8e7143]: Chrisylia
+                    - generic [ref=f8e7144]: Kaplan International English (London Covent Garden)
+                - generic [ref=f8e7146]:
+                  - generic [ref=f8e7148]:
+                    - text: Lovely and incredibly helpful staff! Amber saved the day, assisting me in finding the accommodation I needed when facing.....
+                    - button "Read More" [ref=f8e7149] [cursor=pointer]
+                  - generic [ref=f8e7153]:
+                    - generic [ref=f8e7154]: Sarah Ahmed
+                    - generic [ref=f8e7155]: University College London (Ucl)
+                - generic [ref=f8e7157]:
+                  - generic [ref=f8e7159]:
+                    - text: The Amber team was really helpful and had a lot of patience. Great experience booking the room for next year, would reco.....
+                    - button "Read More" [ref=f8e7160] [cursor=pointer]
+                  - generic [ref=f8e7164]:
+                    - generic [ref=f8e7165]: Irene
+                    - generic [ref=f8e7166]: Birkbeck University
+                - generic [ref=f8e7168]:
+                  - generic [ref=f8e7169]: The Amber representative was very helpful and kind. He efficiently organised everything and made the process smooth.
+                  - generic [ref=f8e7174]:
+                    - generic [ref=f8e7175]: Swetha Pandy
+                    - generic [ref=f8e7176]: King's College London - Guy's Campus
+                - generic [ref=f8e7178]:
+                  - generic [ref=f8e7180]:
+                    - text: Amber's unwavering dedication and exceptional service at the agency made my studio accommodation search effortless and e.....
+                    - button "Read More" [ref=f8e7181] [cursor=pointer]
+                  - generic [ref=f8e7185]:
+                    - generic [ref=f8e7186]: Steanjae
+                    - generic [ref=f8e7187]: Brunel University
+                - generic [ref=f8e7189]:
+                  - generic [ref=f8e7190]: Very good, honest and useful customer service. Very detailed and comprehensive guidance given.
+                  - generic [ref=f8e7195]:
+                    - generic [ref=f8e7196]: Johanan
+                    - generic [ref=f8e7197]: University College London
+                - generic [ref=f8e7199]:
+                  - generic [ref=f8e7201]:
+                    - text: The agent has been helping me consistently with maximum efforts since January to find and settle into a studio accommoda.....
+                    - button "Read More" [ref=f8e7202] [cursor=pointer]
+                  - generic [ref=f8e7206]:
+                    - generic [ref=f8e7207]: Steanjae
+                    - generic [ref=f8e7208]: Brunel University
+                - generic [ref=f8e7210]:
+                  - generic [ref=f8e7211]: My advisor was great and he helped a lot. He was very kind and patient in communicating with me throughout the process.
+                  - generic [ref=f8e7216]:
+                    - generic [ref=f8e7217]: Alexandra
+                    - generic [ref=f8e7218]: King's College London(Strand Campus)
+                - generic [ref=f8e7220]:
+                  - generic [ref=f8e7222]:
+                    - text: After I’d made a mistake, Amber's team was very helpful in giving my best options and helping me get what I needed, very.....
+                    - button "Read More" [ref=f8e7223] [cursor=pointer]
+                  - generic [ref=f8e7227]:
+                    - generic [ref=f8e7228]: Liam
+                    - generic [ref=f8e7229]: London Metropoliton
+                - generic [ref=f8e7231]:
+                  - generic [ref=f8e7233]:
+                    - text: Amber, the representative, helped me greatly with the process and responded in a timely manner. I was very satisfied wit.....
+                    - button "Read More" [ref=f8e7234] [cursor=pointer]
+                  - generic [ref=f8e7238]:
+                    - generic [ref=f8e7239]: Abdul Ahad
+                    - generic [ref=f8e7240]: London
+                - generic [ref=f8e7242]:
+                  - generic [ref=f8e7243]: Really nice people, helped me so much and got back to me in a good response time. Thank you guys.
+                  - generic [ref=f8e7248]:
+                    - generic [ref=f8e7249]: Isabelle Lamb
+                    - generic [ref=f8e7250]: Escape Studios
+                - generic [ref=f8e7252]:
+                  - generic [ref=f8e7253]: The support team was of great help. I got my booking done conveniently and quickly as per my needs.
+                  - generic [ref=f8e7258]:
+                    - generic [ref=f8e7259]: yug serai
+                    - generic [ref=f8e7260]: University of Warwick
+                - generic [ref=f8e7262]:
+                  - generic [ref=f8e7263]: Amber was very helpful
+                  - generic [ref=f8e7268]:
+                    - generic [ref=f8e7269]: Dylan Bedoya
+                    - generic [ref=f8e7270]: Sae Institute London, Sae Institute
+                - generic [ref=f8e7272]:
+                  - generic [ref=f8e7273]: The booking process was made very easy and effortless through Amber Student.
+                  - generic [ref=f8e7278]:
+                    - generic [ref=f8e7279]: Ayush Gopi
+                    - generic [ref=f8e7280]: University of Westminster (Marylebone Campus)
+                - generic [ref=f8e7282]:
+                  - generic [ref=f8e7284]:
+                    - text: The Amber representative helped us a lot in booking an accommodation. Amber is the best site to book accommodation for i.....
+                    - button "Read More" [ref=f8e7285] [cursor=pointer]
+                  - generic [ref=f8e7289]:
+                    - generic [ref=f8e7290]: Swastika
+                    - generic [ref=f8e7291]: London
+            - button "5.0 (5) Chapter Old Street, London Paul St, London, EC2A 4JH 2.5 mi from City Center ( 17min . 30min . 51min ) 0.16 mi from University of Liverpool 7 Offers Pay In Instalment 9 Room Options Games Area Study Spaces Social Spaces On-site Gym On Site Team Courtyard Instant Booking No Visa No Pay bills included laundry facility Tv Snug Wifi (Up to 200 MB Dual Band Wifi) Onsite Team Free Bi-Weekly Cleaning Terrace From £317/ week Enquire" [ref=f8e6127] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e6150]:
+                - generic [ref=f8e6156]: "5.0"
+                - generic [ref=f8e6157]: (5)
+              - generic [ref=f8e6158]:
+                - link [ref=f8e6159]:
+                  - /url: /places/chapter-old-street-london-2203164613042
+                  - heading "Chapter Old Street, London" [level=2] [ref=f8e6160]
+                - generic [ref=f8e6161]: Paul St, London, EC2A 4JH
+                - generic [ref=f8e6163]:
+                  - generic [ref=f8e6164]:
+                    - generic [ref=f8e6165]: 2.5 mi from City Center
+                    - generic [ref=f8e6171]:
+                      - text: (
+                      - generic [ref=f8e6172]: 17min
+                      - generic [ref=f8e6177]: .
+                      - generic [ref=f8e6178]: 30min
+                      - generic [ref=f8e6182]: .
+                      - generic [ref=f8e6183]: 51min
+                      - text: )
+                  - generic [ref=f8e6187]: 0.16 mi from University of Liverpool
+                - generic [ref=f8e6193]:
+                  - generic [ref=f8e6194]:
+                    - generic [ref=f8e6195]: 7 Offers
+                    - generic [ref=f8e6199]: Pay In Instalment
+                    - generic [ref=f8e6203]: 9 Room Options
+                    - generic [ref=f8e6207]: Games Area
+                    - generic [ref=f8e6211]: Study Spaces
+                    - generic [ref=f8e6215]: Social Spaces
+                    - generic [ref=f8e6219]: On-site Gym
+                    - generic [ref=f8e6223]: On Site Team
+                    - generic [ref=f8e6227]: Courtyard
+                  - generic [ref=f8e6231]:
+                    - generic [ref=f8e6232]: Instant Booking
+                    - generic [ref=f8e6236]: No Visa No Pay
+                    - generic [ref=f8e6240]: bills included
+                    - generic [ref=f8e6244]: laundry facility
+                    - generic [ref=f8e6248]: Tv Snug
+                    - generic [ref=f8e6252]: Wifi (Up to 200 MB Dual Band Wifi)
+                    - generic [ref=f8e6256]: Onsite Team
+                    - generic [ref=f8e6260]: Free Bi-Weekly Cleaning
+                    - generic [ref=f8e6264]: Terrace
+                - generic [ref=f8e6268]:
+                  - generic [ref=f8e6270]:
+                    - generic [ref=f8e6271]: From
+                    - generic [ref=f8e6272]:
+                      - text: £317
+                      - generic [ref=f8e6273]: / week
+                  - button "Enquire" [ref=f8e6275]:
+                    - button [ref=f8e6276]
+            - button "4.5 (4) GoBritanya Kings Cross Residence, London Pentonville Rd, London, N1 2.3 mi from City Center ( 19min . 22min . 48min ) 0.31 mi from Capital City College 11 Offers Pay In Instalment 13 Room Options bills included Dual-Band Wi-Fi Student Insurance 24/7 Reception On Site Laundry City Center Courtyard Instant Booking No Visa No Pay laundry facility On Site GYM Cinema Secure Entry System CCTV Located in Zone 1 Excellent Facilities From£595 £581/ week Enquire" [ref=f8e6278] [cursor=pointer]:
+              - generic:
+                - button
+              - generic [ref=f8e6301]:
+                - generic [ref=f8e6307]: "4.5"
+                - generic [ref=f8e6308]: (4)
+              - generic [ref=f8e6309]:
+                - link [ref=f8e6310]:
+                  - /url: /places/kings-cross-residence-go-britanya-london-2009022949327
+                  - heading "GoBritanya Kings Cross Residence, London" [level=2] [ref=f8e6311]
+                - generic [ref=f8e6312]: Pentonville Rd, London, N1
+                - generic [ref=f8e6314]:
+                  - generic [ref=f8e6315]:
+                    - generic [ref=f8e6316]: 2.3 mi from City Center
+                    - generic [ref=f8e6322]:
+                      - text: (
+                      - generic [ref=f8e6323]: 19min
+                      - generic [ref=f8e6328]: .
+                      - generic [ref=f8e6329]: 22min
+                      - generic [ref=f8e6333]: .
+                      - generic [ref=f8e6334]: 48min
+                      - text: )
+                  - generic [ref=f8e6338]: 0.31 mi from Capital City College
+                - generic [ref=f8e6344]:
+                  - generic [ref=f8e6345]:
+                    - generic [ref=f8e6346]: 11 Offers
+                    - generic [ref=f8e6350]: Pay In Instalment
+                    - generic [ref=f8e6354]: 13 Room Options
+                    - generic [ref=f8e6358]: bills included
+                    - generic [ref=f8e6362]: Dual-Band Wi-Fi
+                    - generic [ref=f8e6366]: Student Insurance
+                    - generic [ref=f8e6370]: 24/7 Reception
+                    - generic [ref=f8e6374]: On Site Laundry
+                    - generic [ref=f8e6378]: City Center
+                    - generic [ref=f8e6382]: Courtyard
+                  - generic [ref=f8e6386]:
+                    - generic [ref=f8e6387]: Instant Booking
+                    - generic [ref=f8e6391]: No Visa No Pay
+                    - generic [ref=f8e6395]: laundry facility
+                    - generic [ref=f8e6399]: On Site GYM
+                    - generic [ref=f8e6403]: Cinema
+                    - generic [ref=f8e6407]: Secure Entry System
+                    - generic [ref=f8e6411]: CCTV
+                    - generic [ref=f8e6415]: Located in Zone 1
+                    - generic [ref=f8e6419]: Excellent Facilities
+                - generic [ref=f8e6423]:
+                  - generic [ref=f8e6425]:
+                    - generic [ref=f8e6426]: From£595
+                    - generic [ref=f8e6427]:
+                      - generic [ref=f8e6428]: £581
+                      - generic [ref=f8e6429]: / week
+                  - button "Enquire" [ref=f8e6431]:
+                    - button [ref=f8e6432]
+            - navigation "Property listing pages" [ref=f8e4319]:
+              - link "Previous page" [ref=f8e6434] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760
+              - link "Page 1" [ref=f8e4320] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760
+                - text: "1"
+              - link "Page 2" [ref=f8e4321] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760?p=2
+                - text: "2"
+              - link "Page 3" [ref=f8e6437] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760?p=3
+                - text: "3"
+              - generic [ref=f8e6438]: …
+              - link "Page 22" [ref=f8e4323] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760?p=22
+                - text: "22"
+              - link "Page 23" [ref=f8e4324] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760?p=23
+                - text: "23"
+              - link "Next page" [ref=f8e4325] [cursor=pointer]:
+                - /url: /places/search/london-1811028205760?p=3
+          - generic [ref=f8e4328]:
+            - button "Explore On Map" [ref=f8e4330] [cursor=pointer]:
+              - button [ref=f8e4331]
+            - generic [ref=f8e4336]:
+              - generic [ref=f8e7292]:
+                - generic [ref=f8e7293] [cursor=pointer]: Instant Booking
+                - generic [ref=f8e7300] [cursor=pointer]
+              - generic [ref=f8e7304]:
+                - generic [ref=f8e7305] [cursor=pointer]: Lowest Price Guaranteed
+                - generic [ref=f8e7316] [cursor=pointer]
+              - generic [ref=f8e7320]:
+                - generic [ref=f8e7321] [cursor=pointer]: Verified Properties
+                - generic [ref=f8e7329] [cursor=pointer]
+              - generic [ref=f8e7333]:
+                - generic [ref=f8e7334] [cursor=pointer]: 24x7 Personal Assistance
+                - generic [ref=f8e7343] [cursor=pointer]
+              - generic [ref=f8e7347]:
+                - generic [ref=f8e7348] [cursor=pointer]: 11.3K+ Reviews
+                - generic [ref=f8e7351] [cursor=pointer]
+      - generic [ref=f8e2103]:
+        - generic [ref=f8e2104]:
+          - heading "Frequently Asked Questions (FAQs)" [level=2] [ref=f8e2105]
+          - generic [ref=f8e2106]:
+            - generic [ref=f8e2107]:
+              - group [ref=f8e2109]:
+                - heading "Are pet-friendly London accommodations costlier than non-pet-friendly ones?" [level=3] [ref=f8e2111] [cursor=pointer]
+              - group [ref=f8e2119]:
+                - heading "What is the process to be followed to book student accommodation in London early with amber?" [level=3] [ref=f8e2121] [cursor=pointer]
+              - group [ref=f8e2129]:
+                - heading "How long does a tenancy agreement for student housing in London last for international students?" [level=3] [ref=f8e2131] [cursor=pointer]
+              - group [ref=f8e2139]:
+                - heading "What are some of the popular neighbourhoods in London to live in for a good student life?" [level=3] [ref=f8e2141] [cursor=pointer]
+              - group [ref=f8e2149]:
+                - heading "Are the student flats in London near the city centre fully furnished?" [level=3] [ref=f8e2151] [cursor=pointer]
+            - generic [ref=f8e2158]:
+              - checkbox "View all Questions (6) View less Questions" [ref=f8e2159]
+              - generic [ref=f8e2160] [cursor=pointer]: View all Questions (6)
+        - generic [ref=f8e2165]:
+          - heading "Nearby Places" [level=2] [ref=f8e2166]
+          - generic [ref=f8e2167]:
+            - generic [ref=f8e2168]:
+              - tab "Cities" [selected] [ref=f8e2169] [cursor=pointer]:
+                - button [ref=f8e2170]
+              - tab "Localities" [ref=f8e2172] [cursor=pointer]:
+                - button [ref=f8e2173]
+              - tab "Universities" [ref=f8e2175] [cursor=pointer]:
+                - button [ref=f8e2176]
+              - tab "Properties" [ref=f8e2178] [cursor=pointer]:
+                - button [ref=f8e2179]
+            - generic [ref=f8e2183]:
+              - checkbox "Show More (12) Show Less" [ref=f8e2184]
+              - generic [ref=f8e2185]:
+                - link "Student Accommodation in Croydon" [ref=f8e2187] [cursor=pointer]:
+                  - /url: /places/search/croydon-1811229254876
+                - link "Student Accommodation in Kingston upon Thames" [ref=f8e2189] [cursor=pointer]:
+                  - /url: /places/search/kingston-upon-thames-1811025616665
+                - link "Student Accommodation in Egham" [ref=f8e2191] [cursor=pointer]:
+                  - /url: /places/search/egham-1811022240968
+                - link "Student Accommodation in Hertfordshire" [ref=f8e2193] [cursor=pointer]:
+                  - /url: /places/search/hertfordshire-1811227533071
+                - link "Student Accommodation in Surrey" [ref=f8e2195] [cursor=pointer]:
+                  - /url: /places/search/surrey-2502047483763
+                - link "Student Accommodation in Guildford" [ref=f8e2197] [cursor=pointer]:
+                  - /url: /places/search/guildford-1811021238331
+                - link "Student Accommodation in Stevenage" [ref=f8e2199] [cursor=pointer]:
+                  - /url: /places/search/stevenage-2510086719294
+                - link "Student Accommodation in High Wycombe" [ref=f8e2201] [cursor=pointer]:
+                  - /url: /places/search/high-wycombe-1811021247138
+              - generic [ref=f8e2203] [cursor=pointer]: Show More (12)
+    - generic [ref=f8e4402]:
+      - generic [ref=f8e4403]:
+        - generic [ref=f8e4404]: amber © 2026. All rights reserved.
+        - generic [ref=f8e4406] [cursor=pointer]:
+          - generic:
+            - link:
+              - /url: https://uk.trustpilot.com/review/amberstudent.com
+        - generic [ref=f8e4407]:
+          - generic [ref=f8e4408]:
+            - generic [ref=f8e4409]: Get the app
+            - generic [ref=f8e4410]:
+              - link [ref=f8e4411] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+              - link [ref=f8e4412] [cursor=pointer]:
+                - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+          - generic [ref=f8e4414]: Payment Options
+      - generic [ref=f8e4417]:
+        - generic [ref=f8e4418]:
+          - generic [ref=f8e4419]: Company
+          - link "About" [ref=f8e4422] [cursor=pointer]:
+            - /url: /about
+          - link "How it works" [ref=f8e4424] [cursor=pointer]:
+            - /url: /how-it-works
+          - link "Refer a Friend" [ref=f8e4426] [cursor=pointer]:
+            - /url: /referral-programme
+          - generic [ref=f8e4427]:
+            - link "Group Bookings" [ref=f8e4428] [cursor=pointer]:
+              - /url: /group-booking
+            - generic [ref=f8e4429]: New
+          - generic [ref=f8e4430]:
+            - link "List with us" [ref=f8e4431] [cursor=pointer]:
+              - /url: /list
+            - generic [ref=f8e4432]: New
+          - generic [ref=f8e4433]:
+            - link "Partner with us" [ref=f8e4434] [cursor=pointer]:
+              - /url: /partner
+            - generic [ref=f8e4435]: New
+          - generic [ref=f8e4436]:
+            - link "Universities" [ref=f8e4437] [cursor=pointer]:
+              - /url: /university-partnerships
+            - generic [ref=f8e4438]: New
+          - generic [ref=f8e4439]:
+            - link "Careers" [ref=f8e4440] [cursor=pointer]:
+              - /url: /career
+            - generic [ref=f8e4441]: We are hiring!
+        - generic [ref=f8e4442]:
+          - generic [ref=f8e4443]: Discover
+          - link "Podcast" [ref=f8e4446] [cursor=pointer]:
+            - /url: /podcast
+          - link "Newsroom" [ref=f8e4448] [cursor=pointer]:
+            - /url: /news
+          - link "Amber Plus" [ref=f8e4450] [cursor=pointer]:
+            - /url: /plus
+          - link "Media Mention" [ref=f8e4452] [cursor=pointer]:
+            - /url: /media
+          - link "Ambassador" [ref=f8e4454] [cursor=pointer]:
+            - /url: /ambassador
+          - generic [ref=f8e4455]:
+            - link "Scholarships" [ref=f8e4456] [cursor=pointer]:
+              - /url: /scholarship
+            - generic [ref=f8e4457]: Apply Now
+          - generic [ref=f8e4458]:
+            - link "Exams":
+              - /url: /exams
+            - generic [ref=f8e4459]: New
+      - generic [ref=f8e4460]:
+        - generic [ref=f8e4461]: Support
+        - link "Help Center" [ref=f8e4464] [cursor=pointer]:
+          - /url: /help
+        - link "Contact" [ref=f8e4466] [cursor=pointer]:
+          - /url: /contact
+        - link "T&C" [ref=f8e4468] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy Policy" [ref=f8e4470] [cursor=pointer]:
+          - /url: /privacy
+        - link "Sitemap" [ref=f8e4472] [cursor=pointer]:
+          - /url: /sitemap
+      - generic [ref=f8e4473]:
+        - generic [ref=f8e4474]: Contact us
+        - link "contact@amberstudent.com" [ref=f8e4475] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - link "WhatsApp" [ref=f8e4479] [cursor=pointer]:
+          - /url: https://wa.me/447888863490
+        - link "+91 8035735724" [ref=f8e4483] [cursor=pointer]:
+          - /url: tel:+918035735724
+        - generic [ref=f8e4487]: "Follow us on:"
+    - button "Open chat" [ref=f8e2250] [cursor=pointer]

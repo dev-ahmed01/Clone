@@ -1,0 +1,49 @@
+- generic [ref=f22e5]:
+  - heading "Welcome to amberstudent1 Portal" [level=6] [ref=f22e6]
+  - region "Skip Links":
+    - link "Skip to Content":
+      - /url: "#mainContainer"
+    - link "Skip to Menu":
+      - /url: "#headerContainer"
+    - link "Skip to Footer":
+      - /url: "#footerContainer"
+  - alert
+  - banner [ref=f22e7]:
+    - generic [ref=f22e9]:
+      - link [ref=f22e11] [cursor=pointer]:
+        - /url: https://amberstudent.com/
+        - img "amberstudent home" [ref=f22e12]
+      - generic "amberstudent" [ref=f22e13]
+      - navigation "Main Menu" [ref=f22e15]:
+        - menu [ref=f22e16]:
+          - menuitem "Knowledge Base" [ref=f22e17] [cursor=pointer]:
+            - link "Knowledge Base" [ref=f22e18]:
+              - /url: /portal/en/kb
+          - menuitem "Login" [ref=f22e19]:
+            - list [ref=f22e20]:
+              - listitem "Sign In" [ref=f22e21] [cursor=pointer]:
+                - link "Sign In" [ref=f22e22]:
+                  - /url: /portal/en/signin
+          - menuitem "user Preference" [ref=f22e23]:
+            - button "User Preference" [ref=f22e25] [cursor=pointer]
+  - generic [ref=f22e31]:
+    - generic:
+      - navigation "Page Menu":
+        - list
+    - search [ref=f22e32]:
+      - search "Search articles" [ref=f22e34]
+      - button "search" [ref=f22e35] [cursor=pointer]
+      - status [ref=f22e38] [cursor=pointer]
+  - main [ref=f22e39]
+  - contentinfo [ref=f22e123]:
+    - generic [ref=f22e127]:
+      - generic [ref=f22e128]:
+        - text: Still can’t find an answer?
+        - generic [ref=f22e129]: Send us a ticket and we will get back to you.
+      - link "New Ticket" [ref=f22e131] [cursor=pointer]:
+        - /url: /portal/en/newticket
+        - button "Submit a ticket" [ref=f22e132]
+    - generic [ref=f22e134]:
+      - generic [ref=f22e135]: Powered by
+      - link "Zoho Desk" [ref=f22e136] [cursor=pointer]:
+        - /url: https://zoho.com/desk

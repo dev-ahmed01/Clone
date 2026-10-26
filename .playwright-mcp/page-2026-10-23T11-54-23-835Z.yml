@@ -1,0 +1,71 @@
+- generic [ref=f36e4]:
+  - navigation [ref=f36e5]:
+    - link [ref=f36e6] [cursor=pointer]:
+      - /url: /
+    - button "Open menu" [ref=f36e8] [cursor=pointer]
+  - generic [ref=f36e11]:
+    - generic [ref=f36e12]:
+      - heading [level=1] [ref=f36e13]: Get in touch with theteam amber
+      - paragraph [ref=f36e19]: Before you book, after you've moved in, or anywhere in between.
+    - generic [ref=f36e23]:
+      - generic [ref=f36e25]:
+        - textbox "Ask amber Copilot" [ref=f36e26]
+        - generic [aria-hidden]: Can I change my
+      - button "Ask amber Copilot" [ref=f36e27] [cursor=pointer]
+  - generic [ref=f36e31]:
+    - generic [ref=f36e32]:
+      - generic [ref=f36e33]: Support Channels
+      - list [ref=f36e34]:
+        - listitem [ref=f36e35]:
+          - button "Live chat Ask amber Copilot, on any page" [ref=f36e36] [cursor=pointer]:
+            - generic [ref=f36e38]:
+              - generic [ref=f36e39]: Live chat
+              - generic [ref=f36e40]: Ask amber Copilot, on any page
+        - listitem [ref=f36e42]:
+          - link "WhatsApp +44 7888 863490" [ref=f36e43] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send/?phone=447888863490&text&type=phone_number&app_absent=0
+            - generic [ref=f36e45]:
+              - generic [ref=f36e46]: WhatsApp
+              - generic [ref=f36e47]: +44 7888 863490
+        - listitem [ref=f36e49]:
+          - link "Email contact@amberstudent.com" [ref=f36e50] [cursor=pointer]:
+            - /url: mailto:contact@amberstudent.com
+            - generic [ref=f36e52]:
+              - generic [ref=f36e53]: Email
+              - generic [ref=f36e54]: contact@amberstudent.com
+        - listitem [ref=f36e56]:
+          - link "Phone call +91 8035735724" [ref=f36e57] [cursor=pointer]:
+            - /url: tel:+918035735724
+            - generic [ref=f36e59]:
+              - generic [ref=f36e60]: Phone call
+              - generic [ref=f36e61]: +91 8035735724
+    - generic [ref=f36e63]:
+      - generic [ref=f36e64]: Help & Guides
+      - list [ref=f36e65]:
+        - listitem [ref=f36e66]:
+          - link "Help centre Guides on booking, payments, documents and moving in" [ref=f36e67] [cursor=pointer]:
+            - /url: https://help.amberstudent.com/portal/en/kb/amberstudent
+            - generic [ref=f36e69]:
+              - generic [ref=f36e70]: Help centre
+              - generic [ref=f36e71]: Guides on booking, payments, documents and moving in
+  - generic [ref=f36e76]:
+    - generic [ref=f36e77]: amber © 2026. All rights reserved.
+    - generic [ref=f36e80] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f36e81]:
+      - generic [ref=f36e82]:
+        - generic [ref=f36e83]: Get the app
+        - generic [ref=f36e84]:
+          - link [ref=f36e85] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f36e86] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f36e88]: Payment Options
+    - generic [ref=f36e91]:
+      - button [ref=f36e93] [cursor=pointer]
+      - button [ref=f36e99] [cursor=pointer]
+      - button [ref=f36e105] [cursor=pointer]
+      - button [ref=f36e111] [cursor=pointer]
+  - button "Open chat" [ref=f36e116] [cursor=pointer]

@@ -1,0 +1,406 @@
+- generic [ref=f16e4]:
+  - navigation [ref=f16e5]:
+    - link [ref=f16e6] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f16e7]:
+      - link "Blogs" [ref=f16e8] [cursor=pointer]:
+        - /url: /blog
+      - link "About us" [ref=f16e9] [cursor=pointer]:
+        - /url: /about
+  - generic [ref=f16e10]:
+    - generic [ref=f16e11]:
+      - heading [level=1] [ref=f16e12]: Because every big dreamdeservesa big break
+      - paragraph [ref=f16e68]:
+        - text: Helping students chase big dreams with
+        - strong [ref=f16e69]: $50,000
+        - text: .
+    - link "Apply Now" [ref=f16e71] [cursor=pointer]:
+      - /url: /scholarship
+    - paragraph [ref=f16e72]:
+      - button "Deadline extended to Jan 31, 2027 Learn More" [ref=f16e73] [cursor=pointer]:
+        - generic [ref=f16e74]: Deadline extended to Jan 31, 2027
+        - generic [aria-hidden] [ref=f16e75]: "|"
+        - generic [ref=f16e76]: Learn More
+  - region "amberscholar winners" [ref=f16e79]:
+    - list [ref=f16e83]:
+      - listitem [ref=f16e84]:
+        - button "Gideon Danso Winner First Edition Watch Story" [ref=f16e85] [cursor=pointer]:
+          - generic [ref=f16e87]:
+            - generic [ref=f16e88]: Gideon Danso
+            - generic [ref=f16e89]:
+              - generic [ref=f16e90]: Winner
+              - generic [ref=f16e107]: First Edition
+          - generic [ref=f16e111]: Watch Story
+      - listitem [ref=f16e119]:
+        - button "Parisa Azizi Shamami Runner Up First Edition Watch Story" [ref=f16e120] [cursor=pointer]:
+          - generic [ref=f16e122]:
+            - generic [ref=f16e123]: Parisa Azizi Shamami
+            - generic [ref=f16e124]:
+              - generic [ref=f16e125]: Runner Up
+              - generic [ref=f16e142]: First Edition
+          - generic [ref=f16e146]: Watch Story
+      - listitem [ref=f16e154]:
+        - button "Hekmatullah Amin Runner Up Second Edition Watch Story" [ref=f16e155] [cursor=pointer]:
+          - generic [ref=f16e157]:
+            - generic [ref=f16e158]: Hekmatullah Amin
+            - generic [ref=f16e159]:
+              - generic [ref=f16e160]: Runner Up
+              - generic [ref=f16e177]: Second Edition
+          - generic [ref=f16e181]: Watch Story
+      - listitem [ref=f16e189]:
+        - button "Fisayo Balogun Winner Third Edition Watch Story" [ref=f16e190] [cursor=pointer]:
+          - generic [ref=f16e192]:
+            - generic [ref=f16e193]: Fisayo Balogun
+            - generic [ref=f16e194]:
+              - generic [ref=f16e195]: Winner
+              - generic [ref=f16e212]: Third Edition
+          - generic [ref=f16e216]: Watch Story
+      - listitem [ref=f16e224]:
+        - button "Natalie Mangen Runner Up Third Edition Watch Story" [ref=f16e225] [cursor=pointer]:
+          - generic [ref=f16e227]:
+            - generic [ref=f16e228]: Natalie Mangen
+            - generic [ref=f16e229]:
+              - generic [ref=f16e230]: Runner Up
+              - generic [ref=f16e247]: Third Edition
+          - generic [ref=f16e251]: Watch Story
+      - listitem [ref=f16e259]:
+        - button "Jason Zixu Zhou Runner Up Fourth Edition Watch Story" [ref=f16e260] [cursor=pointer]:
+          - generic [ref=f16e262]:
+            - generic [ref=f16e263]: Jason Zixu Zhou
+            - generic [ref=f16e264]:
+              - generic [ref=f16e265]: Runner Up
+              - generic [ref=f16e282]: Fourth Edition
+          - generic [ref=f16e286]: Watch Story
+      - listitem [ref=f16e294]:
+        - button "Stephen Sarpong Lartey Runner Up Fourth Edition Watch Story" [ref=f16e295] [cursor=pointer]:
+          - generic [ref=f16e297]:
+            - generic [ref=f16e298]: Stephen Sarpong Lartey
+            - generic [ref=f16e299]:
+              - generic [ref=f16e300]: Runner Up
+              - generic [ref=f16e317]: Fourth Edition
+          - generic [ref=f16e321]: Watch Story
+      - listitem [ref=f16e329]:
+        - button "Gideon Danso Winner First Edition Watch Story" [ref=f16e330] [cursor=pointer]:
+          - generic [ref=f16e332]:
+            - generic [ref=f16e333]: Gideon Danso
+            - generic [ref=f16e334]:
+              - generic [ref=f16e335]: Winner
+              - generic [ref=f16e352]: First Edition
+          - generic [ref=f16e356]: Watch Story
+      - listitem [ref=f16e364]:
+        - button "Parisa Azizi Shamami Runner Up First Edition Watch Story" [ref=f16e365] [cursor=pointer]:
+          - generic [ref=f16e367]:
+            - generic [ref=f16e368]: Parisa Azizi Shamami
+            - generic [ref=f16e369]:
+              - generic [ref=f16e370]: Runner Up
+              - generic [ref=f16e387]: First Edition
+          - generic [ref=f16e391]: Watch Story
+      - listitem [ref=f16e399]:
+        - button "Hekmatullah Amin Runner Up Second Edition Watch Story" [ref=f16e400] [cursor=pointer]:
+          - generic [ref=f16e402]:
+            - generic [ref=f16e403]: Hekmatullah Amin
+            - generic [ref=f16e404]:
+              - generic [ref=f16e405]: Runner Up
+              - generic [ref=f16e422]: Second Edition
+          - generic [ref=f16e426]: Watch Story
+      - listitem [ref=f16e434]:
+        - button "Fisayo Balogun Winner Third Edition Watch Story" [ref=f16e435] [cursor=pointer]:
+          - generic [ref=f16e437]:
+            - generic [ref=f16e438]: Fisayo Balogun
+            - generic [ref=f16e439]:
+              - generic [ref=f16e440]: Winner
+              - generic [ref=f16e457]: Third Edition
+          - generic [ref=f16e461]: Watch Story
+      - listitem [ref=f16e469]:
+        - button "Natalie Mangen Runner Up Third Edition Watch Story" [ref=f16e470] [cursor=pointer]:
+          - generic [ref=f16e472]:
+            - generic [ref=f16e473]: Natalie Mangen
+            - generic [ref=f16e474]:
+              - generic [ref=f16e475]: Runner Up
+              - generic [ref=f16e492]: Third Edition
+          - generic [ref=f16e496]: Watch Story
+      - listitem [ref=f16e504]:
+        - button "Jason Zixu Zhou Runner Up Fourth Edition Watch Story" [ref=f16e505] [cursor=pointer]:
+          - generic [ref=f16e507]:
+            - generic [ref=f16e508]: Jason Zixu Zhou
+            - generic [ref=f16e509]:
+              - generic [ref=f16e510]: Runner Up
+              - generic [ref=f16e527]: Fourth Edition
+          - generic [ref=f16e531]: Watch Story
+      - listitem [ref=f16e539]:
+        - button "Stephen Sarpong Lartey Runner Up Fourth Edition Watch Story" [ref=f16e540] [cursor=pointer]:
+          - generic [ref=f16e542]:
+            - generic [ref=f16e543]: Stephen Sarpong Lartey
+            - generic [ref=f16e544]:
+              - generic [ref=f16e545]: Runner Up
+              - generic [ref=f16e562]: Fourth Edition
+          - generic [ref=f16e566]: Watch Story
+  - generic [ref=f16e575]:
+    - generic [ref=f16e576]:
+      - generic [ref=f16e577]:
+        - img "Past amberscholar applicants" [ref=f16e578]
+        - generic [ref=f16e582]: 33K+
+        - generic [ref=f16e583]: Applicants
+      - generic [ref=f16e584]:
+        - img "Applicants from over 220 nationalities" [ref=f16e585]
+        - generic [ref=f16e589]: 220+
+        - generic [ref=f16e590]: Nationalities
+      - generic [ref=f16e591]:
+        - img "Scholarships granted from the amber Dream Fund" [ref=f16e592]
+        - generic [ref=f16e695]: $45k+
+        - generic [ref=f16e696]: Scholarships Granted
+    - generic [ref=f16e697]:
+      - paragraph [ref=f16e698]: amberscholar 2026 is for students and dreamers who have the hunger in them! Because at amber, we don't just accommodate students, we accommodate their dreams too.
+      - paragraph [ref=f16e699]:
+        - text: That's why we've created the
+        - strong [ref=f16e700]: $50,000
+        - text: amber Dream Fund!
+      - paragraph [ref=f16e701]:
+        - text: If you have a big goal, a bold idea, or a dream you truly believe in, this is your chance to win funding from the
+        - strong [ref=f16e702]: $50,000
+        - text: Dream Fund pool and take it further.
+  - paragraph [ref=f16e705]:
+    - generic [ref=f16e706]: amberscholar
+    - generic [ref=f16e707]: "2026"
+    - generic [ref=f16e708]: is
+    - generic [ref=f16e709]: for
+    - generic [ref=f16e710]: students
+    - generic [ref=f16e711]: and
+    - generic [ref=f16e714]: dreamers
+    - generic [ref=f16e715]: who
+    - generic [ref=f16e716]: have
+    - generic [ref=f16e717]: the
+    - generic [ref=f16e718]: hunger
+    - generic [ref=f16e719]: to
+    - generic [ref=f16e720]: make
+    - generic [ref=f16e721]: something
+    - generic [ref=f16e722]: happen.
+    - generic [ref=f16e724]: At
+    - generic [ref=f16e725]: amber,
+    - generic [ref=f16e726]: we
+    - generic [ref=f16e727]: don’t
+    - generic [ref=f16e728]: just
+    - generic [ref=f16e729]: accommodate
+    - generic [ref=f16e730]: students.
+    - generic [ref=f16e731]: We
+    - generic [ref=f16e732]: make
+    - generic [ref=f16e733]: room
+    - generic [ref=f16e734]: for
+    - generic [ref=f16e735]: their
+    - generic [ref=f16e736]: dreams
+    - generic [ref=f16e737]: too.
+    - generic [ref=f16e739]: That’s
+    - generic [ref=f16e740]: why
+    - generic [ref=f16e741]: we
+    - generic [ref=f16e742]: created
+    - generic [ref=f16e743]: the
+    - generic [ref=f16e744]: amber
+    - generic [ref=f16e745]: Dream
+    - generic [ref=f16e746]: Fund,
+    - generic [ref=f16e747]: it’s
+    - generic [ref=f16e748]: to
+    - generic [ref=f16e749]: back
+    - generic [ref=f16e750]: students
+    - generic [ref=f16e751]: with
+    - generic [ref=f16e752]: big
+    - generic [ref=f16e753]: goals,
+    - generic [ref=f16e754]: bold
+    - generic [ref=f16e755]: ideas,
+    - generic [ref=f16e756]: and
+    - generic [ref=f16e757]: dreams
+    - generic [ref=f16e758]: they
+    - generic [ref=f16e759]: truly
+    - generic [ref=f16e760]: believe
+    - generic [ref=f16e761]: in.
+    - generic [ref=f16e763]: If
+    - generic [ref=f16e764]: there’s
+    - generic [ref=f16e765]: something
+    - generic [ref=f16e766]: you’ve
+    - generic [ref=f16e767]: always
+    - generic [ref=f16e768]: wanted
+    - generic [ref=f16e769]: to
+    - generic [ref=f16e770]: build,
+    - generic [ref=f16e771]: create,
+    - generic [ref=f16e772]: achieve,
+    - generic [ref=f16e773]: or
+    - generic [ref=f16e774]: take
+    - generic [ref=f16e775]: further,
+    - generic [ref=f16e926]: this
+    - generic [ref=f16e927]: is
+    - generic [ref=f16e928]: your
+    - generic [ref=f16e929]: chance
+    - generic [ref=f16e930]: to
+    - generic [ref=f16e931]: make
+    - generic [ref=f16e932]: it
+    - generic [ref=f16e933]: real.
+  - generic [ref=f16e936]:
+    - heading "Supporting ambitious students from around the world." [level=2] [ref=f16e937]: Supporting ambitiousstudents from around the world.
+    - generic [ref=f16e939]:
+      - generic [ref=f16e940]:
+        - generic [ref=f16e941]: amberscholar Scholarship Programme 2026-27 is HERE
+        - generic [ref=f16e942]:
+          - generic [ref=f16e943]: amber | Student Accomodation
+          - generic [ref=f16e944]: ·
+          - generic [ref=f16e945]: 3 min
+      - 'button "Watch Story: amberscholar Scholarship Programme 2026-27 is HERE" [ref=f16e946] [cursor=pointer]'
+    - generic [ref=f16e948]:
+      - generic [ref=f16e949]: Who all can apply
+      - generic [ref=f16e963]:
+        - heading "Academic Wizards" [level=3] [ref=f16e964]
+        - generic [ref=f16e965]: For sharp minds who love solving problems.
+      - generic [ref=f16e982]:
+        - heading "All-Star Sports" [level=3] [ref=f16e983]
+        - generic [ref=f16e984]: For those driven by sports, discipline and performance
+      - generic [ref=f16e1000]:
+        - heading "Creative Geniuses" [level=3] [ref=f16e1001]
+        - generic [ref=f16e1002]: For those who think differently and bring ideas to life.
+      - generic [ref=f16e1029]:
+        - heading "Founders & Innovators" [level=3] [ref=f16e1030]
+        - generic [ref=f16e1031]: For those who want to create, build, and shape the future
+  - generic [ref=f16e1033]:
+    - heading "Get started in three easy steps. Applying takes minutes." [level=2] [ref=f16e1035]: Get started in three easy steps.Applying takes minutes.
+    - generic [ref=f16e1038]:
+      - generic [ref=f16e1039]:
+        - generic [ref=f16e1040]: "1"
+        - heading "Fill In Details" [level=3] [ref=f16e1041]
+        - generic [ref=f16e1042]: Tell us who you are and where you study — it takes about three minutes.
+      - generic [ref=f16e1043]:
+        - generic [ref=f16e1044]: "2"
+        - heading "Tell us your dream" [level=3] [ref=f16e1045]
+        - generic [ref=f16e1046]: Share the goal you want funded, in your own words. No essay format required.
+      - generic [ref=f16e1047]:
+        - generic [ref=f16e1048]: "3"
+        - heading "Get funded" [level=3] [ref=f16e1049]
+        - generic [ref=f16e1050]: Shortlisted dreamers are announced each edition and paid directly.
+  - generic [ref=f16e1053]:
+    - heading "How dreams are judged. What our panel looks for." [level=2] [ref=f16e1054]: How dreams are judged.What our panel looks for.
+    - generic [ref=f16e1055]:
+      - generic [ref=f16e1068]:
+        - generic [ref=f16e1069]: A clear dream
+        - generic [ref=f16e1070]: We should be able to picture what you are chasing, in your own words.
+      - generic [ref=f16e1078]:
+        - generic [ref=f16e1079]: A real reason
+        - generic [ref=f16e1080]: Why it matters to you, and what changes for you if it happens.
+      - generic [ref=f16e1088]:
+        - generic [ref=f16e1089]: Proof you have started
+        - generic [ref=f16e1090]: Anything that shows you are already moving — early work, small wins, first tries.
+      - generic [ref=f16e1106]:
+        - generic [ref=f16e1107]: How you tell it
+        - generic [ref=f16e1108]: Whether your story lands, and makes us believe in it as much as you do.
+  - generic [ref=f16e1110]:
+    - generic [ref=f16e1111]:
+      - heading "Frequently asked questions" [level=2] [ref=f16e1112]
+      - paragraph [ref=f16e1113]: Everything students ask before they apply to the amber Dream Fund.
+    - generic [ref=f16e1114]:
+      - generic [ref=f16e1115]:
+        - button [expanded] [ref=f16e1116] [cursor=pointer]:
+          - heading "When can I apply?" [level=3] [ref=f16e1117]
+        - paragraph [ref=f16e1119]: You can apply before 31st Jan 2027
+      - button [ref=f16e1121] [cursor=pointer]:
+        - heading "On what parameters will applicants be judged?" [level=3] [ref=f16e1122]
+      - button [ref=f16e1125] [cursor=pointer]:
+        - heading "What are the eligibility criteria?" [level=3] [ref=f16e1126]
+      - button [ref=f16e1129] [cursor=pointer]:
+        - heading "What do we need from you?" [level=3] [ref=f16e1130]
+      - button [ref=f16e1133] [cursor=pointer]:
+        - heading "What are some easy scholarships to apply for?" [level=3] [ref=f16e1134]
+      - button [ref=f16e1137] [cursor=pointer]:
+        - heading "How do I make my application stand out?" [level=3] [ref=f16e1138]
+      - button [ref=f16e1141] [cursor=pointer]:
+        - heading "Can I get a scholarship without perfect grades?" [level=3] [ref=f16e1142]
+      - button [ref=f16e1145] [cursor=pointer]:
+        - heading "What are the top international scholarships?" [level=3] [ref=f16e1146]
+      - button [ref=f16e1149] [cursor=pointer]:
+        - heading "When will the winners be announced?" [level=3] [ref=f16e1150]
+  - generic [ref=f16e1158]:
+    - generic [ref=f16e1159]:
+      - heading "Fill the form in minutes. amber takes it from there." [level=2] [ref=f16e1160]: Fill the form in minutes.amber takes it from there.
+      - paragraph [ref=f16e1161]: Free to apply. Dreamers backed across 220+ nationalities.
+    - link "Apply Now" [ref=f16e1162] [cursor=pointer]:
+      - /url: /scholarship
+  - generic [ref=f16e1166]:
+    - generic [ref=f16e1167]:
+      - generic [ref=f16e1168]: amber © 2026. All rights reserved.
+      - generic [ref=f16e1170] [cursor=pointer]:
+        - generic:
+          - link:
+            - /url: https://uk.trustpilot.com/review/amberstudent.com
+      - generic [ref=f16e1171]:
+        - generic [ref=f16e1172]:
+          - generic [ref=f16e1173]: Get the app
+          - generic [ref=f16e1174]:
+            - link [ref=f16e1175] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+            - link [ref=f16e1176] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+        - generic [ref=f16e1178]: Payment Options
+    - generic [ref=f16e1181]:
+      - generic [ref=f16e1182]:
+        - generic [ref=f16e1183]: Company
+        - link "About" [ref=f16e1186] [cursor=pointer]:
+          - /url: /about
+        - link "How it works" [ref=f16e1188] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Refer a Friend" [ref=f16e1190] [cursor=pointer]:
+          - /url: /referral-programme
+        - generic [ref=f16e1191]:
+          - link "Group Bookings" [ref=f16e1192] [cursor=pointer]:
+            - /url: /group-booking
+          - generic [ref=f16e1193]: New
+        - generic [ref=f16e1194]:
+          - link "List with us" [ref=f16e1195] [cursor=pointer]:
+            - /url: /list
+          - generic [ref=f16e1196]: New
+        - generic [ref=f16e1197]:
+          - link "Partner with us" [ref=f16e1198] [cursor=pointer]:
+            - /url: /partner
+          - generic [ref=f16e1199]: New
+        - generic [ref=f16e1200]:
+          - link "Universities" [ref=f16e1201] [cursor=pointer]:
+            - /url: /university-partnerships
+          - generic [ref=f16e1202]: New
+        - generic [ref=f16e1203]:
+          - link "Careers" [ref=f16e1204] [cursor=pointer]:
+            - /url: /career
+          - generic [ref=f16e1205]: We are hiring!
+      - generic [ref=f16e1206]:
+        - generic [ref=f16e1207]: Discover
+        - link "Podcast" [ref=f16e1210] [cursor=pointer]:
+          - /url: /podcast
+        - link "Newsroom" [ref=f16e1212] [cursor=pointer]:
+          - /url: /news
+        - link "Amber Plus" [ref=f16e1214] [cursor=pointer]:
+          - /url: /plus
+        - link "Media Mention" [ref=f16e1216] [cursor=pointer]:
+          - /url: /media
+        - link "Ambassador" [ref=f16e1218] [cursor=pointer]:
+          - /url: /ambassador
+        - generic [ref=f16e1219]:
+          - link "Scholarships" [ref=f16e1220] [cursor=pointer]:
+            - /url: /scholarship
+          - generic [ref=f16e1221]: Apply Now
+        - generic [ref=f16e1222]:
+          - link "Exams":
+            - /url: /exams
+          - generic [ref=f16e1223]: New
+    - generic [ref=f16e1224]:
+      - generic [ref=f16e1225]: Support
+      - link "Help Center" [ref=f16e1228] [cursor=pointer]:
+        - /url: /help
+      - link "Contact" [ref=f16e1230] [cursor=pointer]:
+        - /url: /contact
+      - link "T&C" [ref=f16e1232] [cursor=pointer]:
+        - /url: /terms
+      - link "Privacy Policy" [ref=f16e1234] [cursor=pointer]:
+        - /url: /privacy
+      - link "Sitemap" [ref=f16e1236] [cursor=pointer]:
+        - /url: /sitemap
+    - generic [ref=f16e1237]:
+      - generic [ref=f16e1238]: Contact us
+      - link "contact@amberstudent.com" [ref=f16e1239] [cursor=pointer]:
+        - /url: mailto:contact@amberstudent.com
+      - link "WhatsApp" [ref=f16e1243] [cursor=pointer]:
+        - /url: https://wa.me/447888863490
+      - link "+91 8035735724" [ref=f16e1247] [cursor=pointer]:
+        - /url: tel:+918035735724
+      - generic [ref=f16e1251]: "Follow us on:"

@@ -1,0 +1,232 @@
+- generic [ref=f69e3]:
+  - generic [ref=f69e4]:
+    - link "home" [ref=f69e6] [cursor=pointer]:
+      - /url: /news
+    - generic [ref=f69e7]:
+      - button "Search News" [ref=f69e8]
+      - button "menu" [ref=f69e14]
+  - generic [ref=f69e17]:
+    - list [ref=f69e19]:
+      - listitem [ref=f69e20]:
+        - link "Home" [ref=f69e21] [cursor=pointer]:
+          - /url: /
+        - text: /
+      - listitem [ref=f69e22]:
+        - link "News" [ref=f69e23] [cursor=pointer]:
+          - /url: /news
+        - text: /
+      - listitem [ref=f69e24]:
+        - generic: Chinese Students Top the UK Intake as Other Markets Shrink
+    - generic [ref=f69e25]:
+      - generic [ref=f69e26]:
+        - generic [ref=f69e27] [cursor=pointer]
+        - generic [ref=f69e28]:
+          - generic [ref=f69e29]:
+            - link "Global News" [ref=f69e30] [cursor=pointer]:
+              - /url: /news/category/global
+            - generic [ref=f69e31]:
+              - generic [ref=f69e32]: 8 mins
+              - generic [ref=f69e33]: ·
+              - generic [ref=f69e34]: Sep 22, 2026
+          - heading "Chinese Students Top the UK Intake as Other Markets Shrink" [level=1] [ref=f69e36]
+          - generic [ref=f69e37]:
+            - heading "Table of Content" [level=3] [ref=f69e38]
+            - list [ref=f69e39]:
+              - listitem [ref=f69e40] [cursor=pointer]:
+                - link "Domestic Pressure Drives Outbound Mobility" [ref=f69e41]:
+                  - /url: "#domestic-pressure-drives-outbound-mobility"
+              - listitem [ref=f69e42] [cursor=pointer]:
+                - link "Employability Sits at the Centre of the Decision" [ref=f69e43]:
+                  - /url: "#employability-sits-at-the-centre-of-the-decision"
+              - listitem [ref=f69e44] [cursor=pointer]:
+                - link "Industrial Policy Now Shapes Subject Demand" [ref=f69e45]:
+                  - /url: "#industrial-policy-now-shapes-subject-demand"
+              - listitem [ref=f69e46] [cursor=pointer]:
+                - link "Asia Absorbs Chinese Students the Big Four Miss" [ref=f69e47]:
+                  - /url: "#asia-absorbs-chinese-students-the-big-four-miss"
+              - listitem [ref=f69e48] [cursor=pointer]:
+                - link "How Chinese Students Search and Decide" [ref=f69e49]:
+                  - /url: "#how-chinese-students-search-and-decide"
+              - listitem [ref=f69e50] [cursor=pointer]:
+                - link "Onshore Chinese Provision May Pose Challenges" [ref=f69e51]:
+                  - /url: "#onshore-chinese-provision-may-pose-challenges"
+              - listitem [ref=f69e52] [cursor=pointer]:
+                - link "Chinese Student Mobility and UK Housing" [ref=f69e53]:
+                  - /url: "#chinese-student-mobility-and-uk-housing"
+              - listitem [ref=f69e54] [cursor=pointer]:
+                - link "What’s Next?" [ref=f69e55]:
+                  - /url: "#whats-next"
+          - generic [ref=f69e56]:
+            - paragraph [ref=f69e57]: China regained first place in the UK's international intake in the 12 months to June 2026, with 86,368 sponsored study visas granted to main applicants, or 24% of the total, ahead of India at 82,523 and Nigeria at 26,060.
+            - paragraph [ref=f69e58]: With overall study visa grants seeing a dip, Chinese grants fell 15% in the year to March 2026. India's decline was steeper, down 16% in the year to June 2026, alongside a 47% fall for Pakistan. Moreover, China's visa rejection rate stood at 0.4% in Q1 2026 versus 6.7% recorded for India.
+            - paragraph [ref=f69e59]: Tightening compliance thresholds did not have an adverse impact on Chinese student intake as much as other competing source markets. China held its position not by growing but by declining at a slower pace than its competitors. This resilience makes the UK's exposure to China a matter of composition rather than momentum.
+            - paragraph [ref=f69e60]: Meanwhile undergraduate demand displayed a diverging trend. amberRadar's analysis of Universities and Colleges Admissions Service (UCAS) accepted-applicant data released in September 2026 shows Chinese acceptances up 12.7% year-on-year reaching 20,110 students. China accounted for 38% of all net growth despite making up 3.9% of the total UCAS cohort, in a cycle where several established markets contracted.
+            - paragraph [ref=f69e61]: The timing of that demand has shifted as decisively as its volume. Chinese acceptances rose by 6,240 between results day and day 28, up from a gain of 5,460 in 2025. About 31% of Chinese acceptances now land in that window rather than the main cycle, concentrating a substantial share of decisions into a compressed period in which offers are made and accepted quickly.
+            - paragraph [ref=f69e62]: This research note examines that divergence, the changing priorities behind it and the implications for recruitment planning, subject-level exposure and accommodation demand. The UK's position through 2030 will depend less on capturing demand growth than on how closely its offer matches those priorities.
+            - heading [level=2] [ref=f69e63]:
+              - strong [ref=f69e64]: Domestic Pressure Drives Outbound Mobility
+            - paragraph [ref=f69e65]: According to a report from Chinese educational services provider New Oriental, study abroad intent among undergraduate students in China was 63% in 2026, the highest in 12 years. Interestingly, Chinese students from ordinary institutions outside the elite tiers have now become the driving factor behind this trend, accounting for 49% of intent at the higher education stage and 55% at the primary and secondary stage. This growing intent is crucial because it changes where demand originates and how predictably it converts into enrolment.
+            - paragraph [ref=f69e66]: Alongside student intent, parental support plays a significant role in the conversion of this cohort. More than 60% of these parents hold at least a bachelor's degree and over 25% have an overseas returnee background. These families possess the knowledge to guide academic decisions and also the financial means to support the process.
+            - paragraph [ref=f69e67]:
+              - text: Pressure within China's domestic education system is increasingly shaping the drive toward overseas study. Registrations for the national college entrance examination,
+              - emphasis [ref=f69e68]: Gaokao
+              - text: ", fell by 450,000 to 12.9 million in 2026. This was the second consecutive annual decline after eight years of growth, and the steepest on record. Demographics do not account for this drop since this year's candidates were born in 2008, when China's birth rate was still rising. The decline indicates reassessment among families over the viability of a domestic degree in securing a professional advantage."
+            - paragraph [ref=f69e69]: When Chinese students explore options abroad, their choice of destination rests on a clear set of practical considerations. A survey from higher education analysis and service provider, QS, ranked high-quality teaching and being international student friendly as the top two deciding factors among Chinese students choosing a destination country in 2026. This was followed by affordability in cost of studying as well as cost of living. Post-pandemic, tuition fees are also one of the leading drivers in university selection and scholarship provision has also become more pronounced.
+            - paragraph [ref=f69e70]: The average total study-abroad budget reached a 12-year high of CN¥605,000 (~£67,400 at current exchange rates) in 2026, primarily due to a global inflationary spike prompting a rise in tuition and living expenditure. Although lower than its pre-pandemic peak, Chinese demand for overseas education persists despite higher costs, highlighting that families still view it as a long-term investment rather than a discretionary expense.
+            - heading [level=2] [ref=f69e71]:
+              - strong [ref=f69e72]: Employability Sits at the Centre of the Decision
+            - paragraph [ref=f69e73]: Faced with mounting job market pressure, Chinese undergraduates are considering employment outcomes as a pivotal factor while making academic and career choices.
+            - paragraph [ref=f69e74]: China's Ministry of Education projected a record 12.7 million university graduates in 2026, an increase of 480,000 on the 12.22 million who graduated in 2025. Notably, urban youth unemployment stood at a one-year high of 18.9% in August 2026, with the rapid integration and adoption of artificial intelligence (AI) already compressing entry-level administrative and white-collar job openings.
+            - paragraph [ref=f69e75]: The New Oriental report also highlights that about 42% of prospective students intend to build work experience overseas before heading back to China. With graduate roles scarce at home, a period of overseas work lets them convert the degree into a stronger profile and better earnings before competing in the domestic market. Overseas graduates earn an average starting salary of CN¥12,782 against CN¥10,653 for mainland graduates. The average gap of around 20% reveals that a foreign university degree pays off most at the higher end of the market.
+            - heading [level=2] [ref=f69e76]:
+              - strong [ref=f69e77]: Industrial Policy Now Shapes Subject Demand
+            - paragraph [ref=f69e78]: In recent years, subject choices and subsequent demand among Chinese students have increasingly become a function of domestic industrial policy rather than institutional ranking alone.
+            - paragraph [ref=f69e79]: Under a massive reform between 2021 and 2025, Chinese universities closed 12,200 undergraduate programmes deemed oversaturated or obsolete for the future economy, mostly in the arts, humanities and management. Over the same period, the education ministry opened 10,200 courses in AI and emerging technologies in a bid to spearhead digitisation and automation within the economy. Such public spending decisions clearly indicate the fields the state intends to reward on return.
+            - paragraph [ref=f69e80]: Among Chinese students studying in the UK, subject preferences in 2026 centred on business and management at 25%, computing at 11%, creative arts and design at 10%, engineering and technology at 8% and communications and media at 6%.
+            - paragraph [ref=f69e81]: UK provision is concentrated in business and the creative arts and adjacent fields that China has most recently scaled back. The exposure is therefore uneven at subject level in a way that institution-level recruitment planning tends not to capture. Universities could therefore benefit from tracking subject-level supply against current employability priorities in China.
+            - heading [level=2] [ref=f69e82]:
+              - strong [ref=f69e83]: Asia Absorbs Chinese Students the Big Four Miss
+            - paragraph [ref=f69e84]: The destinations competing for Chinese students have widened, with more countries now offering cheaper courses, flexible visa policies and English-language teaching.
+            - paragraph [ref=f69e85]: Asian destinations have seen a considerable jump in Chinese students in recent years. Singapore, Malaysia and Thailand have an edge in terms of proximity, cultural familiarity and lower cost of living. Hong Kong holds a specific spot for mainland Chinese students, pairing internationally ranked university degrees and English-language teaching with closeness to home. Japan and South Korea have also recorded strong enrolment growth, tied to technology, entertainment, design and regional business integration.
+            - paragraph [ref=f69e86]: Malaysia and Thailand largely attract a different, more price-led student cohort. Hong Kong and Singapore tend to compete directly for the same applicants as UK institutions. New Oriental’s report also noted that Hong Kong had overtaken the US as the second most popular sought after destination, with the UK holding first place for a seventh consecutive year.
+            - paragraph [ref=f69e87]: However, the UK's position remains narrowly secure. Chinese student flows are forecast by QS to stay broadly stable at 144,600 in 2030, from 143,200 in 2025. While the growth is minor, this makes the UK the only Big Four destination projected to grow over the period.
+            - heading [level=2] [ref=f69e88]:
+              - strong [ref=f69e89]: How Chinese Students Search and Decide
+            - paragraph [ref=f69e90]: Chinese students research and commit in a more risk-aware manner, favouring flexibility over early commitment to a single destination. University websites, social media, alumni discussions, rankings and study abroad agents all feed into the decision-making process. Several applicants opt for reputable education agencies for a higher success rate and lower trial-and-error costs.
+            - paragraph [ref=f69e91]: QS research on the Chinese student market found 34% of students expect a response to a personal enquiry within 24 hours in 2026, up from 22% in 2022, with tolerance for sluggish responses steadily declining. Applicants also spread their options rather than banking on just one. Only 16% of the surveyed students were considering a single university, while 44% were weighing five or more institutions including 15% looking at more than ten.
+            - paragraph [ref=f69e92]: The same instinct is witnessed in foreign applications as applying to two or more countries is now the norm, most often combining the UK with Hong Kong and the US. This helps reduce policy risk and improves the chances of securing a place.
+            - heading [level=2] [ref=f69e93]:
+              - strong [ref=f69e94]: Onshore Chinese Provision May Pose Challenges
+            - paragraph [ref=f69e95]: A growing share of UK provision now reaches Chinese students without them leaving China.
+            - paragraph [ref=f69e96]: On 25th May 2026, China's Ministry of Education approved 219 new transnational education (TNE) partnerships at undergraduate level and above, the largest round since the pandemic. Joint programmes offering a single degree made up 133, or 61%, with 86 joint institutes spanning multiple disciplines or levels accounting for the remainder. Approvals covered 25 provincial-level regions, excluding only Gansu, Ningxia, Xinjiang, Qinghai and Tibet.
+            - paragraph [ref=f69e97]: UK institutions featured in 50 of these new partnerships. Of these, 80% of partnerships included undergraduate programmes and 38% included postgraduate, against 91% and 35% respectively in the December 2025 round. On the programme model, 8 partnerships require a year of study in the UK before the degree is awarded, while 14 offer a standalone postgraduate option in which only the UK degree is awarded.
+            - paragraph [ref=f69e98]: The shift in TNE postgraduate opportunity is noteworthy. This provision extends the appeal of a UK education to students who cannot or prefer not to relocate, broadening China's engagement with UK institutions even where it does not translate into inbound arrivals. Although such current onshore provisions in China aren’t a complete substitute for inbound mobility to the UK, this could be a potential challenge in future.
+            - heading [level=2] [ref=f69e99]:
+              - strong [ref=f69e100]: Chinese Student Mobility and UK Housing
+            - paragraph [ref=f69e101]: Overall UK sponsored study grants have seen a decline in 2026 with total study visa clearances for all main applicants reaching 131,800 YTD as of July 2026, down 25.9% year-on-year. Despite the signals of a shrinking market, Chinese students are still choosing to study abroad which means UK institutions must now compete for a smaller pool of applicants who weigh tangible priorities more heavily than before.
+            - paragraph [ref=f69e102]: Sponsored-study extensions across all nationalities fell 5% year-on-year to 38,994, yet Chinese nationals remained the largest group extending their stay at 10,716 grants.
+            - paragraph [ref=f69e103]: With study abroad intent broadening beyond China's leading universities and spread unevenly across the country, recruitment is likely to reward a focus on the specific cities where demand is growing rather than broad, nationwide outreach.
+            - paragraph [ref=f69e104]: amberRadar data shows the average advertised rate for Chinese student bookings at £302 per week in August 2026, down 1.7% year-on-year on a same-store basis and broadly unchanged from July 2026. Rates stayed flat even as beds filled up through the sharpest absorption month of the cycle, indicating Purpose Built Student Accommodation (PBSA) operators cleared their stock on volume rather than raising prices.
+            - paragraph [ref=f69e105]: Occupancy is stronger than the pricing trend suggests, reaching 85% in August 2026, up 9.6 percentage points from 75.4% in July as the admission cycle advanced. The variation across cities is where the operational signals lie.
+            - paragraph [ref=f69e106]: "Following were the five largest markets by bed count in August 2026:"
+            - list [ref=f69e107]:
+              - listitem [ref=f69e108]: "Manchester: 89.5%"
+              - listitem [ref=f69e109]: "Nottingham: 88.1%"
+              - listitem [ref=f69e110]: "London: 86.8%"
+              - listitem [ref=f69e111]: "Glasgow: 83.2%"
+              - listitem [ref=f69e112]: "Sheffield: 76.2%"
+            - paragraph [ref=f69e113]: Four of the five largest markets cluster between 83% and 90%, with only Sheffield trailing at 76.2%. At portfolio level, the risk is not a general shortfall but a small number of markets where absorption is lagging the rest.
+            - paragraph [ref=f69e114]: Demand converged on the mid-price band across every configuration, leaving budget and premium stock at the margins. Studios made up 66.8% of Chinese bookings for AY 2026-27 and Ensuite rooms 29.4%, with Non-Ensuite a small remainder.
+            - region [ref=f69e116]:
+              - generic [ref=f69e117]: Chinese Bookings by Price Band and Room Type, AY 2026-27
+              - table [ref=f69e118]:
+                - caption [ref=f69e119]:
+                  - paragraph [ref=f69e120]: amber
+                - rowgroup [ref=f69e121]:
+                  - row [ref=f69e122]:
+                    - columnheader "Room type" [ref=f69e123]
+                    - columnheader "Mid" [ref=f69e126]
+                    - columnheader "Budget" [ref=f69e129]
+                    - columnheader "Premium" [ref=f69e130]
+                - rowgroup [ref=f69e131]:
+                  - row [ref=f69e132]:
+                    - cell "Studio" [ref=f69e133]
+                    - cell "50.1%" [ref=f69e136]
+                    - cell "25.6%" [ref=f69e139]
+                    - cell "24.4%" [ref=f69e141]
+                  - row [ref=f69e143]:
+                    - cell "Ensuite" [ref=f69e144]
+                    - cell "52.9%" [ref=f69e146]
+                    - cell "21.3%" [ref=f69e149]
+                    - cell "25.7%" [ref=f69e151]
+                  - row [ref=f69e153]:
+                    - cell "Non-Ensuite" [ref=f69e154]
+                    - cell "73.8%" [ref=f69e156]
+                    - cell "16.8%" [ref=f69e159]
+                    - cell "9.3%" [ref=f69e160]
+            - paragraph [ref=f69e162]: For PBSA operators and investors, mid-priced Studio and Ensuite options represent the core of Chinese demand.
+            - heading [level=2] [ref=f69e163]:
+              - strong [ref=f69e164]: What’s Next?
+            - paragraph [ref=f69e165]: We expect the UK to retain its lead in attracting Chinese students but in terms of proportion rather than growth volumes. Demand is broadening well beyond China's elite institutions and decision-making is compressing into the post-results window. These will effectively shorten the period in which institutions can influence student choice and potentially shift conversion risk to the end of the cycle. Subject misalignment will remain a key vulnerability, with UK provision weighted towards courses that China has deliberately deprioritised, leaving exposure concentrated in particular disciplines. Hong Kong and onshore TNE, rather than the wider Asian market, will constitute the binding competitive constraint, since both compete for similar applicant cohorts on proximity, cost and credential value. In terms of accommodation, we anticipate demand consolidating in fewer cities, booking curves extending later and mid-priced Studios and Ensuite options underpinning Chinese absorption.
+            - generic [ref=f69e166]:
+              - generic [ref=f69e168]:
+                - link "#Academic" [ref=f69e169] [cursor=pointer]:
+                  - /url: /news/tag/academic
+                - link "#Student Housing" [ref=f69e170] [cursor=pointer]:
+                  - /url: /news/tag/student-housing
+              - generic [ref=f69e171]:
+                - paragraph [ref=f69e172]: Follow us on
+                - generic [ref=f69e173]:
+                  - link [ref=f69e174] [cursor=pointer]:
+                    - /url: https://www.instagram.com/amberstudent/
+                  - link [ref=f69e175] [cursor=pointer]:
+                    - /url: https://www.youtube.com/channel/UCzm8GT3xWuXqQt9O7CFpqJw
+                  - link [ref=f69e176] [cursor=pointer]:
+                    - /url: https://www.tiktok.com/@amberstudent.com
+                  - link [ref=f69e177] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/company/amberstudent
+                  - link [ref=f69e178] [cursor=pointer]:
+                    - /url: https://www.facebook.com/amberstudent
+                  - link [ref=f69e179] [cursor=pointer]:
+                    - /url: https://twitter.com/amberstudent_
+                  - link [ref=f69e180] [cursor=pointer]:
+                    - /url: https://www.pinterest.com/amberstudent/
+      - generic [ref=f69e181]:
+        - generic [ref=f69e182]:
+          - heading "⭐️ FEATURED NEWS" [level=3] [ref=f69e184]
+          - generic [ref=f69e186]:
+            - 'link "UK News Demand Declines Eased, Occupancy Neared 92%: September 2026 Update 8 min read · Oct 1, 2026" [ref=f69e188] [cursor=pointer]':
+              - /url: /news/post/demand-declines-eased-occupancy-climbed-september-2026-update
+              - generic [ref=f69e190]:
+                - generic [ref=f69e191]: UK News
+                - 'heading "Demand Declines Eased, Occupancy Neared 92%: September 2026 Update" [level=4] [ref=f69e192]'
+                - generic [ref=f69e193]:
+                  - generic [ref=f69e194]: 8 min read
+                  - generic [ref=f69e195]: ·
+                  - generic [ref=f69e196]: Oct 1, 2026
+            - link "Asia & Australia News Government Maintains Migration Levels, Boosts International Student Intake in Australia 4 min read · Sep 15, 2025" [ref=f69e199] [cursor=pointer]:
+              - /url: /news/post/government-maintains-migration-levels-boosts-international-student-intake-in-australia
+              - generic [ref=f69e201]:
+                - generic [ref=f69e202]: Asia & Australia News
+                - heading "Government Maintains Migration Levels, Boosts International Student Intake in Australia" [level=4] [ref=f69e203]
+                - generic [ref=f69e204]:
+                  - generic [ref=f69e205]: 4 min read
+                  - generic [ref=f69e206]: ·
+                  - generic [ref=f69e207]: Sep 15, 2025
+            - link "Student Housing Article Amber's UK Student Housing Annual Report (2024-25) 2 mins · Jan 22, 2025" [ref=f69e210] [cursor=pointer]:
+              - /url: /news/post/ambers-uk-student-housing-annual-report-2024-25
+              - generic [ref=f69e212]:
+                - generic [ref=f69e213]: Student Housing Article
+                - heading "Amber's UK Student Housing Annual Report (2024-25)" [level=4] [ref=f69e214]
+                - generic [ref=f69e215]:
+                  - generic [ref=f69e216]: 2 mins
+                  - generic [ref=f69e217]: ·
+                  - generic [ref=f69e218]: Jan 22, 2025
+        - region [ref=f69e220]:
+          - generic [ref=f69e221]:
+            - heading "Stay updated with industry news!" [level=3] [ref=f69e222]
+            - paragraph [ref=f69e223]: Sign up to our monthly newsletters for important updates and market insights on student accommodation.
+          - generic [ref=f69e224]:
+            - generic [ref=f69e225]: Enter your email address
+            - textbox "Enter your email address" [ref=f69e227]
+            - button "Subscribe" [ref=f69e228] [cursor=pointer]
+  - generic [ref=f69e232]:
+    - generic [ref=f69e233]: amber © 2026. All rights reserved.
+    - generic [ref=f69e236] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f69e237]:
+      - generic [ref=f69e238]:
+        - generic [ref=f69e239]: Get the app
+        - generic [ref=f69e240]:
+          - link [ref=f69e241] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f69e242] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f69e244]: Payment Options
+    - generic [ref=f69e247]:
+      - button [ref=f69e249] [cursor=pointer]
+      - button [ref=f69e255] [cursor=pointer]
+      - button [ref=f69e261] [cursor=pointer]
+      - button [ref=f69e267] [cursor=pointer]

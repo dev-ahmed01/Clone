@@ -1,0 +1,304 @@
+- generic [ref=f72e3]:
+  - generic [ref=f72e4]:
+    - link "home" [ref=f72e6] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f72e7]:
+      - button "Search by" [ref=f72e8]
+      - button "menu" [ref=f72e15]
+  - generic [ref=f72e19]:
+    - generic [ref=f72e20]:
+      - button "Australia's Big. Your Budget's Not. Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off. BOOK NOW" [ref=f72e22]:
+        - generic [ref=f72e24]:
+          - generic [ref=f72e25]:
+            - heading "Australia's Big. Your Budget's Not." [level=2] [ref=f72e26]
+            - generic [ref=f72e27]: Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off.
+          - generic [ref=f72e28] [cursor=pointer]: BOOK NOW
+      - button "40% off (3 months of savings) Set your routine and save on skills with coursera plus BOOK NOW" [ref=f72e31]:
+        - generic [ref=f72e33]:
+          - generic [ref=f72e34]:
+            - heading "40% off (3 months of savings)" [level=2] [ref=f72e35]
+            - generic [ref=f72e36]: Set your routine and save on skills with coursera plus
+          - generic [ref=f72e37] [cursor=pointer]: BOOK NOW
+      - button "Your AI Study Buddy for Life Abroad SciSpace makes lit reviews, assignments & thesis drafts easy. Use ATAMBER35 for 35% off Premium & Advanced. Claim your 35%" [ref=f72e40]:
+        - generic [ref=f72e42]:
+          - generic [ref=f72e43]:
+            - heading "Your AI Study Buddy for Life Abroad" [level=2] [ref=f72e44]
+            - generic [ref=f72e45]: SciSpace makes lit reviews, assignments & thesis drafts easy. Use ATAMBER35 for 35% off Premium & Advanced.
+          - generic [ref=f72e46] [cursor=pointer]: Claim your 35%
+      - button "Practice Smarter. Interview with Confidence. AI-powered visa interview practice designed to help students prepare, build confidence, and get ready for their US F-1 visa interview. Book now" [ref=f72e49]:
+        - generic [ref=f72e51]:
+          - generic [ref=f72e52]:
+            - heading "Practice Smarter. Interview with Confidence." [level=2] [ref=f72e53]
+            - generic [ref=f72e54]: AI-powered visa interview practice designed to help students prepare, build confidence, and get ready for their US F-1 visa interview.
+          - generic [ref=f72e55] [cursor=pointer]: Book now
+      - 'button "Affordable flights, booked at short notice. Top destinations and best prices: The flight deals radar is updated weekly. Grab a deal and book your next adventure Check price" [ref=f72e58]':
+        - generic [ref=f72e60]:
+          - generic [ref=f72e61]:
+            - heading "Affordable flights, booked at short notice." [level=2] [ref=f72e62]
+            - generic [ref=f72e63]: "Top destinations and best prices: The flight deals radar is updated weekly. Grab a deal and book your next adventure"
+          - generic [ref=f72e64] [cursor=pointer]: Check price
+      - button "Get the Right Education Loan Faster Assess your profile across 20+ lenders, compare loan options, access lower fees and get faster approval support. Check offers" [ref=f72e67]:
+        - generic [ref=f72e69]:
+          - generic [ref=f72e70]:
+            - heading "Get the Right Education Loan Faster" [level=2] [ref=f72e71]
+            - generic [ref=f72e72]: Assess your profile across 20+ lenders, compare loan options, access lower fees and get faster approval support.
+          - generic [ref=f72e73] [cursor=pointer]: Check offers
+      - button "Get 100GB data for only £10 a month Student exclusive Learn more" [ref=f72e76]:
+        - generic [ref=f72e78]:
+          - generic [ref=f72e79]:
+            - heading "Get 100GB data for only £10 a month" [level=2] [ref=f72e80]
+            - generic [ref=f72e81]: Student exclusive
+          - generic [ref=f72e82] [cursor=pointer]: Learn more
+      - 'button "50% off your first Degusta Box! Your surprise foodie box for only £7.49, you''ll get: - Free delivery - Flexible subscription - Spend less and taste more! Get now" [ref=f72e85]':
+        - generic [ref=f72e87]:
+          - generic [ref=f72e88]:
+            - heading "50% off your first Degusta Box!" [level=2] [ref=f72e89]
+            - generic [ref=f72e90]: "Your surprise foodie box for only £7.49, you'll get: - Free delivery - Flexible subscription - Spend less and taste more!"
+          - generic [ref=f72e91] [cursor=pointer]: Get now
+      - button "Move Money Globally with Ease Your finance app to get multi-currency virtual accounts and stablecoins for easy swaps and speedy/quick transfers Sign up with code AMBER → Get started now" [ref=f72e94]:
+        - generic [ref=f72e96]:
+          - generic [ref=f72e97]:
+            - heading "Move Money Globally with Ease" [level=2] [ref=f72e98]
+            - generic [ref=f72e99]: Your finance app to get multi-currency virtual accounts and stablecoins for easy swaps and speedy/quick transfers Sign up with code AMBER →
+          - generic [ref=f72e100] [cursor=pointer]: Get started now
+      - button "Travel connected, without the roaming fees. Get a Nomad eSIM with fast 4G/5G data in 200+ destinations, easy setup, and flexible data plans. Get 22% OFF with code AMBERSTUDENT22. Claim 22% OFF" [ref=f72e103]:
+        - generic [ref=f72e105]:
+          - generic [ref=f72e106]:
+            - heading "Travel connected, without the roaming fees." [level=2] [ref=f72e107]
+            - generic [ref=f72e108]: Get a Nomad eSIM with fast 4G/5G data in 200+ destinations, easy setup, and flexible data plans. Get 22% OFF with code AMBERSTUDENT22.
+          - generic [ref=f72e109] [cursor=pointer]: Claim 22% OFF
+      - button "Abroad and unlimited, from day one. One eSIM, unlimited data in 165+countries, install once, add plans as you go, specialprice with code AMBER20. Claim 20% OFF" [ref=f72e112]:
+        - generic [ref=f72e114]:
+          - generic [ref=f72e115]:
+            - heading "Abroad and unlimited, from day one." [level=2] [ref=f72e116]
+            - generic [ref=f72e117]: One eSIM, unlimited data in 165+countries, install once, add plans as you go, specialprice with code AMBER20.
+          - generic [ref=f72e118] [cursor=pointer]: Claim 20% OFF
+      - 'button "Up to $251 across 8 HelloFresh boxes! Moving to Australia? Study hard, eat well! Get fresh Aussie ingredients & easy recipes delivered. Use code: HELLOAMBERPLUS Save now" [ref=f72e121]':
+        - generic [ref=f72e123]:
+          - generic [ref=f72e124]:
+            - heading "Up to $251 across 8 HelloFresh boxes!" [level=2] [ref=f72e125]
+            - generic [ref=f72e126]: "Moving to Australia? Study hard, eat well! Get fresh Aussie ingredients & easy recipes delivered. Use code: HELLOAMBERPLUS"
+          - generic [ref=f72e127] [cursor=pointer]: Save now
+      - button "Unlimited internet for students abroad Stay connected wherever you study with Holafly Plans eSIM. Enjoy unlimited internet at a special price with code AMBERSTUDENT. Claim your 15% discount" [ref=f72e130]:
+        - generic [ref=f72e132]:
+          - generic [ref=f72e133]:
+            - heading "Unlimited internet for students abroad" [level=2] [ref=f72e134]
+            - generic [ref=f72e135]: Stay connected wherever you study with Holafly Plans eSIM. Enjoy unlimited internet at a special price with code AMBERSTUDENT.
+          - generic [ref=f72e136] [cursor=pointer]: Claim your 15% discount
+      - button "Book Your Dream Flight with MakeMyTrip! Use Code MMTAMBER to Get 7% Instant Discount on International Flights Book Now!" [ref=f72e139]:
+        - generic [ref=f72e141]:
+          - generic [ref=f72e142]:
+            - heading "Book Your Dream Flight with MakeMyTrip!" [level=2] [ref=f72e143]
+            - generic [ref=f72e144]: Use Code MMTAMBER to Get 7% Instant Discount on International Flights
+          - generic [ref=f72e145] [cursor=pointer]: Book Now!
+      - button "Make yourself career ready for part-time jobs Your pathway to part-time employment and enjoy an exclusive 10% discount. Claim your 10% discount" [ref=f72e148]:
+        - generic [ref=f72e150]:
+          - generic [ref=f72e151]:
+            - heading "Make yourself career ready for part-time jobs" [level=2] [ref=f72e152]
+            - generic [ref=f72e153]: Your pathway to part-time employment and enjoy an exclusive 10% discount.
+          - generic [ref=f72e154] [cursor=pointer]: Claim your 10% discount
+      - button "Stream safe. Save 80% today Watch what you love anywhere with fast, private browsing. Now only $2.49/mo + 4 bonus months. Claim now" [ref=f72e157]:
+        - generic [ref=f72e159]:
+          - generic [ref=f72e160]:
+            - heading "Stream safe. Save 80% today" [level=2] [ref=f72e161]
+            - generic [ref=f72e162]: Watch what you love anywhere with fast, private browsing. Now only $2.49/mo + 4 bonus months.
+          - generic [ref=f72e163] [cursor=pointer]: Claim now
+      - 'button "Special Gifts: Free eSIM and 10% off Enjoy fast and reliable mobile internet in 200+ destinations. Get 500MB free data + 10% off your first Ubigi eSIM plan! Get Now" [ref=f72e166]':
+        - generic [ref=f72e168]:
+          - generic [ref=f72e169]:
+            - 'heading "Special Gifts: Free eSIM and 10% off" [level=2] [ref=f72e170]'
+            - generic [ref=f72e171]: Enjoy fast and reliable mobile internet in 200+ destinations. Get 500MB free data + 10% off your first Ubigi eSIM plan!
+          - generic [ref=f72e172] [cursor=pointer]: Get Now
+      - button "Stay connected when abroad Low costs mobile internet - prevent high roaming costs! Get it now!" [ref=f72e175]:
+        - generic [ref=f72e177]:
+          - generic [ref=f72e178]:
+            - heading "Stay connected when abroad" [level=2] [ref=f72e179]
+            - generic [ref=f72e180]: Low costs mobile internet - prevent high roaming costs!
+          - generic [ref=f72e181] [cursor=pointer]: Get it now!
+      - button "Get Apple TV+ & Apple Music for Students Enjoy a special rate of $5.99/mo. with Apple Music Student, as well as free access to Apple TV+. Sign Up Now" [ref=f72e184]:
+        - generic [ref=f72e186]:
+          - generic [ref=f72e187]:
+            - heading "Get Apple TV+ & Apple Music for Students" [level=2] [ref=f72e188]
+            - generic [ref=f72e189]: Enjoy a special rate of $5.99/mo. with Apple Music Student, as well as free access to Apple TV+.
+          - generic [ref=f72e190] [cursor=pointer]: Sign Up Now
+      - button "Australia's Big. Your Budget's Not. Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off. BOOK NOW" [ref=f72e193]:
+        - generic [ref=f72e195]:
+          - generic [ref=f72e196]:
+            - heading "Australia's Big. Your Budget's Not." [level=2] [ref=f72e197]
+            - generic [ref=f72e198]: Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off.
+          - generic [ref=f72e199] [cursor=pointer]: BOOK NOW
+      - button "40% off (3 months of savings) Set your routine and save on skills with coursera plus BOOK NOW" [ref=f72e202]:
+        - generic [ref=f72e204]:
+          - generic [ref=f72e205]:
+            - heading "40% off (3 months of savings)" [level=2] [ref=f72e206]
+            - generic [ref=f72e207]: Set your routine and save on skills with coursera plus
+          - generic [ref=f72e208] [cursor=pointer]: BOOK NOW
+    - generic:
+      - img [ref=f72e210] [cursor=pointer]
+      - img [ref=f72e212] [cursor=pointer]
+  - generic [ref=f72e254]:
+    - heading "Browse By Categories" [level=2] [ref=f72e255]
+    - generic [ref=f72e256]:
+      - button "Student Flight Booking" [ref=f72e257]
+      - button "Food & Lifestyle" [ref=f72e259]
+      - button "Student Guarantor" [ref=f72e261]
+      - button "Overseas SIM Card" [ref=f72e263]
+      - button "Airport Pickup" [ref=f72e265]
+      - button "Forex & Remittances" [ref=f72e267]
+      - button "Student Bank Account" [ref=f72e269]
+      - button "Student Loan" [ref=f72e271]
+      - button "Courses & Internships" [ref=f72e273]
+      - button "Student Wellness" [ref=f72e275]
+      - button "Luggage Shipping" [ref=f72e277]
+      - button "Student Essentials Kit" [ref=f72e279]
+  - generic [ref=f72e282]:
+    - heading "Best Deals" [level=2] [ref=f72e283]
+    - generic [ref=f72e284]:
+      - generic [ref=f72e285]:
+        - generic [ref=f72e288]:
+          - generic [ref=f72e289]:
+            - generic [ref=f72e290]: Get 100GB data for only £10 a month
+            - generic [ref=f72e291]: Student exclusive
+          - button "Claim Now" [ref=f72e292] [cursor=pointer]
+        - generic [ref=f72e295]:
+          - generic [ref=f72e296]:
+            - generic [ref=f72e297]: Affordable flights, booked at short notice.
+            - generic [ref=f72e298]: "Top destinations and best prices: The flight deals radar is updated weekly. Grab a deal and book your next adventure"
+          - button "Claim Now" [ref=f72e299] [cursor=pointer]
+        - generic [ref=f72e302]:
+          - generic [ref=f72e303]:
+            - generic [ref=f72e304]: Get the Right Education Loan Faster
+            - generic [ref=f72e305]: Assess your profile across 20+ lenders, compare loan options, access lower fees and get faster approval support.
+          - button "Claim Now" [ref=f72e306] [cursor=pointer]
+        - generic [ref=f72e309]:
+          - generic [ref=f72e310]:
+            - generic [ref=f72e311]: Your AI Study Buddy for Life Abroad
+            - generic [ref=f72e312]: SciSpace makes lit reviews, assignments & thesis drafts easy. Use ATAMBER35 for 35% off Premium & Advanced.
+          - button "Claim Now" [ref=f72e313] [cursor=pointer]
+        - generic [ref=f72e316]:
+          - generic [ref=f72e317]:
+            - generic [ref=f72e318]: Move Money Globally with Ease
+            - generic [ref=f72e319]: Your finance app to get multi-currency virtual accounts and stablecoins for easy swaps and speedy/quick transfers Sign up with code AMBER →
+          - button "Claim Now" [ref=f72e320] [cursor=pointer]
+        - generic [ref=f72e323]:
+          - generic [ref=f72e324]:
+            - generic [ref=f72e325]: 40% off (3 months of savings)
+            - generic [ref=f72e326]: Set your routine and save on skills with coursera plus
+          - button "Claim Now" [ref=f72e327] [cursor=pointer]
+        - generic [ref=f72e330]:
+          - generic [ref=f72e331]:
+            - generic [ref=f72e332]: Up to $251 across 8 HelloFresh boxes!
+            - generic [ref=f72e333]: "Moving to Australia? Study hard, eat well! Get fresh Aussie ingredients & easy recipes delivered. Use code: HELLOAMBERPLUS"
+          - button "Claim Now" [ref=f72e334] [cursor=pointer]
+        - generic [ref=f72e337]:
+          - generic [ref=f72e338]:
+            - generic [ref=f72e339]: 50% off your first Degusta Box!
+            - generic [ref=f72e340]: "Your surprise foodie box for only £7.49, you'll get: - Free delivery - Flexible subscription - Spend less and taste more!"
+          - button "Claim Now" [ref=f72e341] [cursor=pointer]
+        - generic [ref=f72e344]:
+          - generic [ref=f72e345]:
+            - generic [ref=f72e346]: Travel connected, without the roaming fees.
+            - generic [ref=f72e347]: Get a Nomad eSIM with fast 4G/5G data in 200+ destinations, easy setup, and flexible data plans. Get 22% OFF with code AMBERSTUDENT22.
+          - button "Claim Now" [ref=f72e348] [cursor=pointer]
+        - generic [ref=f72e351]:
+          - generic [ref=f72e352]:
+            - generic [ref=f72e353]: Abroad and unlimited, from day one.
+            - generic [ref=f72e354]: One eSIM, unlimited data in 165+countries, install once, add plans as you go, specialprice with code AMBER20.
+          - button "Claim Now" [ref=f72e355] [cursor=pointer]
+        - generic [ref=f72e358]:
+          - generic [ref=f72e359]:
+            - generic [ref=f72e360]: Unlimited internet for students abroad
+            - generic [ref=f72e361]: Stay connected wherever you study with Holafly Plans eSIM. Enjoy unlimited internet at a special price with code AMBERSTUDENT.
+          - button "Claim Now" [ref=f72e362] [cursor=pointer]
+        - generic [ref=f72e365]:
+          - generic [ref=f72e366]:
+            - generic [ref=f72e367]: Stay connected when abroad
+            - generic [ref=f72e368]: Low costs mobile internet - prevent high roaming costs!
+          - button "Claim Now" [ref=f72e369] [cursor=pointer]
+        - generic [ref=f72e372]:
+          - generic [ref=f72e373]:
+            - generic [ref=f72e374]: Up to 30% Student Discounts on Flights
+            - generic [ref=f72e375]: Students in the UK can save up to £20 on flights worldwide with Trip.com! Use code EUFLEG.
+          - button "Claim Now" [ref=f72e376] [cursor=pointer]
+        - generic [ref=f72e379]:
+          - generic [ref=f72e380]:
+            - generic [ref=f72e381]: "Special Gifts: Free eSIM and 10% off"
+            - generic [ref=f72e382]: Enjoy fast and reliable mobile internet in 200+ destinations. Get 500MB free data + 10% off your first Ubigi eSIM plan!
+          - button "Claim Now" [ref=f72e383] [cursor=pointer]
+        - generic [ref=f72e386]:
+          - generic [ref=f72e387]:
+            - generic [ref=f72e388]: Up to 15% off airport transfers
+            - generic [ref=f72e389]: 182+ countries · 2,600 airports · One Platform
+          - button "Claim Now" [ref=f72e390] [cursor=pointer]
+        - generic [ref=f72e393]:
+          - generic [ref=f72e394]:
+            - generic [ref=f72e395]: Stream safe. Save 80% today
+            - generic [ref=f72e396]: Watch what you love anywhere with fast, private browsing. Now only $2.49/mo + 4 bonus months.
+          - button "Claim Now" [ref=f72e397] [cursor=pointer]
+        - generic [ref=f72e400]:
+          - generic [ref=f72e401]:
+            - generic [ref=f72e402]: Renting Made Easy And Secure!
+            - generic [ref=f72e403]: Find the most reliable UK-based rent guarantor for students and unlock exclusive discounts!
+          - button "Claim Now" [ref=f72e404] [cursor=pointer]
+        - generic [ref=f72e407]:
+          - generic [ref=f72e408]:
+            - generic [ref=f72e409]: Australia's Big. Your Budget's Not.
+            - generic [ref=f72e410]: Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off.
+          - button "Claim Now" [ref=f72e411] [cursor=pointer]
+      - generic [ref=f72e412] [cursor=pointer]
+  - generic [ref=f72e416]:
+    - generic [ref=f72e417]:
+      - heading "Our Partners" [level=2] [ref=f72e418]
+      - generic [ref=f72e419]: Amber+ partners are well-ranked and trusted. You can get worldwide luggage shipping from your doorstep to your study abroad destination; our trusted.
+    - button "Partner with us" [ref=f72e721] [cursor=pointer]
+  - generic [ref=f72e724]:
+    - heading "Explore Countless Student Benefits" [level=2] [ref=f72e725]
+    - generic [ref=f72e726]: Unlock a world of exclusive student discounts with Amber+ and enjoy amazing deals on food, tech, travel, fashion, and more. With unbeatable exclusive student offers and savings right at your fingertips, Amber Plus is here to make your student life easier and more enjoyable.Explore the Amber+ student deals on various services and start saving on everything that matters to you, from everyday essentials to unique experiences!
+  - generic [ref=f72e728]:
+    - generic [ref=f72e729]:
+      - heading "Why amber+?" [level=2] [ref=f72e730]
+      - generic [ref=f72e731]: "Amber+ gives you access to exclusive student deals and unbeatable perks all in one place, making your university experience more affordable and enjoyable. Here’s how:"
+    - generic [ref=f72e732]:
+      - generic [ref=f72e735]:
+        - heading "Exclusive Student Offers" [level=3] [ref=f72e736]
+        - generic [ref=f72e737]: Save big on essentials like food, tech, and fashion with our student-only deals.
+      - generic [ref=f72e741]:
+        - heading "Big Brand Names" [level=3] [ref=f72e742]
+        - generic [ref=f72e743]: Enjoy discounted and affordable deals on popular big brands only with Amber Plus!
+      - generic [ref=f72e747]:
+        - heading "Convenient and hassle-free" [level=3] [ref=f72e748]
+        - generic [ref=f72e749]: Access your favourite student deals and discounts in one easy platform.
+  - generic [ref=f72e753]:
+    - heading "Frequently Asked Questions (FAQs)" [level=2] [ref=f72e754]
+    - generic [ref=f72e755]:
+      - generic [ref=f72e756]:
+        - heading "How do I get exclusive discounts offered by amber plus partners?" [level=3] [ref=f72e757] [cursor=pointer]
+        - generic [ref=f72e758] [cursor=pointer]
+      - generic [ref=f72e763]:
+        - heading "What additional benefits do I get from amber plus?" [level=3] [ref=f72e764] [cursor=pointer]
+        - generic [ref=f72e765] [cursor=pointer]
+      - generic [ref=f72e770]:
+        - heading "Is there any cost to use amber plus?" [level=3] [ref=f72e771] [cursor=pointer]
+        - generic [ref=f72e772] [cursor=pointer]
+    - button "Show More (3)" [ref=f72e777] [cursor=pointer]:
+      - button [ref=f72e778]
+  - generic [ref=f72e785]:
+    - generic [ref=f72e786]: amber © 2026. All rights reserved.
+    - generic [ref=f72e789] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f72e790]:
+      - generic [ref=f72e791]:
+        - generic [ref=f72e792]: Get the app
+        - generic [ref=f72e793]:
+          - link [ref=f72e794] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f72e795] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f72e797]: Payment Options
+    - generic [ref=f72e800]:
+      - button [ref=f72e802] [cursor=pointer]
+      - button [ref=f72e808] [cursor=pointer]
+      - button [ref=f72e814] [cursor=pointer]
+      - button [ref=f72e820] [cursor=pointer]

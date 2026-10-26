@@ -1,0 +1,43 @@
+{
+  "recheckDate": "2026-10-23",
+  "videoAligned": [
+    {
+      "state": "listing.grid",
+      "result": "Grid toggle applied; searchList-module__gridView observed; URL unchanged",
+      "evidence": "screenshots/listing-grid-1440x900.png"
+    },
+    {
+      "state": "listing.university.open",
+      "result": "Search University textbox and scrollable school list observed; no school selected",
+      "evidence": "screenshots/listing-university-open-1440x900.png",
+      "geometry": {
+        "x": 379.1875,
+        "y": 177.3333,
+        "width": 375,
+        "height": 354,
+        "padding": "16px 16px 0px"
+      }
+    },
+    {
+      "state": "listing.filter.bills",
+      "result": "Bills Included drawer tab exposed Wifi, Electricity, Water, Heating, Gas, Content Insurance, Gym, Utilities, Maintenance and Cleaning Service pills; no selection applied",
+      "evidence": "screenshots/listing-filter-bills-1440x900.png",
+      "previewCount": 226
+    },
+    {
+      "state": "home.search.suggestions",
+      "result": "London autocomplete opened after a short wait; city, locality, university and property categories observed; no suggestion selected",
+      "evidence": "screenshots/home-search-suggestions-verified-1440x900.jpg"
+    },
+    {
+      "state": "listing.sort.open",
+      "result": "Exact-size replacement capture",
+      "evidence": "screenshots/listing-sort-open-verified-1440x900.jpg"
+    }
+  ],
+  "nonSubmission": {
+    "credentialsEntered": false,
+    "formsSubmitted": false,
+    "transactionsSubmitted": false
+  }
+}

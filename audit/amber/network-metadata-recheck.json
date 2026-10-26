@@ -1,0 +1,71 @@
+{
+  "scope": "Chrome DevTools MCP home reload and Playwright listing interaction; only browser-visible public request metadata",
+  "redaction": "Query strings, cookies, authentication headers, request/response bodies and tracking IDs intentionally omitted",
+  "homeDocument": {
+    "method": "GET",
+    "host": "amberstudent.com",
+    "path": "/",
+    "status": 200,
+    "responseHeaders": {
+      "cache-control": "public, max-age=0, s-maxage=14400, stale-while-revalidate=345600",
+      "content-encoding": "br",
+      "content-type": "text/html; charset=utf-8",
+      "server": "CloudFront",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "vary": "app-language,app-currency,is-app,Accept-Encoding",
+      "x-cache": "Hit from cloudfront"
+    }
+  },
+  "observedApi": [
+    {
+      "method": "GET",
+      "host": "base.amberstudent.com",
+      "path": "/api/v1/inventories",
+      "status": 200,
+      "contentType": "application/json",
+      "cacheControl": "public, max-age=0, s-maxage=900, stale-while-revalidate=86400"
+    },
+    {
+      "method": "GET",
+      "host": "base.amberstudent.com",
+      "path": "/api/v1/regions/search_suggestions",
+      "status": 304,
+      "note": "Cached response on reload; autocomplete options verified in UI after entering London."
+    },
+    {
+      "method": "GET",
+      "host": "cms.amberstudent.com",
+      "path": "/api/amberplus-homepage-featured",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "host": "base.amberstudent.com",
+      "path": "/api/v0/regions/search_config",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "host": "amberstudent.com",
+      "path": "/api/log-web-vitals",
+      "status": 200
+    }
+  ],
+  "sampleWindow": {
+    "xhrFetchEntries": 35,
+    "statusCounts": {
+      "200": 24,
+      "202": 2,
+      "204": 7,
+      "304": 1,
+      "pending": 1
+    },
+    "note": "Transient snapshot of a single home reload; counts are not site-wide."
+  },
+  "limitations": [
+    "No credentialed endpoints or protected responses inspected",
+    "No request/response bodies stored",
+    "No HAR, WebSocket, initiator-chain or service-worker audit",
+    "Analytics and marketing requests are sampled, not comprehensively enumerated"
+  ]
+}

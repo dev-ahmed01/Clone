@@ -1,0 +1,79 @@
+- generic [ref=f52e3]:
+  - navigation [ref=f52e4]:
+    - generic [ref=f52e5]:
+      - generic [ref=f52e6]:
+        - button "" [ref=f52e8] [cursor=pointer]
+        - combobox [ref=f52e11]:
+          - generic [ref=f52e13]:
+            - generic [ref=f52e14]:
+              - generic [ref=f52e15]: Search by
+              - generic [ref=f52e16]: City
+              - generic [ref=f52e17]: University
+              - generic [ref=f52e18]: Property
+              - generic [ref=f52e19]: City, University or Property
+            - button "search" [ref=f52e20] [cursor=pointer]:
+              - generic [ref=f52e21]: 
+      - button "" [ref=f52e22] [cursor=pointer]
+  - banner:      
+  - heading "About Us" [level=1] [ref=f52e27]
+  - generic [ref=f52e31]:
+    - link "Mission" [ref=f52e33] [cursor=pointer]:
+      - /url: "#section-mission"
+    - link "Approach" [ref=f52e35] [cursor=pointer]:
+      - /url: "#section-approach"
+    - link "Get in Touch" [ref=f52e37] [cursor=pointer]:
+      - /url: /contact
+  - generic [ref=f52e38]:
+    - generic [ref=f52e40]:
+      - heading "Borders are the worst thing to happen to humanity after natural calamities" [level=4] [ref=f52e41]
+      - paragraph [ref=f52e42]: Imagine a world without borders. The world looks a lot more unified on old maps. Maps of today look more like mosaics, like the fragile Earth fell off a shelf and had to have its broken bits pieced back together.
+      - heading "We believe in a border-free world!" [level=4] [ref=f52e43]
+    - paragraph [ref=f52e46]: Every year millions of people leave their home country and move to foreign land for work, education and business
+    - paragraph [ref=f52e49]: All face multiple problems ranging from cultural integration to logistics to regulatory problems
+    - paragraph [ref=f52e52]: Amber solves house hunting and booking problem for 80M students crossing geographies every year
+  - generic [ref=f52e53]:
+    - generic [ref=f52e54]:
+      - heading "Our Approach" [level=4] [ref=f52e55]
+      - paragraph [ref=f52e56]: Amber is a long-term accommodation booking platform for students. We help 80M students worldwide, find and book full-time accommodations near their universities, without the hassle of negotiation, non-standardized and cumbersome paperwork, and broken payment process.
+    - generic [ref=f52e58]:
+      - generic [ref=f52e60]:
+        - generic [ref=f52e61]: 
+        - heading "Easy search" [level=4] [ref=f52e63]
+        - paragraph [ref=f52e64]: Search from a wide-selection of accommodations that fit your preferences.
+      - generic [ref=f52e66]:
+        - generic [ref=f52e67]: 
+        - heading "No negotiation" [level=4] [ref=f52e69]
+        - paragraph [ref=f52e70]: See rent upfront. No need to negotiate. Save your time and effort.
+      - generic [ref=f52e72]:
+        - generic [ref=f52e73]: 
+        - heading "Hassle-free paperwork" [level=4] [ref=f52e75]
+        - paragraph [ref=f52e76]: Forget irritating paperwork. Complete your booking seamlessly.
+  - generic [ref=f52e79]:
+    - generic [ref=f52e80]:
+      - img "amber-text" [ref=f52e81]
+      - generic [ref=f52e82]: amber © 2026 All rights reserved.
+    - generic [ref=f52e83] [cursor=pointer]:
+      - generic:
+        - generic:
+          - link:
+            - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f52e84]:
+      - generic [ref=f52e85]:
+        - generic [ref=f52e86]: Get the app
+        - generic [ref=f52e87]:
+          - link [ref=f52e88] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+            - img "play store" [ref=f52e89]
+          - link [ref=f52e90] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+            - img "app store" [ref=f52e91]
+      - generic [ref=f52e93]:
+        - generic [ref=f52e94]: Payment Options
+        - img "payment-partners" [ref=f52e96]
+    - generic [ref=f52e97]:
+      - button "Company" [ref=f52e99] [cursor=pointer]
+      - button "Discover" [ref=f52e106] [cursor=pointer]
+      - button "Support" [ref=f52e113] [cursor=pointer]
+      - generic [ref=f52e119]:
+        - button "Contact us" [ref=f52e120] [cursor=pointer]
+        - text:  

@@ -1,0 +1,126 @@
+- generic [ref=f40e4]:
+  - navigation [ref=f40e5]:
+    - link [ref=f40e6] [cursor=pointer]:
+      - /url: /
+    - button "Open menu" [ref=f40e8] [cursor=pointer]
+  - generic [ref=f40e12]:
+    - heading "Terms and Conditions" [level=1] [ref=f40e14]
+    - paragraph [ref=f40e15]: The terms that apply when you browse, enquire or book through amber
+  - generic [ref=f40e17]:
+    - generic [ref=f40e18]:
+      - paragraph [ref=f40e19]: TERMS AND CONDITIONS OF WEBSITE USE
+      - paragraph [ref=f40e20]:
+        - text: These terms of use (together with the documents referred to in them) tell you the terms of use on which you may use or access
+        - link "www.amberstudent.com" [ref=f40e21] [cursor=pointer]:
+          - /url: https://www.amberstudent.com
+        - text: ", a subdomain or any such related websites and/or mobile application for such website (our “Sites”) whether as a guest or registered user. Use of our Sites includes accessing, browsing or registering for an account. If you log in to our Sites through a third party such as Facebook, Google etc. then you will be bound by these terms when you reach our Site."
+      - paragraph [ref=f40e22]: Please read and accept these terms of use carefully before using our Sites, as these will apply to your use of our Sites.
+    - paragraph [ref=f40e24]: If you do not agree to these terms of use, you must not use our Sites.
+    - generic [ref=f40e26]:
+      - heading "1. Other Applicable Terms" [level=2] [ref=f40e27]
+      - paragraph [ref=f40e28]: These terms of use refer to the following additional terms, which also apply to your use of our Sites.
+    - generic [ref=f40e29]:
+      - heading "2. Information about us" [level=2] [ref=f40e30]
+      - paragraph [ref=f40e31]:
+        - text: Our Site is operated by
+        - strong [ref=f40e32]: Amber Internet solutions Inc.
+        - text: "With the registered office at 40 E Main St #1215 Newark DE, USA"
+    - generic [ref=f40e33]:
+      - heading "3. Accessing our Sites" [level=2] [ref=f40e34]
+      - paragraph [ref=f40e35]: We do not guarantee that our Sites, or any content on them, will always be available or be uninterrupted. Access to our Sites is permitted on a temporary basis. We may suspend, withdraw, discontinue or change all or any part of our Sites without notice. We will not be liable to you if for any reason our Sites are unavailable at any time or for any period.
+      - paragraph [ref=f40e36]: You are responsible for making all arrangements necessary for you to have access to our Sites.
+      - paragraph [ref=f40e37]: You are also responsible for ensuring that any persons with access to our Sites through your internet connection are aware of these terms of use and the other applicable terms and conditions listed above, and that they comply with them.
+    - generic [ref=f40e38]:
+      - heading "4. Your account and password" [level=2] [ref=f40e39]
+      - paragraph [ref=f40e40]: In order to register for an account on our Sites you must be aged 18 or over at the point of registration or be 13 or older and have your parent or guardian's consent to register for an account on our Sites. You must (or your parent or guardian acting on your behalf) have the power to enter a binding contract with us and not be barred from doing so under any applicable laws.
+      - paragraph [ref=f40e41]: If you choose, or you are provided with, any user identification code, password or any other piece of information as part of our security procedures to set up an account, you must treat such information as confidential. You must not disclose it to any third party.
+      - paragraph [ref=f40e42]: We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our reasonable opinion you have failed to comply with applicable law or any of the provisions of these terms of use and/or if we believe that your account is being used in an unauthorised or fraudulent manner.
+      - paragraph [ref=f40e43]:
+        - text: If you know or suspect that anyone other than you knows your user identification code or password you must promptly notify us at
+        - link "contact@amberstudent.com" [ref=f40e44] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: . Following such notification you may be required to set up a new account with a new identification code and/or password.
+    - generic [ref=f40e45]:
+      - heading "5. Agreements between Users of Our Sites" [level=2] [ref=f40e46]
+      - paragraph [ref=f40e47]: Our Sites allow property owners and managers to advertise their properties (each, an “Advertiser”) to potential student tenants (each, a “Student”).
+      - paragraph [ref=f40e48]: You may use the Sites as a guest user or a registered user. Once you have discovered a property that best suits your needs, you can make an enquiry and complete the booking request form. The booking request form includes your name, email address, phone number and information concerning the length of stay. No payment details are required at this stage and there is no commitment to rent a room. Your allocated booking consultant will then contact you to confirm and discuss the accommodation type that you require. Contact may be made via email, call, whatsapp. We do not own or manage, nor do we contract for, any rental property listed on our Sites. We will not be a party to any agreement between an Advertiser and a Student. The terms of any agreement entered into between an Advertiser and a Student may vary from Advertiser to Advertiser. It is your responsibility to review and agree to an Advertiser's specific terms including the Advertiser's terms relating to payments and cancellations where payment is made via our Sites. All aspects of a transaction between a Student and an Advertiser, including (but not limited to) the quality, condition, safety or legality of the properties advertised and the ability of a user to enter into a transaction are solely the responsibility of each user. This includes the terms of any security deposit, which are set by the Advertiser. We do not represent, or negotiate, or carry out research on the part of or act on behalf of either Advertisers or Students.
+      - paragraph [ref=f40e49]: We do not accept any responsibility for the confirmation of a Student and/or Advertiser's identity. Where a third party (for example an education or travel agent) acts on a Student's behalf, it is the Student's responsibility to ensure the accuracy of the information provided by the third party. We encourage users to take all such steps as necessary to communicate directly with a Student/Advertiser (as applicable) to assure yourself of the other person's identity, details of the property and any tenancy agreement.
+      - paragraph [ref=f40e50]: By providing your contact information on our platform, you agree to allow Amber to contact you via email/call/sms for assistance, use your name to help others decide on the platform and also send you marketing/promotional content.
+    - generic [ref=f40e51]:
+      - heading "6. Prices" [level=2] [ref=f40e52]
+      - paragraph [ref=f40e53]: The prices of properties displayed on the Sites are liable to change at any time. Despite our best efforts, some of the prices listed on the Sites may be incorrect. We expressly reserve the right to correct any pricing errors on our Sites and/or on potential bookings which have not yet been completed.
+      - paragraph [ref=f40e54]: We display the prices that Advertisers provide to us from time to time. We are not responsible or liable for the accuracy of the prices displayed, to the maximum extent permitted by applicable law.
+      - paragraph [ref=f40e55]: Due to the international nature of our Sites, the currency of the prices shown may vary depending on your location. Currency rates given on the Sites are based on various publicly available sources and should be used as guidelines only. Rates are not verified as accurate and actual prices may vary from those shown on the Sites.
+      - paragraph [ref=f40e56]: From time to time, third parties may list promotions, special offers or other forms of coupon on our Sites (“Coupons”). Coupons will contain terms and conditions that will apply in addition to these Terms, and will be void if you attempt to redeem the Coupon in violation of either these Terms or the terms of the Coupon. Unless expressly stated on the Coupon, it may not be used in combination with other promotions or discounts. Coupons are only redeemable during the promotional period specified in the Coupon, subject to availability. These Coupons will be non-transferable and have no alternative cash value.
+    - generic [ref=f40e57]:
+      - heading "7. Payments" [level=2] [ref=f40e58]
+      - paragraph [ref=f40e59]:
+        - text: In some circumstances, you can make payments to Advertisers via our Sites using payment provider such as Stripe You can find out more about Stripe
+        - link "here" [ref=f40e60] [cursor=pointer]:
+          - /url: https://stripe.com/gb/customers
+        - text: . In such circumstances, it remains your responsibility to make yourself aware of the Advertiser's booking and cancellation policies. Any deposit paid to an Advertiser via our Sites is held by the Advertiser not by amberstudent.com. At the end of a tenancy agreement, you must contact the Advertiser to obtain the return of your Deposit.
+    - generic [ref=f40e61]:
+      - heading "8. Changes and cancellation" [level=2] [ref=f40e62]
+      - paragraph [ref=f40e63]: Any tenancy agreement entered into will be between a Student and an Advertiser. It is a Student's responsibility to make themselves aware of the Advertiser's cancellation policy at the time of booking.
+    - generic [ref=f40e64]:
+      - heading "9. Intellectual property rights" [level=2] [ref=f40e65]
+      - paragraph [ref=f40e66]: We are the owner or the licensee of all intellectual property rights in our Sites, and in the material published on it. Those works are protected by copyright laws and treaties (and/or similar intellectual property laws, as relevant) around the world. All such rights are reserved.
+    - generic [ref=f40e67]:
+      - heading "10. Linking to our Sites" [level=2] [ref=f40e68]
+      - paragraph [ref=f40e69]: You may link to our home pages, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it.
+      - paragraph [ref=f40e70]: You must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part where none exists.
+      - paragraph [ref=f40e71]: You must not establish a link to our Sites in any website that is not owned by you.
+      - paragraph [ref=f40e72]: Our Sites must not be framed on any other site, nor may you create a link to any part of our Sites other than the home pages.
+      - paragraph [ref=f40e73]: We reserve the right to withdraw linking permission without notice.
+      - paragraph [ref=f40e74]:
+        - text: If you wish to make any use of content on our Sites other than that set out above, please contact
+        - link "contact@amberstudent.com" [ref=f40e75] [cursor=pointer]:
+          - /url: mailto:contact@amberstudent.com
+        - text: .
+    - generic [ref=f40e76]:
+      - heading "11. Third party links and resources on our Sites" [level=2] [ref=f40e77]
+      - paragraph [ref=f40e78]: Where our Sites contain links to other sites and resources provided by third parties, these links are provided for your information only.
+      - paragraph [ref=f40e79]: "Any maps provided on our Sites that are provided by Google are subject to the current terms and conditions published by Google available at:"
+      - paragraph [ref=f40e80]:
+        - link "http://www.google.com/intl/en/help/terms_maps.html" [ref=f40e81] [cursor=pointer]:
+          - /url: http://www.google.com/intl/en/help/terms_maps.html
+        - text: and
+        - link "https://developers.google.com/maps/terms" [ref=f40e82] [cursor=pointer]:
+          - /url: https://developers.google.com/maps/terms
+        - text: .
+      - paragraph [ref=f40e83]: We have no control over the contents of those sites or resources.
+    - generic [ref=f40e84]:
+      - heading "12. Changes to the terms" [level=2] [ref=f40e85]
+      - paragraph [ref=f40e86]: We may revise these terms at any time by amending this page. We will use appropriate means, such as relevant announcements on our homepage, to inform you on such amendments. If you do not agree with the changes, you must stop using the Sites.
+    - generic [ref=f40e87]:
+      - heading "13. Applicable Law" [level=2] [ref=f40e88]
+      - paragraph [ref=f40e89]: If you are a consumer, please note that these terms of use, their subject matter and their formation, are governed by English law and you and we both agree that the courts of England and Wales will have non-exclusive jurisdiction, however nothing in this clause 13 shall prevent you from being able to bring a claim in the courts of your country of residence under the applicable laws of your country of residence in situations where your right to do so is mandatory under applicable local law.
+    - generic [ref=f40e90]:
+      - heading "14. Information given by you" [level=2] [ref=f40e91]
+      - paragraph [ref=f40e92]: You can give us the information by filling the request form at Amber, over call, email or at various offline promotional events. The informational you give us may include your name, phone number, email id. For booking your accommodation at Amber you may need to give further personal information (ex. Birth date, country of origin, guarantor's details, University name etc) on call or email or other messaging services as necessary.
+    - generic [ref=f40e93]:
+      - heading "15. Consent to Personal Data Collection & Processing" [level=2] [ref=f40e94]
+      - paragraph [ref=f40e95]: By using our services, you consent to the collection, processing, storage, and transfer of your personal data as described in our Privacy Policy. We process your information to provide and improve our services, communicate with you, and complete your accommodation bookings. We may share your data with trusted partners only as necessary for these purposes. You acknowledge that you have read and agree to our Privacy Policy and Terms of Use, and that you may withdraw consent or exercise your data rights at any time as permitted under applicable data-protection laws, including GDPR.
+    - generic [ref=f40e96]:
+      - heading "16. Service Fee - Refund Policy" [level=2] [ref=f40e97]
+      - paragraph [ref=f40e98]: The Service Fee paid by the student at the time of initiating a booking request shall be strictly non-refundable under any and all circumstances, with the sole exception being a case where Amber is unable to secure the specific room category at the selected property as explicitly requested by the student during the time of booking. The non-refundable nature of the Service Fee shall apply irrespective of the reason for cancellation initiated by the student after the Service Fee has been remitted. This includes, but is not limited to, changes in travel plans, visa rejections, admission withdrawals, personal emergencies, or any other unforeseen or unavoidable circumstances that may arise. Amber invests significant resources and undertakes operational efforts upon receiving a booking request, including engaging with property partners, initiating reservation processes, and providing support services. Accordingly, the Service Fee is charged as a one-time commitment fee to cover these efforts and ensure priority handling of the student's booking. By proceeding with the payment of the Service Fee, the student expressly acknowledges and agrees to the terms of this refund policy and waives any claim for a refund except in the aforementioned case of non-availability of the requested room category.
+  - generic [ref=f40e108]:
+    - generic [ref=f40e109]: amber © 2026. All rights reserved.
+    - generic [ref=f40e112] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f40e113]:
+      - generic [ref=f40e114]:
+        - generic [ref=f40e115]: Get the app
+        - generic [ref=f40e116]:
+          - link [ref=f40e117] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f40e118] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f40e120]: Payment Options
+    - generic [ref=f40e123]:
+      - button [ref=f40e125] [cursor=pointer]
+      - button [ref=f40e131] [cursor=pointer]
+      - button [ref=f40e137] [cursor=pointer]
+      - button [ref=f40e143] [cursor=pointer]

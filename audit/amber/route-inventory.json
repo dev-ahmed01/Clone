@@ -1,0 +1,4279 @@
+{
+  "method": "Observed internal links from rendered home, London listing, iQ Vega property, and news index; representative rather than exhaustive crawl.",
+  "totalObservedLinks": 438,
+  "uniqueRoutes": 280,
+  "families": {
+    "home": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/",
+          "query": "",
+          "source": "home",
+          "text": "English",
+          "sources": [
+            "home",
+            "listing",
+            "property"
+          ],
+          "family": "home"
+        }
+      ]
+    },
+    "other": {
+      "count": 11,
+      "examples": [
+        {
+          "path": "/fr/",
+          "query": "",
+          "source": "home",
+          "text": "French",
+          "sources": [
+            "home"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/es/",
+          "query": "",
+          "source": "home",
+          "text": "Spanish",
+          "sources": [
+            "home"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/de/",
+          "query": "",
+          "source": "home",
+          "text": "German",
+          "sources": [
+            "home"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/sitemap",
+          "query": "",
+          "source": "home",
+          "text": "Sitemap",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/fr/places/search/london-1811028205760",
+          "query": "",
+          "source": "listing",
+          "text": "French",
+          "sources": [
+            "listing"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/es/places/search/london-1811028205760",
+          "query": "",
+          "source": "listing",
+          "text": "Spanish",
+          "sources": [
+            "listing"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/de/places/search/london-1811028205760",
+          "query": "",
+          "source": "listing",
+          "text": "German",
+          "sources": [
+            "listing"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/fr/places/iq-vega-london-2101138507106",
+          "query": "",
+          "source": "property",
+          "text": "French",
+          "sources": [
+            "property"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/es/places/iq-vega-london-2101138507106",
+          "query": "",
+          "source": "property",
+          "text": "Spanish",
+          "sources": [
+            "property"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/de/places/iq-vega-london-2101138507106",
+          "query": "",
+          "source": "property",
+          "text": "German",
+          "sources": [
+            "property"
+          ],
+          "family": "other"
+        },
+        {
+          "path": "/news/latest",
+          "query": "",
+          "source": "news",
+          "text": "See All Latest News",
+          "sources": [
+            "news"
+          ],
+          "family": "other"
+        }
+      ]
+    },
+    "search-listing": {
+      "count": 159,
+      "examples": [
+        {
+          "path": "/places/search/london-1811028205760",
+          "query": "",
+          "source": "home",
+          "text": "London",
+          "sources": [
+            "home",
+            "listing",
+            "property"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/coventry-1811022688464",
+          "query": "",
+          "source": "home",
+          "text": "Coventry",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/sheffield-1811027902898",
+          "query": "",
+          "source": "home",
+          "text": "Sheffield",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/liverpool-1811029039831",
+          "query": "",
+          "source": "home",
+          "text": "Liverpool",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/nottingham-1811025104223",
+          "query": "",
+          "source": "home",
+          "text": "Nottingham",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/leeds-1811025399073",
+          "query": "",
+          "source": "home",
+          "text": "Leeds",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/birmingham-1811028953945",
+          "query": "",
+          "source": "home",
+          "text": "Birmingham",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/leicester-1811027154774",
+          "query": "",
+          "source": "home",
+          "text": "Leicester",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/glasgow-1811024356803",
+          "query": "",
+          "source": "home",
+          "text": "Glasgow",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/newcastle-upon-tyne-1811022588361",
+          "query": "",
+          "source": "home",
+          "text": "Newcastle Upon Tyne",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/cardiff-1811021315133",
+          "query": "",
+          "source": "home",
+          "text": "Cardiff",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/aberdeen-1811021824528",
+          "query": "",
+          "source": "home",
+          "text": "Aberdeen",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/edinburgh-1811029850773",
+          "query": "",
+          "source": "home",
+          "text": "Edinburgh",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/southampton-1811022771524",
+          "query": "",
+          "source": "home",
+          "text": "Southampton",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/huddersfield-1811026300535",
+          "query": "",
+          "source": "home",
+          "text": "Huddersfield",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/bristol-1811028541951",
+          "query": "",
+          "source": "home",
+          "text": "Bristol",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/manchester-1811021510595",
+          "query": "",
+          "source": "home",
+          "text": "Manchester",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/sunderland-1811023745210",
+          "query": "",
+          "source": "home",
+          "text": "Sunderland",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/plymouth-1811024617468",
+          "query": "",
+          "source": "home",
+          "text": "Plymouth",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/luton-1811021378066",
+          "query": "",
+          "source": "home",
+          "text": "Luton",
+          "sources": [
+            "home",
+            "listing",
+            "property"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/portsmouth-1811020065723",
+          "query": "",
+          "source": "home",
+          "text": "Portsmouth",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/cambridge-1811025371107",
+          "query": "",
+          "source": "home",
+          "text": "Cambridge",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/oxford-1811023030854",
+          "query": "",
+          "source": "home",
+          "text": "Oxford",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/exeter-1811027484452",
+          "query": "",
+          "source": "home",
+          "text": "Exeter",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        },
+        {
+          "path": "/places/search/bournemouth-1811027075639",
+          "query": "",
+          "source": "home",
+          "text": "Bournemouth",
+          "sources": [
+            "home"
+          ],
+          "family": "search-listing"
+        }
+      ]
+    },
+    "property-detail": {
+      "count": 54,
+      "examples": [
+        {
+          "path": "/places/mcmillan-student-village-london-2412028192296",
+          "query": "",
+          "source": "home",
+          "text": "McMillan Student Village, London London, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/iq-kingston-1709160215838",
+          "query": "",
+          "source": "home",
+          "text": "iQ Kingston, Kingston upon Thames Kingston upon Thames, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/mannequin-house-london-1706057856013",
+          "query": "",
+          "source": "home",
+          "text": "Mannequin House, London London, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/the-helix-wembley-london-2212215698536",
+          "query": "",
+          "source": "home",
+          "text": "The Helix Wembley, London Wembley, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/room-in-a-10-bedroom-apartment-42-disraeli-rd-greater-london-e7-9jp-2607032249430",
+          "query": "",
+          "source": "home",
+          "text": "Room in a 10 Bedroom Apartment, 42 Disraeli Rd, Greater, London E7 9JP London, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/chapter-old-street-london-2203164613042",
+          "query": "",
+          "source": "home",
+          "text": "Chapter Old Street, London London, England, GB",
+          "sources": [
+            "home",
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/room-in-a-6-bedroom-apartment-shaftsbury-rd-london-e7-8pf-2512119291542",
+          "query": "",
+          "source": "home",
+          "text": "Room in a 6 Bedroom Apartment, Shaftsbury Rd, London E7 8PF London, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/halsmere-studios-london-1608308001711",
+          "query": "",
+          "source": "home",
+          "text": "Halsmere Studios, London London, England, GB",
+          "sources": [
+            "home",
+            "property"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/ironworks-house-london-2507156287591",
+          "query": "",
+          "source": "home",
+          "text": "Ironworks House, London London, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/herbal-hill-studios-2010143274716",
+          "query": "",
+          "source": "home",
+          "text": "Herbal Hill Studios, London London, England, GB",
+          "sources": [
+            "home"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/iq-vega-london-2101138507106",
+          "query": "",
+          "source": "listing",
+          "text": "iQ Vega, London Miles St, London, SW8 1RZ 2.0 mi from City Center ( 13min . 18min . 42min ) 0.53 mi ",
+          "sources": [
+            "listing",
+            "property"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/mcmillan-residence-go-britanya-london-2303234603388",
+          "query": "",
+          "source": "listing",
+          "text": "GoBritanya McMillan Residence, London Creek Rd, London, SE8 3BU 5.5 mi from City Center ( 34min . 35",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/therese-house-london-1906186914451",
+          "query": "",
+          "source": "listing",
+          "text": "Yugo Therese House, London Glasshouse Yard, London, EC1A 4JW 1.8 mi from City Center ( 14min . 28min",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/manna-ash-house-london-2505036005600",
+          "query": "",
+          "source": "listing",
+          "text": "Manna Ash House, London Pocock St, London, SE1 0BW 1.3 mi from City Center ( 12min . 19min . 32min )",
+          "sources": [
+            "listing",
+            "property"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/lst-pavilion-court-london-2607314042632",
+          "query": "",
+          "source": "listing",
+          "text": "LST Pavilion Court, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min ",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/iq-city-london-1811192172260",
+          "query": "",
+          "source": "listing",
+          "text": "iQ City, London Bastwick St, London, EC1V 3AQ 2.0 mi from City Center ( 16min . 36min . 45min ) 0.04",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/lst-fusion-brent-cross-london-2606010704305",
+          "query": "",
+          "source": "listing",
+          "text": "LST Fusion Brent Cross, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/londonist-finsbury-house-london-2003139228332",
+          "query": "",
+          "source": "listing",
+          "text": "LST Finsbury House, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min ",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/londonist-mcmillan-village-london-2404014729506",
+          "query": "",
+          "source": "listing",
+          "text": "Student's Choice LST McMillan Student Village, London Great James St, London, WC1N 3DB 1.2 mi from C",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/canto-court-london-2508225796192",
+          "query": "",
+          "source": "listing",
+          "text": "Canto Court, London Old St, London, EC1V 9BD 2.1 mi from City Center ( 18min . 27min . 48min ) 0.23 ",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/north-lodge-london-1710102555905",
+          "query": "",
+          "source": "listing",
+          "text": "North Lodge",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/chapter-islington-london-1707290711220",
+          "query": "",
+          "source": "listing",
+          "text": "Chapter Islington",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/chapter-kings-cross-london-1707293068339",
+          "query": "",
+          "source": "listing",
+          "text": "Chapter Kings Cross, London",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/chapter-spitalfields-london-2011057254881",
+          "query": "",
+          "source": "listing",
+          "text": "Chapter Spitalfields, London",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        },
+        {
+          "path": "/places/east-central-house-london-2311140711466",
+          "query": "",
+          "source": "listing",
+          "text": "East Central House, London",
+          "sources": [
+            "listing"
+          ],
+          "family": "property-detail"
+        }
+      ]
+    },
+    "plus-service": {
+      "count": 4,
+      "examples": [
+        {
+          "path": "/plus-cross/kit",
+          "query": "",
+          "source": "home",
+          "text": "Essential Kit Save 70% Ready before you arrive",
+          "sources": [
+            "home"
+          ],
+          "family": "plus-service"
+        },
+        {
+          "path": "/plus-cross/flights",
+          "query": "",
+          "source": "home",
+          "text": "Flights Flat 7% Off Exclusive MMT offers",
+          "sources": [
+            "home"
+          ],
+          "family": "plus-service"
+        },
+        {
+          "path": "/plus-cross/forex",
+          "query": "",
+          "source": "home",
+          "text": "Forex Card Save on every swipe",
+          "sources": [
+            "home"
+          ],
+          "family": "plus-service"
+        },
+        {
+          "path": "/plus-cross/esim",
+          "query": "",
+          "source": "home",
+          "text": "SIM Card Stay connected on arrival",
+          "sources": [
+            "home"
+          ],
+          "family": "plus-service"
+        }
+      ]
+    },
+    "marketing-landing": {
+      "count": 4,
+      "examples": [
+        {
+          "path": "/about",
+          "query": "",
+          "source": "home",
+          "text": "About",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "marketing-landing"
+        },
+        {
+          "path": "/how-it-works",
+          "query": "",
+          "source": "home",
+          "text": "How it works",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "marketing-landing"
+        },
+        {
+          "path": "/media",
+          "query": "",
+          "source": "home",
+          "text": "Media Mention",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "marketing-landing"
+        },
+        {
+          "path": "/ambassador",
+          "query": "",
+          "source": "home",
+          "text": "Ambassador",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "marketing-landing"
+        }
+      ]
+    },
+    "referral": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/referral-programme",
+          "query": "",
+          "source": "home",
+          "text": "Refer a Friend",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "referral"
+        }
+      ]
+    },
+    "group-booking": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/group-booking",
+          "query": "",
+          "source": "home",
+          "text": "Group Bookings",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "group-booking"
+        }
+      ]
+    },
+    "list-with-us": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/list",
+          "query": "",
+          "source": "home",
+          "text": "List with us",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "list-with-us"
+        }
+      ]
+    },
+    "partner": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/partner",
+          "query": "",
+          "source": "home",
+          "text": "Partner with us",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "partner"
+        }
+      ]
+    },
+    "university-partnership": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/university-partnerships",
+          "query": "",
+          "source": "home",
+          "text": "Universities",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "university-partnership"
+        }
+      ]
+    },
+    "careers": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/career",
+          "query": "",
+          "source": "home",
+          "text": "Careers",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "careers"
+        }
+      ]
+    },
+    "podcast": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/podcast",
+          "query": "",
+          "source": "home",
+          "text": "Podcast",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "podcast"
+        }
+      ]
+    },
+    "news-index": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/news",
+          "query": "",
+          "source": "home",
+          "text": "Newsroom",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "news-index"
+        }
+      ]
+    },
+    "plus-index": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/plus",
+          "query": "",
+          "source": "home",
+          "text": "Amber Plus",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "plus-index"
+        }
+      ]
+    },
+    "scholarship": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/scholarship",
+          "query": "",
+          "source": "home",
+          "text": "Scholarships",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "scholarship"
+        }
+      ]
+    },
+    "exams": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/exams",
+          "query": "",
+          "source": "home",
+          "text": "Exams",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "exams"
+        }
+      ]
+    },
+    "help": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/help",
+          "query": "",
+          "source": "home",
+          "text": "Help Center",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "help"
+        }
+      ]
+    },
+    "contact": {
+      "count": 1,
+      "examples": [
+        {
+          "path": "/contact",
+          "query": "",
+          "source": "home",
+          "text": "Contact",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "contact"
+        }
+      ]
+    },
+    "legal": {
+      "count": 2,
+      "examples": [
+        {
+          "path": "/terms",
+          "query": "",
+          "source": "home",
+          "text": "T&C",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "legal"
+        },
+        {
+          "path": "/privacy",
+          "query": "",
+          "source": "home",
+          "text": "Privacy Policy",
+          "sources": [
+            "home",
+            "listing",
+            "property",
+            "news"
+          ],
+          "family": "legal"
+        }
+      ]
+    },
+    "news-article": {
+      "count": 13,
+      "examples": [
+        {
+          "path": "/news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink",
+          "query": "",
+          "source": "news",
+          "text": "Global News 8 mins · Sep 22, 2026 Chinese Students Top the UK Intake as Other Markets Shrink China r",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/demand-declines-eased-occupancy-climbed-september-2026-update",
+          "query": "",
+          "source": "news",
+          "text": "UK News 8 min read · Sep 30, 2026 Demand Declines Eased, Occupancy Neared 92%: September 2026 Update",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/us-maintains-soft-power-lead-in-hepi-index-uk-ranks-second",
+          "query": "",
+          "source": "news",
+          "text": "UK News 5 mins · Sep 30, 2026 US Maintains Soft Power Lead in HEPI Index, UK Ranks Second Key Highli",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/australia-passes-universities-accord-bill-reforms-funding-system",
+          "query": "",
+          "source": "news",
+          "text": "Asia & Australia News 6 mins · Oct 21, 2026 Australia Passes Universities Accord Bill, Reforms Fundi",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/unite-group-reiterates-outlook-despite-q3-portfolio-valuation-dip",
+          "query": "",
+          "source": "news",
+          "text": "UK News 6 mins · Oct 14, 2026 Unite Group Reiterates Outlook Despite Q3 Portfolio Valuation Dip",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/dhs-us-opt-fee-proposal-draws-legal-concerns",
+          "query": "",
+          "source": "news",
+          "text": "USA News 6 mins · Oct 13, 2026 DHS Proposes US$70,000 OPT Fee; Draws Legal Concerns",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/australia-cracks-down-on-rushed-graduate-diploma-enrolments",
+          "query": "",
+          "source": "news",
+          "text": "Asia & Australia News 5 mins · Oct 10, 2026 Australia Cracks Down On Rushed Graduate Diploma Enrolme",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/uk-student-sponsors-face-tighter-compliance-rules",
+          "query": "",
+          "source": "news",
+          "text": "UK News 9 mins · Oct 9, 2026 UK Student Sponsors Face Tighter Compliance Rules",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/higher-education-groups-sue-us-over-curricular-practical-training",
+          "query": "",
+          "source": "news",
+          "text": "USA News 5 mins · Oct 7, 2026 Higher Education Groups Sue US Over Curricular Practical Training",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/hilda-maps-domestic-graduate-pay-gap-as-visa-rules-tighten",
+          "query": "",
+          "source": "news",
+          "text": "Asia & Australia News 5 mins · Sep 28, 2026 HILDA Maps Domestic Graduate Pay Gap As Visa Rules Tight",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/ilac-bankruptcy-leaves-over-a-thousand-students-in-limbo",
+          "query": "",
+          "source": "news",
+          "text": "Global News 5 mins · Sep 24, 2026 ILAC Bankruptcy Leaves Over A Thousand Students In Limbo",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/government-maintains-migration-levels-boosts-international-student-intake-in-australia",
+          "query": "",
+          "source": "news",
+          "text": "Asia & Australia News Government Maintains Migration Levels, Boosts International Student Intake in ",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        },
+        {
+          "path": "/news/post/ambers-uk-student-housing-annual-report-2024-25",
+          "query": "",
+          "source": "news",
+          "text": "Student Housing Article Amber's UK Student Housing Annual Report (2024-25) 2 mins · Jan 22, 2025",
+          "sources": [
+            "news"
+          ],
+          "family": "news-article"
+        }
+      ]
+    },
+    "news-radar": {
+      "count": 10,
+      "examples": [
+        {
+          "path": "/news/amberradar/amberradar-student-mobility-higher-education-news-roundup-16th-sept-15th-oct-2026",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 6 min read · Oct 15, 2026 AmberRadar Student Mobility & Higher Education News Roundup | ",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amberradar-global-student-accommodation-market-news-september-week-03",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Sep 22, 2026 AmberRadar Global Student Accommodation Market News - Septembe",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-september-week-02",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Sep 15, 2026 AmberRadar Global Student Accommodation Market News - Septembe",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-september-week-01",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Sep 8, 2026 AmberRadar Global Student Accommodation Market News - September",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-04",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Aug 28, 2026 Amber Radar Global Student Accommodation Market News - August ",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-03",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Aug 21, 2026 Amber Radar Global Student Accommodation Market News - August ",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-02",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Aug 14, 2026 Amber Radar Global Student Accommodation Market News - August ",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-01",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Aug 7, 2026 Amber Radar Global Student Accommodation Market News - August 2",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-july-week-04",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Jul 29, 2026 Amber Radar Global Student Accommodation Market News - July 20",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        },
+        {
+          "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-july-week-03",
+          "query": "",
+          "source": "news",
+          "text": "Amber Radar 5 min read · Jul 22, 2026 Amber Radar Global Student Accommodation Market News - July 20",
+          "sources": [
+            "news"
+          ],
+          "family": "news-radar"
+        }
+      ]
+    },
+    "news-report": {
+      "count": 9,
+      "examples": [
+        {
+          "path": "/news/amberreport/ambers-student-success-wellbeing-report-2026",
+          "query": "",
+          "source": "news",
+          "text": "UK News 5 min read · Jul 8, 2026 Amber's Student Success & Wellbeing Report 2026",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/ambers-uk-pbsa-pricing-update-jan-26-vs-mar-26",
+          "query": "",
+          "source": "news",
+          "text": "UK News 5 min read · Mar 30, 2026 Amber’s UK PBSA Demand & Pricing Update (Jan’26 Vs Mar’26)",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/ambers-uk-pbsa-launch-price-report-ay-2026-27",
+          "query": "",
+          "source": "news",
+          "text": "UK News 5 min read · Dec 9, 2025 Amber’s UK PBSA Launch Price Report (AY 2026-27)",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/ambers-uk-pbsa-pricing-intel-report-ay-2026-27",
+          "query": "",
+          "source": "news",
+          "text": "UK News 5 min read · Oct 17, 2025 Amber's UK PBSA Pricing Intel Report (AY 2026-27)",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/ambers-uk-student-housing-annual-report-2024-25",
+          "query": "",
+          "source": "news",
+          "text": "Student Housing Article 2 mins · Jan 22, 2025 Amber's UK Student Housing Annual Report (2024-25)",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/ambers-australia-student-accommodation-annual-report-2024-25",
+          "query": "",
+          "source": "news",
+          "text": "Asia & Australia News 2 mins · Sep 26, 2024 Amber's Australia Student Accommodation Annual Report (2",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/amber-us-international-student-housing-report-2023-24",
+          "query": "",
+          "source": "news",
+          "text": "Student Housing News 2mins · Feb 2, 2024 Amber's US International Student Housing Annual Report 2023",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/connect-with-amber",
+          "query": "",
+          "source": "news",
+          "text": "Student Housing News 2 mins · Dec 12, 2023 Connect With Amber",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        },
+        {
+          "path": "/news/amberreport/student-housing-partners-report-2023",
+          "query": "",
+          "source": "news",
+          "text": "Student Housing News 2 min read · Jul 17, 2023 Student Housing Partners Report: Insider Analysis Of ",
+          "sources": [
+            "news"
+          ],
+          "family": "news-report"
+        }
+      ]
+    }
+  },
+  "routes": [
+    {
+      "path": "/",
+      "query": "",
+      "source": "home",
+      "text": "English",
+      "sources": [
+        "home",
+        "listing",
+        "property"
+      ],
+      "family": "home"
+    },
+    {
+      "path": "/fr/",
+      "query": "",
+      "source": "home",
+      "text": "French",
+      "sources": [
+        "home"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/es/",
+      "query": "",
+      "source": "home",
+      "text": "Spanish",
+      "sources": [
+        "home"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/de/",
+      "query": "",
+      "source": "home",
+      "text": "German",
+      "sources": [
+        "home"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/places/search/london-1811028205760",
+      "query": "",
+      "source": "home",
+      "text": "London",
+      "sources": [
+        "home",
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/mcmillan-student-village-london-2412028192296",
+      "query": "",
+      "source": "home",
+      "text": "McMillan Student Village, London London, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-kingston-1709160215838",
+      "query": "",
+      "source": "home",
+      "text": "iQ Kingston, Kingston upon Thames Kingston upon Thames, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/mannequin-house-london-1706057856013",
+      "query": "",
+      "source": "home",
+      "text": "Mannequin House, London London, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/the-helix-wembley-london-2212215698536",
+      "query": "",
+      "source": "home",
+      "text": "The Helix Wembley, London Wembley, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/room-in-a-10-bedroom-apartment-42-disraeli-rd-greater-london-e7-9jp-2607032249430",
+      "query": "",
+      "source": "home",
+      "text": "Room in a 10 Bedroom Apartment, 42 Disraeli Rd, Greater, London E7 9JP London, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/chapter-old-street-london-2203164613042",
+      "query": "",
+      "source": "home",
+      "text": "Chapter Old Street, London London, England, GB",
+      "sources": [
+        "home",
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/room-in-a-6-bedroom-apartment-shaftsbury-rd-london-e7-8pf-2512119291542",
+      "query": "",
+      "source": "home",
+      "text": "Room in a 6 Bedroom Apartment, Shaftsbury Rd, London E7 8PF London, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/halsmere-studios-london-1608308001711",
+      "query": "",
+      "source": "home",
+      "text": "Halsmere Studios, London London, England, GB",
+      "sources": [
+        "home",
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/ironworks-house-london-2507156287591",
+      "query": "",
+      "source": "home",
+      "text": "Ironworks House, London London, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/herbal-hill-studios-2010143274716",
+      "query": "",
+      "source": "home",
+      "text": "Herbal Hill Studios, London London, England, GB",
+      "sources": [
+        "home"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/search/coventry-1811022688464",
+      "query": "",
+      "source": "home",
+      "text": "Coventry",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/sheffield-1811027902898",
+      "query": "",
+      "source": "home",
+      "text": "Sheffield",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/liverpool-1811029039831",
+      "query": "",
+      "source": "home",
+      "text": "Liverpool",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/nottingham-1811025104223",
+      "query": "",
+      "source": "home",
+      "text": "Nottingham",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/leeds-1811025399073",
+      "query": "",
+      "source": "home",
+      "text": "Leeds",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/birmingham-1811028953945",
+      "query": "",
+      "source": "home",
+      "text": "Birmingham",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/leicester-1811027154774",
+      "query": "",
+      "source": "home",
+      "text": "Leicester",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/glasgow-1811024356803",
+      "query": "",
+      "source": "home",
+      "text": "Glasgow",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/newcastle-upon-tyne-1811022588361",
+      "query": "",
+      "source": "home",
+      "text": "Newcastle Upon Tyne",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/cardiff-1811021315133",
+      "query": "",
+      "source": "home",
+      "text": "Cardiff",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/aberdeen-1811021824528",
+      "query": "",
+      "source": "home",
+      "text": "Aberdeen",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/edinburgh-1811029850773",
+      "query": "",
+      "source": "home",
+      "text": "Edinburgh",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/southampton-1811022771524",
+      "query": "",
+      "source": "home",
+      "text": "Southampton",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/huddersfield-1811026300535",
+      "query": "",
+      "source": "home",
+      "text": "Huddersfield",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bristol-1811028541951",
+      "query": "",
+      "source": "home",
+      "text": "Bristol",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/manchester-1811021510595",
+      "query": "",
+      "source": "home",
+      "text": "Manchester",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/sunderland-1811023745210",
+      "query": "",
+      "source": "home",
+      "text": "Sunderland",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/plymouth-1811024617468",
+      "query": "",
+      "source": "home",
+      "text": "Plymouth",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/luton-1811021378066",
+      "query": "",
+      "source": "home",
+      "text": "Luton",
+      "sources": [
+        "home",
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/plus-cross/kit",
+      "query": "",
+      "source": "home",
+      "text": "Essential Kit Save 70% Ready before you arrive",
+      "sources": [
+        "home"
+      ],
+      "family": "plus-service"
+    },
+    {
+      "path": "/plus-cross/flights",
+      "query": "",
+      "source": "home",
+      "text": "Flights Flat 7% Off Exclusive MMT offers",
+      "sources": [
+        "home"
+      ],
+      "family": "plus-service"
+    },
+    {
+      "path": "/plus-cross/forex",
+      "query": "",
+      "source": "home",
+      "text": "Forex Card Save on every swipe",
+      "sources": [
+        "home"
+      ],
+      "family": "plus-service"
+    },
+    {
+      "path": "/plus-cross/esim",
+      "query": "",
+      "source": "home",
+      "text": "SIM Card Stay connected on arrival",
+      "sources": [
+        "home"
+      ],
+      "family": "plus-service"
+    },
+    {
+      "path": "/places/search/portsmouth-1811020065723",
+      "query": "",
+      "source": "home",
+      "text": "Portsmouth",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/cambridge-1811025371107",
+      "query": "",
+      "source": "home",
+      "text": "Cambridge",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/oxford-1811023030854",
+      "query": "",
+      "source": "home",
+      "text": "Oxford",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/exeter-1811027484452",
+      "query": "",
+      "source": "home",
+      "text": "Exeter",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bournemouth-1811027075639",
+      "query": "",
+      "source": "home",
+      "text": "Bournemouth",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/belfast-1811021897138",
+      "query": "",
+      "source": "home",
+      "text": "Belfast",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/canterbury-1811026296205",
+      "query": "",
+      "source": "home",
+      "text": "Canterbury",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/dublin-1811234255126",
+      "query": "",
+      "source": "home",
+      "text": "Dublin",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/swansea-1811021718098",
+      "query": "",
+      "source": "home",
+      "text": "Swansea",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/loughborough-1811023994102",
+      "query": "",
+      "source": "home",
+      "text": "Loughborough",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/brighton-and-hove-1811029325591",
+      "query": "",
+      "source": "home",
+      "text": "Brighton",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/derby-1811027042281",
+      "query": "",
+      "source": "home",
+      "text": "Derby",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/hatfield-1811227320022",
+      "query": "",
+      "source": "home",
+      "text": "Hatfield",
+      "sources": [
+        "home",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/lincoln-1811026319691",
+      "query": "",
+      "source": "home",
+      "text": "Lincoln",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/dallas-1811050789451",
+      "query": "",
+      "source": "home",
+      "text": "Dallas",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/cork-1905110396319",
+      "query": "",
+      "source": "home",
+      "text": "Cork",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/melbourne-1811011846366",
+      "query": "",
+      "source": "home",
+      "text": "Melbourne",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/sydney-1811019193619",
+      "query": "",
+      "source": "home",
+      "text": "Sydney",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/adelaide-1811022271790",
+      "query": "",
+      "source": "home",
+      "text": "Adelaide",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/brisbane-1811022382320",
+      "query": "",
+      "source": "home",
+      "text": "Brisbane",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/canberra-1811028680774",
+      "query": "",
+      "source": "home",
+      "text": "Canberra",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/gold-coast-1811055204067",
+      "query": "",
+      "source": "home",
+      "text": "Gold Coast",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/perth-1811021246766",
+      "query": "",
+      "source": "home",
+      "text": "Perth",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/ann-arbor-2211094460561",
+      "query": "",
+      "source": "home",
+      "text": "Ann Arbor",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/atlanta-2103038343998",
+      "query": "",
+      "source": "home",
+      "text": "Atlanta",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/austin-1811059470166",
+      "query": "",
+      "source": "home",
+      "text": "Austin",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/champaign-2211098678696",
+      "query": "",
+      "source": "home",
+      "text": "Champaign",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/chicago-1811055213730",
+      "query": "",
+      "source": "home",
+      "text": "Chicago",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/houston-1811053554207",
+      "query": "",
+      "source": "home",
+      "text": "Houston",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/los-angeles-1811059549842",
+      "query": "",
+      "source": "home",
+      "text": "Los Angeles",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/lubbock-2208021988942",
+      "query": "",
+      "source": "home",
+      "text": "Lubbock",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/miami-1811158634551",
+      "query": "",
+      "source": "home",
+      "text": "Miami",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/new-york-city-1811153579499",
+      "query": "",
+      "source": "home",
+      "text": "New York",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/philadelphia-1811050668830",
+      "query": "",
+      "source": "home",
+      "text": "Philadelphia",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/san-francisco-1811261246298",
+      "query": "",
+      "source": "home",
+      "text": "San Francisco",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/seattle-1811059396725",
+      "query": "",
+      "source": "home",
+      "text": "Seattle",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/tampa-1811228359390",
+      "query": "",
+      "source": "home",
+      "text": "Tampa",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/washington-dc-1811157116879",
+      "query": "",
+      "source": "home",
+      "text": "Washington DC",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/burnaby-2404052176075",
+      "query": "",
+      "source": "home",
+      "text": "Burnaby",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/hamilton-2406127737096",
+      "query": "",
+      "source": "home",
+      "text": "Hamilton",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/mississauga-2403136242072",
+      "query": "",
+      "source": "home",
+      "text": "Mississauga",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/ottawa-2304201785556",
+      "query": "",
+      "source": "home",
+      "text": "Ottawa",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/toronto-1912205118632",
+      "query": "",
+      "source": "home",
+      "text": "Toronto",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/vancouver-1911021542675",
+      "query": "",
+      "source": "home",
+      "text": "Vancouver",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/waterloo-2402226880061",
+      "query": "",
+      "source": "home",
+      "text": "Waterloo",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/united-kingdom-1811011902157",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home",
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/united-states-1811011842700",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/australia-1811019798408",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/germany-1911265061393",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/ireland-1904178897698",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/france-1911269874240",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/spain-2010151748622",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/canada-1811011406255",
+      "query": "",
+      "source": "home",
+      "text": "",
+      "sources": [
+        "home"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/about",
+      "query": "",
+      "source": "home",
+      "text": "About",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "marketing-landing"
+    },
+    {
+      "path": "/how-it-works",
+      "query": "",
+      "source": "home",
+      "text": "How it works",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "marketing-landing"
+    },
+    {
+      "path": "/referral-programme",
+      "query": "",
+      "source": "home",
+      "text": "Refer a Friend",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "referral"
+    },
+    {
+      "path": "/group-booking",
+      "query": "",
+      "source": "home",
+      "text": "Group Bookings",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "group-booking"
+    },
+    {
+      "path": "/list",
+      "query": "",
+      "source": "home",
+      "text": "List with us",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "list-with-us"
+    },
+    {
+      "path": "/partner",
+      "query": "",
+      "source": "home",
+      "text": "Partner with us",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "partner"
+    },
+    {
+      "path": "/university-partnerships",
+      "query": "",
+      "source": "home",
+      "text": "Universities",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "university-partnership"
+    },
+    {
+      "path": "/career",
+      "query": "",
+      "source": "home",
+      "text": "Careers",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "careers"
+    },
+    {
+      "path": "/podcast",
+      "query": "",
+      "source": "home",
+      "text": "Podcast",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "podcast"
+    },
+    {
+      "path": "/news",
+      "query": "",
+      "source": "home",
+      "text": "Newsroom",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "news-index"
+    },
+    {
+      "path": "/plus",
+      "query": "",
+      "source": "home",
+      "text": "Amber Plus",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "plus-index"
+    },
+    {
+      "path": "/media",
+      "query": "",
+      "source": "home",
+      "text": "Media Mention",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "marketing-landing"
+    },
+    {
+      "path": "/ambassador",
+      "query": "",
+      "source": "home",
+      "text": "Ambassador",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "marketing-landing"
+    },
+    {
+      "path": "/scholarship",
+      "query": "",
+      "source": "home",
+      "text": "Scholarships",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "scholarship"
+    },
+    {
+      "path": "/exams",
+      "query": "",
+      "source": "home",
+      "text": "Exams",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "exams"
+    },
+    {
+      "path": "/help",
+      "query": "",
+      "source": "home",
+      "text": "Help Center",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "help"
+    },
+    {
+      "path": "/contact",
+      "query": "",
+      "source": "home",
+      "text": "Contact",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "contact"
+    },
+    {
+      "path": "/terms",
+      "query": "",
+      "source": "home",
+      "text": "T&C",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "legal"
+    },
+    {
+      "path": "/privacy",
+      "query": "",
+      "source": "home",
+      "text": "Privacy Policy",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "legal"
+    },
+    {
+      "path": "/sitemap",
+      "query": "",
+      "source": "home",
+      "text": "Sitemap",
+      "sources": [
+        "home",
+        "listing",
+        "property",
+        "news"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/fr/places/search/london-1811028205760",
+      "query": "",
+      "source": "listing",
+      "text": "French",
+      "sources": [
+        "listing"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/es/places/search/london-1811028205760",
+      "query": "",
+      "source": "listing",
+      "text": "Spanish",
+      "sources": [
+        "listing"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/de/places/search/london-1811028205760",
+      "query": "",
+      "source": "listing",
+      "text": "German",
+      "sources": [
+        "listing"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/places/iq-vega-london-2101138507106",
+      "query": "",
+      "source": "listing",
+      "text": "iQ Vega, London Miles St, London, SW8 1RZ 2.0 mi from City Center ( 13min . 18min . 42min ) 0.53 mi ",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/mcmillan-residence-go-britanya-london-2303234603388",
+      "query": "",
+      "source": "listing",
+      "text": "GoBritanya McMillan Residence, London Creek Rd, London, SE8 3BU 5.5 mi from City Center ( 34min . 35",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/therese-house-london-1906186914451",
+      "query": "",
+      "source": "listing",
+      "text": "Yugo Therese House, London Glasshouse Yard, London, EC1A 4JW 1.8 mi from City Center ( 14min . 28min",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/manna-ash-house-london-2505036005600",
+      "query": "",
+      "source": "listing",
+      "text": "Manna Ash House, London Pocock St, London, SE1 0BW 1.3 mi from City Center ( 12min . 19min . 32min )",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lst-pavilion-court-london-2607314042632",
+      "query": "",
+      "source": "listing",
+      "text": "LST Pavilion Court, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min ",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-city-london-1811192172260",
+      "query": "",
+      "source": "listing",
+      "text": "iQ City, London Bastwick St, London, EC1V 3AQ 2.0 mi from City Center ( 16min . 36min . 45min ) 0.04",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lst-fusion-brent-cross-london-2606010704305",
+      "query": "",
+      "source": "listing",
+      "text": "LST Fusion Brent Cross, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/londonist-finsbury-house-london-2003139228332",
+      "query": "",
+      "source": "listing",
+      "text": "LST Finsbury House, London Great James St, London, WC1N 3DB 1.2 mi from City Center ( 13min . 22min ",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/londonist-mcmillan-village-london-2404014729506",
+      "query": "",
+      "source": "listing",
+      "text": "Student's Choice LST McMillan Student Village, London Great James St, London, WC1N 3DB 1.2 mi from C",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/canto-court-london-2508225796192",
+      "query": "",
+      "source": "listing",
+      "text": "Canto Court, London Old St, London, EC1V 9BD 2.1 mi from City Center ( 18min . 27min . 48min ) 0.23 ",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/search/university-of-greenwich-1811225404909",
+      "query": "",
+      "source": "listing",
+      "text": "University of Greenwich",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/university-of-london-1811237715880",
+      "query": "",
+      "source": "listing",
+      "text": "University of London",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/city-university-of-london-1811055391018",
+      "query": "",
+      "source": "listing",
+      "text": "City St. George's, University of London",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-business-school-1812034537215",
+      "query": "",
+      "source": "listing",
+      "text": "London Business School",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-metropolitan-university-1811059660607",
+      "query": "",
+      "source": "listing",
+      "text": "London Metropolitan University (Holloway Road)",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-1811028205760",
+      "query": "?p=2",
+      "source": "listing",
+      "text": "2",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-1811028205760",
+      "query": "?p=22",
+      "source": "listing",
+      "text": "22",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-1811028205760",
+      "query": "?p=23",
+      "source": "listing",
+      "text": "23",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/central-london-2308300977818",
+      "query": "",
+      "source": "listing",
+      "text": "",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/spitalfields-1811021138835",
+      "query": "",
+      "source": "listing",
+      "text": "",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/shoreditch-1811024527259",
+      "query": "",
+      "source": "listing",
+      "text": "",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/north-lodge-london-1710102555905",
+      "query": "",
+      "source": "listing",
+      "text": "North Lodge",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/chapter-islington-london-1707290711220",
+      "query": "",
+      "source": "listing",
+      "text": "Chapter Islington",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/search/croydon-1811229254876",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Croydon",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/kingston-upon-thames-1811025616665",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Kingston upon Thames",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/egham-1811022240968",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Egham",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/hertfordshire-1811227533071",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Hertfordshire",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/surrey-2502047483763",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Surrey",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/guildford-1811021238331",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Guildford",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/stevenage-2510086719294",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Stevenage",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/high-wycombe-1811021247138",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in High Wycombe",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/rochester-2407046746883",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Rochester",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/medway-1811023282692",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Medway",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/farnborough-2510015255732",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Farnborough",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/hitchin-2510083465940",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Hitchin",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/southend-on-sea-2508010698596",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Southend on Sea",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/reading-1811028460902",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Reading",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/kent-1811225773428",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Kent",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bedfordshire-2507032538664",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Bedfordshire",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/lewes-2510018889138",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Lewes",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/berkshire-2507039736758",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Berkshire",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bedford-1811226717681",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation in Bedford",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/covent-garden-2408123719512",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Covent Garden",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/soho-1811029029457",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Soho",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/westminster-1811222078589",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Westminster",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/holborn-1811227521481",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Holborn",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/waterloo-1811023603624",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Waterloo",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/mayfair-1811020004427",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Mayfair",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bloomsbury-1811024209979",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Bloomsbury",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/victoria-1905029160999",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Victoria",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/blackfriars-2408097531812",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Blackfriars",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/marylebone-1811026115019",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Marylebone",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/elephant-and-castle-1811224471257",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Elephant and Castle",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/vauxhall-1811028101453",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Vauxhall",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/clerkenwell-1811021054353",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Clerkenwell",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/hyde-park-1903058611379",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Hyde Park",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/northampton-square-1811234025887",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Northampton Square",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/southwark-1811022902796",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Southwark",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/kings-cross-1811024230041",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Kings Cross",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/aldgate-1811235618259",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Aldgate",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/camden-1811021514723",
+      "query": "",
+      "source": "listing",
+      "text": "Student Accommodation near Camden",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/king-s-college-london-strand-campus-1811058395297",
+      "query": "",
+      "source": "listing",
+      "text": "King's College London(Strand Campus)",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bpp-university-1906112587135",
+      "query": "",
+      "source": "listing",
+      "text": "BPP university - London",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/king-s-college-london-waterloo-campus-1811054705161",
+      "query": "",
+      "source": "listing",
+      "text": "King's College London (Waterloo Campus)",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-school-of-economics-and-political-science-1811051402052",
+      "query": "",
+      "source": "listing",
+      "text": "London School of Economics and Political Science",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/queen-mary-university-lincoln-s-inn-fields-campus-1904046722577",
+      "query": "",
+      "source": "listing",
+      "text": "Queen Mary University (Lincoln's Inn Fields Campus)",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/bpp-university-london-holborn-1811229361478",
+      "query": "",
+      "source": "listing",
+      "text": "BPP University London (Holborn)",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/college-of-fashion-1811226723211",
+      "query": "",
+      "source": "listing",
+      "text": "College of Fashion",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/the-university-of-law-1902117873844",
+      "query": "",
+      "source": "listing",
+      "text": "The University of Law",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-school-of-hygiene-tropical-medicine-1811222821619",
+      "query": "",
+      "source": "listing",
+      "text": "London School of Hygiene & Tropical Medicine",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/royal-academy-of-dramatic-art-1811307733449",
+      "query": "",
+      "source": "listing",
+      "text": "Royal Academy of Dramatic Art",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/school-of-oriental-and-african-studies-1811223928609",
+      "query": "",
+      "source": "listing",
+      "text": "School of Oriental and African Studies",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/birkbeck-university-1811055933538",
+      "query": "",
+      "source": "listing",
+      "text": "Birkbeck, University of London",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/university-of-westminster-cavendish-campus-1901282053424",
+      "query": "",
+      "source": "listing",
+      "text": "University of Westminster (Cavendish Campus)",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/university-of-westminster-regent-campus-1812277340446",
+      "query": "",
+      "source": "listing",
+      "text": "University of Westminster (Regent Campus)",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/chelsea-college-of-arts-1811226048557",
+      "query": "",
+      "source": "listing",
+      "text": "Chelsea College of Arts (Chelsea), UAL",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/university-college-london-1811059954160",
+      "query": "",
+      "source": "listing",
+      "text": "University College London",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/anglia-ruskin-university-london-1811220216524",
+      "query": "",
+      "source": "listing",
+      "text": "Anglia Ruskin University, London",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/ulster-university-london-branch-campus-1904297874401",
+      "query": "",
+      "source": "listing",
+      "text": "Ulster University (London Branch Campus)",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/london-south-bank-university-1811229763971",
+      "query": "",
+      "source": "listing",
+      "text": "London South Bank University",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/capital-city-college-2609190433198",
+      "query": "",
+      "source": "listing",
+      "text": "Capital City College",
+      "sources": [
+        "listing"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/chapter-kings-cross-london-1707293068339",
+      "query": "",
+      "source": "listing",
+      "text": "Chapter Kings Cross, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/chapter-spitalfields-london-2011057254881",
+      "query": "",
+      "source": "listing",
+      "text": "Chapter Spitalfields, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/east-central-house-london-2311140711466",
+      "query": "",
+      "source": "listing",
+      "text": "East Central House, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/chapter-south-bank-london-1707299131831",
+      "query": "",
+      "source": "listing",
+      "text": "Chapter South Bank, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-sterling-court-wembley-1811167912400",
+      "query": "",
+      "source": "listing",
+      "text": "iQ Sterling Court, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-aldgate-london-1707315979267",
+      "query": "",
+      "source": "listing",
+      "text": "iQ Aldgate, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-east-court-mile-end-2010057445017",
+      "query": "",
+      "source": "listing",
+      "text": "iQ East Court, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-hammersmith-london-1811160979976",
+      "query": "",
+      "source": "listing",
+      "text": "iQ Hammersmith, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-hoxton-london-1811170520327",
+      "query": "",
+      "source": "listing",
+      "text": "iQ Hoxton, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lightfoot-hall-london-1708171895198",
+      "query": "",
+      "source": "listing",
+      "text": "Lightfoot Hall, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-paris-gardens-london-1608304485980",
+      "query": "",
+      "source": "listing",
+      "text": "iQ Paris Gardens, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/quantum-court-london-1710108757833",
+      "query": "",
+      "source": "listing",
+      "text": "Quantum Court, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/the-curve-2001255783052",
+      "query": "",
+      "source": "listing",
+      "text": "Yugo The Curve, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/londonist-portobello-residence-london-2003135314045",
+      "query": "",
+      "source": "listing",
+      "text": "LST Portobello Residence, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/kings-cross-residence-go-britanya-london-2009022949327",
+      "query": "",
+      "source": "listing",
+      "text": "GoBritanya Kings Cross Residence, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/canvas-student-barnard-point-london-2001238048439",
+      "query": "",
+      "source": "listing",
+      "text": "Canvas Student Barnard Point, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/londonist-lewisham-residence-london-2003138583689",
+      "query": "",
+      "source": "listing",
+      "text": "LST Lewisham Residence, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lst-ark-canning-town-london-2608224984762",
+      "query": "",
+      "source": "listing",
+      "text": "LST Ark Canning Town, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lst-greenwich-student-collective-london-2606034012979",
+      "query": "",
+      "source": "listing",
+      "text": "LST Greenwich Student Collective, London",
+      "sources": [
+        "listing"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lst-spring-mews-london-2605145364079",
+      "query": "",
+      "source": "listing",
+      "text": "LST Spring Mews, London",
+      "sources": [
+        "listing",
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/fr/places/iq-vega-london-2101138507106",
+      "query": "",
+      "source": "property",
+      "text": "French",
+      "sources": [
+        "property"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/es/places/iq-vega-london-2101138507106",
+      "query": "",
+      "source": "property",
+      "text": "Spanish",
+      "sources": [
+        "property"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/de/places/iq-vega-london-2101138507106",
+      "query": "",
+      "source": "property",
+      "text": "German",
+      "sources": [
+        "property"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/places/search/england-1811027398578",
+      "query": "",
+      "source": "property",
+      "text": "England",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/the-hub-london-1608300814036",
+      "query": "",
+      "source": "property",
+      "text": "The Hub, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/international-students-house-vauxhall-london-2610050824002",
+      "query": "",
+      "source": "property",
+      "text": "International Students House Vauxhall, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/chapter-westminster-2207199972072",
+      "query": "",
+      "source": "property",
+      "text": "Chapter Westminster, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/gobritanya-westminster-residence-london-2503086215270",
+      "query": "",
+      "source": "property",
+      "text": "Gobritanya Westminster Residence, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/glassyard-building-london-1608308724021",
+      "query": "",
+      "source": "property",
+      "text": "Glassyard Building, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/brooke-hall-london-2305268223262",
+      "query": "",
+      "source": "property",
+      "text": "Brooke Hall, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/urbanest-westminster-bridge-london-1608303433492",
+      "query": "",
+      "source": "property",
+      "text": "Urbanest Westminster Bridge, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lewisham-residence-london-2206069854956",
+      "query": "",
+      "source": "property",
+      "text": "GoBritanya Lewisham Residence, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/venti-house-london-2511208827747",
+      "query": "",
+      "source": "property",
+      "text": "Venti House, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/hawley-crescent-london-1708174027832",
+      "query": "",
+      "source": "property",
+      "text": "Hawley Crescent, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/iq-highbury-london-1811163333778",
+      "query": "",
+      "source": "property",
+      "text": "iQ Highbury, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/lst-louise-house-london-2607318818475",
+      "query": "",
+      "source": "property",
+      "text": "LST Louise House, London London, England, GB",
+      "sources": [
+        "property"
+      ],
+      "family": "property-detail"
+    },
+    {
+      "path": "/places/search/borehamwood-2510087186443",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation in Borehamwood",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/watford-1905111988293",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation in Watford",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/southend-on-sea-1811238860882",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation in Southend-on-Sea",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/brixton-1901098261549",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation near Brixton",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/denmark-hill-1811233008526",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation near Denmark Hill",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/battersea-2408121117827",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation near Battersea",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/chelsea-1811021368911",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation near Chelsea",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/clapham-junction-1811239038687",
+      "query": "",
+      "source": "property",
+      "text": "Student Accommodation near Clapham Junction",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/university-of-arts-1811220234573",
+      "query": "",
+      "source": "property",
+      "text": "University of Arts - Test",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/king-s-college-london-guy-s-campus-1812122096297",
+      "query": "",
+      "source": "property",
+      "text": "King's College London - Guy's Campus",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/kaplan-international-college-1811225188856",
+      "query": "",
+      "source": "property",
+      "text": "Kaplan International College",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/imperial-college-london-1811222417590",
+      "query": "",
+      "source": "property",
+      "text": "Imperial College London",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/imperial-college-business-school-1811224064678",
+      "query": "",
+      "source": "property",
+      "text": "Imperial College Business School",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/institute-of-modern-languages-research-2502144017340",
+      "query": "",
+      "source": "property",
+      "text": "Institute of Modern Languages Research",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/royal-college-of-art-1811225410038",
+      "query": "",
+      "source": "property",
+      "text": "Royal College of Art",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/places/search/aston-university-london-campus-2510034645223",
+      "query": "",
+      "source": "property",
+      "text": "Aston University London Campus",
+      "sources": [
+        "property"
+      ],
+      "family": "search-listing"
+    },
+    {
+      "path": "/news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink",
+      "query": "",
+      "source": "news",
+      "text": "Global News 8 mins · Sep 22, 2026 Chinese Students Top the UK Intake as Other Markets Shrink China r",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/demand-declines-eased-occupancy-climbed-september-2026-update",
+      "query": "",
+      "source": "news",
+      "text": "UK News 8 min read · Sep 30, 2026 Demand Declines Eased, Occupancy Neared 92%: September 2026 Update",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/us-maintains-soft-power-lead-in-hepi-index-uk-ranks-second",
+      "query": "",
+      "source": "news",
+      "text": "UK News 5 mins · Sep 30, 2026 US Maintains Soft Power Lead in HEPI Index, UK Ranks Second Key Highli",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/australia-passes-universities-accord-bill-reforms-funding-system",
+      "query": "",
+      "source": "news",
+      "text": "Asia & Australia News 6 mins · Oct 21, 2026 Australia Passes Universities Accord Bill, Reforms Fundi",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/amberradar/amberradar-student-mobility-higher-education-news-roundup-16th-sept-15th-oct-2026",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 6 min read · Oct 15, 2026 AmberRadar Student Mobility & Higher Education News Roundup | ",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/post/unite-group-reiterates-outlook-despite-q3-portfolio-valuation-dip",
+      "query": "",
+      "source": "news",
+      "text": "UK News 6 mins · Oct 14, 2026 Unite Group Reiterates Outlook Despite Q3 Portfolio Valuation Dip",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/dhs-us-opt-fee-proposal-draws-legal-concerns",
+      "query": "",
+      "source": "news",
+      "text": "USA News 6 mins · Oct 13, 2026 DHS Proposes US$70,000 OPT Fee; Draws Legal Concerns",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/australia-cracks-down-on-rushed-graduate-diploma-enrolments",
+      "query": "",
+      "source": "news",
+      "text": "Asia & Australia News 5 mins · Oct 10, 2026 Australia Cracks Down On Rushed Graduate Diploma Enrolme",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/uk-student-sponsors-face-tighter-compliance-rules",
+      "query": "",
+      "source": "news",
+      "text": "UK News 9 mins · Oct 9, 2026 UK Student Sponsors Face Tighter Compliance Rules",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/higher-education-groups-sue-us-over-curricular-practical-training",
+      "query": "",
+      "source": "news",
+      "text": "USA News 5 mins · Oct 7, 2026 Higher Education Groups Sue US Over Curricular Practical Training",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/hilda-maps-domestic-graduate-pay-gap-as-visa-rules-tighten",
+      "query": "",
+      "source": "news",
+      "text": "Asia & Australia News 5 mins · Sep 28, 2026 HILDA Maps Domestic Graduate Pay Gap As Visa Rules Tight",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/ilac-bankruptcy-leaves-over-a-thousand-students-in-limbo",
+      "query": "",
+      "source": "news",
+      "text": "Global News 5 mins · Sep 24, 2026 ILAC Bankruptcy Leaves Over A Thousand Students In Limbo",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/latest",
+      "query": "",
+      "source": "news",
+      "text": "See All Latest News",
+      "sources": [
+        "news"
+      ],
+      "family": "other"
+    },
+    {
+      "path": "/news/post/government-maintains-migration-levels-boosts-international-student-intake-in-australia",
+      "query": "",
+      "source": "news",
+      "text": "Asia & Australia News Government Maintains Migration Levels, Boosts International Student Intake in ",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/post/ambers-uk-student-housing-annual-report-2024-25",
+      "query": "",
+      "source": "news",
+      "text": "Student Housing Article Amber's UK Student Housing Annual Report (2024-25) 2 mins · Jan 22, 2025",
+      "sources": [
+        "news"
+      ],
+      "family": "news-article"
+    },
+    {
+      "path": "/news/amberreport/ambers-student-success-wellbeing-report-2026",
+      "query": "",
+      "source": "news",
+      "text": "UK News 5 min read · Jul 8, 2026 Amber's Student Success & Wellbeing Report 2026",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/ambers-uk-pbsa-pricing-update-jan-26-vs-mar-26",
+      "query": "",
+      "source": "news",
+      "text": "UK News 5 min read · Mar 30, 2026 Amber’s UK PBSA Demand & Pricing Update (Jan’26 Vs Mar’26)",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/ambers-uk-pbsa-launch-price-report-ay-2026-27",
+      "query": "",
+      "source": "news",
+      "text": "UK News 5 min read · Dec 9, 2025 Amber’s UK PBSA Launch Price Report (AY 2026-27)",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/ambers-uk-pbsa-pricing-intel-report-ay-2026-27",
+      "query": "",
+      "source": "news",
+      "text": "UK News 5 min read · Oct 17, 2025 Amber's UK PBSA Pricing Intel Report (AY 2026-27)",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/ambers-uk-student-housing-annual-report-2024-25",
+      "query": "",
+      "source": "news",
+      "text": "Student Housing Article 2 mins · Jan 22, 2025 Amber's UK Student Housing Annual Report (2024-25)",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/ambers-australia-student-accommodation-annual-report-2024-25",
+      "query": "",
+      "source": "news",
+      "text": "Asia & Australia News 2 mins · Sep 26, 2024 Amber's Australia Student Accommodation Annual Report (2",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/amber-us-international-student-housing-report-2023-24",
+      "query": "",
+      "source": "news",
+      "text": "Student Housing News 2mins · Feb 2, 2024 Amber's US International Student Housing Annual Report 2023",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/connect-with-amber",
+      "query": "",
+      "source": "news",
+      "text": "Student Housing News 2 mins · Dec 12, 2023 Connect With Amber",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberreport/student-housing-partners-report-2023",
+      "query": "",
+      "source": "news",
+      "text": "Student Housing News 2 min read · Jul 17, 2023 Student Housing Partners Report: Insider Analysis Of ",
+      "sources": [
+        "news"
+      ],
+      "family": "news-report"
+    },
+    {
+      "path": "/news/amberradar/amberradar-global-student-accommodation-market-news-september-week-03",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Sep 22, 2026 AmberRadar Global Student Accommodation Market News - Septembe",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-september-week-02",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Sep 15, 2026 AmberRadar Global Student Accommodation Market News - Septembe",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-september-week-01",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Sep 8, 2026 AmberRadar Global Student Accommodation Market News - September",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-04",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Aug 28, 2026 Amber Radar Global Student Accommodation Market News - August ",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-03",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Aug 21, 2026 Amber Radar Global Student Accommodation Market News - August ",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-02",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Aug 14, 2026 Amber Radar Global Student Accommodation Market News - August ",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-august-week-01",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Aug 7, 2026 Amber Radar Global Student Accommodation Market News - August 2",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-july-week-04",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Jul 29, 2026 Amber Radar Global Student Accommodation Market News - July 20",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    },
+    {
+      "path": "/news/amberradar/amber-radar-global-student-accommodation-market-news-july-week-03",
+      "query": "",
+      "source": "news",
+      "text": "Amber Radar 5 min read · Jul 22, 2026 Amber Radar Global Student Accommodation Market News - July 20",
+      "sources": [
+        "news"
+      ],
+      "family": "news-radar"
+    }
+  ]
+}

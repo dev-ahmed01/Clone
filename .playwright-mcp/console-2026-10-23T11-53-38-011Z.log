@@ -1,0 +1,27 @@
+[    1919ms] [WARNING] [Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications. @ https://amberstudent.com/proxy/https://connect.facebook.net/en_US/fbevents.js:205
+[    4449ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1
+[    4478ms] [ERROR] Not signed in with the identity provider. @ https://amberstudent.com/scholarship:0
+[    9556ms] TypeError: Failed to fetch
+    at Proxy.sendBeacon (blob:https://amberstudent.com/581d73b6-7bf3-49b1-a95c-55abcb3989c8:2:20231)
+    at t.eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217860)
+    at l (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211336)
+    at n.value (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211094)
+    at t.eval [as next] (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211740)
+    at nk (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217086)
+    at a (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218330)
+    at eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218391)
+    at new Promise (<anonymous>)
+    at t.r (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218271)
+[   12119ms] TypeError: Failed to fetch
+    at Proxy.sendBeacon (blob:https://amberstudent.com/581d73b6-7bf3-49b1-a95c-55abcb3989c8:2:20231)
+    at t.eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217860)
+    at l (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211336)
+    at n.value (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211094)
+    at t.eval [as next] (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211740)
+    at nk (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217086)
+    at a (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218330)
+    at eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218391)
+    at new Promise (<anonymous>)
+    at t.r (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218271)
+[   12292ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1
+[   12293ms] [LOG] unknown_reason @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1

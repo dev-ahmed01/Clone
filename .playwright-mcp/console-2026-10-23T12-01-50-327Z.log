@@ -1,0 +1,49 @@
+[    5523ms] [WARNING] [Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications. @ https://amberstudent.com/proxy/https://connect.facebook.net/en_US/fbevents.js:205
+[    7056ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://accounts.google.com/gsi/client:86
+[    7115ms] [ERROR] Not signed in with the identity provider. @ https://amberstudent.com/places/iq-vega-london-2101138507106:0
+[   11635ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1
+[   11636ms] [LOG] unknown_reason @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1
+[   21097ms] TypeError: Failed to fetch
+    at Proxy.sendBeacon (blob:https://amberstudent.com/cb016dd4-6f3d-4fb8-ac7f-5b75626be37c:2:20231)
+    at t.eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217860)
+    at l (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211336)
+    at n.value (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211094)
+    at t.eval [as next] (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211740)
+    at nk (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217086)
+    at a (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218330)
+    at eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218391)
+    at new Promise (<anonymous>)
+    at t.r (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218271)
+[   24212ms] TypeError: Failed to fetch
+    at Proxy.sendBeacon (blob:https://amberstudent.com/cb016dd4-6f3d-4fb8-ac7f-5b75626be37c:2:20231)
+    at t.eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217860)
+    at l (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211336)
+    at n.value (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211094)
+    at t.eval [as next] (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211740)
+    at nk (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217086)
+    at a (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218330)
+    at eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218391)
+    at new Promise (<anonymous>)
+    at t.r (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218271)
+[   24213ms] TypeError: Failed to fetch
+    at Proxy.sendBeacon (blob:https://amberstudent.com/cb016dd4-6f3d-4fb8-ac7f-5b75626be37c:2:20231)
+    at Ei (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:27555)
+    at io (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:44608)
+    at bo (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:49808)
+    at eval (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:4857)
+    at y (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:2846)
+    at s (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:4834)
+    at y (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:2846)
+    at c.send (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:5142)
+    at y (https://amberstudent.com/proxy/https://sc-static.net/scevent.min.js:4:2846)
+[   24227ms] TypeError: Failed to fetch
+    at Proxy.sendBeacon (blob:https://amberstudent.com/cb016dd4-6f3d-4fb8-ac7f-5b75626be37c:2:20231)
+    at t.eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217860)
+    at l (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211336)
+    at n.value (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211094)
+    at t.eval [as next] (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:211740)
+    at nk (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:217086)
+    at a (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218330)
+    at eval (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218391)
+    at new Promise (<anonymous>)
+    at t.r (https://analytics.tiktok.com/i18n/pixel/static/main.MTFiZjI1ODk0MQ.js:3:218271)

@@ -1,0 +1,5 @@
+[    1491ms] [WARNING] [Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications. @ https://amberstudent.com/proxy/https://connect.facebook.net/en_US/fbevents.js:205
+[    4474ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1
+[    4483ms] [ERROR] Not signed in with the identity provider. @ https://amberstudent.com/news:0
+[    7165ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1
+[    7165ms] [LOG] unknown_reason @ https://browser.sentry-cdn.com/7.114.0/bundle.min.js:1

@@ -1,0 +1,3508 @@
+{
+  "scope": "Browser-visible DOM asset metadata and console log metadata; raw CDP Network events unavailable",
+  "page": {
+    "assets": [
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-M5KW9Q0S5C&cx=c&gtm=4e6al1"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://www.googletagmanager.com/gtag/destination?id=AW-614642990&cx=c&gtm=4e6al1"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://www.redditstatic.com/ads/pixel.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://bat.bing.com/bat.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://connect.facebook.net/signals/config/296478883208201?v=2.9.427&r=stable&domain=amberstudent.com&hme=766752a074f0cb0756dd3275a46fdecbcfe3de1ab8f573546734b619e44d384f&ex_m=118%2C241%2C171%2C27%2C82%2C83%2C162%2C78%2C77%2C11%2C181%2C102%2C20%2C153%2C141%2C46%2C85%2C90%2C149%2C176%2C183%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C115%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C163%2C87%2C126%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C124%2C160%2C164%2C53%2C125%2C29%2C26%2C133%2C79%2C43%2C166%2C165%2C167%2C157%2C155%2C30%2C42%2C66%2C123%2C178%2C80%2C21%2C128%2C93%2C76%2C23%2C97%2C98%2C130%2C96%2C151%2C150%2C154%2C109%2C177%2C180%2C41%2C56%2C127%2C54%2C161%2C72%2C185%2C110%2C184%2C210%2C255%2C84%2C274%2C273%2C272%2C14%2C25%2C28%2C40%2C62%2C117%2C68%2C10%2C73%2C111%2C112%2C113%2C119%2C144%2C38%2C36%2C146%2C147%2C148%2C143%2C142%2C172%2C86%2C175%2C173%2C174%2C57%2C69%2C67%2C137%2C19%2C179%2C52%2C324%2C325%2C326%2C323%2C340%2C362%2C248%2C237%2C70%2C238%2C236%2C365%2C356%2C59%2C249%2C121%2C145%2C92%2C135%2C61%2C134%2C140%2C139%2C65%2C74%2C168%2C88%2C89%2C129%2C44%2C39%2C60%2C63%2C114%2C182%2C1%2C138%2C16%2C136%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C132%2C101%2C100%2C187%2C188%2C106%2C107%2C9%2C116%2C186%2C58%2C158%2C99%2C91%2C81%2C131%2C120%2C169%2C50%2C159%2C0%2C94%2C152%2C156%2C170%2C45%2C122%2C13%2C189"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://amberstudent.com/proxy/https://connect.facebook.net/en_US/fbevents.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KBMS8MR&gtm_auth=qiUckvLwNGJMeDPyL6iWCg&gtm_preview=env-1&gtm_cookies_win=x"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preconnect",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preconnect",
+        "tag": "link",
+        "type": null,
+        "url": "https://static-assets.amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preconnect",
+        "tag": "link",
+        "type": null,
+        "url": "https://base.amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-57x57.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-60x60.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-72x72.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-76x76.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-114x114.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-120x120.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-144x144.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-152x152.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "apple-touch-icon",
+        "tag": "link",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/apple-icon-180x180.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "sitemap",
+        "tag": "link",
+        "type": "application/xml",
+        "url": "https://amberstudent.com/sitemap"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "canonical",
+        "tag": "link",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": "image",
+        "crossorigin": null,
+        "fetchpriority": "high",
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://static-assets.amberstudent.com/amber-user-website/static/amberstudent/assets/images/app/assets/1440%20-%20web-min.png?q=90"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/1343.ba042cb57ed81122.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/564.58f813e6856b07bd.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6562.7c3b64696da5aa4b.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/7911.13c85e2ad1152bd2.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/2639.36ee7b5004a99fa4.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6366.080f70be81a55f9d.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/9519.b12180bba21d90d0.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6736.137e9371e74c10a6.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/2762.cd33b77764c24274.desktop.css"
+      },
+      {
+        "as": "style",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/main.730e6d627ddf86e5.desktop.css"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/main.eb0ff8ff3aac9210.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/865.0c2779c3ad51ad76.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/9838.6edf72617649d9d9.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/2762.af785260b22b5931.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6574.35a4074277947ada.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6196.2a1ca0b84173d101.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8136.a3487569611cf37c.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/9519.45de300709847bb1.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/4845.9c5da92cfbb6f18f.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6366.56b62a10cb10c299.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8609.1106635fd7874f13.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/1331.c84254895b5120ab.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/1619.c794e71586caaeeb.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/2639.e1c0b1117cae8b61.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8602.7bc0893aec3f4fa4.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8756.38c1c8db6cc02563.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/7911.3b7c73ecc20685a5.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/4449.4b68f0565f0991be.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/5294.28f3a0cf15d20c83.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6867.bdb99d2ebe792dae.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/2203.8f410ae0a610f1ff.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8726.c110cce5c7738fc2.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6562.f1653af935e93e81.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/564.a728871cb1294e25.desktop.js"
+      },
+      {
+        "as": "script",
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/1343.1dcf62e10cb09c08.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/main.730e6d627ddf86e5.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/2762.cd33b77764c24274.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6736.137e9371e74c10a6.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/9519.b12180bba21d90d0.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6366.080f70be81a55f9d.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/2639.36ee7b5004a99fa4.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/7911.13c85e2ad1152bd2.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6562.7c3b64696da5aa4b.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/564.58f813e6856b07bd.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/1343.ba042cb57ed81122.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": null,
+        "url": "chrome-extension://pjdkmeabgpggjenaichdfjhdckcejjik/assets/autocomplete.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/3065.f8fa81de1239b5a7.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "icon",
+        "tag": "link",
+        "type": "image/png",
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-codex-favicon-badge%3D%22codex-favicon-badge%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cimage%20href%3D%22data%3Aimage%2Fbmp%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIg0lEQVR4nJxXa3BV1RVea%2B9z783DhEeACARIMDzEFIFWFGoVKxUsUBSMUmRGrDJOtcUfnU5n2ilNa21nOq1jHcba6gDtMHRGLOMMvqqIQNpSoRQCaTDISBJBioFCHvcm99yz9%2Bq397mER6sk7snNPme%2F1rfW%2BtZe6wTUz9Y0bt5ILXquEr6VtIwmktHMZhgFkSg2p4X4BCs%2Bzla2FxSbt0fur2%2Fvz7l8pQVHxi241lpertjOw%2FIaYimMdwpBMHEQ4cUSc%2F4wxRm8H2Dm1znQm8YdevuDzwSgdezyIbmo82HLsoqUTCCFQWEvmIWNKNOtlGRYRxBuCjFXgnWa8%2BAASISoUWt%2BttPSxpqmHd39BnBy%2Bv1TomPpJyMTLjBFlLBJv7QHIN4VkTch6APgaTUsZ5PJrAM2CEIrIbMKQr%2FCSmbh4CIPhCgLoC8GkV4z8r0dLVcE0DjxvhsKj5xdy8QzhRXJUMqZQvWaYlkf6OTOqpaXz9GntDPVd5Z2B5lbLdODELwA6JIA5Ka2BaJWj2rcdfgTARyoXnpd4dHOdRicCQAwozopQ%2FgXQWlqw8WCj1XOKUirq0YEEg1OUg4G4HNtNvr4tpYdvReA3FjalSpYoUS%2BT8qCsLCGkrcCCR65%2BuCuY%2F8DoH7sgiFlbWa9IrtYkRd%2FVBUFj4%2FPvPI6FnkVmsYvnBAYswz0u0mRmUiBDFacA%2FGkAy5phtP3kYpeGt9cf4jyez6cevN8K%2FI0LDjJgcDwhmSu89sjmpq6LwFwsGzx94Iz0ZOaCETik5SSVROzr74aa7yyIGc%2BXgmTrIZfr43ZjsMQBUobL8tHAVt3YisUWNdr5dlJR3ac9iCmzJpPAf%2BWyYwFj0IheWzMgT0v9AFoKL%2B7Rmd4C4d2AkwWccJ%2Bd3J669Nu7n34lLJ6DQLgmwivIr%2BDJQThPoSPT8C87n0UhI9Fn%2FRaMgKX6OVUKvzOyAN%2Fb3HnnJh246OwxFOwRAp7G62opRUNe44or0yol5NWE6gApCvSr6QSekNeeMr2JNYY4cehJIRzFpq%2BCKHLA6K5PV3ZBd1F%2FFWO7FxEx9cRnn9E8PWAFApAloS5xC%2F%2FPXX2CHeWtj2%2Fx%2BmvARympUbr6C43HjQMXVKBjXe4kCGleqDphqozWzzhTLrgQZj5UQgNsO0%2FuOV%2BGvZmnq9pvyim4%2FsujV9rQ%2Fkdfy4dTPWsTB1OG8Fkl2QtHQI3fsJ8MH38%2Bhnr4J7bYclSAF7aPn36RpUweh60q3GUwd%2FuAntuhyfc8IUThOy3YE9384Uw%2FRMTH5r560uEX9auP%2FVmurJ5%2B3NiqA6gM85ZMPmq49Nm3eAtHfB2K%2FYvXlmWqTmW25Rl%2FhLmUuxYJPLWNWe3dcTxkVwGRNc5WFZ4S9RT9ALX1Vm6QvMRk%2BX1%2BL%2BV41AYDUrMc3Oj9u3LANHefIAUCJmpAEij%2FU68wfz%2B3n4HrMdJN3lqE4ea5aWa9s3d1M9WhfsAkbSJYiuQKPvl9kmTSvwzewC9%2BVtyhoJ2lWIR%2FURdHAX%2BgijPdpbDb5PzbmkLreylAbZsKLtx5hGvrFWT0sXFFW4cZHQyzrlMAf0mK8qpcjIIjEhntJA3v%2B3RQ1jUIBFQxqrjxoRnaICtelDmnBLVGhuRSpImUebGI5vogOguNwhsZQqCyUYIKvTZMN4M9rI1Cp12V4wM1ymhgbbx%2BxD2ErqUCBCwtPiUVhCEoJ2YGBcFCo%2FtsAJiThVqmyx1i8LekrNwVge568SoUe2cGEoDbJupFlFNdD4vQ0M%2FnsZ1IiCbuEhAD%2Bdzi3sQyyXoqtyiYcPSp%2BC3ZkcTjFUWCH%2BBBto2uzKFPIni%2Bz7om%2FLvElcwDuOJ%2FGAAoR7AmOObeyD6n36zcEosLflbRW0hDaDV1lIegfM1Xyw%2FjyJOcYqV%2FiteQ3EDSm5%2Fj75REm8L%2FoSuzecvonuGmGgFDajBBF6%2FfIs9QMX%2Bv8pfBXBBZLNv4BI6zLGjvpgrCm9xD9d2bNyPrPWH2AvktH%2BiueJrq1x%2BoH612vOqxubOt3Tm4jVI7DNoU6so2ZavKoth8gcah9de5balwuJn0G%2FNM7kcN8qvTDZY1zxu0Z2HJ99dJjQnqKurc4lZ1VHcS%2F6d%2FkUam6BXTALjLhs0nUyqPkTMMR%2F2J1ZOQ6bagoqlirVk0a%2Bu6d74Ozd3dHhtdU7TU8zRQtbWHQncgoLUNoPJyP2Uxe0SR7VnvQX7jSOPQj8baXoMK2tQuO7CGR8BYjHiGwlJSrAnd6EgST6wBgvr2JVDgW3DHf3QlI5N29xc07AlI1VCHgOwhxHR5XHOdzdZ%2FHNCOS%2FcU05Z%2F7sABoUL2%2Fy68wWML%2BVzfSyJQvUbGOSNvHHGwi3PNJXdO9e9TDm95eTBm4MfKVJ3QcKPYcF6DJ9yLoX4DPZlECkZuA8exo%2Fxw7O3PMVmRp%2FNZ8gMQPse3klfUpQ2whWUMutgpuleC21brDY%2FHxr0bhz10dY%2B%2BrxffX8phZ1jRJsyZXVAQUzxIDAURb4Xowwm5IfQ%2BBZYDaW5%2BQGS0j%2FgCu3XIixy1ldOl7ZDhStmqyStxabpeVP2kDaoZOj5gtSZnVUXVb6f1oRqdduUU5ugzL2KI6Rhu7Ci4d13Ll%2F3fz9MGgevnMYc%2FgwWmO9uIl94KosqydYrbfdaob2UCI8VRckupBHjyiEf38V4SheTLemVZFYCo8Pn8Pm2CITNGI4WVR7cs71fADyI4bVXw4qrOLCPgDyjER3uE%2Bw8%2BVC6yVn0XSCT8Ru0T2IxybBGOxIqMwbkK8HnG%2FhgFlUMBIBrdXWklq1dNgM%2BvgeHLsaB1RAaUB%2F74xiPoyH%2BQHVVsvtodWU7TB%2B%2FKwDgzwCgDwgumfuGNVSrFM8hjj6H7%2FHPI4tdAwCDIFxdAHI%2B%2FMSHH%2FufA%2BYsQIvHHNq98%2FKz%2FwsAAP%2F%2FXgdaZwAAAAZJREFUAwCowujKQYBK4AAAAABJRU5ErkJggg%3D%3D%22%20width%3D%2232%22%20height%3D%2232%22%20opacity%3D%220.3%22%20%2F%3E%3Cpath%20d%3D%22M3.04536%204.45259C2.7582%203.60299%203.60299%202.7582%204.45259%203.04536L14.1828%206.33403C15.1637%206.66558%2015.0872%208.08006%2014.0715%208.39045L10.2994%209.54319C9.93919%209.65327%209.65327%209.93919%209.54319%2010.2994L8.39046%2014.0715C8.08007%2015.0872%206.66558%2015.1637%206.33404%2014.1828L3.04536%204.45259Z%22%20fill%3D%22black%22%20stroke%3D%22white%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%20paint-order%3D%22stroke%20fill%22%20transform%3D%22translate(-2%20-2)%20scale(2.1)%22%20%2F%3E%3C%2Fsvg%3E"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "icon",
+        "tag": "link",
+        "type": "image/png",
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-codex-favicon-badge%3D%22codex-favicon-badge%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cimage%20href%3D%22data%3Aimage%2Fbmp%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIg0lEQVR4nJxXa3BV1RVea%2B9z783DhEeACARIMDzEFIFWFGoVKxUsUBSMUmRGrDJOtcUfnU5n2ilNa21nOq1jHcba6gDtMHRGLOMMvqqIQNpSoRQCaTDISBJBioFCHvcm99yz9%2Bq397mER6sk7snNPme%2F1rfW%2BtZe6wTUz9Y0bt5ILXquEr6VtIwmktHMZhgFkSg2p4X4BCs%2Bzla2FxSbt0fur2%2Fvz7l8pQVHxi241lpertjOw%2FIaYimMdwpBMHEQ4cUSc%2F4wxRm8H2Dm1znQm8YdevuDzwSgdezyIbmo82HLsoqUTCCFQWEvmIWNKNOtlGRYRxBuCjFXgnWa8%2BAASISoUWt%2BttPSxpqmHd39BnBy%2Bv1TomPpJyMTLjBFlLBJv7QHIN4VkTch6APgaTUsZ5PJrAM2CEIrIbMKQr%2FCSmbh4CIPhCgLoC8GkV4z8r0dLVcE0DjxvhsKj5xdy8QzhRXJUMqZQvWaYlkf6OTOqpaXz9GntDPVd5Z2B5lbLdODELwA6JIA5Ka2BaJWj2rcdfgTARyoXnpd4dHOdRicCQAwozopQ%2FgXQWlqw8WCj1XOKUirq0YEEg1OUg4G4HNtNvr4tpYdvReA3FjalSpYoUS%2BT8qCsLCGkrcCCR65%2BuCuY%2F8DoH7sgiFlbWa9IrtYkRd%2FVBUFj4%2FPvPI6FnkVmsYvnBAYswz0u0mRmUiBDFacA%2FGkAy5phtP3kYpeGt9cf4jyez6cevN8K%2FI0LDjJgcDwhmSu89sjmpq6LwFwsGzx94Iz0ZOaCETik5SSVROzr74aa7yyIGc%2BXgmTrIZfr43ZjsMQBUobL8tHAVt3YisUWNdr5dlJR3ac9iCmzJpPAf%2BWyYwFj0IheWzMgT0v9AFoKL%2B7Rmd4C4d2AkwWccJ%2Bd3J669Nu7n34lLJ6DQLgmwivIr%2BDJQThPoSPT8C87n0UhI9Fn%2FRaMgKX6OVUKvzOyAN%2Fb3HnnJh246OwxFOwRAp7G62opRUNe44or0yol5NWE6gApCvSr6QSekNeeMr2JNYY4cehJIRzFpq%2BCKHLA6K5PV3ZBd1F%2FFWO7FxEx9cRnn9E8PWAFApAloS5xC%2F%2FPXX2CHeWtj2%2Fx%2BmvARympUbr6C43HjQMXVKBjXe4kCGleqDphqozWzzhTLrgQZj5UQgNsO0%2FuOV%2BGvZmnq9pvyim4%2FsujV9rQ%2Fkdfy4dTPWsTB1OG8Fkl2QtHQI3fsJ8MH38%2Bhnr4J7bYclSAF7aPn36RpUweh60q3GUwd%2FuAntuhyfc8IUThOy3YE9384Uw%2FRMTH5r560uEX9auP%2FVmurJ5%2B3NiqA6gM85ZMPmq49Nm3eAtHfB2K%2FYvXlmWqTmW25Rl%2FhLmUuxYJPLWNWe3dcTxkVwGRNc5WFZ4S9RT9ALX1Vm6QvMRk%2BX1%2BL%2BV41AYDUrMc3Oj9u3LANHefIAUCJmpAEij%2FU68wfz%2B3n4HrMdJN3lqE4ea5aWa9s3d1M9WhfsAkbSJYiuQKPvl9kmTSvwzewC9%2BVtyhoJ2lWIR%2FURdHAX%2BgijPdpbDb5PzbmkLreylAbZsKLtx5hGvrFWT0sXFFW4cZHQyzrlMAf0mK8qpcjIIjEhntJA3v%2B3RQ1jUIBFQxqrjxoRnaICtelDmnBLVGhuRSpImUebGI5vogOguNwhsZQqCyUYIKvTZMN4M9rI1Cp12V4wM1ymhgbbx%2BxD2ErqUCBCwtPiUVhCEoJ2YGBcFCo%2FtsAJiThVqmyx1i8LekrNwVge568SoUe2cGEoDbJupFlFNdD4vQ0M%2FnsZ1IiCbuEhAD%2Bdzi3sQyyXoqtyiYcPSp%2BC3ZkcTjFUWCH%2BBBto2uzKFPIni%2Bz7om%2FLvElcwDuOJ%2FGAAoR7AmOObeyD6n36zcEosLflbRW0hDaDV1lIegfM1Xyw%2FjyJOcYqV%2FiteQ3EDSm5%2Fj75REm8L%2FoSuzecvonuGmGgFDajBBF6%2FfIs9QMX%2Bv8pfBXBBZLNv4BI6zLGjvpgrCm9xD9d2bNyPrPWH2AvktH%2BiueJrq1x%2BoH612vOqxubOt3Tm4jVI7DNoU6so2ZavKoth8gcah9de5balwuJn0G%2FNM7kcN8qvTDZY1zxu0Z2HJ99dJjQnqKurc4lZ1VHcS%2F6d%2FkUam6BXTALjLhs0nUyqPkTMMR%2F2J1ZOQ6bagoqlirVk0a%2Bu6d74Ozd3dHhtdU7TU8zRQtbWHQncgoLUNoPJyP2Uxe0SR7VnvQX7jSOPQj8baXoMK2tQuO7CGR8BYjHiGwlJSrAnd6EgST6wBgvr2JVDgW3DHf3QlI5N29xc07AlI1VCHgOwhxHR5XHOdzdZ%2FHNCOS%2FcU05Z%2F7sABoUL2%2Fy68wWML%2BVzfSyJQvUbGOSNvHHGwi3PNJXdO9e9TDm95eTBm4MfKVJ3QcKPYcF6DJ9yLoX4DPZlECkZuA8exo%2Fxw7O3PMVmRp%2FNZ8gMQPse3klfUpQ2whWUMutgpuleC21brDY%2FHxr0bhz10dY%2B%2BrxffX8phZ1jRJsyZXVAQUzxIDAURb4Xowwm5IfQ%2BBZYDaW5%2BQGS0j%2FgCu3XIixy1ldOl7ZDhStmqyStxabpeVP2kDaoZOj5gtSZnVUXVb6f1oRqdduUU5ugzL2KI6Rhu7Ci4d13Ll%2F3fz9MGgevnMYc%2FgwWmO9uIl94KosqydYrbfdaob2UCI8VRckupBHjyiEf38V4SheTLemVZFYCo8Pn8Pm2CITNGI4WVR7cs71fADyI4bVXw4qrOLCPgDyjER3uE%2Bw8%2BVC6yVn0XSCT8Ru0T2IxybBGOxIqMwbkK8HnG%2FhgFlUMBIBrdXWklq1dNgM%2BvgeHLsaB1RAaUB%2F74xiPoyH%2BQHVVsvtodWU7TB%2B%2FKwDgzwCgDwgumfuGNVSrFM8hjj6H7%2FHPI4tdAwCDIFxdAHI%2B%2FMSHH%2FufA%2BYsQIvHHNq98%2FKz%2FwsAAP%2F%2FXgdaZwAAAAZJREFUAwCowujKQYBK4AAAAABJRU5ErkJggg%3D%3D%22%20width%3D%2232%22%20height%3D%2232%22%20opacity%3D%220.3%22%20%2F%3E%3Cpath%20d%3D%22M3.04536%204.45259C2.7582%203.60299%203.60299%202.7582%204.45259%203.04536L14.1828%206.33403C15.1637%206.66558%2015.0872%208.08006%2014.0715%208.39045L10.2994%209.54319C9.93919%209.65327%209.65327%209.93919%209.54319%2010.2994L8.39046%2014.0715C8.08007%2015.0872%206.66558%2015.1637%206.33404%2014.1828L3.04536%204.45259Z%22%20fill%3D%22black%22%20stroke%3D%22white%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%20paint-order%3D%22stroke%20fill%22%20transform%3D%22translate(-2%20-2)%20scale(2.1)%22%20%2F%3E%3C%2Fsvg%3E"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "icon",
+        "tag": "link",
+        "type": "image/png",
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-codex-favicon-badge%3D%22codex-favicon-badge%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cimage%20href%3D%22data%3Aimage%2Fbmp%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIg0lEQVR4nJxXa3BV1RVea%2B9z783DhEeACARIMDzEFIFWFGoVKxUsUBSMUmRGrDJOtcUfnU5n2ilNa21nOq1jHcba6gDtMHRGLOMMvqqIQNpSoRQCaTDISBJBioFCHvcm99yz9%2Bq397mER6sk7snNPme%2F1rfW%2BtZe6wTUz9Y0bt5ILXquEr6VtIwmktHMZhgFkSg2p4X4BCs%2Bzla2FxSbt0fur2%2Fvz7l8pQVHxi241lpertjOw%2FIaYimMdwpBMHEQ4cUSc%2F4wxRm8H2Dm1znQm8YdevuDzwSgdezyIbmo82HLsoqUTCCFQWEvmIWNKNOtlGRYRxBuCjFXgnWa8%2BAASISoUWt%2BttPSxpqmHd39BnBy%2Bv1TomPpJyMTLjBFlLBJv7QHIN4VkTch6APgaTUsZ5PJrAM2CEIrIbMKQr%2FCSmbh4CIPhCgLoC8GkV4z8r0dLVcE0DjxvhsKj5xdy8QzhRXJUMqZQvWaYlkf6OTOqpaXz9GntDPVd5Z2B5lbLdODELwA6JIA5Ka2BaJWj2rcdfgTARyoXnpd4dHOdRicCQAwozopQ%2FgXQWlqw8WCj1XOKUirq0YEEg1OUg4G4HNtNvr4tpYdvReA3FjalSpYoUS%2BT8qCsLCGkrcCCR65%2BuCuY%2F8DoH7sgiFlbWa9IrtYkRd%2FVBUFj4%2FPvPI6FnkVmsYvnBAYswz0u0mRmUiBDFacA%2FGkAy5phtP3kYpeGt9cf4jyez6cevN8K%2FI0LDjJgcDwhmSu89sjmpq6LwFwsGzx94Iz0ZOaCETik5SSVROzr74aa7yyIGc%2BXgmTrIZfr43ZjsMQBUobL8tHAVt3YisUWNdr5dlJR3ac9iCmzJpPAf%2BWyYwFj0IheWzMgT0v9AFoKL%2B7Rmd4C4d2AkwWccJ%2Bd3J669Nu7n34lLJ6DQLgmwivIr%2BDJQThPoSPT8C87n0UhI9Fn%2FRaMgKX6OVUKvzOyAN%2Fb3HnnJh246OwxFOwRAp7G62opRUNe44or0yol5NWE6gApCvSr6QSekNeeMr2JNYY4cehJIRzFpq%2BCKHLA6K5PV3ZBd1F%2FFWO7FxEx9cRnn9E8PWAFApAloS5xC%2F%2FPXX2CHeWtj2%2Fx%2BmvARympUbr6C43HjQMXVKBjXe4kCGleqDphqozWzzhTLrgQZj5UQgNsO0%2FuOV%2BGvZmnq9pvyim4%2FsujV9rQ%2Fkdfy4dTPWsTB1OG8Fkl2QtHQI3fsJ8MH38%2Bhnr4J7bYclSAF7aPn36RpUweh60q3GUwd%2FuAntuhyfc8IUThOy3YE9384Uw%2FRMTH5r560uEX9auP%2FVmurJ5%2B3NiqA6gM85ZMPmq49Nm3eAtHfB2K%2FYvXlmWqTmW25Rl%2FhLmUuxYJPLWNWe3dcTxkVwGRNc5WFZ4S9RT9ALX1Vm6QvMRk%2BX1%2BL%2BV41AYDUrMc3Oj9u3LANHefIAUCJmpAEij%2FU68wfz%2B3n4HrMdJN3lqE4ea5aWa9s3d1M9WhfsAkbSJYiuQKPvl9kmTSvwzewC9%2BVtyhoJ2lWIR%2FURdHAX%2BgijPdpbDb5PzbmkLreylAbZsKLtx5hGvrFWT0sXFFW4cZHQyzrlMAf0mK8qpcjIIjEhntJA3v%2B3RQ1jUIBFQxqrjxoRnaICtelDmnBLVGhuRSpImUebGI5vogOguNwhsZQqCyUYIKvTZMN4M9rI1Cp12V4wM1ymhgbbx%2BxD2ErqUCBCwtPiUVhCEoJ2YGBcFCo%2FtsAJiThVqmyx1i8LekrNwVge568SoUe2cGEoDbJupFlFNdD4vQ0M%2FnsZ1IiCbuEhAD%2Bdzi3sQyyXoqtyiYcPSp%2BC3ZkcTjFUWCH%2BBBto2uzKFPIni%2Bz7om%2FLvElcwDuOJ%2FGAAoR7AmOObeyD6n36zcEosLflbRW0hDaDV1lIegfM1Xyw%2FjyJOcYqV%2FiteQ3EDSm5%2Fj75REm8L%2FoSuzecvonuGmGgFDajBBF6%2FfIs9QMX%2Bv8pfBXBBZLNv4BI6zLGjvpgrCm9xD9d2bNyPrPWH2AvktH%2BiueJrq1x%2BoH612vOqxubOt3Tm4jVI7DNoU6so2ZavKoth8gcah9de5balwuJn0G%2FNM7kcN8qvTDZY1zxu0Z2HJ99dJjQnqKurc4lZ1VHcS%2F6d%2FkUam6BXTALjLhs0nUyqPkTMMR%2F2J1ZOQ6bagoqlirVk0a%2Bu6d74Ozd3dHhtdU7TU8zRQtbWHQncgoLUNoPJyP2Uxe0SR7VnvQX7jSOPQj8baXoMK2tQuO7CGR8BYjHiGwlJSrAnd6EgST6wBgvr2JVDgW3DHf3QlI5N29xc07AlI1VCHgOwhxHR5XHOdzdZ%2FHNCOS%2FcU05Z%2F7sABoUL2%2Fy68wWML%2BVzfSyJQvUbGOSNvHHGwi3PNJXdO9e9TDm95eTBm4MfKVJ3QcKPYcF6DJ9yLoX4DPZlECkZuA8exo%2Fxw7O3PMVmRp%2FNZ8gMQPse3klfUpQ2whWUMutgpuleC21brDY%2FHxr0bhz10dY%2B%2BrxffX8phZ1jRJsyZXVAQUzxIDAURb4Xowwm5IfQ%2BBZYDaW5%2BQGS0j%2FgCu3XIixy1ldOl7ZDhStmqyStxabpeVP2kDaoZOj5gtSZnVUXVb6f1oRqdduUU5ugzL2KI6Rhu7Ci4d13Ll%2F3fz9MGgevnMYc%2FgwWmO9uIl94KosqydYrbfdaob2UCI8VRckupBHjyiEf38V4SheTLemVZFYCo8Pn8Pm2CITNGI4WVR7cs71fADyI4bVXw4qrOLCPgDyjER3uE%2Bw8%2BVC6yVn0XSCT8Ru0T2IxybBGOxIqMwbkK8HnG%2FhgFlUMBIBrdXWklq1dNgM%2BvgeHLsaB1RAaUB%2F74xiPoyH%2BQHVVsvtodWU7TB%2B%2FKwDgzwCgDwgumfuGNVSrFM8hjj6H7%2FHPI4tdAwCDIFxdAHI%2B%2FMSHH%2FufA%2BYsQIvHHNq98%2FKz%2FwsAAP%2F%2FXgdaZwAAAAZJREFUAwCowujKQYBK4AAAAABJRU5ErkJggg%3D%3D%22%20width%3D%2232%22%20height%3D%2232%22%20opacity%3D%220.3%22%20%2F%3E%3Cpath%20d%3D%22M3.04536%204.45259C2.7582%203.60299%203.60299%202.7582%204.45259%203.04536L14.1828%206.33403C15.1637%206.66558%2015.0872%208.08006%2014.0715%208.39045L10.2994%209.54319C9.93919%209.65327%209.65327%209.93919%209.54319%2010.2994L8.39046%2014.0715C8.08007%2015.0872%206.66558%2015.1637%206.33404%2014.1828L3.04536%204.45259Z%22%20fill%3D%22black%22%20stroke%3D%22white%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%20paint-order%3D%22stroke%20fill%22%20transform%3D%22translate(-2%20-2)%20scale(2.1)%22%20%2F%3E%3C%2Fsvg%3E"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "icon",
+        "tag": "link",
+        "type": "image/png",
+        "url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-codex-favicon-badge%3D%22codex-favicon-badge%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cimage%20href%3D%22data%3Aimage%2Fbmp%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAIg0lEQVR4nJxXa3BV1RVea%2B9z783DhEeACARIMDzEFIFWFGoVKxUsUBSMUmRGrDJOtcUfnU5n2ilNa21nOq1jHcba6gDtMHRGLOMMvqqIQNpSoRQCaTDISBJBioFCHvcm99yz9%2Bq397mER6sk7snNPme%2F1rfW%2BtZe6wTUz9Y0bt5ILXquEr6VtIwmktHMZhgFkSg2p4X4BCs%2Bzla2FxSbt0fur2%2Fvz7l8pQVHxi241lpertjOw%2FIaYimMdwpBMHEQ4cUSc%2F4wxRm8H2Dm1znQm8YdevuDzwSgdezyIbmo82HLsoqUTCCFQWEvmIWNKNOtlGRYRxBuCjFXgnWa8%2BAASISoUWt%2BttPSxpqmHd39BnBy%2Bv1TomPpJyMTLjBFlLBJv7QHIN4VkTch6APgaTUsZ5PJrAM2CEIrIbMKQr%2FCSmbh4CIPhCgLoC8GkV4z8r0dLVcE0DjxvhsKj5xdy8QzhRXJUMqZQvWaYlkf6OTOqpaXz9GntDPVd5Z2B5lbLdODELwA6JIA5Ka2BaJWj2rcdfgTARyoXnpd4dHOdRicCQAwozopQ%2FgXQWlqw8WCj1XOKUirq0YEEg1OUg4G4HNtNvr4tpYdvReA3FjalSpYoUS%2BT8qCsLCGkrcCCR65%2BuCuY%2F8DoH7sgiFlbWa9IrtYkRd%2FVBUFj4%2FPvPI6FnkVmsYvnBAYswz0u0mRmUiBDFacA%2FGkAy5phtP3kYpeGt9cf4jyez6cevN8K%2FI0LDjJgcDwhmSu89sjmpq6LwFwsGzx94Iz0ZOaCETik5SSVROzr74aa7yyIGc%2BXgmTrIZfr43ZjsMQBUobL8tHAVt3YisUWNdr5dlJR3ac9iCmzJpPAf%2BWyYwFj0IheWzMgT0v9AFoKL%2B7Rmd4C4d2AkwWccJ%2Bd3J669Nu7n34lLJ6DQLgmwivIr%2BDJQThPoSPT8C87n0UhI9Fn%2FRaMgKX6OVUKvzOyAN%2Fb3HnnJh246OwxFOwRAp7G62opRUNe44or0yol5NWE6gApCvSr6QSekNeeMr2JNYY4cehJIRzFpq%2BCKHLA6K5PV3ZBd1F%2FFWO7FxEx9cRnn9E8PWAFApAloS5xC%2F%2FPXX2CHeWtj2%2Fx%2BmvARympUbr6C43HjQMXVKBjXe4kCGleqDphqozWzzhTLrgQZj5UQgNsO0%2FuOV%2BGvZmnq9pvyim4%2FsujV9rQ%2Fkdfy4dTPWsTB1OG8Fkl2QtHQI3fsJ8MH38%2Bhnr4J7bYclSAF7aPn36RpUweh60q3GUwd%2FuAntuhyfc8IUThOy3YE9384Uw%2FRMTH5r560uEX9auP%2FVmurJ5%2B3NiqA6gM85ZMPmq49Nm3eAtHfB2K%2FYvXlmWqTmW25Rl%2FhLmUuxYJPLWNWe3dcTxkVwGRNc5WFZ4S9RT9ALX1Vm6QvMRk%2BX1%2BL%2BV41AYDUrMc3Oj9u3LANHefIAUCJmpAEij%2FU68wfz%2B3n4HrMdJN3lqE4ea5aWa9s3d1M9WhfsAkbSJYiuQKPvl9kmTSvwzewC9%2BVtyhoJ2lWIR%2FURdHAX%2BgijPdpbDb5PzbmkLreylAbZsKLtx5hGvrFWT0sXFFW4cZHQyzrlMAf0mK8qpcjIIjEhntJA3v%2B3RQ1jUIBFQxqrjxoRnaICtelDmnBLVGhuRSpImUebGI5vogOguNwhsZQqCyUYIKvTZMN4M9rI1Cp12V4wM1ymhgbbx%2BxD2ErqUCBCwtPiUVhCEoJ2YGBcFCo%2FtsAJiThVqmyx1i8LekrNwVge568SoUe2cGEoDbJupFlFNdD4vQ0M%2FnsZ1IiCbuEhAD%2Bdzi3sQyyXoqtyiYcPSp%2BC3ZkcTjFUWCH%2BBBto2uzKFPIni%2Bz7om%2FLvElcwDuOJ%2FGAAoR7AmOObeyD6n36zcEosLflbRW0hDaDV1lIegfM1Xyw%2FjyJOcYqV%2FiteQ3EDSm5%2Fj75REm8L%2FoSuzecvonuGmGgFDajBBF6%2FfIs9QMX%2Bv8pfBXBBZLNv4BI6zLGjvpgrCm9xD9d2bNyPrPWH2AvktH%2BiueJrq1x%2BoH612vOqxubOt3Tm4jVI7DNoU6so2ZavKoth8gcah9de5balwuJn0G%2FNM7kcN8qvTDZY1zxu0Z2HJ99dJjQnqKurc4lZ1VHcS%2F6d%2FkUam6BXTALjLhs0nUyqPkTMMR%2F2J1ZOQ6bagoqlirVk0a%2Bu6d74Ozd3dHhtdU7TU8zRQtbWHQncgoLUNoPJyP2Uxe0SR7VnvQX7jSOPQj8baXoMK2tQuO7CGR8BYjHiGwlJSrAnd6EgST6wBgvr2JVDgW3DHf3QlI5N29xc07AlI1VCHgOwhxHR5XHOdzdZ%2FHNCOS%2FcU05Z%2F7sABoUL2%2Fy68wWML%2BVzfSyJQvUbGOSNvHHGwi3PNJXdO9e9TDm95eTBm4MfKVJ3QcKPYcF6DJ9yLoX4DPZlECkZuA8exo%2Fxw7O3PMVmRp%2FNZ8gMQPse3klfUpQ2whWUMutgpuleC21brDY%2FHxr0bhz10dY%2B%2BrxffX8phZ1jRJsyZXVAQUzxIDAURb4Xowwm5IfQ%2BBZYDaW5%2BQGS0j%2FgCu3XIixy1ldOl7ZDhStmqyStxabpeVP2kDaoZOj5gtSZnVUXVb6f1oRqdduUU5ugzL2KI6Rhu7Ci4d13Ll%2F3fz9MGgevnMYc%2FgwWmO9uIl94KosqydYrbfdaob2UCI8VRckupBHjyiEf38V4SheTLemVZFYCo8Pn8Pm2CITNGI4WVR7cs71fADyI4bVXw4qrOLCPgDyjER3uE%2Bw8%2BVC6yVn0XSCT8Ru0T2IxybBGOxIqMwbkK8HnG%2FhgFlUMBIBrdXWklq1dNgM%2BvgeHLsaB1RAaUB%2F74xiPoyH%2BQHVVsvtodWU7TB%2B%2FKwDgzwCgDwgumfuGNVSrFM8hjj6H7%2FHPI4tdAwCDIFxdAHI%2B%2FMSHH%2FufA%2BYsQIvHHNq98%2FKz%2FwsAAP%2F%2FXgdaZwAAAAZJREFUAwCowujKQYBK4AAAAABJRU5ErkJggg%3D%3D%22%20width%3D%2232%22%20height%3D%2232%22%20opacity%3D%220.3%22%20%2F%3E%3Cpath%20d%3D%22M3.04536%204.45259C2.7582%203.60299%203.60299%202.7582%204.45259%203.04536L14.1828%206.33403C15.1637%206.66558%2015.0872%208.08006%2014.0715%208.39045L10.2994%209.54319C9.93919%209.65327%209.65327%209.93919%209.54319%2010.2994L8.39046%2014.0715C8.08007%2015.0872%206.66558%2015.1637%206.33404%2014.1828L3.04536%204.45259Z%22%20fill%3D%22black%22%20stroke%3D%22white%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%20paint-order%3D%22stroke%20fill%22%20transform%3D%22translate(-2%20-2)%20scale(2.1)%22%20%2F%3E%3C%2Fsvg%3E"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/7540.6bc0737fed6b524b.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/6734.a40e063ac9c10a01.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/9888.65ac4f8f9f578078.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/5893.ae27752bcfc60415.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/5072.cc93560bc70306f4.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/4797.c3e2987281cd93d5.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/366.e46523f4c8da2290.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/3760.17a32a053111b808.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/7101.fd52c79097cde363.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/2064.4bca36da65dfb135.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/5049.1fcb5d27077b909c.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/7462.6685bc8514197eeb.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/5982.a0b008bf8de4614f.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/8286.684d7c956cce43e9.desktop.css"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/css/8331.bcaebf4f4a71c4c2.desktop.css"
+      },
+      {
+        "as": "image",
+        "crossorigin": null,
+        "fetchpriority": "high",
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/amberplus_banner_Coursera.png"
+      },
+      {
+        "as": "image",
+        "crossorigin": null,
+        "fetchpriority": "high",
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/Cousera%20logo.png"
+      },
+      {
+        "as": "image",
+        "crossorigin": null,
+        "fetchpriority": "high",
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/amberplus_banner%20(15).png"
+      },
+      {
+        "as": "image",
+        "crossorigin": null,
+        "fetchpriority": "high",
+        "loading": null,
+        "rel": "preload",
+        "tag": "link",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/Untitled-4.jpg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://bat.bing.com/p/action/97080512.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/614642990/?random=1792731690649&cv=11&fst=1792731690649&bg=ffffff&guid=ON&async=1&gtm=45be6al1v9164975051z89111431642za20gzb9111431642zd9111431642xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~117776795~118897920~118897930~120213116~120385423~120469145~120469153~121191155~121246026~121246034&u_w=1280&u_h=800&url=https%3A%2F%2Famberstudent.com%2F&rcb=17&frm=0&tiba=Discover%20the%20Best%20Student%20Accommodation%20and%20Housing%20%7C%20Amber&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=491096262.1792679532&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B155.0.8059.85%7CChromium%3B155.0.8059.85%7CNot(A%253ABrand%3B24.0.0.0&uamb=0&uam=&uap=Windows&uapv=19.0.0&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=4"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css",
+        "url": "https://accounts.google.com/gsi/style"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://browser.sentry-cdn.com/7.114.0/bundle.min.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/logo/amber-logo-light.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/App_Download_White_Nav_bar_2.gif?w=80"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://static-assets.amberstudent.com/amber-user-website/static/amberstudent/assets/images/app/assets/1440%20-%20web-min.png?q=90"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://static-assets.amberstudent.com/amber-user-website/static/amberstudent/assets/images/app/assets/homepage-beds.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://static-assets.amberstudent.com/amber-user-website/static/amberstudent/assets/images/app/assets/homepage-universities.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://static-assets.amberstudent.com/amber-user-website/static/amberstudent/assets/images/app/assets/homepage-cities.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": "auto",
+        "rel": null,
+        "tag": "iframe",
+        "type": null,
+        "url": "https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html?templateId=53aa8807dec7e10d38f59f32&businessunitId=579c87e70000ff000592e82f#locale=en-GB&styleHeight=116px&styleWidth=240px&testid=Trustpilot-logo"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-uk.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-aus.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-ger.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-usa.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-can.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-esp.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-ire.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-france.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-nz.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/flag-singapore.svg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_London_London%20Eye.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Coventry_Coventry%20Cathedral.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Sheffield_The+Crucible+Theatre.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Liverpool_Liverpool%20Cathedral.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Nottingham_City%20Hall.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Leeds_Royal%20Armouries%20Museum.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Birmingham_Birmingham%20Museum%20and%20Art%20Gallery.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Leicester_Leicester%20Cathedral.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/United_Kingdom/Glasgow.png?w=240&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Newcastle%20Upon%20Tyne_The%20Tyne%20River%20and%20Bridge.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Cardiff_Cardiff%20Castle.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-assets.amberstudent.com/regions/Popular-Cities/UK/UK_Aberdeen_St.%20Machar_s%20Cathedral.webp?w=330&w=240&h=330&h=240&fit=crop&q=40&auto=format&trim=auto"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": "auto",
+        "rel": null,
+        "tag": "iframe",
+        "type": null,
+        "url": "https://widget.trustpilot.com/trustboxes/5419b757fa0340045cd0c938/index.html?templateId=5419b757fa0340045cd0c938&businessunitId=579c87e70000ff000592e82f#locale=en-GB&styleHeight=24px&styleWidth=180px&testid=Trustpilot-logo"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/amberplus_banner_Coursera.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/Cousera%20logo.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/amberplus_banner%20(15).png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://webflow-amber-prod.gumlet.io/production-uploads/Untitled-4.jpg"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/torrens_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/bimm_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/Niagara_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/westminster_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/schiller_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/uws_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/law_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/into_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/ue_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/jamescook_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/birmingham_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/lc_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/medicine_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/torrens_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/bimm_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/Niagara_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/westminster_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/schiller_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/uws_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/law_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/into_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/ue_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/jamescook_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/birmingham_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/lc_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://prod-static-assets.amberstudent.com/images/partner-logos/medicine_uni.png"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://amberstudent.com/"
+      },
+      {
+        "as": null,
+        "crossorigin": "anonymous",
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://posthog.amberstudent.com/array/phc_vCbyBuK48hfdALfigRCiaLunweodmY66WAput3j3zNhM/config.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/main.eb0ff8ff3aac9210.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/865.0c2779c3ad51ad76.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/9838.6edf72617649d9d9.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/2762.af785260b22b5931.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6574.35a4074277947ada.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6196.2a1ca0b84173d101.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8136.a3487569611cf37c.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/9519.45de300709847bb1.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/4845.9c5da92cfbb6f18f.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6366.56b62a10cb10c299.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8609.1106635fd7874f13.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/1331.c84254895b5120ab.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/1619.c794e71586caaeeb.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/2639.e1c0b1117cae8b61.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8602.7bc0893aec3f4fa4.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8756.38c1c8db6cc02563.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/7911.3b7c73ecc20685a5.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/4449.4b68f0565f0991be.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/5294.28f3a0cf15d20c83.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6867.bdb99d2ebe792dae.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/2203.8f410ae0a610f1ff.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/8726.c110cce5c7738fc2.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/6562.f1653af935e93e81.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/564.a728871cb1294e25.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/1343.1dcf62e10cb09c08.desktop.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": null,
+        "url": "https://bzrcdn.openai.com/sdk/oaiq.min.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "text/javascript",
+        "url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://bat.bing.com/action/0?ti=97080512&Ver=2&mid=3fd47e69-cc21-4e2b-85a9-f2c56a167e77&bo=1&sid=5ec87460ce2511f1b6ceedc921cc9bdf&vid=5ec8bbb0ce2511f1abe7571c9fbc4c9f&vids=0&msclkid=N&uach=pv%3D19.0.0&pi=918639831&lg=en-GB&sw=1280&sh=800&sc=24&tl=Discover%20the%20Best%20Student%20Accommodation%20and%20Housing%20%7C%20Amber&kw=Amberstudent,%20amberstudent.com,%20student%20accommodation,%20student%20housing,%20student%20apartments,%20off%20campus,%20private%20halls,%20homestays&p=https%3A%2F%2Famberstudent.com%2F&r=&lt=6344&mtp=10&evt=pageLoad&sv=2&cdb=AQAQ&rn=773208"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://bat.bing.com/action/0?ti=97080512&Ver=2&mid=3fd47e69-cc21-4e2b-85a9-f2c56a167e77&bo=2&sid=5ec87460ce2511f1b6ceedc921cc9bdf&vid=5ec8bbb0ce2511f1abe7571c9fbc4c9f&vids=0&msclkid=N&ec=home_page&ea=view&en=Y&p=https%3A%2F%2Famberstudent.com%2F&sw=1280&sh=800&sc=24&evt=custom&cdb=AQAQ&rn=300547"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "img",
+        "type": null,
+        "url": "https://bat.bing.com/action/0?ti=97080512&Ver=2&mid=3fd47e69-cc21-4e2b-85a9-f2c56a167e77&bo=3&sid=5ec87460ce2511f1b6ceedc921cc9bdf&vid=5ec8bbb0ce2511f1abe7571c9fbc4c9f&vids=0&msclkid=N&ec=home_page&ea=view&en=Y&p=https%3A%2F%2Famberstudent.com%2F&sw=1280&sh=800&sc=24&evt=custom&cdb=AQAQ&rn=546330"
+      },
+      {
+        "as": null,
+        "crossorigin": null,
+        "fetchpriority": null,
+        "loading": null,
+        "rel": null,
+        "tag": "script",
+        "type": "application/javascript",
+        "url": "https://accounts.google.com/gsi/client"
+      }
+    ],
+    "readyState": "complete",
+    "referrer": "",
+    "url": "https://amberstudent.com/"
+  },
+  "console": [
+    {
+      "level": "error",
+      "message": "Response error: t",
+      "timestamp": "2026-10-23T05:01:27.083Z",
+      "url": "https://cdn-static-assets.amberstudent.com/amber-user-website/build/assets/js/main.eb0ff8ff3aac9210.desktop.js"
+    },
+    {
+      "level": "warn",
+      "message": "[Meta Pixel] - Invalid parameter format for currency. Please refer https://developers.facebook.com/docs/meta-pixel/reference/ for valid parameter specifications.",
+      "timestamp": "2026-10-23T05:01:28.976Z",
+      "url": "https://amberstudent.com/proxy/https://connect.facebook.net/en_US/fbevents.js"
+    },
+    {
+      "level": "error",
+      "message": "No element supplied to \"Trustpilot.loadFromElement\"",
+      "timestamp": "2026-10-23T05:01:29.353Z",
+      "url": "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+    },
+    {
+      "level": "warn",
+      "message": "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment",
+      "timestamp": "2026-10-23T05:01:38.625Z",
+      "url": "https://accounts.google.com/gsi/client"
+    },
+    {
+      "level": "error",
+      "message": "[GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token.",
+      "timestamp": "2026-10-23T05:01:49.087Z",
+      "url": "https://browser.sentry-cdn.com/7.114.0/bundle.min.js"
+    },
+    {
+      "level": "log",
+      "message": "unknown_reason",
+      "timestamp": "2026-10-23T05:01:49.087Z",
+      "url": "https://browser.sentry-cdn.com/7.114.0/bundle.min.js"
+    }
+  ]
+}

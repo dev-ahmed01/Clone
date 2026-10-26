@@ -1,0 +1,45 @@
+{
+  "source": "User-provided amber.mp4, read-only",
+  "durationSeconds": 91.882646,
+  "sourcePixels": [
+    1916,
+    1004
+  ],
+  "sampleMethod": "16 evenly spaced local video frames, visual inspection; not a complete frame-by-frame transcription",
+  "contactSheet": "video-contact-sheet.png",
+  "states": [
+    {
+      "seconds": "0-5",
+      "observation": "Home testimonials, booking-benefit area, sticky header"
+    },
+    {
+      "seconds": "6-17",
+      "observation": "Home cities and footer/contact sections"
+    },
+    {
+      "seconds": "18-29",
+      "observation": "Home popular city cards and country pills"
+    },
+    {
+      "seconds": "30-47",
+      "observation": "London listing in List view, scrolled result cards, right-side Explore on Map teaser"
+    },
+    {
+      "seconds": "48-59",
+      "observation": "Filter drawer, Budget histogram/range and Show results control"
+    },
+    {
+      "seconds": "60-69",
+      "observation": "Filter drawer, Bills Included pills"
+    },
+    {
+      "seconds": "70-77",
+      "observation": "University quick-filter dropdown with searchable school list"
+    },
+    {
+      "seconds": "78-91",
+      "observation": "London listing in Grid view, three-card columns and right-side map teaser"
+    }
+  ],
+  "notShown": "The recording does not demonstrate property gallery, room selection, enquiry, login, full map, or transaction outcomes; those remain separate live-interaction evidence from the first audit."
+}

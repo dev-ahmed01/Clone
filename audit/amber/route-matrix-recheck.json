@@ -1,0 +1,96 @@
+{
+  "auditDate": "2026-10-23",
+  "supersedes": "The nine rendered:false entries in route-matrix.json",
+  "method": "Direct navigation and rendered DOM probe using Playwright or Chrome DevTools MCP",
+  "routes": [
+    {
+      "path": "/partner",
+      "rendered": true,
+      "title": "Partner With Us",
+      "template": "partnership landing",
+      "screenshot": [
+        "partner-1280x800.jpg",
+        "partner-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/scholarship",
+      "rendered": true,
+      "title": "amber scholar Scholarship Programme 2026-27",
+      "template": "scholarship campaign",
+      "screenshot": [
+        "scholarship-1280x800.jpg",
+        "scholarship-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/exams",
+      "rendered": true,
+      "title": "Entrance Exams Guide - IELTS, TOEFL, GRE, GMAT, SAT | Amber",
+      "template": "exams guide",
+      "screenshot": [
+        "exams-1280x800.jpg",
+        "exams-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/help",
+      "rendered": true,
+      "redirect": "https://help.amberstudent.com/portal/en/kb/amberstudent",
+      "title": "amberstudent Knowledge Base",
+      "template": "external knowledge base",
+      "screenshot": [
+        "help-1280x800.jpg",
+        "help-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/contact",
+      "rendered": true,
+      "title": "Contact Us | amber",
+      "template": "contact",
+      "screenshot": [
+        "contact-1280x800.jpg",
+        "contact-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/terms",
+      "rendered": true,
+      "title": "Terms and Conditions | Amber",
+      "template": "legal document",
+      "screenshot": [
+        "terms-1280x800.jpg",
+        "terms-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/privacy",
+      "rendered": true,
+      "title": "Privacy Policy | Amber",
+      "template": "legal document",
+      "screenshot": [
+        "privacy-1280x800.jpg",
+        "privacy-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/plus-cross/kit",
+      "rendered": true,
+      "title": "Student Essential Kits: Bedding, Kitchen & Bathroom | Amber",
+      "template": "Amber+ service detail",
+      "screenshot": [
+        "plus-cross-kit-1280x800.jpg",
+        "plus-cross-kit-390x844.jpg"
+      ]
+    },
+    {
+      "path": "/sitemap",
+      "rendered": true,
+      "title": "",
+      "template": "public XML sitemap",
+      "note": "Rendered XML was observed; its full contents were not enumerated.",
+      "screenshot": []
+    }
+  ]
+}

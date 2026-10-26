@@ -1,0 +1,5179 @@
+{
+  "cssVariables": {
+    "--Colors-amberRed-200": "#ec919c",
+    "--Colors-amberRed-400": "#ed3a56",
+    "--Colors-amberRed-600": "#d52d44",
+    "--Primary-text": "#1f2a37",
+    "--Secondary-neutral-500": "#6b7280",
+    "--shine-color": "rgba(255,255,255,.4)",
+    "--shine-degree": "-120deg",
+    "--shine-effect": "linear-gradient(-120deg,transparent,rgba(255,255,255,.4),transparent)",
+    "--shine-transition": "all .65s ease-in-out",
+    "--simplefill-autocomplete-accent": "#1a73e8",
+    "--simplefill-autocomplete-hover": "#f0f8ff",
+    "--simplefill-autocomplete-selected": "#e6f2ff",
+    "--simplefill-bg": "#f9fafb",
+    "--simplefill-bg-button-hover": "#f3f4f6",
+    "--simplefill-bg-dark": "#f3f4f6",
+    "--simplefill-bg-hover": "#f9fafb",
+    "--simplefill-bg-light": "#ffffff",
+    "--simplefill-blue-100": "rgba(59, 130, 246, 0.1)",
+    "--simplefill-blue-100-alt": "#e6f2ff",
+    "--simplefill-blue-200": "rgba(59, 130, 246, 0.2)",
+    "--simplefill-blue-50": "rgba(59, 130, 246, 0.05)",
+    "--simplefill-blue-50-alt": "#f0f8ff",
+    "--simplefill-blue-500": "#3b82f6",
+    "--simplefill-blue-600": "#2563eb",
+    "--simplefill-blue-600-alt": "#1a73e8",
+    "--simplefill-border": "#e5e7eb",
+    "--simplefill-border-light": "#f3f4f6",
+    "--simplefill-border-lighter": "#d1d5db",
+    "--simplefill-gray-100": "#f3f4f6",
+    "--simplefill-gray-200": "#e5e7eb",
+    "--simplefill-gray-300": "#d1d5db",
+    "--simplefill-gray-400": "#9ca3af",
+    "--simplefill-gray-50": "#f9fafb",
+    "--simplefill-gray-500": "#6b7280",
+    "--simplefill-gray-600": "#4b5563",
+    "--simplefill-gray-700": "#374151",
+    "--simplefill-gray-800": "#1f2937",
+    "--simplefill-gray-900": "#111827",
+    "--simplefill-primary": "#3b82f6",
+    "--simplefill-secondary": "#6b7280",
+    "--simplefill-shadow-dropdown": "0 2px 8px rgba(0, 0, 0, 0.15)",
+    "--simplefill-shadow-md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    "--simplefill-shadow-sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "--simplefill-text": "#1f2937",
+    "--simplefill-text-dark": "#111827",
+    "--simplefill-text-light": "#6b7280",
+    "--simplefill-text-lighter": "#9ca3af",
+    "--simplefill-text-medium": "#4b5563",
+    "--simplefill-white": "#ffffff",
+    "--tooltip-arrow-size": "6px",
+    "--tooltip-background-color": "black",
+    "--tooltip-margin": "30px",
+    "--tooltip-text-color": "white"
+  },
+  "document": {
+    "scrollHeight": 4861,
+    "scrollWidth": 1425
+  },
+  "fonts": [],
+  "frequencies": {
+    "backgroundColor": [
+      {
+        "count": 1368,
+        "value": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "count": 696,
+        "value": "rgb(255, 255, 255)"
+      },
+      {
+        "count": 20,
+        "value": "rgb(17, 17, 17)"
+      },
+      {
+        "count": 9,
+        "value": "rgb(249, 250, 251)"
+      },
+      {
+        "count": 7,
+        "value": "rgb(254, 233, 239)"
+      },
+      {
+        "count": 5,
+        "value": "rgba(0, 0, 0, 0.2)"
+      },
+      {
+        "count": 3,
+        "value": "rgb(243, 244, 246)"
+      },
+      {
+        "count": 3,
+        "value": "rgb(255, 243, 249)"
+      },
+      {
+        "count": 2,
+        "value": "rgb(237, 58, 86)"
+      },
+      {
+        "count": 2,
+        "value": "rgb(5, 122, 85)"
+      },
+      {
+        "count": 2,
+        "value": "rgb(195, 221, 253)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(229, 231, 235)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(227, 227, 227)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(49, 196, 141)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(209, 213, 219)"
+      }
+    ],
+    "borderRadius": [
+      {
+        "count": 1228,
+        "value": "0px"
+      },
+      {
+        "count": 560,
+        "value": "10000px"
+      },
+      {
+        "count": 170,
+        "value": "8px"
+      },
+      {
+        "count": 67,
+        "value": "50%"
+      },
+      {
+        "count": 46,
+        "value": "20px"
+      },
+      {
+        "count": 12,
+        "value": "99px"
+      },
+      {
+        "count": 10,
+        "value": "100%"
+      },
+      {
+        "count": 8,
+        "value": "999px"
+      },
+      {
+        "count": 5,
+        "value": "12px"
+      },
+      {
+        "count": 4,
+        "value": "24px"
+      },
+      {
+        "count": 3,
+        "value": "16px"
+      },
+      {
+        "count": 3,
+        "value": "4px"
+      },
+      {
+        "count": 2,
+        "value": "6px"
+      },
+      {
+        "count": 2,
+        "value": "5px"
+      },
+      {
+        "count": 1,
+        "value": "2px"
+      }
+    ],
+    "boxShadow": [
+      {
+        "count": 1533,
+        "value": "none"
+      },
+      {
+        "count": 561,
+        "value": "rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
+      },
+      {
+        "count": 20,
+        "value": "rgba(18, 201, 107, 0.1) 0px 2px 8px 0px"
+      },
+      {
+        "count": 3,
+        "value": "rgba(50, 50, 50, 0.12) 0px 0px 5px 0px"
+      },
+      {
+        "count": 3,
+        "value": "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.05) 0px 2px 4px -2px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(0, 0, 0, 0.1) 0px 1px 15px 0px"
+      }
+    ],
+    "color": [
+      {
+        "count": 1314,
+        "value": "rgb(85, 85, 85)"
+      },
+      {
+        "count": 205,
+        "value": "rgb(17, 25, 40)"
+      },
+      {
+        "count": 199,
+        "value": "rgb(255, 255, 255)"
+      },
+      {
+        "count": 70,
+        "value": "rgb(75, 85, 99)"
+      },
+      {
+        "count": 69,
+        "value": "rgb(107, 114, 128)"
+      },
+      {
+        "count": 62,
+        "value": "rgb(51, 51, 51)"
+      },
+      {
+        "count": 59,
+        "value": "rgb(55, 65, 81)"
+      },
+      {
+        "count": 52,
+        "value": "rgb(0, 0, 0)"
+      },
+      {
+        "count": 52,
+        "value": "rgb(237, 58, 86)"
+      },
+      {
+        "count": 20,
+        "value": "rgb(49, 196, 141)"
+      },
+      {
+        "count": 8,
+        "value": "rgb(31, 42, 55)"
+      },
+      {
+        "count": 8,
+        "value": "rgb(4, 108, 78)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(163, 7, 168)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(240, 82, 82)"
+      },
+      {
+        "count": 1,
+        "value": "rgb(230, 57, 70)"
+      }
+    ],
+    "fontFamily": [
+      {
+        "count": 2121,
+        "value": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      }
+    ],
+    "fontSize": [
+      {
+        "count": 1017,
+        "value": "0px"
+      },
+      {
+        "count": 594,
+        "value": "16px"
+      },
+      {
+        "count": 290,
+        "value": "14px"
+      },
+      {
+        "count": 168,
+        "value": "12px"
+      },
+      {
+        "count": 20,
+        "value": "22px"
+      },
+      {
+        "count": 11,
+        "value": "18px"
+      },
+      {
+        "count": 11,
+        "value": "24px"
+      },
+      {
+        "count": 7,
+        "value": "20px"
+      },
+      {
+        "count": 2,
+        "value": "10px"
+      },
+      {
+        "count": 1,
+        "value": "56px"
+      }
+    ],
+    "fontWeight": [
+      {
+        "count": 1881,
+        "value": "400"
+      },
+      {
+        "count": 101,
+        "value": "700"
+      },
+      {
+        "count": 94,
+        "value": "600"
+      },
+      {
+        "count": 45,
+        "value": "500"
+      }
+    ],
+    "gap": [
+      {
+        "count": 2002,
+        "value": "normal"
+      },
+      {
+        "count": 34,
+        "value": "8px"
+      },
+      {
+        "count": 15,
+        "value": "32px"
+      },
+      {
+        "count": 15,
+        "value": "5px"
+      },
+      {
+        "count": 11,
+        "value": "12px"
+      },
+      {
+        "count": 10,
+        "value": "16px"
+      },
+      {
+        "count": 10,
+        "value": "2px"
+      },
+      {
+        "count": 7,
+        "value": "4px"
+      },
+      {
+        "count": 6,
+        "value": "24px"
+      },
+      {
+        "count": 5,
+        "value": "6px"
+      },
+      {
+        "count": 2,
+        "value": "7px"
+      },
+      {
+        "count": 2,
+        "value": "0px"
+      },
+      {
+        "count": 1,
+        "value": "40px"
+      },
+      {
+        "count": 1,
+        "value": "8px 16px"
+      }
+    ],
+    "lineHeight": [
+      {
+        "count": 1017,
+        "value": "0px"
+      },
+      {
+        "count": 534,
+        "value": "22.4px"
+      },
+      {
+        "count": 91,
+        "value": "17.5px"
+      },
+      {
+        "count": 78,
+        "value": "16.8px"
+      },
+      {
+        "count": 71,
+        "value": "18px"
+      },
+      {
+        "count": 63,
+        "value": "14px"
+      },
+      {
+        "count": 56,
+        "value": "21px"
+      },
+      {
+        "count": 49,
+        "value": "24px"
+      },
+      {
+        "count": 49,
+        "value": "19.6px"
+      },
+      {
+        "count": 20,
+        "value": "15px"
+      },
+      {
+        "count": 20,
+        "value": "22px"
+      },
+      {
+        "count": 20,
+        "value": "18.4px"
+      },
+      {
+        "count": 13,
+        "value": "22.5px"
+      },
+      {
+        "count": 11,
+        "value": "30px"
+      },
+      {
+        "count": 7,
+        "value": "27px"
+      },
+      {
+        "count": 6,
+        "value": "20px"
+      },
+      {
+        "count": 3,
+        "value": "25px"
+      },
+      {
+        "count": 3,
+        "value": "16px"
+      },
+      {
+        "count": 3,
+        "value": "31px"
+      },
+      {
+        "count": 2,
+        "value": "18.6px"
+      },
+      {
+        "count": 2,
+        "value": "10px"
+      },
+      {
+        "count": 2,
+        "value": "16.1px"
+      },
+      {
+        "count": 1,
+        "value": "61.6px"
+      }
+    ]
+  },
+  "links": [
+    {
+      "href": "https://amberstudent.com/",
+      "text": "English"
+    },
+    {
+      "href": "https://amberstudent.com/fr/",
+      "text": "French"
+    },
+    {
+      "href": "https://amberstudent.com/es/",
+      "text": "Spanish"
+    },
+    {
+      "href": "https://amberstudent.com/de/",
+      "text": "German"
+    },
+    {
+      "href": "https://amberstudent.com/",
+      "text": "home"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/london-1811028205760",
+      "text": "London"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/coventry-1811022688464",
+      "text": "Coventry"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/sheffield-1811027902898",
+      "text": "Sheffield"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/liverpool-1811029039831",
+      "text": "Liverpool"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/nottingham-1811025104223",
+      "text": "Nottingham"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/leeds-1811025399073",
+      "text": "Leeds"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/birmingham-1811028953945",
+      "text": "Birmingham"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/leicester-1811027154774",
+      "text": "Leicester"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/glasgow-1811024356803",
+      "text": "Glasgow"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/newcastle-upon-tyne-1811022588361",
+      "text": "Newcastle Upon Tyne"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/cardiff-1811021315133",
+      "text": "Cardiff"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/aberdeen-1811021824528",
+      "text": "Aberdeen"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/edinburgh-1811029850773",
+      "text": "Edinburgh"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/southampton-1811022771524",
+      "text": "Southampton"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/huddersfield-1811026300535",
+      "text": "Huddersfield"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/bristol-1811028541951",
+      "text": "Bristol"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/manchester-1811021510595",
+      "text": "Manchester"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/sunderland-1811023745210",
+      "text": "Sunderland"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/plymouth-1811024617468",
+      "text": "Plymouth"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/luton-1811021378066",
+      "text": "Luton"
+    },
+    {
+      "href": "https://amberstudent.com/places/iq-vega-london-2101138507106",
+      "text": "iQ Vega, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/mcmillan-residence-go-britanya-london-2303234603388",
+      "text": "GoBritanya McMillan Residence, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/therese-house-london-1906186914451",
+      "text": "Yugo Therese House, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/manna-ash-house-london-2505036005600",
+      "text": "Manna Ash House, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/lst-pavilion-court-london-2607314042632",
+      "text": "LST Pavilion Court, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/iq-city-london-1811192172260",
+      "text": "iQ City, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/lst-fusion-brent-cross-london-2606010704305",
+      "text": "LST Fusion Brent Cross, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/londonist-finsbury-house-london-2003139228332",
+      "text": "LST Finsbury House, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/londonist-mcmillan-village-london-2404014729506",
+      "text": "LST McMillan Student Village, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/london-1811028205760",
+      "text": "Canto Court, London London, England, GB"
+    },
+    {
+      "href": "https://amberstudent.com/plus-cross/kit",
+      "text": "Essential Kit Save 70% Ready before you arrive"
+    },
+    {
+      "href": "https://amberstudent.com/plus-cross/flights",
+      "text": "Flights Flat 7% Off Exclusive MMT offers"
+    },
+    {
+      "href": "https://amberstudent.com/plus-cross/forex",
+      "text": "Forex Card Save on every swipe"
+    },
+    {
+      "href": "https://www.hoppa.com/wl/amberstudent/",
+      "text": "Airport Pickup Arrive stress-free"
+    },
+    {
+      "href": "https://amberstudent.com/plus-cross/esim",
+      "text": "SIM Card Stay connected on arrival"
+    },
+    {
+      "href": "https://www.coursera.org/courseraplus?irclickid=SytXvP359xyZRRcVtB0MX2TqUkr1k9RMZQ%3AU340&irgwc=1&afsrc=1&utm_medium=partners&utm_source=impact&utm_campaign=6396629&utm_content=b2c&utm_campaignid=Amber%20Internet%20Solutions%20Inc.&utm_term=14726__1164545_amberstudentscplus",
+      "text": "40% off (3 months of savings) Set your routine and save on skills with coursera plus"
+    },
+    {
+      "href": "https://scispace.com/?via=ag2amberstudent",
+      "text": "Your AI Study Buddy for Life Abroad SciSpace makes lit reviews, assignments & thesis drafts easy. Us"
+    },
+    {
+      "href": "https://www.visamonk.ai/",
+      "text": "Practice Smarter. Interview with Confidence. AI-powered visa interview practice designed to help stu"
+    },
+    {
+      "href": "http://www.jdoqocy.com/click-101594563-17359595?",
+      "text": "Affordable flights, booked at short notice. Top destinations and best prices: The flight deals radar"
+    },
+    {
+      "href": "https://loan.foreignadmits.com/LF9NBO70",
+      "text": "Get the Right Education Loan Faster Assess your profile across 20+ lenders, compare loan options, ac"
+    },
+    {
+      "href": "https://www.giffgaff.com/auth/register?referrer=simorder&redirect=%2Fsim-only%2Fredirect%2FBD066%3FselectedSimType%3DeSIM&utm_campaign=STUDENT_PROMO_AMBER_STUDENTS_ESIM_2026_09&utm_medium=web_link&utm_source=amber_students",
+      "text": "Get 100GB data for only £10 a month Student exclusive"
+    },
+    {
+      "href": "https://pages.degustabox.com/en/aff-amber-50off?utm_medium=affiliates&utm_source=AmberStudent&utm_campaign=50%OFF",
+      "text": "50% off your first Degusta Box! Your surprise foodie box for only £7.49, you'll get: - Free delivery"
+    },
+    {
+      "href": "https://linktr.ee/blaaiz_financial",
+      "text": "Move Money Globally with Ease Your finance app to get multi-currency virtual accounts and stablecoin"
+    },
+    {
+      "href": "https://lotusflareinc.pxf.io/c/6396629/3248343/34279",
+      "text": "Travel connected, without the roaming fees. Get a Nomad eSIM with fast 4G/5G data in 200+ destinatio"
+    },
+    {
+      "href": "https://maya.net/connect/partner/amber/",
+      "text": "Abroad and unlimited, from day one. One eSIM, unlimited data in 165+countries, install once, add pla"
+    },
+    {
+      "href": "https://www.superalink.com/en/destination/aff/AMBERSPR?utm_source=amber&utm_medium=referral&utm_campaign=superalink-x-amber&utm_content=15-percent-discount-all-countries&type=all-destinations&is_redirected=true",
+      "text": "Affordable Data You Can Use Anytime Stay online whenever you need to, without worrying about the cos"
+    },
+    {
+      "href": "https://www.hellofresh.com.au/plans?utm_source=affiliate&utm_medium=cpo&utm_campaign=amber+&discount_comm_id=6843e724-f9dc-4be7-84fb-e9673626a581&c=HELLOAMBERPLUS",
+      "text": "Up to $251 across 8 HelloFresh boxes! Moving to Australia? Study hard, eat well! Get fresh Aussie in"
+    },
+    {
+      "href": "https://esim.holafly.com/plans/?irclickid=X%3AdykxV4FxycWDI3NfSIm3f-UkuUPvT8D3IVWE0&discount=&utm_source=affiliate&utm_medium=Amber%20Internet%20Solutions%20Inc.&utm_campaign=6396629&irgwc=1&afsrc=1&tw_source=impact&tw_campaign=6396629&tw_term=2006335",
+      "text": "Unlimited internet for students abroad Stay connected wherever you study with Holafly Plans eSIM. En"
+    },
+    {
+      "href": "https://www.makemytrip.com/flights/?cmp=amberstudent",
+      "text": "Book Your Dream Flight with MakeMyTrip! Use Code MMTAMBER to Get 7% Instant Discount on Internationa"
+    },
+    {
+      "href": "https://kalonedu.com/career_landing_page?utm_source=amberstudent.com%2Fplus&utm_medium=Direct&utm_campaign=amberplus",
+      "text": "Make yourself career ready for part-time jobs Your pathway to part-time employment and enjoy an excl"
+    },
+    {
+      "href": "https://go.expressvpn.com/c/7217936/1462856/16063",
+      "text": "Stream safe. Save 80% today Watch what you love anywhere with fast, private browsing. Now only $2.49"
+    },
+    {
+      "href": "https://go.ubigi.com/B5n66L",
+      "text": "Special Gifts: Free eSIM and 10% off Enjoy fast and reliable mobile internet in 200+ destinations. G"
+    },
+    {
+      "href": "https://goldenesim.com/",
+      "text": "Stay connected when abroad Low costs mobile internet - prevent high roaming costs!"
+    },
+    {
+      "href": "https://music.apple.com/subscribe?p=subscribe-student&at=1001l3bCM&ct=noniOS&itscg=30200&itsct=amberstudent_music",
+      "text": "Get Apple TV+ & Apple Music for Students Enjoy a special rate of $5.99/mo. with Apple Music Student,"
+    },
+    {
+      "href": "http://www.flixbus.com.au/?utm_medium=cooperation&utm_source=cooperation&utm_campaign=Amber_students.Amber_plus.AUSutm_content=tr.flixbus",
+      "text": "Australia's Big. Your Budget's Not. Travel more for less with FlixBus. Comfortable, affordable rides"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/london-1811028205760",
+      "text": "London"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/glasgow-1811024356803",
+      "text": "Glasgow"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/coventry-1811022688464",
+      "text": "Coventry"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/birmingham-1811028953945",
+      "text": "Birmingham"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/nottingham-1811025104223",
+      "text": "Nottingham"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/sheffield-1811027902898",
+      "text": "Sheffield"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/manchester-1811021510595",
+      "text": "Manchester"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/edinburgh-1811029850773",
+      "text": "Edinburgh"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/leicester-1811027154774",
+      "text": "Leicester"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/cardiff-1811021315133",
+      "text": "Cardiff"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/leeds-1811025399073",
+      "text": "Leeds"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/newcastle-upon-tyne-1811022588361",
+      "text": "Newcastle"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/aberdeen-1811021824528",
+      "text": "Aberdeen"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/portsmouth-1811020065723",
+      "text": "Portsmouth"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/cambridge-1811025371107",
+      "text": "Cambridge"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/oxford-1811023030854",
+      "text": "Oxford"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/southampton-1811022771524",
+      "text": "Southampton"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/exeter-1811027484452",
+      "text": "Exeter"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/bournemouth-1811027075639",
+      "text": "Bournemouth"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/belfast-1811021897138",
+      "text": "Belfast"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/bristol-1811028541951",
+      "text": "Bristol"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/canterbury-1811026296205",
+      "text": "Canterbury"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/dublin-1811234255126",
+      "text": "Dublin"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/swansea-1811021718098",
+      "text": "Swansea"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/loughborough-1811023994102",
+      "text": "Loughborough"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/brighton-and-hove-1811029325591",
+      "text": "Brighton"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/derby-1811027042281",
+      "text": "Derby"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/hatfield-1811227320022",
+      "text": "Hatfield"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/lincoln-1811026319691",
+      "text": "Lincoln"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/luton-1811021378066",
+      "text": "Luton"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/plymouth-1811024617468",
+      "text": "Plymouth"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/dallas-1811050789451",
+      "text": "Dallas"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/cork-1905110396319",
+      "text": "Cork"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/melbourne-1811011846366",
+      "text": "Melbourne"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/sydney-1811019193619",
+      "text": "Sydney"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/adelaide-1811022271790",
+      "text": "Adelaide"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/brisbane-1811022382320",
+      "text": "Brisbane"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/canberra-1811028680774",
+      "text": "Canberra"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/gold-coast-1811055204067",
+      "text": "Gold Coast"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/perth-1811021246766",
+      "text": "Perth"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/ann-arbor-2211094460561",
+      "text": "Ann Arbor"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/atlanta-2103038343998",
+      "text": "Atlanta"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/austin-1811059470166",
+      "text": "Austin"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/champaign-2211098678696",
+      "text": "Champaign"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/chicago-1811055213730",
+      "text": "Chicago"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/houston-1811053554207",
+      "text": "Houston"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/los-angeles-1811059549842",
+      "text": "Los Angeles"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/lubbock-2208021988942",
+      "text": "Lubbock"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/miami-1811158634551",
+      "text": "Miami"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/new-york-city-1811153579499",
+      "text": "New York"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/philadelphia-1811050668830",
+      "text": "Philadelphia"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/san-francisco-1811261246298",
+      "text": "San Francisco"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/seattle-1811059396725",
+      "text": "Seattle"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/tampa-1811228359390",
+      "text": "Tampa"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/washington-dc-1811157116879",
+      "text": "Washington DC"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/burnaby-2404052176075",
+      "text": "Burnaby"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/hamilton-2406127737096",
+      "text": "Hamilton"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/mississauga-2403136242072",
+      "text": "Mississauga"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/ottawa-2304201785556",
+      "text": "Ottawa"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/toronto-1912205118632",
+      "text": "Toronto"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/vancouver-1911021542675",
+      "text": "Vancouver"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/waterloo-2402226880061",
+      "text": "Waterloo"
+    },
+    {
+      "href": "https://amberstudent.com/places/search/united-kingdom-1811011902157",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/united-states-1811011842700",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/australia-1811019798408",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/germany-1911265061393",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/ireland-1904178897698",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/france-1911269874240",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/spain-2010151748622",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/places/search/canada-1811011406255",
+      "text": ""
+    },
+    {
+      "href": "https://uk.trustpilot.com/review/amberstudent.com",
+      "text": ""
+    },
+    {
+      "href": "https://play.google.com/store/apps/details?id=com.amberstudent",
+      "text": ""
+    },
+    {
+      "href": "https://apps.apple.com/us/app/amber-book-student-housing/id6447250749",
+      "text": ""
+    },
+    {
+      "href": "https://amberstudent.com/about",
+      "text": "About"
+    },
+    {
+      "href": "https://amberstudent.com/how-it-works",
+      "text": "How it works"
+    },
+    {
+      "href": "https://amberstudent.com/referral-programme",
+      "text": "Refer a Friend"
+    },
+    {
+      "href": "https://amberstudent.com/group-booking",
+      "text": "Group Bookings"
+    },
+    {
+      "href": "https://amberstudent.com/list",
+      "text": "List with us"
+    },
+    {
+      "href": "https://amberstudent.com/partner",
+      "text": "Partner with us"
+    },
+    {
+      "href": "https://amberstudent.com/university-partnerships",
+      "text": "Universities"
+    },
+    {
+      "href": "https://amberstudent.com/career",
+      "text": "Careers"
+    },
+    {
+      "href": "https://amberstudent.com/podcast",
+      "text": "Podcast"
+    },
+    {
+      "href": "https://amberstudent.com/news",
+      "text": "Newsroom"
+    },
+    {
+      "href": "https://amberstudent.com/plus",
+      "text": "Amber Plus"
+    },
+    {
+      "href": "https://amberstudent.com/media",
+      "text": "Media Mention"
+    },
+    {
+      "href": "https://amberstudent.com/ambassador",
+      "text": "Ambassador"
+    },
+    {
+      "href": "https://amberstudent.com/scholarship",
+      "text": "Scholarships"
+    },
+    {
+      "href": "https://amberstudent.com/exams",
+      "text": "Exams"
+    },
+    {
+      "href": "https://amberstudent.com/help",
+      "text": "Help Center"
+    },
+    {
+      "href": "https://amberstudent.com/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "https://amberstudent.com/terms",
+      "text": "T&C"
+    },
+    {
+      "href": "https://amberstudent.com/privacy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "https://amberstudent.com/sitemap",
+      "text": "Sitemap"
+    },
+    {
+      "href": "mailto:contact@amberstudent.com",
+      "text": "contact@amberstudent.com"
+    },
+    {
+      "href": "https://wa.me/447888863490",
+      "text": "WhatsApp"
+    },
+    {
+      "href": "tel:+918035735724",
+      "text": "+91 8035735724"
+    }
+  ],
+  "sample": [
+    {
+      "className": "HeroSectionDesktopStyles-module__heroTitle",
+      "rect": {
+        "height": 62,
+        "width": 619,
+        "x": 403,
+        "y": 120
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(255, 255, 255)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "56px",
+        "fontWeight": "700",
+        "gap": "normal",
+        "lineHeight": "61.6px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h2",
+      "text": "Home away from home"
+    },
+    {
+      "className": "HeroSectionDesktopStyles-module__heroSubTitle",
+      "rect": {
+        "height": 20,
+        "width": 1253,
+        "x": 86,
+        "y": 189
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(255, 255, 255)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(255, 255, 255)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "20px",
+        "margin": "8px 0px 13.4px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h1",
+      "text": "Book student accommodations near top universities and cities across the globe"
+    },
+    {
+      "className": "searchModalDesktop-module__searchInput",
+      "rect": {
+        "height": 76,
+        "width": 720,
+        "x": 352,
+        "y": 303
+      },
+      "style": {
+        "backgroundColor": "rgb(243, 244, 246)",
+        "borderColor": "rgba(0, 0, 0, 0)",
+        "borderRadius": "999px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "24px",
+        "margin": "0px",
+        "padding": "1px 28px",
+        "position": "static"
+      },
+      "tag": "input",
+      "text": ""
+    },
+    {
+      "className": "subsection-module__title",
+      "rect": {
+        "height": 30,
+        "width": 1265,
+        "x": 80,
+        "y": 727
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "gap": "normal",
+        "lineHeight": "30px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "Popular Cities Across The Globe"
+    },
+    {
+      "className": "ThousandPropertiesNewRails-module__sectionTitle",
+      "rect": {
+        "height": 30,
+        "width": 378,
+        "x": 72,
+        "y": 1406
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "gap": "normal",
+        "lineHeight": "30px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h2",
+      "text": "Thousands Of Properties Globally"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 72,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "iQ Vega, London\nLondon, England, GB\nFrom\n£417/\nweek\n4.5\n(8)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 72,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "iQ Vega, London\nLondon, England, GB\nFrom\n£417/\nweek\n4.5\n(8)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 73,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 73,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": -154,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 85,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 324,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1278,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 169,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 73,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "iQ Vega, London\nLondon, England, GB\nFrom\n£417/\nweek\n4.5\n(8)"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 85,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "iQ Vega, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 85,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "iQ Vega, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 85,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 85,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£417/\nweek\n4.5\n(8)"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 85,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£417/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__trustPilotBadge TrustPilotBadge-module__TrustpilotContainer",
+      "rect": {
+        "height": 30,
+        "width": 57,
+        "x": 242,
+        "y": 1784
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "99px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "6px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "4.5\n(8)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 328,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "GoBritanya McMillan Residence, London\nLondon, England, GB\nFrom\n£329/\nweek\n4.3\n(9)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 328,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "GoBritanya McMillan Residence, London\nLondon, England, GB\nFrom\n£329/\nweek\n4.3\n(9)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 329,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 329,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 102,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 341,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 580,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1534,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 425,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 329,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "GoBritanya McMillan Residence, London\nLondon, England, GB\nFrom\n£329/\nweek\n4.3\n(9)"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 341,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "GoBritanya McMillan Residence, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 341,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "GoBritanya McMillan Residence, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 341,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 341,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£329/\nweek\n4.3\n(9)"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 341,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£329/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__trustPilotBadge TrustPilotBadge-module__TrustpilotContainer",
+      "rect": {
+        "height": 30,
+        "width": 57,
+        "x": 498,
+        "y": 1784
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "99px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "6px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "4.3\n(9)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 584,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Yugo Therese House, London\nLondon, England, GB\nFrom\n£440/\nweek\n4.8\n(12)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 584,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Yugo Therese House, London\nLondon, England, GB\nFrom\n£440/\nweek\n4.8\n(12)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 585,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 585,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 358,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 597,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 836,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1790,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 681,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 585,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "Yugo Therese House, London\nLondon, England, GB\nFrom\n£440/\nweek\n4.8\n(12)"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 597,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "Yugo Therese House, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 597,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "Yugo Therese House, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 597,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 597,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£440/\nweek\n4.8\n(12)"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 597,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£440/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__trustPilotBadge TrustPilotBadge-module__TrustpilotContainer",
+      "rect": {
+        "height": 30,
+        "width": 64,
+        "x": 748,
+        "y": 1784
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "99px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "6px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "4.8\n(12)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 840,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Manna Ash House, London\nLondon, England, GB\nFrom\n£340/\nweek\n4.3\n(4)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 840,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Manna Ash House, London\nLondon, England, GB\nFrom\n£340/\nweek\n4.3\n(4)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 841,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 841,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 614,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 853,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1092,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2046,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 937,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 841,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "Manna Ash House, London\nLondon, England, GB\nFrom\n£340/\nweek\n4.3\n(4)"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 853,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "Manna Ash House, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 853,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "Manna Ash House, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 853,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 853,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£340/\nweek\n4.3\n(4)"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 853,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£340/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__trustPilotBadge TrustPilotBadge-module__TrustpilotContainer",
+      "rect": {
+        "height": 30,
+        "width": 57,
+        "x": 1010,
+        "y": 1784
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "99px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "6px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "4.3\n(4)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1096,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "LST Pavilion Court, London\nLondon, England, GB\nFrom\n£309/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1096,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "LST Pavilion Court, London\nLondon, England, GB\nFrom\n£309/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1097,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1097,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 870,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1109,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1348,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2302,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 1193,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 1097,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "LST Pavilion Court, London\nLondon, England, GB\nFrom\n£309/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 1109,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "LST Pavilion Court, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 1109,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "LST Pavilion Court, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 1109,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 1109,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£309/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 1109,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£309/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1352,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "iQ City, London\nLondon, England, GB\nFrom\n£396/\nweek\n4.4\n(13)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1352,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "iQ City, London\nLondon, England, GB\nFrom\n£396/\nweek\n4.4\n(13)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1353,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1353,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1126,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1365,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1604,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2558,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 1449,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 1353,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "iQ City, London\nLondon, England, GB\nFrom\n£396/\nweek\n4.4\n(13)"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 1365,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "iQ City, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 1365,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "iQ City, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 1365,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 1365,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£396/\nweek\n4.4\n(13)"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 1365,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£396/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__trustPilotBadge TrustPilotBadge-module__TrustpilotContainer",
+      "rect": {
+        "height": 30,
+        "width": 64,
+        "x": 1516,
+        "y": 1784
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "99px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "6px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "4.4\n(13)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1608,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "LST Fusion Brent Cross, London\nLondon, England, GB\nFrom\n£365/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1608,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "LST Fusion Brent Cross, London\nLondon, England, GB\nFrom\n£365/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1609,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1609,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1382,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1621,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1860,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2814,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 1705,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 1609,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "LST Fusion Brent Cross, London\nLondon, England, GB\nFrom\n£365/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 1621,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "LST Fusion Brent Cross, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 1621,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "LST Fusion Brent Cross, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 1621,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 1621,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£365/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 1621,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£365/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1864,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "LST Finsbury House, London\nLondon, England, GB\nFrom\n£295/\nweek\n4.3\n(3)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 1864,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "LST Finsbury House, London\nLondon, England, GB\nFrom\n£295/\nweek\n4.3\n(3)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1865,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 1865,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1638,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1877,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2116,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 3070,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 1961,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 1865,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "LST Finsbury House, London\nLondon, England, GB\nFrom\n£295/\nweek\n4.3\n(3)"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 1877,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "LST Finsbury House, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 1877,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "LST Finsbury House, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 1877,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 1877,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£295/\nweek\n4.3\n(3)"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 1877,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£295/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__trustPilotBadge TrustPilotBadge-module__TrustpilotContainer",
+      "rect": {
+        "height": 30,
+        "width": 57,
+        "x": 2034,
+        "y": 1784
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "99px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "2px",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "6px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "4.3\n(3)"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 2120,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Student's Choice\nLST McMillan Student Village, London\nLondon, England, GB\nFrom\n£295/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 2120,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Student's Choice\nLST McMillan Student Village, London\nLondon, England, GB\nFrom\n£295/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 2121,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Student's Choice"
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 2121,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 1894,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2133,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 2372,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "Image-module__animateOpacity CompactInventoryCard-module__imageItem Image-module__fallbackClass",
+      "rect": {
+        "height": 144,
+        "width": 215,
+        "x": 3326,
+        "y": 1572
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "22.4px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "img",
+      "text": ""
+    },
+    {
+      "className": "CarouselIndicator-module__carouselIdicatorWrap CompactInventoryCard-module__indicator CarouselIndicator-module__addInfinite",
+      "rect": {
+        "height": 20,
+        "width": 46,
+        "x": 2217,
+        "y": 1704
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 96.3333px",
+        "padding": "0px",
+        "position": "absolute"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "CompactInventoryCard-module__content",
+      "rect": {
+        "height": 103,
+        "width": 239,
+        "x": 2121,
+        "y": 1724
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "12px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "LST McMillan Student Village, London\nLondon, England, GB\nFrom\n£295/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 39,
+        "width": 215,
+        "x": 2133,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "inline",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "a",
+      "text": "LST McMillan Student Village, London\nLondon, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__title",
+      "rect": {
+        "height": 21,
+        "width": 215,
+        "x": 2133,
+        "y": 1736
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "gap": "normal",
+        "lineHeight": "21px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "h4",
+      "text": "LST McMillan Student Village, London"
+    },
+    {
+      "className": "CompactInventoryCard-module__subtitle",
+      "rect": {
+        "height": 18,
+        "width": 215,
+        "x": 2133,
+        "y": 1757
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(55, 65, 81)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(55, 65, 81)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "London, England, GB"
+    },
+    {
+      "className": "CompactInventoryCard-module__bottomContainer",
+      "rect": {
+        "height": 32,
+        "width": 215,
+        "x": 2133,
+        "y": 1783
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "8px 0px 0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£295/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__priceContainer",
+      "rect": {
+        "height": 23,
+        "width": 109,
+        "x": 2133,
+        "y": 1787
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(17, 25, 40)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(17, 25, 40)",
+        "display": "grid",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "gap": "5px",
+        "lineHeight": "18px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "static"
+      },
+      "tag": "div",
+      "text": "From\n£295/\nweek"
+    },
+    {
+      "className": "CompactInventoryCard-module__compactInventoryCardParentOuter CompactInventoryCard-module__desktopOuter",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 2376,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Canto Court, London\nLondon, England, GB\nFrom\n£429/\nweek\n4.0\n(1)\nSee All"
+    },
+    {
+      "className": "CompactInventoryCard-module__blurCompactInventoryCardParent CompactInventoryCard-module__compactInventoryCardParentDesktop",
+      "rect": {
+        "height": 264,
+        "width": 240,
+        "x": 2376,
+        "y": 1563
+      },
+      "style": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(209, 213, 219)",
+        "borderRadius": "8px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px 16px 0px 0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": "Canto Court, London\nLondon, England, GB\nFrom\n£429/\nweek\n4.0\n(1)"
+    },
+    {
+      "className": "CompactInventoryCard-module__carouselContainer",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 2377,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "flex",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    },
+    {
+      "className": "carousel-module__carousel CompactInventoryCard-module__carousel",
+      "rect": {
+        "height": 160,
+        "width": 239,
+        "x": 2377,
+        "y": 1564
+      },
+      "style": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(85, 85, 85)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "color": "rgb(85, 85, 85)",
+        "display": "block",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+        "fontSize": "0px",
+        "fontWeight": "400",
+        "gap": "normal",
+        "lineHeight": "0px",
+        "margin": "0px",
+        "padding": "0px",
+        "position": "relative"
+      },
+      "tag": "div",
+      "text": ""
+    }
+  ],
+  "title": "Discover the Best Student Accommodation and Housing | Amber",
+  "url": "https://amberstudent.com/",
+  "viewport": {
+    "dpr": 1.0000000298023224,
+    "height": 900,
+    "width": 1440
+  }
+}

@@ -1,0 +1,302 @@
+- generic [ref=e1]:
+  - link "Skip to property details" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - link "Accom by Emlen home" [ref=e4] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e7]:
+        - text: accom
+        - generic [ref=e8]: by emlen
+    - navigation "Primary navigation" [ref=e9]:
+      - link "Find a room" [ref=e10] [cursor=pointer]:
+        - /url: "#rooms"
+      - button "Save" [ref=e11] [cursor=pointer]
+      - link "Get help" [ref=e15] [cursor=pointer]:
+        - /url: "#enquiry"
+  - generic "Illustrative property gallery" [ref=e16]:
+    - generic [ref=e17]:
+      - button "Open communal lounge image in gallery" [ref=e18] [cursor=pointer]:
+        - img "Illustrative communal lounge with sofas, study counter and large windows" [ref=e19]
+      - button "Open ensuite bedroom image in gallery" [ref=e20] [cursor=pointer]:
+        - img "Illustrative ensuite bedroom with bed, desk, wardrobe and private bathroom doorway" [ref=e21]
+      - button "Open studio image in gallery" [ref=e22] [cursor=pointer]:
+        - img "Illustrative private studio with bed, desk and kitchenette" [ref=e23]
+      - button "Open study lounge image in gallery" [ref=e24] [cursor=pointer]:
+        - img "Illustrative shared study lounge with long table and acoustic booths" [ref=e25]
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - strong [ref=e28]: Illustrative media
+        - text: · not the exact rooms
+      - button "View all" [ref=e29] [cursor=pointer]:
+        - text: View all
+        - generic [aria-hidden] [ref=e30]: "4"
+  - main [ref=e31]:
+    - region [ref=e32]:
+      - generic [ref=e33]:
+        - paragraph [ref=e34]:
+          - link "Kingston" [ref=e35] [cursor=pointer]:
+            - /url: "#rooms"
+          - generic [aria-hidden] [ref=e36]: /
+          - text: Student accommodation
+        - heading "iQ Kingston" [level=1] [ref=e37]
+        - paragraph [ref=e38]: 15 Wood Street, Kingston upon Thames, KT1 1TY
+      - paragraph [ref=e41]:
+        - strong [ref=e42]: Provider facts checked
+        - text: 26 October 2026 · prices are demo values
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - navigation "On this property page" [ref=e45]:
+          - link "Overview" [ref=e46] [cursor=pointer]:
+            - /url: "#overview"
+          - link "Rooms" [ref=e47] [cursor=pointer]:
+            - /url: "#rooms"
+          - link "Included" [ref=e48] [cursor=pointer]:
+            - /url: "#included"
+          - link "Location" [ref=e49] [cursor=pointer]:
+            - /url: "#location"
+          - link "Policies" [ref=e50] [cursor=pointer]:
+            - /url: "#policies"
+          - link "FAQs" [ref=e51] [cursor=pointer]:
+            - /url: "#faqs"
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - heading "Student life, with the important bits upfront." [level=2] [ref=e54]
+            - paragraph [ref=e55]: Central Kingston, room privacy you can compare, and a human next step that does not pretend an enquiry is a booking.
+          - generic "Verified property highlights" [ref=e56]:
+            - generic [ref=e57]:
+              - strong [ref=e58]: 15 min
+              - text: walk to Kingston University
+            - generic [ref=e59]:
+              - strong [ref=e60]: 9 min
+              - text: walk to Kingston College
+            - generic [ref=e61]:
+              - strong [ref=e62]: All bills
+              - text: Wi-Fi, electricity & water confirmed
+          - paragraph [ref=e63]: "Source: iQ Student Accommodation · checked 26 Oct 2026"
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]:
+              - heading "Choose the room, then the contract." [level=2] [ref=e67]
+              - paragraph [ref=e68]: Compare privacy and total commitment without opening six tabs.
+            - button "Compare 0 /2" [disabled] [ref=e69]:
+              - text: Compare
+              - generic [ref=e70]: "0"
+              - text: /2
+          - generic "Filter rooms" [ref=e71]:
+            - group "Room category" [ref=e72]:
+              - button "All rooms" [pressed] [ref=e73] [cursor=pointer]
+              - button "Ensuite" [ref=e74] [cursor=pointer]
+              - button "Studio" [ref=e75] [cursor=pointer]
+            - button "Ensuite or studio?" [ref=e76] [cursor=pointer]
+          - generic [ref=e77]:
+            - paragraph [ref=e78]:
+              - strong [ref=e79]: "Ensuite:"
+              - text: your own bedroom and bathroom, with a shared kitchen.
+            - paragraph [ref=e80]:
+              - strong [ref=e81]: "Studio:"
+              - text: a self-contained room with your own bathroom and kitchenette.
+          - generic [ref=e82]:
+            - article [ref=e83]:
+              - generic [ref=e84]:
+                - img "Illustrative view for Bronze Ensuite" [ref=e85]
+                - generic [ref=e86]:
+                  - generic [ref=e87]:
+                    - heading "Bronze Ensuite" [level=3] [ref=e88]
+                    - generic [ref=e89]: ensuite
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: Approx. 13–15 m²
+                    - generic [ref=e92]: Private shower room
+                    - generic [ref=e93]: Shared kitchen & living space
+                - generic [ref=e94]:
+                  - strong [ref=e95]: £289
+                  - text: / week
+              - generic [ref=e96]:
+                - generic [ref=e97] [cursor=pointer]:
+                  - checkbox "Add to comparison" [ref=e98]
+                  - text: Add to comparison
+                - button "Selected room" [ref=e99] [cursor=pointer]
+              - group [ref=e100]:
+                - generic "Room details & tenancy options" [ref=e101] [cursor=pointer]
+            - article [ref=e102]:
+              - generic [ref=e103]:
+                - img "Illustrative view for Silver Ensuite" [ref=e104]
+                - generic [ref=e105]:
+                  - generic [ref=e106]:
+                    - heading "Silver Ensuite" [level=3] [ref=e107]
+                    - generic [ref=e108]: ensuite
+                  - generic [ref=e109]:
+                    - generic [ref=e110]: Approx. 15–17 m²
+                    - generic [ref=e111]: Private shower room
+                    - generic [ref=e112]: Shared kitchen & living space
+                - generic [ref=e113]:
+                  - strong [ref=e114]: £315
+                  - text: / week
+              - generic [ref=e115]:
+                - generic [ref=e116] [cursor=pointer]:
+                  - checkbox "Add to comparison" [ref=e117]
+                  - text: Add to comparison
+                - button "Select this room" [ref=e118] [cursor=pointer]
+              - group [ref=e119]:
+                - generic "Room details & tenancy options" [ref=e120] [cursor=pointer]
+            - article [ref=e121]:
+              - generic [ref=e122]:
+                - img "Illustrative view for Bronze Studio" [ref=e123]
+                - generic [ref=e124]:
+                  - generic [ref=e125]:
+                    - heading "Bronze Studio" [level=3] [ref=e126]
+                    - generic [ref=e127]: studio
+                  - generic [ref=e128]:
+                    - generic [ref=e129]: Approx. 18–20 m²
+                    - generic [ref=e130]: Private shower room
+                    - generic [ref=e131]: Private kitchenette
+                - generic [ref=e132]:
+                  - strong [ref=e133]: £365
+                  - text: / week
+              - generic [ref=e134]:
+                - generic [ref=e135] [cursor=pointer]:
+                  - checkbox "Add to comparison" [ref=e136]
+                  - text: Add to comparison
+                - button "Select this room" [ref=e137] [cursor=pointer]
+              - group [ref=e138]:
+                - generic "Room details & tenancy options" [ref=e139] [cursor=pointer]
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - heading "What your weekly rent covers." [level=2] [ref=e142]
+            - paragraph [ref=e143]: Provider-confirmed inclusions are separated from paid extras and open questions.
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - heading "Included" [level=3] [ref=e146]
+              - list [ref=e147]:
+                - listitem [ref=e148]:
+                  - generic [ref=e149]: Wi-Fi
+                  - generic [ref=e150]: Provider confirmed
+                - listitem [ref=e151]:
+                  - generic [ref=e152]: Electricity
+                  - generic [ref=e153]: Provider confirmed
+                - listitem [ref=e154]:
+                  - generic [ref=e155]: Water
+                  - generic [ref=e156]: Provider confirmed
+                - listitem [ref=e157]:
+                  - generic [ref=e158]: Gym & social spaces
+                  - generic [ref=e159]: Free access stated by provider
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - heading "Paid separately" [level=3] [ref=e162]
+                - paragraph [ref=e163]:
+                  - strong [ref=e164]: Laundry
+                  - text: Third-party machines; payment required.
+              - generic [ref=e165]:
+                - heading "Confirm first" [level=3] [ref=e166]
+                - paragraph [ref=e167]: Heating details, contents insurance, usage limits and exact booking fee.
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - heading "Start with your campus, not a pin." [level=2] [ref=e170]
+            - paragraph [ref=e171]: Walking times below are published by the property operator. Always check the route against your teaching building.
+          - generic [ref=e172]:
+            - generic "Schematic map of verified walks from iQ Kingston" [ref=e173]:
+              - img "Walking routes from iQ Kingston A schematic route shows a 9 minute walk to Kingston College and a 15 minute walk to Kingston University." [ref=e174]:
+                - generic [ref=e182]: College
+                - generic [ref=e185]: University
+                - generic [ref=e188]: 9 min walk
+                - generic [ref=e189]: 15 min walk
+              - generic [ref=e190]: Route diagram · not turn-by-turn navigation
+            - generic [ref=e191]:
+              - article [ref=e192]:
+                - generic [ref=e193]: "01"
+                - heading "Kingston University" [level=3] [ref=e194]
+                - strong [ref=e195]: 15 min walk
+                - paragraph [ref=e196]: Operator-published estimate.
+              - article [ref=e197]:
+                - generic [ref=e198]: "02"
+                - heading "Kingston College" [level=3] [ref=e199]
+                - strong [ref=e200]: 9 min walk
+                - paragraph [ref=e201]: Operator-published estimate.
+              - article [ref=e202]:
+                - heading "Travelling further?" [level=3] [ref=e203]
+                - paragraph [ref=e204]: iQ states direct trains reach Central London in under 30 minutes. Confirm the current service before travel.
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - heading "Know what can change before you commit." [level=2] [ref=e207]
+            - paragraph [ref=e208]: These summaries identify what is known and what requires the current full policy.
+          - generic [ref=e209]:
+            - group [ref=e210]:
+              - generic "Cancellation & visa conditions +" [ref=e211] [cursor=pointer]
+            - group [ref=e212]:
+              - generic "Booking fee & deposits +" [ref=e213] [cursor=pointer]
+            - group [ref=e214]:
+              - generic "Payments & guarantors +" [ref=e215] [cursor=pointer]
+            - group [ref=e216]:
+              - generic "Accessibility +" [ref=e217] [cursor=pointer]
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - heading "Questions students ask before enquiring." [level=2] [ref=e220]
+            - paragraph [ref=e221]: Short answers first. Unknown terms stay unknown until the operator confirms them.
+          - generic [ref=e222]:
+            - group [ref=e223]:
+              - generic "Are bills included? +" [ref=e224] [cursor=pointer]
+            - group [ref=e225]:
+              - generic "What is the difference between an ensuite and a studio? +" [ref=e226] [cursor=pointer]
+            - group [ref=e227]:
+              - generic "Can I choose an exact room? +" [ref=e228] [cursor=pointer]
+            - group [ref=e229]:
+              - generic "Can visitors stay? +" [ref=e230] [cursor=pointer]
+            - group [ref=e231]:
+              - generic "How secure is the building? +" [ref=e232] [cursor=pointer]
+            - group [ref=e233]:
+              - generic "What happens after I enquire? +" [ref=e234] [cursor=pointer]
+            - group [ref=e235]:
+              - generic "Can I cancel? +" [ref=e236] [cursor=pointer]
+            - group [ref=e237]:
+              - generic "When can I move in? +" [ref=e238] [cursor=pointer]
+        - region [ref=e239]:
+          - generic [ref=e240]:
+            - heading "Need to check an access requirement?" [level=2] [ref=e241]
+            - paragraph [ref=e242]: We have not verified step-free routes, lift dimensions or accessible-room specifications for this prototype. Tell us what you need confirmed and we will route the question to the operator.
+          - button "Ask an access question" [ref=e243] [cursor=pointer]
+        - region [ref=e244]:
+          - generic [ref=e245]:
+            - heading "Prefer to compare other Kingston options?" [level=2] [ref=e246]
+            - paragraph [ref=e247]: We have not filled this prototype with unverified listings. An adviser can share current alternatives matched to your budget and university.
+          - link "Review this room list" [ref=e248] [cursor=pointer]:
+            - /url: "#rooms"
+      - complementary "Selected room enquiry" [ref=e249]:
+        - generic [ref=e250]:
+          - generic [ref=e251]: Local demo · no payment
+          - paragraph [ref=e253]: Your room shortlist
+          - heading "Bronze Ensuite" [level=2] [ref=e254]
+          - generic [ref=e255]:
+            - strong [ref=e256]: £289
+            - generic [ref=e257]: / week
+          - generic [ref=e258]: 51 weeks · 12 Sep 2027
+          - generic [ref=e259]:
+            - generic [ref=e260]: Illustrative total
+            - strong [ref=e261]: £14,739
+          - paragraph [ref=e262]: Demo pricing. Availability and contract terms must be confirmed.
+          - button "Enquire about this room" [ref=e263] [cursor=pointer]
+          - button "Save property" [ref=e264] [cursor=pointer]
+          - paragraph [ref=e265]: Submitting an enquiry does not reserve a room or confirm a booking.
+  - contentinfo [ref=e266]:
+    - link "accom by emlen" [ref=e267] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=e270]:
+        - text: accom
+        - generic [ref=e271]: by emlen
+    - paragraph [ref=e272]: One clearer decision at a time.
+    - paragraph [ref=e273]: Property-detail design prototype · no live enquiries or payments
+  - dialog [ref=e275]:
+    - generic [ref=e276]:
+      - generic [ref=e277]:
+        - heading "Property gallery" [level=2] [ref=e278]
+        - paragraph [ref=e279]: Illustrative media · not the exact rooms
+      - button "Close gallery" [active] [ref=e280] [cursor=pointer]
+    - generic [ref=e283]:
+      - button "Previous image" [ref=e284] [cursor=pointer]
+      - figure "Shared spaces · 1 of 4 · illustrative prototype media" [ref=e287]:
+        - img "Illustrative communal lounge with sofas, study counter and large windows" [ref=e288]
+      - button "Next image" [ref=e290] [cursor=pointer]
+    - generic "Gallery thumbnails" [ref=e293]:
+      - button "Show Shared spaces image" [ref=e294] [cursor=pointer]
+      - button "Show Ensuite image" [ref=e295] [cursor=pointer]
+      - button "Show Studio image" [ref=e296] [cursor=pointer]
+      - button "Show Study spaces image" [ref=e297] [cursor=pointer]
+  - paragraph [ref=e274]

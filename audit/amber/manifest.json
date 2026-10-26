@@ -1,0 +1,47 @@
+{
+  "target": "https://amberstudent.com/",
+  "audit_date": "2026-10-23",
+  "viewports": ["1440x900", "1280x800", "390x844", "360x800"],
+  "screenshots": {
+    "directory": "screenshots",
+    "count": 69,
+    "first_pass_count": 34,
+    "recheck_added_count": 35,
+    "all_four_viewports": ["home", "listing-london", "property-iq-vega"],
+    "state_captures": ["home-search-suggestions", "listing-sort-open", "listing-filter-budget", "listing-map-open", "property-gallery-open", "property-room-details", "listing-enquiry-open", "login-modal", "listing-grid", "listing-university-open", "listing-filter-bills"],
+    "additional_templates": ["about", "how-it-works", "list-with-us", "news", "news-article", "plus", "ambassador", "partner", "scholarship", "exams", "contact", "terms", "privacy", "plus-cross-kit", "help"]
+  },
+  "json_artifacts": [
+    "design-token-inventories.json",
+    "font-inventory.json",
+    "home-design-inventory.json",
+    "home-network-metadata.json",
+    "interaction-trace.json",
+    "listing-responsive-layout.json",
+    "network-metadata.json",
+    "property-responsive-layout.json",
+    "responsive-overflow.json",
+    "responsive-overflow-near-viewport.json",
+    "responsive-overflow-edge.json",
+    "responsive-overflow-exact.json",
+    "route-inventory.json",
+    "route-matrix.json",
+    "sitemap-visible-links.json",
+    "template-screenshots.json",
+    "findings.json",
+    "route-matrix-recheck.json",
+    "video-observation-trace.json",
+    "network-metadata-recheck.json",
+    "interaction-trace-recheck.json",
+    "responsive-overflow-recheck.json",
+    "design-token-recheck.json",
+    "screenshot-validation.json"
+  ],
+  "safety": {
+    "credentials_entered": false,
+    "forms_submitted": false,
+    "transactions_submitted": false,
+    "authentication_bypassed": false,
+    "protected_content_bulk_downloaded": false
+  }
+}

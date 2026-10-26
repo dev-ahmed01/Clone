@@ -1,0 +1,32 @@
+[
+  {
+    "computedFamilies": [
+      {
+        "count": 3012,
+        "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      }
+    ],
+    "fontFaces": [],
+    "name": "home",
+    "path": "/",
+    "preloads": [],
+    "url": "https://amberstudent.com/"
+  },
+  {
+    "computedFamilies": [
+      {
+        "count": 265,
+        "family": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""
+      },
+      {
+        "count": 108,
+        "family": "\"Open Sauce One\", sans-serif"
+      }
+    ],
+    "fontFaces": [],
+    "name": "news-article",
+    "path": "/news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink",
+    "preloads": [],
+    "url": "https://amberstudent.com/news/post/chinese-students-top-the-uk-intake-as-other-markets-shrink"
+  }
+]

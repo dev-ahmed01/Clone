@@ -1,0 +1,522 @@
+{
+  "date": "2026-10-23",
+  "method": "Read image headers with System.Drawing; no scaling inferred from filenames",
+  "totalScreenshots": 69,
+  "originalCaptures": 34,
+  "originalMismatches": 16,
+  "mismatches": [
+    {
+      "name": "about-1280x800.jpg",
+      "width": 1265,
+      "height": 602,
+      "bytes": 64178
+    },
+    {
+      "name": "about-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 36163
+    },
+    {
+      "name": "ambassador-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 95106
+    },
+    {
+      "name": "ambassador-390x844.jpg",
+      "width": 375,
+      "height": 234,
+      "bytes": 14397
+    },
+    {
+      "name": "home-search-suggestions-1440x900.jpg",
+      "width": 1425,
+      "height": 891,
+      "bytes": 104959
+    },
+    {
+      "name": "how-it-works-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 85675
+    },
+    {
+      "name": "how-it-works-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 46043
+    },
+    {
+      "name": "list-with-us-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 36385
+    },
+    {
+      "name": "list-with-us-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 24803
+    },
+    {
+      "name": "listing-sort-open-1440x900.jpg",
+      "width": 1425,
+      "height": 891,
+      "bytes": 181180
+    },
+    {
+      "name": "news-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 165468
+    },
+    {
+      "name": "news-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 63380
+    },
+    {
+      "name": "news-article-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 151710
+    },
+    {
+      "name": "news-article-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 62549
+    },
+    {
+      "name": "plus-1280x800.jpg",
+      "width": 1265,
+      "height": 602,
+      "bytes": 36667
+    },
+    {
+      "name": "plus-390x844.jpg",
+      "width": 83,
+      "height": 179,
+      "bytes": 5035
+    }
+  ],
+  "recheckCorrectSizeCaptures": 35,
+  "files": [
+    {
+      "name": "about-1280x800.jpg",
+      "width": 1265,
+      "height": 602,
+      "bytes": 64178
+    },
+    {
+      "name": "about-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 36163
+    },
+    {
+      "name": "about-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 125601
+    },
+    {
+      "name": "about-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 53570
+    },
+    {
+      "name": "ambassador-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 95106
+    },
+    {
+      "name": "ambassador-390x844.jpg",
+      "width": 375,
+      "height": 234,
+      "bytes": 14397
+    },
+    {
+      "name": "ambassador-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 117357
+    },
+    {
+      "name": "ambassador-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 52637
+    },
+    {
+      "name": "contact-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 153126
+    },
+    {
+      "name": "contact-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 71326
+    },
+    {
+      "name": "exams-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 132360
+    },
+    {
+      "name": "exams-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 51617
+    },
+    {
+      "name": "help-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 164874
+    },
+    {
+      "name": "help-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 63114
+    },
+    {
+      "name": "home-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 78363
+    },
+    {
+      "name": "home-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 96009
+    },
+    {
+      "name": "home-360x800.jpg",
+      "width": 360,
+      "height": 800,
+      "bytes": 28126
+    },
+    {
+      "name": "home-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 30475
+    },
+    {
+      "name": "home-search-suggestions-1440x900.jpg",
+      "width": 1425,
+      "height": 891,
+      "bytes": 104959
+    },
+    {
+      "name": "home-search-suggestions-verified-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 210540
+    },
+    {
+      "name": "how-it-works-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 85675
+    },
+    {
+      "name": "how-it-works-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 46043
+    },
+    {
+      "name": "how-it-works-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 118011
+    },
+    {
+      "name": "how-it-works-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 66866
+    },
+    {
+      "name": "list-with-us-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 36385
+    },
+    {
+      "name": "list-with-us-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 24803
+    },
+    {
+      "name": "list-with-us-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 54457
+    },
+    {
+      "name": "list-with-us-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 28629
+    },
+    {
+      "name": "listing-enquiry-open-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 70986
+    },
+    {
+      "name": "listing-filter-bills-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 341143
+    },
+    {
+      "name": "listing-filter-budget-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 60769
+    },
+    {
+      "name": "listing-grid-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 724125
+    },
+    {
+      "name": "listing-london-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 141571
+    },
+    {
+      "name": "listing-london-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 168273
+    },
+    {
+      "name": "listing-london-360x800.jpg",
+      "width": 360,
+      "height": 800,
+      "bytes": 45624
+    },
+    {
+      "name": "listing-london-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 50519
+    },
+    {
+      "name": "listing-map-open-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 235988
+    },
+    {
+      "name": "listing-sort-open-1440x900.jpg",
+      "width": 1425,
+      "height": 891,
+      "bytes": 181180
+    },
+    {
+      "name": "listing-sort-open-verified-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 275260
+    },
+    {
+      "name": "listing-university-open-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "bytes": 658604
+    },
+    {
+      "name": "login-modal-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 55023
+    },
+    {
+      "name": "news-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 165468
+    },
+    {
+      "name": "news-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 63380
+    },
+    {
+      "name": "news-article-1280x800.jpg",
+      "width": 1265,
+      "height": 791,
+      "bytes": 151710
+    },
+    {
+      "name": "news-article-390x844.jpg",
+      "width": 375,
+      "height": 812,
+      "bytes": 62549
+    },
+    {
+      "name": "news-article-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 213171
+    },
+    {
+      "name": "news-article-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 94798
+    },
+    {
+      "name": "news-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 236968
+    },
+    {
+      "name": "news-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 96558
+    },
+    {
+      "name": "partner-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 125905
+    },
+    {
+      "name": "partner-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 59649
+    },
+    {
+      "name": "plus-1280x800.jpg",
+      "width": 1265,
+      "height": 602,
+      "bytes": 36667
+    },
+    {
+      "name": "plus-390x844.jpg",
+      "width": 83,
+      "height": 179,
+      "bytes": 5035
+    },
+    {
+      "name": "plus-cross-kit-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 180926
+    },
+    {
+      "name": "plus-cross-kit-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 72715
+    },
+    {
+      "name": "plus-verified-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 131761
+    },
+    {
+      "name": "plus-verified-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 68243
+    },
+    {
+      "name": "privacy-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 108138
+    },
+    {
+      "name": "privacy-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 69903
+    },
+    {
+      "name": "property-gallery-open-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 131635
+    },
+    {
+      "name": "property-iq-vega-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 119020
+    },
+    {
+      "name": "property-iq-vega-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 138964
+    },
+    {
+      "name": "property-iq-vega-360x800.jpg",
+      "width": 360,
+      "height": 800,
+      "bytes": 41426
+    },
+    {
+      "name": "property-iq-vega-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 46374
+    },
+    {
+      "name": "property-room-details-1440x900.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 87720
+    },
+    {
+      "name": "scholarship-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 130018
+    },
+    {
+      "name": "scholarship-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 55607
+    },
+    {
+      "name": "terms-1280x800.jpg",
+      "width": 1280,
+      "height": 800,
+      "bytes": 89775
+    },
+    {
+      "name": "terms-390x844.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 71734
+    }
+  ]
+}

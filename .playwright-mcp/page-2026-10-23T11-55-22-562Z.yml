@@ -1,0 +1,283 @@
+- generic [ref=f48e6]:
+  - banner [ref=f48e7]:
+    - button "Back to Amber Plus" [ref=f48e8] [cursor=pointer]:
+      - generic [ref=f48e11]: Essential Kit
+    - button "Open cart" [ref=f48e12] [cursor=pointer]:
+      - generic [ref=f48e13]: Cart
+  - main [ref=f48e18]:
+    - generic [ref=f48e19]:
+      - generic [ref=f48e20]:
+        - generic [ref=f48e21]: Essentials
+        - heading "Your Room, Ready Before You Arrive." [level=2] [ref=f48e24]: Your Room,Ready Before You Arrive.
+        - paragraph [ref=f48e25]: "Student rooms come empty. Yours won't: Essentials like bedding, crockery and toiletries delivered free before you land."
+        - generic [ref=f48e26]:
+          - paragraph [ref=f48e36]: Everything in one box
+          - paragraph [ref=f48e41]: Stored before you arrive
+          - paragraph [ref=f48e53]: Accepted by 600+ Accommodations
+      - generic [ref=f48e55]:
+        - paragraph [ref=f48e58]: Hello! Your personalised kit is prepared for your upcoming move-in.
+        - generic [ref=f48e59]:
+          - paragraph [ref=f48e60]: Standard Complete Kit
+          - paragraph [ref=f48e61]: 5 Bedding · 3 Toiletries · 21 Kitchen · 5 Cleaning
+          - generic [ref=f48e63]:
+            - generic [ref=f48e64]:
+              - generic [ref=f48e65]: £199
+              - generic [ref=f48e66]: £258
+              - generic [ref=f48e67]: 23%
+            - button "Check it out" [ref=f48e70] [cursor=pointer]
+            - generic [ref=f48e71]: Sold 422+ Units
+      - paragraph [ref=f48e77]: ★ 4.4 · 1,100+ reviewsamber supported over 3,700 students in their move in.
+    - generic [ref=f48e79]:
+      - generic [ref=f48e81]:
+        - heading "Exclusive Starter Kits" [level=2] [ref=f48e82]
+        - paragraph [ref=f48e83]: Our most popular complete kits — everything you need for uni in one box.
+      - generic [ref=f48e84]:
+        - generic [ref=f48e85]:
+          - generic [ref=f48e87]:
+            - generic:
+              - img [ref=f48e96] [cursor=pointer]
+              - img [ref=f48e98] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic: "4.6"
+              - generic: (347)
+          - generic [ref=f48e108]:
+            - generic [ref=f48e109]: Standard Kit
+            - paragraph [ref=f48e110]: Comprehensive uni bundle including bedroom, bathroom, kitchen & crockery kits. Everything you need in one delivery.
+            - paragraph [ref=f48e112]:
+              - strong [ref=f48e113]: 422+
+              - text: students grabbed this
+            - generic [ref=f48e114]:
+              - paragraph [ref=f48e115]: 34 Items Included
+              - generic [ref=f48e116]:
+                - generic [ref=f48e117]: 5 Bedding
+                - generic [ref=f48e119]: 3 Bathroom
+                - generic [ref=f48e121]: 21 Kitchen & Dining
+                - generic [ref=f48e123]: 5 Cleaning
+          - separator [aria-hidden] [ref=f48e125]
+          - generic [ref=f48e126]:
+            - generic [ref=f48e127]:
+              - generic [ref=f48e128]: £258
+              - generic [ref=f48e129]: 23%
+              - generic [ref=f48e132]: £199
+            - button "View Kit" [ref=f48e133] [cursor=pointer]
+        - generic [ref=f48e134]:
+          - generic [ref=f48e136]:
+            - generic:
+              - img [ref=f48e150] [cursor=pointer]
+              - img [ref=f48e152] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic: "4.4"
+              - generic: (235)
+          - generic [ref=f48e167]:
+            - generic [ref=f48e168]: Premium Kit
+            - paragraph [ref=f48e169]: Enhanced starter bundle with premium bedding, 600gsm towels, bath mat, and upgraded cookware for a superior uni experience.
+            - paragraph [ref=f48e171]:
+              - strong [ref=f48e172]: 350+
+              - text: students grabbed this
+            - generic [ref=f48e173]:
+              - paragraph [ref=f48e174]: 43 Items Included
+              - generic [ref=f48e175]:
+                - generic [ref=f48e176]: 5 Bedding
+                - generic [ref=f48e178]: 5 Bathroom
+                - generic [ref=f48e180]: 31 Kitchen & Dining
+                - generic [ref=f48e182]: 2 Cleaning
+          - separator [aria-hidden] [ref=f48e184]
+          - generic [ref=f48e185]:
+            - generic [ref=f48e186]:
+              - generic [ref=f48e187]: £512
+              - generic [ref=f48e188]: 22%
+              - generic [ref=f48e191]: £399
+            - button "View Kit" [ref=f48e192] [cursor=pointer]
+        - generic [ref=f48e193]:
+          - generic [ref=f48e195]:
+            - generic:
+              - img [ref=f48e204] [cursor=pointer]
+              - img [ref=f48e206] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic: "4.5"
+              - generic: (247)
+          - generic [ref=f48e216]:
+            - generic [ref=f48e217]: Deluxe Kit
+            - paragraph [ref=f48e218]: The ultimate uni upgrade — luxury bedding, premium bathroom set, 50+ piece kitchen collection and full crockery.
+            - paragraph [ref=f48e220]:
+              - strong [ref=f48e221]: 300+
+              - text: students grabbed this
+            - generic [ref=f48e222]:
+              - paragraph [ref=f48e223]: 53 Items Included
+              - generic [ref=f48e224]:
+                - generic [ref=f48e225]: 5 Bedding
+                - generic [ref=f48e227]: 5 Bathroom
+                - generic [ref=f48e229]: 41 Kitchen & Dining
+                - generic [ref=f48e231]: 2 Cleaning
+          - separator [aria-hidden] [ref=f48e233]
+          - generic [ref=f48e234]:
+            - generic [ref=f48e235]:
+              - generic [ref=f48e236]: £834
+              - generic [ref=f48e237]: 21%
+              - generic [ref=f48e240]: £659
+            - button "View Kit" [ref=f48e241] [cursor=pointer]
+    - generic [ref=f48e243]:
+      - generic [ref=f48e244]:
+        - heading "Everything You Need For Uni" [level=2] [ref=f48e245]
+        - paragraph [ref=f48e246]: Browse by category — from bedding and kitchen essentials to bathroom must-haves and extras.
+      - generic [ref=f48e247]:
+        - button "Kitchen Kits Induction-compatible cookware, durable dinnerware, and utensils — everything to cook and entertain from day one. From £119" [ref=f48e248] [cursor=pointer]:
+          - generic [ref=f48e250]:
+            - generic [ref=f48e251]:
+              - paragraph [ref=f48e252]: Kitchen Kits
+              - paragraph [ref=f48e253]: Induction-compatible cookware, durable dinnerware, and utensils — everything to cook and entertain from day one.
+            - generic [ref=f48e254]:
+              - generic [ref=f48e255]:
+                - generic [ref=f48e256]: From
+                - generic [ref=f48e257]: £119
+              - generic [aria-hidden] [ref=f48e258]: Explore Kitchen Kits
+        - button "Bedding Kits Hotel-quality duvets, pillows, and linens in a range of styles — your sanctuary of comfort sorted. From £59" [ref=f48e259] [cursor=pointer]:
+          - generic [ref=f48e261]:
+            - generic [ref=f48e262]:
+              - paragraph [ref=f48e263]: Bedding Kits
+              - paragraph [ref=f48e264]: Hotel-quality duvets, pillows, and linens in a range of styles — your sanctuary of comfort sorted.
+            - generic [ref=f48e265]:
+              - generic [ref=f48e266]:
+                - generic [ref=f48e267]: From
+                - generic [ref=f48e268]: £59
+              - generic [aria-hidden] [ref=f48e269]: Explore Bedding Kits
+        - button "Bathroom Kits Hotel-grade towels, wash kits & accessories — upgrade to a luxury bathroom experience. From £32" [ref=f48e270] [cursor=pointer]:
+          - generic [ref=f48e272]:
+            - generic [ref=f48e273]:
+              - paragraph [ref=f48e274]: Bathroom Kits
+              - paragraph [ref=f48e275]: Hotel-grade towels, wash kits & accessories — upgrade to a luxury bathroom experience.
+            - generic [ref=f48e276]:
+              - generic [ref=f48e277]:
+                - generic [ref=f48e278]: From
+                - generic [ref=f48e279]: £32
+              - generic [aria-hidden] [ref=f48e280]: Explore Bathroom Kits
+        - button "Our Extras Kettles, laundry, linen, storage, and more — add the finishing touches to your uni setup. From £5" [ref=f48e281] [cursor=pointer]:
+          - generic [ref=f48e283]:
+            - generic [ref=f48e284]:
+              - paragraph [ref=f48e285]: Our Extras
+              - paragraph [ref=f48e286]: Kettles, laundry, linen, storage, and more — add the finishing touches to your uni setup.
+            - generic [ref=f48e287]:
+              - generic [ref=f48e288]:
+                - generic [ref=f48e289]: From
+                - generic [ref=f48e290]: £5
+              - generic [aria-hidden] [ref=f48e291]: Explore Extras
+    - generic [ref=f48e294]:
+      - heading "Getting Your Kit is as Easy as 1, 2, 3" [level=2] [ref=f48e295]
+      - generic [ref=f48e296]:
+        - generic [ref=f48e304]:
+          - generic [ref=f48e305]: Browse & Pick Your Kit
+          - paragraph [ref=f48e306]: Choose from Complete, Kitchen, Bedding, or Bathroom kits.
+        - generic [ref=f48e314]:
+          - generic [ref=f48e315]: Customise Your Options
+          - paragraph [ref=f48e316]: Select your bedding size, colour, and crockery preference in just a few clicks.
+        - generic [ref=f48e327]:
+          - generic [ref=f48e328]: We Deliver To Your Door
+          - paragraph [ref=f48e329]: Sit back — your kit arrives at your home or halls on a weekday, with a minimum of 5 days for delivery.
+    - generic [ref=f48e331]:
+      - generic [ref=f48e332]:
+        - heading "Why choose amber essentials kit?" [level=2] [ref=f48e333]
+        - paragraph [ref=f48e334]: Everything a student needs, curated and delivered — so you can focus on the exciting part.
+      - generic [ref=f48e335]:
+        - paragraph [ref=f48e338]: Everything sorted, before day one.
+        - generic [ref=f48e339]:
+          - generic [ref=f48e340]:
+            - generic [ref=f48e348]:
+              - paragraph [ref=f48e349]: Online orders can't arrive before you move in
+              - paragraph [ref=f48e350]: amber's partnership keep your kit stored
+            - separator [aria-hidden] [ref=f48e351]
+          - generic [ref=f48e352]:
+            - generic [ref=f48e363]:
+              - paragraph [ref=f48e364]: Tens of items, days of shopping
+              - paragraph [ref=f48e365]: One box, delivered to your accommodation
+            - separator [aria-hidden] [ref=f48e366]
+          - generic [ref=f48e376]:
+            - paragraph [ref=f48e377]: Empty room on arrival
+            - paragraph [ref=f48e378]: Bed, kitchen & bathroom setup in an hour
+    - generic [ref=f48e380]:
+      - generic [ref=f48e381]:
+        - heading "Frequently Asked Questions" [level=2] [ref=f48e382]
+        - paragraph [ref=f48e383]: Everything you need to know before placing your order.
+      - generic [ref=f48e385]:
+        - generic [ref=f48e386]:
+          - button [ref=f48e387] [cursor=pointer]:
+            - paragraph [ref=f48e388]: What's included in a Complete Kit?
+          - paragraph [ref=f48e391]: The Complete Kit includes bedroom essentials (bedding, pillow, duvet), kitchen kit (cookware, utensils, dinnerware), and bathroom kit (towels, bath mat, accessories).
+        - generic [ref=f48e392]:
+          - button [ref=f48e393] [cursor=pointer]:
+            - paragraph [ref=f48e394]: Can I customise my kit?
+          - paragraph [ref=f48e397]: Yes! You can choose bedding size, colour preferences, and crockery style during checkout.
+        - generic [ref=f48e398]:
+          - button [ref=f48e399] [cursor=pointer]:
+            - paragraph [ref=f48e400]: When should I order my kit?
+          - paragraph [ref=f48e403]: Delivery is weekdays only and takes a minimum of 5 days. We recommend ordering at least a week before your move-in date.
+        - generic [ref=f48e404]:
+          - button [ref=f48e405] [cursor=pointer]:
+            - paragraph [ref=f48e406]: Do you deliver to university halls?
+          - paragraph [ref=f48e409]: Yes, we deliver directly to university halls and private accommodation across the UK.
+        - generic [ref=f48e410]:
+          - button [ref=f48e411] [cursor=pointer]:
+            - paragraph [ref=f48e412]: What if I already have some items?
+          - paragraph [ref=f48e415]: You can purchase individual category kits — Kitchen, Bedding, or Bathroom — instead of the full Complete Kit.
+        - generic [ref=f48e416]:
+          - button [ref=f48e417] [cursor=pointer]:
+            - paragraph [ref=f48e418]: Who fulfils and delivers the kits?
+          - paragraph [ref=f48e421]: Amber UniKit is fulfilled by our trusted partners and delivered via tracked courier.
+    - generic [ref=f48e423]:
+      - generic [ref=f48e424]:
+        - heading "Trust of 2M+ Students" [level=3] [ref=f48e425]
+        - generic [ref=f48e426] [cursor=pointer]:
+          - generic:
+            - link:
+              - /url: https://uk.trustpilot.com/review/amberstudent.com
+      - generic [ref=f48e429]:
+        - generic [ref=f48e432]:
+          - generic [ref=f48e434]:
+            - text: Honestly the best thing I did before starting uni. My flatmates were all scrambling around IKEA on move-in day, queueing.....
+            - button "Read More" [ref=f48e435] [cursor=pointer]
+          - generic [ref=f48e438]:
+            - generic [ref=f48e439]: Aoife Kelly
+            - generic [ref=f48e440]: Trinity College Dublin
+        - generic [ref=f48e443]:
+          - generic [ref=f48e445]:
+            - text: Ordered my Complete Kit a week before moving in and everything arrived perfectly packed, two days before I even got ther.....
+            - button "Read More" [ref=f48e446] [cursor=pointer]
+          - generic [ref=f48e449]:
+            - generic [ref=f48e450]: Priya Sharma
+            - generic [ref=f48e451]: University of Edinburgh
+        - generic [ref=f48e454]:
+          - generic [ref=f48e456]:
+            - text: I was so stressed about what to bring to halls and kept making lists that went nowhere. The Complete Kit sorted literall.....
+            - button "Read More" [ref=f48e457] [cursor=pointer]
+          - generic [ref=f48e460]:
+            - generic [ref=f48e461]: Ciarán Murphy
+            - generic [ref=f48e462]: University College Dublin
+        - generic [ref=f48e467]:
+          - generic [ref=f48e469]:
+            - text: Ordered my Complete Kit a week before moving in and everything arrived perfectly packed, two days before I even got ther.....
+            - button "Read More" [ref=f48e470] [cursor=pointer]
+          - generic [ref=f48e473]:
+            - generic [ref=f48e474]: Priya Sharma
+            - generic [ref=f48e475]: University of Edinburgh
+  - generic [ref=f48e479]:
+    - generic [ref=f48e480]: amber © 2026. All rights reserved.
+    - generic [ref=f48e483] [cursor=pointer]:
+      - generic:
+        - link:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com
+    - generic [ref=f48e484]:
+      - generic [ref=f48e485]:
+        - generic [ref=f48e486]: Get the app
+        - generic [ref=f48e487]:
+          - link [ref=f48e488] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=f48e489] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=f48e491]: Payment Options
+    - generic [ref=f48e494]:
+      - button [ref=f48e496] [cursor=pointer]
+      - button [ref=f48e502] [cursor=pointer]
+      - button [ref=f48e508] [cursor=pointer]
+      - button [ref=f48e514] [cursor=pointer]

@@ -1,0 +1,10 @@
+Use case: photorealistic-natural
+Asset type: website property gallery room image
+Primary request: compact modern ensuite student bedroom in a UK residence, editorial property photography
+Scene/backdrop: made bed, desk by window, built-in wardrobe, visible doorway hinting at private bathroom
+Subject: room only, no people
+Style/medium: authentic premium real-estate photography, lived-in but tidy
+Composition/framing: wide landscape from doorway, room layout clearly readable
+Lighting/mood: soft morning daylight, reassuring and practical
+Color palette: oat, cream, soft blue, small red accent
+Constraints: no logos, no text, no watermark, not overly luxurious

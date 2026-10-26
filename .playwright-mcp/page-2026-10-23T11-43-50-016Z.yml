@@ -1,0 +1,821 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "close" [ref=e8] [cursor=pointer]
+        - heading "£20 cashback on the app!" [level=2] [ref=e11]
+        - generic [ref=e12]: Scan to Download App
+        - generic [ref=e13]:
+          - generic [ref=e16]: 4.5/5
+          - text: "| 180K+ Downloads"
+        - generic [ref=e17]:
+          - generic [ref=e18]: Download from
+          - link [ref=e19] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+          - link [ref=e20] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+      - generic [ref=e21]:
+        - link "home" [ref=e23] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e25]:
+          - button "Download App" [ref=e26] [cursor=pointer]
+          - button [ref=e28]:
+            - button "[object Object]" [ref=e29] [cursor=pointer]: Support
+          - button "En" [ref=e36] [cursor=pointer]
+          - generic [ref=e39]:
+            - button "Login" [ref=e40] [cursor=pointer]
+            - button [ref=e44]:
+              - button [ref=e45] [cursor=pointer]
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - heading "Home away from home" [level=2] [ref=e57]
+        - heading "Book student accommodations near top universities and cities across the globe" [level=1] [ref=e58]
+        - generic [ref=e59]:
+          - generic [ref=e60]: Verified Properties
+          - generic [ref=e66]: 24x7 Assistance
+          - generic [ref=e72]: Lowest Price Guarantee
+      - generic [ref=e81]:
+        - textbox "Search by City University or Property" [ref=e83]
+        - generic [ref=e84]: Search by
+        - generic [ref=e85]:
+          - generic [ref=e86]: City
+          - generic [ref=e87]: University
+          - generic [ref=e88]: Property
+          - generic [ref=e89]: City University or Property
+        - img [ref=e90] [cursor=pointer]
+  - generic [ref=e93]:
+    - generic [ref=e95]:
+      - generic [ref=e96]: 2M+ Beds
+      - generic [ref=e97]: Book your perfect place from an extensive list of options.
+    - generic [ref=e99]:
+      - generic [ref=e100]: 800+ Universities
+      - generic [ref=e101]: Find the best student homes near prestigious universities.
+    - generic [ref=e103]:
+      - generic [ref=e104]: 250+ Global Cities
+      - generic [ref=e105]: We operate in major cities around the world.
+    - iframe [ref=e109] [cursor=pointer]:
+      - generic [ref=f6e2]:
+        - link "Trustpilot reviews" [ref=f6e3] [cursor=pointer]:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com?utm_medium=trustbox&utm_source=Mini
+          - img "Trustpilot" [ref=f6e7]
+          - img "4.8 out of 5 star rating on Trustpilot" [ref=f6e15]
+          - generic [ref=f6e35]:
+            - generic [aria-hidden] [ref=f6e36]:
+              - text: TrustScore
+              - strong [ref=f6e37]: "4.8"
+              - text: "|"
+            - generic [ref=f6e38]:
+              - strong [ref=f6e39]: 11,270
+              - text: reviews
+        - generic [ref=f6e40]: Rated 4.8 out of 5. 11270 reviews on Trustpilot
+        - generic [ref=f6e41]: Click to view the company's Trustpilot profile
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - heading "Popular Cities Across the Globe" [level=4] [ref=e113]
+      - heading "Book student accommodations near top cities and universities around the world." [level=5] [ref=e114]
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - button "United Kingdom" [ref=e117] [cursor=pointer]
+        - button "Australia" [ref=e119] [cursor=pointer]
+        - button "Germany" [ref=e121] [cursor=pointer]
+        - button "United States" [ref=e123] [cursor=pointer]
+        - button "Canada" [ref=e125] [cursor=pointer]
+        - button "Spain" [ref=e127] [cursor=pointer]
+        - button "Ireland" [ref=e129] [cursor=pointer]
+        - button "France" [ref=e131] [cursor=pointer]
+        - button "New Zealand" [ref=e133] [cursor=pointer]
+        - button "Singapore" [ref=e135] [cursor=pointer]
+        - button "United Arab Emirates" [ref=e137] [cursor=pointer]
+        - button "Italy" [ref=e139] [cursor=pointer]
+        - button "China" [ref=e141] [cursor=pointer]
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - link "London" [ref=e145] [cursor=pointer]:
+            - /url: /places/search/london-1811028205760
+          - link "Coventry" [ref=e148] [cursor=pointer]:
+            - /url: /places/search/coventry-1811022688464
+          - link "Sheffield" [ref=e151] [cursor=pointer]:
+            - /url: /places/search/sheffield-1811027902898
+          - link "Liverpool" [ref=e154] [cursor=pointer]:
+            - /url: /places/search/liverpool-1811029039831
+          - link "Nottingham" [ref=e157] [cursor=pointer]:
+            - /url: /places/search/nottingham-1811025104223
+          - link "Leeds" [ref=e160] [cursor=pointer]:
+            - /url: /places/search/leeds-1811025399073
+          - link "Birmingham" [ref=e163] [cursor=pointer]:
+            - /url: /places/search/birmingham-1811028953945
+          - link "Leicester" [ref=e166] [cursor=pointer]:
+            - /url: /places/search/leicester-1811027154774
+          - link "Glasgow" [ref=e169] [cursor=pointer]:
+            - /url: /places/search/glasgow-1811024356803
+          - link "Newcastle Upon Tyne" [ref=e172] [cursor=pointer]:
+            - /url: /places/search/newcastle-upon-tyne-1811022588361
+          - link "Cardiff" [ref=e175] [cursor=pointer]:
+            - /url: /places/search/cardiff-1811021315133
+          - link "Aberdeen" [ref=e178] [cursor=pointer]:
+            - /url: /places/search/aberdeen-1811021824528
+          - link "Edinburgh" [ref=e181] [cursor=pointer]:
+            - /url: /places/search/edinburgh-1811029850773
+          - link "Southampton" [ref=e184] [cursor=pointer]:
+            - /url: /places/search/southampton-1811022771524
+          - link "Huddersfield" [ref=e187] [cursor=pointer]:
+            - /url: /places/search/huddersfield-1811026300535
+          - link "Bristol" [ref=e190] [cursor=pointer]:
+            - /url: /places/search/bristol-1811028541951
+          - link "Manchester" [ref=e193] [cursor=pointer]:
+            - /url: /places/search/manchester-1811021510595
+          - link "Sunderland" [ref=e196] [cursor=pointer]:
+            - /url: /places/search/sunderland-1811023745210
+          - link "Plymouth" [ref=e199] [cursor=pointer]:
+            - /url: /places/search/plymouth-1811024617468
+          - link "Luton" [ref=e202] [cursor=pointer]:
+            - /url: /places/search/luton-1811021378066
+        - generic [ref=e205] [cursor=pointer]
+  - generic [ref=e209]:
+    - generic [ref=e210]:
+      - heading "Thousands of properties globally" [level=2] [ref=e212]
+      - heading "From studios to private rooms to shared apartments, we’ve got it all." [level=5] [ref=e213]
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - button "Search Country" [ref=e216] [cursor=pointer]:
+          - generic [ref=e217]: United Kingdom
+        - generic [ref=e223]:
+          - button "London" [ref=e224] [cursor=pointer]
+          - button "Birmingham" [ref=e225] [cursor=pointer]
+          - button "Leicester" [ref=e226] [cursor=pointer]
+          - button "Nottingham" [ref=e227] [cursor=pointer]
+          - button "Liverpool" [ref=e228] [cursor=pointer]
+          - button "Coventry" [ref=e229] [cursor=pointer]
+          - button "Sheffield" [ref=e230] [cursor=pointer]
+          - button "Leeds" [ref=e231] [cursor=pointer]
+          - button "Newcastle Upon Tyne" [ref=e232] [cursor=pointer]
+          - button "Manchester" [ref=e233] [cursor=pointer]
+          - button "Cardiff" [ref=e234] [cursor=pointer]
+          - button "Swansea" [ref=e235] [cursor=pointer]
+          - button "Edinburgh" [ref=e236] [cursor=pointer]
+          - button "Salford" [ref=e237] [cursor=pointer]
+          - button "Plymouth" [ref=e238] [cursor=pointer]
+          - button "Aberdeen" [ref=e239] [cursor=pointer]
+          - button "Chester" [ref=e240] [cursor=pointer]
+          - button "Lincoln" [ref=e241] [cursor=pointer]
+          - button "Exeter" [ref=e242] [cursor=pointer]
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - button "iQ Vega, London London, England, GB From £433/ week 4.5 (8)" [ref=e246] [cursor=pointer]:
+            - button
+            - generic [ref=e344]:
+              - link "iQ Vega, London London, England, GB" [ref=e345]:
+                - /url: /places/iq-vega-london-2101138507106
+                - heading "iQ Vega, London" [level=4] [ref=e346]
+                - generic [ref=e347]: London, England, GB
+              - generic [ref=e348]:
+                - generic [ref=e349]:
+                  - generic [ref=e350]: From
+                  - generic [ref=e351]: £433/
+                  - text: week
+                - generic [ref=e355]:
+                  - text: "4.5"
+                  - generic [ref=e356]: (8)
+          - button "GoBritanya McMillan Residence, London London, England, GB From £329/ week 4.3 (9)" [ref=e358] [cursor=pointer]:
+            - button
+            - generic [ref=e426]:
+              - link "GoBritanya McMillan Residence, London London, England, GB" [ref=e427]:
+                - /url: /places/mcmillan-residence-go-britanya-london-2303234603388
+                - heading "GoBritanya McMillan Residence, London" [level=4] [ref=e428]
+                - generic [ref=e429]: London, England, GB
+              - generic [ref=e430]:
+                - generic [ref=e431]:
+                  - generic [ref=e432]: From
+                  - generic [ref=e433]: £329/
+                  - text: week
+                - generic [ref=e437]:
+                  - text: "4.3"
+                  - generic [ref=e438]: (9)
+          - button "Yugo Therese House, London London, England, GB From £440/ week 4.8 (12)" [ref=e440] [cursor=pointer]:
+            - button
+            - generic [ref=e509]:
+              - link "Yugo Therese House, London London, England, GB" [ref=e510]:
+                - /url: /places/therese-house-london-1906186914451
+                - heading "Yugo Therese House, London" [level=4] [ref=e511]
+                - generic [ref=e512]: London, England, GB
+              - generic [ref=e513]:
+                - generic [ref=e514]:
+                  - generic [ref=e515]: From
+                  - generic [ref=e516]: £440/
+                  - text: week
+                - generic [ref=e520]:
+                  - text: "4.8"
+                  - generic [ref=e521]: (12)
+          - button "Manna Ash House, London London, England, GB From £340/ week 4.3 (4)" [ref=e523] [cursor=pointer]:
+            - button
+            - generic [ref=e602]:
+              - link "Manna Ash House, London London, England, GB" [ref=e603]:
+                - /url: /places/manna-ash-house-london-2505036005600
+                - heading "Manna Ash House, London" [level=4] [ref=e604]
+                - generic [ref=e605]: London, England, GB
+              - generic [ref=e606]:
+                - generic [ref=e607]:
+                  - generic [ref=e608]: From
+                  - generic [ref=e609]: £340/
+                  - text: week
+                - generic [ref=e613]:
+                  - text: "4.3"
+                  - generic [ref=e614]: (4)
+          - button "LST Pavilion Court, London London, England, GB From £309/ week" [ref=e616] [cursor=pointer]:
+            - button
+            - generic [ref=e682]:
+              - link "LST Pavilion Court, London London, England, GB" [ref=e683]:
+                - /url: /places/lst-pavilion-court-london-2607314042632
+                - heading "LST Pavilion Court, London" [level=4] [ref=e684]
+                - generic [ref=e685]: London, England, GB
+              - generic [ref=e687]:
+                - generic [ref=e688]: From
+                - generic [ref=e689]: £309/
+                - text: week
+          - button "LST Fusion Brent Cross, London London, England, GB From £365/ week" [ref=e691] [cursor=pointer]:
+            - button
+            - generic [ref=e780]:
+              - link "LST Fusion Brent Cross, London London, England, GB" [ref=e781]:
+                - /url: /places/lst-fusion-brent-cross-london-2606010704305
+                - heading "LST Fusion Brent Cross, London" [level=4] [ref=e782]
+                - generic [ref=e783]: London, England, GB
+              - generic [ref=e785]:
+                - generic [ref=e786]: From
+                - generic [ref=e787]: £365/
+                - text: week
+          - button "LST Finsbury House, London London, England, GB From £295/ week 4.3 (3)" [ref=e789] [cursor=pointer]:
+            - button
+            - generic [ref=e832]:
+              - link "LST Finsbury House, London London, England, GB" [ref=e833]:
+                - /url: /places/londonist-finsbury-house-london-2003139228332
+                - heading "LST Finsbury House, London" [level=4] [ref=e834]
+                - generic [ref=e835]: London, England, GB
+              - generic [ref=e836]:
+                - generic [ref=e837]:
+                  - generic [ref=e838]: From
+                  - generic [ref=e839]: £295/
+                  - text: week
+                - generic [ref=e843]:
+                  - text: "4.3"
+                  - generic [ref=e844]: (3)
+          - button "Student's Choice LST McMillan Student Village, London London, England, GB From £295/ week" [ref=e846] [cursor=pointer]:
+            - button
+            - generic [ref=e850]: Student's Choice
+            - generic [ref=e912]:
+              - link "LST McMillan Student Village, London London, England, GB" [ref=e913]:
+                - /url: /places/londonist-mcmillan-village-london-2404014729506
+                - heading "LST McMillan Student Village, London" [level=4] [ref=e914]
+                - generic [ref=e915]: London, England, GB
+              - generic [ref=e917]:
+                - generic [ref=e918]: From
+                - generic [ref=e919]: £295/
+                - text: week
+          - button "iQ City, London London, England, GB From £396/ week 4.4 (13)" [ref=e921] [cursor=pointer]:
+            - button
+            - generic [ref=e1012]:
+              - link "iQ City, London London, England, GB" [ref=e1013]:
+                - /url: /places/iq-city-london-1811192172260
+                - heading "iQ City, London" [level=4] [ref=e1014]
+                - generic [ref=e1015]: London, England, GB
+              - generic [ref=e1016]:
+                - generic [ref=e1017]:
+                  - generic [ref=e1018]: From
+                  - generic [ref=e1019]: £396/
+                  - text: week
+                - generic [ref=e1023]:
+                  - text: "4.4"
+                  - generic [ref=e1024]: (13)
+          - generic [ref=e1025]:
+            - button "Canto Court, London London, England, GB From £429/ week 4.0 (1)" [ref=e1026] [cursor=pointer]:
+              - button
+              - generic [ref=e1109]:
+                - link "Canto Court, London London, England, GB" [ref=e1110]:
+                  - /url: /places/search/london-1811028205760
+                  - heading "Canto Court, London" [level=4] [ref=e1111]
+                  - generic [ref=e1112]: London, England, GB
+                - generic [ref=e1113]:
+                  - generic [ref=e1114]:
+                    - generic [ref=e1115]: From
+                    - generic [ref=e1116]: £429/
+                    - text: week
+                  - generic [ref=e1120]:
+                    - text: "4.0"
+                    - generic [ref=e1121]: (1)
+            - button "See All" [ref=e1122] [cursor=pointer]
+        - generic [ref=e1128] [cursor=pointer]
+  - generic [ref=e1133]:
+    - generic [ref=e1134]:
+      - heading "Trust of 2 Million+ students" [level=3] [ref=e1136]
+      - iframe [ref=e1139] [cursor=pointer]:
+        - link "Trustpilot 11.3K reviews" [ref=f4e3] [cursor=pointer]:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com?utm_medium=trustbox&utm_source=MicroButton
+          - img "Trustpilot" [ref=f4e8]
+          - generic [ref=f4e12]: 11.3K reviews
+    - generic [ref=e1142]:
+      - generic [ref=e1143]:
+        - generic [ref=e1145]:
+          - generic [ref=e1147]:
+            - text: The agent was always following up with me and tried their best to find an accomodation for me. Definitely recommend usin.....
+            - button "Read More" [ref=e1148] [cursor=pointer]
+          - generic [ref=e1152]:
+            - generic [ref=e1153]: Dhriti Chawla
+            - generic [ref=e1154]: Bayes Business School
+        - generic [ref=e1156]:
+          - generic [ref=e1157]: Even in the midnight Amber was always available for clearing my queries
+          - generic [ref=e1162]:
+            - generic [ref=e1163]: Harshit
+            - generic [ref=e1164]: University Of Manchester
+        - generic [ref=e1166]:
+          - generic [ref=e1168]:
+            - text: I was looking around for an accommodation which will accept international Guarantor, I am happy with the accommodation t.....
+            - button "Read More" [ref=e1169] [cursor=pointer]
+          - generic [ref=e1173]:
+            - generic [ref=e1174]: Tushar
+            - generic [ref=e1175]: Cardiff University
+        - generic [ref=e1177]:
+          - generic [ref=e1178]: The platform is user-friendly, and the support team was very responsive throughout the process.
+          - generic [ref=e1183]:
+            - generic [ref=e1184]: Shadab Shaikh
+            - generic [ref=e1185]: Arlington
+        - generic [ref=e1187]:
+          - generic [ref=e1188]: Prompt response, very good assistance. All my questions were answered.
+          - generic [ref=e1193]:
+            - generic [ref=e1194]: Ramesh
+            - generic [ref=e1195]: university-of-leeds-1811053770019
+        - generic [ref=e1197]:
+          - generic [ref=e1198]: "\"Amber was excellent! Great service, friendly staff, and a wonderful experience overall. Highly recommended!\"."
+          - generic [ref=e1203]:
+            - generic [ref=e1204]: Dhamodaran
+            - generic [ref=e1205]: Aston University Birmingham
+        - generic [ref=e1207]:
+          - generic [ref=e1208]: Very satisfied with the service. Thank you.
+          - generic [ref=e1213]:
+            - generic [ref=e1214]: Yuti Khirade
+            - generic [ref=e1215]: University Of Salford
+        - generic [ref=e1217]:
+          - generic [ref=e1219]:
+            - text: Absolutely seamless and hassle free process throughout the book process. Guided me well throughout the booking and also .....
+            - button "Read More" [ref=e1220] [cursor=pointer]
+          - generic [ref=e1224]:
+            - generic [ref=e1225]: Dheeraj
+            - generic [ref=e1226]: University Of Sheffield
+        - generic [ref=e1228]:
+          - generic [ref=e1230]:
+            - text: I had a smooth and great experience booking with Amber. A non chaotic and a wonderful customer experience in booking the.....
+            - button "Read More" [ref=e1231] [cursor=pointer]
+          - generic [ref=e1235]:
+            - generic [ref=e1236]: Siddharth
+            - generic [ref=e1237]: University of Leeds
+        - generic [ref=e1239]:
+          - generic [ref=e1240]: Excellent and friendly customer service.
+          - generic [ref=e1245]:
+            - generic [ref=e1246]: Nicholsen
+            - generic [ref=e1247]: University Of Strathclyde
+        - generic [ref=e1249]:
+          - generic [ref=e1250]: Happy and content with the service :)
+          - generic [ref=e1255]:
+            - generic [ref=e1256]: Gouri Priya S
+            - generic [ref=e1257]: Kings College London
+        - generic [ref=e1259]:
+          - generic [ref=e1261]:
+            - text: International student-friendly agents, very helpful, guiding, advising, and attentive. Quick responses, adaptive, and sa.....
+            - button "Read More" [ref=e1262] [cursor=pointer]
+          - generic [ref=e1266]:
+            - generic [ref=e1267]: Jasmine Saini
+            - generic [ref=e1268]: City, University Of London
+        - generic [ref=e1270]:
+          - generic [ref=e1271]: The AmberStudent team helped me book my room and it was a smooth and seamless experience for me. Amber is great.
+          - generic [ref=e1276]:
+            - generic [ref=e1277]: Sanjana G
+            - generic [ref=e1278]: Birmingham City University
+        - generic [ref=e1280]:
+          - generic [ref=e1281]: Good support. Genuine staff. Helpful for international students.
+          - generic [ref=e1286]:
+            - generic [ref=e1287]: Ebin Joji
+            - generic [ref=e1288]: University of Lincoln
+        - generic [ref=e1290]:
+          - generic [ref=e1292]:
+            - text: Amber students have helped me through the entire process of finding the perfect accommodation for me! My agent has been .....
+            - button "Read More" [ref=e1293] [cursor=pointer]
+          - generic [ref=e1297]:
+            - generic [ref=e1298]: Sana Vaidya
+            - generic [ref=e1299]: King'S College Strand Campus
+        - generic [ref=e1301]:
+          - generic [ref=e1303]:
+            - text: Amber helped all the way in securing a room at the very last moment. They did an outstanding job by guiding me throughou.....
+            - button "Read More" [ref=e1304] [cursor=pointer]
+          - generic [ref=e1308]:
+            - generic [ref=e1309]: Rupali
+            - generic [ref=e1310]: Coventry University
+        - generic [ref=e1312]:
+          - generic [ref=e1314]:
+            - text: Amberstudent team has been really helpful to me during the adventure of accommodation. The agent that was assigned was v.....
+            - button "Read More" [ref=e1315] [cursor=pointer]
+          - generic [ref=e1319]:
+            - generic [ref=e1320]: Diya Sheth
+            - generic [ref=e1321]: Aston University
+        - generic [ref=e1323]:
+          - generic [ref=e1325]:
+            - text: I had a lot of questions in my mind since this is my first time traveling abroad, but the way the agent handled everythi.....
+            - button "Read More" [ref=e1326] [cursor=pointer]
+          - generic [ref=e1330]:
+            - generic [ref=e1331]: Aastha
+            - generic [ref=e1332]: Newcastle University
+        - generic [ref=e1334]:
+          - generic [ref=e1335]: Student friendly rates. A perfect place for a hassle-free accommodation search. Supportive and amazing staff.
+          - generic [ref=e1340]:
+            - generic [ref=e1341]: Deepankar
+            - generic [ref=e1342]: Queens University Belfast
+        - generic [ref=e1344]:
+          - generic [ref=e1346]:
+            - text: My agent was really helpful in finding me a room that fitted my budget. Really grateful to Amber student for their servi.....
+            - button "Read More" [ref=e1347] [cursor=pointer]
+          - generic [ref=e1351]:
+            - generic [ref=e1352]: James Abraham
+            - generic [ref=e1353]: Sheffield Hallam University
+      - generic [ref=e1354] [cursor=pointer]
+  - generic [ref=e1359]:
+    - generic [ref=e1360]:
+      - heading "Book your Perfect Accommodation" [level=4] [ref=e1361]
+      - heading "Take the hassle out of securing your student home for the best years of your life" [level=4] [ref=e1362]
+    - generic [ref=e1364]:
+      - generic [ref=e1366]:
+        - generic [ref=e1367]: Instant & Easy Bookings
+        - generic [ref=e1368]: Time is money. Save both when you book with us..
+      - generic [ref=e1370]:
+        - generic [ref=e1371]: Lowest Price Guarantee
+        - generic [ref=e1372]: Find a lower price and we'll match it. No questions asked.. Learn More
+      - generic [ref=e1374]:
+        - generic [ref=e1375]: 24x7 Assistance
+        - generic [ref=e1376]: If you have a doubt or a query, we’re always a call away..
+      - generic [ref=e1378]:
+        - generic [ref=e1379]: 100% Verified Listings
+        - generic [ref=e1380]: We promise to deliver what you see on the website..
+  - generic [ref=e1382]:
+    - generic [ref=e1383]:
+      - generic [ref=e1384]:
+        - heading "Move-In Ready" [level=4] [ref=e1385]
+        - heading "Everything you need for a hassle-free move-in." [level=5] [ref=e1386]
+      - generic [ref=e1387]: Powered by
+    - generic [ref=e1391]:
+      - generic [ref=e1392]:
+        - link "Essential Kit Save 70% Ready before you arrive" [ref=e1393] [cursor=pointer]:
+          - /url: /plus-cross/kit
+          - generic [ref=e1394]:
+            - generic [ref=e1395]:
+              - generic [ref=e1396]: Essential Kit
+              - generic [ref=e1397]: Save 70%
+            - generic [ref=e1398]: Ready before you arrive
+        - link "Flights Flat 7% Off Exclusive MMT offers" [ref=e1399] [cursor=pointer]:
+          - /url: /plus-cross/flights
+          - generic [ref=e1400]:
+            - generic [ref=e1401]:
+              - generic [ref=e1402]: Flights
+              - generic [ref=e1403]: Flat 7% Off
+            - generic [ref=e1404]: Exclusive MMT offers
+        - link "Forex Card Save on every swipe" [ref=e1405] [cursor=pointer]:
+          - /url: /plus-cross/forex
+          - generic [ref=e1406]:
+            - generic [ref=e1407]: Forex Card
+            - generic [ref=e1409]: Save on every swipe
+        - link "Airport Pickup Arrive stress-free" [ref=e1410] [cursor=pointer]:
+          - /url: https://www.hoppa.com/wl/amberstudent/
+          - generic [ref=e1411]:
+            - generic [ref=e1412]: Airport Pickup
+            - generic [ref=e1414]: Arrive stress-free
+        - link "SIM Card Stay connected on arrival" [ref=e1415] [cursor=pointer]:
+          - /url: /plus-cross/esim
+          - generic [ref=e1416]:
+            - generic [ref=e1417]: SIM Card
+            - generic [ref=e1419]: Stay connected on arrival
+      - generic [ref=e1420]:
+        - generic [ref=e1421]:
+          - link "40% off (3 months of savings) Set your routine and save on skills with coursera plus" [ref=e1422] [cursor=pointer]:
+            - /url: https://www.coursera.org/courseraplus?irclickid=SytXvP359xyZRRcVtB0MX2TqUkr1k9RMZQ%3AU340&irgwc=1&afsrc=1&utm_medium=partners&utm_source=impact&utm_campaign=6396629&utm_content=b2c&utm_campaignid=Amber%20Internet%20Solutions%20Inc.&utm_term=14726__1164545_amberstudentscplus
+            - generic [ref=e1425]:
+              - heading "40% off (3 months of savings)" [level=3] [ref=e1426]
+              - paragraph [ref=e1427]: Set your routine and save on skills with coursera plus
+          - link "Your AI Study Buddy for Life Abroad SciSpace makes lit reviews, assignments & thesis drafts easy. Use ATAMBER35 for 35% off Premium & Advanced." [ref=e1428] [cursor=pointer]:
+            - /url: "https://scispace.com/?via=ag2amberstudent\t"
+            - generic [ref=e1431]:
+              - heading "Your AI Study Buddy for Life Abroad" [level=3] [ref=e1432]
+              - paragraph [ref=e1433]: SciSpace makes lit reviews, assignments & thesis drafts easy. Use ATAMBER35 for 35% off Premium & Advanced.
+          - link "Practice Smarter. Interview with Confidence. AI-powered visa interview practice designed to help students prepare, build confidence, and get ready for their US F-1 visa interview." [ref=e1434] [cursor=pointer]:
+            - /url: https://www.visamonk.ai/
+            - generic [ref=e1437]:
+              - heading "Practice Smarter. Interview with Confidence." [level=3] [ref=e1438]
+              - paragraph [ref=e1439]: AI-powered visa interview practice designed to help students prepare, build confidence, and get ready for their US F-1 visa interview.
+          - 'link "Affordable flights, booked at short notice. Top destinations and best prices: The flight deals radar is updated weekly. Grab a deal and book your next adventure" [ref=e1440] [cursor=pointer]':
+            - /url: http://www.jdoqocy.com/click-101594563-17359595?
+            - generic [ref=e1443]:
+              - heading "Affordable flights, booked at short notice." [level=3] [ref=e1444]
+              - paragraph [ref=e1445]: "Top destinations and best prices: The flight deals radar is updated weekly. Grab a deal and book your next adventure"
+          - link "Get the Right Education Loan Faster Assess your profile across 20+ lenders, compare loan options, access lower fees and get faster approval support." [ref=e1446] [cursor=pointer]:
+            - /url: https://loan.foreignadmits.com/LF9NBO70
+            - generic [ref=e1449]:
+              - heading "Get the Right Education Loan Faster" [level=3] [ref=e1450]
+              - paragraph [ref=e1451]: Assess your profile across 20+ lenders, compare loan options, access lower fees and get faster approval support.
+          - link "Get 100GB data for only £10 a month Student exclusive" [ref=e1452] [cursor=pointer]:
+            - /url: https://www.giffgaff.com/auth/register?referrer=simorder&redirect=%2Fsim-only%2Fredirect%2FBD066%3FselectedSimType%3DeSIM&utm_campaign=STUDENT_PROMO_AMBER_STUDENTS_ESIM_2026_09&utm_medium=web_link&utm_source=amber_students
+            - generic [ref=e1455]:
+              - heading "Get 100GB data for only £10 a month" [level=3] [ref=e1456]
+              - paragraph [ref=e1457]: Student exclusive
+          - 'link "50% off your first Degusta Box! Your surprise foodie box for only £7.49, you''ll get: - Free delivery - Flexible subscription - Spend less and taste more!" [ref=e1458] [cursor=pointer]':
+            - /url: https://pages.degustabox.com/en/aff-amber-50off?utm_medium=affiliates&utm_source=AmberStudent&utm_campaign=50%OFF
+            - generic [ref=e1461]:
+              - heading "50% off your first Degusta Box!" [level=3] [ref=e1462]
+              - paragraph [ref=e1463]: "Your surprise foodie box for only £7.49, you'll get: - Free delivery - Flexible subscription - Spend less and taste more!"
+          - link "Move Money Globally with Ease Your finance app to get multi-currency virtual accounts and stablecoins for easy swaps and speedy/quick transfers Sign up with code AMBER →" [ref=e1464] [cursor=pointer]:
+            - /url: https://linktr.ee/blaaiz_financial
+            - generic [ref=e1467]:
+              - heading "Move Money Globally with Ease" [level=3] [ref=e1468]
+              - paragraph [ref=e1469]: Your finance app to get multi-currency virtual accounts and stablecoins for easy swaps and speedy/quick transfers Sign up with code AMBER →
+          - link "Travel connected, without the roaming fees. Get a Nomad eSIM with fast 4G/5G data in 200+ destinations, easy setup, and flexible data plans. Get 22% OFF with code AMBERSTUDENT22." [ref=e1470] [cursor=pointer]:
+            - /url: https://lotusflareinc.pxf.io/c/6396629/3248343/34279
+            - generic [ref=e1473]:
+              - heading "Travel connected, without the roaming fees." [level=3] [ref=e1474]
+              - paragraph [ref=e1475]: Get a Nomad eSIM with fast 4G/5G data in 200+ destinations, easy setup, and flexible data plans. Get 22% OFF with code AMBERSTUDENT22.
+          - link "Abroad and unlimited, from day one. One eSIM, unlimited data in 165+countries, install once, add plans as you go, specialprice with code AMBER20." [ref=e1476] [cursor=pointer]:
+            - /url: https://maya.net/connect/partner/amber/
+            - generic [ref=e1479]:
+              - heading "Abroad and unlimited, from day one." [level=3] [ref=e1480]
+              - paragraph [ref=e1481]: One eSIM, unlimited data in 165+countries, install once, add plans as you go, specialprice with code AMBER20.
+          - link "Affordable Data You Can Use Anytime Stay online whenever you need to, without worrying about the cost or running out of data" [ref=e1482] [cursor=pointer]:
+            - /url: https://www.superalink.com/en/destination/aff/AMBERSPR?utm_source=amber&utm_medium=referral&utm_campaign=superalink-x-amber&utm_content=15-percent-discount-all-countries&type=all-destinations&is_redirected=true
+            - generic [ref=e1485]:
+              - heading "Affordable Data You Can Use Anytime" [level=3] [ref=e1486]
+              - paragraph [ref=e1487]: Stay online whenever you need to, without worrying about the cost or running out of data
+          - 'link "Up to $251 across 8 HelloFresh boxes! Moving to Australia? Study hard, eat well! Get fresh Aussie ingredients & easy recipes delivered. Use code: HELLOAMBERPLUS" [ref=e1488] [cursor=pointer]':
+            - /url: https://www.hellofresh.com.au/plans?utm_source=affiliate&utm_medium=cpo&utm_campaign=amber+&discount_comm_id=6843e724-f9dc-4be7-84fb-e9673626a581&c=HELLOAMBERPLUS
+            - generic [ref=e1491]:
+              - heading "Up to $251 across 8 HelloFresh boxes!" [level=3] [ref=e1492]
+              - paragraph [ref=e1493]: "Moving to Australia? Study hard, eat well! Get fresh Aussie ingredients & easy recipes delivered. Use code: HELLOAMBERPLUS"
+          - link "Unlimited internet for students abroad Stay connected wherever you study with Holafly Plans eSIM. Enjoy unlimited internet at a special price with code AMBERSTUDENT." [ref=e1494] [cursor=pointer]:
+            - /url: https://esim.holafly.com/plans/?irclickid=X%3AdykxV4FxycWDI3NfSIm3f-UkuUPvT8D3IVWE0&discount=&utm_source=affiliate&utm_medium=Amber%20Internet%20Solutions%20Inc.&utm_campaign=6396629&irgwc=1&afsrc=1&tw_source=impact&tw_campaign=6396629&tw_term=2006335
+            - generic [ref=e1497]:
+              - heading "Unlimited internet for students abroad" [level=3] [ref=e1498]
+              - paragraph [ref=e1499]: Stay connected wherever you study with Holafly Plans eSIM. Enjoy unlimited internet at a special price with code AMBERSTUDENT.
+          - link "Book Your Dream Flight with MakeMyTrip! Use Code MMTAMBER to Get 7% Instant Discount on International Flights" [ref=e1500] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/?cmp=amberstudent
+            - generic [ref=e1503]:
+              - heading "Book Your Dream Flight with MakeMyTrip!" [level=3] [ref=e1504]
+              - paragraph [ref=e1505]: Use Code MMTAMBER to Get 7% Instant Discount on International Flights
+          - link "Make yourself career ready for part-time jobs Your pathway to part-time employment and enjoy an exclusive 10% discount." [ref=e1506] [cursor=pointer]:
+            - /url: https://kalonedu.com/career_landing_page?utm_source=amberstudent.com%2Fplus&utm_medium=Direct&utm_campaign=amberplus
+            - generic [ref=e1509]:
+              - heading "Make yourself career ready for part-time jobs" [level=3] [ref=e1510]
+              - paragraph [ref=e1511]: Your pathway to part-time employment and enjoy an exclusive 10% discount.
+          - link "Stream safe. Save 80% today Watch what you love anywhere with fast, private browsing. Now only $2.49/mo + 4 bonus months." [ref=e1512] [cursor=pointer]:
+            - /url: https://go.expressvpn.com/c/7217936/1462856/16063
+            - generic [ref=e1515]:
+              - heading "Stream safe. Save 80% today" [level=3] [ref=e1516]
+              - paragraph [ref=e1517]: Watch what you love anywhere with fast, private browsing. Now only $2.49/mo + 4 bonus months.
+          - 'link "Special Gifts: Free eSIM and 10% off Enjoy fast and reliable mobile internet in 200+ destinations. Get 500MB free data + 10% off your first Ubigi eSIM plan!" [ref=e1518] [cursor=pointer]':
+            - /url: https://go.ubigi.com/B5n66L
+            - generic [ref=e1521]:
+              - 'heading "Special Gifts: Free eSIM and 10% off" [level=3] [ref=e1522]'
+              - paragraph [ref=e1523]: Enjoy fast and reliable mobile internet in 200+ destinations. Get 500MB free data + 10% off your first Ubigi eSIM plan!
+          - link "Stay connected when abroad Low costs mobile internet - prevent high roaming costs!" [ref=e1524] [cursor=pointer]:
+            - /url: https://goldenesim.com/
+            - generic [ref=e1527]:
+              - heading "Stay connected when abroad" [level=3] [ref=e1528]
+              - paragraph [ref=e1529]: Low costs mobile internet - prevent high roaming costs!
+          - link "Get Apple TV+ & Apple Music for Students Enjoy a special rate of $5.99/mo. with Apple Music Student, as well as free access to Apple TV+." [ref=e1530] [cursor=pointer]:
+            - /url: https://music.apple.com/subscribe?p=subscribe-student&at=1001l3bCM&ct=noniOS&itscg=30200&itsct=amberstudent_music
+            - generic [ref=e1533]:
+              - heading "Get Apple TV+ & Apple Music for Students" [level=3] [ref=e1534]
+              - paragraph [ref=e1535]: Enjoy a special rate of $5.99/mo. with Apple Music Student, as well as free access to Apple TV+.
+          - link "Australia's Big. Your Budget's Not. Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off." [ref=e1536] [cursor=pointer]:
+            - /url: http://www.flixbus.com.au/?utm_medium=cooperation&utm_source=cooperation&utm_campaign=Amber_students.Amber_plus.AUSutm_content=tr.flixbus
+            - generic [ref=e1539]:
+              - heading "Australia's Big. Your Budget's Not." [level=3] [ref=e1540]
+              - paragraph [ref=e1541]: Travel more for less with FlixBus. Comfortable, affordable rides from $29.99. Students get 25% off.
+          - generic [ref=e1542] [cursor=pointer]:
+            - generic [ref=e1543]:
+              - generic [ref=e1544]: Amberscholar 2026 Edition is Here!
+              - generic [ref=e1545]: Get a chance to win a scholarship of up to $50,000 for your dreams!
+            - button "Apply Now" [ref=e1547]:
+              - button [ref=e1548]
+        - generic [ref=e1550] [cursor=pointer]
+  - generic [ref=e1555]:
+    - generic [ref=e1556]:
+      - heading "Book your place in 3 easy steps" [level=4] [ref=e1557]
+      - heading "Book places in major cities and universities across the globe" [level=5] [ref=e1558]
+    - generic [ref=e1560]:
+      - generic [ref=e1562]:
+        - generic [ref=e1563]: "1"
+        - heading "Discover and Finalise" [level=4] [ref=e1564]
+        - generic [ref=e1565]: Choose from a plethora of verified student home listings
+      - generic [ref=e1567]:
+        - generic [ref=e1568]: "2"
+        - heading "Get your paperwork done" [level=4] [ref=e1569]
+        - generic [ref=e1570]: Paperwork’s on us, no need to fuss.
+      - generic [ref=e1572]:
+        - generic [ref=e1573]: "3"
+        - heading "Accommodation Booked!" [level=4] [ref=e1574]
+        - generic [ref=e1575]: Relax, pack your bags, and unravel a new life chapter!
+  - generic [ref=e1578]:
+    - heading "We have the best partners" [level=4] [ref=e1579]
+    - heading [level=5]
+  - generic [ref=e1610]:
+    - generic [ref=e1611] [cursor=pointer]:
+      - generic [ref=e1612]:
+        - heading "Partner With Us" [level=2] [ref=e1613]
+        - generic [ref=e1614]: At amber, we offer seamless booking process and a robust sales support.
+      - button "Partner With Us" [ref=e1615]:
+        - button [ref=e1616]
+    - generic [ref=e1619] [cursor=pointer]:
+      - generic [ref=e1620]:
+        - heading "List With Us" [level=2] [ref=e1621]
+        - generic [ref=e1622]: List your properties efficiently with amber.
+      - button "List Properties" [ref=e1623]:
+        - button [ref=e1624]
+  - generic [ref=e1628]:
+    - generic [ref=e1629]:
+      - heading "Hundreds of cities around the world" [level=2] [ref=e1630]
+      - heading [level=4]
+    - generic [ref=e1632]:
+      - generic [ref=e1633]:
+        - button "Cities" [ref=e1634] [cursor=pointer]
+        - button "Countries" [ref=e1635] [cursor=pointer]
+      - generic [ref=e1638]:
+        - generic [ref=e1639]:
+          - link "London" [ref=e1640] [cursor=pointer]:
+            - /url: /places/search/london-1811028205760
+          - link "Glasgow" [ref=e1641] [cursor=pointer]:
+            - /url: /places/search/glasgow-1811024356803
+          - link "Coventry" [ref=e1642] [cursor=pointer]:
+            - /url: /places/search/coventry-1811022688464
+          - link "Birmingham" [ref=e1643] [cursor=pointer]:
+            - /url: /places/search/birmingham-1811028953945
+          - link "Nottingham" [ref=e1644] [cursor=pointer]:
+            - /url: /places/search/nottingham-1811025104223
+          - link "Sheffield" [ref=e1645] [cursor=pointer]:
+            - /url: /places/search/sheffield-1811027902898
+          - link "Manchester" [ref=e1646] [cursor=pointer]:
+            - /url: /places/search/manchester-1811021510595
+          - link "Edinburgh" [ref=e1647] [cursor=pointer]:
+            - /url: /places/search/edinburgh-1811029850773
+          - link "Leicester" [ref=e1648] [cursor=pointer]:
+            - /url: /places/search/leicester-1811027154774
+          - link "Cardiff" [ref=e1649] [cursor=pointer]:
+            - /url: /places/search/cardiff-1811021315133
+          - link "Leeds" [ref=e1650] [cursor=pointer]:
+            - /url: /places/search/leeds-1811025399073
+          - link "Newcastle" [ref=e1651] [cursor=pointer]:
+            - /url: /places/search/newcastle-upon-tyne-1811022588361
+          - link "Aberdeen" [ref=e1652] [cursor=pointer]:
+            - /url: /places/search/aberdeen-1811021824528
+          - link "Portsmouth" [ref=e1653] [cursor=pointer]:
+            - /url: /places/search/portsmouth-1811020065723
+          - link "Cambridge" [ref=e1654] [cursor=pointer]:
+            - /url: /places/search/cambridge-1811025371107
+          - link "Oxford" [ref=e1655] [cursor=pointer]:
+            - /url: /places/search/oxford-1811023030854
+          - link "Southampton" [ref=e1656] [cursor=pointer]:
+            - /url: /places/search/southampton-1811022771524
+          - link "Exeter" [ref=e1657] [cursor=pointer]:
+            - /url: /places/search/exeter-1811027484452
+          - link "Bournemouth" [ref=e1658] [cursor=pointer]:
+            - /url: /places/search/bournemouth-1811027075639
+          - link "Belfast" [ref=e1659] [cursor=pointer]:
+            - /url: /places/search/belfast-1811021897138
+          - link "Bristol" [ref=e1660] [cursor=pointer]:
+            - /url: /places/search/bristol-1811028541951
+          - link "Canterbury" [ref=e1661] [cursor=pointer]:
+            - /url: /places/search/canterbury-1811026296205
+          - link "Dublin" [ref=e1662] [cursor=pointer]:
+            - /url: /places/search/dublin-1811234255126
+          - link "Swansea" [ref=e1663] [cursor=pointer]:
+            - /url: /places/search/swansea-1811021718098
+          - link "Loughborough" [ref=e1664] [cursor=pointer]:
+            - /url: /places/search/loughborough-1811023994102
+          - link "Brighton" [ref=e1665] [cursor=pointer]:
+            - /url: /places/search/brighton-and-hove-1811029325591
+          - link "Derby" [ref=e1666] [cursor=pointer]:
+            - /url: /places/search/derby-1811027042281
+          - link "Hatfield" [ref=e1667] [cursor=pointer]:
+            - /url: /places/search/hatfield-1811227320022
+          - link "Lincoln" [ref=e1668] [cursor=pointer]:
+            - /url: /places/search/lincoln-1811026319691
+          - link "Luton" [ref=e1669] [cursor=pointer]:
+            - /url: /places/search/luton-1811021378066
+          - link "Plymouth" [ref=e1670] [cursor=pointer]:
+            - /url: /places/search/plymouth-1811024617468
+        - generic [ref=e1671]:
+          - link "Dallas" [ref=e1672] [cursor=pointer]:
+            - /url: /places/search/dallas-1811050789451
+          - link "Cork" [ref=e1673] [cursor=pointer]:
+            - /url: /places/search/cork-1905110396319
+          - link "Melbourne" [ref=e1674] [cursor=pointer]:
+            - /url: /places/search/melbourne-1811011846366
+          - link "Sydney" [ref=e1675] [cursor=pointer]:
+            - /url: /places/search/sydney-1811019193619
+          - link "Adelaide" [ref=e1676] [cursor=pointer]:
+            - /url: /places/search/adelaide-1811022271790
+          - link "Brisbane" [ref=e1677] [cursor=pointer]:
+            - /url: /places/search/brisbane-1811022382320
+          - link "Canberra" [ref=e1678] [cursor=pointer]:
+            - /url: /places/search/canberra-1811028680774
+          - link "Gold Coast" [ref=e1679] [cursor=pointer]:
+            - /url: /places/search/gold-coast-1811055204067
+          - link "Perth" [ref=e1680] [cursor=pointer]:
+            - /url: /places/search/perth-1811021246766
+          - link "Ann Arbor" [ref=e1681] [cursor=pointer]:
+            - /url: /places/search/ann-arbor-2211094460561
+          - link "Atlanta" [ref=e1682] [cursor=pointer]:
+            - /url: /places/search/atlanta-2103038343998
+          - link "Austin" [ref=e1683] [cursor=pointer]:
+            - /url: /places/search/austin-1811059470166
+          - link "Champaign" [ref=e1684] [cursor=pointer]:
+            - /url: /places/search/champaign-2211098678696
+          - link "Chicago" [ref=e1685] [cursor=pointer]:
+            - /url: /places/search/chicago-1811055213730
+          - link "Houston" [ref=e1686] [cursor=pointer]:
+            - /url: /places/search/houston-1811053554207
+          - link "Los Angeles" [ref=e1687] [cursor=pointer]:
+            - /url: /places/search/los-angeles-1811059549842
+          - link "Lubbock" [ref=e1688] [cursor=pointer]:
+            - /url: /places/search/lubbock-2208021988942
+          - link "Miami" [ref=e1689] [cursor=pointer]:
+            - /url: /places/search/miami-1811158634551
+          - link "New York" [ref=e1690] [cursor=pointer]:
+            - /url: /places/search/new-york-city-1811153579499
+          - link "Philadelphia" [ref=e1691] [cursor=pointer]:
+            - /url: /places/search/philadelphia-1811050668830
+          - link "San Francisco" [ref=e1692] [cursor=pointer]:
+            - /url: /places/search/san-francisco-1811261246298
+          - link "Seattle" [ref=e1693] [cursor=pointer]:
+            - /url: /places/search/seattle-1811059396725
+          - link "Tampa" [ref=e1694] [cursor=pointer]:
+            - /url: /places/search/tampa-1811228359390
+          - link "Washington DC" [ref=e1695] [cursor=pointer]:
+            - /url: /places/search/washington-dc-1811157116879
+          - link "Burnaby" [ref=e1696] [cursor=pointer]:
+            - /url: /places/search/burnaby-2404052176075
+          - link "Hamilton" [ref=e1697] [cursor=pointer]:
+            - /url: /places/search/hamilton-2406127737096
+          - link "Mississauga" [ref=e1698] [cursor=pointer]:
+            - /url: /places/search/mississauga-2403136242072
+          - link "Ottawa" [ref=e1699] [cursor=pointer]:
+            - /url: /places/search/ottawa-2304201785556
+          - link "Toronto" [ref=e1700] [cursor=pointer]:
+            - /url: /places/search/toronto-1912205118632
+          - link "Vancouver" [ref=e1701] [cursor=pointer]:
+            - /url: /places/search/vancouver-1911021542675
+          - link "Waterloo" [ref=e1702] [cursor=pointer]:
+            - /url: /places/search/waterloo-2402226880061
+  - generic [ref=e1704]:
+    - generic [ref=e1705]:
+      - heading "Need help? Let’s connect" [level=2] [ref=e1706]
+      - heading "If you have any queries, feel free to contact us" [level=4] [ref=e1707]
+    - generic [ref=e1708]:
+      - generic [ref=e1709]:
+        - generic [ref=e1710] [cursor=pointer]:
+          - button [ref=e1711]
+          - generic [ref=e1722]: Live Chat
+          - generic [ref=e1723]: Instant Reply
+        - generic [ref=e1727] [cursor=pointer]:
+          - button [ref=e1728]
+          - generic [ref=e1731]: Chat on Whatsapp
+          - generic [ref=e1732]: 24×7 Assistance
+      - generic [ref=e1735]:
+        - generic [ref=e1736] [cursor=pointer]:
+          - button [ref=e1737]
+          - generic [ref=e1740]: Email Us
+        - generic [ref=e1741] [cursor=pointer]:
+          - button [ref=e1742]
+          - generic [ref=e1745]: +91 8035735724
+  - generic [ref=e1748]:
+    - generic [ref=e1749]: amber © 2026. All rights reserved.
+    - iframe [ref=e1754] [cursor=pointer]:
+      - generic [ref=f5e2]:
+        - link "Trustpilot reviews" [ref=f5e3] [cursor=pointer]:
+          - /url: https://uk.trustpilot.com/review/amberstudent.com?utm_medium=trustbox&utm_source=Mini
+          - img "Trustpilot" [ref=f5e7]
+          - img "4.8 out of 5 star rating on Trustpilot" [ref=f5e15]
+          - generic [ref=f5e35]:
+            - generic [aria-hidden] [ref=f5e36]:
+              - text: TrustScore
+              - strong [ref=f5e37]: "4.8"
+              - text: "|"
+            - generic [ref=f5e38]:
+              - strong [ref=f5e39]: 11,270
+              - text: reviews
+        - generic [ref=f5e40]: Rated 4.8 out of 5. 11270 reviews on Trustpilot
+        - generic [ref=f5e41]: Click to view the company's Trustpilot profile
+    - generic [ref=e1755]:
+      - generic [ref=e1756]:
+        - generic [ref=e1757]: Get the app
+        - generic [ref=e1758]:
+          - link [ref=e1759] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+          - link [ref=e1760] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+      - generic [ref=e1762]: Payment Options
+    - generic [ref=e1765]:
+      - button [ref=e1767] [cursor=pointer]
+      - button [ref=e1773] [cursor=pointer]
+      - button [ref=e1779] [cursor=pointer]
+      - button [ref=e1785] [cursor=pointer]
+  - button "Open chat" [ref=e1790] [cursor=pointer]

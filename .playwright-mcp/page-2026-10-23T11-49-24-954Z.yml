@@ -1,0 +1,229 @@
+- generic [ref=f19e3]:
+  - generic [ref=f19e5]:
+    - generic [ref=f19e6]:
+      - link "home" [ref=f19e7] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f19e11]:
+        - textbox "Search Exams" [ref=f19e13]
+        - button [ref=f19e14] [cursor=pointer]
+    - generic [ref=f19e17]:
+      - button "Download App" [ref=f19e18] [cursor=pointer]
+      - button "Accommodation" [ref=f19e19] [cursor=pointer]
+      - button "Blog" [ref=f19e22] [cursor=pointer]
+      - generic [ref=f19e25]:
+        - button "Login" [ref=f19e26] [cursor=pointer]
+        - button [ref=f19e30]:
+          - button [ref=f19e31] [cursor=pointer]
+  - generic [ref=f19e39]:
+    - generic [ref=f19e40]:
+      - 'heading "Prepare & Succeed: Master Entrance Exams Today!" [level=1] [ref=f19e41]'
+      - paragraph [ref=f19e42]: We help you stay prepared and confident at every step.
+    - generic [ref=f19e44]:
+      - link "Learn more about TOEFL" [ref=f19e45] [cursor=pointer]:
+        - /url: /exams/toefl/toefl-exam
+        - generic [ref=f19e47]:
+          - heading "TOEFL" [level=3] [ref=f19e48]
+          - generic [ref=f19e49]: "Explore what is TOEFL in 2024: Your Ultimate Guide! Discover exam dates, eligibility criteria, fees, results, exam patterns and more. Everything you need in one place!"
+      - link "Learn more about GMAT" [ref=f19e50] [cursor=pointer]:
+        - /url: /exams/gmat/gmat-exam
+        - generic [ref=f19e52]:
+          - heading "GMAT" [level=3] [ref=f19e53]
+          - generic [ref=f19e54]: What is GMAT? GMAT, also known as the Graduate Management Admission Test, is an MCQ-based test. Read more about exam dates, eligibility, registration, exam fees and much more.
+      - link "Learn more about GRE" [ref=f19e55] [cursor=pointer]:
+        - /url: /exams/gre/gre-exam
+        - generic [ref=f19e57]:
+          - heading "GRE" [level=3] [ref=f19e58]
+          - generic [ref=f19e59]: Are you wondering what is GRE and how to crush it? Read our blog, which covers the GRE test, exam, syllabus and results to help you understand about this entrance exam.
+      - link "Learn more about IELTS" [ref=f19e60] [cursor=pointer]:
+        - /url: /exams/ielts/ielts-exam
+        - generic [ref=f19e62]:
+          - heading "IELTS" [level=3] [ref=f19e63]
+          - generic [ref=f19e64]: The IELTS is known as the International English Language Testing System. It is the most widely taken English language proficiency test taken for study, work, and migration.
+      - link "Learn more about SAT" [ref=f19e65] [cursor=pointer]:
+        - /url: /exams/sat/sat-exam
+        - generic [ref=f19e67]:
+          - heading "SAT" [level=3] [ref=f19e68]
+          - generic [ref=f19e69]: Looking forward to the upcoming SAT exam? Know everything about the SAT exam, like eligibility, registration, fees, exam pattern, syllabus, important dates and many more!
+    - generic [ref=f19e71]:
+      - 'heading "Navigating Entrance Exams: A Step Toward Global Education" [level=2] [ref=f19e74]'
+      - paragraph [ref=f19e75]: Embarking on a journey towards higher education, opens doors to exciting new experiences. Entrance exams provide insights into your core competencies, showcasing your expertise in specific fields and essential skills. Being diverse in nature, entrance exams also play a pivotal role in determining your path to esteemed colleges and universities worldwide.
+    - generic [ref=f19e78]:
+      - heading "Why Are Entrance Exams Important?" [level=2] [ref=f19e79]
+      - paragraph [ref=f19e80]: Entrance exams are a testament to your knowledge, proficiency, and skills in the field of your interest. They cover various aspects, from English language proficiency to reasoning, problem-solving, and technical efficiency. Annually, over 45 million students enroll in prestigious universities across the globe, including the USA, the UK, New Zealand, Canada, Australia, India, and Germany. Designed by renowned entities like the College Board and Education Testing System, these exams serve as a crucial step toward higher education and not only open doors to the best education systems globally but also introduce you to new cultures and diverse experiences. Learn about their importance, the courses they cater to, and the freedom they offer in choosing top-tier institutions. Prepare for success with Amber, your guide to achieving excellence in entrance exams and securing a bright future.
+    - generic [ref=f19e83]:
+      - heading "Types Of Entrance Exams For Students" [level=2] [ref=f19e86]
+      - paragraph [ref=f19e87]: Entrance exams play a pivotal role in this journey, typically categorized into English Language tests and technical exams designed for specific fields of higher education. The English language tests are obligatory for international students, varying based on the chosen course. Below, we have compiled essential information on some of the most significant entrance exams to guide you.
+    - generic [ref=f19e90]:
+      - heading "English Language Entrance Exams" [level=2] [ref=f19e93]
+      - paragraph [ref=f19e94]: English is one of the most used and common languages in the international education system. Convincing your institution that you will be comfortable with the English medium of education is very important. To achieve the confidence of the admission council of the respective institutions, all you need to do is clear exams like IELTS and TOEFL. These exams present the competency level of a student in the combination of reading, writing, speaking, listening, and understanding. The English language tests conducted by organisations like the British Council are the first and most crucial step towards the study abroad goal. There are different exams to test the proficiency of students in the language. Let us find out more about them!
+      - generic [ref=f19e95]:
+        - generic [ref=f19e98]:
+          - generic [ref=f19e99]: The International English Language Testing System (IELTS) is a globally recognized English language proficiency test. Established in 1989, IELTS has quickly transformed to be the most widely accepted and trusted exam across leading countries like the USA, Germany, the UK, Australia, Canada, and New Zealand. The IELTS scorecard is the quickest solution to your preferred of studying in top-tier institutions like the University of Oxford, Cambridge University, Harvard University, and many more. The IELTS exam is accepted by over 11,000 organizations worldwide. The IELTS exam is open to all international studies with a minimum age requirement of 16 years.
+          - generic [ref=f19e100]:
+            - generic [ref=f19e101]:
+              - paragraph [ref=f19e102]: Create a roadmap for your IELTS preparations with inclusive information.
+              - paragraph [ref=f19e103]: Find out what you need for IELTS.
+            - link "Read More" [ref=f19e104] [cursor=pointer]:
+              - /url: /exams/ielts/ielts-exam
+        - generic [ref=f19e107]:
+          - generic [ref=f19e108]: Apart from being one of the most established, the Test Of English as a Foreign Language (TOEFL) is also one of the most sought-after exams in the world. Since its inception in 1965, TOEFL was built to become a reliable benchmark of English language proficiency for students aiming to study in top universities across the globe. The TOEFL exam is accepted by over 11,500 universities and institutions in more than 160 countries, allowing students aiming to study in top institutions in the USA, the UK, Australia, New Zealand, Canada, and several. TOEFL can get you into top institutions, which attract more than 7.8+ students annually. The TOEFL exam is open to all international students with a minimum age requirement of 16 years. There are no specific eligibility requirements, so 'TOEFL iBT', 'TOEFL Essentials, TOEFL ITP Assessment Series, 'TOEFL Junior, and 'TOEFL Primary. The efforts required to clear the entrance exam are high; however, after all the betterment of your attempts, it will be easier than ever.
+          - generic [ref=f19e109]:
+            - generic [ref=f19e110]:
+              - paragraph [ref=f19e111]: Crack your TOEFL with more information on the entrance exam.
+              - paragraph [ref=f19e112]: From exam dates, format, syllabus and more.
+            - link "Read More" [ref=f19e113] [cursor=pointer]:
+              - /url: /exams/toefl/toefl-exam
+    - generic [ref=f19e115]:
+      - heading "Technical Exams" [level=2] [ref=f19e118]
+      - paragraph [ref=f19e119]: Higher education abroad is very rewarding and leads a sheer number of students beyond their country. However, seeking education in top-ranking universities requires a lot of preparation, and entrance exams are a segment of this process. Apart from language proficiency, students aiming to study in top countries must also take other entrance exams. The entrance exams for various programs include the GRE, GMAT, and SAT. We will be looking further into the most important entrance exams in the sections below.
+      - generic [ref=f19e120]:
+        - generic [ref=f19e123]:
+          - generic [ref=f19e124]: You might be ready to take admission to a business school, take up a NumLike course in MSc, artificial intelligence, or maybe at a stage of exploring options. But you are in for a lot more options when it comes to the Graduate Record Examination (GRE) is the way when will lead you to the countries of the top 1.3k+ business schools and 800 law schools spread across 160+ countries.
+          - generic [ref=f19e125]:
+            - generic [ref=f19e126]:
+              - paragraph [ref=f19e127]: Ensure high success rates for the GRE when you go in prepared.
+              - paragraph [ref=f19e128]: Get the exam syllabus, exam, dates, etc.
+            - link "Read More" [ref=f19e129] [cursor=pointer]:
+              - /url: /exams/gre/gre-exam
+        - generic [ref=f19e132]:
+          - generic [ref=f19e133]: A total of 7.7k+ courses in 2.3k top-ranking universities spread across 110 countries accept GMAT as an entrance exam to business and management schools. The Graduate Management Aptitude Test (GMAT) is a standardized exam created in 1954 required for the pursuit of an MBA degree. As of 2023, the GMAT exam has been taken by over 200,000 students worldwide. The GMAT exam is accepted by top institutions like Harvard Business School, Stanford Graduate School of Business, Wharton School, and many more.
+          - generic [ref=f19e134]:
+            - generic [ref=f19e135]:
+              - paragraph [ref=f19e136]: Get a direction for your preparations for the GMAT with inclusive details on the exam.
+              - paragraph [ref=f19e137]: Find all you need to know before applying.
+            - link "Read More" [ref=f19e138] [cursor=pointer]:
+              - /url: /exams/gmat/gmat-exam
+        - generic [ref=f19e141]:
+          - generic [ref=f19e142]: Founded in 1926, the Scholastic Assessment Test (SAT) transformed to become the standardized competency test for undergraduate courses. At present, the technical entrance exam is accepted by 43+ countries, with major nations, namely, Australia, the UK, Canada, the USA, Singapore, and many more. The SAT exam is accepted by top institutions like Harvard University, Stanford University, MIT, and many more. The SAT exam is open to all international students with a minimum age requirement of 17 years.
+          - generic [ref=f19e143]:
+            - generic [ref=f19e144]:
+              - paragraph [ref=f19e145]: Get all the details on SAT entrance exams to enrol in your desired university.
+              - paragraph [ref=f19e146]: From registration to everything else.
+            - link "Read More" [ref=f19e147] [cursor=pointer]:
+              - /url: /exams/sat/sat-exam
+    - generic [ref=f19e151]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f19e153]
+      - generic [ref=f19e154]:
+        - generic [ref=f19e155]:
+          - heading "What are the most common entrance exams for studying abroad?" [level=3] [ref=f19e156] [cursor=pointer]
+          - generic [ref=f19e157] [cursor=pointer]
+        - generic [ref=f19e162]:
+          - heading "How long are entrance exam scores valid?" [level=3] [ref=f19e163] [cursor=pointer]
+          - generic [ref=f19e164] [cursor=pointer]
+        - generic [ref=f19e169]:
+          - heading "Can I take entrance exams multiple times?" [level=3] [ref=f19e170] [cursor=pointer]
+          - generic [ref=f19e171] [cursor=pointer]
+        - generic [ref=f19e176]:
+          - heading "What is a good score for entrance exams?" [level=3] [ref=f19e177] [cursor=pointer]
+          - generic [ref=f19e178] [cursor=pointer]
+        - generic [ref=f19e183]:
+          - heading "How should I prepare for entrance exams?" [level=3] [ref=f19e184] [cursor=pointer]
+          - generic [ref=f19e185] [cursor=pointer]
+      - button "View All Questions (8)" [ref=f19e190] [cursor=pointer]
+    - generic [ref=f19e195]:
+      - heading "Top Articles" [level=2] [ref=f19e198]
+      - generic [ref=f19e199]:
+        - 'link "Read article: Understanding IELTS Score and Results 2024" [ref=f19e200] [cursor=pointer]':
+          - /url: /exams/ielts/ielts-scores-and-results
+          - heading "Understanding IELTS Score and Results 2024" [level=3] [ref=f19e204]
+        - 'link "Read article: GRE Scores & Results 2024: Results, Validity, And More!" [ref=f19e205] [cursor=pointer]':
+          - /url: /exams/gre/gre-scores-and-results
+          - 'heading "GRE Scores & Results 2024: Results, Validity, And More!" [level=3] [ref=f19e209]'
+        - 'link "Read article: GMAT Syllabus And Exam Pattern 2024 | Amber" [ref=f19e210] [cursor=pointer]':
+          - /url: /exams/gmat/gmat-syllabus-and-exam-pattern
+          - heading "GMAT Syllabus And Exam Pattern 2024 | Amber" [level=3] [ref=f19e214]
+        - 'link "Read article: SAT Exam Dates 2024: Everything You Need To Know!" [ref=f19e215] [cursor=pointer]':
+          - /url: /exams/sat/sat-exam-dates
+          - 'heading "SAT Exam Dates 2024: Everything You Need To Know!" [level=3] [ref=f19e219]'
+        - 'link "Read article: TOEFL Test Fee 2024 - Registration & Cancellation Fees" [ref=f19e220] [cursor=pointer]':
+          - /url: /exams/toefl/toefl-exams-fees
+          - heading "TOEFL Test Fee 2024 - Registration & Cancellation Fees" [level=3] [ref=f19e224]
+        - 'link "Read article: IELTS Exam Dates 2024 In India" [ref=f19e225] [cursor=pointer]':
+          - /url: /exams/ielts/ielts-exam-dates
+          - heading "IELTS Exam Dates 2024 In India" [level=3] [ref=f19e229]
+  - generic [ref=f19e233]:
+    - generic [ref=f19e234]:
+      - generic [ref=f19e235]: amber © 2026. All rights reserved.
+      - generic [ref=f19e237] [cursor=pointer]:
+        - generic:
+          - link:
+            - /url: https://uk.trustpilot.com/review/amberstudent.com
+      - generic [ref=f19e238]:
+        - generic [ref=f19e239]:
+          - generic [ref=f19e240]: Get the app
+          - generic [ref=f19e241]:
+            - link [ref=f19e242] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.amberstudent
+            - link [ref=f19e243] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/amber-book-student-housing/id6447250749
+        - generic [ref=f19e245]: Payment Options
+    - generic [ref=f19e248]:
+      - generic [ref=f19e249]:
+        - generic [ref=f19e250]: Company
+        - link "About" [ref=f19e253] [cursor=pointer]:
+          - /url: /about
+        - link "How it works" [ref=f19e255] [cursor=pointer]:
+          - /url: /how-it-works
+        - link "Refer a Friend" [ref=f19e257] [cursor=pointer]:
+          - /url: /referral-programme
+        - generic [ref=f19e258]:
+          - link "Group Bookings" [ref=f19e259] [cursor=pointer]:
+            - /url: /group-booking
+          - generic [ref=f19e260]: New
+        - generic [ref=f19e261]:
+          - link "List with us" [ref=f19e262] [cursor=pointer]:
+            - /url: /list
+          - generic [ref=f19e263]: New
+        - generic [ref=f19e264]:
+          - link "Partner with us" [ref=f19e265] [cursor=pointer]:
+            - /url: /partner
+          - generic [ref=f19e266]: New
+        - generic [ref=f19e267]:
+          - link "Universities" [ref=f19e268] [cursor=pointer]:
+            - /url: /university-partnerships
+          - generic [ref=f19e269]: New
+        - generic [ref=f19e270]:
+          - link "Careers" [ref=f19e271] [cursor=pointer]:
+            - /url: /career
+          - generic [ref=f19e272]: We are hiring!
+      - generic [ref=f19e273]:
+        - generic [ref=f19e274]: Discover
+        - link "Podcast" [ref=f19e277] [cursor=pointer]:
+          - /url: /podcast
+        - link "Newsroom" [ref=f19e279] [cursor=pointer]:
+          - /url: /news
+        - link "Amber Plus" [ref=f19e281] [cursor=pointer]:
+          - /url: /plus
+        - link "Media Mention" [ref=f19e283] [cursor=pointer]:
+          - /url: /media
+        - link "Ambassador" [ref=f19e285] [cursor=pointer]:
+          - /url: /ambassador
+        - generic [ref=f19e286]:
+          - link "Scholarships" [ref=f19e287] [cursor=pointer]:
+            - /url: /scholarship
+          - generic [ref=f19e288]: Apply Now
+        - generic [ref=f19e289]:
+          - link "Exams":
+            - /url: /exams
+          - generic [ref=f19e290]: New
+    - generic [ref=f19e291]:
+      - generic [ref=f19e292]: Support
+      - link "Help Center" [ref=f19e295] [cursor=pointer]:
+        - /url: /help
+      - link "Contact" [ref=f19e297] [cursor=pointer]:
+        - /url: /contact
+      - link "T&C" [ref=f19e299] [cursor=pointer]:
+        - /url: /terms
+      - link "Privacy Policy" [ref=f19e301] [cursor=pointer]:
+        - /url: /privacy
+      - link "Sitemap" [ref=f19e303] [cursor=pointer]:
+        - /url: /sitemap
+    - generic [ref=f19e304]:
+      - generic [ref=f19e305]: Contact us
+      - link "contact@amberstudent.com" [ref=f19e306] [cursor=pointer]:
+        - /url: mailto:contact@amberstudent.com
+      - link "WhatsApp" [ref=f19e310] [cursor=pointer]:
+        - /url: https://wa.me/447888863490
+      - link "+91 8035735724" [ref=f19e314] [cursor=pointer]:
+        - /url: tel:+918035735724
+      - generic [ref=f19e318]: "Follow us on:"
