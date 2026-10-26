@@ -1881,3 +1881,136 @@ body,button,input,textarea,select { font-family: var(--font-body); }
   .gallery-grid { height: clamp(265px, 36vh, 315px); }
   .gallery-meta button { min-height: 44px; }
 }
+
+/* Client review: de-duplicate the first fold; uppercase property name,
+   Save/Compare in compact header, gallery directly below, and CTA top-aligned
+   with the property header instead of with the gallery. */
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(305px, 1fr);
+  /* An explicit first track stops the row-spanning sticky CTA from
+     inflating the header row to the full height of the sidebar. */
+  grid-template-rows: 94px minmax(0,auto);
+  align-items: start;
+  column-gap: 25px;
+  row-gap: 0;
+  padding-top: 16px;
+}
+.page-layout > .hero-topline {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  min-width: 0;
+  min-height: 94px;
+  margin: 0;
+  padding: 6px 0 13px;
+}
+.hero-topline .property-intro {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none;
+  padding: 0;
+}
+.hero-topline .property-identity {
+  flex: none;
+  width: 100%;
+}
+.hero-topline .property-title-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.hero-topline .property-title-line h1 {
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+  font-size: clamp(2.45rem, 3.05vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: .97;
+}
+.hero-topline .property-identity .address {
+  margin-top: 8px;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+.hero-topline .verified-copy { padding: 4px 8px; font-size: 9.5px; }
+.hero-topline .verified-mark { width: 29px; height: 29px; }
+.hero-topline .gallery-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-self: center;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+.hero-topline .gallery-actions-right { display: flex; align-items: center; gap: 8px; }
+.hero-topline .gallery-action,
+.hero-topline .gallery-action.compare-button {
+  min-height: 46px;
+  padding: 0 15px;
+  white-space: nowrap;
+}
+.page-layout > .content-column {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+}
+.page-layout > .desktop-cta {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  position: sticky;
+  top: 13px;
+  align-self: start;
+  margin: 0;
+  z-index: 30;
+}
+.page-layout .gallery-grid { height: clamp(315px, 26.5vw, 390px); }
+.page-layout .section-nav.glass-panel {
+  margin-top: 8px;
+  margin-bottom: 17px;
+}
+@media (min-width: 1025px) and (max-width: 1370px) {
+  .page-layout { column-gap: 19px; }
+  .page-layout > .hero-topline { gap: 10px; min-height: 91px; }
+  .hero-topline .property-title-line h1 { font-size: clamp(2.2rem,2.8vw,2.9rem); }
+  .hero-topline .gallery-action,
+  .hero-topline .gallery-action.compare-button { min-height: 44px; padding-inline: 11px; }
+  .page-layout .gallery-grid { height: clamp(310px, 26.5vw, 365px); }
+}
+@media (max-width: 1024px) {
+  .page-layout {
+    grid-template-columns: minmax(0,1fr);
+    grid-template-rows: auto auto;
+    padding-top: 12px;
+  }
+  .page-layout > .hero-topline {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 0;
+    padding-bottom: 12px;
+  }
+  .page-layout > .content-column { grid-column: 1; grid-row: 2; }
+  .page-layout > .desktop-cta { display: none; }
+}
+@media (max-width: 768px) {
+  .page-layout > .hero-topline { flex-direction: column; align-items: stretch; gap: 10px; }
+  .hero-topline .property-identity { width: 100%; }
+  .hero-topline .property-title-line h1 { font-size: clamp(2.15rem, 8.6vw, 3.3rem); }
+  .hero-topline .gallery-actions { align-self: flex-end; justify-content: flex-end; }
+  .hero-topline .gallery-action,
+  .hero-topline .gallery-action.compare-button { min-height: 44px; }
+  .page-layout .gallery-grid { height: clamp(255px, 34vh, 300px); }
+  .page-layout .section-nav.glass-panel { margin-top: 7px; margin-bottom: 13px; }
+}
+@media (max-width: 390px) {
+  .hero-topline .property-title-line h1 { font-size: 2.15rem; }
+  .hero-topline .verified-copy { font-size: 9px; }
+}

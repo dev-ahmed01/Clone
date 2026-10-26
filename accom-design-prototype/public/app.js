@@ -60,7 +60,6 @@ function renderRooms() {
 function updateSelectedRoom() {
   const cheapest = Math.min(...rooms.flatMap(room => room.tenancies.map(option => option.weekly)));
   const startingPrice = formatMoney(cheapest);
-  $('#intro-start-price').textContent = startingPrice;
   $('#cta-from-price').textContent = startingPrice;
   const room = selectedRoom();
   $('#cta-first-visit').hidden = Boolean(room);
