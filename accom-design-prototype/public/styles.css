@@ -866,3 +866,7 @@ body { background: radial-gradient(ellipse at 42% 20%, #fffcf8, var(--paper) 58%
   .page-layout:has(.section-nav.is-floating) .desktop-cta { top: 74px; }
   .page-layout:has(.section-nav.is-floating) .cta-card { max-height: calc(100vh - 90px); }
 }
+
+/* Slightly deeper accessible red for small white pill labels; core brand red stays #ED2024. */
+.hero-topline .section-nav a.active,
+.hero-topline .section-nav a[aria-current="location"] { background: #cf1723; }
