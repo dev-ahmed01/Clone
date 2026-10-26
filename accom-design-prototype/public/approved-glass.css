@@ -447,3 +447,7 @@ body {
 }
 
 .overview-landmarks .landmarks-heading h3 svg { flex: 0 0 19px; width: 19px; height: 19px; margin-right: 9px; color: #ed2024; }
+
+/* Contrast-safe numbered house-rule badges. */
+.house-rule-index { color: #875600; }
+.house-rule-card:nth-child(3n+2) .house-rule-index { color: #b71928; }
