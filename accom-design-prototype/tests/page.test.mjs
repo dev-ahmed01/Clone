@@ -46,3 +46,23 @@ test('client design contract and reachable mobile help are represented', async (
   assert.match(styles, /\.gallery-dialog\s*\{[^}]*width:\s*100vw/s);
   assert.match(styles, /backdrop-filter:\s*blur\(/);
 });
+
+
+test('first-fold gallery sits inside the 75:25 content track with sticky property details beside it', async () => {
+  const [html, styles] = await Promise.all([
+    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
+  ]);
+  const layout = html.indexOf('<div class="page-layout">');
+  const content = html.indexOf('<div class="content-column">', layout);
+  const gallery = html.indexOf('id="top" class="gallery-shell"', layout);
+  const title = html.indexOf('id="property-title"', gallery);
+  const nav = html.indexOf('class="section-nav glass-panel"', title);
+  const closeContent = html.indexOf('</div>\n\n        <aside id="enquiry"', nav);
+  const aside = html.indexOf('<aside id="enquiry"', nav);
+  assert.ok(layout < content && content < gallery && gallery < title && title < nav && nav < closeContent && closeContent < aside);
+  assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky;[^}]*top:\s*18px;[^}]*margin:\s*0/s);
+  assert.doesNotMatch(styles, /margin-top:\s*-320px/);
+  assert.match(html, /cta-quickfacts/);
+  assert.match(html, /data-open-enquiry>Enquire about this room<\/button>/);
+});

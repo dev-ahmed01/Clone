@@ -105,9 +105,9 @@ The property page should look like a high-quality editorial guide made for a stu
 
 ## Layout
 
-The gallery is edge-to-edge. Below it, the property-intro panel overlaps the gallery edge on desktop. The content area has a maximum width of 1320px, 24px horizontal container padding and a `3fr / 1fr` grid with 56px gutter—75:25 of occupied grid tracks. The content/CTA split applies to the area beneath the gallery, not the gallery itself.
+The gallery fills the left content track of the opening 75:25 layout, beside a visible property-information/CTA rail from the very first viewport. Clicking a gallery tile opens the full-viewport lightbox. The content area has a maximum width of 1320px, 24px horizontal container padding and a `3fr / 1fr` grid with 28px gutter—75:25 of occupied grid tracks. After the left-side gallery, property details and scroll-linked section navigation continue in the same column while the right CTA stays sticky. The earlier full-browser-width gallery followed by a negatively lifted CTA is superseded.
 
-The left column owns section navigation, property facts, rooms, inclusions, location, policies and FAQs. The right-hand CTA is sticky at 22px from the viewport top, with a deliberate first-fold lift; changes to its negative margin require visual rechecking.
+The left column owns section navigation, property facts, rooms, inclusions, location, policies and FAQs. The right-hand CTA is sticky at 22px from the viewport top, with no negative margin or overlay hack; the first-fold CTA occupies the right grid track naturally.
 
 At 1024px and below, the layout stacks and uses a fixed safe-area-aware bottom action. At 768px and below, the gallery uses a 58vh-capped layout (480px maximum, 360px minimum) so the property identity appears sooner. Sections use 72px vertical spacing on desktop, reducing responsively. The section navigation stays within the left column and remains keyboard reachable.
 
@@ -154,7 +154,7 @@ Section links reflect active content via `aria-current="location"`. A mobile hel
 ### Do:
 - **Do** make the full-width gallery open a keyboard-accessible lightbox.
 - **Do** keep the right CTA visible while scrolling desktop content.
-- **Do** keep the 75:25 structure beneath the gallery, then adapt it on mobile.
+- **Do** keep the 75:25 structure throughout the opening gallery and lower listing on desktop, then adapt it on mobile.
 - **Do** make prices, room privacy, tenancy length and enquiry outcomes explicit.
 - **Do** state when room values or imagery are illustrative and require verification.
 - **Do** use Bricolage Grotesque and Montserrat in their intended roles.
