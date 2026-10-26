@@ -158,3 +158,9 @@ test('merged student overview keeps landmarks as nested decision content and use
   assert.ok(css.includes('.house-rules-grid'));
   assert.equal((html.match(/class="landmark-card /g)||[]).length,7);
 });
+
+test('section scroll tracking observes house-rules and keeps the correct active pill',async()=>{
+ const js=await readFile(new URL('../public/app.js',import.meta.url),'utf8');
+ assert.ok(js.includes('getBoundingClientRect().top <= readingLine'));
+ assert.ok(js.includes("window.addEventListener('scroll', schedule"));
+});

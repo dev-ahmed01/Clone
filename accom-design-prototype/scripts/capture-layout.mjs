@@ -83,6 +83,8 @@ try {
         await page.waitForTimeout(100);
         await page.screenshot({ path: new URL('./client-intro-and-landmarks.png', output).pathname });
         await page.locator('#house-rules').scrollIntoViewIfNeeded();
+        await page.waitForTimeout(180);
+        assert.equal(await page.locator('.section-nav a.active').getAttribute('href'), '#house-rules', 'House rules pill should be selected while reading house rules');
         await page.screenshot({ path: new URL('./client-house-rules.png', output).pathname });
         await page.evaluate(() => scrollTo(0, 0));
         await page.locator('.gallery-main').click();
