@@ -130,7 +130,7 @@ test('approved design retains strict palette, visible glass tabs and functional 
   assert.ok(css.includes('.section-nav.glass-panel'));
   assert.ok(css.includes('overflow: clip'));
   assert.ok(css.includes('max-height: none'));
-  assert.equal((html.match(/class="cta-benefit"/g)||[]).length,4);
+  assert.equal((html.match(/class="cta-benefit"/g)||[]).length,3);
   assert.equal((html.match(/data-open-gallery/g)||[]).length,0);
   assert.equal((html.match(/class="section-nav glass-panel"/g)||[]).length,1);
   assert.equal((html.match(/class="overview-highlight"/g)||[]).length,4);
@@ -232,4 +232,25 @@ test('compact first fold places Save and Compare by uppercase property name, rem
  assert.ok(css.includes('text-transform: uppercase'));
  assert.ok(css.includes('grid-row: 1 / 3'));
  assert.ok(css.includes('margin-top: 8px'));
+});
+
+test('client polish: two-font brand, no Compare counter, and map as final panel section',async()=>{
+ const [html,js,css]=await Promise.all([
+   readFile(new URL('../public/index.html',import.meta.url),'utf8'),
+   readFile(new URL('../public/app.js',import.meta.url),'utf8'),
+   readFile(new URL('../public/rail-refinement.css',import.meta.url),'utf8')
+ ]);
+ assert.equal((html.match(/class="brand-lockup"/g)||[]).length,2);
+ assert.ok(html.includes('class="brand-name">accom</span>'));
+ assert.ok(html.includes('class="brand-byline">BY EMLEN</small>'));
+ assert.ok(!html.includes('compare-count'));
+ assert.ok(!js.includes("$('#compare-count')"));
+ assert.ok(js.includes("ready ? 'Compare selected rooms' : 'Compare rooms'"));
+ assert.equal((html.match(/class="cta-benefit"/g)||[]).length,3);
+ const panel=html.slice(html.indexOf('class="cta-panel-bottom"'),html.indexOf('</aside>'));
+ assert.ok(panel.indexOf('class="cta-footnote"')<panel.indexOf('class="cta-area cta-google-map-card"'));
+ assert.ok(panel.includes('Open Google Maps'));
+ assert.ok(css.includes('height:min(620px, calc(100dvh - 240px))'));
+ assert.ok(css.includes('cta-card:has(#cta-selected-details:not([hidden])) .cta-quickfacts'));
+ assert.ok(css.includes('var(--font-heading)') && css.includes('var(--font-body)'));
 });
