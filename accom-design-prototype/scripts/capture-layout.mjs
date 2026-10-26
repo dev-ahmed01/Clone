@@ -23,6 +23,14 @@ try {
     assert.deepEqual(errors, [], `${label}: JavaScript failed during page initialization`);
     const g = await page.locator('.gallery-shell').boundingBox();
     const nav = await page.locator('.section-nav').boundingBox();
+    const galleryGridSize = await page.locator('.gallery-grid').boundingBox();
+    assert.ok(galleryGridSize, `${label}: gallery missing`);
+    if (width <= 768) {
+      assert.ok(galleryGridSize.height <= 316, `${label}: overly tall mobile gallery blocks student decisions`);
+    } else if (width > 1024) {
+      assert.ok(galleryGridSize.height <= 406, `${label}: oversized desktop gallery crowds sections`);
+    }
+
     const toolbar = await page.locator('.gallery-actions').boundingBox();
     const intro = await page.locator('.property-intro').boundingBox();
     const identity = await page.locator('.property-identity').boundingBox();
@@ -134,6 +142,8 @@ try {
       assert.equal(rail, null, `${label}: desktop CTA should be hidden`);
       assert.ok(mobileRail, `${label}: bottom CTA missing`);
       assert.ok(dimensions.title < height, `${label}: property name should appear in first viewport`);
+      assert.ok(nav && nav.y < mobileRail.y, `${label}: section navigation should begin above the bottom CTA`);
+
       assert.ok(identity && stats && stats.y - (identity.y+identity.height) < 42, `${label}: gap beneath heading is too large: ${stats.y-(identity.y+identity.height)}`);
       results.push({label, propertyTitleTop:dimensions.title, mobileCtaTop:mobileRail.y});
     }
