@@ -60,7 +60,7 @@ try {
         await page.locator('#save-property').click();
         assert.equal(await page.locator('#save-property').getAttribute('aria-pressed'), 'false', 'Save should switch off');
         await page.locator('#open-compare').click();
-        assert.ok(await page.evaluate(() => scrollY > 400), 'Compare without two selections should lead to room list');
+        await page.waitForFunction(() => window.scrollY > 400, null, { timeout: 3500 });
         await page.locator('[data-compare-room="bronze-ensuite"]').check();
         await page.locator('[data-compare-room="silver-ensuite"]').check();
         assert.match(await page.locator('#open-compare').getAttribute('aria-label'), /Compare the two selected rooms/);
