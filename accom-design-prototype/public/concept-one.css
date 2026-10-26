@@ -284,6 +284,7 @@ body { background: radial-gradient(ellipse at 40% 10%, #fffdf9 0%, #faf7f2 58%, 
 @media (max-width: 768px) {
   .page-layout { padding: 11px 15px 104px; }
   .hero-topline .property-intro { flex-direction: column; align-items: stretch; gap: 15px; }
+  .hero-topline .property-identity { flex: 0 0 auto; width: 100%; }
   .hero-topline .property-headline-stats { width: 100%; flex: 0 0 auto; }
   .hero-topline .gallery-actions { justify-content: flex-end; }
   .hero-topline .gallery-action, .hero-topline .gallery-action.compare-button { min-height: 44px; padding-inline: 14px; }
