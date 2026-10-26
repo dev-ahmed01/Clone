@@ -180,3 +180,21 @@ test('Bricolage headings and Montserrat metric captions have clear demo/source l
  assert.ok(css.includes('font: 800 35px/.98 var(--font-heading)'));
  assert.ok(css.includes('font: 700 10.5px/1.3 var(--font-body)'));
 });
+
+test('sticky property card embeds actual Google Maps address and keeps a direct full-map link', async () => {
+  const [html, css] = await Promise.all([
+    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/site.css', import.meta.url), 'utf8'),
+  ]);
+  assert.ok(html.includes('class="cta-area cta-google-map-card"'));
+  assert.ok(html.includes('class="cta-google-map"'));
+  assert.ok(html.includes('maps.google.com/maps?q=iQ%20Kingston'));
+  assert.ok(html.includes('15%20Wood%20Street'));
+  assert.ok(html.includes('output=embed'));
+  assert.ok(html.includes('loading="lazy"'));
+  assert.ok(html.includes('title="Google Maps location of iQ Kingston'));
+  assert.ok(html.includes('www.google.com/maps/search/?api=1'));
+  assert.ok(!html.includes('class="cta-area-decoration"'));
+  assert.ok(css.includes('.cta-panel-bottom .cta-google-map-card'));
+  assert.ok(css.includes('grid-template-rows: 151px auto'));
+});
