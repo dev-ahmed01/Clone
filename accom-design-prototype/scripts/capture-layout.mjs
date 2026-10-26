@@ -74,7 +74,7 @@ try {
         assert.equal(await page.locator('#cta-first-visit').isHidden(), true, 'first-visit summary must hide after selection');
         await page.locator('[data-compare-room="bronze-ensuite"]').check();
         await page.locator('[data-compare-room="silver-ensuite"]').check();
-        assert.match(await page.locator('#open-compare').getAttribute('aria-label'), /Compare the two selected rooms/);
+        assert.match(await page.locator('#open-compare').getAttribute('aria-label'), /Compare 2\/2 rooms selected/);
         await page.locator('#open-compare').click();
         assert.ok(await page.locator('#compare-dialog').isVisible(), 'Compare must open after selecting two rooms');
         await page.keyboard.press('Escape');
