@@ -232,7 +232,7 @@ body { background: radial-gradient(ellipse at 40% 10%, #fffdf9 0%, #faf7f2 58%, 
 /* No internal scrolling in the sticky rail: content is deliberately concise. */
 .page-layout .desktop-cta { top: 14px; }
 .cta-card {
-  overflow: visible;
+  overflow: clip;
   max-height: none;
   padding: 21px 21px 17px;
   border-radius: 18px;
