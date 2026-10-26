@@ -171,3 +171,11 @@ Section links reflect active content via `aria-current="location"`. A mobile hel
 The user approved the second image concept and subsequently its variant with the compact red-active on-page pill navigation. The implemented page now places property name, verified-facts indicator, price and dated property rating above the gallery; the six-section navigation is at the upper right and floats back into view after scrolling beyond the gallery. The gallery uses a large editorial image on the left with a three-image mosaic on the right, without changing the full-screen lightbox. Save and Compare are larger and remain directly below the photos. Seven compact student landmarks appear in a single aligned desktop strip with narrower-screen grids. An editorial white Overview panel follows beneath. The dark sticky CTA retains its first-time visitor state, room-selection handoff and three colour treatments.
 
 Keep screenshot-specific figures such as '328 reviews', '8-minute campus walk' or '£315' out of the implemented content unless verified. Current rating remains a dated reference and weekly rates remain clearly illustrative; supplied mockup imagery is a visual direction, not a reliable source of property facts.
+
+## Approved design iteration — Concept One (26 October 2026)
+
+The user selected the first full-page visual concept for implementation. The design prioritises property title, rated source snapshot, sample weekly rate and Save/Compare actions on the first row; an image-led mosaic; a six-pill sticky left-column menu beneath the images; seven landmarks as equal-size four-plus-three centred cards; a concise editorial Overview with clearly labelled illustrative interior photography; and a compact non-scrollable midnight-navy right enquiry panel. Rooms retain their working comparison flow.
+
+Other sections follow the same white/cream, charcoal and warm-red design language: Included separates confirmed benefits from extra charges, Location features provider-published campus times without decorative fake routes, and Policies/FAQs use unified accordions. The source photos, prices and reviews remain prototype-only and are not represented as current availability.
+
+CSS override file: `public/concept-one.css`. Keep it separate from legacy `styles.css` during the concept evaluation and consolidate after client approval.
