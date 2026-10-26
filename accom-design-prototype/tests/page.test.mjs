@@ -164,3 +164,19 @@ test('section scroll tracking observes house-rules and keeps the correct active 
  assert.ok(js.includes('getBoundingClientRect().top <= readingLine'));
  assert.ok(js.includes("window.addEventListener('scroll', schedule"));
 });
+
+test('Bricolage headings and Montserrat metric captions have clear demo/source labelling', async () => {
+ const [html,css] = await Promise.all([
+   readFile(new URL('../public/index.html',import.meta.url),'utf8'),
+   readFile(new URL('../public/site.css',import.meta.url),'utf8')
+ ]);
+ assert.match(html,/Bricolage\+Grotesque/);
+ assert.match(html,/Montserrat/);
+ assert.equal((html.match(/class="headline-stat headline-/g)||[]).length,2);
+ assert.ok(html.includes('11 reviews² · Amber snapshot'));
+ assert.ok(html.includes('Starting rent'));
+ assert.ok(html.includes('Sample price · check current rates'));
+ assert.ok(html.includes('headline-demo-pill'));
+ assert.ok(css.includes('font: 800 35px/.98 var(--font-heading)'));
+ assert.ok(css.includes('font: 700 10.5px/1.3 var(--font-body)'));
+});
