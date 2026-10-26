@@ -344,3 +344,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .gallery-tile img { transition: none; }
 }
+
+/* Shared lightweight line icons for Accom student-benefit chips */
+.overview-highlight .overview-icon svg { width: 21px; height: 21px; }
+.cta-panel-bottom .cta-benefit-icon svg { width: 19px; height: 19px; }
