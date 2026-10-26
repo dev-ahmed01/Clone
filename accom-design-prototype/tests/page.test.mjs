@@ -110,7 +110,7 @@ test('source-like facts and demo disclaimers remain visible', async () => {
   const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('15 min walk'));
-  assert.ok(html.includes('Demo rate'));
+  assert.ok(html.includes('Sample price · check current rates'));
   assert.ok(html.includes('Illustrative room images') || html.includes('Illustrative rates and media'));
   assert.ok(html.includes('No room selected') || html.includes('Choose a room to see its tenancy total.'));
 });
