@@ -52,6 +52,9 @@ try {
       assert.ok(after && after.y >= -2 && after.y <= 26, `${label}: CTA failed to stick, y=${after?.y}`);
       if (label === 'desktop') {
         await page.screenshot({ path: new URL('./client-desktop-scrolled-sticky.png', output).pathname });
+        await page.evaluate(() => window.scrollTo({ top: 660, behavior: 'instant' }));
+        await page.waitForTimeout(100);
+        await page.screenshot({ path: new URL('./client-intro-and-landmarks.png', output).pathname });
         for (const colour of ['midnight', 'ocean', 'ivory']) {
           await page.evaluate(() => scrollTo(0,0));
           await page.locator(`[data-cta-colour="${colour}"]`).click();
