@@ -1888,7 +1888,9 @@ body,button,input,textarea,select { font-family: var(--font-body); }
 .page-layout {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(305px, 1fr);
-  grid-template-rows: auto minmax(0,auto);
+  /* An explicit first track stops the row-spanning sticky CTA from
+     inflating the header row to the full height of the sidebar. */
+  grid-template-rows: 94px minmax(0,auto);
   align-items: start;
   column-gap: 25px;
   row-gap: 0;
