@@ -355,3 +355,5 @@ function setupCompactSectionNavigation() {
   window.addEventListener('resize', update, { passive: true });
   update();
 }
+
+setupCompactSectionNavigation();
