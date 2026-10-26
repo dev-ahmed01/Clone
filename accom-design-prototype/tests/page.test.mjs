@@ -250,7 +250,7 @@ test('client polish: two-font brand, no Compare counter, and map as final panel 
  const panel=html.slice(html.indexOf('class="cta-panel-bottom"'),html.indexOf('</aside>'));
  assert.ok(panel.indexOf('class="cta-footnote"')<panel.indexOf('class="cta-area cta-google-map-card"'));
  assert.ok(panel.includes('Open Google Maps'));
- assert.ok(css.includes('height:min(620px, calc(100dvh - 240px))'));
+ assert.ok(css.includes('height:min(650px, calc(100dvh - 145px))'));
  assert.ok(css.includes('cta-card:has(#cta-selected-details:not([hidden])) .cta-quickfacts'));
  assert.ok(css.includes('var(--font-heading)') && css.includes('var(--font-body)'));
 });
