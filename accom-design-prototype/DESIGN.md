@@ -179,3 +179,9 @@ The user selected the first full-page visual concept for implementation. The des
 Other sections follow the same white/cream, charcoal and warm-red design language: Included separates confirmed benefits from extra charges, Location features provider-published campus times without decorative fake routes, and Policies/FAQs use unified accordions. The source photos, prices and reviews remain prototype-only and are not represented as current availability.
 
 CSS override file: `public/concept-one.css`. Keep it separate from legacy `styles.css` during the concept evaluation and consolidate after client approval.
+
+## Approved vibrant-glass mockup — 26 October 2026
+
+User-approved full-page screenshot is implemented as a working UI with `public/approved-glass.css` loaded last. The primary brand red remains `#ED2024`; `#FFB900` is a supporting yellow for stars, selected icons and selected highlights, with midnight navy, teal, soft purple and warm cream. Bricolage Grotesque is strictly used for headings; Montserrat is used for regular content. The existing 75:25 desktop division and sticky right CTA are preserved without a separately scrollable sidebar. The right panel has a compact red/navy top, a frosted white student highlights surface and a linked neighbourhood illustration that deliberately does not present fictitious routes. The left navigation remains sticky in its own column, beneath the gallery. The page's four existing image assets are concept illustrations; the mockup's invented 47 photos, 328 reviews and live price were not transferred. Initial state has no room selected; working room comparison, lightbox and enquiry UI are retained.
+
+No live enquiry delivery, booking, payment, new operator media, or real-time inventory is claimed. Before production, obtain licensed real property photos and verified rates/availability; replace the gallery art and the dated review snapshot.
