@@ -109,7 +109,7 @@ The gallery is edge-to-edge. Below it, the property-intro panel overlaps the gal
 
 The left column owns section navigation, property facts, rooms, inclusions, location, policies and FAQs. The right-hand CTA is sticky at 22px from the viewport top, with a deliberate first-fold lift; changes to its negative margin require visual rechecking.
 
-At 1024px and below, the layout stacks and uses a fixed safe-area-aware bottom action. Sections use 72px vertical spacing on desktop, reducing responsively. The section navigation stays within the left column and remains keyboard reachable.
+At 1024px and below, the layout stacks and uses a fixed safe-area-aware bottom action. At 768px and below, the gallery uses a 58vh-capped layout (480px maximum, 360px minimum) so the property identity appears sooner. Sections use 72px vertical spacing on desktop, reducing responsively. The section navigation stays within the left column and remains keyboard reachable.
 
 ## Elevation & Depth
 

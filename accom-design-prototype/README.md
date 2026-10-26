@@ -61,3 +61,14 @@ npx.cmd lighthouse http://127.0.0.1:4173 --only-categories=performance,accessibi
 ```
 
 The local server is not a public deployment and cannot be reached from other devices without separate hosting or network forwarding.
+
+## Regenerating smaller prototype images
+
+The four gallery WebP files are reproducibly encoded from the retained source PNGs with Pillow 11.3.0, quality 76. The optimized files committed to this prototype total about 537 KB rather than 3.77 MB (84–88% smaller individually).
+
+```powershell
+py -m pip install Pillow==11.3.0
+py scripts/optimize_webp.py
+```
+
+This keeps gallery image URLs, alt text and provenance sidecars unchanged. A future production image service should also generate viewport-specific `srcset` sizes and verify image licensing.

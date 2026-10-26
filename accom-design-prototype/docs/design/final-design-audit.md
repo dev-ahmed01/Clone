@@ -126,7 +126,7 @@ This was an internal independent review, not user testing and not evidence that 
 - Full cancellation, visa, instalment, deposit, visitor, and accessibility terms were not available from a verified source; the UI does not invent them.
 - No live enquiry is submitted, no availability is reserved, and no booking is confirmed.
 - No real student usability study, screen-reader test session, production network test, or backend/security assessment was performed.
-- WebP images remain larger than an ideal production responsive-image set; production should add `srcset`, AVIF where suitable, and CDN transformation/caching.
+- The initial WebP files were oversized. On the follow-up branch they were re-encoded to 116–176 KB each (84–88% byte savings). Production should still add responsive `srcset`, AVIF where suitable, proper cache headers and authorised images.
 
 ## Follow-up GitHub code inspection — 26 October 2026
 
@@ -152,3 +152,11 @@ This follow-up inspected the pushed HTML, CSS, JS, test sources and the browser-
 6. Replace illustrative images/prices/terms with authorised sources and confirm client UI approval before any production rollout.
 
 No backend, payments, live booking or live enquiry transport was introduced.
+
+### Additional follow-up: compression and mobile first fold
+
+- GitHub Actions compressed the illustrative WebP gallery assets deterministically from retained PNGs: lounge 1,113,322→175,986 bytes; ensuite 821,216→126,110; studio 852,270→118,838; study 979,170→115,902. Source assets remain unchanged.
+- Mobile gallery height was reduced from 70vh/minimum 500px to `min(58vh, 480px)`/minimum 360px so property identity enters the first viewport sooner. The gallery remains edge-to-edge, and the desktop 75:25 layout is unchanged.
+- Secondary gallery tiles now load lazily at low priority; the principal first-view image retains high fetch priority.
+- Historical uncompressed CI laboratory audits recorded desktop Performance 79/85 and mobile Performance 69/68 on consecutive runs, with Accessibility/Best Practices/SEO at 100. **These scores were from the oversized-image build, not the compressed-image commit; fresh results are required.**
+- The performance audits were run in a GitHub Actions laboratory environment. Scores and LCP differ by run conditions and do not represent real-user field data.
