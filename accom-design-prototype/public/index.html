@@ -21,71 +21,115 @@
         <span>accom <small>by emlen</small></span>
       </a>
       <nav class="header-nav" aria-label="Primary navigation">
-        <a href="#rooms">Find a room</a>
-        <button class="save-control" id="save-property" type="button" aria-label="Save iQ Kingston" aria-pressed="false">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
-          <span>Save</span>
-        </button>
+        <a href="#rooms">Explore rooms</a>
+        <a href="#included">Amenities</a>
+        <a href="#location">Campus & location</a>
         <button class="header-help" type="button" data-open-enquiry>Get help</button>
       </nav>
     </header>
 
-    <div id="top" class="gallery-shell" aria-label="Illustrative property gallery">
-      <div class="gallery-grid">
-        <button class="gallery-tile gallery-main" type="button" data-gallery-index="0" aria-label="Open communal lounge image in gallery">
-          <img src="assets/lounge.webp" width="1230" height="692" fetchpriority="high" alt="Illustrative communal lounge with sofas, study counter and large windows">
-        </button>
-        <button class="gallery-tile" type="button" data-gallery-index="1" aria-label="Open ensuite bedroom image in gallery">
-          <img src="assets/ensuite.webp" loading="lazy" decoding="async" fetchpriority="low" width="1038" height="692" alt="Illustrative ensuite bedroom with bed, desk, wardrobe and private bathroom doorway">
-        </button>
-        <button class="gallery-tile gallery-small" type="button" data-gallery-index="2" aria-label="Open studio image in gallery">
-          <img src="assets/studio.webp" loading="lazy" decoding="async" fetchpriority="low" width="1038" height="692" alt="Illustrative private studio with bed, desk and kitchenette">
-        </button>
-        <button class="gallery-tile gallery-small" type="button" data-gallery-index="3" aria-label="Open study lounge image in gallery">
-          <img src="assets/study.webp" loading="lazy" decoding="async" fetchpriority="low" width="1230" height="692" alt="Illustrative shared study lounge with long table and acoustic booths">
-        </button>
-      </div>
-      <div class="gallery-meta glass-panel">
-        <span><strong>Illustrative media</strong> · not the exact rooms</span>
-        <button id="view-gallery" type="button">View all <span aria-hidden="true">4</span></button>
-      </div>
-    </div>
-
     <main id="main-content">
-      <section class="property-intro" aria-labelledby="property-title">
-        <div>
-          <p class="breadcrumbs"><span>Kingston</span><span aria-hidden="true">/</span>Student accommodation</p>
-          <h1 id="property-title">iQ Kingston</h1>
-          <p class="address">15 Wood Street, Kingston upon Thames, KT1 1TY</p>
-        </div>
-        <div class="intro-note">
-          <span class="status-dot" aria-hidden="true"></span>
-          <p><strong>Provider facts checked</strong><br><span>26 October 2026 · prices are demo values</span></p>
-        </div>
-      </section>
-
       <div class="page-layout">
+        <div class="hero-topline">
+        <section class="property-intro" aria-labelledby="property-title">
+          <div class="property-identity">
+            <div class="property-title-line">
+              <h1 id="property-title">iQ Kingston</h1>
+              <span class="verified-mark" role="img" title="Location and key facilities cross-checked with the official iQ operator; media and prices are illustrative" aria-label="Property facts checked against official operator"><svg class="verified-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 1.5 3.2.5.5 3.2L22 12l-3.3 4.8-.5 3.2-3.2.5L12 22l-3-1.5-3.2-.5-.5-3.2L2 12l3.3-4.8.5-3.2 3.2-.5z"/><path d="m8 12 2.6 2.6L16.5 9"/></svg></span>
+            </div>
+            <p class="address">15 Wood Street, Kingston upon Thames, KT1 1TY</p>
+          </div>
+          <div class="property-headline-stats">
+            <div class="headline-stat">
+              <span class="headline-label">Property rating²</span>
+              <div class="headline-stat-value"><span class="star-symbol" aria-hidden="true">★</span><strong>4.9</strong></div>
+              <span class="headline-context">11 reviews²</span>
+            </div>
+            <div class="headline-stat">
+              <span class="headline-label">From · sample rate</span>
+              <div class="headline-stat-value"><strong id="intro-start-price">£289</strong><span>/ week</span></div>
+              <span class="headline-context">Demo rate · not live availability</span>
+            </div>
+          </div>
+        </section>
+        <nav class="section-nav glass-panel" aria-label="On this property page">
+          <a href="#overview" class="active" aria-current="location">Overview</a>
+          <a href="#rooms">Rooms</a>
+          <a href="#included">Included</a>
+          <a href="#location">Location</a>
+          <a href="#policies">Policies</a>
+          <a href="#faqs">FAQs</a>
+        </nav>
+        </div>
         <div class="content-column">
-          <nav class="section-nav glass-panel" aria-label="On this property page">
-            <a href="#overview" class="active" aria-current="location">Overview</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#included">Included</a>
-            <a href="#location">Location</a>
-            <a href="#policies">Policies</a>
-            <a href="#faqs">FAQs</a>
-          </nav>
 
-          <section id="overview" class="content-section overview-section">
-            <div class="section-heading">
-              <h2>Student life, with the important bits upfront.</h2>
-              <p>Central Kingston, room privacy you can compare, and a human next step that does not pretend an enquiry is a booking.</p>
+
+          <div id="top" class="gallery-shell" aria-label="Illustrative property gallery">
+            <div class="gallery-grid">
+              <button class="gallery-tile gallery-main" type="button" data-gallery-index="0" aria-label="Open communal lounge image in gallery">
+                <img src="assets/lounge.webp" width="1230" height="692" fetchpriority="high" alt="Illustrative communal lounge with sofas, study counter and large windows">
+              </button>
+              <button class="gallery-tile" type="button" data-gallery-index="1" aria-label="Open ensuite bedroom image in gallery">
+                <img src="assets/ensuite.webp" loading="lazy" decoding="async" fetchpriority="low" width="1038" height="692" alt="Illustrative ensuite bedroom with bed, desk, wardrobe and private bathroom doorway">
+              </button>
+              <button class="gallery-tile gallery-small" type="button" data-gallery-index="2" aria-label="Open studio image in gallery">
+                <img src="assets/studio.webp" loading="lazy" decoding="async" fetchpriority="low" width="1038" height="692" alt="Illustrative private studio with bed, desk and kitchenette">
+              </button>
+              <button class="gallery-tile gallery-small" type="button" data-gallery-index="3" aria-label="Open study lounge image in gallery">
+                <img src="assets/study.webp" loading="lazy" decoding="async" fetchpriority="low" width="1230" height="692" alt="Illustrative shared study lounge with long table and acoustic booths">
+              </button>
             </div>
-            <div class="fact-strip" aria-label="Verified property highlights">
-              <div><strong>15 min</strong><span>walk to Kingston University</span></div>
-              <div><strong>9 min</strong><span>walk to Kingston College</span></div>
-              <div><strong>All bills</strong><span>Wi-Fi, electricity & water confirmed</span></div>
+            <div class="gallery-meta glass-panel">
+              <button id="view-gallery" type="button">View all photos <span aria-hidden="true">4</span></button>
             </div>
-            <p class="source-line">Source: iQ Student Accommodation · checked 26 Oct 2026</p>
+          </div>
+          <div class="gallery-actions" aria-label="Property actions">
+            <div class="gallery-actions-right">
+              <button class="gallery-action save-control" id="save-property" type="button" aria-label="Save iQ Kingston" aria-pressed="false">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
+                <span>Save</span>
+              </button>
+              <button id="open-compare" class="gallery-action compare-button" type="button" aria-describedby="compare-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/></svg>
+                Compare <span id="compare-count">0</span>/2
+              </button>
+            </div>
+            <span class="sr-only" id="compare-hint">Select two rooms below to compare their features and contracts.</span>
+          </div>
+
+
+          <section class="nearby-landmarks" aria-labelledby="landmarks-title">
+            <div class="landmarks-heading"><h2 id="landmarks-title"><span aria-hidden="true">⌖</span> Nearby Landmarks</h2><p>Campus, shops and places worth knowing</p></div>
+            <div class="landmarks-grid" role="list">
+              <div class="landmark-card landmark-university" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 10 10-6 10 6-10 6zM6 13v5c4 3 8 3 12 0v-5"/></svg></span><strong>Kingston University</strong><small>15 min walk¹</small></div>
+              <div class="landmark-card landmark-arts" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.5c2 0 2.3-1.7 1.3-3.2-.8-1.5.4-2.1 2-2.1h1.1A4.2 4.2 0 0 0 22 10c0-3.8-4.4-7-10-7Z"/><circle cx="8" cy="10" r="1"/><circle cx="12" cy="7" r="1"/></svg></span><strong>Kingston School of Art</strong><small>Arts campus · check route</small></div>
+              <div class="landmark-card landmark-station" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="16" rx="3"/><path d="M5 11h14M8 22l2-3m6 0 2 3M9 7h6"/></svg></span><strong>Kingston Station</strong><small>Rail connections</small></div>
+              <div class="landmark-card landmark-shop" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11h11.3l2.2-8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></span><strong>Sainsbury’s</strong><small>Groceries</small></div>
+              <div class="landmark-card landmark-basket" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 10 3-6m11 6-3-6M4 10h16l-2 10H6zM9 13v4m6-4v4"/></svg></span><strong>Tesco Extra</strong><small>Everyday essentials</small></div>
+              <div class="landmark-card landmark-town" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M3 21h18M8 8h2m4 0h2M8 12h2m4 0h2M10 21v-5h4v5"/></svg></span><strong>Kingston Town Centre</strong><small>Shops & cafés</small></div>
+              <div class="landmark-card landmark-river" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3M2 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/></svg></span><strong>River Thames</strong><small>Riverside walks</small></div>
+            </div>
+            <p class="landmarks-footnote">¹ Walking time: official iQ listing. ² Property rating: Amber listing snapshot, not an Accom rating. Other travel times must be confirmed.</p>
+          </section>
+
+
+
+          <section id="overview" class="content-section overview-section overview-card" aria-labelledby="about-title">
+            <div class="overview-eyebrow"><span></span> OVERVIEW</div>
+            <h2 id="about-title">About the Property</h2>
+            <p class="overview-description">iQ Kingston puts students in central Kingston upon Thames, close to university life, local shops and the riverside. Choose between ensuite and studio accommodation, with furnished rooms, shared spaces and important bills included. Compare the room options below to find what suits your routine and budget.</p>
+            <div class="overview-highlights" aria-label="Property highlights">
+              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">▤</span><div><strong>Furnished rooms</strong><small>Ensuite and studio choices</small></div></div>
+              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">✦</span><div><strong>Secure living</strong><small>Building security information</small></div></div>
+              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">◉</span><div><strong>Wi-Fi included</strong><small>Stay connected while studying</small></div></div>
+              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">♧</span><div><strong>Social spaces</strong><small>Gym and shared facilities</small></div></div>
+            </div>
+            <div class="overview-context">
+              <span>15 min walk to Kingston University¹</span>
+              <span>9 min walk to Kingston College¹</span>
+              <span>Bills information from operator</span>
+            </div>
+            <p class="source-line">¹ Published iQ accommodation information · Confirm availability, policies and specific room facilities before booking.</p>
           </section>
 
           <section id="rooms" class="content-section rooms-section">
@@ -94,7 +138,6 @@
                 <h2>Choose the room, then the contract.</h2>
                 <p>Compare privacy and total commitment without opening six tabs.</p>
               </div>
-              <button id="open-compare" class="compare-button" type="button" disabled>Compare <span id="compare-count">0</span>/2</button>
             </div>
             <div class="room-tools" aria-label="Filter rooms">
               <div class="filter-group" role="group" aria-label="Room category">
@@ -208,18 +251,49 @@
           </section>
         </div>
 
-        <aside id="enquiry" class="desktop-cta" aria-label="Selected room enquiry">
-          <div class="cta-card glass-panel">
-            <div class="cta-status"><span></span>Local demo · no payment</div>
-            <p class="cta-label">Your room shortlist</p>
-            <h2 id="cta-room-name">Bronze Ensuite</h2>
-            <div class="cta-price"><strong id="cta-weekly">£289</strong><span>/ week</span></div>
-            <div class="cta-tenancy" id="cta-tenancy">51 weeks · 12 Sep 2027</div>
-            <div class="cta-total"><span>Illustrative total</span><strong id="cta-total">£14,739</strong></div>
-            <p class="cta-disclaimer">Demo pricing. Availability and contract terms must be confirmed.</p>
-            <button type="button" class="primary-action" data-open-enquiry>Enquire about this room</button>
-            <button type="button" class="text-action" id="cta-save">Save property</button>
-            <p class="cta-footnote">Submitting an enquiry does not reserve a room or confirm a booking.</p>
+        <aside id="enquiry" class="desktop-cta" aria-label="iQ Kingston overview and room enquiry">
+          <div class="cta-card glass-panel" data-cta-theme="midnight">
+            <div class="cta-property">
+              <span class="cta-kicker"><span></span> STUDENT LIVING · KINGSTON</span>
+              <div class="cta-property-title"><h2>iQ Kingston</h2><span class="verified-mark verified-mark-small" title="Property facts checked against official iQ listing"><svg class="verified-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 1.5 3.2.5.5 3.2L22 12l-3.3 4.8-.5 3.2-3.2.5L12 22l-3-1.5-3.2-.5-.5-3.2L2 12l3.3-4.8.5-3.2 3.2-.5z"/><path d="m8 12 2.6 2.6L16.5 9"/></svg></span></div>
+              <p>15 Wood Street, Kingston upon Thames</p>
+            </div>
+            <div class="cta-first-visit" id="cta-first-visit">
+              <div class="cta-overview-metrics">
+                <div><small>From · demo</small><div class="cta-overview-value"><strong id="cta-from-price">£289</strong><span>/ week</span></div></div>
+                <div><small>Property rating²</small><div class="cta-overview-value"><span aria-hidden="true" class="star-symbol">★</span><strong>4.9</strong></div><span class="cta-review-count">11 reviews²</span></div>
+              </div>
+              <p class="cta-preselect-hint">Explore rooms first — nothing selected yet.</p>
+            </div>
+            <div class="cta-quickfacts" aria-label="Property highlights">
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">ϟ</span><span class="cta-benefit-copy"><strong>Bills included</strong><span>Wi-Fi, electricity & water</span></span></div>
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">⌂</span><span class="cta-benefit-copy"><strong>Near Kingston University</strong><span>15 min walk¹ to campus</span></span></div>
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">▤</span><span class="cta-benefit-copy"><strong>Ensuite & studio options</strong><span>Explore furnished rooms</span></span></div>
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">✓</span><span class="cta-benefit-copy"><strong>Property facts checked</strong><span>Verified against operator listing</span></span></div>
+            </div>
+            <div class="cta-selection" id="cta-selected-details" hidden>
+              <p class="cta-label">Selected room</p>
+              <h3 id="cta-room-name">Bronze Ensuite</h3>
+              <div class="cta-price"><strong id="cta-weekly">£289</strong><span>/ week</span></div>
+              <div class="cta-tenancy" id="cta-tenancy">51 weeks · 12 Sep 2027</div>
+              <div class="cta-total"><span>Illustrative contract total</span><strong id="cta-total">£14,739</strong></div>
+            </div>
+            <a href="#rooms" class="primary-action cta-view-rooms">View room options <span aria-hidden="true">→</span></a>
+            <button type="button" class="cta-secondary-action" data-open-enquiry id="cta-enquire-button">Ask about this property</button>
+            <div class="cta-trust-notes" aria-label="Enquiry reassurance">
+              <span><b aria-hidden="true">✓</b> No payment to send an enquiry</span>
+              <span><b aria-hidden="true">✓</b> Compare room and tenancy choices</span>
+              <span><b aria-hidden="true">✓</b> Accom enquiry support</span>
+            </div>
+            <p class="cta-footnote">Demo imagery and rates · no live enquiry, payment or booking.</p>
+            <div class="cta-theme-chooser" role="group" aria-label="Try information panel colours">
+              <span>Explore colours</span>
+              <div class="cta-theme-options">
+                <button type="button" class="cta-theme-swatch" data-cta-colour="midnight" aria-label="Midnight blue panel" aria-pressed="true" title="Midnight blue"><span></span></button>
+                <button type="button" class="cta-theme-swatch" data-cta-colour="ocean" aria-label="Deep teal panel" aria-pressed="false" title="Deep teal"><span></span></button>
+                <button type="button" class="cta-theme-swatch" data-cta-colour="ivory" aria-label="Warm ivory panel" aria-pressed="false" title="Warm ivory"><span></span></button>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
@@ -231,12 +305,12 @@
       <p class="footer-meta">Property-detail design prototype · no live enquiries or payments</p>
     </footer>
 
-    <div class="mobile-cta" aria-label="Selected room enquiry action">
+    <div class="mobile-cta" aria-label="iQ Kingston rooms and enquiry">
       <div class="mobile-cta-copy">
-        <span><b id="mobile-room">Bronze Ensuite</b><strong id="mobile-price">£289/wk</strong></span>
-        <small id="mobile-commitment">51 weeks · £14,739 total · demo</small>
+        <span><b id="mobile-room">No room selected</b><strong id="mobile-price">From £289/wk</strong></span>
+        <small id="mobile-commitment">Explore rooms · demo prices</small>
       </div>
-      <button type="button" class="primary-action" data-open-enquiry>Enquire</button>
+      <button type="button" class="primary-action" id="mobile-main-action">View rooms</button>
     </div>
 
     <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="gallery-dialog-title">

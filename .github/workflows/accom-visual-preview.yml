@@ -1,0 +1,39 @@
+name: Accom visual layout preview
+on:
+  pull_request:
+    paths:
+      - "accom-design-prototype/public/**"
+      - "accom-design-prototype/tests/**"
+      - "accom-design-prototype/scripts/capture-layout.mjs"
+      - ".github/workflows/accom-visual-preview.yml"
+  workflow_dispatch:
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: accom-design-prototype
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser harness
+        run: npm install --no-save playwright@1.56.1
+      - name: Check available Chrome
+        run: which google-chrome
+      - name: Run prototype
+        run: |
+          node server.mjs > /tmp/accom-server.log 2>&1 &
+          sleep 3
+          curl -fsS http://127.0.0.1:4173/ >/dev/null
+      - name: Capture and verify gallery / always-present CTA
+        run: node scripts/capture-layout.mjs
+      - name: Upload layout previews
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: accom-visual-hero-preview
+          path: |
+            accom-design-prototype/screenshots/client-*.png

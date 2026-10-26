@@ -4,7 +4,7 @@ const state = {
   category: 'all',
   compareIds: [],
   galleryIndex: 0,
-  selectedRoomId: 'bronze-ensuite',
+  selectedRoomId: null,
   tenancies: Object.fromEntries(rooms.map((room) => [room.id, 0])),
 };
 
@@ -58,7 +58,21 @@ function renderRooms() {
 }
 
 function updateSelectedRoom() {
+  const cheapest = Math.min(...rooms.flatMap(room => room.tenancies.map(option => option.weekly)));
+  const startingPrice = formatMoney(cheapest);
+  $('#intro-start-price').textContent = startingPrice;
+  $('#cta-from-price').textContent = startingPrice;
   const room = selectedRoom();
+  $('#cta-first-visit').hidden = Boolean(room);
+  $('#cta-selected-details').hidden = !room;
+  if (!room) {
+    $('#mobile-room').textContent = 'No room selected';
+    $('#mobile-price').textContent = `From ${startingPrice}/wk`;
+    $('#mobile-commitment').textContent = 'Explore rooms · demo prices';
+    $('#mobile-main-action').textContent = 'View rooms';
+    $('#cta-enquire-button').textContent = 'Ask about this property';
+    return;
+  }
   const tenancy = selectedTenancy(room);
   $('#cta-room-name').textContent = room.name;
   $('#cta-weekly').textContent = formatMoney(tenancy.weekly);
@@ -67,12 +81,14 @@ function updateSelectedRoom() {
   $('#mobile-room').textContent = room.name;
   $('#mobile-price').textContent = `${formatMoney(tenancy.weekly)}/wk`;
   $('#mobile-commitment').textContent = `${tenancy.weeks} weeks · ${formatMoney(totalRent(tenancy.weekly, tenancy.weeks))} total · demo`;
+  $('#mobile-main-action').textContent = 'Enquire';
+  $('#cta-enquire-button').textContent = 'Enquire about selected room';
 }
 
 function updateCompareButton() {
   const count = state.compareIds.length;
   $('#compare-count').textContent = count;
-  $('#open-compare').disabled = count !== 2;
+  $('#open-compare').setAttribute('aria-label', `Compare ${count}/2 rooms selected`);
 }
 
 function renderAccordions() {
@@ -200,6 +216,11 @@ function setupRoomInteractions() {
   });
 
   $('#open-compare').addEventListener('click', () => {
+    if (state.compareIds.length !== 2) {
+      $('#rooms').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      announce('Select two rooms in the room list to compare them.');
+      return;
+    }
     renderComparison();
     $('#compare-dialog').showModal();
   });
@@ -211,7 +232,7 @@ function setSaved(saved) {
   control.setAttribute('aria-pressed', String(saved));
   control.setAttribute('aria-label', saved ? 'Remove iQ Kingston from saved properties' : 'Save iQ Kingston');
   control.querySelector('span').textContent = saved ? 'Saved' : 'Save';
-  $('#cta-save').textContent = saved ? 'Saved to this browser' : 'Save property';
+
 }
 
 function setupSavedState() {
@@ -224,7 +245,7 @@ function setupSavedState() {
     announce(saved ? 'iQ Kingston saved in this browser.' : 'iQ Kingston removed from saved properties.');
   };
   $('#save-property').addEventListener('click', toggle);
-  $('#cta-save').addEventListener('click', toggle);
+
 }
 
 function setupDialogs() {
@@ -236,7 +257,7 @@ function setupDialogs() {
 
 function openEnquiry(topic) {
   const room = selectedRoom();
-  const tenancy = selectedTenancy(room);
+  const tenancy = room ? selectedTenancy(room) : null;
   const form = $('#enquiry-form');
   form.reset();
   $('#form-state').hidden = false;
@@ -247,7 +268,9 @@ function openEnquiry(topic) {
     input.removeAttribute('aria-describedby');
     $(`#${field}-error`).textContent = '';
   });
-  $('#enquiry-room-summary').innerHTML = `<strong>${room.name}</strong><span>${tenancy.weeks} weeks · ${formatMoney(tenancy.weekly)}/week · demo total ${formatMoney(totalRent(tenancy.weekly, tenancy.weeks))}</span>`;
+  $('#enquiry-room-summary').innerHTML = room
+    ? `<strong>${room.name}</strong><span>${tenancy.weeks} weeks · ${formatMoney(tenancy.weekly)}/week · demo total ${formatMoney(totalRent(tenancy.weekly, tenancy.weeks))}</span>`
+    : '<strong>iQ Kingston</strong><span>General property enquiry · choose a room later</span>';
   if (topic) $('#topic').value = topic;
   $('#enquiry-dialog').showModal();
   form.elements.namedItem('name').focus();
@@ -255,6 +278,10 @@ function openEnquiry(topic) {
 
 function setupEnquiry() {
   $$('[data-open-enquiry]').forEach((button) => button.addEventListener('click', () => openEnquiry(button.dataset.enquiryTopic)));
+  $('#mobile-main-action').addEventListener('click', () => {
+    if (state.selectedRoomId) openEnquiry();
+    else $('#rooms').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
   $('#enquiry-form').addEventListener('submit', (event) => {
     event.preventDefault();
     const form = event.currentTarget;
@@ -304,3 +331,29 @@ setupSavedState();
 setupDialogs();
 setupEnquiry();
 setupSectionNavigation();
+
+function setupCtaColourExperiments() {
+  const card = $('.cta-card');
+  const swatches = $$('[data-cta-colour]');
+  swatches.forEach((button) => button.addEventListener('click', () => {
+    const colour = button.dataset.ctaColour;
+    card.dataset.ctaTheme = colour;
+    swatches.forEach((swatch) => swatch.setAttribute('aria-pressed', String(swatch === button)));
+    announce(`Information panel colour changed to ${button.title}.`);
+  }));
+}
+setupCtaColourExperiments();
+
+function setupCompactSectionNavigation() {
+  const nav = $('.section-nav');
+  const gallery = $('.gallery-shell');
+  const update = () => {
+    const galleryHasPassed = gallery.getBoundingClientRect().bottom < 90;
+    nav.classList.toggle('is-floating', window.innerWidth > 1024 && galleryHasPassed);
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+}
+
+setupCompactSectionNavigation();
