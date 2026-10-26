@@ -1,0 +1,37 @@
+name: Optimize Accom demo images
+
+on:
+  pull_request:
+    paths:
+      - "accom-design-prototype/scripts/optimize_webp.py"
+
+permissions:
+  contents: write
+
+jobs:
+  compress-prototype-media:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned image encoder
+        run: python -m pip install Pillow==11.3.0
+      - name: Re-encode gallery images from source PNGs
+        run: python accom-design-prototype/scripts/optimize_webp.py
+      - name: Commit optimized media to the PR branch
+        run: |
+          git add accom-design-prototype/public/assets/*.webp
+          if git diff --cached --quiet; then
+            echo "Media already optimized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "perf(accom): optimize illustrative gallery WebP payloads"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}

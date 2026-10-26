@@ -115,9 +115,9 @@ This was an internal independent review, not user testing and not evidence that 
 - Enquiry: required-field errors, focus placement, consent validation, simulated pending confirmation, and explicit non-booking message checked.
 - Save: pressed state and local-storage persistence checked.
 - Console: zero errors or warnings after the favicon correction.
-- Automated: four Node tests pass.
-- Lighthouse: Accessibility 100, Best Practices 100, SEO 100, and Agentic Browsing 100 in desktop and mobile local audits.
-- Local unthrottled performance trace: LCP 420ms and CLS 0.00. These are local laboratory observations, not production Core Web Vitals or field data.
+- Automated (original handoff): five Node tests were reported passing. **After the current polish branch, all seven defined Node tests passed in GitHub Actions on 26 October 2026.**
+- Lighthouse (pre-final-CSS, historical): Accessibility 100, Best Practices 100, SEO 100, and Agentic Browsing 100 in desktop and mobile local audits. **The latest post-optimization CI result is documented below.**
+- Local unthrottled performance trace (historical): LCP 420ms and CLS 0.00. These precede later CTA/CSS adjustments, are not production Core Web Vitals or field data, and must be remeasured.
 
 ## Remaining limitations
 
@@ -126,4 +126,56 @@ This was an internal independent review, not user testing and not evidence that 
 - Full cancellation, visa, instalment, deposit, visitor, and accessibility terms were not available from a verified source; the UI does not invent them.
 - No live enquiry is submitted, no availability is reserved, and no booking is confirmed.
 - No real student usability study, screen-reader test session, production network test, or backend/security assessment was performed.
-- WebP images remain larger than an ideal production responsive-image set; production should add `srcset`, AVIF where suitable, and CDN transformation/caching.
+- The initial WebP files were oversized. On the follow-up branch they were re-encoded to 116–176 KB each (84–88% byte savings). Production should still add responsive `srcset`, AVIF where suitable, proper cache headers and authorised images.
+
+## Follow-up GitHub code inspection — 26 October 2026
+
+This follow-up inspected the pushed HTML, CSS, JS, test sources and the browser-connected page text. It did **not** control the user's localhost browser or capture post-fix pixels. Do not present the historical `SHIP` disposition as a fresh validation of this branch.
+
+### Fixed in the follow-up branch
+
+- Resolved a browser form-control name collision: reading `form.name.value` is unsafe because `name` is also an `HTMLFormElement` property. Enquiry values now come from `form.elements.namedItem(...)`.
+- Restored a new enquiry form after a demo success; stale success and validation errors no longer carry into a later enquiry.
+- Replaced header `Get help`'s anchor to a mobile-hidden sidebar with an explicit dialog trigger.
+- Aligned the demo success copy with actual behaviour: no submission, storage or room reservation occurs.
+- Corrected swipe start-state cleanup when gallery gestures end or cancel.
+- Increased section-pill and room-filter control height to 44px and strengthened restrained glass styling on the existing dark/frosted surfaces.
+- Added assertions for form extraction and the client's layout/font/lightbox/sticky requirements.
+
+### Sign-off conditions remaining
+
+1. Run `npm test` from `accom-design-prototype/` (seven defined tests); record the result for this exact commit.
+2. In a real browser, test empty/invalid/valid enquiry submissions, reopen after success, header help at mobile width, and Esc/focus restoration for gallery and enquiry.
+3. At 1440×900, 1280×800, 768, 390×844 and 360×800, inspect gallery, sticky navigation, CTA visibility, form scrolling, and horizontal overflow. Capture updated screenshots.
+4. Rerun Lighthouse and a performance trace after the final CSS. Keep desktop/mobile outputs, dates, hardware and throttling notes.
+5. Real-student task testing and assistive-technology testing remain out of scope for this code-only pass.
+6. Replace illustrative images/prices/terms with authorised sources and confirm client UI approval before any production rollout.
+
+No backend, payments, live booking or live enquiry transport was introduced.
+
+### Additional follow-up: compression and mobile first fold
+
+- GitHub Actions compressed the illustrative WebP gallery assets deterministically from retained PNGs: lounge 1,113,322→175,986 bytes; ensuite 821,216→126,110; studio 852,270→118,838; study 979,170→115,902. Source assets remain unchanged.
+- Mobile gallery height was reduced from 70vh/minimum 500px to `min(58vh, 480px)`/minimum 360px so property identity enters the first viewport sooner. The gallery remains edge-to-edge, and the desktop 75:25 layout is unchanged.
+- Secondary gallery tiles now load lazily at low priority; the principal first-view image retains high fetch priority.
+- Historical uncompressed CI laboratory audits recorded desktop Performance 79/85 and mobile Performance 69/68 on consecutive runs, with Accessibility/Best Practices/SEO at 100. **These scores were from the oversized-image build, not the compressed-image commit; fresh results are now recorded below.**
+- The performance audits were run in a GitHub Actions laboratory environment. Scores and LCP differ by run conditions and do not represent real-user field data.
+
+## Final CI verification after compressed gallery (26 October 2026)
+
+GitHub Actions run [40288880335](https://github.com/dev-ahmed01/Clone/actions/runs/40288880335) validated commit `88e8a6d6599494994d6085153085369d4593ea1d`. Source code and image bytes for this measured build are unchanged by this audit-documentation update.
+
+| Metric | Desktop | Mobile |
+|---|---:|---:|
+| Performance | 98 | 77 |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+| Largest Contentful Paint | 1.0s | 4.6s |
+| Cumulative Layout Shift | 0.002 | 0.001 |
+
+- Node syntax checks and 7/7 Node tests passed; Lighthouse audits and JSON artifact upload completed successfully.
+- The mobile hero no longer hides the property title below the initial viewport in the captured lab screenshot.
+- These figures are synthetic Lighthouse laboratory scores from GitHub-hosted Chrome, not live traffic performance or proof of student usability.
+- **Residual performance work:** Mobile LCP at 4.6 seconds does not meet the usual 2.5-second good Core Web Vitals target. Responsive image sizing, local/font resource optimisation and a production CDN remain for the production build.
+- Design screenshot interactions were reviewed using the previously captured baseline and new CI first-fold image; a new human-operated full interaction pass and screen-reader test remain pending.

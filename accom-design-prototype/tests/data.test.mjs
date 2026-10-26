@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import {
   filterRooms,
   formatMoney,
+  readInquiryValues,
   rooms,
   totalRent,
   validateInquiry,
@@ -26,4 +27,20 @@ test('validateInquiry reports actionable errors and accepts a complete enquiry',
     consent: 'Confirm that Accom may contact you about this enquiry.',
   });
   assert.deepEqual(validateInquiry({ name: 'Aisha Khan', email: 'aisha@example.com', phone: '', consent: true }), {});
+});
+
+test('readInquiryValues avoids HTMLFormElement.name shadowing', () => {
+  const values = {
+    name: { value: 'Aisha Khan' },
+    email: { value: 'aisha@example.com' },
+    phone: { value: '+44 7000 000000' },
+    consent: { checked: true },
+  };
+  const form = {
+    name: 'shadowing-form-name',
+    elements: { namedItem: (key) => values[key] ?? null },
+  };
+  assert.deepEqual(readInquiryValues(form), {
+    name: 'Aisha Khan', email: 'aisha@example.com', phone: '+44 7000 000000', consent: true,
+  });
 });

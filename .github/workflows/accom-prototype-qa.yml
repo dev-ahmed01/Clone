@@ -1,0 +1,64 @@
+name: Accom property prototype QA
+
+on:
+  pull_request:
+    paths:
+      - "accom-design-prototype/**"
+      - ".github/workflows/accom-prototype-qa.yml"
+  workflow_dispatch:
+
+jobs:
+  code-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: accom-design-prototype
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check module syntax and tests
+        run: |
+          node --check public/app.js
+          node --check public/data.js
+          npm test
+
+  lighthouse:
+    needs: code-checks
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: accom-design-prototype
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Start local prototype
+        run: |
+          node server.mjs > /tmp/accom-local.log 2>&1 &
+          sleep 3
+          curl --fail http://127.0.0.1:4173/ > /dev/null
+      - name: Lighthouse local desktop report
+        run: |
+          mkdir -p qa-results
+          npx --yes lighthouse@12 http://127.0.0.1:4173/ --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --preset=desktop --output=json --output-path=qa-results/lighthouse-desktop.json
+      - name: Lighthouse local mobile report
+        run: |
+          npx --yes lighthouse@12 http://127.0.0.1:4173/ --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,best-practices,seo --output=json --output-path=qa-results/lighthouse-mobile.json
+      - name: Summarize laboratory metrics
+        run: |
+          node --input-type=module -e '
+          import fs from "node:fs";
+          for (const device of ["desktop", "mobile"]) {
+            const report=JSON.parse(fs.readFileSync(`qa-results/lighthouse-${device}.json`,"utf8"));
+            const values=Object.fromEntries(Object.entries(report.categories).map(([key,value])=>[key,Math.round(value.score*100)]));
+            console.log(device,values,"LCP",report.audits["largest-contentful-paint"]?.displayValue,"CLS",report.audits["cumulative-layout-shift"]?.displayValue);
+          }'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: accom-lighthouse-lab-reports
+          path: accom-design-prototype/qa-results/*.json
+          if-no-files-found: ignore

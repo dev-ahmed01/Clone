@@ -93,7 +93,7 @@ export const faqs = [
   ['Can I choose an exact room?', 'iQ says students can choose from available rooms on its floor plan after selecting a room type and contract. An Accom enquiry asks for help; it does not reserve an exact room.'],
   ['Can visitors stay?', 'Visitor and overnight guest rules were not verified for this prototype. Ask for the current house rules before you proceed.'],
   ['How secure is the building?', 'iQ describes 24/7 security and staff presence across its accommodation. Ask the operator to confirm the access-control and reception arrangements at iQ Kingston.'],
-  ['What happens after I enquire?', 'Accom receives your local demo request and would normally contact you to confirm requirements and check options. A booking is only confirmed later by the accommodation provider.'],
+  ['What happens after I enquire?', 'This prototype shows a demonstration confirmation only and sends no message. In a live Accom service, an adviser would confirm the options and next steps. A booking is only confirmed by the accommodation provider.'],
   ['Can I cancel?', 'Cancellation depends on the current provider contract and your circumstances. Request the full policy before paying or signing.'],
   ['When can I move in?', 'The dates shown here are illustrative prototype values. Current move-in dates must be confirmed with iQ.'],
 ];
@@ -101,6 +101,18 @@ export const faqs = [
 export const formatMoney = (value) => new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', maximumFractionDigits: 0 }).format(value);
 export const totalRent = (weekly, weeks) => weekly * weeks;
 export const filterRooms = (list, category) => category === 'all' ? list : list.filter((room) => room.category === category);
+
+// Resolve form controls by name through the elements collection. form.name is the
+// HTMLFormElement's own name property, not a reliable reference to the input.
+export function readInquiryValues(form) {
+  const control = (name) => form.elements.namedItem(name);
+  return {
+    name: control('name')?.value ?? '',
+    email: control('email')?.value ?? '',
+    phone: control('phone')?.value ?? '',
+    consent: Boolean(control('consent')?.checked),
+  };
+}
 
 export function validateInquiry(values) {
   const errors = {};
