@@ -24,6 +24,8 @@ try {
     const g = await page.locator('.gallery-shell').boundingBox();
     const nav = await page.locator('.section-nav').boundingBox();
     const toolbar = await page.locator('.gallery-actions').boundingBox();
+    const intro = await page.locator('.property-intro').boundingBox();
+    assert.ok(intro && intro.y < g.y, `${label}: property title must precede gallery`);
     const landmarkElements = page.locator('.landmark-card');
     assert.equal(await landmarkElements.count(), 7, `${label}: seven nearby landmarks expected`);
     const bounds = await Promise.all((await landmarkElements.all()).map(element => element.boundingBox()));
@@ -43,9 +45,11 @@ try {
       assert.ok(g && rail, `${label}: gallery and CTA must both render`);
       assert.ok(rail.x >= g.x + g.width - 2, `${label}: CTA must be beside, not overlapping/below gallery`);
       assert.ok(nav && g && nav.y < g.y, `${label}: section navigation should be above gallery`);
+      assert.ok(nav.x + nav.width > g.x + g.width * .85, `${label}: navigation should be aligned to the right`);
       assert.ok(toolbar && toolbar.y >= g.y + g.height - 1, `${label}: Save and Compare bar must be below images`);
       assert.ok(Math.abs(g.y - rail.y) <= 14, `${label}: sticky info card should start alongside the gallery: ${g.y}, ${rail.y}`);
       const begin = rail.y;
+      await page.screenshot({ path: new URL(`./reference-${label}-hero.png`, output).pathname });
       await page.evaluate(() => window.scrollTo(0, 900));
       await page.waitForTimeout(180);
       const after = await page.locator('.desktop-cta').boundingBox();

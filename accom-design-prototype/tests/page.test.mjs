@@ -48,23 +48,21 @@ test('client design contract and reachable mobile help are represented', async (
 });
 
 
-test('first-fold gallery sits inside the 75:25 content track with sticky property details beside it', async () => {
+test('reference design: headline and right-aligned pills sit above gallery and sticky rail', async () => {
   const [html, styles] = await Promise.all([
     readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
   ]);
-  const layout = html.indexOf('<div class="page-layout">');
-  const content = html.indexOf('<div class="content-column">', layout);
-  const nav = html.indexOf('class="section-nav glass-panel"', content);
-  const gallery = html.indexOf('id="top" class="gallery-shell"', nav);
-  const title = html.indexOf('id="property-title"', gallery);
-  const closeContent = html.indexOf('</div>\n\n        <aside id="enquiry"', nav);
-  const aside = html.indexOf('<aside id="enquiry"', nav);
-  assert.ok(layout < content && content < nav && nav < gallery && gallery < title && title < closeContent && closeContent < aside);
-  assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky;[^}]*top:\s*18px/s);
-  assert.doesNotMatch(styles, /margin-top:\s*-320px/);
-  assert.match(html, /cta-quickfacts/);
-  assert.match(html, /data-open-enquiry id="cta-enquire-button">Ask about this property<\/button>/);
+  const top = html.indexOf('class="hero-topline"');
+  const intro = html.indexOf('class="property-intro"', top);
+  const nav = html.indexOf('class="section-nav glass-panel"', top);
+  const content = html.indexOf('class="content-column"', nav);
+  const gallery = html.indexOf('class="gallery-shell"', content);
+  const aside = html.indexOf('class="desktop-cta"', gallery);
+  assert.ok(top < intro && intro < nav && nav < content && content < gallery && gallery < aside);
+  assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky/s);
+  assert.match(styles, /\.gallery-main\s*\{[^}]*grid-column:\s*1/s);
+  assert.match(html, /id="cta-enquire-button">Ask about this property<\/button>/);
 });
 
 test('gallery action bar holds unique Save / Compare, hero nav comes first and concept disclosure leaves photo', async () => {
@@ -76,7 +74,7 @@ test('gallery action bar holds unique Save / Compare, hero nav comes first and c
   const gallery = html.indexOf('id="top" class="gallery-shell"');
   const toolbar = html.indexOf('class="gallery-actions"');
   const intro = html.indexOf('class="property-intro"');
-  assert.ok(nav < gallery && gallery < toolbar && toolbar < intro);
+  assert.ok(intro < nav && nav < gallery && gallery < toolbar);
   assert.equal((html.match(/id="save-property"/g) || []).length, 1);
   assert.equal((html.match(/id="open-compare"/g) || []).length, 1);
   assert.ok(html.includes('View all photos'));
@@ -94,7 +92,8 @@ test('first visit is unselected and location tiles have seven consistent entries
     readFile(new URL('../public/app.js', import.meta.url), 'utf8')
   ]);
   assert.ok(!html.includes('class="breadcrumbs"'));
-  assert.ok(html.includes('id="landmarks-title">Nearby landmarks'));
+  assert.ok(html.includes('id="landmarks-title"'));
+  assert.ok(html.includes('Nearby Landmarks'));
   assert.equal((html.match(/class="landmark-card /g) || []).length, 7);
   assert.ok(css.includes('flex: 0 0 calc((100% - 30px)/4)'));
   assert.ok(html.includes('class="verified-mark"'));
@@ -104,4 +103,16 @@ test('first visit is unselected and location tiles have seven consistent entries
   assert.ok(script.includes('selectedRoomId: null'));
   assert.ok(html.includes('From · demo'));
   assert.ok(!html.includes('Student accommodation · Kingston'));
+});
+
+test('updated hero keeps accessible Save and Compare and actual product overview', async () => {
+  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  assert.ok(html.includes('class="hero-topline"'));
+  assert.ok(html.includes('class="overview-highlights"'));
+  assert.equal((html.match(/class="overview-highlight"/g)||[]).length,4);
+  assert.equal((html.match(/class="cta-benefit"/g)||[]).length,4);
+  assert.ok(html.includes('id="cta-first-visit"'));
+  assert.ok(html.includes('id="cta-selected-details" hidden'));
+  assert.equal((html.match(/id="save-property"/g)||[]).length,1);
+  assert.equal((html.match(/id="open-compare"/g)||[]).length,1);
 });
