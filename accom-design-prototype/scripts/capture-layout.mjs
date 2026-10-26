@@ -28,6 +28,20 @@ try {
     const identity = await page.locator('.property-identity').boundingBox();
     const stats = await page.locator('.property-headline-stats').boundingBox();
     assert.ok(intro && intro.y < g.y, `${label}: property title must precede gallery`);
+    const metrics = page.locator('.property-headline-stats .headline-stat');
+    assert.equal(await metrics.count(),2,`${label}: must have rating and rent metrics`);
+    const metricBounds = await Promise.all((await metrics.all()).map(el => el.boundingBox()));
+    assert.ok(metricBounds.every(b => b && b.width >= 125 && b.height >= 95),`${label}: cramped rating or rent card`);
+    assert.ok(Math.abs(metricBounds[0].height-metricBounds[1].height) < 3,`${label}: metric cards have mismatched heights`);
+    const fontFamilies = await page.evaluate(() => ({
+       title: getComputedStyle(document.querySelector('#property-title')).fontFamily,
+       amount: getComputedStyle(document.querySelector('.headline-stat-value strong')).fontFamily,
+       body: getComputedStyle(document.body).fontFamily,
+       label: getComputedStyle(document.querySelector('.headline-label')).fontFamily
+    }));
+    assert.ok(fontFamilies.title.includes('Bricolage Grotesque') && fontFamilies.amount.includes('Bricolage Grotesque'),`${label}: heading font incorrect`);
+    assert.ok(fontFamilies.body.includes('Montserrat') && fontFamilies.label.includes('Montserrat'),`${label}: body font incorrect`);
+
     const landmarkElements = page.locator('.landmark-card');
     assert.equal(await landmarkElements.count(), 7, `${label}: seven nearby landmarks expected`);
     const bounds = await Promise.all((await landmarkElements.all()).map(element => element.boundingBox()));
