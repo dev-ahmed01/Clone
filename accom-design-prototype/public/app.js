@@ -88,7 +88,7 @@ function updateSelectedRoom() {
 function updateCompareButton() {
   const count = state.compareIds.length;
   $('#compare-count').textContent = count;
-  $('#open-compare').setAttribute('aria-label', count === 2 ? 'Compare the two selected rooms' : `Compare rooms, ${count} of 2 selected`);
+  $('#open-compare').setAttribute('aria-label', `Compare ${count}/2 rooms selected`);
 }
 
 function renderAccordions() {
