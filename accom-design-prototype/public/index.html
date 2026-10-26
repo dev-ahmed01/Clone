@@ -26,7 +26,7 @@
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
           <span>Save</span>
         </button>
-        <a class="header-help" href="#enquiry">Get help</a>
+        <button class="header-help" type="button" data-open-enquiry>Get help</button>
       </nav>
     </header>
 
@@ -54,7 +54,7 @@
     <main id="main-content">
       <section class="property-intro" aria-labelledby="property-title">
         <div>
-          <p class="breadcrumbs"><a href="#rooms">Kingston</a><span aria-hidden="true">/</span>Student accommodation</p>
+          <p class="breadcrumbs"><span>Kingston</span><span aria-hidden="true">/</span>Student accommodation</p>
           <h1 id="property-title">iQ Kingston</h1>
           <p class="address">15 Wood Street, Kingston upon Thames, KT1 1TY</p>
         </div>
@@ -67,7 +67,7 @@
       <div class="page-layout">
         <div class="content-column">
           <nav class="section-nav glass-panel" aria-label="On this property page">
-            <a href="#overview" class="active">Overview</a>
+            <a href="#overview" class="active" aria-current="location">Overview</a>
             <a href="#rooms">Rooms</a>
             <a href="#included">Included</a>
             <a href="#location">Location</a>
@@ -283,9 +283,9 @@
             </div>
             <div id="success-state" class="success-state" hidden tabindex="-1" aria-live="polite">
               <span class="success-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4 4L19 7"/></svg></span>
-              <h3>Enquiry saved locally</h3>
-              <p>Your demo enquiry is <strong>pending</strong>. No room has been reserved and no booking is confirmed.</p>
-              <dl><div><dt>Reference</dt><dd id="enquiry-reference">AC-000000</dd></div><div><dt>Next step</dt><dd>An adviser would contact you to confirm the current options.</dd></div></dl>
+              <h3>Demo enquiry complete</h3>
+              <p>This is an on-screen demonstration only. <strong>No message has been sent or saved.</strong> No room is reserved or booked.</p>
+              <dl><div><dt>Demo ID</dt><dd id="enquiry-reference">DEMO-000000</dd></div><div><dt>Next step</dt><dd>A live Accom service would need to receive the enquiry before an adviser could follow up.</dd></div></dl>
               <button type="button" class="secondary-action" data-close-dialog>Back to property</button>
             </div>
           </form>

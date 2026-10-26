@@ -1,4 +1,4 @@
-import { faqs, filterRooms, formatMoney, media, policies, rooms, totalRent, validateInquiry } from './data.js';
+import { faqs, filterRooms, formatMoney, media, policies, readInquiryValues, rooms, totalRent, validateInquiry } from './data.js';
 
 const state = {
   category: 'all',
@@ -116,10 +116,12 @@ function setupGallery() {
   let touchStart = null;
   $('.lightbox-stage').addEventListener('pointerdown', (event) => { touchStart = event.clientX; });
   $('.lightbox-stage').addEventListener('pointerup', (event) => {
-    if (touchStart === null || Math.abs(event.clientX - touchStart) < 55) return;
-    setGalleryImage(state.galleryIndex + (event.clientX < touchStart ? 1 : -1));
+    const start = touchStart;
     touchStart = null;
+    if (start === null || Math.abs(event.clientX - start) < 55) return;
+    setGalleryImage(state.galleryIndex + (event.clientX < start ? 1 : -1));
   });
+  $('.lightbox-stage').addEventListener('pointercancel', () => { touchStart = null; });
 }
 
 function renderComparison() {
@@ -235,9 +237,20 @@ function setupDialogs() {
 function openEnquiry(topic) {
   const room = selectedRoom();
   const tenancy = selectedTenancy(room);
+  const form = $('#enquiry-form');
+  form.reset();
+  $('#form-state').hidden = false;
+  $('#success-state').hidden = true;
+  ['name', 'email', 'consent'].forEach((field) => {
+    const input = form.elements.namedItem(field);
+    input.removeAttribute('aria-invalid');
+    input.removeAttribute('aria-describedby');
+    $(`#${field}-error`).textContent = '';
+  });
   $('#enquiry-room-summary').innerHTML = `<strong>${room.name}</strong><span>${tenancy.weeks} weeks · ${formatMoney(tenancy.weekly)}/week · demo total ${formatMoney(totalRent(tenancy.weekly, tenancy.weeks))}</span>`;
   if (topic) $('#topic').value = topic;
   $('#enquiry-dialog').showModal();
+  form.elements.namedItem('name').focus();
 }
 
 function setupEnquiry() {
@@ -245,7 +258,7 @@ function setupEnquiry() {
   $('#enquiry-form').addEventListener('submit', (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-    const values = { name: form.name.value, email: form.email.value, phone: form.phone.value, consent: form.consent.checked };
+    const values = readInquiryValues(form);
     const errors = validateInquiry(values);
     ['name', 'email', 'consent'].forEach((field) => {
       $(`#${field}-error`).textContent = errors[field] || '';
@@ -261,7 +274,7 @@ function setupEnquiry() {
     }
     $('#form-state').hidden = true;
     $('#success-state').hidden = false;
-    const reference = `AC-${String(Date.now()).slice(-6)}`;
+    const reference = `DEMO-${String(Date.now()).slice(-6)}`;
     $('#enquiry-reference').textContent = reference;
     $('#success-state').focus?.();
   });
