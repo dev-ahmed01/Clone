@@ -50,10 +50,10 @@ try {
       assert.ok(Math.abs(g.y - rail.y) <= 14, `${label}: sticky info card should start alongside the gallery: ${g.y}, ${rail.y}`);
       const begin = rail.y;
       await page.screenshot({ path: new URL(`./reference-${label}-hero.png`, output).pathname });
-      await page.evaluate(() => window.scrollTo(0, 900));
-      await page.waitForTimeout(180);
+      await page.evaluate(() => window.scrollTo({top:900, behavior:'instant'}));
+      await page.waitForTimeout(120);
       const after = await page.locator('.desktop-cta').boundingBox();
-      assert.ok(after && after.y >= -2 && after.y <= 26, `${label}: CTA failed to stick, y=${after?.y}`);
+      assert.ok(after && after.y >= -2 && after.y <= 82, `${label}: CTA failed to stick below floating menu, y=${after?.y}`);
       if (label === 'desktop') {
         const landmarks = await Promise.all((await page.locator('.landmark-card').all()).map(el => el.boundingBox()));
         assert.ok(Math.max(...landmarks.map(x => x.y)) - Math.min(...landmarks.map(x => x.y)) < 3, 'desktop landmarks should sit on one row');
