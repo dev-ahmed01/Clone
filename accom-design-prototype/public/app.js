@@ -277,7 +277,7 @@ function openEnquiry(topic) {
 }
 
 function setupEnquiry() {
-  $('[data-open-enquiry]').forEach((button) => button.addEventListener('click', () => openEnquiry(button.dataset.enquiryTopic)));
+  $$('[data-open-enquiry]').forEach((button) => button.addEventListener('click', () => openEnquiry(button.dataset.enquiryTopic)));
   $('#mobile-main-action').addEventListener('click', () => {
     if (state.selectedRoomId) openEnquiry();
     else $('#rooms').scrollIntoView({ behavior: 'smooth', block: 'start' });
