@@ -60,7 +60,8 @@ test('chosen concept has property actions above gallery and six pill tabs below'
   assert.equal((html.match(/id="save-property"/g)||[]).length, 1);
   assert.equal((html.match(/id="open-compare"/g)||[]).length, 1);
   assert.ok(html.includes('View all 4 photos'));
-  assert.ok(html.includes('concept-one.css'));
+  assert.ok(html.includes('site.css'));
+  assert.ok(!html.includes('href="concept-one.css"'));
 });
 test('first visit is unselected and location tiles have seven consistent entries', async () => {
   const [html, css, script] = await Promise.all([
@@ -79,7 +80,7 @@ test('first visit is unselected and location tiles have seven consistent entries
   assert.ok(html.includes('class="verified-mark"'));
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('id="cta-selected-details" hidden'));
-  assert.ok(html.includes('nothing selected yet'));
+  assert.ok(html.includes('Choose a room to see its tenancy total.'));
   assert.ok(script.includes('selectedRoomId: null'));
   assert.ok(html.includes('From · demo'));
   assert.ok(!html.includes('Student accommodation · Kingston'));
@@ -110,6 +111,32 @@ test('source-like facts and demo disclaimers remain visible', async () => {
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('15 min walk'));
   assert.ok(html.includes('Demo rate'));
-  assert.ok(html.includes('Illustrative interior'));
-  assert.ok(html.includes('No room selected') || html.includes('nothing selected yet'));
+  assert.ok(html.includes('Concept imagery'));
+  assert.ok(html.includes('No room selected') || html.includes('Choose a room to see its tenancy total.'));
+});
+
+
+test('approved design retains strict palette, visible glass tabs and functional showcase', async () => {
+  const [html, css, data, js] = await Promise.all([
+    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/approved-glass.css', import.meta.url), 'utf8'),
+    readFile(new URL('../public/data.js', import.meta.url), 'utf8'),
+    readFile(new URL('../public/app.js', import.meta.url), 'utf8')
+  ]);
+  assert.ok(html.includes('site.css'));
+  assert.match(css,/--red:\s*#ed2024/i);
+  assert.match(css,/--yellow:\s*#ffb900/i);
+  assert.ok(css.includes('grid-template-columns: minmax(0,3fr) minmax(305px,1fr)'));
+  assert.ok(css.includes('.section-nav.glass-panel'));
+  assert.ok(css.includes('overflow: clip'));
+  assert.ok(css.includes('max-height: none'));
+  assert.equal((html.match(/class="cta-benefit"/g)||[]).length,4);
+  assert.equal((html.match(/data-open-gallery/g)||[]).length,1);
+  assert.equal((html.match(/class="section-nav glass-panel"/g)||[]).length,1);
+  assert.equal((html.match(/class="overview-highlight"/g)||[]).length,4);
+  assert.ok(html.includes('View all 4 photos'));
+  assert.ok(html.includes('Illustrative rates and media'));
+  assert.ok(html.includes('Choose a room to see its tenancy total'));
+  assert.ok(js.includes("$$('[data-open-gallery]')"));
+  assert.ok(data.includes("src: 'assets/ensuite.webp'"));
 });

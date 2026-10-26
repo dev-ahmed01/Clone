@@ -55,6 +55,16 @@ try {
       await page.waitForTimeout(120);
       const after = await page.locator('.desktop-cta').boundingBox();
       assert.ok(after && after.y >= -2 && after.y <= 82, `${label}: CTA failed to stick below floating menu, y=${after?.y}`);
+      const ctaSize = await page.locator('.cta-card').evaluate(el => ({
+        height: el.getBoundingClientRect().height,
+        overflowY: getComputedStyle(el).overflowY,
+        scrollHeight: el.scrollHeight,
+        clientHeight: el.clientHeight
+      }));
+      assert.notEqual(ctaSize.overflowY, 'auto', `${label}: sticky CTA must not scroll internally`);
+      assert.notEqual(ctaSize.overflowY, 'scroll', `${label}: sticky CTA must not scroll internally`);
+      assert.ok(ctaSize.height <= height - 14, `${label}: sticky CTA should fit viewport (${ctaSize.height}px vs ${height}px)`);
+
       if (label === 'desktop') {
         const landmarks = await Promise.all((await page.locator('.landmark-card').all()).map(el => el.boundingBox()));
         assert.ok(landmarks[0].y === landmarks[3].y && landmarks[4].y > landmarks[0].y, 'desktop landmarks should form a 4+3 layout');
@@ -68,6 +78,9 @@ try {
         await page.locator('.gallery-main').click();
         await page.locator('#gallery-dialog').waitFor({state: 'visible'});
         await page.screenshot({path: new URL('./client-gallery-lightbox.png', output).pathname});
+        await page.keyboard.press('Escape');
+        await page.locator('[data-open-gallery]').click();
+        assert.ok(await page.locator('#gallery-dialog').isVisible(), 'overview photo action must open the real gallery');
         await page.keyboard.press('Escape');
         await page.locator('#save-property').click();
         assert.equal(await page.locator('#save-property').getAttribute('aria-pressed'), 'true', 'Save should switch on');

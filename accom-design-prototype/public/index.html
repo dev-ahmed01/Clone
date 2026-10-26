@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="concept-one.css">
+    <link rel="stylesheet" href="site.css">
     <script type="module" src="app.js"></script>
   </head>
   <body>
@@ -36,7 +35,7 @@
           <div class="property-identity">
             <div class="property-title-line">
               <h1 id="property-title">iQ Kingston</h1>
-              <span class="verified-mark" role="img" title="Location and key facilities cross-checked with the official iQ operator; media and prices are illustrative" aria-label="Property facts checked against official operator"><svg class="verified-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 1.5 3.2.5.5 3.2L22 12l-3.3 4.8-.5 3.2-3.2.5L12 22l-3-1.5-3.2-.5-.5-3.2L2 12l3.3-4.8.5-3.2 3.2-.5z"/><path d="m8 12 2.6 2.6L16.5 9"/></svg></span>
+              <span class="verified-mark" role="img" title="Location and key facilities cross-checked with the official iQ operator; media and prices are illustrative" aria-label="Property facts checked against official operator"><svg class="verified-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 1.5 3.2.5.5 3.2L22 12l-3.3 4.8-.5 3.2-3.2.5L12 22l-3-1.5-3.2-.5-.5-3.2L2 12l3.3-4.8.5-3.2 3.2-.5z"/><path d="m8 12 2.6 2.6L16.5 9"/></svg></span><span class="verified-copy">Facts checked</span>
             </div>
             <p class="address">15 Wood Street, Kingston upon Thames, KT1 1TY</p>
           </div>
@@ -70,13 +69,13 @@
         <div class="content-column">
 
 
-          <div id="top" class="gallery-shell" aria-label="Illustrative property gallery">
+          <div id="top" class="gallery-shell" aria-label="Prototype gallery with illustrative property-inspired interiors">
             <div class="gallery-grid">
-              <button class="gallery-tile gallery-main" type="button" data-gallery-index="0" aria-label="Open communal lounge image in gallery">
-                <img src="assets/lounge.webp" width="1230" height="692" fetchpriority="high" alt="Illustrative communal lounge with sofas, study counter and large windows">
+              <button class="gallery-tile gallery-main" type="button" data-gallery-index="0" aria-label="Open bedroom image in gallery">
+                <img src="assets/ensuite.webp" width="1038" height="692" fetchpriority="high" alt="Illustrative furnished ensuite bedroom with a desk and window">
               </button>
-              <button class="gallery-tile" type="button" data-gallery-index="1" aria-label="Open ensuite bedroom image in gallery">
-                <img src="assets/ensuite.webp" loading="lazy" decoding="async" fetchpriority="low" width="1038" height="692" alt="Illustrative ensuite bedroom with bed, desk, wardrobe and private bathroom doorway">
+              <button class="gallery-tile" type="button" data-gallery-index="1" aria-label="Open shared lounge image in gallery">
+                <img src="assets/lounge.webp" loading="lazy" decoding="async" fetchpriority="low" width="1230" height="692" alt="Illustrative bright shared lounge with study and seating areas">
               </button>
               <button class="gallery-tile gallery-small" type="button" data-gallery-index="2" aria-label="Open studio image in gallery">
                 <img src="assets/studio.webp" loading="lazy" decoding="async" fetchpriority="low" width="1038" height="692" alt="Illustrative private studio with bed, desk and kitchenette">
@@ -92,19 +91,45 @@
 
           </div>
           <nav class="section-nav glass-panel" aria-label="On this property page">
-            <a href="#overview" class="active" aria-current="location">Overview</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#included">Included</a>
-            <a href="#location">Location</a>
-            <a href="#policies">Policies</a>
-            <a href="#faqs">FAQs</a>
+            <a href="#overview" class="active" aria-current="location"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10h-6v-6H9v6H3z"/></svg><span>Overview</span></a>
+            <a href="#rooms"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V6m18 12V9M3 13h18v5H3m4-9h5a3 3 0 0 1 3 3"/></svg><span>Rooms</span></a>
+            <a href="#included"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m4 10 8 5 8-5M12 15v5"/></svg><span>Included</span></a>
+            <a href="#location"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 0 1 14 0z"/><circle cx="12" cy="10" r="2"/></svg><span>Location</span></a>
+            <a href="#policies"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3 8 8 10 5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg><span>Policies</span></a>
+            <a href="#faqs"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.6 2.6 0 1 1 4.5 1.8c-1 .8-2 1.2-2 2.7M12 17h.01"/></svg><span>FAQs</span></a>
           </nav>
 
 
 
 
+
+
+
+
+          <section id="overview" class="content-section overview-section overview-card" aria-labelledby="about-title">
+            <div class="overview-story">
+              <div class="overview-copy">
+                <p class="section-kicker"><span></span> OVERVIEW</p>
+                <h2 id="about-title">Modern student living, close to everything.</h2>
+                <p>Live near the university, shops and riverside. Explore furnished ensuite or studio rooms, welcoming shared spaces and included essentials.</p>
+                <a class="overview-link" href="#rooms">Find your room <span aria-hidden="true">→</span></a>
+              </div>
+              <figure class="overview-photo">
+                <img src="assets/lounge.webp" width="1230" height="692" loading="lazy" decoding="async" alt="Illustrative bright shared lounge with seating and study space">
+                <button type="button" class="overview-photo-action" data-open-gallery aria-label="Explore the property-inspired photo gallery"><span aria-hidden="true">▶</span> Explore photos</button>
+                <figcaption>Concept imagery · room photography not yet supplied</figcaption>
+              </figure>
+            </div>
+            <div class="overview-highlights" aria-label="Useful student highlights">
+              <div class="overview-highlight"><span class="overview-icon icon-campus" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-6 10 6-10 6z"/><path d="M6 12.5V18c4 2.5 8 2.5 12 0v-5.5M22 9v8"/></svg></span><div><strong>Close to campus</strong><small>15 min walk¹</small></div></div>
+              <div class="overview-highlight"><span class="overview-icon icon-room" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20V8m18 12V8M3 13h18v5H3z"/><path d="M5 9h5a3 3 0 0 1 3 3v1"/></svg></span><div><strong>Furnished rooms</strong><small>Ensuite or studio</small></div></div>
+              <div class="overview-highlight"><span class="overview-icon icon-social" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></svg></span><div><strong>Social spaces</strong><small>Study, gym and lounge</small></div></div>
+              <div class="overview-highlight"><span class="overview-icon icon-bills" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a16 16 0 0 1 20 0M5 13a11 11 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg></span><div><strong>Bills included</strong><small>Wi-Fi, water and electricity</small></div></div>
+            </div>
+            <p class="overview-footnote">¹ iQ operator's published walking estimate. Room images and prices are illustrative.</p>
+          </section>
           <section class="nearby-landmarks" aria-labelledby="landmarks-title">
-            <div class="landmarks-heading"><h2 id="landmarks-title"><span aria-hidden="true">⌖</span> Nearby landmarks</h2><p>Helpful places around iQ Kingston</p></div>
+            <div class="landmarks-heading"><h2 id="landmarks-title"><span aria-hidden="true">⌖</span> Nearby landmarks</h2><p>Campus, essentials and places to unwind</p></div>
             <div class="landmarks-grid" role="list">
               <div class="landmark-card landmark-university" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 10 10-6 10 6-10 6zM6 13v5c4 3 8 3 12 0v-5"/></svg></span><strong>Kingston University</strong><small>15 min walk¹</small></div>
               <div class="landmark-card landmark-arts" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.5c2 0 2.3-1.7 1.3-3.2-.8-1.5.4-2.1 2-2.1h1.1A4.2 4.2 0 0 0 22 10c0-3.8-4.4-7-10-7Z"/><circle cx="8" cy="10" r="1"/><circle cx="12" cy="7" r="1"/></svg></span><strong>Kingston School of Art</strong><small>Arts campus · check route</small></div>
@@ -117,33 +142,10 @@
             <p class="landmarks-footnote">¹ Walking time: official iQ listing. ² Property rating: Amber listing snapshot, not an Accom rating. Other travel times must be confirmed.</p>
           </section>
 
-
-
-          <section id="overview" class="content-section overview-section overview-card" aria-labelledby="about-title">
-            <div class="overview-story">
-              <div class="overview-copy">
-                <p class="section-kicker">THE PROPERTY</p>
-                <h2 id="about-title">Student living in the heart of Kingston.</h2>
-                <p>A furnished ensuite or studio, moments from Kingston's shops and riverside. iQ Kingston brings together practical study spaces, shared amenities and access to university life.</p>
-                <p class="overview-takeaway">Compare room privacy, included bills and tenancy length before making an enquiry.</p>
-              </div>
-              <figure class="overview-photo">
-                <img src="assets/studio.webp" width="1038" height="692" loading="lazy" decoding="async" alt="Illustrative furnished studio interior with study desk and kitchenette">
-                <figcaption>Illustrative interior · not a photograph of this exact room</figcaption>
-              </figure>
-              <div class="overview-highlights" aria-label="What matters to students">
-                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">▤</span><div><strong>Furnished room choices</strong><small>Explore ensuite and studio layouts</small></div></div>
-                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">☷</span><div><strong>Room for study</strong><small>Desk and study-space options</small></div></div>
-                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">◉</span><div><strong>Wi-Fi included</strong><small>Check the included-services list</small></div></div>
-                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">♧</span><div><strong>Social spaces</strong><small>Shared facilities and gym access</small></div></div>
-              </div>
-            </div>
-          </section>
-
           <section id="rooms" class="content-section rooms-section">
             <div class="section-heading room-heading">
               <div>
-                <h2>Find the room that fits your life.</h2>
+                <h2>Find your room. Feel at home.</h2>
                 <p>Compare ensuite and studio rooms, then choose your preferred contract length.</p>
               </div>
             </div>
@@ -164,7 +166,7 @@
 
           <section id="included" class="content-section included-section">
             <div class="section-heading split-heading">
-              <h2>More included. Fewer surprises.</h2>
+              <h2>The essentials, included.</h2>
               <p>See what is covered, what costs extra and what you should verify before choosing a tenancy.</p>
             </div>
             <div class="inclusion-board">
@@ -193,7 +195,7 @@
           <section id="location" class="content-section location-section" aria-labelledby="location-title">
             <div class="section-heading section-heading-compact">
               <p class="section-kicker">AROUND KINGSTON</p>
-              <h2 id="location-title">Your campus, your routine.</h2>
+              <h2 id="location-title">Your Kingston, within reach.</h2>
               <p>Convenient access to teaching spaces, transport, groceries and the Thames—without making up routes or journey times.</p>
             </div>
             <div class="campus-layout">
@@ -215,7 +217,7 @@
 
           <section id="policies" class="content-section policies-section">
             <div class="section-heading split-heading">
-              <h2>The details worth knowing.</h2>
+              <h2>Know before you book.</h2>
               <p>Key terms at a glance. Open a question to see what is confirmed and what you should check with the operator.</p>
             </div>
             <div id="policy-list" class="accordion-list"></div>
@@ -223,7 +225,7 @@
 
           <section id="faqs" class="content-section faq-section">
             <div class="section-heading split-heading">
-              <h2>Good questions. Clear answers.</h2>
+              <h2>Still have questions?</h2>
               <p>Everything you may want to know before you enquire, with no guessed policies.</p>
             </div>
             <div id="faq-list" class="accordion-list"></div>
@@ -246,44 +248,48 @@
           </section>
         </div>
 
-        <aside id="enquiry" class="desktop-cta" aria-label="iQ Kingston overview and room enquiry">
+        <aside id="enquiry" class="desktop-cta" aria-label="Property highlights and enquiry options">
           <div class="cta-card glass-panel" data-cta-theme="midnight">
-            <div class="cta-property">
-              <span class="cta-kicker"><span></span> STUDENT LIVING · KINGSTON</span>
-              <div class="cta-property-title"><h2>iQ Kingston</h2><span class="verified-mark verified-mark-small" title="Property facts checked against official iQ listing"><svg class="verified-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3 1.5 3.2.5.5 3.2L22 12l-3.3 4.8-.5 3.2-3.2.5L12 22l-3-1.5-3.2-.5-.5-3.2L2 12l3.3-4.8.5-3.2 3.2-.5z"/><path d="m8 12 2.6 2.6L16.5 9"/></svg></span></div>
-              <p>15 Wood Street, Kingston upon Thames</p>
-            </div>
-            <div class="cta-first-visit" id="cta-first-visit">
-              <div class="cta-overview-metrics">
-                <div><small>From · demo</small><div class="cta-overview-value"><strong id="cta-from-price">£289</strong><span>/ week</span></div></div>
-                <div><small>Property rating²</small><div class="cta-overview-value"><span aria-hidden="true" class="star-symbol">★</span><strong>4.9</strong></div><span class="cta-review-count">11 reviews²</span></div>
+            <div class="cta-panel-top">
+              <div class="cta-property">
+                <p class="cta-kicker">STUDENT LIVING · KINGSTON</p>
+                <div class="cta-property-title"><h2>iQ Kingston</h2><span class="cta-verified" title="Location and selected facility details checked with operator"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 2.5 1.6 3 .3.7 2.9 2.4 1.8-.7 2.9.7 2.9-2.4 1.8-.7 2.9-3 .3L12 22l-2.5-1.6-3-.3-.7-2.9-2.4-1.8.7-2.9-.7-2.9 2.4-1.8.7-2.9 3-.3z"/><path d="m8 12 2.5 2.5 5.5-5.5"/></svg></span></div>
+                <p class="cta-address">15 Wood Street, Kingston upon Thames, KT1 1TY</p>
               </div>
-              <p class="cta-preselect-hint">Explore rooms first — nothing selected yet.</p>
+              <div class="cta-first-visit" id="cta-first-visit">
+                <div class="cta-overview-metrics">
+                  <div class="cta-rating"><span class="cta-big-star" aria-hidden="true">★</span><div><div class="cta-overview-value"><strong>4.9</strong></div><small>11 reviews²</small></div></div>
+                  <div class="cta-price-hero"><small>From · demo</small><div class="cta-overview-value"><strong id="cta-from-price">£289</strong><span>/ week</span></div></div>
+                </div>
+                <p class="cta-preselect-hint">Choose a room to see its tenancy total.</p>
+              </div>
+              <div class="cta-selection" id="cta-selected-details" hidden>
+                <p class="cta-label">Selected room</p>
+                <h3 id="cta-room-name">Bronze Ensuite</h3>
+                <div class="cta-price"><strong id="cta-weekly">£289</strong><span>/ week</span></div>
+                <div class="cta-tenancy" id="cta-tenancy">51 weeks · 12 Sep 2027</div>
+                <div class="cta-total"><span>Illustrative total</span><strong id="cta-total">£14,739</strong></div>
+              </div>
+              <div class="cta-buttons">
+                <a href="#rooms" class="primary-action cta-view-rooms">View room options <span aria-hidden="true">→</span></a>
+                <button type="button" class="cta-secondary-action" data-open-enquiry id="cta-enquire-button">Ask about this property</button>
+              </div>
             </div>
-
-
-            <div class="cta-selection" id="cta-selected-details" hidden>
-              <p class="cta-label">Selected room</p>
-              <h3 id="cta-room-name">Bronze Ensuite</h3>
-              <div class="cta-price"><strong id="cta-weekly">£289</strong><span>/ week</span></div>
-              <div class="cta-tenancy" id="cta-tenancy">51 weeks · 12 Sep 2027</div>
-              <div class="cta-total"><span>Illustrative contract total</span><strong id="cta-total">£14,739</strong></div>
+            <div class="cta-panel-bottom">
+              <div class="cta-quickfacts" aria-label="Why students explore iQ Kingston">
+                <h3>Why it works for students</h3>
+                <div class="cta-benefit"><span class="cta-benefit-icon cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-6 10 6-10 6z"/><path d="M6 12.5V18c4 2.5 8 2.5 12 0v-5.5M22 9v8"/></svg></span><span class="cta-benefit-copy"><strong>Near Kingston University</strong><span>15 min walk¹</span></span></div>
+                <div class="cta-benefit"><span class="cta-benefit-icon room-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20V8m18 12V8M3 13h18v5H3z"/><path d="M5 9h5a3 3 0 0 1 3 3v1"/></svg></span><span class="cta-benefit-copy"><strong>Furnished options</strong><span>Ensuite and studio rooms</span></span></div>
+                <div class="cta-benefit"><span class="cta-benefit-icon social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></svg></span><span class="cta-benefit-copy"><strong>Social spaces</strong><span>Gym, study and shared areas</span></span></div>
+                <div class="cta-benefit"><span class="cta-benefit-icon wifi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a16 16 0 0 1 20 0M5 13a11 11 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg></span><span class="cta-benefit-copy"><strong>Bills included</strong><span>Wi-Fi, electricity and water</span></span></div>
+              </div>
+              <div class="cta-area">
+                <div class="cta-area-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="cta-area-text"><span>YOUR NEIGHBOURHOOD</span><strong>Kingston upon Thames</strong><small>View the surrounding area, not a simulated route</small></div>
+                <a href="https://www.openstreetmap.org/search?query=15%20Wood%20Street%20Kingston%20upon%20Thames" target="_blank" rel="noopener noreferrer">View on map ↗</a>
+              </div>
             </div>
-            <a href="#rooms" class="primary-action cta-view-rooms">View room options <span aria-hidden="true">→</span></a>
-
-            <button type="button" class="cta-secondary-action" data-open-enquiry id="cta-enquire-button">Ask about this property</button>
-            <div class="cta-quickfacts" aria-label="Property highlights">
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">ϟ</span><span class="cta-benefit-copy"><strong>Bills included</strong><span>Wi-Fi, electricity & water</span></span></div>
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">⌂</span><span class="cta-benefit-copy"><strong>Near Kingston University</strong><span>15 min walk¹ to campus</span></span></div>
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">▤</span><span class="cta-benefit-copy"><strong>Ensuite & studio options</strong><span>Explore furnished rooms</span></span></div>
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">✓</span><span class="cta-benefit-copy"><strong>Property facts checked</strong><span>Verified against operator listing</span></span></div>
-            </div>
-            <div class="cta-trust-notes" aria-label="Enquiry reassurance">
-              <span><b aria-hidden="true">✓</b> No payment to send an enquiry</span>
-              <span><b aria-hidden="true">✓</b> Compare room and tenancy choices</span>
-              <span><b aria-hidden="true">✓</b> Accom enquiry support</span>
-            </div>
-            <p class="cta-footnote">Demo imagery and rates · no live enquiry, payment or booking.</p>
+            <p class="cta-footnote">Illustrative rates and media · no live enquiry or booking. ² Amber listing snapshot.</p>
           </div>
         </aside>
       </div>
