@@ -22,10 +22,10 @@ export const property = {
 };
 
 export const media = [
-  { src: 'assets/lounge.webp', category: 'Shared spaces', alt: 'Illustrative communal lounge with sofas, study counter and large windows' },
-  { src: 'assets/ensuite.webp', category: 'Ensuite', alt: 'Illustrative ensuite bedroom with bed, desk, wardrobe and private bathroom doorway' },
-  { src: 'assets/studio.webp', category: 'Studio', alt: 'Illustrative private studio with bed, desk and kitchenette' },
-  { src: 'assets/study.webp', category: 'Study spaces', alt: 'Illustrative shared study lounge with long table and acoustic booths' },
+  { src: 'assets/ensuite.webp', category: 'Ensuite bedroom', alt: 'Illustrative furnished ensuite bedroom with desk and window' },
+  { src: 'assets/lounge.webp', category: 'Shared spaces', alt: 'Illustrative communal lounge with seating and study areas' },
+  { src: 'assets/studio.webp', category: 'Studio', alt: 'Illustrative private studio with kitchenette' },
+  { src: 'assets/study.webp', category: 'Study spaces', alt: 'Illustrative shared study lounge with long table and booths' },
 ];
 
 /** @type {Room[]} */
