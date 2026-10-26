@@ -239,7 +239,7 @@ button { cursor: pointer; }
 .text-action { width: 100%; min-height: 44px; border: 0; background: transparent; color: white; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
 
 /* Gallery actions live below the imagery; save and room comparison share the right edge. */
-.gallery-actions { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.gallery-actions { display: flex; align-items: center; justify-content: flex-end; gap: 16px; min-height: 64px; }
 .gallery-concept-note { max-width: 50%; color: var(--ink-soft); font-size: 11px; font-weight: 500; }
 .gallery-actions-right { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }
 .gallery-action { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 44px; padding: 0 17px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,253,249,.8); color: var(--ink); font-size: 12px; font-weight: 700; text-decoration: none; backdrop-filter: blur(12px); }

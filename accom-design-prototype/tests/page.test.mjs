@@ -81,7 +81,7 @@ test('gallery action bar holds unique Save / Compare, hero nav comes first and c
   assert.equal((html.match(/id="open-compare"/g) || []).length, 1);
   assert.ok(html.includes('View all photos'));
   assert.ok(!html.includes('Illustrative media</strong>'));
-  assert.ok(html.includes('Concept imagery for design review'));
+  assert.ok(!html.includes('Concept imagery for design review'));
   assert.ok(script.includes('Select two rooms in the room list to compare them.'));
   assert.ok(html.includes('data-cta-colour="ocean"'));
   assert.ok(html.includes('data-cta-colour="ivory"'));
