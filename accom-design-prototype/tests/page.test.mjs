@@ -60,7 +60,8 @@ test('chosen concept has property actions above gallery and six pill tabs below'
   assert.equal((html.match(/id="save-property"/g)||[]).length, 1);
   assert.equal((html.match(/id="open-compare"/g)||[]).length, 1);
   assert.ok(html.includes('View all 4 photos'));
-  assert.ok(html.includes('concept-one.css'));
+  assert.ok(html.includes('site.css'));
+  assert.ok(!html.includes('href="concept-one.css"'));
 });
 test('first visit is unselected and location tiles have seven consistent entries', async () => {
   const [html, css, script] = await Promise.all([
@@ -122,7 +123,7 @@ test('approved design retains strict palette, visible glass tabs and functional 
     readFile(new URL('../public/data.js', import.meta.url), 'utf8'),
     readFile(new URL('../public/app.js', import.meta.url), 'utf8')
   ]);
-  assert.ok(html.includes('approved-glass.css'));
+  assert.ok(html.includes('site.css'));
   assert.match(css,/--red:\s*#ed2024/i);
   assert.match(css,/--yellow:\s*#ffb900/i);
   assert.ok(css.includes('grid-template-columns: minmax(0,3fr) minmax(305px,1fr)'));
