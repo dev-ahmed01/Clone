@@ -21,8 +21,8 @@
   .page-layout > .desktop-cta { top:12px; }
   .desktop-cta .cta-card {
     display:flex; flex-direction:column;
-    height:min(620px, calc(100dvh - 240px));
-    max-height:calc(100dvh - 240px);
+    height:min(650px, calc(100dvh - 145px));
+    max-height:calc(100dvh - 145px);
     min-height:0; overflow:clip;
   }
   .desktop-cta .cta-panel-top { flex:0 0 auto; min-height:0; padding:12px 16px 10px; }
