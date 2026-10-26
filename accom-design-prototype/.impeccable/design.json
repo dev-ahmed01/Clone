@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T13:00:00+05:30",
+  "title": "Design System: Accom by Emlen — Property Detail",
+  "extensions": {
+    "colorMeta": {
+      "brand-red": {
+        "role": "primary",
+        "displayName": "Accom Red",
+        "canonical": "#ED2024"
+      },
+      "action-red": {
+        "role": "primary",
+        "displayName": "Accessible Action Red",
+        "canonical": "#C4141D"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Midnight Ink",
+        "canonical": "#111B2D"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#F6F1E8"
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Cobalt Focus",
+        "canonical": "#1F47C7"
+      },
+      "mint": {
+        "role": "tertiary",
+        "displayName": "Mint Reassurance",
+        "canonical": "#B9E4D0"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Editorial Display",
+        "purpose": "Property title and large section headings only."
+      },
+      "body": {
+        "displayName": "Readable Body",
+        "purpose": "Comparisons, forms, facts and explanatory text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "floating",
+        "value": "0 18px 48px rgba(17,27,45,.14)",
+        "purpose": "Sticky surface and glass elevation."
+      },
+      {
+        "name": "dialog",
+        "value": "0 28px 90px rgba(17,27,45,.24)",
+        "purpose": "Modal hierarchy."
+      }
+    ],
+    "motion": [
+      {
+        "name": "action",
+        "value": "150ms ease-out",
+        "purpose": "Colour and press feedback without shifting layout."
+      },
+      {
+        "name": "gallery",
+        "value": "500ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Subtle image hover zoom; reduced under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop-collapse",
+        "value": "1024px"
+      },
+      {
+        "name": "mobile",
+        "value": "768px"
+      },
+      {
+        "name": "small-mobile",
+        "value": "420px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Enquiry",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary room-specific enquiry CTA.",
+      "html": "<button class=\"ds-primary\">Enquire about this room</button>",
+      "css": ".ds-primary{background:#C4141D;color:#FFFDF9;border:0;border-radius:999px;min-height:50px;padding:0 20px;font:700 12px Montserrat,sans-serif;cursor:pointer}.ds-primary:hover{background:#B70F19}.ds-primary:focus-visible{outline:3px solid #1F47C7;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "description": "Supporting compare action.",
+      "html": "<button class=\"ds-secondary\">Compare rooms</button>",
+      "css": ".ds-secondary{background:transparent;color:#111B2D;border:1px solid #111B2D;border-radius:999px;min-height:46px;padding:0 18px;font:700 13px Montserrat,sans-serif}.ds-secondary:hover{background:#111B2D;color:white}.ds-secondary:focus-visible{outline:3px solid #1F47C7;outline-offset:3px}"
+    },
+    {
+      "name": "Glass Section Navigation",
+      "kind": "nav",
+      "description": "Sticky in-page left-column menu.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-active\" href=\"#overview\">Overview</a><a href=\"#rooms\">Rooms</a></nav>",
+      "css": ".ds-nav{display:flex;gap:6px;padding:7px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(17,27,45,.76);backdrop-filter:blur(18px) saturate(135%)}.ds-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;color:#E6EAF0;border-radius:999px;font:600 12px Montserrat,sans-serif;text-decoration:none}.ds-nav a.ds-active{background:#FFFDF9;color:#111B2D}.ds-nav a:focus-visible{outline:3px solid #1F47C7;outline-offset:3px}"
+    },
+    {
+      "name": "Room Category Chip",
+      "kind": "chip",
+      "description": "Frosted pill with accessible active state.",
+      "html": "<div class=\"ds-pills\"><button class=\"ds-active\">Ensuite</button><button>Studio</button></div>",
+      "css": ".ds-pills{display:flex;gap:6px;padding:5px;border:1px solid rgba(53,64,82,.15);border-radius:999px;background:rgba(255,253,249,.76);backdrop-filter:blur(14px)}.ds-pills button{min-height:44px;padding:0 16px;border:0;border-radius:999px;background:transparent;color:#111B2D;font:700 12px Montserrat,sans-serif}.ds-pills button.ds-active{background:#111B2D;color:white}.ds-pills button:focus-visible{outline:3px solid #1F47C7;outline-offset:3px}"
+    },
+    {
+      "name": "Room Selection",
+      "kind": "card",
+      "description": "Open, factual accommodation row.",
+      "html": "<article class=\"ds-room\"><h2>Silver Ensuite</h2><p>Private bathroom · Shared kitchen</p><strong>£315 / week</strong></article>",
+      "css": ".ds-room{background:#FFFDF9;border:1px solid #D7CDBF;padding:24px;color:#111B2D}.ds-room h2{font:700 24px 'Bricolage Grotesque',sans-serif;margin:0 0 10px}.ds-room p{font:400 13px Montserrat,sans-serif;color:#354052}.ds-room strong{display:block;margin-top:14px;font:700 20px 'Bricolage Grotesque',sans-serif}"
+    },
+    {
+      "name": "Enquiry Field",
+      "kind": "input",
+      "description": "Accessible labelled enquiry input.",
+      "html": "<label class=\"ds-field\">Email address<input placeholder=\"name@example.com\" type=\"email\"></label>",
+      "css": ".ds-field{display:block;font:700 12px Montserrat,sans-serif;color:#111B2D}.ds-field input{display:block;width:100%;min-height:48px;margin-top:7px;padding:12px;border:1px solid #D7CDBF;background:white;font:400 16px Montserrat,sans-serif}.ds-field input:focus{outline:2px solid #1F47C7;outline-offset:1px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Student Move-In Field Guide",
+    "overview": "Immersive photography creates a sense of place, while crisp room facts, open editorial spacing and selective glass help students make clear, confident decisions. Assistance-led, never a hotel checkout.",
+    "keyCharacteristics": [
+      "Full-width accessible gallery",
+      "75:25 desktop decision/CTA layout",
+      "Warm-paper editorial hierarchy",
+      "Bricolage Grotesque and Montserrat",
+      "Selective glass and frosted pills",
+      "Honest room and enquiry states"
+    ],
+    "rules": [
+      {
+        "name": "The One Red Action Rule",
+        "body": "Reserve #ED2024 for brand; use #C4141D for white-labelled primary actions.",
+        "section": "colors"
+      },
+      {
+        "name": "The Decision-Type Rule",
+        "body": "Keep room, price and action in context alongside large headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Selective Glass Rule",
+        "body": "Do not wrap all content in glass cards.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do make the full-width gallery open a keyboard-accessible lightbox.",
+      "Do keep the right CTA visible while scrolling desktop content.",
+      "Do keep the 75:25 structure beneath the gallery, then adapt it on mobile.",
+      "Do make prices, privacy, tenancy and enquiry outcomes explicit."
+    ],
+    "donts": [
+      "Don't reproduce Amber's visual composition.",
+      "Don't invent reviews, offers, availability or photography.",
+      "Don't imply a simulated enquiry is a booking.",
+      "Don't let sticky glass surfaces obscure focus or text."
+    ]
+  }
+}
