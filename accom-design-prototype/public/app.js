@@ -331,29 +331,3 @@ setupSavedState();
 setupDialogs();
 setupEnquiry();
 setupSectionNavigation();
-
-function setupCtaColourExperiments() {
-  const card = $('.cta-card');
-  const swatches = $$('[data-cta-colour]');
-  swatches.forEach((button) => button.addEventListener('click', () => {
-    const colour = button.dataset.ctaColour;
-    card.dataset.ctaTheme = colour;
-    swatches.forEach((swatch) => swatch.setAttribute('aria-pressed', String(swatch === button)));
-    announce(`Information panel colour changed to ${button.title}.`);
-  }));
-}
-setupCtaColourExperiments();
-
-function setupCompactSectionNavigation() {
-  const nav = $('.section-nav');
-  const gallery = $('.gallery-shell');
-  const update = () => {
-    const galleryHasPassed = gallery.getBoundingClientRect().bottom < 90;
-    nav.classList.toggle('is-floating', window.innerWidth > 1024 && galleryHasPassed);
-  };
-  window.addEventListener('scroll', update, { passive: true });
-  window.addEventListener('resize', update, { passive: true });
-  update();
-}
-
-setupCompactSectionNavigation();

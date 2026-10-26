@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="concept-one.css">
     <script type="module" src="app.js"></script>
   </head>
   <body>
@@ -52,14 +53,19 @@
             </div>
           </div>
         </section>
-        <nav class="section-nav glass-panel" aria-label="On this property page">
-          <a href="#overview" class="active" aria-current="location">Overview</a>
-          <a href="#rooms">Rooms</a>
-          <a href="#included">Included</a>
-          <a href="#location">Location</a>
-          <a href="#policies">Policies</a>
-          <a href="#faqs">FAQs</a>
-        </nav>
+        <div class="gallery-actions" aria-label="Property actions">
+          <div class="gallery-actions-right">
+            <button class="gallery-action save-control" id="save-property" type="button" aria-label="Save iQ Kingston" aria-pressed="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
+              <span>Save</span>
+            </button>
+            <button id="open-compare" class="gallery-action compare-button" type="button" aria-describedby="compare-hint">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/></svg>
+              Compare <span id="compare-count">0</span>/2
+            </button>
+          </div>
+          <span class="sr-only" id="compare-hint">Select two rooms below to compare their features and contracts.</span>
+        </div>
         </div>
         <div class="content-column">
 
@@ -80,26 +86,25 @@
               </button>
             </div>
             <div class="gallery-meta glass-panel">
-              <button id="view-gallery" type="button">View all photos <span aria-hidden="true">4</span></button>
+              <button id="view-gallery" type="button">View all 4 photos</button>
             </div>
+
+
           </div>
-          <div class="gallery-actions" aria-label="Property actions">
-            <div class="gallery-actions-right">
-              <button class="gallery-action save-control" id="save-property" type="button" aria-label="Save iQ Kingston" aria-pressed="false">
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
-                <span>Save</span>
-              </button>
-              <button id="open-compare" class="gallery-action compare-button" type="button" aria-describedby="compare-hint">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/></svg>
-                Compare <span id="compare-count">0</span>/2
-              </button>
-            </div>
-            <span class="sr-only" id="compare-hint">Select two rooms below to compare their features and contracts.</span>
-          </div>
+          <nav class="section-nav glass-panel" aria-label="On this property page">
+            <a href="#overview" class="active" aria-current="location">Overview</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#included">Included</a>
+            <a href="#location">Location</a>
+            <a href="#policies">Policies</a>
+            <a href="#faqs">FAQs</a>
+          </nav>
+
+
 
 
           <section class="nearby-landmarks" aria-labelledby="landmarks-title">
-            <div class="landmarks-heading"><h2 id="landmarks-title"><span aria-hidden="true">⌖</span> Nearby Landmarks</h2><p>Campus, shops and places worth knowing</p></div>
+            <div class="landmarks-heading"><h2 id="landmarks-title"><span aria-hidden="true">⌖</span> Nearby landmarks</h2><p>Helpful places around iQ Kingston</p></div>
             <div class="landmarks-grid" role="list">
               <div class="landmark-card landmark-university" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 10 10-6 10 6-10 6zM6 13v5c4 3 8 3 12 0v-5"/></svg></span><strong>Kingston University</strong><small>15 min walk¹</small></div>
               <div class="landmark-card landmark-arts" role="listitem"><span class="landmark-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18h1.5c2 0 2.3-1.7 1.3-3.2-.8-1.5.4-2.1 2-2.1h1.1A4.2 4.2 0 0 0 22 10c0-3.8-4.4-7-10-7Z"/><circle cx="8" cy="10" r="1"/><circle cx="12" cy="7" r="1"/></svg></span><strong>Kingston School of Art</strong><small>Arts campus · check route</small></div>
@@ -115,28 +120,31 @@
 
 
           <section id="overview" class="content-section overview-section overview-card" aria-labelledby="about-title">
-            <div class="overview-eyebrow"><span></span> OVERVIEW</div>
-            <h2 id="about-title">About the Property</h2>
-            <p class="overview-description">iQ Kingston puts students in central Kingston upon Thames, close to university life, local shops and the riverside. Choose between ensuite and studio accommodation, with furnished rooms, shared spaces and important bills included. Compare the room options below to find what suits your routine and budget.</p>
-            <div class="overview-highlights" aria-label="Property highlights">
-              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">▤</span><div><strong>Furnished rooms</strong><small>Ensuite and studio choices</small></div></div>
-              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">✦</span><div><strong>Secure living</strong><small>Building security information</small></div></div>
-              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">◉</span><div><strong>Wi-Fi included</strong><small>Stay connected while studying</small></div></div>
-              <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">♧</span><div><strong>Social spaces</strong><small>Gym and shared facilities</small></div></div>
+            <div class="overview-story">
+              <div class="overview-copy">
+                <p class="section-kicker">THE PROPERTY</p>
+                <h2 id="about-title">Student living in the heart of Kingston.</h2>
+                <p>A furnished ensuite or studio, moments from Kingston's shops and riverside. iQ Kingston brings together practical study spaces, shared amenities and access to university life.</p>
+                <p class="overview-takeaway">Compare room privacy, included bills and tenancy length before making an enquiry.</p>
+              </div>
+              <figure class="overview-photo">
+                <img src="assets/studio.webp" width="1038" height="692" loading="lazy" decoding="async" alt="Illustrative furnished studio interior with study desk and kitchenette">
+                <figcaption>Illustrative interior · not a photograph of this exact room</figcaption>
+              </figure>
+              <div class="overview-highlights" aria-label="What matters to students">
+                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">▤</span><div><strong>Furnished room choices</strong><small>Explore ensuite and studio layouts</small></div></div>
+                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">☷</span><div><strong>Room for study</strong><small>Desk and study-space options</small></div></div>
+                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">◉</span><div><strong>Wi-Fi included</strong><small>Check the included-services list</small></div></div>
+                <div class="overview-highlight"><span class="overview-icon" aria-hidden="true">♧</span><div><strong>Social spaces</strong><small>Shared facilities and gym access</small></div></div>
+              </div>
             </div>
-            <div class="overview-context">
-              <span>15 min walk to Kingston University¹</span>
-              <span>9 min walk to Kingston College¹</span>
-              <span>Bills information from operator</span>
-            </div>
-            <p class="source-line">¹ Published iQ accommodation information · Confirm availability, policies and specific room facilities before booking.</p>
           </section>
 
           <section id="rooms" class="content-section rooms-section">
             <div class="section-heading room-heading">
               <div>
-                <h2>Choose the room, then the contract.</h2>
-                <p>Compare privacy and total commitment without opening six tabs.</p>
+                <h2>Find the room that fits your life.</h2>
+                <p>Compare ensuite and studio rooms, then choose your preferred contract length.</p>
               </div>
             </div>
             <div class="room-tools" aria-label="Filter rooms">
@@ -156,8 +164,8 @@
 
           <section id="included" class="content-section included-section">
             <div class="section-heading split-heading">
-              <h2>What your weekly rent covers.</h2>
-              <p>Provider-confirmed inclusions are separated from paid extras and open questions.</p>
+              <h2>More included. Fewer surprises.</h2>
+              <p>See what is covered, what costs extra and what you should verify before choosing a tenancy.</p>
             </div>
             <div class="inclusion-board">
               <div class="inclusion-primary">
@@ -182,54 +190,41 @@
             </div>
           </section>
 
-          <section id="location" class="content-section location-section">
-            <div class="section-heading split-heading">
-              <h2>Start with your campus, not a pin.</h2>
-              <p>Walking times below are published by the property operator. Always check the route against your teaching building.</p>
+          <section id="location" class="content-section location-section" aria-labelledby="location-title">
+            <div class="section-heading section-heading-compact">
+              <p class="section-kicker">AROUND KINGSTON</p>
+              <h2 id="location-title">Your campus, your routine.</h2>
+              <p>Convenient access to teaching spaces, transport, groceries and the Thames—without making up routes or journey times.</p>
             </div>
-            <div class="commute-layout">
-              <div class="map-card" aria-label="Schematic map of verified walks from iQ Kingston">
-                <svg viewBox="0 0 720 430" role="img" aria-labelledby="map-title map-desc">
-                  <title id="map-title">Walking routes from iQ Kingston</title>
-                  <desc id="map-desc">A schematic route shows a 9 minute walk to Kingston College and a 15 minute walk to Kingston University.</desc>
-                  <path class="river" d="M-20 275 C115 210 180 350 320 280 S545 160 760 245"/>
-                  <path class="street" d="M65 40 L235 390 M270 15 L305 390 M460 30 L425 395 M590 20 L530 405 M30 120 L690 170 M25 350 L675 330"/>
-                  <path class="route route-a" d="M345 235 C315 188 280 166 230 152"/>
-                  <path class="route route-b" d="M355 245 C420 265 470 295 525 335"/>
-                  <g class="marker home"><circle cx="350" cy="240" r="17"/><circle cx="350" cy="240" r="5"/></g>
-                  <g class="marker"><circle cx="225" cy="150" r="13"/><text x="195" y="122">College</text></g>
-                  <g class="marker"><circle cx="530" cy="338" r="13"/><text x="485" y="380">University</text></g>
-                  <text class="route-label" x="262" y="185">9 min walk</text>
-                  <text class="route-label" x="420" y="292">15 min walk</text>
-                </svg>
-                <span class="map-caption">Route diagram · not turn-by-turn navigation</span>
+            <div class="campus-layout">
+              <div class="campus-feature">
+                <span class="campus-kicker">CAMPUS CONNECTIONS</span>
+                <div class="campus-feature-row"><span class="campus-number">15 <small>min walk¹</small></span><div><h3>Kingston University</h3><p>Operator-published walking estimate. Check your campus building before travelling.</p></div></div>
+                <div class="campus-feature-row"><span class="campus-number">9 <small>min walk¹</small></span><div><h3>Kingston College</h3><p>Operator-published walking estimate. Your exact route may differ.</p></div></div>
+                <a class="campus-map-link" href="https://www.openstreetmap.org/search?query=15%20Wood%20Street%20Kingston%20upon%20Thames" target="_blank" rel="noopener noreferrer">Explore the surrounding area <span aria-hidden="true">↗</span></a>
               </div>
-              <div class="destinations">
-                <article>
-                  <h3>Kingston University</h3><strong>15 min walk</strong><p>Operator-published estimate.</p>
-                </article>
-                <article>
-                  <h3>Kingston College</h3><strong>9 min walk</strong><p>Operator-published estimate.</p>
-                </article>
-                <article class="location-note">
-                  <h3>Travelling further?</h3><p>iQ states direct trains reach Central London in under 30 minutes. Confirm the current service before travel.</p>
-                </article>
+              <div class="campus-neighbourhood">
+                <span class="campus-kicker">NEIGHBOURHOOD ESSENTIALS</span>
+                <div><strong>Kingston Station</strong><span>Train links beyond Kingston</span></div>
+                <div><strong>Town centre</strong><span>Shopping, cafés and services</span></div>
+                <div><strong>River Thames</strong><span>Riverside paths and places to unwind</span></div>
+                <p>¹ Published iQ walking estimates, not live turn-by-turn navigation. Other travel times require verification.</p>
               </div>
             </div>
           </section>
 
           <section id="policies" class="content-section policies-section">
             <div class="section-heading split-heading">
-              <h2>Know what can change before you commit.</h2>
-              <p>These summaries identify what is known and what requires the current full policy.</p>
+              <h2>The details worth knowing.</h2>
+              <p>Key terms at a glance. Open a question to see what is confirmed and what you should check with the operator.</p>
             </div>
             <div id="policy-list" class="accordion-list"></div>
           </section>
 
           <section id="faqs" class="content-section faq-section">
             <div class="section-heading split-heading">
-              <h2>Questions students ask before enquiring.</h2>
-              <p>Short answers first. Unknown terms stay unknown until the operator confirms them.</p>
+              <h2>Good questions. Clear answers.</h2>
+              <p>Everything you may want to know before you enquire, with no guessed policies.</p>
             </div>
             <div id="faq-list" class="accordion-list"></div>
           </section>
@@ -265,12 +260,8 @@
               </div>
               <p class="cta-preselect-hint">Explore rooms first — nothing selected yet.</p>
             </div>
-            <div class="cta-quickfacts" aria-label="Property highlights">
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">ϟ</span><span class="cta-benefit-copy"><strong>Bills included</strong><span>Wi-Fi, electricity & water</span></span></div>
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">⌂</span><span class="cta-benefit-copy"><strong>Near Kingston University</strong><span>15 min walk¹ to campus</span></span></div>
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">▤</span><span class="cta-benefit-copy"><strong>Ensuite & studio options</strong><span>Explore furnished rooms</span></span></div>
-              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">✓</span><span class="cta-benefit-copy"><strong>Property facts checked</strong><span>Verified against operator listing</span></span></div>
-            </div>
+
+
             <div class="cta-selection" id="cta-selected-details" hidden>
               <p class="cta-label">Selected room</p>
               <h3 id="cta-room-name">Bronze Ensuite</h3>
@@ -279,21 +270,20 @@
               <div class="cta-total"><span>Illustrative contract total</span><strong id="cta-total">£14,739</strong></div>
             </div>
             <a href="#rooms" class="primary-action cta-view-rooms">View room options <span aria-hidden="true">→</span></a>
+
             <button type="button" class="cta-secondary-action" data-open-enquiry id="cta-enquire-button">Ask about this property</button>
+            <div class="cta-quickfacts" aria-label="Property highlights">
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">ϟ</span><span class="cta-benefit-copy"><strong>Bills included</strong><span>Wi-Fi, electricity & water</span></span></div>
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">⌂</span><span class="cta-benefit-copy"><strong>Near Kingston University</strong><span>15 min walk¹ to campus</span></span></div>
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">▤</span><span class="cta-benefit-copy"><strong>Ensuite & studio options</strong><span>Explore furnished rooms</span></span></div>
+              <div class="cta-benefit"><span class="cta-benefit-icon" aria-hidden="true">✓</span><span class="cta-benefit-copy"><strong>Property facts checked</strong><span>Verified against operator listing</span></span></div>
+            </div>
             <div class="cta-trust-notes" aria-label="Enquiry reassurance">
               <span><b aria-hidden="true">✓</b> No payment to send an enquiry</span>
               <span><b aria-hidden="true">✓</b> Compare room and tenancy choices</span>
               <span><b aria-hidden="true">✓</b> Accom enquiry support</span>
             </div>
             <p class="cta-footnote">Demo imagery and rates · no live enquiry, payment or booking.</p>
-            <div class="cta-theme-chooser" role="group" aria-label="Try information panel colours">
-              <span>Explore colours</span>
-              <div class="cta-theme-options">
-                <button type="button" class="cta-theme-swatch" data-cta-colour="midnight" aria-label="Midnight blue panel" aria-pressed="true" title="Midnight blue"><span></span></button>
-                <button type="button" class="cta-theme-swatch" data-cta-colour="ocean" aria-label="Deep teal panel" aria-pressed="false" title="Deep teal"><span></span></button>
-                <button type="button" class="cta-theme-swatch" data-cta-colour="ivory" aria-label="Warm ivory panel" aria-pressed="false" title="Warm ivory"><span></span></button>
-              </div>
-            </div>
           </div>
         </aside>
       </div>

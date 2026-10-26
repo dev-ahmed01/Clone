@@ -48,43 +48,20 @@ test('client design contract and reachable mobile help are represented', async (
 });
 
 
-test('reference design: headline and right-aligned pills sit above gallery and sticky rail', async () => {
-  const [html, styles] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
-    readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
-  ]);
-  const top = html.indexOf('class="hero-topline"');
-  const intro = html.indexOf('class="property-intro"', top);
-  const nav = html.indexOf('class="section-nav glass-panel"', top);
-  const content = html.indexOf('class="content-column"', nav);
-  const gallery = html.indexOf('class="gallery-shell"', content);
-  const aside = html.indexOf('class="desktop-cta"', gallery);
-  assert.ok(top < intro && intro < nav && nav < content && content < gallery && gallery < aside);
-  assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky/s);
-  assert.match(styles, /\.gallery-main\s*\{[^}]*grid-column:\s*1/s);
-  assert.match(html, /id="cta-enquire-button">Ask about this property<\/button>/);
+test('chosen concept has property actions above gallery and six pill tabs below', async () => {
+  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  const hero = html.indexOf('class="hero-topline"');
+  const title = html.indexOf('id="property-title"', hero);
+  const actions = html.indexOf('class="gallery-actions"', hero);
+  const gallery = html.indexOf('id="top" class="gallery-shell"', actions);
+  const tabs = html.indexOf('class="section-nav glass-panel"', gallery);
+  const landmarks = html.indexOf('class="nearby-landmarks"', tabs);
+  assert.ok(hero < title && title < actions && actions < gallery && gallery < tabs && tabs < landmarks);
+  assert.equal((html.match(/id="save-property"/g)||[]).length, 1);
+  assert.equal((html.match(/id="open-compare"/g)||[]).length, 1);
+  assert.ok(html.includes('View all 4 photos'));
+  assert.ok(html.includes('concept-one.css'));
 });
-
-test('gallery action bar holds unique Save / Compare, hero nav comes first and concept disclosure leaves photo', async () => {
-  const [html, script] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
-    readFile(new URL('../public/app.js', import.meta.url), 'utf8')
-  ]);
-  const nav = html.indexOf('class="section-nav glass-panel"');
-  const gallery = html.indexOf('id="top" class="gallery-shell"');
-  const toolbar = html.indexOf('class="gallery-actions"');
-  const intro = html.indexOf('class="property-intro"');
-  assert.ok(intro < nav && nav < gallery && gallery < toolbar);
-  assert.equal((html.match(/id="save-property"/g) || []).length, 1);
-  assert.equal((html.match(/id="open-compare"/g) || []).length, 1);
-  assert.ok(html.includes('View all photos'));
-  assert.ok(!html.includes('Illustrative media</strong>'));
-  assert.ok(!html.includes('Concept imagery for design review'));
-  assert.ok(script.includes('Select two rooms in the room list to compare them.'));
-  assert.ok(html.includes('data-cta-colour="ocean"'));
-  assert.ok(html.includes('data-cta-colour="ivory"'));
-});
-
 test('first visit is unselected and location tiles have seven consistent entries', async () => {
   const [html, css, script] = await Promise.all([
     readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
@@ -93,9 +70,12 @@ test('first visit is unselected and location tiles have seven consistent entries
   ]);
   assert.ok(!html.includes('class="breadcrumbs"'));
   assert.ok(html.includes('id="landmarks-title"'));
-  assert.ok(html.includes('Nearby Landmarks'));
+  assert.ok(html.includes('Nearby landmarks'));
   assert.equal((html.match(/class="landmark-card /g) || []).length, 7);
-  assert.ok(css.includes('flex: 0 0 calc((100% - 30px)/4)'));
+  const selectedCSS = await readFile(new URL('../public/concept-one.css', import.meta.url), 'utf8');
+  assert.ok(selectedCSS.includes('flex: 0 0 calc((100% - 27px)/4)'));
+  assert.ok(selectedCSS.includes('max-height: none'));
+  assert.ok(selectedCSS.includes('overflow: clip')); // Clipping a glow without creating a scrollable box
   assert.ok(html.includes('class="verified-mark"'));
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('id="cta-selected-details" hidden'));
@@ -105,24 +85,31 @@ test('first visit is unselected and location tiles have seven consistent entries
   assert.ok(!html.includes('Student accommodation · Kingston'));
 });
 
-test('updated hero keeps accessible Save and Compare and actual product overview', async () => {
-  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
-  assert.ok(html.includes('class="hero-topline"'));
-  assert.ok(html.includes('class="overview-highlights"'));
-  assert.equal((html.match(/class="overview-highlight"/g)||[]).length,4);
-  assert.equal((html.match(/class="cta-benefit"/g)||[]).length,4);
-  assert.ok(html.includes('id="cta-first-visit"'));
-  assert.ok(html.includes('id="cta-selected-details" hidden'));
-  assert.equal((html.match(/id="save-property"/g)||[]).length,1);
-  assert.equal((html.match(/id="open-compare"/g)||[]).length,1);
-});
-
-test('reference hero has seven desktop one-row landmarks and persistent scroll navigation', async () => {
-  const [css, script] = await Promise.all([
-    readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
+test('student-first sections use a coherent design and no simulated map', async () => {
+  const [html, css, app] = await Promise.all([
+    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/concept-one.css', import.meta.url), 'utf8'),
     readFile(new URL('../public/app.js', import.meta.url), 'utf8')
   ]);
-  assert.match(css, /grid-template-columns: repeat\(7,minmax\(0,1fr\)\)/);
-  assert.match(css, /\.cta-card \.cta-benefit-copy \{[^}]*text-align: left/s);
-  assert.match(script, /function setupCompactSectionNavigation/);
+  assert.equal((html.match(/class="landmark-card /g)||[]).length, 7);
+  assert.equal((html.match(/class="overview-highlight"/g)||[]).length, 4);
+  assert.ok(html.includes('class="overview-photo"'));
+  assert.ok(html.includes('class="campus-layout"'));
+  assert.ok(!html.includes('class="map-card"'));
+  assert.ok(!html.includes('328 reviews'));
+  assert.ok(!html.includes('47 photos'));
+  assert.ok(!html.includes('10,000+ students'));
+  assert.ok(css.includes('.section-nav.glass-panel'));
+  assert.ok(css.includes('.campus-layout'));
+  assert.ok(app.includes('selectedRoomId: null'));
+  assert.ok(!app.includes('setupCompactSectionNavigation'));
+});
+
+test('source-like facts and demo disclaimers remain visible', async () => {
+  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  assert.ok(html.includes('11 reviews²'));
+  assert.ok(html.includes('15 min walk'));
+  assert.ok(html.includes('Demo rate'));
+  assert.ok(html.includes('Illustrative interior'));
+  assert.ok(html.includes('No room selected') || html.includes('nothing selected yet'));
 });

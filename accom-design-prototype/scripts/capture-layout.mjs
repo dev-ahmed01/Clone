@@ -25,6 +25,8 @@ try {
     const nav = await page.locator('.section-nav').boundingBox();
     const toolbar = await page.locator('.gallery-actions').boundingBox();
     const intro = await page.locator('.property-intro').boundingBox();
+    const identity = await page.locator('.property-identity').boundingBox();
+    const stats = await page.locator('.property-headline-stats').boundingBox();
     assert.ok(intro && intro.y < g.y, `${label}: property title must precede gallery`);
     const landmarkElements = page.locator('.landmark-card');
     assert.equal(await landmarkElements.count(), 7, `${label}: seven nearby landmarks expected`);
@@ -44,9 +46,8 @@ try {
     if (width > 1024) {
       assert.ok(g && rail, `${label}: gallery and CTA must both render`);
       assert.ok(rail.x >= g.x + g.width - 2, `${label}: CTA must be beside, not overlapping/below gallery`);
-      assert.ok(nav && g && nav.y < g.y, `${label}: section navigation should be above gallery`);
-      assert.ok(nav.x + nav.width > g.x + g.width * .85, `${label}: navigation should be aligned to the right`);
-      assert.ok(toolbar && toolbar.y >= g.y + g.height - 1, `${label}: Save and Compare bar must be below images`);
+      assert.ok(nav && g && nav.y >= g.y + g.height - 1, `${label}: section menu must follow gallery`);
+      assert.ok(toolbar && toolbar.y < g.y, `${label}: Save and Compare must be beside property heading`);
       assert.ok(Math.abs(g.y - rail.y) <= 14, `${label}: sticky info card should start alongside the gallery: ${g.y}, ${rail.y}`);
       const begin = rail.y;
       await page.screenshot({ path: new URL(`./reference-${label}-hero.png`, output).pathname });
@@ -56,18 +57,13 @@ try {
       assert.ok(after && after.y >= -2 && after.y <= 82, `${label}: CTA failed to stick below floating menu, y=${after?.y}`);
       if (label === 'desktop') {
         const landmarks = await Promise.all((await page.locator('.landmark-card').all()).map(el => el.boundingBox()));
-        assert.ok(Math.max(...landmarks.map(x => x.y)) - Math.min(...landmarks.map(x => x.y)) < 3, 'desktop landmarks should sit on one row');
-        assert.equal(await page.locator('.section-nav').evaluate(el => el.classList.contains('is-floating')), true, 'section navigation should remain available when scrolling');
+        assert.ok(landmarks[0].y === landmarks[3].y && landmarks[4].y > landmarks[0].y, 'desktop landmarks should form a 4+3 layout');
+        const stickyNav = await page.locator('.section-nav').boundingBox();
+        assert.ok(stickyNav && stickyNav.y >= -1 && stickyNav.y <= 25, 'section navigation should stick to top while scrolling');
         await page.screenshot({ path: new URL('./client-desktop-scrolled-sticky.png', output).pathname });
         await page.evaluate(() => window.scrollTo({ top: 660, behavior: 'instant' }));
         await page.waitForTimeout(100);
         await page.screenshot({ path: new URL('./client-intro-and-landmarks.png', output).pathname });
-        for (const colour of ['midnight', 'ocean', 'ivory']) {
-          await page.evaluate(() => scrollTo(0,0));
-          await page.locator(`[data-cta-colour="${colour}"]`).click();
-          assert.equal(await page.locator('.cta-card').getAttribute('data-cta-theme'), colour);
-          await page.screenshot({ path: new URL(`./client-cta-${colour}.png`, output).pathname });
-        }
         await page.evaluate(() => scrollTo(0, 0));
         await page.locator('.gallery-main').click();
         await page.locator('#gallery-dialog').waitFor({state: 'visible'});
@@ -94,6 +90,7 @@ try {
       assert.equal(rail, null, `${label}: desktop CTA should be hidden`);
       assert.ok(mobileRail, `${label}: bottom CTA missing`);
       assert.ok(dimensions.title < height, `${label}: property name should appear in first viewport`);
+      assert.ok(identity && stats && stats.y - (identity.y+identity.height) < 42, `${label}: gap beneath heading is too large: ${stats.y-(identity.y+identity.height)}`);
       results.push({label, propertyTitleTop:dimensions.title, mobileCtaTop:mobileRail.y});
     }
     assert.ok(dimensions.bodyScroll <= dimensions.viewport + 1, `${label}: horizontal overflow ${dimensions.bodyScroll} > ${dimensions.viewport}`);
