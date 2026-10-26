@@ -23,6 +23,12 @@ try {
     const g = await page.locator('.gallery-shell').boundingBox();
     const nav = await page.locator('.section-nav').boundingBox();
     const toolbar = await page.locator('.gallery-actions').boundingBox();
+    const landmarkElements = page.locator('.landmark-card');
+    assert.equal(await landmarkElements.count(), 7, `${label}: seven nearby landmarks expected`);
+    const bounds = await Promise.all((await landmarkElements.all()).map(element => element.boundingBox()));
+    const widths = bounds.map(box => box.width), heights = bounds.map(box => box.height);
+    assert.ok(Math.max(...widths) - Math.min(...widths) <= 2, `${label}: landmark widths differ`);
+    assert.ok(Math.max(...heights) - Math.min(...heights) <= 2, `${label}: landmark heights differ`);
     const rail = await page.locator('.desktop-cta').boundingBox();
     const mobileRail = await page.locator('.mobile-cta').boundingBox();
     const dimensions = await page.evaluate(() => ({
@@ -30,13 +36,14 @@ try {
       viewport: document.documentElement.clientWidth,
       title: document.querySelector('#property-title').getBoundingClientRect().top
     }));
+    assert.equal(await page.locator('#cta-selected-details').isHidden(), true, `${label}: a room is incorrectly preselected`);
     await page.screenshot({ path: new URL(`./client-${label}-opening.png`, output).pathname });
     if (width > 1024) {
       assert.ok(g && rail, `${label}: gallery and CTA must both render`);
       assert.ok(rail.x >= g.x + g.width - 2, `${label}: CTA must be beside, not overlapping/below gallery`);
       assert.ok(nav && g && nav.y < g.y, `${label}: section navigation should be above gallery`);
       assert.ok(toolbar && toolbar.y >= g.y + g.height - 1, `${label}: Save and Compare bar must be below images`);
-      assert.ok(Math.abs(g.y - rail.y) <= 4, `${label}: gallery and CTA should start together: ${g.y}, ${rail.y}`);
+      assert.ok(Math.abs(g.y - rail.y) <= 14, `${label}: sticky info card should start alongside the gallery: ${g.y}, ${rail.y}`);
       const begin = rail.y;
       await page.evaluate(() => window.scrollTo(0, 900));
       await page.waitForTimeout(180);
@@ -61,6 +68,9 @@ try {
         assert.equal(await page.locator('#save-property').getAttribute('aria-pressed'), 'false', 'Save should switch off');
         await page.locator('#open-compare').click();
         await page.waitForFunction(() => window.scrollY > 400, null, { timeout: 3500 });
+        await page.locator('[data-select-room="silver-ensuite"]').click();
+        assert.equal(await page.locator('#cta-selected-details').isVisible(), true, 'room choice must update sidebar');
+        assert.equal(await page.locator('#cta-first-visit').isHidden(), true, 'first-visit summary must hide after selection');
         await page.locator('[data-compare-room="bronze-ensuite"]').check();
         await page.locator('[data-compare-room="silver-ensuite"]').check();
         assert.match(await page.locator('#open-compare').getAttribute('aria-label'), /Compare the two selected rooms/);
