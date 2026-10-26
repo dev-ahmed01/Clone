@@ -55,14 +55,34 @@ test('first-fold gallery sits inside the 75:25 content track with sticky propert
   ]);
   const layout = html.indexOf('<div class="page-layout">');
   const content = html.indexOf('<div class="content-column">', layout);
-  const gallery = html.indexOf('id="top" class="gallery-shell"', layout);
+  const nav = html.indexOf('class="section-nav glass-panel"', content);
+  const gallery = html.indexOf('id="top" class="gallery-shell"', nav);
   const title = html.indexOf('id="property-title"', gallery);
-  const nav = html.indexOf('class="section-nav glass-panel"', title);
   const closeContent = html.indexOf('</div>\n\n        <aside id="enquiry"', nav);
   const aside = html.indexOf('<aside id="enquiry"', nav);
-  assert.ok(layout < content && content < gallery && gallery < title && title < nav && nav < closeContent && closeContent < aside);
-  assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky;[^}]*top:\s*18px;[^}]*margin:\s*0/s);
+  assert.ok(layout < content && content < nav && nav < gallery && gallery < title && title < closeContent && closeContent < aside);
+  assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky;[^}]*top:\s*18px;[^}]*margin:\s*76px 0 0/s);
   assert.doesNotMatch(styles, /margin-top:\s*-320px/);
   assert.match(html, /cta-quickfacts/);
   assert.match(html, /data-open-enquiry>Enquire about this room<\/button>/);
+});
+
+test('gallery action bar holds unique Save / Compare, hero nav comes first and concept disclosure leaves photo', async () => {
+  const [html, script] = await Promise.all([
+    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/app.js', import.meta.url), 'utf8')
+  ]);
+  const nav = html.indexOf('class="section-nav glass-panel"');
+  const gallery = html.indexOf('id="top" class="gallery-shell"');
+  const toolbar = html.indexOf('class="gallery-actions"');
+  const intro = html.indexOf('class="property-intro"');
+  assert.ok(nav < gallery && gallery < toolbar && toolbar < intro);
+  assert.equal((html.match(/id="save-property"/g) || []).length, 1);
+  assert.equal((html.match(/id="open-compare"/g) || []).length, 1);
+  assert.ok(html.includes('View all photos'));
+  assert.ok(!html.includes('Illustrative media</strong>'));
+  assert.ok(html.includes('Concept imagery for design review'));
+  assert.ok(script.includes('Select two rooms in the room list to compare them.'));
+  assert.ok(html.includes('data-cta-colour="ocean"'));
+  assert.ok(html.includes('data-cta-colour="ivory"'));
 });

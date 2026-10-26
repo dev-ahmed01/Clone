@@ -72,7 +72,7 @@ function updateSelectedRoom() {
 function updateCompareButton() {
   const count = state.compareIds.length;
   $('#compare-count').textContent = count;
-  $('#open-compare').disabled = count !== 2;
+  $('#open-compare').setAttribute('aria-label', count === 2 ? 'Compare the two selected rooms' : `Compare rooms, ${count} of 2 selected`);
 }
 
 function renderAccordions() {
@@ -200,6 +200,11 @@ function setupRoomInteractions() {
   });
 
   $('#open-compare').addEventListener('click', () => {
+    if (state.compareIds.length !== 2) {
+      $('#rooms').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      announce('Select two rooms in the room list to compare them.');
+      return;
+    }
     renderComparison();
     $('#compare-dialog').showModal();
   });
@@ -211,7 +216,7 @@ function setSaved(saved) {
   control.setAttribute('aria-pressed', String(saved));
   control.setAttribute('aria-label', saved ? 'Remove iQ Kingston from saved properties' : 'Save iQ Kingston');
   control.querySelector('span').textContent = saved ? 'Saved' : 'Save';
-  $('#cta-save').textContent = saved ? 'Saved to this browser' : 'Save property';
+
 }
 
 function setupSavedState() {
@@ -224,7 +229,7 @@ function setupSavedState() {
     announce(saved ? 'iQ Kingston saved in this browser.' : 'iQ Kingston removed from saved properties.');
   };
   $('#save-property').addEventListener('click', toggle);
-  $('#cta-save').addEventListener('click', toggle);
+
 }
 
 function setupDialogs() {
@@ -304,3 +309,15 @@ setupSavedState();
 setupDialogs();
 setupEnquiry();
 setupSectionNavigation();
+
+function setupCtaColourExperiments() {
+  const card = $('.cta-card');
+  const swatches = $$('[data-cta-colour]');
+  swatches.forEach((button) => button.addEventListener('click', () => {
+    const colour = button.dataset.ctaColour;
+    card.dataset.ctaTheme = colour;
+    swatches.forEach((swatch) => swatch.setAttribute('aria-pressed', String(swatch === button)));
+    announce(`Information panel colour changed to ${button.title}.`);
+  }));
+}
+setupCtaColourExperiments();

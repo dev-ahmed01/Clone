@@ -21,11 +21,9 @@
         <span>accom <small>by emlen</small></span>
       </a>
       <nav class="header-nav" aria-label="Primary navigation">
-        <a href="#rooms">Find a room</a>
-        <button class="save-control" id="save-property" type="button" aria-label="Save iQ Kingston" aria-pressed="false">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
-          <span>Save</span>
-        </button>
+        <a href="#rooms">Explore rooms</a>
+        <a href="#included">Amenities</a>
+        <a href="#location">Campus & location</a>
         <button class="header-help" type="button" data-open-enquiry>Get help</button>
       </nav>
     </header>
@@ -33,6 +31,15 @@
     <main id="main-content">
       <div class="page-layout">
         <div class="content-column">
+          <nav class="section-nav glass-panel" aria-label="On this property page">
+            <a href="#overview" class="active" aria-current="location">Overview</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#included">Included</a>
+            <a href="#location">Location</a>
+            <a href="#policies">Policies</a>
+            <a href="#faqs">FAQs</a>
+          </nav>
+
           <div id="top" class="gallery-shell" aria-label="Illustrative property gallery">
             <div class="gallery-grid">
               <button class="gallery-tile gallery-main" type="button" data-gallery-index="0" aria-label="Open communal lounge image in gallery">
@@ -49,9 +56,22 @@
               </button>
             </div>
             <div class="gallery-meta glass-panel">
-              <span><strong>Illustrative media</strong> · not the exact rooms</span>
-              <button id="view-gallery" type="button">View all <span aria-hidden="true">4</span></button>
+              <button id="view-gallery" type="button">View all photos <span aria-hidden="true">4</span></button>
             </div>
+          </div>
+          <div class="gallery-actions" aria-label="Property actions">
+            <span class="gallery-concept-note">Concept imagery for design review</span>
+            <div class="gallery-actions-right">
+              <button class="gallery-action save-control" id="save-property" type="button" aria-label="Save iQ Kingston" aria-pressed="false">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
+                <span>Save</span>
+              </button>
+              <button id="open-compare" class="gallery-action compare-button" type="button" aria-describedby="compare-hint">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/></svg>
+                Compare <span id="compare-count">0</span>/2
+              </button>
+            </div>
+            <span class="sr-only" id="compare-hint">Select two rooms under Room Types to compare them.</span>
           </div>
 
           <section class="property-intro" aria-labelledby="property-title">
@@ -66,14 +86,7 @@
             </div>
           </section>
 
-          <nav class="section-nav glass-panel" aria-label="On this property page">
-            <a href="#overview" class="active" aria-current="location">Overview</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#included">Included</a>
-            <a href="#location">Location</a>
-            <a href="#policies">Policies</a>
-            <a href="#faqs">FAQs</a>
-          </nav>
+
 
           <section id="overview" class="content-section overview-section">
             <div class="section-heading">
@@ -94,7 +107,6 @@
                 <h2>Choose the room, then the contract.</h2>
                 <p>Compare privacy and total commitment without opening six tabs.</p>
               </div>
-              <button id="open-compare" class="compare-button" type="button" disabled>Compare <span id="compare-count">0</span>/2</button>
             </div>
             <div class="room-tools" aria-label="Filter rooms">
               <div class="filter-group" role="group" aria-label="Room category">
@@ -209,7 +221,7 @@
         </div>
 
         <aside id="enquiry" class="desktop-cta" aria-label="iQ Kingston details and selected room enquiry">
-          <div class="cta-card glass-panel">
+          <div class="cta-card glass-panel" data-cta-theme="midnight">
             <div class="cta-status"><span aria-hidden="true"></span> Student accommodation · Kingston</div>
             <div class="cta-property">
               <h2>iQ Kingston</h2>
@@ -231,8 +243,15 @@
             </div>
 
             <button type="button" class="primary-action" data-open-enquiry>Enquire about this room</button>
-            <button type="button" class="text-action" id="cta-save">Save property</button>
             <p class="cta-footnote">No payment or booking. Enquiries in this prototype are not sent.</p>
+            <div class="cta-theme-chooser" role="group" aria-label="Try information panel colours">
+              <span>Explore colours</span>
+              <div class="cta-theme-options">
+                <button type="button" class="cta-theme-swatch" data-cta-colour="midnight" aria-label="Midnight blue panel" aria-pressed="true" title="Midnight blue"><span></span></button>
+                <button type="button" class="cta-theme-swatch" data-cta-colour="ocean" aria-label="Deep teal panel" aria-pressed="false" title="Deep teal"><span></span></button>
+                <button type="button" class="cta-theme-swatch" data-cta-colour="ivory" aria-label="Warm ivory panel" aria-pressed="false" title="Warm ivory"><span></span></button>
+              </div>
+            </div>
           </div>
         </aside>
       </div>

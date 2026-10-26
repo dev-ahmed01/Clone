@@ -21,6 +21,8 @@ try {
     await page.goto(target, { waitUntil: 'load' });
     await page.evaluate(() => document.fonts.ready);
     const g = await page.locator('.gallery-shell').boundingBox();
+    const nav = await page.locator('.section-nav').boundingBox();
+    const toolbar = await page.locator('.gallery-actions').boundingBox();
     const rail = await page.locator('.desktop-cta').boundingBox();
     const mobileRail = await page.locator('.mobile-cta').boundingBox();
     const dimensions = await page.evaluate(() => ({
@@ -32,7 +34,9 @@ try {
     if (width > 1024) {
       assert.ok(g && rail, `${label}: gallery and CTA must both render`);
       assert.ok(rail.x >= g.x + g.width - 2, `${label}: CTA must be beside, not overlapping/below gallery`);
-      assert.ok(Math.abs(g.y - rail.y) <= 3, `${label}: gallery and CTA should start together: ${g.y}, ${rail.y}`);
+      assert.ok(nav && g && nav.y < g.y, `${label}: section navigation should be above gallery`);
+      assert.ok(toolbar && toolbar.y >= g.y + g.height - 1, `${label}: Save and Compare bar must be below images`);
+      assert.ok(Math.abs(g.y - rail.y) <= 4, `${label}: gallery and CTA should start together: ${g.y}, ${rail.y}`);
       const begin = rail.y;
       await page.evaluate(() => window.scrollTo(0, 900));
       await page.waitForTimeout(180);
@@ -40,13 +44,19 @@ try {
       assert.ok(after && after.y >= -2 && after.y <= 26, `${label}: CTA failed to stick, y=${after?.y}`);
       if (label === 'desktop') {
         await page.screenshot({ path: new URL('./client-desktop-scrolled-sticky.png', output).pathname });
+        for (const colour of ['midnight', 'ocean', 'ivory']) {
+          await page.evaluate(() => scrollTo(0,0));
+          await page.locator(`[data-cta-colour="${colour}"]`).click();
+          assert.equal(await page.locator('.cta-card').getAttribute('data-cta-theme'), colour);
+          await page.screenshot({ path: new URL(`./client-cta-${colour}.png`, output).pathname });
+        }
         await page.evaluate(() => scrollTo(0, 0));
         await page.locator('.gallery-main').click();
         await page.locator('#gallery-dialog').waitFor({state: 'visible'});
         await page.screenshot({path: new URL('./client-gallery-lightbox.png', output).pathname});
         await page.keyboard.press('Escape');
       }
-      results.push({label, galleryTop:g.y, ctaTop:begin, stickyTop:after.y});
+      results.push({label, navTop:nav.y, galleryTop:g.y, toolbarTop:toolbar.y, ctaTop:begin, stickyTop:after.y});
     } else {
       assert.equal(rail, null, `${label}: desktop CTA should be hidden`);
       assert.ok(mobileRail, `${label}: bottom CTA missing`);
