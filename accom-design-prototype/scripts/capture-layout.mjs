@@ -66,6 +66,14 @@ try {
       assert.ok(ctaSize.height <= height - 14, `${label}: sticky CTA should fit viewport (${ctaSize.height}px vs ${height}px)`);
 
       if (label === 'desktop') {
+        const sectionNesting = await page.evaluate(() => ({
+          containsLandmarks: Boolean(document.querySelector('#overview .nearby-landmarks')),
+          containsPhoto: Boolean(document.querySelector('#overview .overview-photo')),
+          rulesNav: Boolean(document.querySelector('.section-nav a[href="#house-rules"]')),
+          houseRules: document.querySelectorAll('.house-rule-card').length
+        }));
+        assert.ok(sectionNesting.containsLandmarks && !sectionNesting.containsPhoto, 'overview must combine all student priorities and landmarks without another photo');
+        assert.ok(sectionNesting.rulesNav && sectionNesting.houseRules === 6, 'six example house rules and navigation expected');
         const landmarks = await Promise.all((await page.locator('.landmark-card').all()).map(el => el.boundingBox()));
         assert.ok(landmarks[0].y === landmarks[3].y && landmarks[4].y > landmarks[0].y, 'desktop landmarks should form a 4+3 layout');
         const stickyNav = await page.locator('.section-nav').boundingBox();
@@ -74,13 +82,14 @@ try {
         await page.evaluate(() => window.scrollTo({ top: 660, behavior: 'instant' }));
         await page.waitForTimeout(100);
         await page.screenshot({ path: new URL('./client-intro-and-landmarks.png', output).pathname });
+        await page.locator('#house-rules').scrollIntoViewIfNeeded();
+        await page.waitForTimeout(180);
+        assert.equal(await page.locator('.section-nav a.active').getAttribute('href'), '#house-rules', 'House rules pill should be selected while reading house rules');
+        await page.screenshot({ path: new URL('./client-house-rules.png', output).pathname });
         await page.evaluate(() => scrollTo(0, 0));
         await page.locator('.gallery-main').click();
         await page.locator('#gallery-dialog').waitFor({state: 'visible'});
         await page.screenshot({path: new URL('./client-gallery-lightbox.png', output).pathname});
-        await page.keyboard.press('Escape');
-        await page.locator('[data-open-gallery]').click();
-        assert.ok(await page.locator('#gallery-dialog').isVisible(), 'overview photo action must open the real gallery');
         await page.keyboard.press('Escape');
         await page.locator('#save-property').click();
         assert.equal(await page.locator('#save-property').getAttribute('aria-pressed'), 'true', 'Save should switch on');

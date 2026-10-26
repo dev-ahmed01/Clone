@@ -11,7 +11,7 @@ test('page exposes the required decision and dialog controls', async () => {
     'id="enquiry-dialog"',
     'id="rooms"',
     'id="included"',
-    'id="location"',
+    'id="house-rules"',
     'id="policies"',
     'aria-live="polite"',
   ]) assert.ok(html.includes(fragment), `Missing ${fragment}`);
@@ -55,7 +55,7 @@ test('chosen concept has property actions above gallery and six pill tabs below'
   const actions = html.indexOf('class="gallery-actions"', hero);
   const gallery = html.indexOf('id="top" class="gallery-shell"', actions);
   const tabs = html.indexOf('class="section-nav glass-panel"', gallery);
-  const landmarks = html.indexOf('class="nearby-landmarks"', tabs);
+  const landmarks = html.indexOf('class="nearby-landmarks overview-landmarks"', tabs);
   assert.ok(hero < title && title < actions && actions < gallery && gallery < tabs && tabs < landmarks);
   assert.equal((html.match(/id="save-property"/g)||[]).length, 1);
   assert.equal((html.match(/id="open-compare"/g)||[]).length, 1);
@@ -94,14 +94,14 @@ test('student-first sections use a coherent design and no simulated map', async 
   ]);
   assert.equal((html.match(/class="landmark-card /g)||[]).length, 7);
   assert.equal((html.match(/class="overview-highlight"/g)||[]).length, 4);
-  assert.ok(html.includes('class="overview-photo"'));
-  assert.ok(html.includes('class="campus-layout"'));
+  assert.ok(!html.includes('class="overview-photo"'));
+  assert.ok(html.includes('class="house-rules-grid"'));
   assert.ok(!html.includes('class="map-card"'));
   assert.ok(!html.includes('328 reviews'));
   assert.ok(!html.includes('47 photos'));
   assert.ok(!html.includes('10,000+ students'));
   assert.ok(css.includes('.section-nav.glass-panel'));
-  assert.ok(css.includes('.campus-layout'));
+  assert.ok(css.includes('.section-nav.glass-panel'));
   assert.ok(app.includes('selectedRoomId: null'));
   assert.ok(!app.includes('setupCompactSectionNavigation'));
 });
@@ -111,7 +111,7 @@ test('source-like facts and demo disclaimers remain visible', async () => {
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('15 min walk'));
   assert.ok(html.includes('Demo rate'));
-  assert.ok(html.includes('Concept imagery'));
+  assert.ok(html.includes('Illustrative room images') || html.includes('Illustrative rates and media'));
   assert.ok(html.includes('No room selected') || html.includes('Choose a room to see its tenancy total.'));
 });
 
@@ -131,12 +131,36 @@ test('approved design retains strict palette, visible glass tabs and functional 
   assert.ok(css.includes('overflow: clip'));
   assert.ok(css.includes('max-height: none'));
   assert.equal((html.match(/class="cta-benefit"/g)||[]).length,4);
-  assert.equal((html.match(/data-open-gallery/g)||[]).length,1);
+  assert.equal((html.match(/data-open-gallery/g)||[]).length,0);
   assert.equal((html.match(/class="section-nav glass-panel"/g)||[]).length,1);
   assert.equal((html.match(/class="overview-highlight"/g)||[]).length,4);
   assert.ok(html.includes('View all 4 photos'));
   assert.ok(html.includes('Illustrative rates and media'));
   assert.ok(html.includes('Choose a room to see its tenancy total'));
-  assert.ok(js.includes("$$('[data-open-gallery]')"));
+  assert.ok(!js.includes("$('[data-open-gallery]')"));
   assert.ok(data.includes("src: 'assets/ensuite.webp'"));
+});
+
+test('merged student overview keeps landmarks as nested decision content and uses example house rules', async () => {
+  const html = await readFile(new URL('../public/index.html', import.meta.url),'utf8');
+  const css = await readFile(new URL('../public/site.css', import.meta.url),'utf8');
+  const overview = html.indexOf('id="overview"');
+  const highlights = html.indexOf('class="overview-highlights"', overview);
+  const landmarks = html.indexOf('class="nearby-landmarks overview-landmarks"', highlights);
+  const overviewClose = html.indexOf('</section>', overview);
+  const rooms = html.indexOf('id="rooms"', overviewClose);
+  assert.ok(overview < highlights && highlights < landmarks && landmarks < overviewClose && overviewClose < rooms);
+  assert.ok(!html.includes('class="overview-photo"'));
+  assert.ok(!html.includes('id="location"'));
+  assert.ok(html.includes('href="#house-rules"'));
+  assert.equal((html.match(/class="house-rule-card"/g)||[]).length, 6);
+  assert.ok(html.includes('not verified iQ Kingston house rules'));
+  assert.ok(css.includes('.house-rules-grid'));
+  assert.equal((html.match(/class="landmark-card /g)||[]).length,7);
+});
+
+test('section scroll tracking observes house-rules and keeps the correct active pill',async()=>{
+ const js=await readFile(new URL('../public/app.js',import.meta.url),'utf8');
+ assert.ok(js.includes('getBoundingClientRect().top <= readingLine'));
+ assert.ok(js.includes("window.addEventListener('scroll', schedule"));
 });

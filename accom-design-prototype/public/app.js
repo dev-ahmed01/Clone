@@ -119,7 +119,6 @@ function setupGallery() {
   $('#gallery-thumbs').innerHTML = media.map((item, index) => `<button type="button" data-thumb-index="${index}" aria-label="Show ${item.category} image"><img src="${item.src}" width="120" height="80" alt=""></button>`).join('');
   $$('.gallery-tile').forEach((button) => button.addEventListener('click', () => openGallery(Number(button.dataset.galleryIndex))));
   $('#view-gallery').addEventListener('click', () => openGallery(0));
-  $$('[data-open-gallery]').forEach(button => button.addEventListener('click', () => openGallery(0)));
   $('#gallery-prev').addEventListener('click', () => setGalleryImage(state.galleryIndex - 1));
   $('#gallery-next').addEventListener('click', () => setGalleryImage(state.galleryIndex + 1));
   $('#gallery-thumbs').addEventListener('click', (event) => {
@@ -311,16 +310,36 @@ function setupEnquiry() {
 function setupSectionNavigation() {
   const links = $$('.section-nav a');
   const sections = links.map((link) => $(link.getAttribute('href')));
-  const observer = new IntersectionObserver((entries) => {
-    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-    links.forEach((link) => {
-      const active = link.getAttribute('href') === `#${visible.target.id}`;
+  const update = () => {
+    // The readable content area starts below the sticky glass menu. Use the
+    // upper third of the viewport to keep the active pill aligned with the
+    // section a student is actually reading.
+    const readingLine = Math.min(window.innerHeight * .38, 300);
+    let activeIndex = 0;
+    for (let index = 0; index < sections.length; index++) {
+      if (sections[index] && sections[index].getBoundingClientRect().top <= readingLine) {
+        activeIndex = index;
+      }
+    }
+    links.forEach((link, index) => {
+      const active = index === activeIndex;
       link.classList.toggle('active', active);
-      if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
+      if (active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
     });
-  }, { rootMargin: '-20% 0px -65% 0px', threshold: [0, .25, .75] });
-  sections.forEach((section) => observer.observe(section));
+  };
+  let queued = false;
+  const schedule = () => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      update();
+    });
+  };
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule, { passive: true });
+  update();
 }
 
 renderRooms();
