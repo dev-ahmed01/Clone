@@ -40,7 +40,7 @@ test('client design contract and reachable mobile help are represented', async (
   assert.match(html, /Bricolage\+Grotesque/);
   assert.match(html, /Montserrat/);
   assert.match(styles, /--red:\s*#ed2024/i);
-  assert.match(styles, /grid-template-columns:\s*minmax\(0,\s*3fr\)\s+minmax\(260px,\s*1fr\)/);
+  assert.match(styles, /grid-template-columns:\s*minmax\(0,\s*3fr\)\s+minmax\(290px,\s*1fr\)/);
   assert.match(styles, /\.desktop-cta\s*\{[^}]*position:\s*sticky/s);
   assert.match(styles, /\.section-nav\s*\{[^}]*position:\s*sticky/s);
   assert.match(styles, /\.gallery-dialog\s*\{[^}]*width:\s*100vw/s);
