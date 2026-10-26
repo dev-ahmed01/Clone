@@ -55,7 +55,7 @@ test('chosen concept has property actions above gallery and six pill tabs below'
   const actions = html.indexOf('class="gallery-actions"', hero);
   const gallery = html.indexOf('id="top" class="gallery-shell"', actions);
   const tabs = html.indexOf('class="section-nav glass-panel"', gallery);
-  const landmarks = html.indexOf('class="nearby-landmarks"', tabs);
+  const landmarks = html.indexOf('class="nearby-landmarks overview-landmarks"', tabs);
   assert.ok(hero < title && title < actions && actions < gallery && gallery < tabs && tabs < landmarks);
   assert.equal((html.match(/id="save-property"/g)||[]).length, 1);
   assert.equal((html.match(/id="open-compare"/g)||[]).length, 1);
