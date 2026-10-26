@@ -115,8 +115,8 @@ This was an internal independent review, not user testing and not evidence that 
 - Enquiry: required-field errors, focus placement, consent validation, simulated pending confirmation, and explicit non-booking message checked.
 - Save: pressed state and local-storage persistence checked.
 - Console: zero errors or warnings after the favicon correction.
-- Automated (original handoff): five Node tests were reported passing. **After the current polish branch, seven tests are defined; fresh execution is pending.**
-- Lighthouse (pre-final-CSS, historical): Accessibility 100, Best Practices 100, SEO 100, and Agentic Browsing 100 in desktop and mobile local audits. **No post-polish audit has yet been recorded.**
+- Automated (original handoff): five Node tests were reported passing. **After the current polish branch, all seven defined Node tests passed in GitHub Actions on 26 October 2026.**
+- Lighthouse (pre-final-CSS, historical): Accessibility 100, Best Practices 100, SEO 100, and Agentic Browsing 100 in desktop and mobile local audits. **The latest post-optimization CI result is documented below.**
 - Local unthrottled performance trace (historical): LCP 420ms and CLS 0.00. These precede later CTA/CSS adjustments, are not production Core Web Vitals or field data, and must be remeasured.
 
 ## Remaining limitations
@@ -158,5 +158,24 @@ No backend, payments, live booking or live enquiry transport was introduced.
 - GitHub Actions compressed the illustrative WebP gallery assets deterministically from retained PNGs: lounge 1,113,322→175,986 bytes; ensuite 821,216→126,110; studio 852,270→118,838; study 979,170→115,902. Source assets remain unchanged.
 - Mobile gallery height was reduced from 70vh/minimum 500px to `min(58vh, 480px)`/minimum 360px so property identity enters the first viewport sooner. The gallery remains edge-to-edge, and the desktop 75:25 layout is unchanged.
 - Secondary gallery tiles now load lazily at low priority; the principal first-view image retains high fetch priority.
-- Historical uncompressed CI laboratory audits recorded desktop Performance 79/85 and mobile Performance 69/68 on consecutive runs, with Accessibility/Best Practices/SEO at 100. **These scores were from the oversized-image build, not the compressed-image commit; fresh results are required.**
+- Historical uncompressed CI laboratory audits recorded desktop Performance 79/85 and mobile Performance 69/68 on consecutive runs, with Accessibility/Best Practices/SEO at 100. **These scores were from the oversized-image build, not the compressed-image commit; fresh results are now recorded below.**
 - The performance audits were run in a GitHub Actions laboratory environment. Scores and LCP differ by run conditions and do not represent real-user field data.
+
+## Final CI verification after compressed gallery (26 October 2026)
+
+GitHub Actions run [40288880335](https://github.com/dev-ahmed01/Clone/actions/runs/40288880335) validated commit `88e8a6d6599494994d6085153085369d4593ea1d`. Source code and image bytes for this measured build are unchanged by this audit-documentation update.
+
+| Metric | Desktop | Mobile |
+|---|---:|---:|
+| Performance | 98 | 77 |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+| Largest Contentful Paint | 1.0s | 4.6s |
+| Cumulative Layout Shift | 0.002 | 0.001 |
+
+- Node syntax checks and 7/7 Node tests passed; Lighthouse audits and JSON artifact upload completed successfully.
+- The mobile hero no longer hides the property title below the initial viewport in the captured lab screenshot.
+- These figures are synthetic Lighthouse laboratory scores from GitHub-hosted Chrome, not live traffic performance or proof of student usability.
+- **Residual performance work:** Mobile LCP at 4.6 seconds does not meet the usual 2.5-second good Core Web Vitals target. Responsive image sizing, local/font resource optimisation and a production CDN remain for the production build.
+- Design screenshot interactions were reviewed using the previously captured baseline and new CI first-fold image; a new human-operated full interaction pass and screen-reader test remain pending.
