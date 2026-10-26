@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="rail-refinement.css">
     <script type="module" src="app.js"></script>
   </head>
   <body>
@@ -18,7 +19,7 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Accom by Emlen home">
         <span class="brand-mark" aria-hidden="true"><span></span></span>
-        <span>accom <small>by emlen</small></span>
+        <span class="brand-lockup"><span class="brand-name">accom</span><small class="brand-byline">BY EMLEN</small></span>
       </a>
       <nav class="header-nav" aria-label="Primary navigation">
         <a href="#rooms">Explore rooms</a>
@@ -47,9 +48,9 @@
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 4.5h11v16L12 17l-5.5 3.5z"/></svg>
               <span>Save</span>
             </button>
-            <button id="open-compare" class="gallery-action compare-button" type="button" aria-describedby="compare-hint">
+            <button id="open-compare" class="gallery-action compare-button" type="button" aria-label="Compare rooms" aria-describedby="compare-hint">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor"/><circle cx="16" cy="12" r="2" fill="currentColor"/></svg>
-              Compare <span id="compare-count">0</span>/2
+              Compare
             </button>
           </div>
           <span class="sr-only" id="compare-hint">Select two rooms below to compare their features and contracts.</span>
@@ -285,9 +286,9 @@
                 <h3>Why it works for students</h3>
                 <div class="cta-benefit"><span class="cta-benefit-icon cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-6 10 6-10 6z"/><path d="M6 12.5V18c4 2.5 8 2.5 12 0v-5.5M22 9v8"/></svg></span><span class="cta-benefit-copy"><strong>Near Kingston University</strong><span>15 min walk¹</span></span></div>
                 <div class="cta-benefit"><span class="cta-benefit-icon room-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20V8m18 12V8M3 13h18v5H3z"/><path d="M5 9h5a3 3 0 0 1 3 3v1"/></svg></span><span class="cta-benefit-copy"><strong>Furnished options</strong><span>Ensuite and studio rooms</span></span></div>
-                <div class="cta-benefit"><span class="cta-benefit-icon social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M17 14a5 5 0 0 1 4 5v1"/></svg></span><span class="cta-benefit-copy"><strong>Social spaces</strong><span>Gym, study and shared areas</span></span></div>
                 <div class="cta-benefit"><span class="cta-benefit-icon wifi-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a16 16 0 0 1 20 0M5 13a11 11 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg></span><span class="cta-benefit-copy"><strong>Bills included</strong><span>Wi-Fi, electricity and water</span></span></div>
               </div>
+              <p class="cta-footnote">Illustrative rates and media · no live enquiry or booking. ² Amber listing snapshot.</p>
               <div class="cta-area cta-google-map-card" aria-label="Location of iQ Kingston">
                 <iframe
                   class="cta-google-map"
@@ -303,14 +304,14 @@
                 </div>
               </div>
             </div>
-            <p class="cta-footnote">Illustrative rates and media · no live enquiry or booking. ² Amber listing snapshot.</p>
+
           </div>
         </aside>
       </div>
     </main>
 
     <footer class="site-footer">
-      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span>accom <small>by emlen</small></span></a>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span class="brand-lockup"><span class="brand-name">accom</span><small class="brand-byline">BY EMLEN</small></span></a>
       <p>One clearer decision at a time.</p>
       <p class="footer-meta">Property-detail design prototype · no live enquiries or payments</p>
     </footer>

@@ -81,6 +81,15 @@ try {
       assert.ok(googleMapBox && googleMapBox.width >= 220 && googleMapBox.height >= 140, `${label}: location map too small`);
       const googleMapLink = page.locator('.cta-google-map-caption > a');
       assert.ok((await googleMapLink.getAttribute('href')).includes('www.google.com/maps/search/?api=1'));
+      const mapBeforeSelection = await page.locator('.cta-google-map-card').boundingBox();
+      const linkBeforeSelection = await page.locator('.cta-google-map-caption > a').boundingBox();
+      assert.ok(mapBeforeSelection && mapBeforeSelection.y + mapBeforeSelection.height <= height - 6,
+        `${label}: entire Google map must fit in first desktop viewport`);
+      assert.ok(linkBeforeSelection && linkBeforeSelection.y + linkBeforeSelection.height <= height - 6,
+        `${label}: map action must remain visible at viewport bottom`);
+      assert.equal(await page.locator('.cta-benefit').count(),3,`${label}: sidebar should show only three benefits`);
+      assert.equal((await page.locator('#open-compare').textContent()).trim(),'Compare',
+        `${label}: Compare must not show numbers`);
       const ctaSize = await page.locator('.cta-card').evaluate(el => ({
         height: el.getBoundingClientRect().height,
         overflowY: getComputedStyle(el).overflowY,
@@ -125,10 +134,20 @@ try {
         await page.waitForFunction(() => window.scrollY > 400, null, { timeout: 3500 });
         await page.locator('[data-select-room="silver-ensuite"]').click();
         assert.equal(await page.locator('#cta-selected-details').isVisible(), true, 'room choice must update sidebar');
+        const selectedRail = await page.locator('.cta-card').boundingBox();
+        const selectedMap = await page.locator('.cta-google-map-card').boundingBox();
+        assert.ok(selectedRail && selectedRail.height <= height - 14,
+          'selected-room sidebar must fit in one viewport with no internal scrolling');
+        assert.ok(selectedMap && selectedMap.y + selectedMap.height <= height - 6,
+          'selected-room state must leave Google Maps fully visible');
+        assert.equal(await page.locator('.cta-quickfacts').isVisible(),false,
+          'selected tenancy information should replace generic benefit list');
+        await page.screenshot({path:new URL('./client-laptop-selected-rail.png',output).pathname});
         assert.equal(await page.locator('#cta-first-visit').isHidden(), true, 'first-visit summary must hide after selection');
         await page.locator('[data-compare-room="bronze-ensuite"]').check();
         await page.locator('[data-compare-room="silver-ensuite"]').check();
-        assert.match(await page.locator('#open-compare').getAttribute('aria-label'), /Compare 2\/2 rooms selected/);
+        assert.equal(await page.locator('#open-compare').getAttribute('aria-label'),
+          'Compare selected rooms','Comparison should announce readiness without a count');
         await page.locator('#open-compare').click();
         assert.ok(await page.locator('#compare-dialog').isVisible(), 'Compare must open after selecting two rooms');
         await page.keyboard.press('Escape');
