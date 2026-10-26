@@ -119,7 +119,6 @@ function setupGallery() {
   $('#gallery-thumbs').innerHTML = media.map((item, index) => `<button type="button" data-thumb-index="${index}" aria-label="Show ${item.category} image"><img src="${item.src}" width="120" height="80" alt=""></button>`).join('');
   $$('.gallery-tile').forEach((button) => button.addEventListener('click', () => openGallery(Number(button.dataset.galleryIndex))));
   $('#view-gallery').addEventListener('click', () => openGallery(0));
-  $$('[data-open-gallery]').forEach(button => button.addEventListener('click', () => openGallery(0)));
   $('#gallery-prev').addEventListener('click', () => setGalleryImage(state.galleryIndex - 1));
   $('#gallery-next').addEventListener('click', () => setGalleryImage(state.galleryIndex + 1));
   $('#gallery-thumbs').addEventListener('click', (event) => {

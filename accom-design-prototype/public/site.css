@@ -1554,3 +1554,100 @@ body {
 /* Shared lightweight line icons for Accom student-benefit chips */
 .overview-highlight .overview-icon svg { width: 21px; height: 21px; }
 .cta-panel-bottom .cta-benefit-icon svg { width: 19px; height: 19px; }
+
+
+/* 26 Oct — integrated Overview + nearby landmarks and example House Rules.
+   Overview is a single decision surface: campus, bills, room type and facilities,
+   then a consistent 4+3 nearby places grid. No second hero photograph. */
+.overview-section.overview-card {
+  padding: 25px 24px 21px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background: linear-gradient(128deg, rgba(255,255,255,.94), rgba(255,249,243,.9));
+}
+.overview-priority-header { display: flex; align-items: end; justify-content: space-between; gap: 22px; }
+.overview-priority-intro { min-width: 0; }
+.overview-priority-intro .section-kicker { display: flex; gap: 9px; align-items: center; margin-bottom: 11px; font-size: 10px; color: #b01d2b; }
+.overview-priority-intro .section-kicker span { width: 21px; height: 2px; background: #ed2024; }
+.overview-priority-intro h2 { max-width: 720px; font-size: clamp(1.95rem,3vw,2.85rem); line-height: 1.05; }
+.overview-priority-intro > p:not(.section-kicker) { margin-top: 10px; max-width: 700px; font-size: 12px; line-height: 1.65; color: #59667b; }
+.overview-priority-header .overview-link { flex: 0 0 auto; margin: 0 0 5px; background: #ffefea; }
+.overview-section .overview-highlights {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 10px;
+  margin: 23px 0 0;
+}
+.overview-section .overview-highlight {
+  display: flex; min-height: 79px; align-items: center; padding: 12px 11px; gap: 10px;
+  background: rgba(255,255,255,.92); border-radius: 15px;
+  border: 1px solid #f0e7e0; box-shadow: 0 4px 18px rgba(20,29,45,.018);
+}
+.overview-section .overview-highlight strong { font-size: 11px; }
+.overview-section .overview-highlight small { font-size: 9.5px; }
+.overview-section .overview-highlight .overview-icon { flex: 0 0 40px; width: 40px; height: 40px; }
+.overview-section .nearby-landmarks {
+  background: none; border: 0; box-shadow: none; padding: 21px 0 0;
+  margin: 22px 0 0; border-top: 1px solid #eee3da; border-radius: 0;
+}
+.overview-landmarks .landmarks-heading { align-items: center; margin-bottom: 14px; }
+.overview-landmarks .landmarks-heading h3 { display: flex; align-items: center; font: 700 16px/1.2 var(--font-heading); color: #17243a; letter-spacing: -.02em; }
+.overview-landmarks .landmarks-heading h3 span { color: #ed2024; margin-right: 9px; font-size: 18px; }
+.overview-landmarks .landmarks-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; }
+.overview-landmarks .landmark-card {
+  flex: 0 0 calc((100% - 27px)/4); min-width: 0; height: 82px;
+  border: 1px solid #ede4dc; background: rgba(255,255,255,.9);
+  border-radius: 13px; padding: 8px 10px; box-shadow: none;
+}
+.overview-landmarks .landmark-card strong { font-size: 10px; }
+.overview-landmarks .landmark-card small { font-size: 9px; }
+.overview-landmarks .landmarks-footnote { margin-top: 13px; color: #66748a; font-size: 9px; }
+.overview-section .overview-footnote { margin-top: 10px; font-size: 9px; color: #748096; }
+/* House rules: soft glass cards, not a fake operator policy document. */
+.house-rules-section { padding-top: 44px; }
+.house-rules-heading { display: flex; justify-content: space-between; gap: 18px; align-items: end; max-width: none; margin-bottom: 23px; }
+.house-rules-heading h2 { margin-top: 10px; max-width: 720px; font-size: clamp(2.05rem,3.3vw,3.05rem); }
+.house-rules-heading p:not(.section-kicker) { max-width: 660px; margin-top: 9px; font-size: 12px; line-height: 1.6; }
+.house-rules-status { display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto; white-space: nowrap; margin-bottom: 4px; padding: 9px 12px; border: 1px solid #f2dfbc; background: #fff6dc; border-radius: 999px; font-size: 10px; font-weight: 700; color: #765317; }
+.house-rules-status span { color: #db9c00; font-size: 8px; }
+.house-rules-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.house-rule-card {
+  min-width: 0; min-height: 168px; padding: 20px 19px; border-radius: 16px;
+  border: 1px solid #eee5dd; background: rgba(255,255,255,.84);
+  box-shadow: 0 7px 23px rgba(20,30,49,.025);
+}
+.house-rule-index { display: inline-grid; place-items: center; width: 33px; height: 33px; margin-bottom: 15px; border-radius: 50%; background: #fff0cf; color: #a86e00; font: 800 11px/1 var(--font-body); }
+.house-rule-card:nth-child(3n+2) .house-rule-index { background: #ffe7e7; color: #d21e2e; }
+.house-rule-card:nth-child(3n) .house-rule-index { background: #e8efff; color: #2856c5; }
+.house-rule-card h3 { font-size: 17px; line-height: 1.19; letter-spacing: -.02em; }
+.house-rule-card p { margin-top: 9px; color: #5c687a; line-height: 1.6; font-size: 11px; }
+.house-rules-disclaimer { display: flex; gap: 12px; align-items: flex-start; margin-top: 14px; padding: 13px 15px; border: 1px solid #eee3d4; background: #fff9ef; border-radius: 12px; }
+.house-rules-disclaimer-icon { display: inline-grid; flex: 0 0 23px; height: 23px; place-items: center; border-radius: 50%; color: #93600d; background: #fff0cc; font: 700 14px/1 var(--font-heading); }
+.house-rules-disclaimer p { font-size: 10px; line-height: 1.6; color: #615a53; }
+.house-rules-disclaimer strong { color: #2f3847; }
+@media (min-width: 769px) and (max-width: 1199px) {
+  .overview-landmarks .landmark-card { flex-basis: calc((100% - 18px)/3); }
+  .house-rules-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 768px) {
+  .overview-section.overview-card { padding: 20px 15px; }
+  .overview-priority-header { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .overview-priority-header .overview-link { margin: 0; }
+  .overview-section .overview-highlights { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; margin-top: 17px; }
+  .overview-section .overview-highlight { min-height: 75px; padding: 9px; gap: 8px; }
+  .overview-section .overview-highlight .overview-icon { width: 35px; height: 35px; flex-basis: 35px; }
+  .overview-section .nearby-landmarks { padding-top: 20px; margin-top: 20px; }
+  .overview-landmarks .landmarks-heading { display: block; }
+  .overview-landmarks .landmarks-heading p { margin-top: 6px; }
+  .overview-landmarks .landmark-card { flex-basis: calc((100% - 9px)/2); min-height: 85px; height: auto; }
+  .house-rules-heading { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .house-rules-grid { grid-template-columns: 1fr; gap: 9px; }
+  .house-rule-card { min-height: 0; padding: 16px; }
+  .house-rule-index { margin-bottom: 9px; }
+}
+@media (max-width: 390px) {
+  .overview-section .overview-highlights { grid-template-columns: 1fr 1fr; }
+  .overview-section .overview-highlight { min-height: 84px; }
+  .overview-landmarks .landmark-card { padding: 8px 7px; }
+  .overview-landmarks .landmark-card strong { font-size: 9.5px; }
+}
