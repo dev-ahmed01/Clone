@@ -55,6 +55,18 @@ try {
         await page.locator('#gallery-dialog').waitFor({state: 'visible'});
         await page.screenshot({path: new URL('./client-gallery-lightbox.png', output).pathname});
         await page.keyboard.press('Escape');
+        await page.locator('#save-property').click();
+        assert.equal(await page.locator('#save-property').getAttribute('aria-pressed'), 'true', 'Save should switch on');
+        await page.locator('#save-property').click();
+        assert.equal(await page.locator('#save-property').getAttribute('aria-pressed'), 'false', 'Save should switch off');
+        await page.locator('#open-compare').click();
+        assert.ok(await page.evaluate(() => scrollY > 400), 'Compare without two selections should lead to room list');
+        await page.locator('[data-compare-room="bronze-ensuite"]').check();
+        await page.locator('[data-compare-room="silver-ensuite"]').check();
+        assert.match(await page.locator('#open-compare').getAttribute('aria-label'), /Compare the two selected rooms/);
+        await page.locator('#open-compare').click();
+        assert.ok(await page.locator('#compare-dialog').isVisible(), 'Compare must open after selecting two rooms');
+        await page.keyboard.press('Escape');
       }
       results.push({label, navTop:nav.y, galleryTop:g.y, toolbarTop:toolbar.y, ctaTop:begin, stickyTop:after.y});
     } else {
