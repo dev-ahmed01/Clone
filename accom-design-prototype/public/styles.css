@@ -823,3 +823,40 @@ body { background: radial-gradient(ellipse at 42% 20%, #fffcf8, var(--paper) 58%
   .gallery-grid { min-height: 0; }
   .gallery-action, .gallery-action.compare-button { padding: 0 12px; }
 }
+
+
+/* Final visual fidelity: seven single-row landmark chips at desktop width. */
+@media (min-width: 1200px) {
+  .landmarks-grid { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 7px; }
+  .landmark-card {
+    flex: none;
+    min-width: 0;
+    height: 71px;
+    display: grid;
+    grid-template-columns: 25px minmax(0,1fr);
+    grid-template-rows: auto auto;
+    align-content: center;
+    align-items: center;
+    gap: 1px 6px;
+    padding: 6px 6px;
+  }
+  .landmark-icon { grid-column: 1; grid-row: 1 / 3; width: 25px; height: 25px; }
+  .landmark-icon svg { width: 16px; height: 16px; }
+  .landmark-card strong { grid-column: 2; grid-row: 1; font-size: 9px; line-height: 1.2; }
+  .landmark-card small { grid-column: 2; grid-row: 2; font-size: 8px; line-height: 1.2; }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  .landmarks-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .landmark-card { flex: none; min-width: 0; width: 100%; }
+}
+.cta-card .cta-benefit {
+  justify-content: flex-start;
+  text-align: left;
+}
+.cta-card .cta-benefit-icon { flex: 0 0 40px; }
+.cta-card .cta-benefit-copy { flex: 1 1 auto; text-align: left; align-items: flex-start; }
+.cta-card .cta-benefit-copy > span, .cta-card .cta-benefit-copy strong { text-align: left; }
+@media (max-width: 768px) {
+  .landmarks-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .landmark-card { width: 100%; flex: none; }
+}

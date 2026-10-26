@@ -343,3 +343,15 @@ function setupCtaColourExperiments() {
   }));
 }
 setupCtaColourExperiments();
+
+function setupCompactSectionNavigation() {
+  const nav = $('.section-nav');
+  const gallery = $('.gallery-shell');
+  const update = () => {
+    const galleryHasPassed = gallery.getBoundingClientRect().bottom < 90;
+    nav.classList.toggle('is-floating', window.innerWidth > 1024 && galleryHasPassed);
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+}

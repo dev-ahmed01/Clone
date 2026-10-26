@@ -165,3 +165,9 @@ Section links reflect active content via `aria-current="location"`. A mobile hel
 - **Don't** turn a simulated enquiry into a claimed booking or contact request.
 - **Don't** hide essential navigation or enquiry controls under sticky surfaces.
 - **Don't** let frosted glass obscure core text or keyboard focus.
+
+## Selected visual direction — 26 October 2026
+
+The user approved the second image concept and subsequently its variant with the compact red-active on-page pill navigation. The implemented page now places property name, verified-facts indicator, price and dated property rating above the gallery; the six-section navigation is at the upper right and floats back into view after scrolling beyond the gallery. The gallery uses a large editorial image on the left with a three-image mosaic on the right, without changing the full-screen lightbox. Save and Compare are larger and remain directly below the photos. Seven compact student landmarks appear in a single aligned desktop strip with narrower-screen grids. An editorial white Overview panel follows beneath. The dark sticky CTA retains its first-time visitor state, room-selection handoff and three colour treatments.
+
+Keep screenshot-specific figures such as '328 reviews', '8-minute campus walk' or '£315' out of the implemented content unless verified. Current rating remains a dated reference and weekly rates remain clearly illustrative; supplied mockup imagery is a visual direction, not a reliable source of property facts.

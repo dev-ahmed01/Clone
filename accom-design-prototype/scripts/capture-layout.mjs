@@ -55,6 +55,9 @@ try {
       const after = await page.locator('.desktop-cta').boundingBox();
       assert.ok(after && after.y >= -2 && after.y <= 26, `${label}: CTA failed to stick, y=${after?.y}`);
       if (label === 'desktop') {
+        const landmarks = await Promise.all((await page.locator('.landmark-card').all()).map(el => el.boundingBox()));
+        assert.ok(Math.max(...landmarks.map(x => x.y)) - Math.min(...landmarks.map(x => x.y)) < 3, 'desktop landmarks should sit on one row');
+        assert.equal(await page.locator('.section-nav').evaluate(el => el.classList.contains('is-floating')), true, 'section navigation should remain available when scrolling');
         await page.screenshot({ path: new URL('./client-desktop-scrolled-sticky.png', output).pathname });
         await page.evaluate(() => window.scrollTo({ top: 660, behavior: 'instant' }));
         await page.waitForTimeout(100);

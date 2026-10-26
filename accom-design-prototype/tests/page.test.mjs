@@ -116,3 +116,13 @@ test('updated hero keeps accessible Save and Compare and actual product overview
   assert.equal((html.match(/id="save-property"/g)||[]).length,1);
   assert.equal((html.match(/id="open-compare"/g)||[]).length,1);
 });
+
+test('reference hero has seven desktop one-row landmarks and persistent scroll navigation', async () => {
+  const [css, script] = await Promise.all([
+    readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
+    readFile(new URL('../public/app.js', import.meta.url), 'utf8')
+  ]);
+  assert.match(css, /grid-template-columns: repeat\(7,minmax\(0,1fr\)\)/);
+  assert.match(css, /\.cta-card \.cta-benefit-copy \{[^}]*text-align: left/s);
+  assert.match(script, /function setupCompactSectionNavigation/);
+});
