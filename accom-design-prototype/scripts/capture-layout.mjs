@@ -69,6 +69,14 @@ try {
       await page.waitForTimeout(120);
       const after = await page.locator('.desktop-cta').boundingBox();
       assert.ok(after && after.y >= -2 && after.y <= 82, `${label}: CTA failed to stick below floating menu, y=${after?.y}`);
+      const googleMap = page.locator('.cta-google-map');
+      assert.equal(await googleMap.count(), 1, `${label}: missing Google Maps location iframe`);
+      assert.match(await googleMap.getAttribute('src'), /maps\.google\.com\/maps\?q=.*output=embed/);
+      assert.equal(await googleMap.getAttribute('loading'), 'lazy');
+      const googleMapBox = await googleMap.boundingBox();
+      assert.ok(googleMapBox && googleMapBox.width >= 220 && googleMapBox.height >= 140, `${label}: location map too small`);
+      const googleMapLink = page.locator('.cta-google-map-caption > a');
+      assert.ok((await googleMapLink.getAttribute('href')).includes('www.google.com/maps/search/?api=1'));
       const ctaSize = await page.locator('.cta-card').evaluate(el => ({
         height: el.getBoundingClientRect().height,
         overflowY: getComputedStyle(el).overflowY,
