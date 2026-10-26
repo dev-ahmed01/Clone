@@ -66,6 +66,7 @@ try {
       assert.ok(nav && g && nav.y >= g.y + g.height - 1, `${label}: section menu must follow gallery`);
       assert.ok(toolbar && toolbar.y < g.y, `${label}: Save and Compare must be beside property heading`);
       assert.ok(rail.y >= intro.y - 15 && rail.y <= g.y - 28, `${label}: sidebar should begin alongside property heading, above gallery: ${rail.y}, ${intro.y}, ${g.y}`);
+      console.log('FIRST_FOLD_GEOMETRY',JSON.stringify({label,height,hero:intro, gallery:g, navigation:nav, sidebar:rail}));
       assert.ok(nav.y < height - 55, `${label}: overview tabs should be visible above the fold`);
       const begin = rail.y;
       await page.screenshot({ path: new URL(`./reference-${label}-hero.png`, output).pathname });
