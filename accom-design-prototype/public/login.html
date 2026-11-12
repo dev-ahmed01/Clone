@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta name="description" content="Accom by Emlen student sign-in entry page.">
+  <title>Login | Accom by Emlen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="rail-refinement.css">
+  <link rel="stylesheet" href="site-routes.css">
+  <script src="dashboard-config.js" defer></script>
+  <script src="dashboard-link.js" defer></script>
+</head>
+<body class="simple-route">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accom by Emlen home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="brand-lockup"><span class="brand-name">accom</span><small class="brand-byline">BY EMLEN</small></span>
+    </a>
+    <nav class="header-nav" aria-label="Primary navigation">
+      <a class="site-nav-link site-nav-home" href="index.html">Home</a>
+      <a class="site-nav-link site-nav-listings" href="listing.html">Listings</a>
+      <a class="site-nav-login" href="login.html" aria-current="page">Login</a>
+    </nav>
+  </header>
+  <main id="main-content" class="simple-page simple-page-login">
+    <section class="auth-card" aria-labelledby="login-title">
+      <p class="auth-eyebrow">ACCOM BY EMLEN</p>
+      <h1 id="login-title">Sign in</h1>
+      <p class="auth-description">Access the Accom by Emlen dashboard using your existing account.</p>
+      <p class="auth-notice" id="login-availability" role="status">The AE dashboard login link will become available after its public address is configured. This public listing does not collect your password.</p>
+      <a class="auth-dashboard-link" href="#" hidden>Continue to AE dashboard <span aria-hidden="true">→</span></a>
+      <a class="auth-back" href="listing.html">Back to listing</a>
+    </section>
+  </main>
+</body>
+</html>

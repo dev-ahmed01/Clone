@@ -5,7 +5,7 @@ import { chromium } from 'playwright';
 const output = new URL('../screenshots/', import.meta.url);
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--no-sandbox'] });
-const target = 'http://127.0.0.1:4173/';
+const target = 'http://127.0.0.1:4173/listing.html';
 const failures = [];
 const results = [];
 try {
