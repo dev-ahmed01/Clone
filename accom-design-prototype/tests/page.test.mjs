@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 test('page exposes the required decision and dialog controls', async () => {
-  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  const html = await readFile(new URL('../public/listing.html', import.meta.url), 'utf8');
   for (const fragment of [
     '<main id="main-content"',
     'id="gallery-dialog"',
@@ -19,7 +19,7 @@ test('page exposes the required decision and dialog controls', async () => {
 
 test('comparison and mobile commitment retain accessible decision context', async () => {
   const [html, script, styles] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/app.js', import.meta.url), 'utf8'),
     readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
   ]);
@@ -33,7 +33,7 @@ test('comparison and mobile commitment retain accessible decision context', asyn
 
 test('client design contract and reachable mobile help are represented', async () => {
   const [html, styles] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
   ]);
   assert.match(html, /data-open-enquiry>Get help<\/button>/);
@@ -49,7 +49,7 @@ test('client design contract and reachable mobile help are represented', async (
 
 
 test('chosen concept has property actions above gallery and six pill tabs below', async () => {
-  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  const html = await readFile(new URL('../public/listing.html', import.meta.url), 'utf8');
   const hero = html.indexOf('class="hero-topline"');
   const title = html.indexOf('id="property-title"', hero);
   const actions = html.indexOf('class="gallery-actions"', hero);
@@ -65,7 +65,7 @@ test('chosen concept has property actions above gallery and six pill tabs below'
 });
 test('first visit is unselected and location tiles have seven consistent entries', async () => {
   const [html, css, script] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/styles.css', import.meta.url), 'utf8'),
     readFile(new URL('../public/app.js', import.meta.url), 'utf8')
   ]);
@@ -88,7 +88,7 @@ test('first visit is unselected and location tiles have seven consistent entries
 
 test('student-first sections use a coherent design and no simulated map', async () => {
   const [html, css, app] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/concept-one.css', import.meta.url), 'utf8'),
     readFile(new URL('../public/app.js', import.meta.url), 'utf8')
   ]);
@@ -107,7 +107,7 @@ test('student-first sections use a coherent design and no simulated map', async 
 });
 
 test('source-like facts and demo disclaimers remain visible', async () => {
-  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  const html = await readFile(new URL('../public/listing.html', import.meta.url), 'utf8');
   assert.ok(html.includes('11 reviews²'));
   assert.ok(html.includes('15 min walk'));
   assert.ok(html.includes('From · demo'));
@@ -118,7 +118,7 @@ test('source-like facts and demo disclaimers remain visible', async () => {
 
 test('approved design retains strict palette, visible glass tabs and functional showcase', async () => {
   const [html, css, data, js] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/approved-glass.css', import.meta.url), 'utf8'),
     readFile(new URL('../public/data.js', import.meta.url), 'utf8'),
     readFile(new URL('../public/app.js', import.meta.url), 'utf8')
@@ -142,7 +142,7 @@ test('approved design retains strict palette, visible glass tabs and functional 
 });
 
 test('merged student overview keeps landmarks as nested decision content and uses example house rules', async () => {
-  const html = await readFile(new URL('../public/index.html', import.meta.url),'utf8');
+  const html = await readFile(new URL('../public/listing.html', import.meta.url),'utf8');
   const css = await readFile(new URL('../public/site.css', import.meta.url),'utf8');
   const overview = html.indexOf('id="overview"');
   const highlights = html.indexOf('class="overview-highlights"', overview);
@@ -167,7 +167,7 @@ test('section scroll tracking observes house-rules and keeps the correct active 
 
 test('Bricolage headings and Montserrat metric captions have clear demo/source labelling', async () => {
  const [html,css] = await Promise.all([
-   readFile(new URL('../public/index.html',import.meta.url),'utf8'),
+   readFile(new URL('../public/listing.html',import.meta.url),'utf8'),
    readFile(new URL('../public/site.css',import.meta.url),'utf8')
  ]);
  assert.match(html,/Bricolage\+Grotesque/);
@@ -184,7 +184,7 @@ test('Bricolage headings and Montserrat metric captions have clear demo/source l
 
 test('sticky property card embeds actual Google Maps address and keeps a direct full-map link', async () => {
   const [html, css] = await Promise.all([
-    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
     readFile(new URL('../public/site.css', import.meta.url), 'utf8'),
   ]);
   assert.ok(html.includes('class="cta-area cta-google-map-card"'));
@@ -203,7 +203,7 @@ test('sticky property card embeds actual Google Maps address and keeps a direct 
 test('design-board pass keeps the first screen decision-focused and readable',async()=>{
  const [css,html]=await Promise.all([
    readFile(new URL('../public/site.css',import.meta.url),'utf8'),
-   readFile(new URL('../public/index.html',import.meta.url),'utf8')
+   readFile(new URL('../public/listing.html',import.meta.url),'utf8')
  ]);
  assert.ok(css.includes('Design Board pass'));
  assert.ok(css.includes('height: clamp(265px, 36vh, 315px)'));
@@ -218,7 +218,7 @@ test('design-board pass keeps the first screen decision-focused and readable',as
 
 test('compact first fold places Save and Compare by uppercase property name, removes duplicate metric cards',async()=>{
  const [html,css,js]=await Promise.all([
-  readFile(new URL('../public/index.html',import.meta.url),'utf8'),
+  readFile(new URL('../public/listing.html',import.meta.url),'utf8'),
   readFile(new URL('../public/site.css',import.meta.url),'utf8'),
   readFile(new URL('../public/app.js',import.meta.url),'utf8')
  ]);
@@ -236,7 +236,7 @@ test('compact first fold places Save and Compare by uppercase property name, rem
 
 test('client polish: two-font brand, no Compare counter, and map as final panel section',async()=>{
  const [html,js,css]=await Promise.all([
-   readFile(new URL('../public/index.html',import.meta.url),'utf8'),
+   readFile(new URL('../public/listing.html',import.meta.url),'utf8'),
    readFile(new URL('../public/app.js',import.meta.url),'utf8'),
    readFile(new URL('../public/rail-refinement.css',import.meta.url),'utf8')
  ]);
@@ -253,4 +253,26 @@ test('client polish: two-font brand, no Compare counter, and map as final panel 
  assert.ok(css.includes('height:min(650px, calc(100dvh - 145px))'));
  assert.ok(css.includes('cta-card:has(#cta-selected-details:not([hidden])) .cta-quickfacts'));
  assert.ok(css.includes('var(--font-heading)') && css.includes('var(--font-body)'));
+});
+
+
+test('public home, listing and login routes are connected without fake authentication', async () => {
+  const [home, listing, login, config, bridge] = await Promise.all([
+    readFile(new URL('../public/index.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/listing.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/login.html', import.meta.url), 'utf8'),
+    readFile(new URL('../public/dashboard-config.js', import.meta.url), 'utf8'),
+    readFile(new URL('../public/dashboard-link.js', import.meta.url), 'utf8'),
+  ]);
+  assert.ok(home.includes('<h1>Home</h1>'));
+  assert.ok(home.includes('href="listing.html">View listing'));
+  assert.ok(listing.includes('id="property-title"'));
+  for (const page of [home, listing, login]) {
+    assert.ok(page.includes('href="index.html"'));
+    assert.ok(page.includes('href="listing.html"'));
+    assert.ok(page.includes('class="site-nav-login" href="login.html"'));
+  }
+  assert.ok(bridge.includes("new URL('/login', origin)"));
+  assert.ok(config.includes("window.AE_DASHBOARD_ORIGIN = '';"));
+  assert.ok(!login.includes('type="password"'));
 });
