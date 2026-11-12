@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="rail-refinement.css">
   <link rel="stylesheet" href="site-routes.css">
+  <script src="dashboard-config.js" defer></script>
+  <script src="dashboard-link.js" defer></script>
 </head>
 <body class="simple-route">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -29,17 +31,11 @@
   <main id="main-content" class="simple-page simple-page-login">
     <section class="auth-card" aria-labelledby="login-title">
       <p class="auth-eyebrow">ACCOM BY EMLEN</p>
-      <h1 id="login-title">Login</h1>
-      <p class="auth-description">Sign in to your student account.</p>
-      <form aria-describedby="login-availability" onsubmit="return false">
-        <label for="login-email">Email address</label>
-        <input id="login-email" type="email" autocomplete="username" placeholder="you@example.com" disabled>
-        <label for="login-password">Password</label>
-        <input id="login-password" type="password" autocomplete="current-password" placeholder="Your password" disabled>
-        <button class="auth-submit" type="submit" disabled aria-disabled="true">Sign in</button>
-      </form>
-      <p class="auth-notice" id="login-availability" role="status">Student authentication is not connected to this public listing preview yet. No credentials are collected here.</p>
-      <a class="auth-back" href="listing.html">Explore the listing</a>
+      <h1 id="login-title">Sign in</h1>
+      <p class="auth-description">Access the Accom by Emlen dashboard using your existing account.</p>
+      <p class="auth-notice" id="login-availability" role="status">The AE dashboard login link will become available after its public address is configured. This public listing does not collect your password.</p>
+      <a class="auth-dashboard-link" href="#" hidden>Continue to AE dashboard <span aria-hidden="true">→</span></a>
+      <a class="auth-back" href="listing.html">Back to listing</a>
     </section>
   </main>
 </body>
