@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta name="description" content="Accom by Emlen student sign-in entry page.">
+  <title>Login | Accom by Emlen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="rail-refinement.css">
+  <link rel="stylesheet" href="site-routes.css">
+</head>
+<body class="simple-route">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accom by Emlen home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="brand-lockup"><span class="brand-name">accom</span><small class="brand-byline">BY EMLEN</small></span>
+    </a>
+    <nav class="header-nav" aria-label="Primary navigation">
+      <a class="site-nav-link site-nav-home" href="index.html">Home</a>
+      <a class="site-nav-link site-nav-listings" href="listing.html">Listings</a>
+      <a class="site-nav-login" href="login.html" aria-current="page">Login</a>
+    </nav>
+  </header>
+  <main id="main-content" class="simple-page simple-page-login">
+    <section class="auth-card" aria-labelledby="login-title">
+      <p class="auth-eyebrow">ACCOM BY EMLEN</p>
+      <h1 id="login-title">Login</h1>
+      <p class="auth-description">Sign in to your student account.</p>
+      <form aria-describedby="login-availability" onsubmit="return false">
+        <label for="login-email">Email address</label>
+        <input id="login-email" type="email" autocomplete="username" placeholder="you@example.com" disabled>
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" autocomplete="current-password" placeholder="Your password" disabled>
+        <button class="auth-submit" type="submit" disabled aria-disabled="true">Sign in</button>
+      </form>
+      <p class="auth-notice" id="login-availability" role="status">Student authentication is not connected to this public listing preview yet. No credentials are collected here.</p>
+      <a class="auth-back" href="listing.html">Explore the listing</a>
+    </section>
+  </main>
+</body>
+</html>
