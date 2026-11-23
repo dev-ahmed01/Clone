@@ -1856,6 +1856,185 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 @media(max-width:390px){
  #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{padding:21px 14px;gap:10px}
 }
+
+/* Student canvas: a warm, airy red-to-ivory gradient without image/scroll overlays. */
+body{
+ background-color:#fff9f7;
+ background-image:
+  radial-gradient(ellipse 54% 20% at 4% 12%,rgba(237,32,36,.16),transparent 74%),
+  radial-gradient(ellipse 49% 19% at 100% 30%,rgba(254,116,116,.13),transparent 78%),
+  radial-gradient(ellipse 65% 18% at 7% 54%,rgba(255,143,114,.13),transparent 73%),
+  radial-gradient(ellipse 60% 21% at 95% 78%,rgba(237,32,36,.09),transparent 75%),
+  linear-gradient(165deg,#fff8f6 0%,#fffdfc 19%,#fff4f0 44%,#fffdfb 66%,#fff8f5 88%,#fffefd 100%);
+ background-repeat:no-repeat;
+}
+/* Keep the hero/header crisp; add delicate glass translucency rather than a dark slab. */
+.site-header{
+ background:linear-gradient(105deg,rgba(20,34,56,.94),rgba(33,47,70,.86));
+ border-bottom:1px solid rgba(255,255,255,.13);
+ box-shadow:0 6px 25px rgba(15,28,49,.08);
+}
+/* Capsule comes down after the property hero and stays fixed in the viewport. */
+#scrollNav.section-nav{
+ position:fixed;
+ z-index:65;
+ top:14px;
+ left:50%;
+ right:auto;
+ width:min(990px,calc(100vw - 36px));
+ max-width:calc(100vw - 20px);
+ height:66px;
+ min-width:0;
+ margin:0;
+ padding:7px 12px 7px 16px;
+ display:flex;
+ align-items:center;
+ gap:12px;
+ border-radius:999px;
+ border:1px solid rgba(255,255,255,.84);
+ background:linear-gradient(120deg,rgba(255,255,255,.83),rgba(255,247,243,.73) 57%,rgba(255,255,255,.86));
+ backdrop-filter:blur(20px) saturate(165%)!important;
+ -webkit-backdrop-filter:blur(20px) saturate(165%)!important;
+ box-shadow:inset 0 1px 1px rgba(255,255,255,.96),inset 0 -1px 0 rgba(255,255,255,.3),0 18px 55px rgba(23,37,57,.15),0 3px 12px rgba(237,32,36,.07);
+ transform:translate3d(-50%,-112px,0) scale(.96);
+ opacity:0;
+ visibility:hidden;
+ pointer-events:none;
+ isolation:isolate;
+ transition:transform .5s cubic-bezier(.2,.85,.24,1.08),opacity .3s ease,visibility .3s;
+ will-change:transform;
+}
+#scrollNav.section-nav.shown{
+ transform:translate3d(-50%,0,0) scale(1);
+ opacity:1;
+ visibility:visible;
+ pointer-events:auto;
+}
+#scrollNav.section-nav::before{
+ content:"";
+ position:absolute;
+ inset:2px;
+ border-radius:inherit;
+ pointer-events:none;
+ background:linear-gradient(160deg,rgba(255,255,255,.39) 0%,transparent 38%,rgba(237,32,36,.025) 100%);
+ z-index:-1;
+}
+#scrollNav .section-nav-track{
+ position:relative;
+ z-index:1;
+ flex:1 1 auto;
+ min-width:0;
+ gap:3px;
+ overflow-x:auto;
+ overscroll-behavior-x:contain;
+ -webkit-overflow-scrolling:touch;
+ scroll-behavior:auto;
+ scrollbar-width:none;
+}
+#scrollNav .section-nav-track a{
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ flex:0 0 auto;
+ min-height:43px;
+ padding:10px 13px;
+ border-radius:999px;
+ color:#25364e;
+ font:650 12px/1.2 var(--font-body);
+ white-space:nowrap;
+ background:transparent;
+ transition:background .23s ease,color .23s ease,box-shadow .23s ease;
+}
+#scrollNav .section-nav-track a:hover{
+ color:#c82028;
+ background:rgba(237,32,36,.07);
+}
+#scrollNav .section-nav-track a.active{
+ color:#b51c25;
+ background:linear-gradient(135deg,rgba(255,224,221,.91),rgba(255,243,239,.92));
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.94),0 1px 7px rgba(237,32,36,.07);
+ font-weight:750;
+}
+#scrollNav .section-nav-actions{
+ position:relative;
+ z-index:1;
+ flex:0 0 auto;
+ display:flex;
+ align-items:center;
+ gap:3px;
+ padding:4px;
+ border:1px solid rgba(213,184,178,.3);
+ background:rgba(255,255,255,.49);
+ border-radius:999px;
+}
+#scrollNav .tiny-nav-action{
+ color:#22344c;
+ border-radius:999px;
+ min-height:40px;
+ padding:8px 10px;
+ font-weight:700;
+}
+#scrollNav .tiny-nav-action:hover{
+ color:#c82028;
+ background:rgba(237,32,36,.075);
+}
+#scrollNav .nav-orbit-dot{
+ position:absolute;
+ z-index:2;
+ left:0;
+ bottom:3px;
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ pointer-events:none;
+ background:radial-gradient(circle at 28% 25%,#fff 0%,#ffbdb9 22%,#ed2024 60%,#ae1324 100%);
+ border:1px solid rgba(255,255,255,.86);
+ box-shadow:0 1px 8px rgba(237,32,36,.4),0 0 0 4px rgba(237,32,36,.05);
+ transform:translate3d(var(--nav-orbit-x,32px),0,0);
+ transition:transform .46s cubic-bezier(.2,.84,.2,1);
+}
+#scrollNav .section-nav-track a:focus-visible,
+#scrollNav .tiny-nav-action:focus-visible{
+ outline:3px solid #d82431;
+ outline-offset:2px;
+}
+@supports not (backdrop-filter:blur(1px)){
+ #scrollNav.section-nav{background:rgba(255,251,249,.96)}
+}
+@media(max-width:1050px){
+ #scrollNav.section-nav{width:min(900px,calc(100vw - 28px));gap:7px}
+ #scrollNav .section-nav-track a{padding:10px 10px;font-size:11px}
+}
+@media(max-width:700px){
+ #scrollNav.section-nav{
+  top:10px;
+  width:calc(100vw - 20px);
+  height:58px;
+  padding:6px 8px 6px 12px;
+  gap:5px;
+ }
+ #scrollNav .section-nav-track{gap:1px}
+ #scrollNav .section-nav-track a{font-size:11px;min-height:42px;padding:9px 10px}
+ #scrollNav .section-nav-actions{gap:0;padding:2px}
+ #scrollNav .tiny-nav-action{min-height:40px;min-width:36px;padding:8px 6px}
+ #scrollNav .tiny-nav-action span{display:none}
+ #scrollNav .nav-orbit-dot{bottom:2px;width:9px;height:9px}
+}
+@media(max-width:390px){
+ #scrollNav.section-nav{width:calc(100vw - 14px);padding-left:8px}
+ #scrollNav .section-nav-track a{padding:9px 9px}
+}
+@media(max-height:590px){
+ #scrollNav.section-nav{top:7px;height:54px}
+}
+@media(prefers-reduced-motion:reduce){
+ #scrollNav.section-nav{transition:none!important;will-change:auto}
+ #scrollNav .nav-orbit-dot,#scrollNav .section-nav-track a{transition:none!important}
+}
+@media(prefers-contrast:more){
+ #scrollNav.section-nav{background:#fff!important;border-color:#8e9aab}
+ #scrollNav .section-nav-track a.active{background:#fce0dc}
+}
 </style>
 </head>
 <body>
@@ -1916,7 +2095,7 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 <div aria-hidden="true" class="nav-sentinel"></div>
 <nav aria-label="On this listing" class="section-nav" id="scrollNav" inert=""><div class="section-nav-track" id="navTrack">
 <a class="active" href="#overview">Overview</a><a href="#offers">Offers</a><a href="#amenities">Amenities</a><a href="#rooms">Rooms</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
-</div><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
+</div><span class="nav-orbit-dot" aria-hidden="true"></span><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
 <section class="section section-overview overview-editorial" id="overview" aria-labelledby="overview-heading">
   <div class="overview-story">
     <h2 id="overview-heading" class="overview-step" style="--step:0">About this student residence</h2>
@@ -2557,11 +2736,22 @@ $('#shareButton').addEventListener('click',async()=>{const url=window.location.h
 // Lightweight index: geometry is cached on resize/content changes, not read on each scroll.
 const stickyNav=$('#scrollNav'),stickyTrack=$('#navTrack'),propertyIntro=$('#property-identity');
 const stickyLinks=$$('.section-nav-track a');
-let stickyMarkers=[],introBottomY=0,previousActive='',previousVisibility=null,scrollFrame=0,geometryFrame=0;
+let stickyMarkers=[],introBottomY=0,previousActive='',previousVisibility=null,scrollFrame=0,geometryFrame=0,orbitFrame=0;
+function positionNavOrbit(){
+ orbitFrame=0;
+ if(!stickyNav||!stickyTrack)return;
+ const active=stickyTrack.querySelector('a.active');
+ if(!active)return;
+ const host=stickyNav.getBoundingClientRect(),target=active.getBoundingClientRect();
+ const orbWidth=window.innerWidth<=700?9:10;
+ stickyNav.style.setProperty('--nav-orbit-x',Math.round(target.left-host.left+target.width/2-orbWidth/2)+'px');
+}
+function scheduleNavOrbit(){if(!orbitFrame)orbitFrame=requestAnimationFrame(positionNavOrbit)}
+stickyTrack?.addEventListener('scroll',scheduleNavOrbit,{passive:true});
 function updateActiveSection(){
  if(!stickyNav||!propertyIntro)return;
  const y=window.scrollY,passed=y+105>=introBottomY;
- if(passed!==previousVisibility){previousVisibility=passed;stickyNav.classList.toggle('shown',passed);stickyNav.inert=!passed}
+ if(passed!==previousVisibility){previousVisibility=passed;stickyNav.classList.toggle('shown',passed);stickyNav.inert=!passed;if(passed)scheduleNavOrbit()}
  let active=stickyMarkers[0]?.id||'overview';
  for(const marker of stickyMarkers){if(marker.y>y+180)break;active=marker.id}
  if(active===previousActive)return;
@@ -2578,6 +2768,7 @@ function updateActiveSection(){
   if(link.left<track.left+8||link.right>track.right-8){
    stickyTrack.scrollLeft=Math.max(0,stickyTrack.scrollLeft+link.left-track.left-(track.width-link.width)/2);
   }
+  scheduleNavOrbit();
  }
 }
 function measureStickySections(){
@@ -2589,6 +2780,7 @@ function measureStickySections(){
   return el?{id,y:el.getBoundingClientRect().top+y}:null;
  }).filter(Boolean).sort((m,n)=>m.y-n.y);
  updateActiveSection();
+ scheduleNavOrbit();
 }
 function scheduleGeometryMeasure(){if(!geometryFrame)geometryFrame=requestAnimationFrame(measureStickySections)}
 function scheduleSectionUpdate(){
