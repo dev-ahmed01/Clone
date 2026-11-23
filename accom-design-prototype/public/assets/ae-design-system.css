@@ -738,3 +738,72 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   #about .about-feature-pill svg{width:21px;height:21px;flex-basis:21px}
   #about .about-feature-divider{height:23px}
 }
+
+/* Listing 2: direction-aware red fill on the About property feature pills.
+   The origin is the precise edge the pointer enters and leaves. */
+#about .about-feature-pill{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  transition:color .33s ease,border-color .33s ease,box-shadow .33s ease;
+}
+#about .about-feature-pill::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:var(--ae-red,#ED2024);
+  clip-path:circle(0% at var(--pill-fill-x,50%) var(--pill-fill-y,50%));
+  transition:clip-path .55s cubic-bezier(.22,.85,.25,1);
+}
+#about .about-feature-pill > svg,
+#about .about-feature-pill > span{
+  position:relative;
+  z-index:1;
+  transition:color .33s ease,stroke .33s ease,background-color .33s ease;
+}
+@media(hover:hover) and (pointer:fine){
+  #about .about-feature-pill:hover{
+    color:#fff;
+    border-color:var(--ae-red,#ED2024);
+    box-shadow:0 9px 20px rgba(237,32,36,.12);
+  }
+  #about .about-feature-pill:hover::before{
+    clip-path:circle(155% at var(--pill-fill-x,50%) var(--pill-fill-y,50%));
+  }
+  #about .about-feature-pill:hover svg{stroke:#fff}
+  #about .about-feature-pill:hover .about-feature-divider{background:rgba(255,255,255,.64)}
+}
+@media(prefers-reduced-motion:reduce){
+  #about .about-feature-pill,
+  #about .about-feature-pill::before,
+  #about .about-feature-pill > svg,
+  #about .about-feature-pill > span{transition:none!important}
+}
+
+/* Sticky pricing rail: matched vertical breathing room and equal internal
+   top/bottom padding. Never introduce an independently scrolling rail. */
+@media(min-width:801px){
+  .cta-aside{--rail-edge-gap:20px;--rail-inner-padding:24px}
+  .cta-aside .cta-sticky{
+    position:sticky!important;
+    top:calc(var(--listing-header-height,82px) + var(--listing-tabs-height,64px) + var(--rail-edge-gap))!important;
+    bottom:var(--rail-edge-gap)!important;
+    margin:0 0 var(--rail-edge-gap)!important;
+    padding:0!important;
+  }
+  .cta-aside .booking-card.booking-card--compact{
+    padding-top:var(--rail-inner-padding)!important;
+    padding-bottom:var(--rail-inner-padding)!important;
+    overflow:visible!important;
+  }
+}
+@media(min-width:801px) and (max-height:760px){
+  .cta-aside{--rail-edge-gap:12px;--rail-inner-padding:17px}
+  .cta-aside .booking-card.booking-card--compact{gap:12px!important}
+  .cta-aside .booking-card--compact .rail-nearby.rail-nearby--compact{padding:11px 13px!important}
+  .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header{margin-bottom:5px!important}
+  .cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row{min-height:35px;padding:6px 0!important}
+  .cta-aside .booking-card--compact .rail-controls button{min-height:43px!important;padding:10px 12px!important}
+}
