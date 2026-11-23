@@ -229,3 +229,41 @@
  .accom-we-gallery .we-tile,.accom-we-gallery .we-dock--grid{opacity:1;transform:none!important;transition:none!important}
  .we-lb .we-lb__frame img{transition:none!important}
 }
+
+
+/* Listing Page 2: rating ribbon rolls down at the LEFT of the property title.
+   Reserve its horizontal space for the title/address instead of overlapping text. */
+#property-identity > div:first-child{
+ padding-left:112px;
+ box-sizing:border-box;
+ min-width:0;
+}
+.gallery-ribbon-frame .gallery-ribbon-tab{
+ left:var(--gallery-ribbon-left,14px);
+ top:calc(100% - 1px);
+ transform-origin:50% 0;
+ backface-visibility:hidden;
+ animation:ae-rating-roll-down 1.15s cubic-bezier(.22,.85,.24,1) .14s both;
+}
+@keyframes ae-rating-roll-down{
+ 0%{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(-66px) rotateX(-84deg) scaleY(.12)}
+ 26%{opacity:1;clip-path:inset(0 0 55% 0);transform:translateY(-20px) rotateX(-38deg) scaleY(.68)}
+ 65%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(7px) rotateX(9deg) scaleY(1.035)}
+ 82%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(-3px) rotateX(-4deg) scaleY(.99)}
+ 100%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0) rotateX(0) scaleY(1)}
+}
+@media(max-width:800px){
+ #property-identity > div:first-child{padding-left:98px}
+}
+@media(max-width:550px){
+ #property-identity > div:first-child{padding-left:79px}
+}
+@media(max-width:365px){
+ #property-identity > div:first-child{padding-left:72px}
+ #property-identity .property-title-row h1{font-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+ .gallery-ribbon-frame .gallery-ribbon-tab{
+  animation:none!important;opacity:1;transform:none;clip-path:none;
+ }
+}
