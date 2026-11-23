@@ -958,33 +958,34 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 }
 @media(min-width:1200px) and (max-height:800px){:root{--rail-inset:24px}.cta-aside .booking-card{padding:17px 16px;gap:10px}.cta-aside .booking-card .price-line strong{font-size:36px}.cta-aside .booking-card .rail-title{font-size:19px}.cta-aside .booking-card .rail-nearby-list{gap:5px}.cta-aside .booking-card .rail-nearby-header{margin-bottom:7px}.cta-aside .booking-card .card-footnote{margin-top:8px}}
 
-/* Listing Page 2: yellow rating pennant hanging from the gallery edge.
-   Positioned outside the gallery's overflow:hidden so the tail is not clipped. */
+
+/* Listing Page 2: unfurling Sun Yellow rating ribbon anchored two spaces after Kingston.
+   The gallery stays clipped, while this ribbon sits in an unclipped outer frame. */
 .gallery-ribbon-frame{position:relative;isolation:isolate;z-index:2}
 .gallery-ribbon-tab{
- position:absolute;z-index:8;left:clamp(245px,34%,520px);bottom:-66px;
+ position:absolute;z-index:8;left:var(--gallery-ribbon-left,clamp(250px,24%,350px));bottom:-62px;
  width:76px;display:flex;flex-direction:column;align-items:center;
- color:var(--navy);text-decoration:none;filter:drop-shadow(0 9px 10px rgba(17,31,53,.24));
- transform-origin:top center;animation:gallery-ribbon-unfurl .62s cubic-bezier(.21,.8,.26,1) both
+ color:var(--navy);text-decoration:none;filter:drop-shadow(0 10px 10px rgba(17,31,53,.2));
+ transform-origin:top center;animation:gallery-ribbon-unroll 1.05s cubic-bezier(.24,.78,.22,1) both;
+ backface-visibility:hidden
 }
-.gallery-ribbon-tab:hover{filter:drop-shadow(0 12px 14px rgba(17,31,53,.33))}
-.gallery-ribbon-tab:focus-visible{outline:3px solid var(--red);outline-offset:5px;border-radius:5px}
-.gallery-ribbon-tab-fold{
- position:relative;display:block;flex:none;width:76px;height:12px;
- background:var(--navy);transform:skewX(-15deg) translateX(-4px);
- border-radius:2px 2px 0 0
+.gallery-ribbon-tab:hover{filter:drop-shadow(0 12px 14px rgba(17,31,53,.28))}
+.gallery-ribbon-tab:focus-visible{outline:3px solid var(--red);outline-offset:4px;border-radius:5px}
+.gallery-ribbon-tab::before{
+ content:"";position:absolute;top:-7px;left:-1px;width:calc(100% + 2px);height:10px;
+ border-radius:7px 7px 3px 3px;
+ background:linear-gradient(180deg,#ffe580 0%,#ffd044 55%,#f3ad00 100%);
+ box-shadow:0 2px 5px rgba(122,80,0,.17);z-index:2
 }
 .gallery-ribbon-tab-body{
  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
- width:76px;height:92px;padding:8px 4px 21px;overflow:hidden;
- background:linear-gradient(125deg,#ffe176 0%,#ffb900 45%,#ffc62f 100%);
- border-left:2px solid var(--navy);border-right:2px solid var(--navy);
- clip-path:polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);
- color:var(--navy)
+ width:100%;height:96px;padding:8px 4px 23px;overflow:hidden;
+ background:linear-gradient(115deg,#ffdc5c 0%,#ffb900 46%,#ffcb30 100%);
+ clip-path:polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);color:var(--navy)
 }
 .gallery-ribbon-tab-body::before{
  content:"";position:absolute;top:-10px;left:4px;width:11px;height:115px;
- background:linear-gradient(90deg,transparent,rgba(255,255,255,.38),transparent);
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);
  transform:rotate(11deg);pointer-events:none
 }
 .gallery-ribbon-tab-score{position:relative;font:800 23px/1 var(--font-title);letter-spacing:-.04em}
@@ -993,25 +994,23 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 .property-title-row h1{margin:0}
 .rating-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:650;color:var(--navy);text-decoration:none}
 .rating-link:hover{text-decoration:underline;text-underline-offset:3px}
-@keyframes gallery-ribbon-unfurl{
- from{opacity:.6;transform:translateY(-14px) scaleY(.68)}
- to{opacity:1;transform:translateY(0) scaleY(1)}
-}
-@media(max-width:1199px){
- .gallery-ribbon-tab{left:auto;right:44px}
+/* Reveals the tip progressively, like a ribbon rolling down off the photo edge. */
+@keyframes gallery-ribbon-unroll{
+ 0%{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(-10px) rotateX(-55deg) scaleY(.12)}
+ 30%{opacity:1;clip-path:inset(0 0 70% 0);transform:translateY(-6px) rotateX(-18deg) scaleY(.42)}
+ 72%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(3px) rotateX(3deg) scaleY(1.035)}
+ 100%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0) rotateX(0) scaleY(1)}
 }
 @media(max-width:800px){
- .gallery-ribbon-tab{right:30px;bottom:-54px;width:64px}
- .gallery-ribbon-tab-fold{width:64px;height:10px}
- .gallery-ribbon-tab-body{width:64px;height:78px;padding:5px 4px 18px}
+ .gallery-ribbon-tab{bottom:-52px;width:64px}
+ .gallery-ribbon-tab-body{height:82px;padding:5px 4px 19px}
  .gallery-ribbon-tab-score{font-size:19px}
  .gallery-ribbon-tab-stars{font-size:9px;margin-top:5px}
  .property-heading{padding-top:54px}
 }
 @media(max-width:550px){
- .gallery-ribbon-tab{right:22px;bottom:-51px;width:58px}
- .gallery-ribbon-tab-fold{width:58px;height:10px}
- .gallery-ribbon-tab-body{width:58px;height:74px;padding:5px 3px 18px}
+ .gallery-ribbon-tab{bottom:-49px;width:58px}
+ .gallery-ribbon-tab-body{height:78px;padding:5px 3px 18px}
  .gallery-ribbon-tab-score{font-size:18px}
  .gallery-ribbon-tab-stars{font-size:8px}
  .property-heading{padding-top:70px}
@@ -1065,7 +1064,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 <button class="gallery-view glass-pill" data-open-gallery="" type="button"><svg><use href="#grid"></use></svg> Show all 7 photos</button>
 </section>
 <a class="gallery-ribbon-tab" href="#reviews" aria-label="Rated 4.9 out of 5 stars, 11 reviews on Amber. View reviews.">
- <span class="gallery-ribbon-tab-fold" aria-hidden="true"></span>
+ 
  <span class="gallery-ribbon-tab-body" aria-hidden="true"><span class="gallery-ribbon-tab-score">4.9</span><span class="gallery-ribbon-tab-stars">★★★★★</span></span>
 </a>
 </div>
@@ -1379,6 +1378,26 @@ $$('[data-open-category]').forEach(button=>button.addEventListener('click',()=>{
 document.addEventListener('keydown',event=>{if(!dialog)return;if(event.key==='Escape'){event.preventDefault();closeDialog();return;}if(dialog.id==='galleryDialog'&&photoCategory!=='videos'&&(event.key==='ArrowLeft'||event.key==='ArrowRight')){event.preventDefault();changePhoto(event.key==='ArrowLeft'?-1:1);}if(event.key==='Tab'){
  const controls=$$('button:not([disabled]),input:not([disabled]),select:not([disabled]),a[href]',dialog).filter(el=>el.getClientRects().length>0);if(!controls.length)return;const first=controls[0],last=controls[controls.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
  }});
+
+
+/* Align the hanging rating ribbon exactly two text spaces beyond the Kingston heading,
+   without tying it to a hard-coded viewport width. */
+const ribbonAnchor=document.querySelector('.gallery-ribbon-tab');
+const ribbonTitle=document.querySelector('.property-title-row h1');
+const ribbonFrame=document.querySelector('.gallery-ribbon-frame');
+function positionGalleryRibbon(){
+ if(!ribbonAnchor||!ribbonTitle||!ribbonFrame)return;
+ const heading=ribbonTitle.getBoundingClientRect();
+ const frame=ribbonFrame.getBoundingClientRect();
+ const fontPx=parseFloat(getComputedStyle(ribbonTitle).fontSize)||48;
+ const twoSpaces=Math.round(fontPx*.42);
+ const intendedLeft=heading.right-frame.left+twoSpaces;
+ const maxLeft=frame.width-ribbonAnchor.offsetWidth-12;
+ ribbonFrame.style.setProperty('--gallery-ribbon-left',Math.round(Math.max(12,Math.min(intendedLeft,maxLeft)))+'px');
+}
+positionGalleryRibbon();
+document.fonts?.ready.then(positionGalleryRibbon);
+window.addEventListener('resize',positionGalleryRibbon,{passive:true});
 
 </script>
 </body></html>
