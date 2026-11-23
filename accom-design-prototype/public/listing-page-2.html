@@ -1620,6 +1620,76 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 @media(prefers-reduced-motion:reduce){
  #rooms .room-card,#rooms .room-term-actions button,#rooms .room-filter button{transition:none!important;transform:none!important}
 }
+
+/* Room navigation — full-width equal tabs with an active underline, no pill surfaces. */
+#rooms.rooms-redesign .rooms-heading{
+ display:flex;justify-content:space-between;align-items:center;gap:20px;
+ margin:0 0 24px;
+}
+#rooms.rooms-redesign .rooms-heading h2{
+ margin:0;font:700 clamp(34px,3.4vw,46px)/1.11 var(--font-title);
+ letter-spacing:-.047em;color:var(--navy);
+}
+#rooms.rooms-redesign .rooms-heading-stat{
+ display:inline-flex;align-items:center;gap:7px;white-space:nowrap;
+ padding:0;margin:0;border:0;border-radius:0;background:none;box-shadow:none;
+ color:var(--navy);font:500 14px/1.35 var(--font-body);
+}
+#rooms.rooms-redesign .rooms-heading-stat strong{
+ font:700 18px/1 var(--font-body);color:var(--red);
+}
+#rooms.rooms-redesign .rooms-heading-stat span{
+ font:500 14px/1.3 var(--font-body);color:var(--navy);
+}
+#rooms.rooms-redesign .rooms-toolbar{
+ display:block;margin:0 0 26px;padding:0;border:0;border-bottom:1px solid #e1e5e5;
+ border-radius:0;box-shadow:none;background:transparent;
+}
+#rooms.rooms-redesign .room-filter{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;
+ width:100%;margin:0;padding:0;overflow:visible;align-items:stretch;
+}
+#rooms.rooms-redesign .room-filter button{
+ position:relative;display:flex;align-items:center;justify-content:center;gap:0;
+ width:100%;min-width:0;min-height:63px;
+ padding:15px 8px 17px;border:0;border-radius:0;background:none;
+ color:#607183;font:500 clamp(12px,1.15vw,15px)/1.4 var(--font-body);
+ white-space:nowrap;box-shadow:none;transform:none;
+ transition:color .22s ease,background-color .22s ease;
+}
+#rooms.rooms-redesign .room-filter button::after{
+ content:"";position:absolute;bottom:-1px;left:0;right:0;height:3px;
+ background:var(--red);transform:scaleX(0);transform-origin:center;
+ transition:transform .3s cubic-bezier(.2,.8,.2,1);
+}
+#rooms.rooms-redesign .room-filter button.selected,
+#rooms.rooms-redesign .room-filter button[aria-pressed="true"]{
+ background:none;border:0;color:var(--navy);font-weight:600;
+}
+#rooms.rooms-redesign .room-filter button.selected::after,
+#rooms.rooms-redesign .room-filter button[aria-pressed="true"]::after{transform:scaleX(1)}
+#rooms.rooms-redesign .room-filter button:hover:not(.selected){
+ background:transparent;border:0;color:var(--red);
+}
+#rooms.rooms-redesign .room-filter button:focus-visible{
+ outline:2px solid var(--red);outline-offset:-5px;border-radius:4px;
+}
+@media(max-width:750px){
+ #rooms.rooms-redesign .rooms-heading-stat{display:inline-flex}
+ #rooms.rooms-redesign .room-filter{overflow:visible}
+}
+@media(max-width:550px){
+ #rooms.rooms-redesign .rooms-heading{gap:12px;margin-bottom:17px}
+ #rooms.rooms-redesign .rooms-heading h2{font-size:clamp(28px,7.2vw,34px)}
+ #rooms.rooms-redesign .rooms-heading-stat strong{font-size:16px}
+ #rooms.rooms-redesign .rooms-heading-stat span{font-size:11px}
+ #rooms.rooms-redesign .room-filter button{min-height:55px;padding:12px 4px 14px;font-size:12px}
+ #rooms.rooms-redesign .rooms-toolbar{margin-bottom:20px}
+}
+@media(prefers-reduced-motion:reduce){
+ #rooms.rooms-redesign .room-filter button,
+ #rooms.rooms-redesign .room-filter button::after{transition:none!important}
+}
 </style>
 </head>
 <body>
@@ -1757,17 +1827,16 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 <section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
   <div class="rooms-wrap">
     <header class="rooms-heading">
-      <div><h2 id="roomsTitle">Find a room that fits.</h2><p>Explore the en suites and studios listed for iQ Kingston. Compare your space, kitchen setup and weekly rate before enquiring.</p></div>
-      <span class="rooms-heading-stat"><strong>5</strong><span>Room styles</span></span>
+      <div><h2 id="roomsTitle">Find a room that fits.</h2></div>
+      <span class="rooms-heading-stat" aria-label="5 room styles"><strong>5</strong><span>Room styles</span></span>
     </header>
-    <div class="rooms-toolbar">
-      <div class="room-filter" role="group" aria-label="Filter room types">
-        <button type="button" class="selected" data-room-filter="all" aria-pressed="true">All rooms <span class="room-tab-count">5</span></button>
-        <button type="button" data-room-filter="ensuite" aria-pressed="false">En suites <span class="room-tab-count">4</span></button>
-        <button type="button" data-room-filter="studio" aria-pressed="false">Studios <span class="room-tab-count">1</span></button>
+    <nav class="rooms-toolbar" aria-label="Room type categories">
+      <div class="room-filter" role="group" aria-label="Filter rooms by type">
+        <button type="button" class="selected" data-room-filter="all" aria-pressed="true">All rooms</button>
+        <button type="button" data-room-filter="ensuite" aria-pressed="false">En suites</button>
+        <button type="button" data-room-filter="studio" aria-pressed="false">Studios</button>
       </div>
-      <div class="rooms-snapshot">From <strong>£315/week</strong> <span>· dated listing snapshot</span></div>
-    </div>
+    </nav>
     <div class="rooms-family-intro" aria-live="polite"><span class="rooms-family-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19V7m0 9h18v3M3 11h18v5H3zM7 11V8h10v3"/></svg></span><div><h3 id="roomFamilyTitle">En suites &amp; studios</h3><p id="roomFamilyDescription">En suites share a kitchen; studios give you your own kitchenette. Both include a private bathroom.</p></div></div>
     <div class="room-list" id="roomList" aria-label="Available room styles in the listing"></div>
     <p class="rooms-source-note">Prices and move-in dates shown are historical snapshots from Amber’s iQ Kingston listing on 28 October 2026, not real-time availability or booking quotes. Room dimensions are approximate; ask the operator to confirm tenancy dates, full costs and room features. Photos are illustrative concepts.</p>
