@@ -1634,19 +1634,17 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
 @media(max-width:550px){#rooms.rooms-redesign{padding:15px 0 29px!important}#rooms.rooms-redesign .rooms-wrap{padding:26px 16px}}
 
 
-/* Right-aligned stepped House Rules: common right edge, progressively inset left edges. */
-#rules.rules-staircase{display:block!important;background:transparent!important;border:0!important;padding:47px 0 65px!important;scroll-margin-top:116px}
+/* House Rules: equal-sized rectangular cards, alternating left and right. */
+#rules.rules-staircase{display:block!important;background:transparent!important;border:0!important;padding:47px 0 64px!important;scroll-margin-top:116px}
 #rules .rules-staircase-heading{margin-bottom:30px}
 #rules .rules-staircase-heading h2{font:700 clamp(34px,3.3vw,45px)/1.12 var(--font-title)!important;color:var(--navy)!important;letter-spacing:-.04em;margin:0 0 12px}
 #rules .rules-staircase-heading p{font:400 14px/1.6 var(--font-body);color:#647186;margin:0}
-#rules .rules-staircase-list{display:flex;flex-direction:column;align-items:stretch;gap:15px}
-#rules .rules-step-card{align-self:flex-end;box-sizing:border-box;background:#fff;border:1px solid #e9e4e0;border-radius:16px;box-shadow:0 8px 24px rgba(17,31,53,.045);overflow:hidden;max-width:100%;margin:0}
-#rules .rules-step-card:nth-child(1){width:100%}
-#rules .rules-step-card:nth-child(2){width:90%}
-#rules .rules-step-card:nth-child(3){width:80%}
-#rules .rules-step-card:nth-child(4){width:70%}
+#rules .rules-staircase-list{display:flex;flex-direction:column;align-items:stretch;gap:16px}
+#rules .rules-step-card:nth-child(n){width:82%;max-width:82%;box-sizing:border-box;background:#fff;border:1px solid #e9e4e0;border-radius:16px;box-shadow:0 8px 24px rgba(17,31,53,.045);overflow:hidden;margin:0}
+#rules .rules-step-card:nth-child(odd){align-self:flex-start}
+#rules .rules-step-card:nth-child(even){align-self:flex-end}
 #rules .rules-step-card[open]{border-color:#efc6c4;background:#fffdfb}
-#rules .rules-step-card>summary{cursor:pointer;display:flex;align-items:center;gap:16px;min-height:100px;list-style:none;padding:17px 21px}
+#rules .rules-step-card>summary{cursor:pointer;display:flex;align-items:center;gap:16px;min-height:108px;list-style:none;padding:17px 21px}
 #rules .rules-step-card>summary::-webkit-details-marker{display:none}
 #rules .rules-step-card>summary::marker{content:""}
 #rules .rules-step-card>summary:focus-visible{outline:3px solid #ffb900;outline-offset:-5px}
@@ -1662,22 +1660,20 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
 #rules .rules-step-detail p{color:#536276;font:400 13px/1.75 var(--font-body);margin:0;max-width:700px}
 #rules .rules-staircase-note{text-align:right;color:#7b8896;font:400 11px/1.6 var(--font-body);margin:19px 0 0}
 @media(prefers-reduced-motion:no-preference){
- html.rules-sequence-ready #rules .rules-step-card{opacity:0;transform:translate3d(0,26px,0);transition:opacity .66s ease,transform .72s cubic-bezier(.22,.8,.22,1);transition-delay:var(--step-delay,0ms)}
+ html.rules-sequence-ready #rules .rules-step-card{opacity:0;transform:translate3d(var(--rule-enter-x,-24px),24px,0);transition:opacity .64s ease,transform .72s cubic-bezier(.22,.8,.22,1);transition-delay:var(--step-delay,0ms)}
+ html.rules-sequence-ready #rules .rules-step-card:nth-child(even){--rule-enter-x:24px}
  html.rules-sequence-ready #rules .rules-staircase-list.is-visible .rules-step-card{opacity:1;transform:translate3d(0,0,0)}
 }
 @media(max-width:800px){
- #rules .rules-step-card:nth-child(1){width:100%}
- #rules .rules-step-card:nth-child(2){width:94%}
- #rules .rules-step-card:nth-child(3){width:88%}
- #rules .rules-step-card:nth-child(4){width:82%}
- #rules .rules-step-card>summary{min-height:85px;padding:14px;gap:11px}
+ #rules .rules-step-card:nth-child(n){width:88%;max-width:88%}
+ #rules .rules-step-card>summary{min-height:94px;padding:14px;gap:11px}
  #rules .rules-step-icon{width:42px;height:42px;flex-basis:42px}
  #rules .rules-step-copy strong{font-size:15px}
  #rules .rules-step-detail{padding:0 20px 21px 69px}
 }
 @media(max-width:550px){
- #rules .rules-step-card:nth-child(n){width:100%}
- #rules .rules-step-card>summary{min-height:79px}
+ #rules .rules-step-card:nth-child(n){width:100%;max-width:100%}
+ #rules .rules-step-card>summary{min-height:85px}
  #rules .rules-step-copy small{font-size:11px}
  #rules .rules-step-detail{padding:0 18px 20px}
  #rules .rules-staircase-heading h2{font-size:32px!important}
@@ -1685,7 +1681,59 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
 @media(prefers-reduced-motion:reduce){
  #rules .rules-step-card,#rules .rules-step-arrow svg{transition:none!important;opacity:1!important;transform:none!important}
 }
-
+/* Payments & fees: reference-style right-side rows plus a sticky explanatory card on the left. */
+#payments.payments-story{display:block!important;padding:28px 0 43px!important;margin:0 0 20px!important;background:transparent!important;border:0!important;scroll-margin-top:125px}
+#payments .payments-story-surface{display:grid;grid-template-columns:minmax(240px,.83fr) minmax(0,1.17fr);gap:clamp(26px,4vw,50px);padding:42px clamp(24px,4vw,49px) 39px;background:#fff;border:1px solid #eae4df;border-radius:30px;box-shadow:0 12px 36px rgba(17,31,53,.035)}
+#payments .payments-story-left{position:sticky;top:132px;align-self:start;min-width:0}
+#payments .payments-story-heading h2{font:700 clamp(37px,3.8vw,49px)/1.03 var(--font-title);letter-spacing:-.05em;color:var(--navy);margin:0}
+#payments .payments-story-heading h2 span{display:inline}
+#payments .payments-story-underline{display:block;width:55px;height:4px;border-radius:4px;background:var(--red);margin:22px 0 29px}
+#payments .payment-detail-panel{background:linear-gradient(155deg,#fff8f5,#fffdfb);border:1px solid #f1ded7;border-radius:22px;padding:27px 26px 30px;min-height:296px;box-sizing:border-box}
+#payments .payment-detail-meta{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:21px;color:#b5484d;font:700 11px/1 var(--font-body);letter-spacing:.08em}
+#payments .payment-detail-meter{display:block;overflow:hidden;width:77px;height:3px;border-radius:99px;background:#f3d9d3}
+#payments #paymentDetailMeter{display:block;width:25%;height:100%;background:var(--red);border-radius:99px;transition:width .3s ease}
+#payments .payment-detail-inner h3{font:700 clamp(21px,2vw,26px)/1.21 var(--font-title);color:var(--navy);margin:0 0 13px}
+#payments .payment-detail-inner>p#paymentDetailSummary{font:400 13px/1.74 var(--font-body);color:#586579;margin:0 0 17px}
+#payments .payment-detail-prompt{font:650 12px/1.5 var(--font-body);color:#273750;margin:0 0 10px}
+#payments .payment-detail-questions{margin:0;padding-left:18px;color:#59697c;font:400 12px/1.65 var(--font-body)}
+#payments .payment-detail-questions li{padding-left:3px;margin:0 0 7px}
+#payments .payment-detail-questions li::marker{color:var(--red)}
+#payments .payment-detail-inner.is-switching{animation:payment-detail-swap .34s cubic-bezier(.2,.76,.25,1) both}
+@keyframes payment-detail-swap{from{opacity:.2;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+#payments .payments-story-right{display:flex;flex-direction:column;gap:15px;min-width:0}
+#payments .payment-topic{display:grid;grid-template-columns:54px minmax(0,1fr) 19px;align-items:start;gap:14px;min-height:177px;padding:21px 18px;text-align:left;border:1px solid transparent;border-bottom-color:#ece6e1;border-radius:18px;background:#fff;cursor:pointer;color:var(--navy);width:100%;font:inherit;transition:background .25s,border-color .25s,box-shadow .25s}
+#payments .payment-topic.is-active{background:#fff5f0;border:1px solid #f6e1d7;box-shadow:0 6px 20px rgba(237,32,36,.025)}
+#payments .payment-topic:focus-visible{outline:3px solid #ffb900;outline-offset:2px}
+#payments .payment-topic-icon{display:grid;place-items:center;width:50px;height:50px;background:#fff0ed;border-radius:13px;color:#ed2024}
+#payments .payment-topic-icon svg{width:25px;height:25px}
+#payments .payment-topic-copy{display:flex;flex-direction:column;gap:10px}
+#payments .payment-topic-copy strong{font:700 18px/1.3 var(--font-title);color:var(--navy)}
+#payments .payment-topic-copy>span{font:500 12px/1.45 var(--font-body);color:#59697d}
+#payments .payment-topic-copy small{font:400 12px/1.65 var(--font-body);color:#647288}
+#payments .payment-topic-arrow{display:grid;place-items:center;align-self:start;width:19px;height:24px;color:#b3bbc5;opacity:.65;transition:transform .25s,color .25s,opacity .25s}
+#payments .payment-topic-arrow svg{width:15px;height:15px}
+#payments .payment-topic.is-active .payment-topic-arrow{transform:translateX(2px);color:var(--red);opacity:1}
+#payments .payments-story-note{font:400 11px/1.6 var(--font-body);color:#7c8796;margin:15px 3px 0}
+@media(max-width:900px){
+ #payments .payments-story-surface{grid-template-columns:minmax(200px,.84fr) minmax(0,1.16fr);gap:22px;padding:30px 23px}
+ #payments .payment-detail-panel{padding:22px 19px;min-height:290px}
+ #payments .payment-topic{grid-template-columns:44px minmax(0,1fr) 15px;gap:11px;padding:17px 12px;min-height:178px}
+ #payments .payment-topic-icon{width:42px;height:42px}
+}
+@media(max-width:700px){
+ #payments .payments-story-surface{grid-template-columns:1fr;gap:23px;border-radius:23px;padding:27px 19px}
+ #payments .payments-story-left{position:relative;top:auto}
+ #payments .payments-story-heading h2 br{display:none}
+ #payments .payments-story-heading h2 span{display:inline}
+ #payments .payments-story-underline{margin:13px 0 20px}
+ #payments .payment-detail-panel{min-height:0}
+ #payments .payment-topic{min-height:0;padding:17px 13px}
+ #payments .payment-topic-copy strong{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ #payments .payment-detail-inner.is-switching{animation:none}
+ #payments .payment-topic,#payments .payment-topic-arrow,#payments #paymentDetailMeter{transition:none!important}
+}
 </style>
 </head>
 <body>
@@ -1829,7 +1877,49 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
     </details>
   </div>
   <p class="rules-staircase-note">The property's current written policies and signed agreement take precedence.</p>
-</section><section class="section" id="payments"><h2>Payments &amp; fees</h2><div class="payments-grid"><div><strong>Rent instalments</strong><p>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p></div><div><strong>Booking fee</strong><p>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</p></div><div><strong>Deposit and cancellations</strong><p>Request the full written fee schedule and cancellation terms before signing.</p></div><div><strong>Total contract cost</strong><p>Ask for the full-rent total, not just the weekly price.</p></div></div></section>
+</section><section class="section payments-story" id="payments" aria-labelledby="paymentsTitle">
+ <div class="payments-story-surface">
+  <div class="payments-story-left">
+   <div class="payments-story-heading"><h2 id="paymentsTitle">Payments<br><span>&amp; fees.</span></h2><span class="payments-story-underline" aria-hidden="true"></span></div>
+   <div class="payment-detail-panel" id="paymentDetailPanel" role="region" aria-labelledby="paymentDetailHeading">
+    <div class="payment-detail-meta"><span id="paymentDetailCount">01 / 04</span><span class="payment-detail-meter" aria-hidden="true"><span id="paymentDetailMeter"></span></span></div>
+    <div class="payment-detail-inner" id="paymentDetailInner">
+     <h3 id="paymentDetailHeading">Rent instalments</h3>
+     <p id="paymentDetailSummary">Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p>
+     <p class="payment-detail-prompt">Before you decide, confirm:</p>
+     <ul class="payment-detail-questions" id="paymentDetailQuestions">
+      <li>Whether instalments are available for your tenancy</li>
+      <li>Any guarantor requirements</li>
+      <li>The complete payment schedule and due dates</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="payments-story-right" id="paymentsTopicList" aria-label="Payment and fee topics">
+    <button type="button" class="payment-topic is-active" data-payment-index="0" aria-pressed="true" aria-controls="paymentDetailPanel">
+     <span class="payment-topic-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="14" rx="2"/><path d="M4 10h16M8 4h10m-3 9h3"/></svg></span>
+     <span class="payment-topic-copy"><strong>Rent instalments</strong><span>Check the schedule and any guarantor requirements</span><small>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</small></span>
+     <span class="payment-topic-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 5 7 7-7 7"/></svg></span>
+    </button>
+    <button type="button" class="payment-topic" data-payment-index="1" aria-pressed="false" aria-controls="paymentDetailPanel">
+     <span class="payment-topic-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>
+     <span class="payment-topic-copy"><strong>Booking fee</strong><span>Understand the amount and refund conditions</span><small>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</small></span>
+     <span class="payment-topic-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 5 7 7-7 7"/></svg></span>
+    </button>
+    <button type="button" class="payment-topic" data-payment-index="2" aria-pressed="false" aria-controls="paymentDetailPanel">
+     <span class="payment-topic-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5z"/><path d="m8.5 12 2.5 2.5 5-5"/></svg></span>
+     <span class="payment-topic-copy"><strong>Deposit and cancellations</strong><span>Review the written agreement before signing</span><small>Request the full written fee schedule and cancellation terms before signing.</small></span>
+     <span class="payment-topic-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 5 7 7-7 7"/></svg></span>
+    </button>
+    <button type="button" class="payment-topic" data-payment-index="3" aria-pressed="false" aria-controls="paymentDetailPanel">
+     <span class="payment-topic-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8v4H8zM8 14h2m4 0h2m-8 4h2m4 0h2"/></svg></span>
+     <span class="payment-topic-copy"><strong>Total contract cost</strong><span>Look beyond the weekly advertised rate</span><small>Ask for the full-rent total, not just the weekly price.</small></span>
+     <span class="payment-topic-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 5 7 7-7 7"/></svg></span>
+    </button>
+  </div>
+ </div>
+ <p class="payments-story-note">Exact amounts, payment plans and policies must be checked against the current contract.</p>
+</section>
 <section class="section" id="floorplan"><h2>Floor plans</h2><div class="inline-request"><div><strong>See the layout before you decide.</strong><p>Ask for the floor plan and dimensions for your specific room type. Verified plans aren't available in this design concept.</p></div><button class="outline-button" data-enquire="" type="button">Request floor plan</button></div></section>
 <section class="section" id="neighbourhood"><h2>Life beyond your room</h2><div class="neighbourhood-layout"><img alt="Neighbourhood concept image" data-asset="assets/building.webp" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div><p>Wood Street puts you close to Kingston’s shops, cafés and riverside. The town centre includes the Bentall Centre, the Ancient Market Place and other everyday essentials.</p><p>For study days, check your route to the specific Kingston University campus. For weekends, the River Thames and Canbury Gardens offer a change of pace.</p><a class="source-link" href="https://www.google.com/maps/search/?api=1&amp;query=15+Wood+Street+Kingston+upon+Thames+KT1+1TY" rel="noopener noreferrer" target="_blank">Explore the area on Maps <svg><use href="#arrow"></use></svg></a></div></div></section>
 <section class="section" id="faqs"><h2>Frequently asked questions</h2><label class="faq-search"><svg><use href="#info"></use></svg><input aria-label="Search frequently asked questions" id="faqSearch" placeholder="Search questions" type="search"/></label><div class="disclosure-list" id="faqList"><details><summary>What is included in the rent? <span>+</span></summary><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></details><details><summary>What is the difference between an en suite and a studio? <span>+</span></summary><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></details><details><summary>Can I reserve a specific room? <span>+</span></summary><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></details><details><summary>Is there a guarantor requirement? <span>+</span></summary><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></details><details><summary>Are viewings available? <span>+</span></summary><p>Ask the property team for the latest viewing or virtual tour options.</p></details></div><p hidden="" id="faqEmpty">No matching questions.</p></section>
@@ -2047,6 +2137,80 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
   </div>
 </dialog>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script id="paymentsStoryInteraction">
+(() => {
+ const section=document.getElementById('payments');
+ const buttons=Array.from(section?.querySelectorAll('[data-payment-index]')||[]);
+ const panel=document.getElementById('paymentDetailPanel');
+ const inner=document.getElementById('paymentDetailInner');
+ if(!section||!panel||!inner||buttons.length!==4)return;
+ const title=document.getElementById('paymentDetailHeading');
+ const summary=document.getElementById('paymentDetailSummary');
+ const questions=document.getElementById('paymentDetailQuestions');
+ const count=document.getElementById('paymentDetailCount');
+ const meter=document.getElementById('paymentDetailMeter');
+ const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const topics=[
+  {
+   title:'Rent instalments',
+   summary:'Instalment options may be available with a qualifying guarantor, subject to the current agreement.',
+   questions:['Whether instalments are available for your chosen tenancy','Whether a qualifying guarantor is required','The full payment schedule and each due date']
+  },
+  {
+   title:'Booking fee',
+   summary:'Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.',
+   questions:['The exact amount payable to reserve your room','Whether the amount is refundable and under which conditions','When it is due and how it is treated in your contract']
+  },
+  {
+   title:'Deposit and cancellations',
+   summary:'Request the full written fee schedule and cancellation terms before signing.',
+   questions:['The deposit amount and any deductions or refund conditions','The cancellation deadline for your selected agreement','What documentation may be required if circumstances change']
+  },
+  {
+   title:'Total contract cost',
+   summary:'Ask for the full-rent total, not just the weekly price.',
+   questions:['Your exact tenancy start and end dates','The total rent for the full agreement','Any additional charges and payment deadlines in writing']
+  }
+ ];
+ let current=0,manualUntil=0,frame=0;
+ function select(index,manual=false){
+  if(index<0||index>=topics.length)return;
+  if(manual)manualUntil=Date.now()+1000;
+  if(index===current)return;
+  current=index;
+  buttons.forEach((button,i)=>{
+   const active=i===index;
+   button.classList.toggle('is-active',active);
+   button.setAttribute('aria-pressed',String(active));
+  });
+  const topic=topics[index];
+  title.textContent=topic.title;summary.textContent=topic.summary;
+  questions.replaceChildren(...topic.questions.map(line=>{
+    const item=document.createElement('li');
+    item.textContent=line;
+    return item;
+  }));
+  count.textContent=String(index+1).padStart(2,'0')+' / 04';
+  meter.style.width=((index+1)/topics.length*100)+'%';
+  if(!reduceMotion.matches){inner.classList.remove('is-switching');void inner.offsetWidth;inner.classList.add('is-switching');}
+ }
+ buttons.forEach((button,i)=>button.addEventListener('click',()=>select(i,true)));
+ function syncScroll(){
+  frame=0;
+  if(Date.now()<manualUntil)return;
+  const bounds=section.getBoundingClientRect(),height=window.innerHeight;
+  if(bounds.bottom<70||bounds.top>height-70)return;
+  const line=Math.max(175,Math.min(430,height*.43));
+  let best=0;
+  buttons.forEach((button,i)=>{if(button.getBoundingClientRect().top<=line)best=i;});
+  select(best);
+ }
+ const schedule=()=>{if(!frame)frame=requestAnimationFrame(syncScroll);};
+ window.addEventListener('scroll',schedule,{passive:true});
+ window.addEventListener('resize',schedule,{passive:true});
+ requestAnimationFrame(schedule);
+})();
+</script>
 <script id="rulesStaircaseAnimation">
 (() => {
  const stack=document.getElementById('rulesStaircase');
@@ -2439,7 +2603,7 @@ if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-moti
   add('#rooms .room-pricing-summary, #rooms .room-filter',['left','right'],[60,60]);
   add('#rooms .rooms-wrap',['up'],[65]);
   add('#faqs .disclosure-list > details',['left','right','lowerLeft','lowerRight'],[60,60,220,220]);
-  add('#payments .payments-grid > div',['left','right','lowerLeft','lowerRight'],[60,60,230,230]);
+  add('#payments .payments-story-heading',['up'],[75]);
   add('#floorplan .inline-request',['up']);
   add('#neighbourhood .neighbourhood-layout > img, #neighbourhood .neighbourhood-layout > div',['left','right'],[70,70]);
   add('#location .location-illustration, #location .landmarks-detail',['left','right'],[90,90]);
