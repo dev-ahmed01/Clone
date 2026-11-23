@@ -675,3 +675,12 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 @media(max-width:365px){
  :root{--ae-h1:32px}
 }
+
+/* Listing Page 2: move the existing About property reading card into the
+   first content slot, retaining both section and Description scroll anchors. */
+#overview.property-about-slot{
+  scroll-margin-top:calc(var(--listing-header-height,82px) + var(--listing-tabs-height,64px) + 22px);
+  margin:0 0 30px;
+  min-width:0;
+}
+#overview.property-about-slot > #about.about-editorial{margin:0}
