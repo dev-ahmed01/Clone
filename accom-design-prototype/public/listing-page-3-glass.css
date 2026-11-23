@@ -1,0 +1,181 @@
+/* Listing Page 3: transparent red/ivory student glass, persistent chapter navigation.
+   This late-loading stylesheet intentionally wins over legacy inline overrides. */
+:root{
+ --p3-pane:linear-gradient(135deg,rgba(255,255,255,.72),rgba(255,248,244,.49) 62%,rgba(255,237,233,.39));
+ --p3-pane-strong:linear-gradient(145deg,rgba(255,255,255,.79),rgba(255,249,246,.59));
+ --p3-edge:rgba(255,255,255,.9);
+ --p3-shadow:0 18px 46px rgba(73,42,51,.095),0 3px 12px rgba(42,39,52,.04),inset 0 1px 0 rgba(255,255,255,.92);
+ --font-body:'Montserrat','Poppins',Arial,sans-serif;
+}
+html{background:#fff7f2!important;scroll-padding-top:108px}
+body{
+ background:radial-gradient(ellipse 60% 14% at 4% 10%,rgba(237,32,36,.19),transparent 80%),
+ radial-gradient(ellipse 65% 17% at 96% 29%,rgba(255,185,0,.13),transparent 78%),
+ radial-gradient(ellipse 60% 17% at 8% 52%,rgba(239,84,101,.13),transparent 80%),
+ radial-gradient(ellipse 60% 15% at 92% 76%,rgba(237,32,36,.14),transparent 80%),
+ linear-gradient(155deg,#fff7f2,#fffdf9 28%,#fff3ef 57%,#fffaf6 100%)!important;
+ background-attachment:scroll!important;color:#17253a;
+}
+/* Navigation header and photographic controls. */
+.site-header#top,.site-header{
+ background:linear-gradient(112deg,rgba(255,255,255,.76),rgba(255,245,241,.55))!important;
+ border-bottom:1px solid rgba(255,255,255,.93)!important;
+ box-shadow:0 9px 30px rgba(91,49,56,.085),inset 0 1px 0 #fff!important;
+ backdrop-filter:blur(19px) saturate(155%)!important;
+ -webkit-backdrop-filter:blur(19px) saturate(155%)!important;
+}
+.site-header .header-contact{
+ background:linear-gradient(120deg,#c4141d,#ed2024)!important;color:#fff!important;
+ border:1px solid rgba(255,255,255,.26)!important;
+ box-shadow:0 8px 24px rgba(237,32,36,.18)!important;
+}
+.site-header .header-contact:hover{background:#b70f19!important}
+.site-header .icon-button,.gallery-view,.gallery-category-menu{
+ background:rgba(255,255,255,.68)!important;
+ border:1px solid rgba(255,255,255,.88)!important;
+ box-shadow:0 8px 24px rgba(50,43,55,.07),inset 0 1px 0 rgba(255,255,255,.94);
+ backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px);
+}
+.gallery{border:1px solid rgba(255,255,255,.88);box-shadow:0 20px 49px rgba(55,38,49,.14)}
+.property-heading{border-bottom-color:rgba(131,99,108,.15)!important}
+/* Primary glass surfaces retain their editorial and responsive layouts. */
+#overview.section-overview{
+ background:var(--p3-pane)!important;border:1px solid var(--p3-edge)!important;
+ border-radius:27px!important;box-shadow:var(--p3-shadow)!important;
+ padding:35px clamp(22px,3.4vw,38px)!important;margin:22px 0 18px!important;
+ backdrop-filter:blur(13px) saturate(140%);-webkit-backdrop-filter:blur(13px) saturate(140%);
+}
+#about.about-editorial>.about-editorial-surface,
+#amenities .amenity-editorial-surface,
+#rooms.rooms-redesign .rooms-wrap,
+#payments.payments-story .payments-story-surface,
+#tours .photo-category-grid,
+#location .location-panel,
+#neighbourhood .neighbourhood-layout,
+#reviews .reviews-summary,
+#faqs .disclosure-list,
+#floorplan .inline-request{
+ background:var(--p3-pane)!important;border:1px solid var(--p3-edge)!important;
+ box-shadow:var(--p3-shadow)!important;border-radius:27px!important;
+ backdrop-filter:blur(13px) saturate(140%);-webkit-backdrop-filter:blur(13px) saturate(140%);
+}
+#tours .photo-category-grid{padding:12px!important;gap:12px}
+#tours .photo-category-grid button{border:1px solid rgba(255,255,255,.88);border-radius:17px;overflow:hidden;box-shadow:0 8px 18px rgba(49,39,54,.07)}
+#overview .overview-facts>div,
+#amenities .amenity-pill,#amenities .amenity-actions a,
+#rooms.rooms-redesign .room-card,#rooms .room-filter,
+#rules .rules-step-card:nth-child(n),
+#payments .payment-topic,#payments .payment-detail-panel,
+#faqs .disclosure-list details,
+#reviews .review-example,#reviews .review-preview-intro,
+#location .landmarks-detail,#location .location-illustration{
+ background:var(--p3-pane-strong)!important;
+ border:1px solid rgba(255,255,255,.88)!important;
+ box-shadow:0 8px 26px rgba(62,43,54,.065),inset 0 1px 0 rgba(255,255,255,.92)!important;
+ backdrop-filter:blur(6px) saturate(123%);-webkit-backdrop-filter:blur(6px) saturate(123%);
+}
+#overview .overview-facts>div{border-radius:19px;padding:15px 16px}
+#rooms.rooms-redesign .room-card,#reviews .review-example{border-radius:21px}
+#rules .rules-step-card:nth-child(n){border-radius:19px!important}
+#rules .rules-step-card.is-open{border-color:rgba(237,32,36,.29)!important;box-shadow:0 13px 36px rgba(98,44,53,.11),inset 0 1px 0 #fff!important}
+#rules .rules-step-icon,#payments .payment-topic-icon{background:rgba(237,32,36,.085)!important;border:1px solid rgba(237,32,36,.12)!important}
+#payments .payment-detail-panel{background:linear-gradient(136deg,rgba(255,252,248,.84),rgba(255,232,227,.47))!important}
+#payments .payment-topic.is-active{
+ background:linear-gradient(115deg,rgba(255,232,228,.85),rgba(255,255,255,.65))!important;
+ border-color:rgba(237,32,36,.27)!important;
+ box-shadow:0 11px 29px rgba(237,32,36,.08),inset 0 1px 0 rgba(255,255,255,.92)!important;
+}
+#faqs .disclosure-list{padding:12px}#faqs .disclosure-list details{margin-bottom:8px}
+/* Crystal sticky enquiry rail — eliminate forced height and nested scrolling. */
+.cta-aside .booking-card{
+ background:linear-gradient(145deg,rgba(255,255,255,.79),rgba(255,245,239,.54) 55%,rgba(255,255,255,.59))!important;
+ border:1px solid rgba(255,255,255,.97)!important;
+ box-shadow:0 22px 59px rgba(70,42,51,.15),inset 0 1px 0 rgba(255,255,255,.99)!important;
+ backdrop-filter:blur(23px) saturate(162%)!important;-webkit-backdrop-filter:blur(23px) saturate(162%)!important;
+ color:var(--navy)!important;
+}
+.cta-aside .booking-card::before{background:linear-gradient(145deg,rgba(255,255,255,.49),rgba(255,255,255,0) 60%)!important}
+.cta-aside .booking-card .booking-choice{background:rgba(255,255,255,.41)!important;border:1px solid rgba(255,255,255,.91)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.93)!important}
+.cta-aside .booking-card .primary-button{background:#c4141d!important;color:#fff!important}
+.cta-aside .booking-card .outline-button{background:rgba(255,255,255,.45)!important}
+.cta-aside .booking-card .outline-button:hover{background:rgba(255,255,255,.84)!important;border-color:#ed2024!important}
+@media(min-width:1200px){
+ .layout{align-items:stretch}.cta-aside{align-self:stretch;min-width:0}
+ .cta-sticky{position:sticky!important;top:18px!important;padding:0!important;margin:18px 0 0!important}
+ .cta-aside .booking-card{
+  min-height:0!important;height:auto!important;max-height:none!important;overflow:visible!important;
+  display:flex;flex-direction:column;justify-content:flex-start!important;
+  gap:clamp(12px,1.6vh,18px)!important;
+  padding:clamp(18px,2vw,26px) clamp(17px,1.7vw,23px)!important;
+ }
+ .cta-aside .booking-card .rail-attribution{margin-bottom:8px!important}
+ .cta-aside .booking-card .rail-nearby{padding-top:12px!important}
+ .cta-aside .booking-card .rail-nearby-list{gap:7px!important}
+ .cta-aside .booking-card .booking-choice{margin-bottom:13px!important}
+}
+/* FIXED glass chapter capsule, independent of parent sticky/grid calculations. */
+#scrollNav.section-nav{
+ position:fixed!important;z-index:90!important;top:12px!important;left:50%!important;right:auto!important;
+ width:min(1030px,calc(100vw - 32px))!important;max-width:none!important;height:64px!important;
+ margin:0!important;padding:8px 10px 8px 13px!important;display:flex!important;align-items:center!important;
+ border-radius:999px!important;
+ background:linear-gradient(113deg,rgba(255,255,255,.8),rgba(255,243,239,.6) 60%,rgba(255,255,255,.67))!important;
+ border:1px solid rgba(255,255,255,.94)!important;
+ box-shadow:0 18px 45px rgba(61,38,50,.18),inset 0 1px 0 rgba(255,255,255,.98)!important;
+ backdrop-filter:blur(25px) saturate(165%)!important;-webkit-backdrop-filter:blur(25px) saturate(165%)!important;
+ transform:translate3d(-50%,-20px,0)!important;opacity:0;visibility:hidden;pointer-events:none;
+ transition:opacity .22s ease,transform .37s cubic-bezier(.2,.8,.2,1),visibility .22s!important;
+}
+#scrollNav.section-nav.shown{
+ opacity:1!important;visibility:visible!important;pointer-events:auto!important;
+ transform:translate3d(-50%,0,0)!important;
+}
+#scrollNav .section-nav-track{min-width:0;flex:1;overflow-x:auto;scrollbar-width:none;scroll-padding-inline:20px}
+#scrollNav .section-nav-track a{min-height:44px;color:#2d4057!important;padding:10px 13px}
+#scrollNav .section-nav-track a.active{
+ color:#ac141d!important;
+ background:linear-gradient(136deg,rgba(255,255,255,.97),rgba(255,228,221,.86))!important;
+ border-color:rgba(237,32,36,.27)!important;
+ box-shadow:0 7px 21px rgba(237,32,36,.1),inset 0 1px 0 #fff!important;
+}
+#scrollNav .section-nav-actions{border-radius:999px;background:rgba(255,255,255,.36)!important;flex:0 0 auto;white-space:nowrap}
+#scrollNav .tiny-nav-action{border-radius:999px}
+#scrollNav .tiny-nav-action:hover{color:#ba1720!important;background:rgba(237,32,36,.08)!important}
+/* Existing shine/orbit keyframes remain intact; add subtle tactile lift. */
+.primary-button,.outline-button,.header-contact,.room-actions button,.room-filter button,.payment-topic,.tiny-nav-action,.gallery-view{transition:transform .23s ease,box-shadow .23s ease,background .23s ease,border-color .23s ease}
+@media(hover:hover){
+ .primary-button:hover,.outline-button:hover,.header-contact:hover,.room-actions button:hover,.payment-topic:hover,.gallery-view:hover{transform:translateY(-2px);box-shadow:0 11px 25px rgba(68,42,51,.13)}
+}
+.mobile-cta{
+ background:linear-gradient(140deg,rgba(255,255,255,.84),rgba(255,246,239,.62))!important;
+ border-top:1px solid rgba(255,255,255,.9)!important;
+ backdrop-filter:blur(17px) saturate(150%)!important;-webkit-backdrop-filter:blur(17px) saturate(150%)!important;
+}
+@media(max-width:800px){
+ #scrollNav.section-nav{top:9px!important;width:calc(100vw - 18px)!important;height:58px!important;padding:6px 7px!important}
+ #scrollNav .section-nav-track a{min-height:42px;padding:9px 11px;font-size:11px}
+ #scrollNav .section-nav-actions{gap:0;padding-left:4px}
+ #scrollNav .tiny-nav-action{min-width:40px;padding:6px}
+ #scrollNav .tiny-nav-action span{display:none}
+ #overview.section-overview{padding:25px 20px!important;margin-top:16px!important}
+ #tours .photo-category-grid{padding:8px!important}
+ #about.about-editorial>.about-editorial-surface,#rooms.rooms-redesign .rooms-wrap,#payments .payments-story-surface{backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+}
+@media(max-width:550px){
+ #scrollNav.section-nav{width:calc(100vw - 14px)!important;border-radius:25px!important}
+ #overview .overview-facts>div{padding:13px 12px}
+ #faqs .disclosure-list{padding:7px}
+}
+@media(max-height:730px) and (min-width:1200px){
+ .cta-sticky{top:10px!important;margin-top:10px!important}
+ .cta-aside .booking-card{padding:14px 16px!important;gap:7px!important}
+ .cta-aside .booking-card .rail-nearby-list{gap:3px!important}
+ .cta-aside .booking-card .rail-attribution,.cta-aside .booking-card .card-footnote{font-size:10px!important;line-height:1.35}
+}
+@media(prefers-reduced-motion:reduce){
+ #scrollNav.section-nav,.primary-button,.outline-button,.header-contact,.payment-topic{transition:none!important;animation:none!important}
+ #scrollNav .section-nav-track a .glass-nav-label{animation:none!important}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ #scrollNav.section-nav,.cta-aside .booking-card,#overview.section-overview,#rooms.rooms-redesign .rooms-wrap,#payments .payments-story-surface{background:#fff9f6!important}
+}

@@ -1977,6 +1977,8 @@ body{
 }
 
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="listing-page-3-glass.css?v=20261123" rel="stylesheet"/>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2853,7 +2855,7 @@ let previousActive='',framePending=false;
 function onScroll(){const nav=$('#scrollNav');const passed=$('#property-identity').getBoundingClientRect().bottom<105;nav.classList.toggle('shown',passed);nav.inert=!passed;
  let active='overview';$$('.content-column>.section[id]').forEach(section=>{if(section.getBoundingClientRect().top<=180)active=section.id;});
  const navTarget=({about:'overview',tours:'overview',payments:'rules',floorplan:'rules',neighbourhood:'location'})[active]||active;
- if(navTarget!==previousActive){previousActive=navTarget;$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===navTarget;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed){const track=$('#navTrack');if(track){const x=link.offsetLeft-(track.clientWidth-link.offsetWidth)/2;track.scrollTo({left:Math.max(0,x),behavior:'auto'});}}}else link.removeAttribute('aria-current');});}framePending=false;}
+ if(navTarget!==previousActive){previousActive=navTarget;$$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===navTarget;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed){const track=$('#navTrack');if(track){const x=link.offsetLeft-(track.clientWidth-link.offsetWidth)/2;track.scrollTo({left:Math.max(0,x),behavior:'auto'});}}}else link.removeAttribute('aria-current');});}framePending=false;}
 window.addEventListener('scroll',()=>{if(!framePending){framePending=true;requestAnimationFrame(onScroll);}}, {passive:true});window.addEventListener('resize',onScroll);onScroll();
 // Page-wide entrance choreography. Keep all content visible when motion is reduced or unsupported.
 if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
