@@ -125,6 +125,27 @@
 
 
 
+
+/* Preserve Accom's source-attributed rating beside the listing title,
+   without WE's gallery-obscuring hanging ribbon. */
+#property-identity .property-title-row{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
+#property-identity .we-gallery-rating-inline{
+ display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+ font:600 15px/1.2 var(--font-body,'Montserrat',Arial,sans-serif);
+ color:var(--ae-ink,#101D33);border:0;text-decoration:none;
+}
+#property-identity .we-gallery-rating-inline strong{
+ font:700 22px/1.15 var(--font-title,'Bricolage Grotesque',Arial,sans-serif)
+}
+#property-identity .we-gallery-rating-inline span{color:#FFB900;font-size:15px;letter-spacing:1px}
+#property-identity .we-gallery-rating-inline:hover strong{text-decoration:underline;text-underline-offset:4px}
+#property-identity .we-gallery-rating-inline:focus-visible{outline:3px solid var(--ae-red,#ED2024);outline-offset:4px}
+@media(max-width:550px){
+ #property-identity .property-title-row{gap:10px}
+ #property-identity .we-gallery-rating-inline strong{font-size:19px}
+ #property-identity .we-gallery-rating-inline span{font-size:12px}
+}
+
 /* Accom adapter: exact WE gallery foundations with AE tokens and student photography. */
 .we-gal,.we-lb{
  --body:var(--font-body,'Montserrat',Arial,sans-serif);
