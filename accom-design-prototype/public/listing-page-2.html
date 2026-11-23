@@ -1772,7 +1772,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 #rules .rule-icon{width:55px;height:55px;flex-basis:55px;border-radius:17px;background:#ffefeb}
 #rules .rule-icon svg{width:26px;height:26px}
 #rules .rule-title{font:650 clamp(17px,1.65vw,21px)/1.35 var(--font-body);letter-spacing:-.024em}
-#rules .rule-order{font:750 12px/1 var(--font-body);color:#b4a4a0;letter-spacing:.1em}
 #rules .rule-arrow{width:22px;height:22px}
 #rules .rule-body{transition:grid-template-rows .62s cubic-bezier(.22,1,.36,1),opacity .38s ease}
 #rules .rule-body-inner p{padding:0 34px 27px 100px;margin:0;color:#53637a;font:400 14px/1.85 var(--font-body);max-width:820px}
@@ -1782,11 +1781,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 #payments .payments-heading h2{font:750 clamp(38px,3.7vw,54px)/1.1 var(--font-title);max-width:315px;letter-spacing:-.055em;margin:0}
 #payments .payments-heading h2 span{display:block}
 #payments .payments-underline{margin:25px auto 28px;height:5px;width:58px}
-#payments .payments-progress{display:flex;flex-direction:column;align-items:center;gap:10px}
-#payments .payments-step strong{font:750 17px/1 var(--font-body);color:var(--red);font-variant-numeric:tabular-nums}
-#payments .payments-step small{font:650 12px/1 var(--font-body);color:#8c96a6}
-#payments .payments-track{display:block;width:108px;height:3px;overflow:hidden;border-radius:20px;background:#eee7e4}
-#payments .payments-track i{display:block;width:25%;height:100%;background:var(--red);border-radius:20px;transition:width .45s cubic-bezier(.22,1,.36,1)}
 #payments .payments-list{gap:17px;align-content:start;min-width:0}
 #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{position:relative;display:grid;grid-template-columns:51px minmax(0,1fr);align-items:start;gap:18px;min-height:198px;margin:0;padding:27px 25px;border:1px solid #efe7e2;border-radius:23px;background:#fff;box-shadow:none;transition:background .48s cubic-bezier(.22,1,.36,1),border-color .48s,box-shadow .48s,transform .48s}
 #payments .payment-item::before{content:"";position:absolute;top:24px;bottom:24px;left:0;width:4px;border-radius:0 4px 4px 0;background:var(--red);transform:scaleY(0);transform-origin:top;transition:transform .46s cubic-bezier(.22,1,.36,1)}
@@ -1794,7 +1788,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 #payments .payment-item.is-current::before{transform:scaleY(1)}
 #payments .payment-icon{width:51px;height:51px;border-radius:15px;background:#fff0ed}
 #payments .payment-icon svg{width:24px;height:24px}
-#payments .payment-index{display:block;font:750 11px/1.2 var(--font-body);letter-spacing:.13em;color:#a1aabc;margin:2px 0 16px}
 #payments .payment-item h3{font:650 clamp(18px,1.45vw,21px)/1.3 var(--font-body);letter-spacing:-.024em;margin:0 0 9px}
 #payments .payment-item p{font:400 14px/1.8 var(--font-body);max-width:440px;margin:0}
 @media(max-width:1050px){
@@ -1808,7 +1801,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  #rules .rule-card-trigger{min-height:78px;padding:15px;gap:12px}
  #rules .rule-icon{width:43px;height:43px;flex-basis:43px;border-radius:13px}
  #rules .rule-title{font-size:15px}
- #rules .rule-order{font-size:10px}
  #rules .rule-body-inner p{padding:0 17px 23px 70px;font-size:13px;line-height:1.75}
  #payments .payments-surface{grid-template-columns:1fr;gap:24px}
  #payments .payments-heading{position:relative;top:auto;min-height:auto;padding:0 0 7px}
@@ -1817,7 +1809,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  #payments .payments-underline{margin:15px auto 14px}
  #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{min-height:155px;padding:19px 17px;gap:12px;grid-template-columns:44px minmax(0,1fr);border-radius:19px}
  #payments .payment-icon{width:44px;height:44px}
- #payments .payment-index{margin-bottom:8px}
  #payments .payment-item h3{font-size:17px}
  #payments .payment-item p{font-size:12px;line-height:1.7}
  #payments .payment-item.is-current{transform:none}
@@ -1825,12 +1816,45 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 @media(max-width:390px){
  #rules .rules-surface,#payments .payments-surface{padding:24px 15px}
  #rules .rule-card-trigger{padding:13px;gap:9px}
- #rules .rule-order{display:none}
  #rules .rule-body-inner p{padding-left:18px}
 }
 @media(prefers-reduced-motion:reduce){
- #rules .rule-card,#rules .rule-card::before,#rules .rule-body,#payments .payment-item,#payments .payment-item::before,#payments .payments-track i{transition:none!important}
+ #rules .rule-card,#rules .rule-card::before,#rules .rule-body,#payments .payment-item,#payments .payment-item::before{transition:none!important}
  #payments .payment-item.is-current{transform:none}
+}
+
+/* Listing Page 2: expanded, unnumbered fee explanations and clearer hierarchy. */
+#payments .payments-heading h2{font-size:clamp(43px,4.1vw,60px);max-width:350px;line-height:1.08}
+#payments .payments-heading{top:calc(50vh - 145px)}
+#payments .payments-underline{margin-bottom:21px;width:65px}
+#payments .payments-heading-intro{max-width:270px;margin:0 auto;font:400 14px/1.75 var(--font-body);color:#63728a}
+#payments .payments-list{gap:20px}
+#payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{
+ min-height:265px;padding:36px 29px;grid-template-columns:54px minmax(0,1fr);gap:19px;
+}
+#payments .payment-icon{width:54px;height:54px}
+#payments .payment-icon svg{width:26px;height:26px}
+#payments .payment-item h3{display:block;font:650 clamp(21px,1.8vw,25px)/1.27 var(--font-body);letter-spacing:-.025em;margin:0 0 14px;color:var(--navy)}
+#payments .payment-item p{font:400 15px/1.75 var(--font-body);max-width:485px;margin:0 0 14px}
+#payments .payment-item p:last-child{margin-bottom:0}
+#payments .payment-item p.payment-detail{padding-top:14px;border-top:1px solid #eaded8;color:#506077;font-size:14px}
+#payments .payment-detail strong{color:var(--navy);font-weight:650}
+#payments .payments-source-note{font:400 12px/1.7 var(--font-body);color:#768296;margin:23px 5px 0}
+@media(max-width:1050px){
+ #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{padding:29px 22px;gap:14px;min-height:245px}
+ #payments .payments-heading h2{font-size:clamp(36px,3.8vw,52px)}
+}
+@media(max-width:700px){
+ #payments .payments-heading h2{font-size:40px;max-width:none}
+ #payments .payments-heading-intro{font-size:13px;max-width:300px}
+ #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{min-height:210px;padding:23px 18px;gap:13px;grid-template-columns:45px minmax(0,1fr)}
+ #payments .payment-icon{width:45px;height:45px}
+ #payments .payment-item h3{font-size:19px;margin-bottom:10px}
+ #payments .payment-item p{font-size:13px;line-height:1.7}
+ #payments .payment-item p.payment-detail{font-size:12px;padding-top:11px}
+}
+@media(max-width:390px){
+ #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{padding:21px 14px;gap:10px}
 }
 </style>
 </head>
@@ -1986,25 +2010,25 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  <div class="rules-surface"><p class="rules-eyebrow">Good to know <span aria-hidden="true">·</span> Before you book</p><h2 id="rulesTitle">House rules &amp; cancellation</h2>
   <div class="rules-stack"><article class="rule-card is-open" data-scroll-rule>
  <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-1">
-  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5zM8.5 12l2.5 2.5 5-5"/></svg></span><span class="rule-title">Cancellation and visa conditions</span><span class="rule-order" aria-hidden="true">01</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5zM8.5 12l2.5 2.5 5-5"/></svg></span><span class="rule-title">Cancellation and visa conditions</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
  </button>
  <div class="rule-body" id="rule-panel-1"><div class="rule-body-inner"><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></div></div>
 </article>
 <article class="rule-card is-open" data-scroll-rule>
  <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-2">
-  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3c0-3 2-5 6-5s6 2 6 5v3M18 5v8m-4-4h8"/></svg></span><span class="rule-title">Guests and visitors</span><span class="rule-order" aria-hidden="true">02</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3c0-3 2-5 6-5s6 2 6 5v3M18 5v8m-4-4h8"/></svg></span><span class="rule-title">Guests and visitors</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
  </button>
  <div class="rule-body" id="rule-panel-2"><div class="rule-body-inner"><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></div></div>
 </article>
 <article class="rule-card is-open" data-scroll-rule>
  <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-3">
-  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12M9 13h6m-6-3h3"/></svg></span><span class="rule-title">Smoking and pets</span><span class="rule-order" aria-hidden="true">03</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12M9 13h6m-6-3h3"/></svg></span><span class="rule-title">Smoking and pets</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
  </button>
  <div class="rule-body" id="rule-panel-3"><div class="rule-body-inner"><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></div></div>
 </article>
 <article class="rule-card is-open" data-scroll-rule>
  <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-4">
-  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="8" cy="8" r="5"/><path d="m11.5 11.5 9 9 2-2-3-3-2 2-2-2"/></svg></span><span class="rule-title">Room requests and check-in</span><span class="rule-order" aria-hidden="true">04</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="8" cy="8" r="5"/><path d="m11.5 11.5 9 9 2-2-3-3-2 2-2-2"/></svg></span><span class="rule-title">Room requests and check-in</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
  </button>
  <div class="rule-body" id="rule-panel-4"><div class="rule-body-inner"><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></div></div>
 </article></div>
@@ -2012,11 +2036,12 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 </section>
 <section class="section payments-redesign" id="payments" aria-labelledby="paymentsTitle">
  <div class="payments-surface">
-  <header class="payments-heading"><p class="payments-eyebrow">Know your costs</p><h2 id="paymentsTitle">Payments <span>&amp; fees.</span></h2><span class="payments-underline" aria-hidden="true"></span><div class="payments-progress"><span class="payments-step"><strong id="paymentsStep">01</strong><small> / 04</small></span><span class="payments-track" aria-hidden="true"><i id="paymentsProgressBar"></i></span></div></header>
-  <div class="payments-list"><article class="payment-item payment-feature"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18m-6 4h3M6 4h11"/></svg></span><div class="payment-copy"><span class="payment-index" aria-hidden="true">01 / 04</span><h3Rent instalments</h3><p>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p></div></article>
-<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3zM9 8h6m-6 4h6m-6 4h4"/></svg></span><div class="payment-copy"><span class="payment-index" aria-hidden="true">02 / 04</span><h3Booking fee</h3><p>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</p></div></article>
-<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5zM8.5 12l2.5 2.5 5-5"/></svg></span><div class="payment-copy"><span class="payment-index" aria-hidden="true">03 / 04</span><h3Deposit and cancellations</h3><p>Request the full written fee schedule and cancellation terms before signing.</p></div></article>
-<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="8" y="5" width="8" height="4" rx=".4"/><path d="M8 13h2m4 0h2m-8 4h2m4 0h2"/></svg></span><div class="payment-copy"><span class="payment-index" aria-hidden="true">04 / 04</span><h3Total contract cost</h3><p>Ask for the full-rent total, not just the weekly price.</p></div></article></div>
+  <header class="payments-heading"><p class="payments-eyebrow">Know your costs</p><h2 id="paymentsTitle">Payments <span>&amp; fees.</span></h2><span class="payments-underline" aria-hidden="true"></span><p class="payments-heading-intro">Know what to confirm before you commit to a room.</p></header>
+  <div class="payments-list"><article class="payment-item payment-feature"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18m-6 4h3M6 4h11"/></svg></span><div class="payment-copy"><h3>Rent instalments</h3><p>Instalment payments may be available with a qualifying guarantor, subject to the current agreement. Your options can depend on the selected room and tenancy.</p><p class="payment-detail"><strong>Before you book:</strong> Ask for the number of payments, due dates, guarantor requirements and any late-payment charges.</p></div></article>
+<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3zM9 8h6m-6 4h6m-6 4h4"/></svg></span><div class="payment-copy"><h3>Booking fee</h3><p>The amount of any booking fee and whether it is refundable can vary by academic year and contract. Request the current fee in writing rather than relying on an earlier listing.</p><p class="payment-detail"><strong>Before you pay:</strong> Confirm the amount, when it is due, whether it counts towards your rent and when a refund may no longer be available.</p></div></article>
+<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5zM8.5 12l2.5 2.5 5-5"/></svg></span><div class="payment-copy"><h3>Deposit and cancellations</h3><p>Find out whether your chosen room requires a deposit and what happens if your plans change. Cancellation, visa-refusal and university-related conditions depend on the written agreement.</p><p class="payment-detail"><strong>Before you sign:</strong> Check any deductions, refund timelines, evidence requirements and deadlines for a cancellation request.</p></div></article>
+<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="8" y="5" width="8" height="4" rx=".4"/><path d="M8 13h2m4 0h2m-8 4h2m4 0h2"/></svg></span><div class="payment-copy"><h3>Total contract cost</h3><p>The weekly rate is only part of the picture. Request a written total for the entire tenancy, based on your exact room, start date and contract length.</p><p class="payment-detail"><strong>Before you decide:</strong> Check what the rent includes, whether separate charges apply and how any eligible offers affect the final amount.</p></div></article></div>
+  <p class="payments-source-note">Payment details are guidance, not a confirmed quotation. Ask the accommodation provider for the latest written terms for your exact room before making a payment.</p>
  </div>
 </section>
 <section class="section" id="floorplan"><h2>Floor plans</h2><div class="inline-request"><div><strong>See the layout before you decide.</strong><p>Ask for the floor plan and dimensions for your specific room type. Verified plans aren't available in this design concept.</p></div><button class="outline-button" data-enquire="" type="button">Request floor plan</button></div></section>
@@ -2201,8 +2226,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  const rulesRoot=document.getElementById('rules');
  const cards=[...(rulesRoot?.querySelectorAll('[data-scroll-rule]')||[])];
  const fees=[...document.querySelectorAll('#payments .payment-item')];
- const counter=document.getElementById('paymentsStep');
- const fill=document.getElementById('paymentsProgressBar');
  if(cards.length!==4||fees.length!==4)return;
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  const seen=new Set();
@@ -2249,8 +2272,6 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
    if(best!==activeFee){
      activeFee=best;
      fees.forEach((fee,index)=>fee.classList.toggle('is-current',index===best));
-     if(counter)counter.textContent=String(best+1).padStart(2,'0');
-     if(fill)fill.style.width=((best+1)/fees.length*100)+'%';
    }
  }
  let queued=false;
