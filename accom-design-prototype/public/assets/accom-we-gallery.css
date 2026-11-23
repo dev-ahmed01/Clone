@@ -276,7 +276,8 @@
  overflow:visible!important;
 }
 .gallery-ribbon-frame > .gallery-ribbon-tab{
- left:0!important;
+ /* Start at the flat lower edge, just after the rounded gallery corner. */
+ left:34px!important;
  top:calc(100% - 1px)!important;
  width:92px!important;
  transform-origin:50% 0;
@@ -297,7 +298,7 @@
 }
 #property-identity > div:first-child{padding-left:125px}
 @media(max-width:800px){
- .gallery-ribbon-frame > .gallery-ribbon-tab{width:82px!important}
+ .gallery-ribbon-frame > .gallery-ribbon-tab{left:29px!important;width:82px!important}
  .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-body{
   height:104px!important;padding:11px 6px 25px!important
  }
@@ -305,7 +306,7 @@
  #property-identity > div:first-child{padding-left:108px}
 }
 @media(max-width:550px){
- .gallery-ribbon-frame > .gallery-ribbon-tab{width:70px!important}
+ .gallery-ribbon-frame > .gallery-ribbon-tab{left:23px!important;width:70px!important}
  .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-body{
   height:91px!important;padding:8px 5px 22px!important
  }
@@ -314,7 +315,7 @@
  #property-identity > div:first-child{padding-left:88px}
 }
 @media(max-width:365px){
- .gallery-ribbon-frame > .gallery-ribbon-tab{width:64px!important}
+ .gallery-ribbon-frame > .gallery-ribbon-tab{left:20px!important;width:64px!important}
  #property-identity > div:first-child{padding-left:78px}
 }
 @media(prefers-reduced-motion:reduce){
