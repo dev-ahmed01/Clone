@@ -1,5 +1,5 @@
 /* WE gallery controller port: original Workspace by Emlen thumbnail/dock/transitions logic.
- * Accom adapter uses existing illustrative Kingston images and preserves video disclaimers.
+ * Accom adapter uses existing student gallery image assets and preserves source references.
  * Source: dev-ahmed01/WE public/assets/js/workspaces-1.04e742d747.js
  */
 (()=>{
@@ -11,32 +11,32 @@ const assets=typeof embeddedAssets!=='undefined'?embeddedAssets:{};
 const photo=(name)=>assets['assets/'+name]||'';
 const gallery={
   'All Photos':[
-   [photo('hero-bedroom.webp'),'En suite bedroom · illustrative'],
-   [photo('lounge-room.webp'),'Resident lounge · illustrative'],
-   [photo('studio-room.webp'),'Studio room · illustrative'],
-   [photo('study-space.webp'),'Study spaces · illustrative'],
-   [photo('building.webp'),'Building exterior · illustrative'],
-   [photo('hero-suite.webp'),'Studio interior · illustrative'],
-   [photo('ensuite-second.webp'),'En suite room details · illustrative']
+   [photo('hero-bedroom.webp'),'En suite bedroom'],
+   [photo('lounge-room.webp'),'Resident lounge'],
+   [photo('studio-room.webp'),'Studio room'],
+   [photo('study-space.webp'),'Study spaces'],
+   [photo('building.webp'),'Building exterior'],
+   [photo('hero-suite.webp'),'Studio interior'],
+   [photo('ensuite-second.webp'),'En suite room details']
   ],
   'En suites':[
-   [photo('hero-bedroom.webp'),'En suite bedroom · illustrative'],
-   [photo('ensuite-second.webp'),'En suite room details · illustrative']
+   [photo('hero-bedroom.webp'),'En suite bedroom'],
+   [photo('ensuite-second.webp'),'En suite room details']
   ],
   'Studios':[
-   [photo('studio-room.webp'),'Studio room · illustrative'],
-   [photo('hero-suite.webp'),'Studio interior · illustrative']
+   [photo('studio-room.webp'),'Studio room'],
+   [photo('hero-suite.webp'),'Studio interior']
   ],
   'Shared spaces':[
-   [photo('lounge-room.webp'),'Resident lounge · illustrative'],
-   [photo('study-space.webp'),'Study spaces · illustrative']
+   [photo('lounge-room.webp'),'Resident lounge'],
+   [photo('study-space.webp'),'Study spaces']
   ],
-  'Exterior':[[photo('building.webp'),'Building exterior · illustrative']]
+  'Exterior':[[photo('building.webp'),'Building exterior']]
 };
 let galleryCategory='All Photos';
 { /* ===== Section 2 — Photos: grid + categorized lightbox ===== */
 const reduceG=matchMedia('(prefers-reduced-motion: reduce)');
-const CATS=[['All Photos','All photos'],['En suites','En suites'],['Studios','Studios'],['Shared spaces','Shared spaces'],['Exterior','Exterior'],['Videos & 3D','Videos & 3D']];
+const CATS=[['All Photos','All photos'],['En suites','En suites'],['Studios','Studios'],['Shared spaces','Shared spaces'],['Exterior','Exterior']];
 const SHORT=Object.fromEntries(CATS);
 const EASE='cubic-bezier(.22,1,.36,1)';
 let cat='All Photos',idx=0,isOpen=false,token=0,lastFocus=null,hideTimer=0,bgFlip=false,bgSrc='';
@@ -84,13 +84,6 @@ function swapTiles(){
 tiles.forEach((t,i)=>{paintTile(t,i);t.addEventListener('click',()=>openLB(i,t));});
 
 function setCat(k){
-  if(k==='Videos & 3D'){
-    // Use Accom's existing honest video/virtual-tour information viewer.
-    const wasOpen=isOpen;
-    if(wasOpen)closeLB();
-    setTimeout(()=>document.querySelector('#scrollNav [data-gallery-category="videos"]')?.click(),wasOpen?360:0);
-    return;
-  }
   if(k===cat||!gallery[k]||!gallery[k].length)return;
   cat=k;galleryCategory=k;idx=0;
   grid.dataset.count=String(Math.min(5,gallery[cat].length));
