@@ -1767,6 +1767,215 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
  #payments .payment-detail-inner.is-switching{animation:none}
  #payments .payment-topic,#payments .payment-topic-arrow{transition:none!important}
 }
+/* Page 3 design refinement — luminous glass, calm depth and clear text contrast. */
+:root{
+  --glass-border:rgba(255,255,255,.86);
+  --glass-line:rgba(111,130,155,.15);
+  --glass-shadow:0 15px 42px rgba(32,47,69,.07),inset 0 1px 0 rgba(255,255,255,.88);
+}
+html{background:#f7f6f5}
+body{
+  background:
+   radial-gradient(ellipse 60% 45% at 8% 12%,rgba(255,222,215,.69),transparent 79%),
+   radial-gradient(ellipse 54% 42% at 94% 27%,rgba(212,231,251,.7),transparent 76%),
+   radial-gradient(ellipse 67% 46% at 15% 77%,rgba(255,241,211,.46),transparent 80%),
+   radial-gradient(ellipse 40% 40% at 89% 88%,rgba(234,222,245,.44),transparent 80%),
+   linear-gradient(135deg,#faf9f7 0%,#f4f6f9 51%,#fdfaf6 100%)!important;
+  background-attachment:fixed!important;color:var(--navy);
+}
+.site-container{background:transparent!important}
+/* The primary header also uses transparent glass, without introducing a second sticky header. */
+.site-header,.site-header#top{
+ background:linear-gradient(117deg,rgba(255,255,255,.86),rgba(251,252,255,.68))!important;
+ border-bottom:1px solid rgba(255,255,255,.82)!important;
+ box-shadow:0 7px 27px rgba(34,54,78,.065),inset 0 1px 0 rgba(255,255,255,.9);
+ backdrop-filter:blur(19px) saturate(155%);-webkit-backdrop-filter:blur(19px) saturate(155%);
+ color:var(--navy)!important;
+}
+.site-header .logo,.site-header .logo-name,.site-header .header-links a{color:var(--navy)!important}
+.site-header .logo-name small{color:#647186}
+.site-header .header-links a{border-radius:999px;padding:10px 12px}
+.site-header .header-links a:hover{color:var(--red)!important;background:rgba(255,255,255,.7)}
+.site-header .icon-button{background:rgba(255,255,255,.45)!important;color:var(--navy)!important;border:1px solid rgba(95,114,140,.19)!important}
+.site-header .header-contact{background:var(--yellow)!important;color:var(--navy)!important;box-shadow:0 5px 16px rgba(255,185,0,.14)}
+/* Keep overview airy, using small transparent features rather than a heavy outer card. */
+#overview.section-overview{background:transparent!important;box-shadow:none!important;border:0!important}
+#overview .overview-facts>div{background:rgba(255,255,255,.34);border:1px solid rgba(255,255,255,.55);border-radius:17px;padding:14px 15px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+#about.about-editorial>.about-editorial-surface,
+#amenities .amenity-editorial-surface,
+#rooms.rooms-redesign .rooms-wrap,
+#payments.payments-story .payments-story-surface{
+ background:linear-gradient(138deg,rgba(255,255,255,.81),rgba(251,252,255,.61))!important;
+ border:1px solid var(--glass-border)!important;
+ box-shadow:var(--glass-shadow)!important;
+ backdrop-filter:blur(15px) saturate(145%);-webkit-backdrop-filter:blur(15px) saturate(145%);
+}
+#amenities .amenity-pill,
+#rooms.rooms-redesign .room-card,
+#rules .rules-step-card:nth-child(n),
+#payments .payment-topic,
+#faqs .disclosure-list details,
+#reviews .review-example{
+ background:linear-gradient(150deg,rgba(255,255,255,.77),rgba(255,255,255,.51))!important;
+ border-color:rgba(255,255,255,.82)!important;
+ box-shadow:0 7px 26px rgba(27,49,70,.055),inset 0 1px 0 rgba(255,255,255,.85);
+ backdrop-filter:blur(8px) saturate(132%);-webkit-backdrop-filter:blur(8px) saturate(132%);
+}
+#rooms.rooms-redesign .room-card:hover,#rules .rules-step-card.is-open{
+ border-color:rgba(237,32,36,.24)!important;
+ box-shadow:0 10px 35px rgba(39,46,70,.08),inset 0 1px 0 rgba(255,255,255,.92);
+}
+#payments .payment-topic.is-active{
+ background:linear-gradient(115deg,rgba(255,238,234,.89),rgba(255,255,255,.62))!important;
+ border-color:rgba(237,32,36,.23)!important;
+ box-shadow:0 10px 29px rgba(237,32,36,.06),inset 0 1px 0 rgba(255,255,255,.8);
+}
+#payments .payment-detail-panel{
+ background:linear-gradient(137deg,rgba(255,247,244,.82),rgba(255,255,255,.49))!important;
+ border:1px solid rgba(255,255,255,.82)!important;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+ backdrop-filter:blur(11px);-webkit-backdrop-filter:blur(11px);
+}
+#location .location-panel,#neighbourhood .neighbourhood-layout,#reviews .reviews-summary{
+ background:linear-gradient(132deg,rgba(255,255,255,.76),rgba(255,255,255,.54))!important;
+ border:1px solid rgba(255,255,255,.85)!important;
+ box-shadow:var(--glass-shadow);
+ backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+#reviews .reviews-summary,#reviews .reviews-score strong,#reviews .reviews-summary p,#reviews .reviews-summary a{color:var(--navy)!important}
+.mobile-cta{background:rgba(255,255,255,.82)!important;border-top:1px solid rgba(255,255,255,.85)!important;backdrop-filter:blur(17px) saturate(165%);-webkit-backdrop-filter:blur(17px) saturate(165%)}
+/* The booking panel is crystal glass, replacing the heavy navy slab. */
+.cta-aside .booking-card{
+ background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(246,250,255,.69) 54%,rgba(255,244,240,.75))!important;
+ border:1px solid rgba(255,255,255,.94)!important;
+ box-shadow:0 21px 60px rgba(30,51,75,.14),inset 0 1px 0 rgba(255,255,255,.98)!important;
+ backdrop-filter:blur(21px) saturate(165%);-webkit-backdrop-filter:blur(21px) saturate(165%);
+ color:var(--navy)!important;
+ scrollbar-color:rgba(85,103,132,.25) transparent!important;
+}
+.cta-aside .booking-card .rail-title,.cta-aside .booking-card .rail-nearby-header strong,
+.cta-aside .booking-card .booking-total strong,.cta-aside .booking-card .booking-choice strong{
+ color:var(--navy)!important;
+}
+.cta-aside .booking-card .price-line strong{color:var(--navy)!important}
+.cta-aside .booking-card .price-line span,
+.cta-aside .booking-card .rail-attribution,
+.cta-aside .booking-card .card-footnote,
+.cta-aside .booking-card .rail-nearby-header>span,
+.cta-aside .booking-card .rail-nearby-source,
+.cta-aside .booking-card .rail-walk-row,
+.cta-aside .booking-card .booking-total span{
+ color:#516279!important;
+}
+.cta-aside .booking-card .booking-choice{
+ background:rgba(233,242,253,.56)!important;
+ border:1px solid rgba(255,255,255,.86)!important;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.65);
+}
+.cta-aside .booking-card .booking-choice>div,.cta-aside .booking-card .booking-choice>div+div{
+ background:transparent!important;
+}
+.cta-aside .booking-card .booking-choice small{color:#576881!important}
+.cta-aside .booking-card .rail-benefits div{color:#40516a!important}
+.cta-aside .booking-card .rail-nearby{border-top:1px solid rgba(95,119,151,.17)!important}
+.cta-aside .booking-card .rail-walk-row strong{color:#c8171b!important}
+.cta-aside .booking-card .rail-nearby-source a{color:#274365!important}
+.cta-aside .booking-card .primary-button{background:var(--red)!important;color:white!important;border:1px solid rgba(235,17,28,.72)!important}
+.cta-aside .booking-card .outline-button{
+ background:rgba(255,255,255,.47)!important;border:1px solid rgba(43,70,107,.33)!important;
+ color:var(--navy)!important;
+}
+.cta-aside .booking-card .outline-button:hover{background:rgba(255,255,255,.85)!important;border-color:var(--red)!important}
+/* Frosted sticky chapter navigation, with a moving glass selection. */
+#scrollNav.section-nav{
+ top:12px!important;
+ background:linear-gradient(115deg,rgba(255,255,255,.8),rgba(245,250,255,.65))!important;
+ border:1px solid rgba(255,255,255,.94)!important;border-radius:999px!important;
+ backdrop-filter:blur(24px) saturate(170%);-webkit-backdrop-filter:blur(24px) saturate(170%);
+ box-shadow:0 16px 40px rgba(26,47,72,.16),inset 0 1px 0 rgba(255,255,255,.95)!important;
+ height:60px;
+}
+#scrollNav .section-nav-track{gap:3px}
+#scrollNav .section-nav-track a{
+ display:inline-flex;align-items:center;justify-content:center;position:relative;
+ color:#44546b!important;background:transparent;border:1px solid transparent;border-radius:999px;
+ font-weight:650;min-height:40px;padding:10px 12px;
+ transition:color .28s,border-color .3s,background .3s,box-shadow .3s,translate .3s;
+ transform-style:preserve-3d;backface-visibility:hidden;
+}
+#scrollNav .section-nav-track a.active{
+ color:var(--navy)!important;
+ background:linear-gradient(136deg,rgba(255,255,255,.95),rgba(255,238,235,.75))!important;
+ border:1px solid rgba(237,32,36,.29);
+ box-shadow:0 5px 17px rgba(237,32,36,.1),inset 0 1px 0 white;
+ translate:0 -2px;
+}
+#scrollNav .section-nav-track a.active:before{
+ content:"";position:absolute;inset:auto 27% -4px;height:3px;border-radius:999px;background:var(--red);
+ box-shadow:0 0 11px rgba(237,32,36,.36);pointer-events:none;
+}
+#scrollNav .section-nav-track a:hover{color:var(--red)!important;background:rgba(255,255,255,.58)}
+#scrollNav .section-nav-track a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+#scrollNav .section-nav-track .glass-nav-label{position:relative;display:inline-block;transform-style:preserve-3d;backface-visibility:hidden}
+#scrollNav .section-nav-actions{
+ border:1px solid rgba(255,255,255,.88)!important;
+ background:rgba(255,255,255,.43)!important;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.7);
+}
+#scrollNav .tiny-nav-action{color:#354963!important}
+@media(prefers-reduced-motion:no-preference){
+ #scrollNav.shown .section-nav-track a:nth-child(odd){animation:glassNavFromTop .48s both cubic-bezier(.23,.8,.25,1)}
+ #scrollNav.shown .section-nav-track a:nth-child(even){animation:glassNavFromBottom .48s both cubic-bezier(.23,.8,.25,1)}
+ #scrollNav.shown .section-nav-track a:nth-child(2){animation-delay:50ms}
+ #scrollNav.shown .section-nav-track a:nth-child(3){animation-delay:90ms}
+ #scrollNav.shown .section-nav-track a:nth-child(4){animation-delay:135ms}
+ #scrollNav.shown .section-nav-track a:nth-child(5){animation-delay:170ms}
+ #scrollNav.shown .section-nav-track a:nth-child(6){animation-delay:210ms}
+ #scrollNav.shown .section-nav-track a:nth-child(7){animation-delay:250ms}
+ #scrollNav .section-nav-track a.is-orbiting .glass-nav-label{animation:glassNavOrbit .75s cubic-bezier(.18,.79,.18,1) both}
+ #scrollNav .section-nav-track a.active:not(.is-orbiting) .glass-nav-label{animation:glassNavSettle .46s cubic-bezier(.2,.79,.3,1)}
+ @keyframes glassNavFromTop{from{opacity:0;translate:0 -14px}to{opacity:1;translate:0 0}}
+ @keyframes glassNavFromBottom{from{opacity:0;translate:0 14px}to{opacity:1;translate:0 0}}
+ @keyframes glassNavOrbit{0%{transform:translateY(0) rotateX(0deg)}32%{transform:translateY(-5px) rotateX(112deg)}68%{transform:translateY(3px) rotateX(255deg)}100%{transform:translateY(0) rotateX(360deg)}}
+ @keyframes glassNavSettle{0%{transform:translateY(8px);opacity:.75}65%{transform:translateY(-3px)}100%{transform:translateY(0);opacity:1}}
+}
+/* One shine treatment for controls; exclude photographic tiles and the room-tab underline pseudo-element. */
+:is(button:not(.gallery-tile):not([data-open-category]):not([data-room-filter]):not([data-photo-category]),a.primary-button,a.outline-button,a.amenity-view-all,#scrollNav .section-nav-track a,.header-links a){
+ position:relative;isolation:isolate;overflow:hidden;
+}
+:is(button:not(.gallery-tile):not([data-open-category]):not([data-room-filter]):not([data-photo-category]),a.primary-button,a.outline-button,a.amenity-view-all,#scrollNav .section-nav-track a,.header-links a)::after{
+ content:"";position:absolute;inset:0;width:70%;
+ background:linear-gradient(103deg,transparent 3%,rgba(255,255,255,.03) 24%,rgba(255,255,255,.42) 49%,rgba(255,255,255,.04) 73%,transparent 96%);
+ transform:translateX(-170%) skewX(-15deg);transition:transform .72s cubic-bezier(.2,.78,.2,1);
+ pointer-events:none;z-index:2;border-radius:inherit;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ :is(button:not(.gallery-tile):not([data-open-category]):not([data-room-filter]):not([data-photo-category]),a.primary-button,a.outline-button,a.amenity-view-all,#scrollNav .section-nav-track a,.header-links a):hover::after{transform:translateX(245%) skewX(-15deg)}
+}
+@media(prefers-reduced-motion:no-preference){
+ :is(button:not(.gallery-tile):not([data-open-category]):not([data-room-filter]):not([data-photo-category]),a.primary-button,a.outline-button,a.amenity-view-all,#scrollNav .section-nav-track a,.header-links a).glass-pressed::after{
+  animation:glassButtonFlash .65s cubic-bezier(.2,.78,.2,1) both;
+ }
+ @keyframes glassButtonFlash{
+  0%{transform:translateX(-170%) skewX(-15deg)}
+  100%{transform:translateX(245%) skewX(-15deg)}
+ }
+}
+@media(max-width:800px){
+ #scrollNav.section-nav{top:8px!important;height:55px;padding:6px 8px}
+ #scrollNav .section-nav-track a{min-height:38px;padding:8px 9px;font-size:11px}
+ .site-header{backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+ #overview .overview-facts>div{background:rgba(255,255,255,.54)}
+}
+@media(prefers-reduced-motion:reduce){
+ #scrollNav .section-nav-track a,#scrollNav .section-nav-track .glass-nav-label,
+ :is(button,a.primary-button,a.outline-button)::after{animation:none!important;transition:none!important}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+ #scrollNav.section-nav,.cta-aside .booking-card,.site-header,#rooms .rooms-wrap,#about .about-editorial-surface,
+ #amenities .amenity-editorial-surface,#payments .payments-story-surface{background:rgba(255,255,255,.96)!important}
+}
+
 </style>
 </head>
 <body>
@@ -1820,7 +2029,7 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
 </div>
 <div aria-hidden="true" class="nav-sentinel"></div>
 <nav aria-label="On this listing" class="section-nav" id="scrollNav" inert=""><div class="section-nav-track" id="navTrack">
-<a class="active" href="#overview">Overview</a><a href="#rooms">Rooms</a><a href="#amenities">Included</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
+<a class="active" href="#overview"><span class="glass-nav-label">Overview</span></a><a href="#rooms"><span class="glass-nav-label">Rooms</span></a><a href="#amenities"><span class="glass-nav-label">Included</span></a><a href="#rules"><span class="glass-nav-label">Terms</span></a><a href="#location"><span class="glass-nav-label">Location</span></a><a href="#faqs"><span class="glass-nav-label">FAQs</span></a><a href="#reviews"><span class="glass-nav-label">Reviews</span></a>
 </div><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
 <section class="section section-overview" id="overview"><h2>About this student residence</h2><p class="intro-text">Modern en suite rooms and private studios in central Kingston, steps from the shops and close to the River Thames. Live independently while staying connected to shared study and social spaces.</p>
 <div class="overview-facts"><div><span class="fact-icon"><svg><use href="#bed"></use></svg></span><div><strong>En suites and studios</strong><p>A private bathroom in every room type</p></div></div><div><span class="fact-icon"><svg><use href="#wifi"></use></svg></span><div><strong>Bills included</strong><p>Wi-Fi, electricity, heating, water and contents insurance</p></div></div><div><span class="fact-icon"><svg><use href="#graduation"></use></svg></span><div><strong>Close to university</strong><p>Central Kingston location with campus access</p></div></div><div><span class="fact-icon"><svg><use href="#shield"></use></svg></span><div><strong>24-hour security</strong><p>Security measures listed by the accommodation provider</p></div></div></div>
@@ -2167,6 +2376,34 @@ html{scroll-behavior:smooth;scroll-padding-top:116px}
   </div>
 </dialog>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script id="page3GlassInteractions">
+(() => {
+ const nav=document.getElementById('navTrack');
+ if(nav){
+  for(const link of nav.querySelectorAll('a')){
+   link.addEventListener('click',()=>{
+    // Directional flip of the title only, leaving the navigation itself stationary.
+    link.classList.remove('is-orbiting');
+    void link.offsetWidth;
+    link.classList.add('is-orbiting');
+   });
+   link.addEventListener('animationend',event=>{
+    if(event.animationName==='glassNavOrbit')link.classList.remove('is-orbiting');
+   });
+  }
+ }
+ document.addEventListener('click',event=>{
+  const control=event.target.closest('button,a.primary-button,a.outline-button,a.amenity-view-all,.header-links a');
+  if(!control || control.matches('.gallery-tile,[data-open-category],[data-room-filter],[data-photo-category]'))return;
+  control.classList.remove('glass-pressed');
+  void control.offsetWidth;
+  control.classList.add('glass-pressed');
+ });
+ document.addEventListener('animationend',event=>{
+  if(event.animationName==='glassButtonFlash')event.target.classList?.remove('glass-pressed');
+ });
+})();
+</script>
 <script id="paymentsStoryInteraction">
 (() => {
  const section=document.getElementById('payments');
@@ -2615,7 +2852,8 @@ $('#shareButton').addEventListener('click',async()=>{const url=window.location.h
 let previousActive='',framePending=false;
 function onScroll(){const nav=$('#scrollNav');const passed=$('#property-identity').getBoundingClientRect().bottom<105;nav.classList.toggle('shown',passed);nav.inert=!passed;
  let active='overview';$$('.content-column>.section[id]').forEach(section=>{if(section.getBoundingClientRect().top<=180)active=section.id;});
- if(active!==previousActive){previousActive=active;$$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===active;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed){const track=$('#navTrack');if(track){const x=link.offsetLeft-(track.clientWidth-link.offsetWidth)/2;track.scrollTo({left:Math.max(0,x),behavior:'auto'});}}}else link.removeAttribute('aria-current');});}framePending=false;}
+ const navTarget=({about:'overview',tours:'overview',payments:'rules',floorplan:'rules',neighbourhood:'location'})[active]||active;
+ if(navTarget!==previousActive){previousActive=navTarget;$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===navTarget;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed){const track=$('#navTrack');if(track){const x=link.offsetLeft-(track.clientWidth-link.offsetWidth)/2;track.scrollTo({left:Math.max(0,x),behavior:'auto'});}}}else link.removeAttribute('aria-current');});}framePending=false;}
 window.addEventListener('scroll',()=>{if(!framePending){framePending=true;requestAnimationFrame(onScroll);}}, {passive:true});window.addEventListener('resize',onScroll);onScroll();
 // Page-wide entrance choreography. Keep all content visible when motion is reduced or unsupported.
 if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
