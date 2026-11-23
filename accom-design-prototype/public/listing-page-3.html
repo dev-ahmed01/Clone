@@ -964,6 +964,37 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 .hero-inline-rating-score{font:800 29px/1 var(--font-title);color:var(--navy);letter-spacing:-.02em}
 .hero-inline-rating-stars{font:700 18px/1 var(--font-body);letter-spacing:1px;color:var(--yellow)}
 @media(max-width:550px){.property-title-row{margin-bottom:10px;gap:16px}.hero-inline-rating-score{font-size:22px}.hero-inline-rating-stars{font-size:14px}}
+
+/* Overview — unified with the page background, not a floating card. */
+#overview.section-overview{
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  padding:30px 0 44px;
+  margin:0 0 26px;
+}
+#overview .overview-facts{grid-template-columns:repeat(2,minmax(0,1fr));}
+#overview .overview-facts>div{min-width:0;}
+/* Coordinated entrance: upper pair from opposing sides, lower pair diagonally upward. */
+@media(prefers-reduced-motion:no-preference){
+  #overview .overview-facts.is-motion-pending>div{
+    opacity:0;
+    transform:translate3d(var(--enter-x,0px),var(--enter-y,0px),0);
+    transition:transform .78s cubic-bezier(.22,1,.36,1),opacity .72s ease;
+    transition-delay:var(--reveal-delay,0ms);
+    will-change:transform,opacity;
+  }
+  #overview .overview-facts.is-motion-pending>div:nth-child(1){--enter-x:-44px;--enter-y:0px;--reveal-delay:80ms}
+  #overview .overview-facts.is-motion-pending>div:nth-child(2){--enter-x:44px;--enter-y:0px;--reveal-delay:80ms}
+  #overview .overview-facts.is-motion-pending>div:nth-child(3){--enter-x:-30px;--enter-y:36px;--reveal-delay:380ms}
+  #overview .overview-facts.is-motion-pending>div:nth-child(4){--enter-x:30px;--enter-y:36px;--reveal-delay:380ms}
+  #overview .overview-facts.is-motion-pending.is-visible>div{opacity:1;transform:translate3d(0,0,0)}
+}
+@media(max-width:550px){
+  #overview.section-overview{padding:24px 0 36px;margin-bottom:18px}
+  #overview .overview-facts{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -1302,11 +1333,25 @@ function onScroll(){const nav=$('#scrollNav');const passed=$('#property-identity
  if(active!==previousActive){previousActive=active;$$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===active;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed)link.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}else link.removeAttribute('aria-current');});}framePending=false;}
 window.addEventListener('scroll',()=>{if(!framePending){framePending=true;requestAnimationFrame(onScroll);}}, {passive:true});window.addEventListener('resize',onScroll);onScroll();
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
- const revealItems=$$('.section').flatMap(section=>Array.from(section.children).slice(0,3));
+ const revealItems=$('.section').flatMap(section=>Array.from(section.children).slice(0,3)).filter(item=>!item.classList.contains('overview-facts'));
  revealItems.forEach(item=>item.classList.add('reveal-item'));
  document.documentElement.classList.add('motion-ready');
  const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');revealObserver.unobserve(entry.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
  revealItems.forEach(item=>revealObserver.observe(item));
+ // Animate overview features in deliberate two-column pairs when scrolled into view.
+ const overviewFacts=document.querySelector('#overview .overview-facts');
+ if(overviewFacts){
+   overviewFacts.classList.add('is-motion-pending');
+   const overviewObserver=new IntersectionObserver(entries=>{
+     for(const entry of entries){
+       if(entry.isIntersecting){
+         entry.target.classList.add('is-visible');
+         overviewObserver.unobserve(entry.target);
+       }
+     }
+   },{rootMargin:'0px 0px -5% 0px',threshold:.12});
+   overviewObserver.observe(overviewFacts);
+ }
 }
 // Content category shortcuts: open the existing filtered, keyboard-accessible photo viewer.
 $$('[data-open-category]').forEach(button=>button.addEventListener('click',()=>{
