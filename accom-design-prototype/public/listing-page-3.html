@@ -1235,6 +1235,83 @@ dialog#aboutDetailsDialog.about-fullpage::backdrop{
  dialog#aboutDetailsDialog.about-fullpage.is-visible .about-detail-section{animation:none!important}
 }
 
+
+/* Page 3 Amenities: reusable red-outline icon pills and clean editorial surface. */
+#amenities.amenity-editorial{display:block!important;background:transparent!important;color:var(--navy)!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:22px 0 54px!important;margin:0 0 18px!important}
+#amenities .amenity-editorial-surface{padding:44px clamp(26px,4.25vw,64px) 31px;background:#fff;border:1px solid rgba(17,31,53,.075);border-radius:32px;box-shadow:0 12px 40px rgba(17,31,53,.04);min-width:0}
+#amenities .amenity-editorial-heading h2{font:700 clamp(30px,3vw,42px)/1.15 var(--font-title)!important;letter-spacing:-.038em;color:var(--navy)!important;margin:0 0 13px}
+#amenities .amenity-editorial-heading p{font:400 15px/1.7 var(--font-body);color:#58677b;max-width:720px;margin:0 0 26px}
+#amenities .amenity-preview-pills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px 14px;align-items:stretch}
+.amenity-pill{display:flex;align-items:center;gap:13px;min-width:0;min-height:61px;border:1px solid rgba(237,32,36,.25);border-radius:999px;background:#fff;padding:10px 18px;box-shadow:0 7px 22px rgba(17,31,53,.025)}
+.amenity-pill-icon{color:#ed2024;display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px}
+.amenity-pill-icon svg{width:25px;height:25px}
+.amenity-pill-divider{align-self:stretch;width:1px;flex:0 0 1px;background:rgba(237,32,36,.22)}
+.amenity-pill-label{font:600 13px/1.4 var(--font-body);color:#172137;min-width:0}
+#amenities .amenity-actions{display:flex;justify-content:center;margin-top:32px}
+#amenities .amenity-view-all{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:50px;padding:12px 23px;border:1.5px solid var(--red);border-radius:999px;background:#fff;color:var(--red);font:600 13px/1.25 var(--font-body);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+#amenities .amenity-view-all:hover{background:var(--red);color:white;transform:translateY(-2px)}
+#amenities .amenity-view-all:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+#amenities .amenity-count{display:grid;place-items:center;min-width:24px;height:24px;padding:0 6px;background:rgba(237,32,36,.08);border-radius:100px;font-size:12px}
+#amenities .amenity-view-all:hover .amenity-count{background:rgba(255,255,255,.18)}
+#amenities .amenity-view-all svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#amenities .amenity-source{margin:22px 0 0!important;color:#738093!important;font:400 11px/1.6 var(--font-body)!important;max-width:760px}
+@media(max-width:950px){#amenities .amenity-preview-pills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+ #amenities.amenity-editorial{padding:18px 0 36px!important}
+ #amenities .amenity-editorial-surface{padding:29px 21px 25px;border-radius:23px}
+ #amenities .amenity-preview-pills{grid-template-columns:1fr}
+ .amenity-pill{min-height:54px;padding:8px 15px}
+ .amenity-pill-label{font-size:13px}
+}
+dialog#amenitiesDetailsDialog{
+ position:fixed;inset:0;margin:auto;padding:0;display:none;
+ width:75vw;max-width:75vw;height:calc(100dvh - 48px);max-height:calc(100dvh - 48px);
+ border:1px solid rgba(17,31,53,.08);border-radius:28px;overflow:hidden;background:#fffaf6;color:var(--navy);
+ box-shadow:0 35px 120px rgba(9,24,42,.28);opacity:0;transform:translate3d(0,40px,0) scale(.92);
+ transition:transform .67s cubic-bezier(.17,.82,.18,1),opacity .36s ease;
+}
+dialog#amenitiesDetailsDialog[open]{display:flex}
+dialog#amenitiesDetailsDialog.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1)}
+dialog#amenitiesDetailsDialog::backdrop{background:rgba(9,22,39,.28);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+#amenitiesDetailsDialog .amenities-dialog-shell{display:flex;flex-direction:column;min-height:0;width:100%}
+#amenitiesDetailsDialog .amenities-dialog-topbar{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:17px clamp(22px,5vw,78px);border-bottom:1px solid #eee6e1;background:#fff;flex:none}
+#amenitiesDetailsDialog .amenities-dialog-brand{display:flex;align-items:center;gap:11px;font:700 22px/1 var(--font-title);color:var(--navy)}
+#amenitiesDetailsDialog .amenities-dialog-brand small{display:block;font:700 8px/1.4 var(--font-body);letter-spacing:.13em;color:#7c8795;margin-top:4px}
+#amenitiesDetailsDialog .amenities-dialog-mark{width:26px;height:26px;border-radius:50%;flex:none;background:var(--red);position:relative}
+#amenitiesDetailsDialog .amenities-dialog-mark:after{content:"";position:absolute;right:4px;top:4px;width:8px;height:8px;background:#fff;border-radius:50%}
+#amenitiesDetailsDialog .amenities-dialog-close{display:grid;place-items:center;flex:none;width:44px;height:44px;border:1px solid #e7e2dc;background:white;border-radius:50%;color:var(--navy);cursor:pointer}
+#amenitiesDetailsDialog .amenities-dialog-close svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+#amenitiesDetailsDialog .amenities-dialog-close:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+#amenitiesDetailsDialog .amenities-dialog-content{min-height:0;flex:1;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:0 clamp(28px,5vw,76px) 62px}
+#amenitiesDetailsDialog .amenities-dialog-heading{padding:48px 0 31px;border-bottom:1px solid #eee6df}
+#amenitiesDetailsDialog .amenities-dialog-heading h2{font:700 clamp(33px,3.7vw,52px)/1.12 var(--font-title);letter-spacing:-.04em;margin:0 0 15px;color:var(--navy)}
+#amenitiesDetailsDialog .amenities-dialog-heading p{font:400 16px/1.7 var(--font-body);color:#536176;max-width:720px;margin:0}
+#amenitiesDetailsDialog .amenities-sheet-group{padding:33px 0 36px;border-bottom:1px solid #eee6df}
+#amenitiesDetailsDialog .amenities-sheet-group h3,#amenitiesDetailsDialog .amenities-sheet-bills h3{font:700 clamp(21px,2vw,27px)/1.25 var(--font-title);color:var(--navy);margin:0 0 20px}
+#amenitiesDetailsDialog .amenities-sheet-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#amenitiesDetailsDialog .amenities-sheet-grid .amenity-pill{min-height:60px;padding:9px 13px;gap:9px}
+#amenitiesDetailsDialog .amenities-sheet-grid .amenity-pill-icon{flex-basis:27px;width:27px}
+#amenitiesDetailsDialog .amenities-sheet-grid .amenity-pill-icon svg{width:22px;height:22px}
+#amenitiesDetailsDialog .amenities-sheet-grid .amenity-pill-label{font-size:12px}
+#amenitiesDetailsDialog .amenities-dialog-source{color:#6d788b;font:400 12px/1.7 var(--font-body);margin:26px 0}
+#amenitiesDetailsDialog .amenities-sheet-bills{padding-top:10px}
+#amenitiesDetailsDialog .bill-estimate{background:#fff3d7;border:1px solid #ffedc1;color:var(--navy);border-radius:20px;padding:27px}
+#amenitiesDetailsDialog .bill-estimate h3{color:var(--navy)}
+@media(max-width:1100px){#amenitiesDetailsDialog .amenities-sheet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){dialog#amenitiesDetailsDialog{width:92vw;max-width:92vw;height:calc(100dvh - 30px);max-height:calc(100dvh - 30px);border-radius:22px}}
+@media(max-width:650px){
+ #amenitiesDetailsDialog .amenities-dialog-topbar{padding:12px 19px}
+ #amenitiesDetailsDialog .amenities-dialog-content{padding:0 21px 40px}
+ #amenitiesDetailsDialog .amenities-dialog-heading{padding:35px 0 27px}
+ #amenitiesDetailsDialog .amenities-sheet-grid{grid-template-columns:1fr}
+ #amenitiesDetailsDialog .amenities-sheet-grid .amenity-pill-label{font-size:13px}
+ #amenitiesDetailsDialog .bill-estimate{padding:19px}
+}
+@media(prefers-reduced-motion:no-preference){
+ dialog#amenitiesDetailsDialog.is-visible .amenities-dialog-heading{animation:amenities-rise .65s .11s both cubic-bezier(.2,.8,.2,1)}
+ @keyframes amenities-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(prefers-reduced-motion:reduce){dialog#amenitiesDetailsDialog{transition:none;transform:none!important}dialog#amenitiesDetailsDialog.is-visible .amenities-dialog-heading{animation:none}}
 </style>
 </head>
 <body>
@@ -1314,12 +1391,28 @@ dialog#aboutDetailsDialog.about-fullpage::backdrop{
 <button data-open-category="shared" type="button"><img alt="Illustrative study and social area" data-asset="assets/study-space.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Shared spaces</strong> <small>2 images</small></span></button>
 <button data-open-category="exterior" type="button"><img alt="Illustrative exterior of a student building" data-asset="assets/building.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Exterior</strong> <small>1 image</small></span></button>
 </div><p class="source-caption">7 concept images for layout demonstration only—not verified photos of iQ Kingston. iQ publishes an official 3D tour, available through the link below.</p><p class="tour-external"><a class="source-link" href="https://my.matterport.com/show/?dh=0&amp;f=0&amp;fp=0&amp;hr=1&amp;m=BDsCpY9882w&amp;play=1&amp;qs=1" rel="noopener noreferrer" target="_blank">View official iQ Kingston virtual tour (external site)</a></p></section>
-<section class="section" id="amenities"><h2>What’s included at iQ Kingston</h2><div class="amenity-groups">
-<div class="amenity-group"><h3>Bills and everyday essentials</h3><div class="amenity-list"><span>Wi-Fi</span><span>Electricity and water</span><span>Heating</span><span>Contents insurance</span></div></div>
-<div class="amenity-group"><h3>Study, relax and socialise</h3><div class="amenity-list"><span>On-site gym</span><span>Study spaces</span><span>Cinema room</span><span>Games and social areas</span><span>Roof terrace</span></div></div>
-<div class="amenity-group"><h3>Practical support</h3><div class="amenity-list"><span>24/7 security coverage</span><span>Reception and parcel collection</span><span>On-site laundry (usage charges may apply)</span><span>Secure bike storage</span></div></div>
-</div><p class="source-caption">Features described by iQ Student Accommodation. Check the room contract for utility limits and insurance terms; laundry may involve separate usage charges.</p>
-<div class="bill-estimate"><div class="bill-estimate-top"><div><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div>
+<section class="section amenity-editorial" id="amenities" aria-labelledby="amenitySectionTitle">
+  <div class="amenity-editorial-surface">
+    <div class="amenity-editorial-heading">
+      <h2 id="amenitySectionTitle">Amenities at iQ Kingston</h2>
+      <p>Everyday essentials, spaces to unwind and practical support for student life.</p>
+    </div>
+    <div class="amenity-preview-pills" aria-label="Featured property amenities">
+      <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0 1 20 0M5 12a10.5 10.5 0 0 1 14 0M8.5 15.5a5.3 5.3 0 0 1 7 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Wi-Fi</span></span>
+      <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Electricity and water</span></span>
+      <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6M6 7v10M18 7v10M21 9v6M6 12h12"/><path d="M2 9h2v6H2M20 9h2v6h-2"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">On-site gym</span></span>
+      <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c-2.4-1.4-5.7-2-9-1.2v15c3.3-.8 6.6-.2 9 1.2 2.4-1.4 5.7-2 9-1.2v-15c-3.3-.8-6.6-.2-9 1.2ZM12 5v15"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Study spaces</span></span>
+      <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">24/7 security coverage</span></span>
+      <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="13.5" r="5"/><path d="M7 6h2M13 6h3M9 14c2 1 4 1 6 0"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">On-site laundry (usage charges may apply)</span></span>
+    </div>
+    <div class="amenity-actions">
+      <button id="amenitiesViewAll" type="button" class="amenity-view-all" aria-haspopup="dialog" aria-controls="amenitiesDetailsDialog">
+        View all amenities <span class="amenity-count">13</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 9 7 7 7-7"/></svg>
+      </button>
+    </div>
+    <p class="amenity-source">Amenities listed by the accommodation provider. Confirm current availability and any additional charges before booking.</p>
+  </div>
 </section>
 <section class="section section-rooms" id="rooms"><div class="section-title-row"><div><h2>Choose your room</h2></div><p>Compare current weekly-rate snapshots first, then ask for contract dates and the full-term total before deciding.</p></div><div class="room-pricing-summary"><strong>From £315/week</strong><span>3 dated rates · 2 rates to confirm · full-term totals on request</span></div><div aria-label="Filter room types" class="room-filter" role="group"><button aria-pressed="true" class="selected" data-room-filter="all" type="button">All rooms</button><button aria-pressed="false" data-room-filter="ensuite" type="button">En suites</button><button aria-pressed="false" data-room-filter="studio" type="button">Studios</button></div><div class="room-list" id="roomList"></div><p class="source-caption">Rates checked on Amber's iQ Kingston listing on 28 October 2026. Availability and prices can change; two room styles had no traceable current rate in the source snapshot.</p></section>
 <section class="section" id="rules"><h2>House rules &amp; cancellation</h2><div class="disclosure-list"><details><summary>Cancellation and visa conditions <span>+</span></summary><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></details><details><summary>Guests and visitors <span>+</span></summary><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></details><details><summary>Smoking and pets <span>+</span></summary><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></details><details><summary>Room requests and check-in <span>+</span></summary><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></details></div></section>
@@ -1493,7 +1586,101 @@ dialog#aboutDetailsDialog.about-fullpage::backdrop{
     </div>
   </div>
 </dialog>
+<dialog id="amenitiesDetailsDialog" class="amenities-detail-dialog" aria-labelledby="amenitiesDialogTitle" aria-describedby="amenitiesDialogDescription">
+  <div class="amenities-dialog-shell">
+    <header class="amenities-dialog-topbar">
+      <div class="amenities-dialog-brand" aria-label="accom by Emlen"><span class="amenities-dialog-mark" aria-hidden="true"></span><span>accom<small>BY EMLEN</small></span></div>
+      <button type="button" class="amenities-dialog-close" aria-label="Close amenities" data-amenities-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button>
+    </header>
+    <div class="amenities-dialog-content">
+      <header class="amenities-dialog-heading">
+        <h2 id="amenitiesDialogTitle">Amenities at iQ Kingston</h2>
+        <p id="amenitiesDialogDescription">Explore all 13 listed amenities, from included bills to shared spaces and on-site support.</p>
+      </header>
+      <section class="amenities-sheet-group" aria-labelledby="amenitiesGroup0">
+  <h3 id="amenitiesGroup0">Bills and everyday essentials</h3>
+  <div class="amenities-sheet-grid">
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0 1 20 0M5 12a10.5 10.5 0 0 1 14 0M8.5 15.5a5.3 5.3 0 0 1 7 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Wi-Fi</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Electricity and water</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.7V5a3 3 0 0 0-6 0v9.7a5 5 0 1 0 6 0ZM11 10v8"/><path d="M17 6h4M17 10h3"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Heating</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 20 5v6c0 5-3.5 8.2-8 11-4.5-2.8-8-6-8-11V5l8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Contents insurance</span></span>
+  </div>
+</section>
+<section class="amenities-sheet-group" aria-labelledby="amenitiesGroup1">
+  <h3 id="amenitiesGroup1">Study, relax and socialise</h3>
+  <div class="amenities-sheet-grid">
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6M6 7v10M18 7v10M21 9v6M6 12h12"/><path d="M2 9h2v6H2M20 9h2v6h-2"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">On-site gym</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5c-2.4-1.4-5.7-2-9-1.2v15c3.3-.8 6.6-.2 9 1.2 2.4-1.4 5.7-2 9-1.2v-15c-3.3-.8-6.6-.2-9 1.2ZM12 5v15"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Study spaces</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Cinema room</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h10a5 5 0 0 1 4.8 4l.7 4.4a2.7 2.7 0 0 1-4.3 2.5L15 16H9l-3.2 2.9a2.7 2.7 0 0 1-4.3-2.5l.7-4.4A5 5 0 0 1 7 8Z"/><path d="M6 12h4M8 10v4"/><circle cx="16.5" cy="11.5" r=".8" fill="currentColor"/><circle cx="18.5" cy="13.5" r=".8" fill="currentColor"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Games and social areas</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Roof terrace</span></span>
+  </div>
+</section>
+<section class="amenities-sheet-group" aria-labelledby="amenitiesGroup2">
+  <h3 id="amenitiesGroup2">Practical support</h3>
+  <div class="amenities-sheet-grid">
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">24/7 security coverage</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5ZM3 7l9 5 9-5M12 12v10M8 4l9 5"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Reception and parcel collection</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="13.5" r="5"/><path d="M7 6h2M13 6h3M9 14c2 1 4 1 6 0"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">On-site laundry (usage charges may apply)</span></span>
+    <span class="amenity-pill"><span class="amenity-pill-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17" r="4"/><circle cx="18.5" cy="17" r="4"/><path d="m5.5 17 4-9 5 9h-9m9 0 4-9h-5M9 8H7M11.5 7h3"/></svg></span><span class="amenity-pill-divider" aria-hidden="true"></span><span class="amenity-pill-label">Secure bike storage</span></span>
+  </div>
+</section>
+      <p class="amenities-dialog-source">Features described by iQ Student Accommodation. Check the room contract for utility limits and insurance terms; laundry may involve separate usage charges.</p>
+      <section class="amenities-sheet-bills" aria-labelledby="amenityBillsHeading">
+        <h3 id="amenityBillsHeading">Compare your weekly bills</h3>
+        <div class="bill-estimate"><div class="bill-estimate-top"><div><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div>
+      </section>
+    </div>
+  </div>
+</dialog>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script id="amenitiesReadingInteraction">
+/* Independent amenities reading panel. Intentionally separate from the listing's dynamic JS. */
+(() => {
+ const panel=document.getElementById('amenitiesDetailsDialog');
+ const opener=document.getElementById('amenitiesViewAll');
+ if(!panel||!opener)return;
+ const content=panel.querySelector('.amenities-dialog-content');
+ const closeButton=panel.querySelector('[data-amenities-close]');
+ const reduceMotion=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let previousFocus=null,closing=null;
+ const clearClosing=()=>{if(closing!==null){clearTimeout(closing);closing=null}};
+ function openPanel(){
+   if(panel.open)return;
+   clearClosing();
+   previousFocus=document.activeElement;
+   panel.showModal();
+   panel.classList.remove('is-visible');
+   if(content)content.scrollTop=0;
+   document.documentElement.classList.add('amenities-details-open');
+   if(reduceMotion())panel.classList.add('is-visible');
+   else requestAnimationFrame(()=>requestAnimationFrame(()=>{if(panel.open)panel.classList.add('is-visible')}));
+   closeButton?.focus({preventScroll:true});
+ }
+ function closePanel(immediate=false){
+   if(!panel.open)return;
+   clearClosing();
+   panel.classList.remove('is-visible');
+   const finish=()=>{if(panel.open)panel.close()};
+   if(immediate||reduceMotion())finish();
+   else closing=setTimeout(finish,560);
+ }
+ opener.addEventListener('click',openPanel);
+ closeButton?.addEventListener('click',()=>closePanel());
+ panel.addEventListener('cancel',event=>{event.preventDefault();closePanel()});
+ panel.addEventListener('close',()=>{
+   clearClosing();
+   panel.classList.remove('is-visible');
+   document.documentElement.classList.remove('amenities-details-open');
+   if(previousFocus&&previousFocus.isConnected)previousFocus.focus({preventScroll:true});
+ });
+ panel.addEventListener('click',event=>{
+   if(event.target!==panel)return;
+   const b=panel.getBoundingClientRect();
+   if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)closePanel();
+ });
+})();
+</script>
 <script id="aboutReadingInteraction">
 /* Independent property reading-sheet interaction: survives unrelated listing script errors. */
 (() => {
@@ -1722,8 +1909,8 @@ if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-moti
   add('#overview .overview-facts > div',['left','right','lowerLeft','lowerRight'],[80,80,330,330]);
   add('#about .about-editorial-surface',['up'],[80]);
   add('#tours .photo-category-grid > button',['left','right','lowerLeft','lowerRight'],[70,70,290,290]);
-  add('#amenities .amenity-groups > .amenity-group',['left','right','up'],[40,40,230]);
-  add('#amenities .bill-estimate',['up'],[100]);
+  add('#amenities .amenity-preview-pills > .amenity-pill',['left','right','up'],[60,60,230,260,260,300]);
+  add('#amenities .amenity-actions',['up'],[180]);
   add('#rooms .room-pricing-summary, #rooms .room-filter',['left','right'],[60,60]);
   add('#rooms .room-list > .room-card',['left','right','lowerLeft','lowerRight'],[80,80,230,230,340]);
   add('#rules .disclosure-list > details, #faqs .disclosure-list > details',['left','right','lowerLeft','lowerRight'],[60,60,220,220]);
