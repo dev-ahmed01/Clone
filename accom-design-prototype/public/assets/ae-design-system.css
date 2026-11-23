@@ -533,3 +533,143 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header{margin-bottom:9px!important}
  .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-list{gap:6px!important}
 }
+
+
+/* AE TYPOGRAPHY CONTRACT v2 — AE_Design(2).docx, entire Listing Page 2 */
+/*
+ * Attached AE spec:
+ * H1 Bricolage 48 / 700; H2 Bricolage 36 / 700;
+ * card H3/H4 Bricolage 21 / 600; body Montserrat 16 / 400;
+ * buttons Montserrat 12–13 / 600–700; links Montserrat ~14 / 700.
+ * Small counters, prices, badges and supporting metadata remain distinct UI
+ * elements rather than being incorrectly treated as body paragraphs.
+ */
+:root{
+ --ae-h1:48px;--ae-h2:36px;--ae-card-heading:21px;
+ --ae-body-size:16px;--ae-button-size:13px;--ae-anchor-size:14px;
+ --font-title:'Bricolage Grotesque',Arial,sans-serif;
+ --font-body:'Montserrat',Arial,sans-serif;
+}
+html,body{font-family:var(--font-body)!important}
+body{font-size:var(--ae-body-size)!important;font-weight:400!important;line-height:1.65}
+/* Main property heading, including the heading moved behind the rating ribbon. */
+#property-identity h1,.property-heading h1{
+ font:700 var(--ae-h1)/1.1 var(--font-title)!important;
+ letter-spacing:-.042em!important;color:var(--ae-ink,#101D33);
+}
+/* Every section title, from overview and offers to location, reviews and dialogs. */
+#overview h2,#offers h2,#about h2,#amenities h2,#rooms h2,
+#rules h2,#payments h2,#floorplan h2,#neighbourhood h2,
+#faqs h2,#location h2,#reviews h2,
+#enquiryDialog h2,#compareDialog h2,#aboutDetailsDialog h2,#amenitiesDialog h2,
+.modal-layer .dialog-surface h2{
+ font:700 var(--ae-h2)/1.18 var(--font-title)!important;
+ letter-spacing:-.035em!important;
+}
+#payments .payments-heading h2{font:700 var(--ae-h2)/1.18 var(--font-title)!important}
+/* H3 and H4 represent the AE 21px card-heading level throughout the listing. */
+#overview .overview-fact.residence-card h3,
+#overview .residence-card-copy h3,
+#offers .offers-card-copy h3,
+#about h3,
+#amenities .amx-group-head h3,
+#rooms .room-card h3,
+#rooms .room-title-line h3,
+#rules .rule-title,
+#payments .payment-item h3,
+#location .landmark-group h3,
+#reviews .review-preview-intro h3,
+#reviews .review-card-title,
+#floorplan .inline-request strong,
+#faqs .disclosure-list summary,
+#enquiryDialog h3,#compareDialog h3,
+#aboutDetailsDialog h3,#aboutDetailsDialog h4,
+#amenitiesDialog h3,#amenitiesDialog h4,
+.we-lb .we-lb__title{
+ font:600 var(--ae-card-heading)/1.34 var(--font-title)!important;
+ letter-spacing:-.022em!important;
+}
+/* Narrative paragraphs are 16/400; note labels and attribution footnotes are
+   exempt because they are metadata, not body text. */
+#overview p,#offers p,#about p,#amenities p,#floorplan p,
+#neighbourhood p,#faqs p,#location p,
+#rooms p:not(.rooms-source-note),
+#rules p:not(.rules-eyebrow),
+#payments p:not(.payments-eyebrow):not(.payments-source-note),
+#reviews p:not(.review-example-disclosure),
+#enquiryDialog p:not(.modal-context),
+#compareDialog p,#aboutDetailsDialog p,#amenitiesDialog p{
+ font:400 var(--ae-body-size)/1.72 var(--font-body)!important;
+ letter-spacing:normal!important;
+}
+#overview .overview-lede,
+#overview .overview-fact.residence-card p,
+#offers .offers-card-copy p,
+#about .about-editorial-lede,#about .about-editorial-preview p,
+#amenities .amx-item,
+#rooms .room-more-content p,
+#rules .rule-body-inner p,
+#payments .payment-item p,#payments .payment-item p.payment-detail,
+#faqs .disclosure-list details p,
+#reviews .review-example p,#reviews .review-preview-intro p,
+#location .landmark-row,
+#neighbourhood .neighbourhood-layout p,
+#floorplan .inline-request p{
+ font:400 var(--ae-body-size)/1.7 var(--font-body)!important;
+ letter-spacing:normal!important;
+}
+#rooms .room-facts,
+#rooms .room-feature-list,
+#location .landmark-row span{
+ font:400 var(--ae-body-size)/1.6 var(--font-body)!important;
+}
+/* Sidebar label is a card title; walking times remain compact metadata. */
+.cta-aside .booking-card--compact .rail-title{
+ font:600 var(--ae-card-heading)/1.3 var(--font-title)!important;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header strong{
+ font:600 var(--ae-card-heading)/1.3 var(--font-title)!important;
+}
+/* Every text button uses the document's Montserrat 12–13 / 600–700 scale.
+   Icon-only controls keep their dimensions and do not need large type. */
+button,input,select,textarea{font-family:var(--font-body)!important}
+button{font-size:var(--ae-button-size);font-weight:600}
+.primary-button,.outline-button,.header-contact,
+.offers-action,.about-view-more,.amx-more,
+#rooms .room-filter button,#rooms .room-select,
+#rooms .room-enquire,#rooms .room-term-actions button,
+#property-identity .heading-actions .text-action,
+#scrollNav .section-nav-track button,
+#scrollNav .tiny-nav-action,
+.we-dock button,.modal-layer button:not(.modal-icon),
+#enquiryDialog button:not(.modal-icon),
+#compareDialog button:not(.modal-icon),
+.cta-aside .booking-card--compact .rail-controls button{
+ font:700 var(--ae-button-size)/1.35 var(--font-body)!important;
+ letter-spacing:normal!important;
+}
+/* Bold 14px links as defined in the AE Design System. */
+main a:not(.gallery-ribbon-tab):not(.we-tile),
+.site-header .header-links a,
+#scrollNav .section-nav-track a,
+.page-footer a,.source-link,
+#reviews .source-link,.modal-layer a,dialog a{
+ font:700 var(--ae-anchor-size)/1.42 var(--font-body)!important;
+ letter-spacing:normal!important;
+}
+/* Non-button interactive FAQ and image captions are still semantically distinct. */
+#faqs .disclosure-list summary{cursor:pointer}
+#rules .rule-card-trigger .rule-title{font-weight:600!important}
+#reviews .review-card-title{font-weight:600!important}
+@media(max-width:800px){
+ :root{--ae-h1:40px;--ae-h2:32px;--ae-card-heading:20px}
+ #payments .payments-heading h2{font-size:var(--ae-h2)!important}
+}
+@media(max-width:550px){
+ :root{--ae-h1:36px;--ae-h2:30px;--ae-card-heading:19px}
+ #payments .payments-heading h2{font-size:var(--ae-h2)!important}
+ #scrollNav .section-nav-track a{font-size:13px!important}
+}
+@media(max-width:365px){
+ :root{--ae-h1:32px}
+}
