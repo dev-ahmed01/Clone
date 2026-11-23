@@ -1022,36 +1022,88 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
   .property-heading .heading-actions{display:flex;gap:16px}
 }
 
-/* Listing Page 2 — sequential editorial overview and offer rows */
+/* Listing Page 2: residence overview with equal 2x2 cards and red fill-hover. */
 #overview.overview-editorial{
-  display:grid;grid-template-columns:minmax(0,1fr);gap:27px;
-  padding:42px 44px 36px;margin:0 0 26px;
-  background:rgba(255,255,255,.9);border:1px solid rgba(17,31,53,.065);
-  border-radius:30px;box-shadow:0 12px 35px rgba(17,31,53,.035)
+  display:grid;grid-template-columns:minmax(0,1fr);gap:30px;
+  padding:48px 45px 43px;margin:0 0 26px;
+  background:rgba(255,255,255,.96);border:1px solid rgba(17,31,53,.065);
+  border-radius:32px;box-shadow:0 12px 35px rgba(17,31,53,.035)
 }
-#overview .overview-story{max-width:780px;min-width:0}
-#overview .overview-eyebrow,.offers-showcase .offers-eyebrow{
-  margin:0 0 15px;color:var(--red);font:700 11px/1.4 var(--font-body);
-  letter-spacing:.13em;text-transform:uppercase
+#overview .overview-story{max-width:900px;min-width:0}
+#overview h2{font:700 clamp(34px,3.25vw,48px)/1.1 var(--font-title);letter-spacing:-.045em;color:var(--navy);max-width:850px;margin:0 0 24px}
+#overview .overview-copy{display:flex;flex-direction:column;gap:12px}
+#overview .overview-lede{font:600 clamp(17px,1.55vw,20px)/1.6 var(--font-body);letter-spacing:-.012em;color:var(--navy);max-width:890px;margin:0}
+#overview .overview-detail{font:400 16px/1.72 var(--font-body);color:#5c687a;max-width:850px;margin:0}
+#overview .overview-facts.residence-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-auto-rows:minmax(148px,auto);gap:18px;align-items:stretch;
+  border:0;margin:0;padding:0
 }
-#overview h2{font-size:clamp(32px,3.1vw,42px);font-weight:700;line-height:1.13;max-width:730px;margin:0 0 22px}
-#overview .overview-copy{display:flex;flex-direction:column;gap:13px}
-#overview .overview-lede{font:600 clamp(17px,1.4vw,19px)/1.55 var(--font-body);letter-spacing:-.012em;color:var(--navy);max-width:730px;margin:0}
-#overview .overview-detail{font:400 15px/1.75 var(--font-body);color:#4d5c70;max-width:730px;margin:0}
-#overview .overview-facts{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin:0;border-top:1px solid #eae5df}
-#overview .overview-fact{display:grid;grid-template-columns:44px minmax(0,1fr);align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid #ece8e3}
-#overview .overview-fact:last-child{border-bottom:0;padding-bottom:4px}
-#overview .overview-fact .fact-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:#fff0ed;color:var(--red);border:1px solid #ffe5e2}
-#overview .overview-fact .fact-icon svg{width:21px;height:21px}
-#overview .overview-fact strong{display:block;color:var(--navy);font:600 16px/1.4 var(--font-body);margin-bottom:3px}
-#overview .overview-fact p{font:400 14px/1.6 var(--font-body);color:#4f6075;margin:0}
-@keyframes overview-cascade{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:no-preference){
-  html.motion-ready #overview.overview-editorial:not(.sequence-visible) .overview-step{opacity:0;transform:translateY(17px)}
-  html.motion-ready #overview.overview-editorial.sequence-visible .overview-step{
-    animation:overview-cascade .66s cubic-bezier(.21,.8,.25,1) both;
-    animation-delay:calc(var(--step,0) * 115ms)
+#overview .overview-fact.residence-card{
+  position:relative;isolation:isolate;overflow:hidden;
+  display:grid;grid-template-columns:64px minmax(0,1fr);
+  align-items:center;gap:20px;min-height:148px;
+  padding:24px 23px;margin:0;
+  border:1px solid #eadfd7;border-radius:23px;background:#fffdfa;
+  box-shadow:0 3px 12px rgba(17,31,53,.04);
+  transition:transform .32s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s
+}
+#overview .residence-card::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(115deg,#ED2024 0%,#d21822 68%,#bb111a 100%);
+  transform:translateX(-102%);transform-origin:left center;
+  transition:transform .48s cubic-bezier(.2,.78,.22,1);
+  pointer-events:none
+}
+#overview .residence-card::after{
+  content:"";position:absolute;bottom:0;right:0;width:45%;height:54%;
+  background:linear-gradient(145deg,transparent 18%,rgba(255,255,255,.055));
+  opacity:0;transition:opacity .35s;pointer-events:none
+}
+#overview .residence-card > *{position:relative;z-index:1;min-width:0}
+#overview .residence-card .residence-icon{
+  display:grid;place-items:center;width:64px;height:64px;flex:none;
+  border-radius:17px;background:#fff0ed;color:var(--red);
+  border:1px solid #ffe5e1;
+  transition:background .3s ease,color .3s ease,border-color .3s ease,transform .3s ease
+}
+#overview .residence-icon svg{
+  display:block;width:30px;height:30px;stroke:currentColor;stroke-width:1.9;
+  stroke-linecap:round;stroke-linejoin:round;fill:none;
+  vector-effect:non-scaling-stroke
+}
+#overview .residence-card-copy h3{
+  margin:0 0 7px;font:600 20px/1.25 var(--font-body);
+  letter-spacing:-.02em;color:var(--navy);transition:color .27s ease
+}
+#overview .residence-card-copy p{
+  margin:0;font:400 14px/1.6 var(--font-body);
+  color:#56647a;transition:color .27s ease
+}
+@media(hover:hover) and (pointer:fine){
+  #overview .residence-card:hover{
+    transform:translateY(-3px);border-color:var(--red);
+    box-shadow:0 12px 25px rgba(237,32,36,.14)
   }
+  #overview .residence-card:hover::before{transform:translateX(0)}
+  #overview .residence-card:hover::after{opacity:1}
+  #overview .residence-card:hover .residence-icon{
+    background:rgba(255,255,255,.17);color:#fff;
+    border-color:rgba(255,255,255,.36);transform:scale(1.04)
+  }
+  #overview .residence-card:hover .residence-card-copy h3,
+  #overview .residence-card:hover .residence-card-copy p{color:#fff}
+}
+@keyframes overview-cascade{
+ from{opacity:0;transform:translateY(17px)}
+ to{opacity:1;transform:translateY(0)}
+}
+@media(prefers-reduced-motion:no-preference){
+ html.motion-ready #overview.overview-editorial:not(.sequence-visible) .overview-step{opacity:0;transform:translateY(17px)}
+ html.motion-ready #overview.overview-editorial.sequence-visible .overview-step{
+   animation:overview-cascade .62s cubic-bezier(.21,.8,.25,1) both;
+   animation-delay:calc(var(--step,0) * 115ms)
+ }
 }
 /* Reference-inspired three-row offer panel; content deliberately marked as examples. */
 #offers.offers-showcase{
@@ -1121,6 +1173,37 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
  #offers .offers-disclaimer{font-size:10px}
 }
 @media(prefers-reduced-motion:reduce){#offers .offers-action{transition:none}}
+
+/* Responsive residence grid, applied after the original mobile overrides. */
+@media(max-width:900px){
+  #overview.overview-editorial{padding:35px 27px;gap:24px}
+  #overview .overview-facts.residence-grid{gap:13px;grid-auto-rows:minmax(145px,auto)}
+  #overview .overview-fact.residence-card{grid-template-columns:48px minmax(0,1fr);gap:12px;padding:17px}
+  #overview .residence-card .residence-icon{width:48px;height:48px;border-radius:13px}
+  #overview .residence-icon svg{width:26px;height:26px}
+  #overview .residence-card-copy h3{font-size:16px}
+  #overview .residence-card-copy p{font-size:12px}
+}
+@media(max-width:700px){
+  #overview .overview-facts.residence-grid{grid-template-columns:1fr;grid-auto-rows:auto;gap:12px}
+  #overview .overview-fact.residence-card{min-height:115px;grid-template-columns:55px minmax(0,1fr);padding:18px}
+  #overview .residence-card .residence-icon{width:55px;height:55px}
+}
+@media(max-width:550px){
+  #overview.overview-editorial{padding:29px 22px;margin-left:0;margin-right:0;border-radius:24px}
+  #overview h2{font-size:clamp(30px,8vw,38px)}
+  #overview .overview-lede{font-size:17px}
+  #overview .overview-detail{font-size:14px}
+  #overview .overview-fact.residence-card{grid-template-columns:50px minmax(0,1fr);padding:18px 16px;min-height:110px;gap:13px}
+  #overview .residence-card .residence-icon{width:50px;height:50px}
+  #overview .residence-card-copy h3{font-size:16px}
+  #overview .residence-card-copy p{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){
+  #overview .overview-step{animation:none!important;opacity:1!important;transform:none!important}
+  #overview .residence-card,#overview .residence-card::before,#overview .residence-card::after,
+  #overview .residence-icon,#overview .residence-card-copy h3,#overview .residence-card-copy p{transition:none!important}
+}
 </style>
 </head>
 <body>
@@ -1184,18 +1267,29 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 </div><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
 <section class="section section-overview overview-editorial" id="overview" aria-labelledby="overview-heading">
   <div class="overview-story">
-    <p class="overview-eyebrow overview-step" style="--step:0">01 / PROPERTY OVERVIEW</p>
-    <h2 id="overview-heading" class="overview-step" style="--step:1">About this student residence</h2>
+    <h2 id="overview-heading" class="overview-step" style="--step:0">About this student residence</h2>
     <div class="overview-copy">
-      <p class="overview-lede overview-step" style="--step:2">Modern en suite rooms and private studios in central Kingston, steps from the shops and close to the River Thames.</p>
-      <p class="overview-detail overview-step" style="--step:3">Live independently while staying connected to shared study and social spaces.</p>
+      <p class="overview-lede overview-step" style="--step:1">Modern en suite rooms and private studios in central Kingston, steps from the shops and close to the River Thames.</p>
+      <p class="overview-detail overview-step" style="--step:2">Live independently while staying connected to shared study and social spaces.</p>
     </div>
   </div>
-  <div class="overview-facts" aria-label="Property highlights">
-    <div class="overview-fact overview-step" style="--step:4"><span class="fact-icon"><svg aria-hidden="true"><use href="#bed"></use></svg></span><div><strong>En suites and studios</strong><p>A private bathroom in every room type</p></div></div>
-    <div class="overview-fact overview-step" style="--step:5"><span class="fact-icon"><svg aria-hidden="true"><use href="#wifi"></use></svg></span><div><strong>Bills included</strong><p>Wi-Fi, electricity, heating, water and contents insurance</p></div></div>
-    <div class="overview-fact overview-step" style="--step:6"><span class="fact-icon"><svg aria-hidden="true"><use href="#graduation"></use></svg></span><div><strong>Close to university</strong><p>Central Kingston location with campus access</p></div></div>
-    <div class="overview-fact overview-step" style="--step:7"><span class="fact-icon"><svg aria-hidden="true"><use href="#shield"></use></svg></span><div><strong>24-hour security</strong><p>Security measures listed by the accommodation provider</p></div></div>
+  <div class="overview-facts residence-grid" aria-label="Property highlights">
+    <article class="overview-fact residence-card overview-step" style="--step:3">
+      <span class="fact-icon residence-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19V5m0 12h18v2M3 11h18v6H3zM7 11V8h10v3M21 11V5"/></svg></span>
+      <div class="residence-card-copy"><h3>En suites and studios</h3><p>A private bathroom in every room type</p></div>
+    </article>
+    <article class="overview-fact residence-card overview-step" style="--step:4">
+      <span class="fact-icon residence-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5a14.5 14.5 0 0 1 19 0M5.6 12a9.5 9.5 0 0 1 12.8 0M8.8 15.6a4.6 4.6 0 0 1 6.4 0"/><path d="M12 19.5h.01" stroke-width="3"/></svg></span>
+      <div class="residence-card-copy"><h3>Bills included</h3><p>Wi-Fi, electricity, heating, water and contents insurance</p></div>
+    </article>
+    <article class="overview-fact residence-card overview-step" style="--step:5">
+      <span class="fact-icon residence-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9zM6 11v6c4 3 8 3 12 0v-6M22 9v7"/></svg></span>
+      <div class="residence-card-copy"><h3>Close to university</h3><p>Central Kingston location with campus access</p></div>
+    </article>
+    <article class="overview-fact residence-card overview-step" style="--step:6">
+      <span class="fact-icon residence-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 3v6.5c0 5-3 8.3-8 10.5-5-2.2-8-5.5-8-10.5V5l8-3z"/><path d="m8.4 11.8 2.4 2.4 4.9-5"/></svg></span>
+      <div class="residence-card-copy"><h3>24-hour security</h3><p>Security measures listed by the accommodation provider</p></div>
+    </article>
   </div>
 </section>
 <section class="section offers-showcase" id="offers" aria-labelledby="offers-heading">
