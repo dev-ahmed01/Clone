@@ -2035,6 +2035,114 @@ body{
  #scrollNav.section-nav{background:#fff!important;border-color:#8e9aab}
  #scrollNav .section-nav-track a.active{background:#fce0dc}
 }
+
+/* Amber-inspired double-row listing navigation, now spanning the entire viewport.
+   Keep the Accom brand and existing student-first coral glass aesthetic. */
+:root{--listing-header-height:82px;--listing-tabs-height:64px}
+.site-header{
+ position:sticky!important;top:0;z-index:90;
+ width:100%;
+ background:linear-gradient(110deg,rgba(255,255,255,.97),rgba(255,248,246,.94))!important;
+ border:0!important;border-bottom:1px solid rgba(219,221,227,.75)!important;
+ box-shadow:0 4px 18px rgba(27,36,52,.04)!important;
+ backdrop-filter:blur(15px) saturate(150%);
+ -webkit-backdrop-filter:blur(15px) saturate(150%);
+}
+.site-header .logo,.site-header .header-links a{color:var(--navy)!important}
+.site-header .logo-name small{color:#67758a!important}
+.site-header .icon-button{background:rgba(255,241,239,.83);color:var(--red)}
+.site-header .header-contact{background:var(--red);color:white}
+.site-header .header-contact:hover{background:#c51e27;color:white}
+#scrollNav.section-nav{
+ position:fixed;top:var(--listing-header-height);left:0;right:0;
+ z-index:85;width:100%;max-width:none;min-width:0;height:var(--listing-tabs-height);
+ display:flex;align-items:stretch;gap:8px;
+ padding:0 max(20px,calc((100vw - 1440px)/2 + 32px));
+ margin:0;border:0;border-bottom:1px solid rgba(223,215,215,.8);
+ border-radius:0;
+ background:linear-gradient(100deg,rgba(255,255,255,.95),rgba(255,247,245,.91),rgba(255,255,255,.94));
+ backdrop-filter:blur(16px) saturate(145%)!important;
+ -webkit-backdrop-filter:blur(16px) saturate(145%)!important;
+ box-shadow:0 10px 24px rgba(18,35,58,.065),inset 0 1px 0 rgba(255,255,255,.8);
+ isolation:auto;will-change:auto;
+ opacity:0;visibility:hidden;pointer-events:none;
+ transform:translate3d(0,-14px,0);
+ transition:opacity .23s ease,transform .32s cubic-bezier(.2,.8,.2,1),visibility .23s;
+}
+#scrollNav.section-nav.shown{
+ opacity:1;visibility:visible;pointer-events:auto;
+ transform:translate3d(0,0,0);
+}
+#scrollNav.section-nav::before{display:none}
+#scrollNav .section-nav-track{
+ min-width:0;flex:1 1 auto;
+ display:flex;align-items:stretch;gap:0;
+ overflow-x:auto;overflow-y:hidden;
+ white-space:nowrap;scrollbar-width:none;
+ overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;
+ scroll-behavior:auto;padding:0;
+}
+#scrollNav .section-nav-track::-webkit-scrollbar{display:none}
+#scrollNav .section-nav-track a,
+#scrollNav .section-nav-track button{
+ position:relative;display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;
+ min-height:var(--listing-tabs-height);height:100%;padding:0 15px;
+ border:0;border-radius:0;background:transparent!important;
+ box-shadow:none!important;color:#3a4960;
+ font:500 13px/1.25 var(--font-body);letter-spacing:0;
+ white-space:nowrap;text-decoration:none;cursor:pointer;
+ transition:color .19s ease;
+}
+#scrollNav .section-nav-track a:hover,
+#scrollNav .section-nav-track button:hover{color:var(--red);background:transparent!important}
+#scrollNav .section-nav-track a.active{
+ color:var(--red)!important;background:transparent!important;
+ font-weight:600;box-shadow:none!important;
+}
+#scrollNav .section-nav-track a::after{
+ content:"";position:absolute;left:15px;right:15px;bottom:0;height:3px;
+ border-radius:3px 3px 0 0;background:var(--red);
+ transform:scaleX(0);transform-origin:center;
+ transition:transform .3s cubic-bezier(.2,.85,.2,1);
+}
+#scrollNav .section-nav-track a.active::after{transform:scaleX(1)}
+#scrollNav .section-nav-actions{
+ flex:0 0 auto;align-self:center;display:flex;gap:5px;
+ padding:0 0 0 10px;margin:0;
+ border:0;border-left:1px solid rgba(35,55,76,.12);
+ border-radius:0;background:transparent;
+}
+#scrollNav .tiny-nav-action{
+ color:#33425b;min-height:40px;padding:8px 10px;
+ border-radius:999px;background:transparent;
+ font-weight:600;
+}
+#scrollNav .tiny-nav-action:hover{
+ color:var(--red);background:rgba(237,32,36,.065);
+}
+#scrollNav .nav-orbit-dot{display:none!important}
+html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-height) + 20px)}
+.content-column>.section[id]{scroll-margin-top:calc(var(--listing-header-height) + var(--listing-tabs-height) + 22px)!important}
+.cta-aside .cta-sticky{top:calc(var(--listing-header-height) + var(--listing-tabs-height) + 12px)}
+@media(max-width:1050px){
+ #scrollNav.section-nav{padding:0 16px}
+ #scrollNav .section-nav-track a,#scrollNav .section-nav-track button{padding:0 13px;font-size:12px}
+ #scrollNav .section-nav-actions{gap:0;padding-left:6px}
+}
+@media(max-width:800px){
+ :root{--listing-header-height:73px;--listing-tabs-height:57px}
+ #scrollNav.section-nav{padding:0 10px}
+ #scrollNav .section-nav-track a,#scrollNav .section-nav-track button{font-size:12px;padding:0 13px}
+ #scrollNav .section-nav-actions{display:none}
+}
+@media(max-width:550px){
+ #scrollNav.section-nav{padding:0 8px}
+ #scrollNav .section-nav-track a,#scrollNav .section-nav-track button{font-size:11.5px;padding:0 12px}
+ #scrollNav .section-nav-track a::after{left:12px;right:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ #scrollNav.section-nav,#scrollNav .section-nav-track a,#scrollNav .section-nav-track button,#scrollNav .section-nav-track a::after{transition:none!important}
+}
 </style>
 </head>
 <body>
@@ -2093,9 +2201,26 @@ body{
 <div class="heading-end"><div class="heading-actions"><button aria-pressed="false" class="text-action save-toggle" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="text-action" id="shareButton" type="button"><svg><use href="#share"></use></svg> Share</button></div></div>
 </div>
 <div aria-hidden="true" class="nav-sentinel"></div>
-<nav aria-label="On this listing" class="section-nav" id="scrollNav" inert=""><div class="section-nav-track" id="navTrack">
-<a class="active" href="#overview">Overview</a><a href="#offers">Offers</a><a href="#amenities">Amenities</a><a href="#rooms">Rooms</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
-</div><span class="nav-orbit-dot" aria-hidden="true"></span><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
+<nav aria-label="Jump to listing sections" class="section-nav listing-wide-nav" id="scrollNav" inert="">
+ <div class="section-nav-track" id="navTrack">
+  <a class="active" href="#overview">Description</a>
+  <button type="button" data-gallery-category="videos" aria-label="Open property video tours">Video Tours</button>
+  <a href="#offers">Offers</a>
+  <a href="#amenities">Amenities</a>
+  <a href="#rooms">Room Types</a>
+  <a href="#rules">House Rules</a>
+  <a href="#payments">Payment &amp; Fees</a>
+  <a href="#floorplan">Floor Plans</a>
+  <a href="#neighbourhood">Neighbourhood</a>
+  <a href="#faqs">FAQs</a>
+  <a href="#location">Location</a>
+  <a href="#reviews">Reviews</a>
+ </div>
+ <div class="section-nav-actions">
+  <button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button>
+  <button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button>
+ </div>
+</nav>
 <section class="section section-overview overview-editorial" id="overview" aria-labelledby="overview-heading">
   <div class="overview-story">
     <h2 id="overview-heading" class="overview-step" style="--step:0">About this student residence</h2>
@@ -2736,24 +2861,13 @@ $('#shareButton').addEventListener('click',async()=>{const url=window.location.h
 // Lightweight index: geometry is cached on resize/content changes, not read on each scroll.
 const stickyNav=$('#scrollNav'),stickyTrack=$('#navTrack'),propertyIntro=$('#property-identity');
 const stickyLinks=$$('.section-nav-track a');
-let stickyMarkers=[],introBottomY=0,previousActive='',previousVisibility=null,scrollFrame=0,geometryFrame=0,orbitFrame=0;
-function positionNavOrbit(){
- orbitFrame=0;
- if(!stickyNav||!stickyTrack)return;
- const active=stickyTrack.querySelector('a.active');
- if(!active)return;
- const host=stickyNav.getBoundingClientRect(),target=active.getBoundingClientRect();
- const orbWidth=window.innerWidth<=700?9:10;
- stickyNav.style.setProperty('--nav-orbit-x',Math.round(target.left-host.left+target.width/2-orbWidth/2)+'px');
-}
-function scheduleNavOrbit(){if(!orbitFrame)orbitFrame=requestAnimationFrame(positionNavOrbit)}
-stickyTrack?.addEventListener('scroll',scheduleNavOrbit,{passive:true});
+let stickyMarkers=[],introBottomY=0,previousActive='',previousVisibility=null,scrollFrame=0,geometryFrame=0;
 function updateActiveSection(){
  if(!stickyNav||!propertyIntro)return;
- const y=window.scrollY,passed=y+105>=introBottomY;
- if(passed!==previousVisibility){previousVisibility=passed;stickyNav.classList.toggle('shown',passed);stickyNav.inert=!passed;if(passed)scheduleNavOrbit()}
+ const y=window.scrollY,passed=y+160>=introBottomY;
+ if(passed!==previousVisibility){previousVisibility=passed;stickyNav.classList.toggle('shown',passed);stickyNav.inert=!passed}
  let active=stickyMarkers[0]?.id||'overview';
- for(const marker of stickyMarkers){if(marker.y>y+180)break;active=marker.id}
+ for(const marker of stickyMarkers){if(marker.y>y+190)break;active=marker.id}
  if(active===previousActive)return;
  previousActive=active;let selectedLink=null;
  for(const link of stickyLinks){
@@ -2768,7 +2882,6 @@ function updateActiveSection(){
   if(link.left<track.left+8||link.right>track.right-8){
    stickyTrack.scrollLeft=Math.max(0,stickyTrack.scrollLeft+link.left-track.left-(track.width-link.width)/2);
   }
-  scheduleNavOrbit();
  }
 }
 function measureStickySections(){
@@ -2780,7 +2893,6 @@ function measureStickySections(){
   return el?{id,y:el.getBoundingClientRect().top+y}:null;
  }).filter(Boolean).sort((m,n)=>m.y-n.y);
  updateActiveSection();
- scheduleNavOrbit();
 }
 function scheduleGeometryMeasure(){if(!geometryFrame)geometryFrame=requestAnimationFrame(measureStickySections)}
 function scheduleSectionUpdate(){
