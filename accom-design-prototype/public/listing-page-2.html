@@ -2436,15 +2436,20 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 <p class="review-example-disclosure">These are fictional examples for design review only. Replace with permissioned, attributable resident feedback before publishing.</p>
 </section>
 </div>
-<aside aria-label="Property enquiry and room pricing" class="cta-aside"><div class="cta-sticky"><div class="booking-card"><div class="rail-summary"><div class="rail-title">Rooms at iQ Kingston</div><div class="price-line"><strong id="railPrice">£315</strong><span id="railPriceUnit">/week</span></div><p class="rail-attribution" id="railSource">Amber listing snapshot · 28 Oct 2026</p></div><div class="rail-controls"><div class="booking-choice"><div><small>ROOM</small><strong id="railRoom">From Silver En Suite</strong></div><div><small>AVAILABLE FROM</small><strong id="railTerm">2 Jan 2027</strong></div></div><div class="booking-total"><span>Contract total</span><strong id="railRentTotal">Ask for full total</strong></div><button class="primary-button full" id="railRooms" type="button">View room types <svg><use href="#arrow"></use></svg></button><button class="outline-button full" data-enquire="" type="button">Enquire about this property</button><p class="card-footnote">Confirm before booking · no payment here.</p></div><div class="rail-nearby" aria-label="Nearby landmarks and estimated walking times">
-  <div class="rail-nearby-header"><strong>Nearby on foot</strong><span>From iQ Kingston</span></div>
-  <div class="rail-nearby-list">
-    <div class="rail-walk-row"><span class="rail-walk-marker" aria-hidden="true"><svg><use href="#pin"></use></svg></span><span>Kingston Railway Station</span><strong>4 min</strong></div>
-    <div class="rail-walk-row"><span class="rail-walk-marker" aria-hidden="true"><svg><use href="#graduation"></use></svg></span><span>Kingston College</span><strong>9 min</strong></div>
-    <div class="rail-walk-row"><span class="rail-walk-marker" aria-hidden="true"><svg><use href="#graduation"></use></svg></span><span>Kingston University</span><strong>15 min</strong></div>
+<aside aria-label="Starting room price and enquiry" class="cta-aside">
+  <div class="cta-sticky">
+    <div class="booking-card booking-card--compact">
+      <div class="rail-summary">
+        <div class="rail-title">Price starting from</div>
+        <div class="price-line"><strong id="railPrice">£315</strong><span id="railPriceUnit">/week</span></div>
+      </div>
+      <div class="rail-controls">
+        <button class="primary-button full" id="railRooms" type="button">View room types <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+        <button class="outline-button full" data-enquire="" type="button">Enquire now</button>
+      </div>
+    </div>
   </div>
-  <p class="rail-nearby-source">Approximate walking times from iQ; Kingston University varies by campus. <a href="https://www.iqstudentaccommodation.com/kingston/iq-kingston" target="_blank" rel="noopener noreferrer">Property source</a></p>
-</div></div></div></aside>
+</aside>
 </div>
 </main>
 <footer class="page-footer-shell"><div class="page-footer"><span>accom <small>BY EMLEN</small></span><p>Student accommodation, made simpler.</p><a href="#top">Back to top ↑</a></div></footer>
@@ -2762,14 +2767,13 @@ billExamples.forEach(item=>$('#utility-'+item.key).addEventListener('input',e=>{
 $$('[data-term]').forEach(button=>button.addEventListener('click',()=>{exampleTerm=Number(button.dataset.term);$$('[data-term]').forEach(b=>{b.classList.toggle('chosen',b===button);b.setAttribute('aria-pressed',String(b===button));});redrawBills();}));redrawBills();
 
 function updateSelectedRoom(){
- const room=selectedRoom?rooms.find(r=>r.id===selectedRoom):rooms.filter(r=>r.pricing.verified).sort((a,b)=>a.pricing.price-b.pricing.price)[0];
- $('#railPrice').textContent=room.pricing.verified?formatGBP(room.pricing.price):'Price on request';
- $('#railPriceUnit').hidden=!room.pricing.verified;
- $('#mobilePrice').textContent=room.pricing.verified?formatGBP(room.pricing.price)+'/wk':'Price on request';
- $('#railRoom').textContent=selectedRoom?room.name:'From '+room.name;
- $('#railTerm').textContent=room.pricing.availableFrom||'Ask for availability';
- $('#railRentTotal').textContent='Ask for full total';
- $('#railSource').textContent=room.pricing.verified?'Amber listing snapshot · 28 Oct 2026':'Current rate not listed in source snapshot';
+ // Sticky rail is an advertised starting price, not a changing selection quote.
+ const advertised=rooms.filter(r=>r.pricing.verified&&Number.isFinite(r.pricing.price))
+                       .sort((a,b)=>a.pricing.price-b.pricing.price)[0];
+ const selected=selectedRoom?rooms.find(r=>r.id===selectedRoom):advertised;
+ $('#railPrice').textContent=advertised?formatGBP(advertised.pricing.price):'Price on request';
+ $('#railPriceUnit').hidden=!advertised;
+ $('#mobilePrice').textContent=selected?.pricing.verified?formatGBP(selected.pricing.price)+'/wk':'Price on request';
 }
 let roomCardsBuilt=false;
 function roomSnapshot(room){
@@ -2864,7 +2868,7 @@ function openCompare(){const list=rooms.filter(room=>compared.has(room.id));cons
 }openDialog($('#compareDialog'));}
 $$('[data-compare-open]').forEach(button=>button.addEventListener('click',openCompare));$('#clearCompare').addEventListener('click',()=>{compared.clear();updateCompareCount();redrawRooms();notify('Comparison cleared');});updateCompareCount();updateSelectedRoom();redrawRooms();
 function goToRooms(event){event?.preventDefault();history.replaceState(null,'','#rooms');$('#rooms').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});scheduleGeometryMeasure();}
-$('#railRooms').addEventListener('click',goToRooms);$('[data-gallery-rooms]').addEventListener('click',goToRooms);
+$('#railRooms').addEventListener('click',goToRooms);$('[data-gallery-rooms]')?.addEventListener('click',goToRooms);
 function openEnquiry(){if(dialog)closeDialog(false);$('#enquirySuccess').hidden=true;$('#enquiryForm').hidden=false;$('#enquiryError').hidden=true;openDialog($('#enquiryDialog'));}
 $$('[data-enquire]').forEach(button=>button.addEventListener('click',openEnquiry));
 $('#enquiryForm').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget, name=form.elements.namedItem('name').value.trim(), email=form.elements.namedItem('email').value.trim(), consent=form.elements.namedItem('consent').checked;
