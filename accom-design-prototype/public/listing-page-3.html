@@ -1166,25 +1166,26 @@ dialog#aboutDetailsDialog::backdrop{background:rgba(8,20,37,.5);backdrop-filter:
   #about.about-editorial .about-editorial-surface h2{font-size:clamp(31px,8vw,39px)!important}
   #about.about-editorial .about-editorial-preview p{font-size:14px!important}
 }
-/* Full-page emerging reading view; native modal traps focus and Escape closes it. */
+/* Floating reading sheet: 75% viewport width with the listing clearly visible behind. */
 dialog#aboutDetailsDialog.about-fullpage{
   box-sizing:border-box;
-  position:fixed;inset:0!important;margin:0!important;padding:0!important;
-  display:none;width:100vw!important;height:100vh!important;height:100dvh!important;
-  max-width:100vw!important;max-height:100dvh!important;
-  border:0!important;border-radius:0!important;overflow:hidden;
+  position:fixed;inset:0!important;margin:auto!important;padding:0!important;
+  display:none;width:75vw!important;max-width:75vw!important;
+  height:calc(100vh - 48px)!important;height:calc(100dvh - 48px)!important;
+  max-height:calc(100dvh - 48px)!important;
+  border:1px solid rgba(17,31,53,.08)!important;border-radius:28px!important;overflow:hidden;
   background:#fffaf6;color:var(--navy);
-  opacity:0;transform:translate3d(0,48px,0) scale(.94)!important;
-  transform-origin:center 62%;
+  opacity:0;transform:translate3d(0,40px,0) scale(.92)!important;
+  transform-origin:center center;
   transition:transform .67s cubic-bezier(.17,.82,.18,1),opacity .36s ease;
-  box-shadow:0 28px 100px rgba(9,24,42,.24);
+  box-shadow:0 35px 120px rgba(9,24,42,.28);
   overscroll-behavior:contain;
 }
 dialog#aboutDetailsDialog.about-fullpage[open]{display:flex}
 dialog#aboutDetailsDialog.about-fullpage.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1)!important}
 dialog#aboutDetailsDialog.about-fullpage::backdrop{
-  background:rgba(9,22,39,.52);
-  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+  background:rgba(9,22,39,.28);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
 }
 #aboutDetailsDialog.about-fullpage .about-detail-shell{width:100%;min-height:0}
 #aboutDetailsDialog.about-fullpage .about-detail-topbar{
@@ -1193,7 +1194,7 @@ dialog#aboutDetailsDialog.about-fullpage::backdrop{
 }
 #aboutDetailsDialog.about-fullpage .about-detail-content{
   flex:1;min-height:0;overflow-x:hidden;overflow-y:auto;
-  padding:0 max(24px,calc((100vw - 1040px)/2)) 70px;
+  padding:0 clamp(28px,5vw,76px) 64px;
   overscroll-behavior:contain;
 }
 #aboutDetailsDialog.about-fullpage .about-detail-hero{padding:60px 0 42px}
@@ -1202,6 +1203,13 @@ dialog#aboutDetailsDialog.about-fullpage::backdrop{
 #aboutDetailsDialog.about-fullpage .about-detail-section{padding:36px 0 39px}
 #aboutDetailsDialog.about-fullpage .about-detail-footer{max-width:950px;margin:auto}
 #aboutDetailsDialog.about-fullpage .about-detail-room-grid{gap:20px}
+@media(max-width:900px){
+ dialog#aboutDetailsDialog.about-fullpage{
+   width:92vw!important;max-width:92vw!important;
+   height:calc(100dvh - 30px)!important;max-height:calc(100dvh - 30px)!important;
+   border-radius:22px!important;
+ }
+}
 @media(max-width:700px){
  #aboutDetailsDialog.about-fullpage .about-detail-content{padding:0 22px 46px}
  #aboutDetailsDialog.about-fullpage .about-detail-hero{padding:39px 0 30px}
