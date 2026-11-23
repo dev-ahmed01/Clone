@@ -41,6 +41,7 @@ const SHORT=Object.fromEntries(CATS);
 const EASE='cubic-bezier(.22,1,.36,1)';
 let cat='All Photos',idx=0,isOpen=false,token=0,lastFocus=null,hideTimer=0,bgFlip=false,bgSrc='';
 const root=$('#weGal'),grid=$('#weGalGrid'),lb=$('#lightbox'),gDock=$('#gDock'),lbDock=$('#lbDock');
+if(!root||!grid||!lb||!gDock||!lbDock)return;
 const img=$('#lbImg'),frame=$('#lbFrame'),stage=$('#lbStage'),thumbs=$('#lbThumbs');
 const bgs=[$('#lbBgA'),$('#lbBgB')];
 const pad=n=>String(n).padStart(2,'0');
@@ -85,8 +86,9 @@ tiles.forEach((t,i)=>{paintTile(t,i);t.addEventListener('click',()=>openLB(i,t))
 function setCat(k){
   if(k==='Videos & 3D'){
     // Use Accom's existing honest video/virtual-tour information viewer.
-    if(isOpen)closeLB();
-    setTimeout(()=>document.querySelector('#scrollNav [data-gallery-category="videos"]')?.click(),isOpen?360:0);
+    const wasOpen=isOpen;
+    if(wasOpen)closeLB();
+    setTimeout(()=>document.querySelector('#scrollNav [data-gallery-category="videos"]')?.click(),wasOpen?360:0);
     return;
   }
   if(k===cat||!gallery[k]||!gallery[k].length)return;
