@@ -2145,6 +2145,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 }
 </style>
 <link rel="stylesheet" href="assets/ae-design-system.css"/>
+<link rel="stylesheet" href="assets/accom-we-gallery.css"/>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2181,24 +2182,18 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 <main class="site-container">
 <div class="crumbs"><a href="#top">Student accommodation</a><span>/</span><a href="#location">Kingston upon Thames</a><span>/</span><strong>iQ Kingston</strong></div>
 <div class="gallery-ribbon-frame">
-<section aria-label="Property images" class="gallery">
-<button class="gallery-tile gallery-large" data-open-image="0" type="button"><img alt="Furnished student bedroom concept" data-asset="assets/hero-bedroom.webp" fetchpriority="high" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></button>
-<button class="gallery-tile" data-open-image="1" type="button"><img alt="Shared lounge concept" data-asset="assets/lounge-room.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></button>
-<button class="gallery-tile" data-open-image="2" type="button"><img alt="Studio room concept" data-asset="assets/studio-room.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></button>
-<button class="gallery-tile" data-open-image="3" type="button"><img alt="Shared study space concept" data-asset="assets/study-space.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></button>
-<button class="gallery-tile" data-open-image="4" type="button"><img alt="Student accommodation exterior concept" data-asset="assets/building.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/></button>
-<nav aria-label="Explore property media" class="gallery-category-menu" data-ui="media-switcher"><button class="is-active" data-open-gallery="" type="button"><svg aria-hidden="true"><use href="#grid"></use></svg>Photos <span>7</span></button><button data-gallery-category="videos" type="button"><svg aria-hidden="true"><use href="#play"></use></svg>Videos</button><button data-gallery-category="3d" type="button"><svg aria-hidden="true"><use href="#cube"></use></svg>3D tour</button><a data-gallery-rooms="" href="#rooms"><svg aria-hidden="true"><use href="#bed"></use></svg>Room types</a></nav>
-<button class="gallery-view glass-pill" data-open-gallery="" type="button"><svg><use href="#grid"></use></svg> Show all 7 photos</button>
+<section class="we-gal accom-we-gallery" id="weGal" aria-label="Illustrative photos of iQ Kingston accommodation">
+  <div class="we-gal__shell">
+    <div class="we-dock we-dock--grid" id="gDock" role="group" aria-label="Student accommodation photo categories"></div>
+    <div class="we-gal__grid" id="weGalGrid" data-count="5"></div>
+  </div>
+  <p class="we-gal__disclosure">Illustrative images only. Confirm current room photos, layout and facilities with the accommodation provider before booking.</p>
 </section>
-<a class="gallery-ribbon-tab" href="#reviews" aria-label="Rated 4.9 out of 5 stars, 11 reviews on Amber. View reviews.">
- 
- <span class="gallery-ribbon-tab-body" aria-hidden="true"><span class="gallery-ribbon-tab-score">4.9</span><span class="gallery-ribbon-tab-stars">★★★★★</span></span>
-</a>
 </div>
 <div class="layout">
 <div class="content-column">
 <div class="property-heading" id="property-identity">
-<div><div class="property-title-row"><h1>iQ Kingston</h1></div><p class="property-address"><svg><use href="#pin"></use></svg> 15 Wood Street, Kingston upon Thames, KT1 1TY</p></div>
+<div><div class="property-title-row"><h1>iQ Kingston</h1><a class="we-gallery-rating-inline" href="#reviews" aria-label="4.9 out of 5 from 11 Amber listing reviews"><strong>4.9</strong><span aria-hidden="true">★★★★★</span></a></div><p class="property-address"><svg><use href="#pin"></use></svg> 15 Wood Street, Kingston upon Thames, KT1 1TY</p></div>
 <div class="heading-end"><div class="heading-actions"><button aria-pressed="false" class="text-action save-toggle" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="text-action" id="shareButton" type="button"><svg><use href="#share"></use></svg> Share</button></div></div>
 </div>
 <div aria-hidden="true" class="nav-sentinel"></div>
@@ -2454,6 +2449,23 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 <footer class="page-footer-shell"><div class="page-footer"><span>accom <small>BY EMLEN</small></span><p>Student accommodation, made simpler.</p><a href="#top">Back to top ↑</a></div></footer>
 <div class="mobile-cta"><div><small>From · checked 28 Oct</small><strong id="mobilePrice">£315/wk</strong></div><button class="primary-button" data-enquire="" type="button">Enquire <svg><use href="#arrow"></use></svg></button></div>
 <div class="compare-tray" hidden="" id="compareTray"><span id="compareTrayLabel">1 room selected</span><button class="primary-button" data-compare-open="" type="button">Compare</button><button class="compare-clear" id="clearCompare" type="button">Clear</button></div>
+<div class="we-lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Workspace photo gallery" aria-hidden="true" hidden>
+<div class="we-lb__bg" aria-hidden="true"><img id="lbBgA" alt=""><img id="lbBgB" alt=""></div>
+<div class="we-lb__top">
+<div class="we-dock we-dock--lb" id="lbDock" role="group" aria-label="Photo categories"></div>
+<button class="we-lb__close" id="lbClose" type="button" aria-label="Close gallery"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+<div class="we-lb__stage" id="lbStage">
+<button class="we-lb__arrow we-lb__arrow--prev" id="lbPrev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5.5L8 12l6.5 6.5"/></svg></button>
+<div class="we-lb__frame" id="lbFrame"><img id="lbImg" alt="" draggable="false"></div>
+<button class="we-lb__arrow we-lb__arrow--next" id="lbNext" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 5.5L16 12l-6.5 6.5"/></svg></button>
+</div>
+<div class="we-lb__bottom">
+<div class="we-lb__cap"><span class="we-lb__kicker" id="lbKicker"></span><h3 class="we-lb__title" id="lbTitle" aria-live="polite"></h3></div>
+<div class="we-lb__thumbs" id="lbThumbs"></div>
+<div class="we-lb__count"><span id="lbCount">01 / 10</span><i><b id="lbBar"></b></i></div>
+</div>
+</div>
 <div aria-label="Property photo tour" aria-modal="true" class="modal-layer photo-modal" hidden="" id="galleryDialog" role="dialog"><div class="photo-modal-content"><img class="photo-ambient" id="photoAmbient" alt="" aria-hidden="true"/><header class="modal-header"><div><strong>iQ Kingston</strong><small>Photo tour · concept imagery</small></div><button aria-label="Close photo tour" class="modal-icon" data-close=""><svg><use href="#close"></use></svg></button></header><div class="photo-tabs" id="photoTabs"><button class="selected" data-photo-category="all" type="button">All photos <span>7</span></button><button data-photo-category="bedrooms" type="button">En suites <span>2</span></button><button data-photo-category="studios" type="button">Studios <span>2</span></button><button data-photo-category="shared" type="button">Shared spaces <span>2</span></button><button data-photo-category="exterior" type="button">Exterior <span>1</span></button><button data-photo-category="videos" type="button">Videos &amp; 360° <span>0</span></button></div><div class="photo-body" id="photoBody"><div class="photo-viewer"><button aria-label="Previous image" class="photo-arrow prev" id="photoPrev" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><img alt="" data-asset="assets/hero-bedroom.webp" id="photoActive" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><button aria-label="Next image" class="photo-arrow next" id="photoNext" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><div class="photo-footer"><div class="photo-description"><span class="photo-category-caption" id="photoCategoryCaption">All photos</span><strong id="photoTitle">En suite bedroom</strong><small>Concept imagery may not depict the actual building or rooms.</small></div><div class="photo-thumbnails" id="photoThumbnails" aria-label="Photo thumbnails"></div><div class="photo-position"><span id="photoIndex" aria-live="polite">01 / 07</span><div class="photo-progress" aria-hidden="true"><i id="photoProgress"></i></div></div></div></div><div class="missing-media" hidden="" id="missingMedia"><h3>Official video tour not supplied</h3><p>Contact Accom to request the property’s current video or 360° media.</p><a id="officialTourLink" class="outline-button" href="https://my.matterport.com/show/?dh=0&amp;f=0&amp;fp=0&amp;hr=1&amp;m=BDsCpY9882w&amp;play=1&amp;qs=1" target="_blank" rel="noopener noreferrer" hidden>Open official 3D tour</a> <button class="outline-button" data-enquire="" type="button">Request a tour</button></div></div></div>
 <div aria-label="Room comparison" aria-modal="true" class="modal-layer" hidden="" id="compareDialog" role="dialog"><div class="dialog-surface"><button aria-label="Close comparison" class="modal-icon modal-close" data-close=""><svg><use href="#close"></use></svg></button><h2>Compare rooms</h2><p>Compare up to two room styles without losing the details.</p><div id="comparisonTable"></div><button class="outline-button" data-close="" type="button">Back to listing</button></div></div>
 <div aria-label="Property enquiry" aria-modal="true" class="modal-layer" hidden="" id="enquiryDialog" role="dialog"><div class="dialog-surface enquiry-surface"><button aria-label="Close enquiry" class="modal-icon modal-close" data-close=""><svg><use href="#close"></use></svg></button><p class="modal-context">iQ Kingston · Accom by Emlen</p><h2>Ask about this property</h2><p>Questions about a room, contract or move-in date? Tell us what you need to know.</p><form id="enquiryForm" novalidate=""><label>Your name<input autocomplete="name" name="name" placeholder="Full name" required=""/></label><label>Email address<input autocomplete="email" name="email" placeholder="student@university.ac.uk" required="" type="email"/></label><label>Enquiry about<select name="topic"><option>Room availability</option><option>Viewing or floor plan</option><option>Current pricing</option><option>Fees and payments</option><option>Other question</option></select></label><label>University (optional)<input autocomplete="organization" name="university" placeholder="Your university"/></label><label>Preferred move-in date (optional)<input name="moveIn" type="date"/></label><label>Phone (optional)<input autocomplete="tel" name="phone" placeholder="Phone number" type="tel"/></label><label>Your question (optional)<input name="message" placeholder="What would help you decide?"/></label><label class="consent-line"><input name="consent" type="checkbox"/><span>I agree Accom may contact me about this property.</span></label><p class="form-error" hidden="" id="enquiryError"></p><button class="primary-button full" type="submit">Check enquiry <svg><use href="#arrow"></use></svg></button></form><div hidden="" id="enquirySuccess"><h3>Form checked</h3><p>Your details are complete. This prototype does not transmit them.</p><button class="outline-button" data-close="" type="button">Back to listing</button></div></div></div>
@@ -2962,4 +2974,5 @@ if(orderedOverview){
 
 
 </script>
+<script src="assets/accom-we-gallery.js" defer></script>
 </body></html>
