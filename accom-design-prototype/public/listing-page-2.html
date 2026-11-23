@@ -1021,6 +1021,106 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
   .property-heading .heading-end{position:static;align-items:flex-start;margin-top:12px}
   .property-heading .heading-actions{display:flex;gap:16px}
 }
+
+/* Listing Page 2 — sequential editorial overview and offer rows */
+#overview.overview-editorial{
+  display:grid;grid-template-columns:minmax(0,1fr);gap:27px;
+  padding:42px 44px 36px;margin:0 0 26px;
+  background:rgba(255,255,255,.9);border:1px solid rgba(17,31,53,.065);
+  border-radius:30px;box-shadow:0 12px 35px rgba(17,31,53,.035)
+}
+#overview .overview-story{max-width:780px;min-width:0}
+#overview .overview-eyebrow,.offers-showcase .offers-eyebrow{
+  margin:0 0 15px;color:var(--red);font:700 11px/1.4 var(--font-body);
+  letter-spacing:.13em;text-transform:uppercase
+}
+#overview h2{font-size:clamp(32px,3.1vw,42px);font-weight:700;line-height:1.13;max-width:730px;margin:0 0 22px}
+#overview .overview-copy{display:flex;flex-direction:column;gap:13px}
+#overview .overview-lede{font:600 clamp(17px,1.4vw,19px)/1.55 var(--font-body);letter-spacing:-.012em;color:var(--navy);max-width:730px;margin:0}
+#overview .overview-detail{font:400 15px/1.75 var(--font-body);color:#4d5c70;max-width:730px;margin:0}
+#overview .overview-facts{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin:0;border-top:1px solid #eae5df}
+#overview .overview-fact{display:grid;grid-template-columns:44px minmax(0,1fr);align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid #ece8e3}
+#overview .overview-fact:last-child{border-bottom:0;padding-bottom:4px}
+#overview .overview-fact .fact-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:#fff0ed;color:var(--red);border:1px solid #ffe5e2}
+#overview .overview-fact .fact-icon svg{width:21px;height:21px}
+#overview .overview-fact strong{display:block;color:var(--navy);font:600 16px/1.4 var(--font-body);margin-bottom:3px}
+#overview .overview-fact p{font:400 14px/1.6 var(--font-body);color:#4f6075;margin:0}
+@keyframes overview-cascade{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:no-preference){
+  html.motion-ready #overview.overview-editorial:not(.sequence-visible) .overview-step{opacity:0;transform:translateY(17px)}
+  html.motion-ready #overview.overview-editorial.sequence-visible .overview-step{
+    animation:overview-cascade .66s cubic-bezier(.21,.8,.25,1) both;
+    animation-delay:calc(var(--step,0) * 115ms)
+  }
+}
+/* Reference-inspired three-row offer panel; content deliberately marked as examples. */
+#offers.offers-showcase{
+  display:block;padding:35px 31px 28px;margin:0 0 30px;
+  background:linear-gradient(155deg,#fff9f4,#fffbf8 70%,#fff7f2);
+  border:1px solid #f2e5dd;border-radius:30px;box-shadow:none
+}
+#offers .offers-header{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:22px}
+#offers .offers-header>div{min-width:0}
+#offers .offers-eyebrow{margin-bottom:9px}
+#offers h2{font-size:clamp(30px,3vw,38px);line-height:1.12;font-weight:700;margin:0}
+#offers .offers-intro{font:400 12px/1.65 var(--font-body);color:#657083;max-width:280px;margin:0}
+#offers .offers-list{display:grid;gap:10px}
+#offers .offers-card{
+  display:grid;grid-template-columns:52px minmax(0,1fr) auto auto;
+  gap:14px;align-items:center;min-height:76px;padding:12px 16px;
+  background:linear-gradient(110deg,rgba(255,255,255,.97),rgba(255,253,250,.96));
+  border:1px solid #f1ded3;border-radius:16px;box-shadow:0 3px 13px rgba(27,34,48,.055)
+}
+#offers .offers-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:#fff0ea;color:var(--red)}
+#offers .offers-icon svg{width:25px;height:25px;stroke-width:1.7}
+#offers .offers-card-copy{min-width:0}
+#offers .offers-card-copy h3{font:700 15px/1.3 var(--font-body);letter-spacing:-.01em;color:var(--navy);margin:0 0 4px}
+#offers .offers-card-copy p{font:400 12px/1.5 var(--font-body);color:#263149;margin:0}
+#offers .offers-saving{display:inline-flex;align-items:center;justify-content:center;min-width:98px;white-space:nowrap;padding:9px 12px;border-radius:999px;background:#fff0e9;color:#c21b24;font:700 12px/1.15 var(--font-body)}
+#offers .offers-action{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:144px;min-height:42px;
+  padding:10px 15px;border:0;border-radius:999px;background:linear-gradient(140deg,#ED2024,#c91520);
+  color:#fff;font:600 12px/1.2 var(--font-body);white-space:nowrap;
+  box-shadow:0 3px 7px rgba(207,27,35,.14);
+  transition:background .18s ease,transform .18s ease,box-shadow .18s ease
+}
+#offers .offers-action svg{width:16px;height:16px;stroke:currentColor;flex:0 0 16px}
+#offers .offers-action:hover{background:#b70f19;transform:translateY(-1px);box-shadow:0 5px 11px rgba(207,27,35,.18)}
+#offers .offers-disclaimer{display:flex;align-items:flex-start;gap:9px;font:400 11px/1.6 var(--font-body);color:#6a7482;margin:16px 2px 0}
+#offers .offers-disclaimer svg{width:15px;height:15px;flex:0 0 15px;margin-top:1px;color:#8a6570}
+@media(max-width:1050px){
+ #offers .offers-header{align-items:start;flex-direction:column;gap:7px}
+ #offers .offers-intro{max-width:660px}
+ #offers .offers-card{grid-template-columns:48px minmax(0,1fr) auto;gap:10px}
+ #offers .offers-action{grid-column:2/-1;justify-self:end}
+}
+@media(max-width:800px){
+ #overview.overview-editorial{padding:32px 26px;gap:22px}
+ #offers.offers-showcase{padding:30px 23px}
+ #offers .offers-card{grid-template-columns:48px minmax(0,1fr) auto}
+ #offers .offers-action{grid-column:2/-1}
+}
+@media(max-width:550px){
+ #overview.overview-editorial{margin-left:0;margin-right:0;border-radius:24px;padding:28px 21px}
+ #overview h2{font-size:clamp(29px,8vw,35px)}
+ #overview .overview-lede{font-size:17px}
+ #overview .overview-detail{font-size:14px}
+ #overview .overview-fact{grid-template-columns:40px minmax(0,1fr);gap:12px;padding:16px 0}
+ #overview .overview-fact .fact-icon{width:40px;height:40px}
+ #overview .overview-fact strong{font-size:14px}
+ #overview .overview-fact p{font-size:12px}
+ #offers.offers-showcase{margin-left:0;margin-right:0;border-radius:24px;padding:25px 15px}
+ #offers h2{font-size:30px}
+ #offers .offers-card{grid-template-columns:42px minmax(0,1fr);gap:8px 10px;padding:13px}
+ #offers .offers-icon{width:41px;height:41px;border-radius:11px}
+ #offers .offers-icon svg{width:21px;height:21px}
+ #offers .offers-card-copy h3{font-size:13px}
+ #offers .offers-card-copy p{font-size:11px}
+ #offers .offers-saving{grid-column:1/-1;justify-self:start;min-width:unset;padding:6px 11px;font-size:11px}
+ #offers .offers-action{grid-column:1/-1;justify-self:stretch;width:100%;font-size:12px}
+ #offers .offers-disclaimer{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){#offers .offers-action{transition:none}}
 </style>
 </head>
 <body>
@@ -1080,11 +1180,55 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 </div>
 <div aria-hidden="true" class="nav-sentinel"></div>
 <nav aria-label="On this listing" class="section-nav" id="scrollNav" inert=""><div class="section-nav-track" id="navTrack">
-<a class="active" href="#overview">Overview</a><a href="#rooms">Rooms</a><a href="#amenities">Included</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
+<a class="active" href="#overview">Overview</a><a href="#offers">Offers</a><a href="#rooms">Rooms</a><a href="#amenities">Included</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
 </div><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
-<section class="section section-overview" id="overview"><h2>About this student residence</h2><p class="intro-text">Modern en suite rooms and private studios in central Kingston, steps from the shops and close to the River Thames. Live independently while staying connected to shared study and social spaces.</p>
-<div class="overview-facts"><div><span class="fact-icon"><svg><use href="#bed"></use></svg></span><div><strong>En suites and studios</strong><p>A private bathroom in every room type</p></div></div><div><span class="fact-icon"><svg><use href="#wifi"></use></svg></span><div><strong>Bills included</strong><p>Wi-Fi, electricity, heating, water and contents insurance</p></div></div><div><span class="fact-icon"><svg><use href="#graduation"></use></svg></span><div><strong>Close to university</strong><p>Central Kingston location with campus access</p></div></div><div><span class="fact-icon"><svg><use href="#shield"></use></svg></span><div><strong>24-hour security</strong><p>Security measures listed by the accommodation provider</p></div></div></div>
+<section class="section section-overview overview-editorial" id="overview" aria-labelledby="overview-heading">
+  <div class="overview-story">
+    <p class="overview-eyebrow overview-step" style="--step:0">01 / PROPERTY OVERVIEW</p>
+    <h2 id="overview-heading" class="overview-step" style="--step:1">About this student residence</h2>
+    <div class="overview-copy">
+      <p class="overview-lede overview-step" style="--step:2">Modern en suite rooms and private studios in central Kingston, steps from the shops and close to the River Thames.</p>
+      <p class="overview-detail overview-step" style="--step:3">Live independently while staying connected to shared study and social spaces.</p>
+    </div>
+  </div>
+  <div class="overview-facts" aria-label="Property highlights">
+    <div class="overview-fact overview-step" style="--step:4"><span class="fact-icon"><svg aria-hidden="true"><use href="#bed"></use></svg></span><div><strong>En suites and studios</strong><p>A private bathroom in every room type</p></div></div>
+    <div class="overview-fact overview-step" style="--step:5"><span class="fact-icon"><svg aria-hidden="true"><use href="#wifi"></use></svg></span><div><strong>Bills included</strong><p>Wi-Fi, electricity, heating, water and contents insurance</p></div></div>
+    <div class="overview-fact overview-step" style="--step:6"><span class="fact-icon"><svg aria-hidden="true"><use href="#graduation"></use></svg></span><div><strong>Close to university</strong><p>Central Kingston location with campus access</p></div></div>
+    <div class="overview-fact overview-step" style="--step:7"><span class="fact-icon"><svg aria-hidden="true"><use href="#shield"></use></svg></span><div><strong>24-hour security</strong><p>Security measures listed by the accommodation provider</p></div></div>
+  </div>
 </section>
+<section class="section offers-showcase" id="offers" aria-labelledby="offers-heading">
+  <div class="offers-header">
+    <div>
+      <p class="offers-eyebrow">02 / EXCLUSIVE OFFERS</p>
+      <h2 id="offers-heading">Offers worth exploring</h2>
+    </div>
+    <p class="offers-intro">Explore these promotional offer examples and enquire to check which benefits, if any, apply to iQ Kingston.</p>
+  </div>
+  <div class="offers-list" role="list">
+    <article class="offers-card" role="listitem">
+      <span class="offers-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8.5 17.8 4l3.1 4.2-1 11-14.6-1.6-2.1-6.7z"/><path d="m9.4 14.2 4.7-5.2"/><circle cx="9.1" cy="9.7" r="1"/><circle cx="14.7" cy="13.9" r="1"/></svg></span>
+      <div class="offers-card-copy"><h3>£400 Property CASHBACK</h3><p>+ Additional £100 While It Lasts!</p></div>
+      <span class="offers-saving">Save £500</span>
+      <button class="offers-action" type="button" data-enquire="" aria-label="Enquire about the example £400 property cashback and additional £100">Ask about offer <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+    </article>
+    <article class="offers-card" role="listitem">
+      <span class="offers-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M12 9v11M3 9h18v-3H3z"/><path d="M12 6c-5.8 0-7-5 0-3.2 7-1.8 5.8 3.2 0 3.2z"/></svg></span>
+      <div class="offers-card-copy"><h3>Bonus Deal</h3><p>Exclusive: £40 Cashback on Every Booking with Amber!</p></div>
+      <span class="offers-saving">Save £40</span>
+      <button class="offers-action" type="button" data-enquire="" aria-label="Enquire about the example £40 bonus deal">Ask about offer <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+    </article>
+    <article class="offers-card" role="listitem">
+      <span class="offers-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 8a8 8 0 0 0-13.9-2.7L3 8m0-5v5h5"/><path d="M4 16a8 8 0 0 0 13.9 2.7L21 16m0 5v-5h-5"/></svg></span>
+      <div class="offers-card-copy"><h3>Rebooker Offer</h3><p>£250 Loyalty Bonus – Rebook Your Stay with Amber!</p></div>
+      <span class="offers-saving">Save £250</span>
+      <button class="offers-action" type="button" data-enquire="" aria-label="Enquire about the example £250 rebooker loyalty bonus">Ask about offer <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+    </article>
+  </div>
+  <p class="offers-disclaimer"><svg aria-hidden="true"><use href="#info"></use></svg> Illustrative promotions from the supplied design reference, not verified offers for iQ Kingston. Amounts, eligibility and availability must be confirmed before booking; no offer is applied by this prototype.</p>
+</section>
+
 <section class="section property-story-section" id="about" aria-labelledby="property-story-heading">
   <div class="story-surface">
     <div class="story-main">
@@ -1365,7 +1509,7 @@ function onScroll(){const nav=$('#scrollNav');const passed=$('#property-identity
  if(active!==previousActive){previousActive=active;$$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===active;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed)link.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}else link.removeAttribute('aria-current');});}framePending=false;}
 window.addEventListener('scroll',()=>{if(!framePending){framePending=true;requestAnimationFrame(onScroll);}}, {passive:true});window.addEventListener('resize',onScroll);onScroll();
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
- const revealItems=$$('.section').flatMap(section=>Array.from(section.children).slice(0,3));
+ const revealItems=$('.section:not(.overview-editorial)').flatMap(section=>Array.from(section.children).slice(0,3));
  revealItems.forEach(item=>item.classList.add('reveal-item'));
  document.documentElement.classList.add('motion-ready');
  const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');revealObserver.unobserve(entry.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
@@ -1402,6 +1546,22 @@ function positionGalleryRibbon(){
 positionGalleryRibbon();
 document.fonts?.ready.then(positionGalleryRibbon);
 window.addEventListener('resize',positionGalleryRibbon,{passive:true});
+
+
+/* Overview's copy and property facts appear one after the other, once in view.
+   With JavaScript disabled or reduced motion, all content remains readable. */
+const orderedOverview=document.querySelector('#overview.overview-editorial');
+if(orderedOverview){
+ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+   const overviewObserver=new IntersectionObserver(entries=>{
+     if(entries.some(entry=>entry.isIntersecting)){
+       orderedOverview.classList.add('sequence-visible');
+       overviewObserver.disconnect();
+     }
+   },{threshold:.08,rootMargin:'0px 0px -5% 0px'});
+   overviewObserver.observe(orderedOverview);
+ }else orderedOverview.classList.add('sequence-visible');
+}
 
 </script>
 </body></html>
