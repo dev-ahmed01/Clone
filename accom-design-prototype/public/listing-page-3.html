@@ -265,10 +265,7 @@ h3{font-size:24px}
 .booking-card .rail-attribution,.booking-card .card-footnote{font-size:12px}
 .page-footer p,.page-footer a,.page-footer small{color:#f4f6f9}
 
-@media (prefers-reduced-motion:no-preference){
-  .motion-ready .reveal-item.seen{animation:section-in .75s cubic-bezier(.2,.8,.2,1) both}
-  @keyframes section-in{from{opacity:.72;transform:translateY(22px)}to{opacity:1;transform:none}}
-}
+
 
 @media(max-width:1100px){
   .site-container,.header-inner{padding-left:24px;padding-right:24px}
@@ -976,25 +973,28 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 }
 #overview .overview-facts{grid-template-columns:repeat(2,minmax(0,1fr));}
 #overview .overview-facts>div{min-width:0;}
-/* Coordinated entrance: upper pair from opposing sides, lower pair diagonally upward. */
-@media(prefers-reduced-motion:no-preference){
-  #overview .overview-facts.is-motion-pending>div{
-    opacity:0;
-    transform:translate3d(var(--enter-x,0px),var(--enter-y,0px),0);
-    transition:transform .78s cubic-bezier(.22,1,.36,1),opacity .72s ease;
-    transition-delay:var(--reveal-delay,0ms);
-    will-change:transform,opacity;
-  }
-  #overview .overview-facts.is-motion-pending>div:nth-child(1){--enter-x:-44px;--enter-y:0px;--reveal-delay:80ms}
-  #overview .overview-facts.is-motion-pending>div:nth-child(2){--enter-x:44px;--enter-y:0px;--reveal-delay:80ms}
-  #overview .overview-facts.is-motion-pending>div:nth-child(3){--enter-x:-30px;--enter-y:36px;--reveal-delay:380ms}
-  #overview .overview-facts.is-motion-pending>div:nth-child(4){--enter-x:30px;--enter-y:36px;--reveal-delay:380ms}
-  #overview .overview-facts.is-motion-pending.is-visible>div{opacity:1;transform:translate3d(0,0,0)}
-}
 @media(max-width:550px){
   #overview.section-overview{padding:24px 0 36px;margin-bottom:18px}
   #overview .overview-facts{grid-template-columns:1fr}
 }
+
+/* Site-wide motion design: paired entrances, rendered only when JavaScript can observe them. */
+@media(prefers-reduced-motion:no-preference){
+  html.page-motion-ready [data-page-enter]{
+    opacity:0;
+    translate:var(--page-enter-x,0px) var(--page-enter-y,0px);
+    transition:opacity .72s cubic-bezier(.22,.7,.25,1),translate .88s cubic-bezier(.2,.85,.2,1);
+    transition-delay:var(--page-enter-delay,0ms);
+  }
+  html.page-motion-ready [data-page-enter].page-enter-visible{
+    opacity:1;
+    translate:0 0;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  [data-page-enter]{opacity:1!important;translate:none!important;transition:none!important}
+}
+/* Decorative section labels are omitted, while data/status and accessible form labels remain. */
 </style>
 </head>
 <body>
@@ -1056,7 +1056,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 <section class="section property-story-section" id="about" aria-labelledby="property-story-heading">
   <div class="story-surface">
     <div class="story-main">
-      <div class="story-eyebrow"><span class="story-index" aria-hidden="true">01</span> PROPERTY DETAILS</div>
+      
       <h2 id="property-story-heading">Living at iQ Kingston</h2>
       <p class="story-lede">Furnished en suites and studios, each with a private bathroom.</p>
       <p class="story-detail">Choose an en suite with a shared kitchen, or a studio with its own kitchenette. The right fit depends on how you prefer to cook and spend time at home.</p>
@@ -1067,7 +1067,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
       </div>
     </div>
     <div class="story-room-guide" aria-label="Difference between en suite and studio room types">
-      <span class="story-guide-kicker">FIND YOUR FIT</span>
+      
       <h3>Which room suits you?</h3>
       <div class="story-room-options">
         <a href="#rooms" class="story-room-option">
@@ -1089,7 +1089,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
     </div>
   </div>
 </section>
-<section class="section tours-editorial-section" id="tours"><div class="tour-eyebrow">PROPERTY PHOTO GUIDE <span aria-hidden="true">/</span> 04 CATEGORIES</div><div class="section-title-row"><h2>A closer look at the spaces</h2><button class="link-button" data-open-gallery="" type="button">View all photos <svg aria-hidden="true"><use href="#chevron"></use></svg></button></div><p class="section-intro">Explore en suites, studios and communal spaces by category. Select an image to open its full-screen gallery.</p><div aria-label="Property photo categories" class="photo-strip photo-category-grid">
+<section class="section tours-editorial-section" id="tours"><div class="section-title-row"><h2>A closer look at the spaces</h2><button class="link-button" data-open-gallery="" type="button">View all photos <svg aria-hidden="true"><use href="#chevron"></use></svg></button></div><p class="section-intro">Explore en suites, studios and communal spaces by category. Select an image to open its full-screen gallery.</p><div aria-label="Property photo categories" class="photo-strip photo-category-grid">
 <button data-open-category="bedrooms" type="button"><img alt="Illustrative en suite bedroom" data-asset="assets/hero-bedroom.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>En suite rooms</strong> <small>2 images</small></span></button>
 <button data-open-category="studios" type="button"><img alt="Illustrative studio room" data-asset="assets/studio-room.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Studios</strong> <small>2 images</small></span></button>
 <button data-open-category="shared" type="button"><img alt="Illustrative study and social area" data-asset="assets/study-space.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Shared spaces</strong> <small>2 images</small></span></button>
@@ -1100,7 +1100,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 <div class="amenity-group"><h3>Study, relax and socialise</h3><div class="amenity-list"><span>On-site gym</span><span>Study spaces</span><span>Cinema room</span><span>Games and social areas</span><span>Roof terrace</span></div></div>
 <div class="amenity-group"><h3>Practical support</h3><div class="amenity-list"><span>24/7 security coverage</span><span>Reception and parcel collection</span><span>On-site laundry (usage charges may apply)</span><span>Secure bike storage</span></div></div>
 </div><p class="source-caption">Features described by iQ Student Accommodation. Check the room contract for utility limits and insurance terms; laundry may involve separate usage charges.</p>
-<div class="bill-estimate"><div class="bill-estimate-top"><div><span class="bills-note">Included bills · compare your own costs</span><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div>
+<div class="bill-estimate"><div class="bill-estimate-top"><div><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div>
 </section>
 <section class="section section-rooms" id="rooms"><div class="section-title-row"><div><h2>Choose your room</h2></div><p>Compare current weekly-rate snapshots first, then ask for contract dates and the full-term total before deciding.</p></div><div class="room-pricing-summary"><strong>From £315/week</strong><span>3 dated rates · 2 rates to confirm · full-term totals on request</span></div><div aria-label="Filter room types" class="room-filter" role="group"><button aria-pressed="true" class="selected" data-room-filter="all" type="button">All rooms</button><button aria-pressed="false" data-room-filter="ensuite" type="button">En suites</button><button aria-pressed="false" data-room-filter="studio" type="button">Studios</button></div><div class="room-list" id="roomList"></div><p class="source-caption">Rates checked on Amber's iQ Kingston listing on 28 October 2026. Availability and prices can change; two room styles had no traceable current rate in the source snapshot.</p></section>
 <section class="section" id="rules"><h2>House rules &amp; cancellation</h2><div class="disclosure-list"><details><summary>Cancellation and visa conditions <span>+</span></summary><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></details><details><summary>Guests and visitors <span>+</span></summary><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></details><details><summary>Smoking and pets <span>+</span></summary><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></details><details><summary>Room requests and check-in <span>+</span></summary><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></details></div></section>
@@ -1134,7 +1134,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 </div></div><p class="source-caption">*University times vary by campus and route. Walking times are approximate figures stated by iQ; other places are identified by iQ or Kingston Council without invented timings. Check live directions before travelling.</p></section>
 <section class="section" id="reviews"><h2>Student reviews</h2><div class="reviews-summary"><div class="reviews-score"><svg aria-hidden="true"><use href="#star"></use></svg><strong>4.9</strong><span>/ 5</span></div><div><strong>11 reviews on Amber</strong><p>This is an attributed listing snapshot, not a claim of Accom-verified reviews. Read the original reviews for first-hand context.</p><a class="source-link" href="https://amberstudent.com/places/iq-kingston-1709160215838" rel="noopener noreferrer" target="_blank">Read reviews on Amber <svg><use href="#arrow"></use></svg></a></div></div>
   <div class="review-preview-intro">
-  <div><span class="review-section-eyebrow">YOUR NEXT HOME, THROUGH STUDENT EYES</span><h3>What students might say</h3></div>
+  <div><h3>What students might say</h3></div>
   <p><strong>Illustrative sample reviews.</strong> These names and quotes are fictional layout examples, not feedback submitted by iQ Kingston residents. See the source-attributed reviews above for real experiences.</p>
 </div>
 <div class="review-example-grid" aria-label="Six fictional sample review cards">
@@ -1332,26 +1332,75 @@ function onScroll(){const nav=$('#scrollNav');const passed=$('#property-identity
  let active='overview';$$('.content-column>.section[id]').forEach(section=>{if(section.getBoundingClientRect().top<=180)active=section.id;});
  if(active!==previousActive){previousActive=active;$$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===active;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed)link.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}else link.removeAttribute('aria-current');});}framePending=false;}
 window.addEventListener('scroll',()=>{if(!framePending){framePending=true;requestAnimationFrame(onScroll);}}, {passive:true});window.addEventListener('resize',onScroll);onScroll();
-if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
- const revealItems=$('.section').flatMap(section=>Array.from(section.children).slice(0,3)).filter(item=>!item.classList.contains('overview-facts'));
- revealItems.forEach(item=>item.classList.add('reveal-item'));
- document.documentElement.classList.add('motion-ready');
- const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');revealObserver.unobserve(entry.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
- revealItems.forEach(item=>revealObserver.observe(item));
- // Animate overview features in deliberate two-column pairs when scrolled into view.
- const overviewFacts=document.querySelector('#overview .overview-facts');
- if(overviewFacts){
-   overviewFacts.classList.add('is-motion-pending');
-   const overviewObserver=new IntersectionObserver(entries=>{
-     for(const entry of entries){
-       if(entry.isIntersecting){
-         entry.target.classList.add('is-visible');
-         overviewObserver.unobserve(entry.target);
-       }
-     }
-   },{rootMargin:'0px 0px -5% 0px',threshold:.12});
-   overviewObserver.observe(overviewFacts);
- }
+// Page-wide entrance choreography. Keep all content visible when motion is reduced or unsupported.
+if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const directions={
+    left:['-42px','0px'],right:['42px','0px'],up:['0px','36px'],
+    lowerLeft:['-26px','32px'],lowerRight:['26px','32px']
+  };
+  const staged=[];
+  const motionObserver=new IntersectionObserver(entries=>{
+    for(const entry of entries){
+      if(!entry.isIntersecting)continue;
+      motionObserver.unobserve(entry.target);
+      // Two frames ensure the hidden starting position is painted before the transition.
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        entry.target.classList.add('page-enter-visible');
+      }));
+    }
+  },{rootMargin:'0px 0px -6% 0px',threshold:.07});
+
+  const stage=(element,direction='up',delay=0)=>{
+    if(!element||element.hasAttribute('data-page-enter'))return;
+    const rect=element.getBoundingClientRect();
+    const xy=directions[direction]||directions.up;
+    element.style.setProperty('--page-enter-x',xy[0]);
+    element.style.setProperty('--page-enter-y',xy[1]);
+    element.style.setProperty('--page-enter-delay',Math.min(delay,650)+'ms');
+    element.setAttribute('data-page-enter','');
+    // Elements already scrolled past must never become invisible on a back scroll.
+    if(rect.bottom<=0){element.classList.add('page-enter-visible');return;}
+    staged.push(element);
+  };
+  const add=(selector,directionsList=['up'],delays=[0])=>{
+    document.querySelectorAll(selector).forEach((element,index)=>{
+      stage(element,directionsList[index % directionsList.length],delays[index] ?? (Math.floor(index / directionsList.length)*150));
+    });
+  };
+  // Hero and sidebar enter independently without moving the sticky container.
+  add('.gallery',['up']);
+  add('#property-identity .property-title-row, #property-identity .property-address',['left','up'],[0,120]);
+  add('.cta-aside .booking-card',['right']);
+  // Each section heading enters first; adjacent information follows.
+  add('.content-column > .section > h2, .content-column > .section > .section-title-row, #about .story-main > h2',['up']);
+  add('#overview > .intro-text, #tours > .section-intro, #location > .section-intro',['up'],[130]);
+  // Overview: first row moves inward from left and right; second row rises from both sides.
+  add('#overview .overview-facts > div',['left','right','lowerLeft','lowerRight'],[80,80,330,330]);
+  add('#about .story-main, #about .story-room-guide',['left','right'],[80,80]);
+  add('#tours .photo-category-grid > button',['left','right','lowerLeft','lowerRight'],[70,70,290,290]);
+  add('#amenities .amenity-groups > .amenity-group',['left','right','up'],[40,40,230]);
+  add('#amenities .bill-estimate',['up'],[100]);
+  add('#rooms .room-pricing-summary, #rooms .room-filter',['left','right'],[60,60]);
+  add('#rooms .room-list > .room-card',['left','right','lowerLeft','lowerRight'],[80,80,230,230,340]);
+  add('#rules .disclosure-list > details, #faqs .disclosure-list > details',['left','right','lowerLeft','lowerRight'],[60,60,220,220]);
+  add('#payments .payments-grid > div',['left','right','lowerLeft','lowerRight'],[60,60,230,230]);
+  add('#floorplan .inline-request',['up']);
+  add('#neighbourhood .neighbourhood-layout > img, #neighbourhood .neighbourhood-layout > div',['left','right'],[70,70]);
+  add('#location .location-illustration, #location .landmarks-detail',['left','right'],[90,90]);
+  add('#reviews .reviews-summary, #reviews .review-preview-intro',['up'],[70,100]);
+  add('#reviews .review-example-grid > .review-example',['left','right','up'],[65,65,230,200,200,300]);
+  document.documentElement.classList.add('page-motion-ready');
+  staged.forEach(element=>motionObserver.observe(element));
+
+  // New room cards created by filters remain visible instead of being hidden unexpectedly.
+  const roomList=document.querySelector('#roomList');
+  if(roomList){
+    new MutationObserver(records=>{
+      if(records.some(record=>record.addedNodes.length)){
+        roomList.querySelectorAll('.room-card').forEach(card=>card.classList.add('page-enter-visible'));
+      }
+    }).observe(roomList,{childList:true});
+  }
 }
 // Content category shortcuts: open the existing filtered, keyboard-accessible photo viewer.
 $$('[data-open-category]').forEach(button=>button.addEventListener('click',()=>{
