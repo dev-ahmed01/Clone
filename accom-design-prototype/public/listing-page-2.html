@@ -2144,8 +2144,8 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
  #scrollNav.section-nav,#scrollNav .section-nav-track a,#scrollNav .section-nav-track button,#scrollNav .section-nav-track a::after{transition:none!important}
 }
 </style>
-<link rel="stylesheet" href="assets/ae-design-system.css?v=99077d9"/>
-<link rel="stylesheet" href="assets/accom-we-gallery.css?v=2a0ed83"/>
+<link rel="stylesheet" href="assets/ae-design-system.css?v=2cf5cf6"/>
+<link rel="stylesheet" href="assets/accom-we-gallery.css?v=b73b4a2"/>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2446,6 +2446,14 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
       <div class="rail-controls">
         <button class="primary-button full" id="railRooms" type="button">View room types <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
         <button class="outline-button full" data-enquire="" type="button">Enquire now</button>
+      </div>
+      <div class="rail-nearby rail-nearby--compact" aria-label="Nearby landmarks and approximate walking times">
+        <div class="rail-nearby-header"><strong>Nearby on foot</strong><span>Approx. walk</span></div>
+        <div class="rail-nearby-list">
+          <div class="rail-walk-row"><span class="rail-walk-marker" aria-hidden="true"><svg><use href="#pin"></use></svg></span><span>Kingston Railway Station</span><strong>4 min</strong></div>
+          <div class="rail-walk-row"><span class="rail-walk-marker" aria-hidden="true"><svg><use href="#graduation"></use></svg></span><span>Kingston College</span><strong>9 min</strong></div>
+          <div class="rail-walk-row"><span class="rail-walk-marker" aria-hidden="true"><svg><use href="#graduation"></use></svg></span><span>Kingston University</span><strong>15 min</strong></div>
+        </div>
       </div>
     </div>
   </div>
@@ -2941,23 +2949,7 @@ document.addEventListener('keydown',event=>{if(!dialog)return;if(event.key==='Es
  }});
 
 
-/* Anchor the hanging rating to the left of the iQ Kingston title, retaining
-   the gallery-edge attachment and matching the reserved title gutter. */
-const ribbonAnchor=document.querySelector('.gallery-ribbon-tab');
-const ribbonTitle=document.querySelector('.property-title-row h1');
-const ribbonFrame=document.querySelector('.gallery-ribbon-frame');
-function positionGalleryRibbon(){
- if(!ribbonAnchor||!ribbonTitle||!ribbonFrame)return;
- const heading=ribbonTitle.getBoundingClientRect();
- const frame=ribbonFrame.getBoundingClientRect();
- const space=window.innerWidth<=550?12:20;
- const intendedLeft=heading.left-frame.left-ribbonAnchor.offsetWidth-space;
- const maxLeft=frame.width-ribbonAnchor.offsetWidth-10;
- ribbonFrame.style.setProperty('--gallery-ribbon-left',Math.round(Math.max(10,Math.min(intendedLeft,maxLeft)))+'px');
-}
-positionGalleryRibbon();
-document.fonts?.ready.then(positionGalleryRibbon);
-window.addEventListener('resize',positionGalleryRibbon,{passive:true});
+/* The longer rating ribbon is now anchored flush to the gallery edge in CSS. */
 
 
 /* Overview's copy and property facts appear one after the other, once in view.
