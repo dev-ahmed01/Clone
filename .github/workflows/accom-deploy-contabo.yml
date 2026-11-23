@@ -1,0 +1,52 @@
+name: Deploy Accom listing to Contabo
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'accom-design-prototype/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: accom-contabo-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy and verify live listing pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Configure restricted SSH access
+        shell: bash
+        env:
+          DEPLOY_KEY: ${{ secrets.ACCOM_DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.ACCOM_DEPLOY_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$DEPLOY_KEY" || -z "$KNOWN_HOSTS" ]]; then
+            echo 'Missing ACCOM_DEPLOY_SSH_KEY or ACCOM_DEPLOY_KNOWN_HOSTS in repository Actions secrets.' >&2
+            exit 1
+          fi
+          install -m 700 -d "$HOME/.ssh"
+          umask 077
+          printf '%s\n' "$DEPLOY_KEY" > "$HOME/.ssh/accom_deploy_key"
+          printf '%s\n' "$KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/accom_deploy_key" "$HOME/.ssh/known_hosts"
+          ssh-keygen -y -f "$HOME/.ssh/accom_deploy_key" > /dev/null
+
+      - name: Update Contabo and compare public HTML with deployed files
+        shell: bash
+        run: |
+          set -euo pipefail
+          ssh -T -i "$HOME/.ssh/accom_deploy_key" \
+            -o BatchMode=yes \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            -o ConnectTimeout=20 \
+            -o ServerAliveInterval=15 \
+            -o ServerAliveCountMax=4 \
+            deploy@91.90.83.21 deploy-accom
