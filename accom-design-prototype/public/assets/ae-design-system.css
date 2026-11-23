@@ -354,3 +354,111 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
  html{scroll-behavior:auto}
 }
+
+
+/* Listing Page 2 · Compact sticky starting-price card.
+   Replaces the earlier forced viewport-height rail. Consistent top/bottom
+   padding is internal to the card; scrolling remains native. */
+.cta-aside .cta-sticky{
+ position:sticky!important;
+ top:calc(var(--listing-header-height,82px) + var(--listing-tabs-height,64px) + 20px)!important;
+ margin:0!important;
+ padding:0!important;
+ min-height:0!important;
+ align-self:start;
+}
+.cta-aside .booking-card.booking-card--compact{
+ box-sizing:border-box;
+ width:100%;
+ height:auto!important;
+ min-height:0!important;
+ max-height:none!important;
+ overflow:visible!important;
+ display:flex!important;
+ flex-direction:column!important;
+ justify-content:flex-start!important;
+ align-items:stretch!important;
+ gap:26px!important;
+ padding:30px!important;
+ border-radius:32px!important;
+ background:var(--ae-ink,#101D33)!important;
+ border:1px solid rgba(255,255,255,.16)!important;
+ box-shadow:0 16px 40px rgba(16,29,51,.16)!important;
+}
+.cta-aside .booking-card--compact .rail-summary,
+.cta-aside .booking-card--compact .rail-controls{
+ width:100%!important;
+ margin:0!important;
+ padding:0!important;
+ min-width:0;
+ flex:none!important;
+}
+.cta-aside .booking-card--compact .rail-title{
+ margin:0!important;
+ font:600 18px/1.45 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ color:rgba(255,255,255,.89)!important;
+ letter-spacing:0!important;
+}
+.cta-aside .booking-card--compact .price-line{
+ margin:10px 0 0!important;
+ padding:0!important;
+ display:flex!important;
+ align-items:baseline!important;
+ flex-wrap:wrap;
+ gap:8px!important;
+}
+.cta-aside .booking-card--compact .price-line strong{
+ font:700 clamp(40px,3.8vw,52px)/1.03 var(--font-title,'Bricolage Grotesque',Arial,sans-serif)!important;
+ letter-spacing:-.045em!important;
+ color:white!important;
+}
+.cta-aside .booking-card--compact .price-line span{
+ font:400 15px/1.4 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ color:rgba(255,255,255,.79)!important;
+}
+.cta-aside .booking-card--compact .rail-controls{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr);
+ gap:12px!important;
+}
+.cta-aside .booking-card--compact .rail-controls button{
+ width:100%;
+ max-width:100%;
+ min-height:52px!important;
+ margin:0!important;
+ padding:13px 14px!important;
+ border-radius:999px!important;
+ font:700 13px/1.35 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ white-space:normal;
+}
+.cta-aside .booking-card--compact .rail-controls .primary-button{
+ background:var(--ae-red,#ED2024)!important;
+ color:white!important;
+ box-shadow:none!important;
+}
+.cta-aside .booking-card--compact .rail-controls .primary-button:hover{
+ background:var(--ae-deep,#B70F19)!important;
+}
+.cta-aside .booking-card--compact .rail-controls .outline-button{
+ background:transparent!important;
+ border:1px solid rgba(255,255,255,.75)!important;
+ color:white!important;
+}
+.cta-aside .booking-card--compact .rail-controls .outline-button:hover{
+ background:rgba(255,255,255,.11)!important;
+ color:white!important;
+}
+@media(min-width:801px) and (max-width:1150px){
+ .cta-aside .booking-card.booking-card--compact{padding:26px!important;border-radius:28px!important;gap:22px!important}
+ .cta-aside .booking-card--compact .price-line strong{font-size:43px!important}
+}
+@media(min-width:801px) and (max-height:660px){
+ .cta-aside .cta-sticky{
+  top:calc(var(--listing-header-height,82px) + var(--listing-tabs-height,64px) + 8px)!important;
+ }
+ .cta-aside .booking-card.booking-card--compact{padding:22px!important;gap:18px!important}
+ .cta-aside .booking-card--compact .rail-controls button{min-height:46px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .cta-aside .booking-card--compact .rail-controls button{transform:none!important}
+}
