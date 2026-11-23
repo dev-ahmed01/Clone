@@ -2145,7 +2145,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 }
 </style>
 <link rel="stylesheet" href="assets/ae-design-system.css?v=99077d9"/>
-<link rel="stylesheet" href="assets/accom-we-gallery.css?v=ab9abff"/>
+<link rel="stylesheet" href="assets/accom-we-gallery.css?v=2a0ed83"/>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2941,8 +2941,8 @@ document.addEventListener('keydown',event=>{if(!dialog)return;if(event.key==='Es
  }});
 
 
-/* Align the hanging rating ribbon exactly two text spaces beyond the Kingston heading,
-   without tying it to a hard-coded viewport width. */
+/* Anchor the hanging rating to the left of the iQ Kingston title, retaining
+   the gallery-edge attachment and matching the reserved title gutter. */
 const ribbonAnchor=document.querySelector('.gallery-ribbon-tab');
 const ribbonTitle=document.querySelector('.property-title-row h1');
 const ribbonFrame=document.querySelector('.gallery-ribbon-frame');
@@ -2950,11 +2950,10 @@ function positionGalleryRibbon(){
  if(!ribbonAnchor||!ribbonTitle||!ribbonFrame)return;
  const heading=ribbonTitle.getBoundingClientRect();
  const frame=ribbonFrame.getBoundingClientRect();
- const fontPx=parseFloat(getComputedStyle(ribbonTitle).fontSize)||48;
- const twoSpaces=Math.round(fontPx*.42);
- const intendedLeft=heading.right-frame.left+twoSpaces;
- const maxLeft=frame.width-ribbonAnchor.offsetWidth-12;
- ribbonFrame.style.setProperty('--gallery-ribbon-left',Math.round(Math.max(12,Math.min(intendedLeft,maxLeft)))+'px');
+ const space=window.innerWidth<=550?12:20;
+ const intendedLeft=heading.left-frame.left-ribbonAnchor.offsetWidth-space;
+ const maxLeft=frame.width-ribbonAnchor.offsetWidth-10;
+ ribbonFrame.style.setProperty('--gallery-ribbon-left',Math.round(Math.max(10,Math.min(intendedLeft,maxLeft)))+'px');
 }
 positionGalleryRibbon();
 document.fonts?.ready.then(positionGalleryRibbon);
