@@ -462,3 +462,74 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){
  .cta-aside .booking-card--compact .rail-controls button{transform:none!important}
 }
+
+
+/* Compact nearby landmarks restored to the sticky card. */
+.cta-aside .booking-card--compact .rail-nearby.rail-nearby--compact{
+ box-sizing:border-box;
+ display:block!important;
+ flex:0 0 auto!important;
+ width:100%!important;
+ min-width:0;
+ margin:0!important;
+ padding:19px 0 0!important;
+ border-top:1px solid rgba(255,255,255,.20)!important;
+ border-bottom:0!important;
+ background:transparent!important;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header{
+ display:flex!important;
+ align-items:baseline;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ gap:4px 10px;
+ padding:0;
+ margin:0 0 14px!important;
+ color:#fff;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header strong{
+ font:600 17px/1.35 var(--font-title,'Bricolage Grotesque',Arial,sans-serif);
+ color:#fff;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header span{
+ font:400 11px/1.4 var(--font-body,'Montserrat',Arial,sans-serif);
+ color:rgba(255,255,255,.70);
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-list{
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr);
+ gap:10px!important;
+ padding:0!important;
+ margin:0!important;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row{
+ display:grid!important;
+ grid-template-columns:21px minmax(0,1fr) auto!important;
+ align-items:center!important;
+ gap:10px!important;
+ min-height:24px;
+ padding:0!important;
+ margin:0!important;
+ border:0!important;
+ font:400 12px/1.45 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ color:#edf0f6!important;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-marker{
+ display:flex;align-items:center;justify-content:center;
+ width:20px;height:20px;min-width:20px;
+ color:var(--ae-sun,#FFB900)!important;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-marker svg{
+ width:18px!important;height:18px!important;
+ stroke:currentColor!important;stroke-width:1.8;
+}
+.cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row > strong{
+ font:700 13px/1.35 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ color:var(--ae-sun,#FFB900)!important;
+ white-space:nowrap;
+}
+@media(min-width:801px) and (max-height:660px){
+ .cta-aside .booking-card--compact .rail-nearby.rail-nearby--compact{padding-top:13px!important}
+ .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header{margin-bottom:9px!important}
+ .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-list{gap:6px!important}
+}
