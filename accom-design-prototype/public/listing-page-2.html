@@ -1743,6 +1743,19 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  #payments .payment-item p{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){#rules .rule-card,#rules .rule-arrow,#rules .rule-body{transition:none!important}}
+
+/* Visual cleanup without losing room-price qualifications or required actions. */
+#rooms.rooms-redesign .rooms-heading{margin-bottom:19px}
+#rooms.rooms-redesign .rooms-toolbar{margin-bottom:20px}
+#rooms.rooms-redesign .room-title-line{margin:0 0 13px}
+#rooms.rooms-redesign .room-title-line h3{margin:0}
+#rooms.rooms-redesign .room-details{justify-content:center}
+#rooms.rooms-redesign .room-facts{margin:0 0 18px}
+#rooms.rooms-redesign .room-primary-actions{margin-top:0}
+#amenities.amenities-redesign .amx-head{margin-bottom:19px}
+#amenities.amenities-redesign .amx-head h2{margin-bottom:0}
+#overview .overview-copy{gap:0}
+@media(max-width:550px){#rooms.rooms-redesign .room-title-line{margin-bottom:11px}#rooms.rooms-redesign .room-facts{margin-bottom:13px}}
 </style>
 </head>
 <body>
@@ -1809,7 +1822,7 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
     <h2 id="overview-heading" class="overview-step" style="--step:0">About this student residence</h2>
     <div class="overview-copy">
       <p class="overview-lede overview-step" style="--step:1">Modern en suite rooms and private studios in central Kingston, steps from the shops and close to the River Thames.</p>
-      <p class="overview-detail overview-step" style="--step:2">Live independently while staying connected to shared study and social spaces.</p>
+      
     </div>
   </div>
   <div class="overview-facts residence-grid" aria-label="Property highlights">
@@ -1874,14 +1887,13 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
     </div>
   </div>
 </section>
-<section class="section amenities-redesign" id="amenities" aria-labelledby="amenitiesHeading"><div class="amx-surface"><header class="amx-head"><h2 id="amenitiesHeading">Amenities that make a difference.</h2><p>Everyday essentials, shared spaces and practical support listed for iQ Kingston, all in one place.</p></header><div class="amx-groups"><div class="amx-group"><div class="amx-group-head"><h3>Bills included</h3><small>Everyday essentials</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9Q12 1 22 9M5 13q7-6 14 0M9 17q3-3 6 0M12 20h.01"/></svg></span><span>Wi-Fi</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6z"/></svg></span><span>Electricity</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2.5 2.5 0 0 1 5 0v8a4.5 4.5 0 1 1-5 0ZM12.5 9v8"/></svg></span><span>Heating</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 11 5 14a7 7 0 0 0 14 0c0-3-3-7-7-12Z"/></svg></span><span>Water</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5zM8 7h8m-4 4v7m-3-3h6"/></svg></span><span>Contents insurance</span></div></div></div>
-<div class="amx-group"><div class="amx-group-head"><h3>Community & recreation</h3><small>Beyond your room</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1zM12 6v14"/></svg></span><span>Study spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6m4-8v10m10-10v10m4-8v6M7 12h10"/></svg></span><span>On-site gym</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM7 4v16m10-16v16M9 8l6 4-6 4z"/></svg></span><span>Cinema room</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 5 4l1 6a2 2 0 0 1-3 2l-4-2H8l-4 2a2 2 0 0 1-3-2l1-6a5 5 0 0 1 5-4zM8 10v5m-2.5-2.5h5M17 11h.01"/></svg></span><span>Games & social spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-9h12v9M12 12V5m-7 5 7-7 7 7"/></svg></span><span>Roof terrace</span></div></div></div>
-<div class="amx-group"><div class="amx-group-head"><h3>Practical living & security</h3><small>Daily support</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><span>Reception & parcels</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><span>On-site laundry</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><span>Secure bike storage</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><span>24/7 security</span></div></div></div></div><div class="amx-bottom"><p>Check access, charges and availability with iQ before booking.</p><button class="amx-more" id="amenitiesViewAll" type="button" aria-haspopup="dialog" aria-controls="amenitiesDialog">View all 14 amenities <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 10 7 7 7-7"/></svg></button></div></div></section>
+<section class="section amenities-redesign" id="amenities" aria-labelledby="amenitiesHeading"><div class="amx-surface"><header class="amx-head"><h2 id="amenitiesHeading">Amenities that make a difference.</h2></header><div class="amx-groups"><div class="amx-group"><div class="amx-group-head"><h3>Bills included</h3></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9Q12 1 22 9M5 13q7-6 14 0M9 17q3-3 6 0M12 20h.01"/></svg></span><span>Wi-Fi</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6z"/></svg></span><span>Electricity</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2.5 2.5 0 0 1 5 0v8a4.5 4.5 0 1 1-5 0ZM12.5 9v8"/></svg></span><span>Heating</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 11 5 14a7 7 0 0 0 14 0c0-3-3-7-7-12Z"/></svg></span><span>Water</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5zM8 7h8m-4 4v7m-3-3h6"/></svg></span><span>Contents insurance</span></div></div></div>
+<div class="amx-group"><div class="amx-group-head"><h3>Community & recreation</h3></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1zM12 6v14"/></svg></span><span>Study spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6m4-8v10m10-10v10m4-8v6M7 12h10"/></svg></span><span>On-site gym</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM7 4v16m10-16v16M9 8l6 4-6 4z"/></svg></span><span>Cinema room</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 5 4l1 6a2 2 0 0 1-3 2l-4-2H8l-4 2a2 2 0 0 1-3-2l1-6a5 5 0 0 1 5-4zM8 10v5m-2.5-2.5h5M17 11h.01"/></svg></span><span>Games & social spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-9h12v9M12 12V5m-7 5 7-7 7 7"/></svg></span><span>Roof terrace</span></div></div></div>
+<div class="amx-group"><div class="amx-group-head"><h3>Practical living & security</h3></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><span>Reception & parcels</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><span>On-site laundry</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><span>Secure bike storage</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><span>24/7 security</span></div></div></div></div><div class="amx-bottom"><button class="amx-more" id="amenitiesViewAll" type="button" aria-haspopup="dialog" aria-controls="amenitiesDialog">View all 14 amenities <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 10 7 7 7-7"/></svg></button></div></div></section>
 <section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
   <div class="rooms-wrap">
     <header class="rooms-heading">
       <div><h2 id="roomsTitle">Find a room that fits.</h2></div>
-      <span class="rooms-heading-stat" aria-label="5 room styles"><strong>5</strong><span>Room styles</span></span>
     </header>
     <nav class="rooms-toolbar" aria-label="Room type categories">
       <div class="room-filter" role="group" aria-label="Filter rooms by type">
@@ -1890,9 +1902,8 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
         <button type="button" data-room-filter="studio" aria-pressed="false">Studios</button>
       </div>
     </nav>
-    <div class="rooms-family-intro" aria-live="polite"><span class="rooms-family-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19V7m0 9h18v3M3 11h18v5H3zM7 11V8h10v3"/></svg></span><div><h3 id="roomFamilyTitle">En suites &amp; studios</h3><p id="roomFamilyDescription">En suites share a kitchen; studios give you your own kitchenette. Both include a private bathroom.</p></div></div>
     <div class="room-list" id="roomList" aria-label="Available room styles in the listing"></div>
-    <p class="rooms-source-note">Prices and move-in dates shown are historical snapshots from Amber’s iQ Kingston listing on 28 October 2026, not real-time availability or booking quotes. Room dimensions are approximate; ask the operator to confirm tenancy dates, full costs and room features. Photos are illustrative concepts.</p>
+    <p class="rooms-source-note">Room photos are illustrative. Prices and move-in dates are from 28 Oct 2026, not live quotes. Confirm full costs, room details and availability before booking.</p>
   </div>
 </section>
 <section class="section house-rules-redesign" id="rules" aria-labelledby="rulesTitle">
@@ -1935,7 +1946,7 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 <section class="section" id="floorplan"><h2>Floor plans</h2><div class="inline-request"><div><strong>See the layout before you decide.</strong><p>Ask for the floor plan and dimensions for your specific room type. Verified plans aren't available in this design concept.</p></div><button class="outline-button" data-enquire="" type="button">Request floor plan</button></div></section>
 <section class="section" id="neighbourhood"><h2>Life beyond your room</h2><div class="neighbourhood-layout"><img alt="Neighbourhood concept image" data-asset="assets/building.webp" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div><p>Wood Street puts you close to Kingston’s shops, cafés and riverside. The town centre includes the Bentall Centre, the Ancient Market Place and other everyday essentials.</p><p>For study days, check your route to the specific Kingston University campus. For weekends, the River Thames and Canbury Gardens offer a change of pace.</p><a class="source-link" href="https://www.google.com/maps/search/?api=1&amp;query=15+Wood+Street+Kingston+upon+Thames+KT1+1TY" rel="noopener noreferrer" target="_blank">Explore the area on Maps <svg><use href="#arrow"></use></svg></a></div></div></section>
 <section class="section" id="faqs"><h2>Frequently asked questions</h2><label class="faq-search"><svg><use href="#info"></use></svg><input aria-label="Search frequently asked questions" id="faqSearch" placeholder="Search questions" type="search"/></label><div class="disclosure-list" id="faqList"><details><summary>What is included in the rent? <span>+</span></summary><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></details><details><summary>What is the difference between an en suite and a studio? <span>+</span></summary><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></details><details><summary>Can I reserve a specific room? <span>+</span></summary><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></details><details><summary>Is there a guarantor requirement? <span>+</span></summary><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></details><details><summary>Are viewings available? <span>+</span></summary><p>Ask the property team for the latest viewing or virtual tour options.</p></details></div><p hidden="" id="faqEmpty">No matching questions.</p></section>
-<section class="section" id="location"><h2>Nearby landmarks</h2><p class="section-intro">See what is around iQ Kingston—from campuses and trains to food shops, riverside walks and local attractions.</p><div class="location-panel"><div aria-hidden="true" class="location-illustration"><span class="route-a"></span><span class="route-b"></span><span class="location-pin"><svg><use href="#pin"></use></svg></span></div><div class="landmarks-detail">
+<section class="section" id="location"><h2>Nearby landmarks</h2><div class="location-panel"><div aria-hidden="true" class="location-illustration"><span class="route-a"></span><span class="route-b"></span><span class="location-pin"><svg><use href="#pin"></use></svg></span></div><div class="landmarks-detail">
 <strong>iQ Kingston</strong><p>15 Wood Street, Kingston upon Thames, KT1 1TY</p>
 <div class="landmark-groups">
 <div class="landmark-group" data-landmark-category="universities"><h3>Universities and colleges</h3>
@@ -2308,24 +2319,21 @@ function updateSelectedRoom(){
 let roomCardsBuilt=false;
 function roomSnapshot(room){
  const price=room.pricing.verified
-   ?`<strong>${formatGBP(room.pricing.price)}<small>/week</small></strong><span class="room-rate-caption">Dated rate · 28 Oct 2026</span>`
-   :`<strong class="room-price-request">Price on request</strong><span class="room-rate-caption">No dated rate in source snapshot</span>`;
+   ?`<strong>${formatGBP(room.pricing.price)}<small>/week</small></strong>`
+   :`<strong class="room-price-request">Price on request</strong>`;
  return price;
 }
 function renderRoomCard(room){
  const selected=selectedRoom===room.id;
  const image=room.image
-  ?`<img loading="lazy" decoding="async" alt="Illustrative concept of a ${room.type==='studio'?'studio':'private en suite'}" src="${room.image}"><span class="room-photo-label">Concept imagery</span>`
+  ?`<img loading="lazy" decoding="async" alt="Illustrative concept of a ${room.type==='studio'?'studio':'private en suite'}" src="${room.image}">`
   :`<div class="room-photo-placeholder" role="img" aria-label="No room image supplied"><svg viewBox="0 0 24 24"><use href="#image"></use></svg><span>Image not supplied</span></div>`;
- const type=room.type==='studio'?'Studio':'En suite';
- const desc=room.type==='studio'?'Private kitchenette & bathroom':'Shared kitchen & private bathroom';
  const moveIn=room.pricing.availableFrom?`Listed: ${room.pricing.availableFrom}`:'Confirm with property';
  return `<article class="room-card" data-room="${room.id}" aria-label="${room.name}">
   <div class="room-primary">
    <div class="room-media">${image}</div>
    <div class="room-details">
-    <div class="room-title-line"><div><span class="room-type-label">${type}</span><h3>${room.name}</h3></div><span class="room-checked-label">${room.pricing.verified?'Dated rate':'Enquire for rate'}</span></div>
-    <p class="room-summary-line">${desc}</p>
+    <div class="room-title-line"><h3>${room.name}</h3></div>
     <div class="room-facts" aria-label="Room features">
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM7 9h10M7 13h10"/></svg>${room.size}</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19V7m0 9h18v3M3 11h18v5H3zM7 11V8h10v3"/></svg>${room.bathroom}</span>
@@ -2381,9 +2389,6 @@ function redrawRooms(){
   });
   container.addEventListener('toggle',()=>scheduleGeometryMeasure(),true);
  }
- const titles={all:['En suites & studios','En suites share a kitchen; studios give you your own kitchenette. Both include a private bathroom.'],ensuite:['En suite rooms','Your own bedroom and bathroom, with a kitchen shared with other residents.'],studio:['Studio rooms','A private bathroom and kitchenette for a more self-contained routine.']};
- const chosen=titles[filter]||titles.all;
- $('#roomFamilyTitle').textContent=chosen[0];$('#roomFamilyDescription').textContent=chosen[1];
  for(const card of $$('.room-card',container)){
   const room=rooms.find(item=>item.id===card.dataset.room);
   const visible=filter==='all'||room.type===filter;
