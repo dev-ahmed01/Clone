@@ -1135,9 +1135,10 @@ dialog#aboutDetailsDialog::backdrop{background:rgba(8,20,37,.5);backdrop-filter:
   display:flex!important;flex-direction:column!important;position:relative;isolation:isolate;
   background:#fff!important;
   border:1px solid rgba(17,31,53,.075);border-radius:34px;
-  padding:56px clamp(25px,5vw,72px) 38px!important;
+  padding:56px clamp(28px,4.25vw,64px) 38px!important;
   overflow:hidden!important;
-  width:75%;max-width:75%;margin-left:0;margin-right:auto;
+  box-sizing:border-box;
+  width:100%;max-width:100%;margin:0;
 }
 #about.about-editorial>.about-editorial-surface::before{
   display:none!important;content:none!important;
@@ -1152,13 +1153,10 @@ dialog#aboutDetailsDialog::backdrop{background:rgba(8,20,37,.5);backdrop-filter:
   font:600 clamp(17px,1.65vw,21px)/1.55 var(--font-body)!important;
   color:var(--navy)!important;margin:0 0 24px!important;max-width:880px;
 }
-#about.about-editorial .about-editorial-preview{max-width:850px}
+#about.about-editorial .about-editorial-preview{width:100%;max-width:100%}
 #about.about-editorial .about-editorial-preview p{font-size:15px!important;line-height:1.85!important;color:#4c5a6f!important}
 #about.about-editorial .about-editorial-actions{justify-content:center;margin-top:33px}
 #about.about-editorial .about-view-more{min-height:50px;min-width:184px}
-@media(max-width:1100px){
-  #about.about-editorial>.about-editorial-surface{width:100%;max-width:100%}
-}
 @media(max-width:800px){
   #about.about-editorial{padding:0 0 32px!important;margin-bottom:12px!important}
   #about.about-editorial>.about-editorial-surface{padding:35px 26px 29px!important;border-radius:24px}
