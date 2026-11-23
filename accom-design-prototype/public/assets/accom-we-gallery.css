@@ -267,3 +267,58 @@
   animation:none!important;opacity:1;transform:none;clip-path:none;
  }
 }
+
+
+/* Final ribbon alignment: flush with the OUTER gallery shell, not the inset image.
+   Extend the hanging yellow ribbon while leaving the heading/address unblocked. */
+.gallery-ribbon-frame{
+ position:relative;
+ overflow:visible!important;
+}
+.gallery-ribbon-frame > .gallery-ribbon-tab{
+ left:0!important;
+ top:calc(100% - 1px)!important;
+ width:92px!important;
+ transform-origin:50% 0;
+ z-index:15;
+}
+.gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-body{
+ height:118px!important;
+ padding:12px 8px 29px!important;
+ clip-path:polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);
+}
+.gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-score{
+ font-size:27px!important;
+}
+.gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-stars{
+ font-size:10px!important;
+ letter-spacing:0;
+ margin-top:9px!important;
+}
+#property-identity > div:first-child{padding-left:125px}
+@media(max-width:800px){
+ .gallery-ribbon-frame > .gallery-ribbon-tab{width:82px!important}
+ .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-body{
+  height:104px!important;padding:11px 6px 25px!important
+ }
+ .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-score{font-size:23px!important}
+ #property-identity > div:first-child{padding-left:108px}
+}
+@media(max-width:550px){
+ .gallery-ribbon-frame > .gallery-ribbon-tab{width:70px!important}
+ .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-body{
+  height:91px!important;padding:8px 5px 22px!important
+ }
+ .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-score{font-size:20px!important}
+ .gallery-ribbon-frame > .gallery-ribbon-tab .gallery-ribbon-tab-stars{font-size:8px!important;margin-top:6px!important}
+ #property-identity > div:first-child{padding-left:88px}
+}
+@media(max-width:365px){
+ .gallery-ribbon-frame > .gallery-ribbon-tab{width:64px!important}
+ #property-identity > div:first-child{padding-left:78px}
+}
+@media(prefers-reduced-motion:reduce){
+ .gallery-ribbon-frame > .gallery-ribbon-tab{
+  animation:none!important;transform:none!important;opacity:1!important;clip-path:none!important
+ }
+}
