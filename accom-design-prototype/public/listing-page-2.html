@@ -1690,6 +1690,59 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  #rooms.rooms-redesign .room-filter button,
  #rooms.rooms-redesign .room-filter button::after{transition:none!important}
 }
+
+/* House rules: light scroll-responsive cards, with readable fallback and manual control. */
+#rules.house-rules-redesign{padding:33px 0 45px;scroll-margin-top:120px}
+#rules .rules-surface{background:#fff;border:1px solid #eae4df;border-radius:30px;padding:39px clamp(22px,4vw,45px);box-shadow:0 10px 32px rgba(17,31,53,.035)}
+#rules .rules-surface h2{font:700 clamp(33px,3.4vw,44px)/1.13 var(--font-title);letter-spacing:-.045em;color:var(--navy);margin:0 0 27px}
+#rules .rules-stack{display:grid;gap:12px}
+#rules .rule-card{border:1px solid #eae3de;border-radius:19px;background:#fdfbfa;overflow:hidden;transition:background .2s,border-color .2s}
+#rules .rule-card.is-open{background:#fff;border-color:#f0d8d0}
+#rules .rule-card-trigger{display:flex;align-items:center;gap:16px;width:100%;min-height:85px;padding:16px 22px;background:none;border:0;cursor:pointer;text-align:left;color:var(--navy)}
+#rules .rule-card-trigger:focus-visible{outline:3px solid var(--red);outline-offset:-4px;border-radius:15px}
+#rules .rule-icon{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border-radius:14px;background:#fff0ed;color:var(--red)}
+#rules .rule-icon svg{width:25px;height:25px;display:block}
+#rules .rule-title{flex:1;font:600 18px/1.35 var(--font-body)}
+#rules .rule-arrow{width:20px;height:20px;flex:none;fill:none;stroke:var(--red);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
+#rules .rule-card.is-open .rule-arrow{transform:rotate(180deg)}
+#rules .rule-body{display:grid;grid-template-rows:1fr;opacity:1;transition:grid-template-rows .43s cubic-bezier(.2,.75,.23,1),opacity .3s}
+#rules.rules-scroll-ready .rule-card:not(.is-open) .rule-body{grid-template-rows:0fr;opacity:0}
+#rules .rule-body-inner{min-height:0;overflow:hidden}
+#rules .rule-body-inner p{padding:0 45px 24px 86px;margin:0;color:#58697c;font:400 14px/1.75 var(--font-body)}
+/* Payments & Fees: heading on left, hierarchy of four information rows on right. */
+#payments.payments-redesign{background:none;border:0;margin:0 0 26px;padding:18px 0 35px;scroll-margin-top:120px}
+#payments .payments-surface{display:grid;grid-template-columns:minmax(205px,.72fr) minmax(0,1.28fr);gap:35px;background:#fff;padding:43px clamp(23px,4vw,45px);border:1px solid #eae4df;border-radius:30px;box-shadow:0 10px 32px rgba(17,31,53,.035)}
+#payments .payments-heading h2{font:700 clamp(33px,3.5vw,47px)/1.1 var(--font-title);letter-spacing:-.045em;color:var(--navy);max-width:320px;margin:0}
+#payments .payments-heading h2 span{display:block}
+#payments .payments-underline{display:block;width:49px;height:4px;border-radius:999px;margin-top:23px;background:var(--red)}
+#payments .payments-list{display:grid;align-content:start}
+#payments .payment-item{display:grid;grid-template-columns:47px minmax(0,1fr);gap:16px;padding:21px 12px;border-bottom:1px solid #eae5e1;min-width:0}
+#payments .payment-item:first-child{background:#fff6f1;border:1px solid #f5e2d7;border-radius:18px;padding:21px 16px;margin-bottom:6px}
+#payments .payment-item:last-child{border-bottom:0;padding-bottom:6px}
+#payments .payment-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:13px;background:#fff0ed;color:var(--red)}
+#payments .payment-icon svg{display:block;width:23px;height:23px}
+#payments .payment-item h3{font:600 18px/1.35 var(--font-body);letter-spacing:-.01em;color:var(--navy);margin:0 0 7px}
+#payments .payment-item p{font:400 13px/1.7 var(--font-body);color:#5b6b7d;margin:0;max-width:530px}
+@media(max-width:900px){#payments .payments-surface{grid-template-columns:minmax(170px,.62fr) minmax(0,1.38fr);gap:22px}}
+@media(max-width:700px){
+ #payments .payments-surface{grid-template-columns:1fr;gap:18px}
+ #payments .payments-heading h2 span{display:inline}
+ #payments .payments-underline{margin-top:13px}
+ #rules .rules-surface{padding:29px 22px}
+ #rules .rule-card-trigger{gap:12px;min-height:75px;padding:15px}
+ #rules .rule-icon{width:42px;height:42px;flex-basis:42px}
+ #rules .rule-title{font-size:15px}
+ #rules .rule-body-inner p{padding:0 20px 20px 18px;font-size:13px}
+}
+@media(max-width:550px){
+ #rules .rules-surface,#payments .payments-surface{border-radius:24px;padding:26px 19px}
+ #rules .rules-surface h2{font-size:31px;margin-bottom:20px}
+ #payments .payments-heading h2{font-size:34px}
+ #payments .payment-item{gap:11px}
+ #payments .payment-item h3{font-size:16px}
+ #payments .payment-item p{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){#rules .rule-card,#rules .rule-arrow,#rules .rule-body{transition:none!important}}
 </style>
 </head>
 <body>
@@ -1842,8 +1895,43 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
     <p class="rooms-source-note">Prices and move-in dates shown are historical snapshots from Amber’s iQ Kingston listing on 28 October 2026, not real-time availability or booking quotes. Room dimensions are approximate; ask the operator to confirm tenancy dates, full costs and room features. Photos are illustrative concepts.</p>
   </div>
 </section>
-<section class="section" id="rules"><h2>House rules &amp; cancellation</h2><div class="disclosure-list"><details><summary>Cancellation and visa conditions <span>+</span></summary><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></details><details><summary>Guests and visitors <span>+</span></summary><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></details><details><summary>Smoking and pets <span>+</span></summary><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></details><details><summary>Room requests and check-in <span>+</span></summary><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></details></div></section>
-<section class="section" id="payments"><h2>Payments &amp; fees</h2><div class="payments-grid"><div><strong>Rent instalments</strong><p>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p></div><div><strong>Booking fee</strong><p>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</p></div><div><strong>Deposit and cancellations</strong><p>Request the full written fee schedule and cancellation terms before signing.</p></div><div><strong>Total contract cost</strong><p>Ask for the full-rent total, not just the weekly price.</p></div></div></section>
+<section class="section house-rules-redesign" id="rules" aria-labelledby="rulesTitle">
+ <div class="rules-surface"><h2 id="rulesTitle">House rules &amp; cancellation</h2>
+  <div class="rules-stack"><article class="rule-card is-open" data-scroll-rule>
+ <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-1">
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5zM8.5 12l2.5 2.5 5-5"/></svg></span><span class="rule-title">Cancellation and visa conditions</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+ </button>
+ <div class="rule-body" id="rule-panel-1"><div class="rule-body-inner"><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></div></div>
+</article>
+<article class="rule-card is-open" data-scroll-rule>
+ <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-2">
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3c0-3 2-5 6-5s6 2 6 5v3M18 5v8m-4-4h8"/></svg></span><span class="rule-title">Guests and visitors</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+ </button>
+ <div class="rule-body" id="rule-panel-2"><div class="rule-body-inner"><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></div></div>
+</article>
+<article class="rule-card is-open" data-scroll-rule>
+ <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-3">
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12M9 13h6m-6-3h3"/></svg></span><span class="rule-title">Smoking and pets</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+ </button>
+ <div class="rule-body" id="rule-panel-3"><div class="rule-body-inner"><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></div></div>
+</article>
+<article class="rule-card is-open" data-scroll-rule>
+ <button type="button" class="rule-card-trigger" aria-expanded="true" aria-controls="rule-panel-4">
+  <span class="rule-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="8" cy="8" r="5"/><path d="m11.5 11.5 9 9 2-2-3-3-2 2-2-2"/></svg></span><span class="rule-title">Room requests and check-in</span><svg class="rule-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+ </button>
+ <div class="rule-body" id="rule-panel-4"><div class="rule-body-inner"><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></div></div>
+</article></div>
+ </div>
+</section>
+<section class="section payments-redesign" id="payments" aria-labelledby="paymentsTitle">
+ <div class="payments-surface">
+  <header class="payments-heading"><h2 id="paymentsTitle">Payments <span>&amp; fees.</span></h2><span class="payments-underline" aria-hidden="true"></span></header>
+  <div class="payments-list"><article class="payment-item payment-feature"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18m-6 4h3M6 4h11"/></svg></span><div><h3>Rent instalments</h3><p>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p></div></article>
+<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3zM9 8h6m-6 4h6m-6 4h4"/></svg></span><div><h3>Booking fee</h3><p>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</p></div></article>
+<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2 20 5v6c0 5-3 8-8 11-5-3-8-6-8-11V5zM8.5 12l2.5 2.5 5-5"/></svg></span><div><h3>Deposit and cancellations</h3><p>Request the full written fee schedule and cancellation terms before signing.</p></div></article>
+<article class="payment-item"><span class="payment-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="2" width="14" height="20" rx="2"/><rect x="8" y="5" width="8" height="4" rx=".4"/><path d="M8 13h2m4 0h2m-8 4h2m4 0h2"/></svg></span><div><h3>Total contract cost</h3><p>Ask for the full-rent total, not just the weekly price.</p></div></article></div>
+ </div>
+</section>
 <section class="section" id="floorplan"><h2>Floor plans</h2><div class="inline-request"><div><strong>See the layout before you decide.</strong><p>Ask for the floor plan and dimensions for your specific room type. Verified plans aren't available in this design concept.</p></div><button class="outline-button" data-enquire="" type="button">Request floor plan</button></div></section>
 <section class="section" id="neighbourhood"><h2>Life beyond your room</h2><div class="neighbourhood-layout"><img alt="Neighbourhood concept image" data-asset="assets/building.webp" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div><p>Wood Street puts you close to Kingston’s shops, cafés and riverside. The town centre includes the Bentall Centre, the Ancient Market Place and other everyday essentials.</p><p>For study days, check your route to the specific Kingston University campus. For weekends, the River Thames and Canbury Gardens offer a change of pace.</p><a class="source-link" href="https://www.google.com/maps/search/?api=1&amp;query=15+Wood+Street+Kingston+upon+Thames+KT1+1TY" rel="noopener noreferrer" target="_blank">Explore the area on Maps <svg><use href="#arrow"></use></svg></a></div></div></section>
 <section class="section" id="faqs"><h2>Frequently asked questions</h2><label class="faq-search"><svg><use href="#info"></use></svg><input aria-label="Search frequently asked questions" id="faqSearch" placeholder="Search questions" type="search"/></label><div class="disclosure-list" id="faqList"><details><summary>What is included in the rent? <span>+</span></summary><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></details><details><summary>What is the difference between an en suite and a studio? <span>+</span></summary><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></details><details><summary>Can I reserve a specific room? <span>+</span></summary><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></details><details><summary>Is there a guarantor requirement? <span>+</span></summary><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></details><details><summary>Are viewings available? <span>+</span></summary><p>Ask the property team for the latest viewing or virtual tour options.</p></details></div><p hidden="" id="faqEmpty">No matching questions.</p></section>
@@ -2018,6 +2106,37 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 <section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Daily support</p><h3>Practical living & security</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><div><h4>Reception & parcels</h4><p>Reception and parcel collection are listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><div><h4>On-site laundry</h4><p>Laundry facilities are listed. Usage may carry charges.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><div><h4>Secure bike storage</h4><p>Bike storage is listed. Confirm access arrangements.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><div><h4>24/7 security</h4><p>Security coverage is listed. Confirm current arrangements.</p></div></article></div></section><section class="about-detail-section amx-bills"><h3>Compare separate bill costs</h3><p>Enter your own estimates; this is not a guaranteed saving.</p><div class="bill-estimate"><div class="bill-estimate-top"><div><span class="bills-note">Included bills · compare your own costs</span><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div></section><section class="about-detail-section"><h3>Before you book</h3><p>Opening hours, usage limits, insurance coverage and fees can change. Verify all features against the latest official property information and room contract.</p></section></div><footer class="about-detail-footer"><a class="about-detail-primary" href="https://www.iqstudentaccommodation.com/kingston/iq-kingston" target="_blank" rel="noopener noreferrer">Official property details <svg><use href="#arrow"></use></svg></a><button type="button" class="amx-back" data-amx-close>Back to listing</button></footer></div></div></dialog>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
 
+<script id="rulesScrollInteraction">
+(() => {
+ const root=document.getElementById('rules');if(!root)return;
+ const cards=[...root.querySelectorAll('[data-scroll-rule]')];
+ if(cards.length!==4)return;
+ function setOpen(card,open) {
+  card.classList.toggle('is-open',open);
+  card.querySelector('button')?.setAttribute('aria-expanded',String(open));
+  card.querySelector('.rule-body')?.setAttribute('aria-hidden',String(!open));
+ }
+ let observer=null;
+ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  root.classList.add('rules-scroll-ready');
+  cards.forEach(c=>setOpen(c,false));
+  observer=new IntersectionObserver(entries=>{
+   for(const entry of entries) {
+    if(!entry.isIntersecting)continue;
+    setOpen(entry.target,true);
+    observer.unobserve(entry.target);
+   }
+  },{rootMargin:'-35% 0px -38% 0px',threshold:0});
+  cards.forEach(c=>observer.observe(c));
+ }
+ cards.forEach(c=>{
+  c.querySelector('button')?.addEventListener('click',()=>{
+   observer?.unobserve(c);
+   setOpen(c,!c.classList.contains('is-open'));
+  });
+ });
+})();
+</script>
 <script id="amenitiesInteraction">
 (() => {
 const panel=document.getElementById('amenitiesDialog'),button=document.getElementById('amenitiesViewAll');
