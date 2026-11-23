@@ -1,0 +1,356 @@
+/*
+ * AE Design System · Listing Page 2
+ * Source: AE_Design(1).docx, supplied 23 Nov 2026.
+ * Fixed tokens are sourced from the document. Mint and warm-white shades are
+ * supporting tints because their HEX values were not specified.
+ * Scope: the existing Listing Page 2; this stylesheet loads after inline CSS.
+ */
+:root{
+ --ae-red:#ED2024;--ae-sun:#FFB900;--ae-action:#C4141D;
+ --ae-deep:#B70F19;--ae-cobalt:#1F47C7;
+ --ae-paper:#FAF7F2;--ae-ink:#101D33;
+ --ae-card:#FFFCF9;--ae-mint:#E9F3ED;--ae-sand:#F3EADF;
+ --ae-line:#E9E1D9;--ae-muted:#526079;
+ --ae-radius:22px;--ae-section-gap:70px;
+ --navy:var(--ae-ink);--red:var(--ae-red);--red-deep:var(--ae-deep);
+ --yellow:var(--ae-sun);--cream:var(--ae-paper);
+ --font-title:'Bricolage Grotesque',Arial,sans-serif;
+ --font-body:'Montserrat',Arial,sans-serif;
+}
+html{scroll-behavior:smooth;scroll-padding-top:170px}
+body{
+ color:var(--ae-ink);font:400 16px/1.65 var(--font-body);
+ background-color:var(--ae-paper)!important;
+ background-image:
+  radial-gradient(ellipse 48% 16% at 0% 3%,rgba(237,32,36,.052),transparent 74%),
+  radial-gradient(ellipse 39% 15% at 100% 38%,rgba(255,185,0,.042),transparent 80%),
+  radial-gradient(ellipse 42% 15% at 0% 78%,rgba(237,32,36,.035),transparent 76%)!important;
+ background-repeat:no-repeat!important;
+ -webkit-font-smoothing:antialiased;
+}
+body,button,input,textarea,select{font-family:var(--font-body)}
+p,.section p{color:var(--ae-ink);line-height:1.72}
+h1,h2,h3,h4,h5{font-family:var(--font-title);color:var(--ae-ink);letter-spacing:-.035em}
+h1,.property-heading h1{font-size:48px;line-height:1.1;font-weight:700}
+h2,.section h2,#overview h2,#offers h2,#amenities h2,#rooms h2,
+#rules h2,#payments h2,#about h2,#reviews>h2{font:700 36px/1.18 var(--font-title);letter-spacing:-.035em}
+h3,.section h3,#overview .residence-card h3,#offers .offers-card h3,
+#rooms .room-card h3,#payments .payment-item h3,
+#amenities .amx-group-head h3{font:600 21px/1.33 var(--font-title);letter-spacing:-.025em}
+a{transition:color .18s ease}
+a.source-link,.section .source-link,.page-footer a{
+ font:700 14px/1.5 var(--font-body);color:var(--ae-cobalt);
+}
+a.source-link:hover,.section .source-link:hover{color:var(--ae-action);text-decoration:underline;text-underline-offset:4px}
+button,[role=button]{touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,
+textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
+/* A single full-width Paper header and sticky tab strip, not a floating pill. */
+.site-header{
+ background:rgba(250,247,242,.95)!important;
+ border-bottom:1px solid var(--ae-line)!important;
+ box-shadow:0 4px 18px rgba(16,29,51,.045)!important;
+ backdrop-filter:blur(16px) saturate(145%);
+ -webkit-backdrop-filter:blur(16px) saturate(145%);
+}
+.site-header .logo,.site-header .header-links a{color:var(--ae-ink)!important}
+.site-header .header-links a{font:700 14px/1.3 var(--font-body)}
+.site-header .header-links a:hover{color:var(--ae-action)!important}
+.site-header .header-contact{
+ background:var(--ae-red)!important;color:#fff!important;
+ border:0;border-radius:999px;font:700 13px/1.25 var(--font-body);
+ box-shadow:none;transition:background .2s ease;
+}
+.site-header .header-contact:hover{background:var(--ae-deep)!important}
+#scrollNav.section-nav{
+ background:rgba(250,247,242,.91)!important;
+ border-bottom:1px solid var(--ae-line)!important;
+ box-shadow:0 9px 23px rgba(16,29,51,.07)!important;
+ backdrop-filter:blur(17px) saturate(145%)!important;
+ -webkit-backdrop-filter:blur(17px) saturate(145%)!important;
+}
+#scrollNav .section-nav-track a,#scrollNav .section-nav-track button{
+ font:700 14px/1.2 var(--font-body);color:var(--ae-ink);
+}
+#scrollNav .section-nav-track a.active{color:var(--ae-action)!important}
+#scrollNav .section-nav-track a::after{background:var(--ae-red)}
+#scrollNav .section-nav-actions .tiny-nav-action{color:var(--ae-ink);font:700 12px/1.3 var(--font-body)}
+/* AE buttons: 12–13px Montserrat, no default drop shadows. */
+.primary-button,.header-contact,.offers-action,#rooms .room-enquire,
+#rooms .room-term-actions button[data-enquire],.mobile-cta .primary-button,
+.compare-tray .primary-button{
+ font:700 13px/1.3 var(--font-body)!important;
+ background:var(--ae-red);border:0;color:#fff;
+ border-radius:999px;box-shadow:none!important;
+ transition:background .22s ease,color .22s ease;
+}
+.primary-button:hover,.offers-action:hover,#rooms .room-enquire:hover,
+#rooms .room-term-actions button[data-enquire]:hover,
+.mobile-cta .primary-button:hover{background:var(--ae-deep)!important;color:#fff!important}
+.outline-button,#rooms .room-select{
+ font:600 13px/1.35 var(--font-body)!important;
+ background:transparent;border:1px solid currentColor;
+ color:var(--ae-ink);border-radius:999px;box-shadow:none!important;
+ transition:background .22s ease,border-color .22s ease;
+}
+.outline-button:hover,#rooms .room-select:hover{
+ background:rgba(16,29,51,.055)!important;color:var(--ae-ink)
+}
+.text-action,.link-button,.about-view-more,.amx-more{font:700 14px/1.4 var(--font-body);color:var(--ae-cobalt)}
+.text-action:hover,.link-button:hover,.about-view-more:hover{color:var(--ae-action)}
+.icon-button,.modal-icon{
+ background:transparent;border:1px solid rgba(16,29,51,.25);color:var(--ae-ink);
+ border-radius:50%;box-shadow:none!important;transition:background .2s ease;
+}
+.icon-button:hover,.modal-icon:hover{background:rgba(16,29,51,.06)}
+/* Shared section grid: consistent headings, generous but compact content spacing. */
+.site-container{max-width:1440px}
+.crumbs{font:500 13px/1.5 var(--font-body);color:var(--ae-muted)}
+.property-heading{gap:24px}
+.property-heading .property-address{font:400 16px/1.65 var(--font-body);color:var(--ae-ink)}
+.gallery{border-radius:26px;background:var(--ae-sand)}
+.section{border-color:transparent}
+.content-column>.section{padding-top:var(--ae-section-gap);padding-bottom:var(--ae-section-gap)}
+.section>h2,.section .amx-head h2,.section .rooms-heading h2{margin-bottom:28px}
+#overview.overview-editorial,#offers.offers-showcase,#about .about-editorial-surface,
+#amenities .amx-surface,#rooms .rooms-wrap,#rules .rules-surface,
+#payments .payments-surface,
+#floorplan,#neighbourhood,#faqs,#location,#reviews{
+ background:var(--ae-card)!important;
+ border:1px solid var(--ae-line)!important;
+ border-radius:28px!important;
+ box-shadow:none!important;
+}
+#overview.overview-editorial,#offers.offers-showcase,#about .about-editorial-surface,
+#amenities .amx-surface,#rooms .rooms-wrap,#rules .rules-surface,
+#payments .payments-surface{
+ padding:44px!important;
+}
+#floorplan,#neighbourhood,#faqs,#location,#reviews{padding:44px!important}
+#about.property-story-section{padding-top:0;padding-bottom:0}
+#overview .overview-lede,#about .about-editorial-lede{
+ font:400 16px/1.78 var(--font-body);color:var(--ae-ink)
+}
+/* Highlights: warm-white, no decorative fill-hover. */
+#overview .overview-facts.residence-grid{gap:18px}
+#overview .overview-fact.residence-card{
+ min-height:155px;padding:25px;background:var(--ae-card)!important;
+ border:1px solid var(--ae-line)!important;border-radius:20px;
+ box-shadow:none!important;transform:none!important;
+}
+#overview .overview-fact.residence-card::before,
+#overview .overview-fact.residence-card::after{display:none!important}
+#overview .overview-fact.residence-card:hover{background:var(--ae-card)!important;box-shadow:none!important;transform:none!important}
+#overview .overview-fact.residence-card h3{font:600 21px/1.3 var(--font-title)!important;color:var(--ae-ink)!important}
+#overview .overview-fact.residence-card p{font:400 16px/1.65 var(--font-body);color:var(--ae-ink)!important}
+#overview .residence-icon{background:var(--ae-sand)!important;color:var(--ae-red)!important}
+/* Offer cards: factual information, gentle hover only where actionable. */
+#offers .offers-list{gap:16px}
+#offers .offers-card{
+ padding:24px;background:var(--ae-card)!important;border:1px solid var(--ae-line)!important;
+ border-radius:20px;box-shadow:none!important;transition:box-shadow .22s ease,border-color .22s ease
+}
+#offers .offers-card:hover{box-shadow:0 9px 25px rgba(16,29,51,.065)!important;border-color:rgba(237,32,36,.25)!important}
+#offers .offers-card-copy h3{font:600 21px/1.33 var(--font-title)!important}
+#offers .offers-card-copy p{font:400 16px/1.6 var(--font-body);color:var(--ae-ink)}
+#offers .offers-saving{background:rgba(255,185,0,.17);color:var(--ae-ink);border-radius:999px}
+#offers .offers-icon{background:var(--ae-sand);color:var(--ae-red)}
+/* Included facilities panel: soft mint with warm-white tiles. */
+#amenities .amx-group:first-child{
+ padding:24px;border:1px solid #D9E9DF;border-radius:22px;background:var(--ae-mint);
+}
+#amenities .amx-group:not(:first-child){padding:22px 0;border-bottom:1px solid var(--ae-line)}
+#amenities .amx-group-head h3{font:600 21px/1.3 var(--font-title)!important}
+#amenities .amx-grid{gap:12px}
+#amenities .amx-item{
+ background:var(--ae-card)!important;color:var(--ae-ink);
+ border:1px solid rgba(16,29,51,.08);border-radius:16px;
+ box-shadow:none!important;min-height:72px;padding:12px 14px;
+ font:400 16px/1.5 var(--font-body)!important;
+}
+#amenities .amx-icon{color:var(--ae-red);background:rgba(237,32,36,.06)}
+#amenities .amx-more{border-color:var(--ae-line)}
+/* Room decision cards retain photographs, filters, actions and expandable details. */
+#rooms .room-list{gap:18px}
+#rooms .room-card{
+ background:var(--ae-card)!important;
+ border:1px solid var(--ae-line)!important;border-radius:24px;
+ box-shadow:none!important;transform:none!important;
+ transition:border-color .2s ease,box-shadow .2s ease!important;
+}
+#rooms .room-card:hover{box-shadow:0 10px 29px rgba(16,29,51,.055)!important}
+#rooms .room-card.selected-room,#rooms .room-card:has([data-compare][aria-pressed="true"]){
+ border:2px solid var(--ae-red)!important;box-shadow:0 5px 22px rgba(237,32,36,.075)!important;
+}
+#rooms .room-details{padding:25px}
+#rooms .room-title-line h3{font:600 21px/1.32 var(--font-title)!important;color:var(--ae-ink)}
+#rooms .room-facts{color:var(--ae-ink);font:400 14px/1.55 var(--font-body)}
+#rooms .room-more summary{font:700 14px/1.4 var(--font-body);color:var(--ae-cobalt)}
+#rooms .room-more-content p{font:400 16px/1.65 var(--font-body);color:var(--ae-ink)}
+#rooms .room-term-price strong{font-family:var(--font-title);color:var(--ae-ink)}
+#rooms .room-filter button{
+ background:transparent!important;color:var(--ae-ink)!important;
+ border-radius:0;font:700 13px/1.3 var(--font-body)!important;
+}
+#rooms .room-filter button.selected,#rooms .room-filter button[aria-pressed="true"]{
+ color:var(--ae-action)!important;
+}
+#rooms .room-filter button::after{background:var(--ae-red)!important}
+#rooms .room-select[aria-pressed="true"]{
+ background:rgba(237,32,36,.06)!important;border-color:var(--ae-red)!important;color:var(--ae-action)
+}
+/* House rules and payments: consistent warm-white card surfaces; keep scroll reveal. */
+#rules .rule-card{background:var(--ae-card)!important;border-color:var(--ae-line)!important;border-radius:20px;box-shadow:none!important}
+#rules .rule-card.is-open{background:#FFF8F5!important;border-color:#EED4CA!important}
+#rules .rule-title{font:600 21px/1.3 var(--font-title)!important;color:var(--ae-ink)}
+#rules .rule-body-inner p{font:400 16px/1.72 var(--font-body);color:var(--ae-ink)}
+#rules .rule-icon{color:var(--ae-red);background:#FBECE8}
+#rules .rule-card::before{background:var(--ae-red)}
+#payments .payments-heading h2{font:700 36px/1.18 var(--font-title)!important}
+#payments .payments-heading-intro{font:400 16px/1.7 var(--font-body);color:var(--ae-ink)}
+#payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{
+ padding:30px 27px;
+ background:var(--ae-card)!important;border:1px solid var(--ae-line)!important;
+ border-radius:20px;box-shadow:none!important;transform:none!important;
+}
+#payments .payment-item.is-current{background:#FFF4ED!important;border-color:#F1CFC3!important}
+#payments .payment-item h3{font:600 21px/1.3 var(--font-title)!important;color:var(--ae-ink)}
+#payments .payment-item p{font:400 16px/1.72 var(--font-body);color:var(--ae-ink)}
+#payments .payment-item p.payment-detail{font:400 14px/1.65 var(--font-body);color:var(--ae-muted)}
+#payments .payment-icon{color:var(--ae-red);background:#FCEBE8}
+#payments .payments-underline{background:var(--ae-red)}
+/* Quiet information panels and a practical FAQ accordion. */
+#floorplan .inline-request{background:var(--ae-mint);border:1px solid #DCEADF;border-radius:20px;padding:28px}
+#floorplan .inline-request strong{font:600 21px/1.3 var(--font-title);color:var(--ae-ink)}
+#floorplan .inline-request p,#neighbourhood .neighbourhood-layout p{
+ font:400 16px/1.75 var(--font-body);color:var(--ae-ink)
+}
+#neighbourhood .neighbourhood-layout{gap:24px;align-items:center}
+#neighbourhood .neighbourhood-layout img{border-radius:18px}
+#faqs .faq-search{background:var(--ae-paper);border:1px solid var(--ae-line);border-radius:16px}
+#faqs .faq-search input{font:400 16px/1.4 var(--font-body);color:var(--ae-ink)}
+#faqs .disclosure-list{display:grid;gap:12px}
+#faqs .disclosure-list details{
+ border:1px solid var(--ae-line);background:var(--ae-card)!important;
+ border-radius:17px;padding:0 20px;box-shadow:none!important
+}
+#faqs .disclosure-list summary{
+ font:600 21px/1.45 var(--font-title);color:var(--ae-ink);
+ min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer
+}
+#faqs .disclosure-list summary span{color:var(--ae-red);font:600 25px/1 var(--font-title)}
+#faqs .disclosure-list details[open] summary span{transform:rotate(45deg)}
+#faqs .disclosure-list details p{font:400 16px/1.7 var(--font-body);color:var(--ae-ink)}
+#location .location-panel{background:var(--ae-card);border:1px solid var(--ae-line);border-radius:20px}
+#location .landmark-group h3{font:600 21px/1.3 var(--font-title)}
+#location .landmark-row{font:400 14px/1.6 var(--font-body);color:var(--ae-ink)}
+/* Trust/reviews and testimonial examples. */
+#reviews .reviews-summary{background:var(--ae-ink)!important;border-radius:22px;padding:30px}
+#reviews .reviews-summary p,#reviews .reviews-summary strong,#reviews .reviews-summary .source-link{color:#fff!important}
+#reviews .review-example-grid{gap:18px}
+#reviews .review-example{background:var(--ae-card)!important;border:1px solid var(--ae-line)!important;border-radius:20px;box-shadow:none!important}
+#reviews .review-card-title,#reviews .review-preview-intro h3{font:600 21px/1.3 var(--font-title);color:var(--ae-ink)}
+#reviews .review-example p{font:400 16px/1.7 var(--font-body);color:var(--ae-ink)}
+#reviews .review-avatar{background:var(--ae-sand);color:var(--ae-ink)}
+/* Sticky highlight is the one intentionally dark, softly shadowed card. */
+.cta-aside .booking-card{
+ color:#fff;background:var(--ae-ink)!important;
+ border:1px solid rgba(255,255,255,.18)!important;border-radius:24px;
+ box-shadow:0 16px 40px rgba(16,29,51,.19)!important;
+}
+.cta-aside .booking-card .rail-title{font:600 21px/1.3 var(--font-title);color:#fff}
+.cta-aside .booking-card .price-line strong{font-family:var(--font-title);color:#fff}
+.cta-aside .booking-card .rail-attribution{font:400 12px/1.6 var(--font-body);color:#D1D8E2}
+.cta-aside .booking-card .outline-button{color:#fff;border:1px solid rgba(255,255,255,.8);background:transparent}
+.cta-aside .booking-card .outline-button:hover{background:rgba(255,255,255,.1)!important;color:#fff}
+.cta-aside .booking-card .card-footnote{color:#D9E0EA}
+.cta-aside .cta-sticky{top:calc(var(--listing-header-height) + var(--listing-tabs-height) + 12px)}
+/* Enquiry form: paper over a cobalt backdrop, consistently sized controls. */
+#enquiryDialog{background:rgba(31,71,199,.12);backdrop-filter:blur(7px)}
+#enquiryDialog .enquiry-surface,.modal-layer .dialog-surface{
+ background:var(--ae-paper);border:1px solid rgba(255,255,255,.9);
+ border-radius:26px;box-shadow:0 22px 60px rgba(16,29,51,.19)
+}
+#enquiryDialog h2,.modal-layer .dialog-surface h2{font:700 36px/1.2 var(--font-title)}
+#enquiryDialog p,.modal-layer .dialog-surface p{font:400 16px/1.65 var(--font-body);color:var(--ae-ink)}
+#enquiryDialog form label{font:600 13px/1.6 var(--font-body);color:var(--ae-ink)}
+#enquiryDialog form input,#enquiryDialog form select,#enquiryDialog form textarea{
+ min-height:46px;background:#fff;border:1px solid #CCCFCF;border-radius:12px;
+ color:var(--ae-ink);font:400 16px/1.4 var(--font-body)
+}
+.comparison-table{background:var(--ae-card);overflow-x:auto;max-width:100%}
+.about-detail-dialog,.about-detail-shell,#amenitiesDialog{--font-body:'Montserrat',Arial,sans-serif}
+.about-detail-dialog h2,#amenitiesDialog h2{font-family:var(--font-title);font-weight:700}
+.about-detail-dialog p,#amenitiesDialog p{font-family:var(--font-body)}
+/* Footer and the mobile action rail follow AE palette. */
+.page-footer-shell,.page-footer{
+ background:var(--ae-ink)!important;color:#fff!important;
+ border-color:rgba(255,255,255,.14);
+}
+.page-footer-shell .page-footer a{color:#fff}
+.page-footer-shell .page-footer p{color:#E5E9F0}
+.mobile-cta{background:rgba(250,247,242,.95);border-top:1px solid var(--ae-line)}
+.mobile-cta strong{font-family:var(--font-title);color:var(--ae-ink)}
+/* Responsive density: retain information without horizontal overflow. */
+@media(max-width:1199px){
+ :root{--ae-section-gap:58px}
+ #overview.overview-editorial,#offers.offers-showcase,#about .about-editorial-surface,
+ #amenities .amx-surface,#rooms .rooms-wrap,#rules .rules-surface,
+ #payments .payments-surface,#floorplan,#neighbourhood,#faqs,#location,#reviews{padding:34px!important}
+ #scrollNav .section-nav-track a,#scrollNav .section-nav-track button{font-size:13px}
+}
+@media(max-width:800px){
+ :root{--ae-section-gap:40px}
+ h1,.property-heading h1{font-size:clamp(36px,5.5vw,48px)}
+ h2,.section h2,#overview h2,#offers h2,#amenities h2,#rooms h2,#rules h2,#payments h2{font-size:clamp(30px,4.4vw,36px)}
+ h3,.section h3,#overview .residence-card h3{font-size:21px}
+ #scrollNav .section-nav-track a,#scrollNav .section-nav-track button{font-size:12px}
+ #overview.overview-editorial,#offers.offers-showcase,#about .about-editorial-surface,
+ #amenities .amx-surface,#rooms .rooms-wrap,#rules .rules-surface,
+ #payments .payments-surface,#floorplan,#neighbourhood,#faqs,#location,#reviews{padding:26px!important;border-radius:22px!important}
+ #overview .overview-facts.residence-grid{gap:12px}
+ #overview .overview-fact.residence-card{padding:18px}
+ #rooms .room-details{padding:21px}
+ #payments .payments-heading h2{font-size:36px!important}
+}
+@media(max-width:550px){
+ :root{--ae-section-gap:32px}
+ body{font-size:15px}
+ h1,.property-heading h1{font-size:36px}
+ h2,.section h2,#overview h2,#offers h2,#amenities h2,#rooms h2,
+ #rules h2,#payments h2,#about h2{font-size:30px;line-height:1.2}
+ #overview.overview-editorial,#offers.offers-showcase,#about .about-editorial-surface,
+ #amenities .amx-surface,#rooms .rooms-wrap,#rules .rules-surface,
+ #payments .payments-surface,#floorplan,#neighbourhood,#faqs,#location,#reviews{padding:22px 17px!important;border-radius:20px!important}
+ #overview .overview-facts.residence-grid{grid-template-columns:1fr;gap:12px}
+ #overview .overview-fact.residence-card{min-height:104px;padding:17px;gap:12px}
+ #overview .overview-fact.residence-card h3{font-size:19px!important}
+ #overview .overview-fact.residence-card p{font-size:14px}
+ #offers .offers-card{padding:17px}
+ #offers .offers-card-copy h3{font-size:19px!important}
+ #offers .offers-card-copy p{font-size:14px}
+ #amenities .amx-group:first-child{padding:15px}
+ #amenities .amx-item{min-height:60px;padding:9px 10px;font-size:13px!important}
+ #amenities .amx-icon{width:35px;height:35px}
+ #rooms .room-details{padding:17px}
+ #rooms .room-title-line h3{font-size:20px!important}
+ #rooms .room-more-content p{font-size:14px}
+ #rules .rule-title{font-size:19px!important}
+ #rules .rule-body-inner p{font-size:14px;padding-left:18px}
+ #payments .payment-item,#payments .payment-item:first-child,#payments .payment-item:last-child{
+  grid-template-columns:44px minmax(0,1fr);gap:11px;padding:20px 15px;min-height:0
+ }
+ #payments .payment-item h3{font-size:19px!important}
+ #payments .payment-item p{font-size:14px}
+ #payments .payment-icon{width:44px;height:44px}
+ #floorplan .inline-request{padding:20px}
+ #faqs .disclosure-list details{padding:0 14px}
+ #faqs .disclosure-list summary{font-size:18px}
+ #faqs .disclosure-list details p{font-size:14px}
+ #reviews .review-example p{font-size:14px}
+ #enquiryDialog h2,.modal-layer .dialog-surface h2{font-size:30px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+ html{scroll-behavior:auto}
+}
