@@ -1463,6 +1463,163 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
  html{scroll-behavior:auto!important}
  dialog:is(#aboutDetailsDialog,#amenitiesDialog){transition:none!important}
 }
+
+/* Listing Page 2 · Accom room types: clean editorial layout and stable interactions. */
+#rooms.rooms-redesign{
+ display:block;background:transparent;border:0;padding:0;margin:0 0 34px;
+ scroll-margin-top:115px;overflow:visible
+}
+#rooms .rooms-wrap{
+ background:#fff;border:1px solid #eae4df;border-radius:30px;
+ padding:39px clamp(20px,3.5vw,42px) 32px;box-shadow:0 12px 40px rgba(17,31,53,.035)
+}
+#rooms .rooms-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:26px}
+#rooms .rooms-heading>div{min-width:0;flex:1}
+#rooms .rooms-heading h2{
+ font:700 clamp(34px,3.4vw,46px)/1.11 var(--font-title);
+ letter-spacing:-.047em;margin:0 0 13px;color:var(--navy)
+}
+#rooms .rooms-heading p{
+ font:400 14px/1.72 var(--font-body);color:#59687a;
+ max-width:710px;margin:0
+}
+#rooms .rooms-heading-stat{display:flex;align-items:baseline;gap:9px;white-space:nowrap;border-radius:17px;background:#fff5ef;padding:13px 17px;border:1px solid #f6e7de}
+#rooms .rooms-heading-stat strong{font:700 31px/1 var(--font-title);color:var(--red)}
+#rooms .rooms-heading-stat span{font:500 12px/1.3 var(--font-body);color:var(--navy)}
+#rooms .rooms-toolbar{
+ display:flex;justify-content:space-between;align-items:center;gap:18px;
+ padding:14px 15px;margin-bottom:18px;background:#faf8f6;border:1px solid #efe7e1;border-radius:19px
+}
+#rooms .room-filter{display:flex;align-items:center;gap:7px;overflow:visible;padding:0;margin:0}
+#rooms .room-filter button{
+ display:inline-flex;align-items:center;gap:9px;min-height:41px;padding:10px 14px;
+ border-radius:999px;border:1px solid transparent;background:#fff;color:var(--navy);
+ font:600 12px/1.2 var(--font-body);white-space:nowrap;
+ transition:background .2s,border-color .2s,color .2s
+}
+#rooms .room-filter button.selected{background:var(--red);color:#fff;border-color:var(--red)}
+#rooms .room-filter button:hover:not(.selected){border-color:#f7c9c8;background:#fff2ed}
+#rooms .room-tab-count{display:grid;place-items:center;min-width:23px;height:23px;border-radius:999px;background:#f3f0ed;color:#354359;font:700 11px var(--font-body)}
+#rooms .room-filter button.selected .room-tab-count{background:rgba(255,255,255,.22);color:#fff}
+#rooms .rooms-snapshot{white-space:nowrap;color:#606c7d;font:500 12px var(--font-body)}
+#rooms .rooms-snapshot strong{font-weight:700;color:var(--navy)}
+#rooms .rooms-snapshot span{color:#7c8899}
+#rooms .rooms-family-intro{
+ display:flex;gap:14px;align-items:center;margin:0 0 15px;padding:18px 20px;
+ background:linear-gradient(115deg,#f4f6f9,#fbfaf9);border:1px solid #e8edf0;border-radius:18px;color:var(--navy)
+}
+#rooms .rooms-family-icon{display:grid;place-items:center;flex:none;width:45px;height:45px;background:#fff0ed;color:var(--red);border-radius:13px}
+#rooms .rooms-family-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.85;stroke-linejoin:round;stroke-linecap:round}
+#rooms .rooms-family-intro h3{font:600 17px/1.3 var(--font-body);margin:0 0 3px;color:var(--navy)}
+#rooms .rooms-family-intro p{font:400 12px/1.6 var(--font-body);margin:0;color:#5b6a7e}
+#rooms .room-list{display:grid;gap:15px}
+#rooms .room-card{
+ display:block;min-width:0;overflow:hidden;border:1px solid #e8e6e4;border-radius:21px;
+ background:#fff;box-shadow:0 4px 17px rgba(17,31,53,.045);
+ transform:none!important;transition:border-color .22s,box-shadow .22s
+}
+#rooms .room-card[hidden]{display:none!important}
+#rooms .room-card:hover{background:#fff;transform:none!important;box-shadow:0 8px 24px rgba(17,31,53,.065);border-color:#e7bebb}
+#rooms .room-card.selected-room{border:2px solid #ffb900;box-shadow:0 6px 22px rgba(255,185,0,.12)}
+#rooms .room-primary{display:grid;grid-template-columns:175px minmax(0,1fr);gap:0;padding:15px 15px 13px}
+#rooms .room-media{position:relative;overflow:hidden;min-width:0;border-radius:14px;background:#f0eeeb;align-self:stretch;min-height:162px;max-height:220px}
+#rooms .room-media>img{
+ width:100%;height:100%;max-height:none;min-height:0;display:block;object-fit:cover;
+ transform:none!important;filter:none
+}
+#rooms .room-photo-label{
+ position:absolute;left:9px;bottom:9px;background:rgba(17,31,53,.84);
+ color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:5px 8px;
+ font:500 9px/1 var(--font-body)
+}
+#rooms .room-photo-placeholder{height:100%;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#5d6d80;background:#f5f2ee;text-align:center}
+#rooms .room-photo-placeholder svg{width:30px;height:30px}
+#rooms .room-photo-placeholder span{font:500 11px var(--font-body)}
+#rooms .room-details{display:flex;flex-direction:column;gap:0;min-width:0;padding:5px 14px 0 22px}
+#rooms .room-title-line{display:flex;align-items:start;justify-content:space-between;gap:12px}
+#rooms .room-type-label{display:block;color:var(--red);font:700 10px/1.35 var(--font-body);text-transform:uppercase;letter-spacing:.085em;margin-bottom:5px}
+#rooms .room-title-line h3{font:700 23px/1.22 var(--font-title);letter-spacing:-.03em;color:var(--navy);margin:0}
+#rooms .room-checked-label{white-space:nowrap;background:#fff5ee;color:#a44a2c;padding:6px 9px;border-radius:999px;font:600 10px/1.15 var(--font-body)}
+#rooms .room-summary-line{color:#617082;font:400 12px/1.55 var(--font-body);margin:8px 0 15px}
+#rooms .room-facts{display:flex;flex-wrap:wrap;gap:8px 17px;margin:0 0 15px}
+#rooms .room-facts span{display:inline-flex;align-items:center;gap:6px;color:#3e4c60;font:500 11px/1.5 var(--font-body);background:transparent}
+#rooms .room-facts span::before{content:none}
+#rooms .room-facts svg{width:17px;height:17px;stroke:var(--red);fill:none;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round;flex:none}
+#rooms .room-primary-actions{display:flex;align-items:center;gap:15px;margin-top:auto}
+#rooms .room-more{min-width:0}
+#rooms .room-more summary{display:inline-flex;align-items:center;gap:5px;cursor:pointer;list-style:none;color:var(--red);font:600 12px/1.5 var(--font-body);outline-offset:3px}
+#rooms .room-more summary::-webkit-details-marker{display:none}
+#rooms .room-more summary svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;transition:transform .2s}
+#rooms .room-more[open] summary svg{transform:rotate(180deg)}
+#rooms .room-more-content{max-width:600px;padding-top:12px}
+#rooms .room-more-content p{color:#566476;font:400 12px/1.7 var(--font-body);margin:0 0 9px}
+#rooms .room-compare{display:inline-flex;align-items:center;gap:6px;background:none;border:0;padding:5px 0;color:#43536a;font:600 12px/1.3 var(--font-body);cursor:pointer}
+#rooms .room-compare svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.8;fill:none;flex:none}
+#rooms .room-compare[aria-pressed="true"]{color:var(--red)}
+#rooms .room-tenancy-row{
+ display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr) minmax(0,.95fr) minmax(0,1.3fr) auto;
+ gap:12px;align-items:center;padding:14px 17px 16px;border-top:1px solid #eee9e6;background:#fdfbf9
+}
+#rooms .room-term-fact,#rooms .room-term-price{display:flex;flex-direction:column;gap:5px;min-width:0}
+#rooms .room-term-fact>span,#rooms .room-term-price>span{font:400 10px/1.2 var(--font-body);color:#788493}
+#rooms .room-term-fact strong{font:600 11px/1.4 var(--font-body);color:var(--navy)}
+#rooms .room-term-price>strong{font:700 18px/1.2 var(--font-title);color:var(--navy);white-space:nowrap}
+#rooms .room-term-price>strong small{font:500 10px var(--font-body);color:#6e7a88}
+#rooms .room-rate-caption{font:400 9px/1.3 var(--font-body);color:#8390a0}
+#rooms .room-term-price>strong.room-price-request{white-space:normal;font-size:15px}
+#rooms .room-term-actions{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+#rooms .room-term-actions button{min-height:42px;border-radius:999px;padding:9px 13px;font:600 11px/1.3 var(--font-body);white-space:nowrap;cursor:pointer;transition:background .18s,color .18s,transform .18s}
+#rooms .room-enquire{display:inline-flex;align-items:center;gap:7px;background:var(--red);color:#fff;border:1px solid var(--red);box-shadow:none}
+#rooms .room-enquire svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
+#rooms .room-enquire:hover{background:#bb1420;transform:translateY(-1px)}
+#rooms .room-select{background:white;border:1px solid #d6dce2;color:var(--navy)}
+#rooms .room-select[aria-pressed="true"]{background:#fff5db;border-color:#ffb900}
+#rooms .rooms-source-note{margin:17px 3px 0;color:#6b798b;font:400 11px/1.6 var(--font-body)}
+@media(max-width:1110px){
+ #rooms .room-tenancy-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #rooms .room-term-price{grid-column:1/2}
+ #rooms .room-term-actions{grid-column:2/4;justify-content:flex-end}
+ #rooms .room-primary{grid-template-columns:155px minmax(0,1fr)}
+ #rooms .room-media{min-height:162px}
+ #rooms .room-title-line h3{font-size:21px}
+}
+@media(max-width:750px){
+ #rooms .rooms-wrap{padding:29px 20px;border-radius:24px}
+ #rooms .rooms-heading{align-items:start}
+ #rooms .rooms-heading-stat{display:none}
+ #rooms .rooms-toolbar{flex-direction:column;align-items:stretch;gap:10px}
+ #rooms .room-filter{overflow-x:auto;scrollbar-width:none}
+ #rooms .room-filter::-webkit-scrollbar{display:none}
+ #rooms .rooms-snapshot{padding-left:4px}
+ #rooms .room-primary{grid-template-columns:140px minmax(0,1fr);padding:11px}
+ #rooms .room-details{padding:3px 4px 0 14px}
+ #rooms .room-tenancy-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #rooms .room-term-actions{grid-column:1/-1;justify-content:stretch}
+ #rooms .room-term-actions button{flex:1}
+}
+@media(max-width:550px){
+ #rooms .rooms-wrap{padding:26px 15px 24px}
+ #rooms .rooms-heading h2{font-size:34px}
+ #rooms .rooms-heading p{font-size:12px}
+ #rooms .rooms-toolbar{padding:10px}
+ #rooms .room-filter button{padding:8px 11px;font-size:11px}
+ #rooms .rooms-snapshot{font-size:11px}
+ #rooms .rooms-family-intro{padding:14px 12px}
+ #rooms .rooms-family-intro h3{font-size:15px}
+ #rooms .rooms-family-intro p{font-size:11px}
+ #rooms .room-primary{display:block;padding:11px}
+ #rooms .room-media{width:100%;height:180px;min-height:0;max-height:180px;margin-bottom:13px}
+ #rooms .room-details{padding:0 3px 4px}
+ #rooms .room-title-line h3{font-size:23px}
+ #rooms .room-checked-label{font-size:9px}
+ #rooms .room-facts{gap:7px 12px}
+ #rooms .room-tenancy-row{gap:13px;padding:13px 14px}
+ #rooms .room-term-price{grid-column:1/-1}
+ #rooms .room-term-actions{grid-column:1/-1}
+}
+@media(prefers-reduced-motion:reduce){
+ #rooms .room-card,#rooms .room-term-actions button,#rooms .room-filter button{transition:none!important;transform:none!important}
+}
 </style>
 </head>
 <body>
@@ -1597,7 +1754,25 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 <section class="section amenities-redesign" id="amenities" aria-labelledby="amenitiesHeading"><div class="amx-surface"><header class="amx-head"><h2 id="amenitiesHeading">Amenities that make a difference.</h2><p>Everyday essentials, shared spaces and practical support listed for iQ Kingston, all in one place.</p></header><div class="amx-groups"><div class="amx-group"><div class="amx-group-head"><h3>Bills included</h3><small>Everyday essentials</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9Q12 1 22 9M5 13q7-6 14 0M9 17q3-3 6 0M12 20h.01"/></svg></span><span>Wi-Fi</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6z"/></svg></span><span>Electricity</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2.5 2.5 0 0 1 5 0v8a4.5 4.5 0 1 1-5 0ZM12.5 9v8"/></svg></span><span>Heating</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 11 5 14a7 7 0 0 0 14 0c0-3-3-7-7-12Z"/></svg></span><span>Water</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5zM8 7h8m-4 4v7m-3-3h6"/></svg></span><span>Contents insurance</span></div></div></div>
 <div class="amx-group"><div class="amx-group-head"><h3>Community & recreation</h3><small>Beyond your room</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1zM12 6v14"/></svg></span><span>Study spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6m4-8v10m10-10v10m4-8v6M7 12h10"/></svg></span><span>On-site gym</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM7 4v16m10-16v16M9 8l6 4-6 4z"/></svg></span><span>Cinema room</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 5 4l1 6a2 2 0 0 1-3 2l-4-2H8l-4 2a2 2 0 0 1-3-2l1-6a5 5 0 0 1 5-4zM8 10v5m-2.5-2.5h5M17 11h.01"/></svg></span><span>Games & social spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-9h12v9M12 12V5m-7 5 7-7 7 7"/></svg></span><span>Roof terrace</span></div></div></div>
 <div class="amx-group"><div class="amx-group-head"><h3>Practical living & security</h3><small>Daily support</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><span>Reception & parcels</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><span>On-site laundry</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><span>Secure bike storage</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><span>24/7 security</span></div></div></div></div><div class="amx-bottom"><p>Check access, charges and availability with iQ before booking.</p><button class="amx-more" id="amenitiesViewAll" type="button" aria-haspopup="dialog" aria-controls="amenitiesDialog">View all 14 amenities <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 10 7 7 7-7"/></svg></button></div></div></section>
-<section class="section section-rooms" id="rooms"><div class="section-title-row"><div><h2>Choose your room</h2></div><p>Compare current weekly-rate snapshots first, then ask for contract dates and the full-term total before deciding.</p></div><div class="room-pricing-summary"><strong>From £315/week</strong><span>3 dated rates · 2 rates to confirm · full-term totals on request</span></div><div aria-label="Filter room types" class="room-filter" role="group"><button aria-pressed="true" class="selected" data-room-filter="all" type="button">All rooms</button><button aria-pressed="false" data-room-filter="ensuite" type="button">En suites</button><button aria-pressed="false" data-room-filter="studio" type="button">Studios</button></div><div class="room-list" id="roomList"></div><p class="source-caption">Rates checked on Amber's iQ Kingston listing on 28 October 2026. Availability and prices can change; two room styles had no traceable current rate in the source snapshot.</p></section>
+<section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
+  <div class="rooms-wrap">
+    <header class="rooms-heading">
+      <div><h2 id="roomsTitle">Find a room that fits.</h2><p>Explore the en suites and studios listed for iQ Kingston. Compare your space, kitchen setup and weekly rate before enquiring.</p></div>
+      <span class="rooms-heading-stat"><strong>5</strong><span>Room styles</span></span>
+    </header>
+    <div class="rooms-toolbar">
+      <div class="room-filter" role="group" aria-label="Filter room types">
+        <button type="button" class="selected" data-room-filter="all" aria-pressed="true">All rooms <span class="room-tab-count">5</span></button>
+        <button type="button" data-room-filter="ensuite" aria-pressed="false">En suites <span class="room-tab-count">4</span></button>
+        <button type="button" data-room-filter="studio" aria-pressed="false">Studios <span class="room-tab-count">1</span></button>
+      </div>
+      <div class="rooms-snapshot">From <strong>£315/week</strong> <span>· dated listing snapshot</span></div>
+    </div>
+    <div class="rooms-family-intro" aria-live="polite"><span class="rooms-family-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 19V7m0 9h18v3M3 11h18v5H3zM7 11V8h10v3"/></svg></span><div><h3 id="roomFamilyTitle">En suites &amp; studios</h3><p id="roomFamilyDescription">En suites share a kitchen; studios give you your own kitchenette. Both include a private bathroom.</p></div></div>
+    <div class="room-list" id="roomList" aria-label="Available room styles in the listing"></div>
+    <p class="rooms-source-note">Prices and move-in dates shown are historical snapshots from Amber’s iQ Kingston listing on 28 October 2026, not real-time availability or booking quotes. Room dimensions are approximate; ask the operator to confirm tenancy dates, full costs and room features. Photos are illustrative concepts.</p>
+  </div>
+</section>
 <section class="section" id="rules"><h2>House rules &amp; cancellation</h2><div class="disclosure-list"><details><summary>Cancellation and visa conditions <span>+</span></summary><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></details><details><summary>Guests and visitors <span>+</span></summary><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></details><details><summary>Smoking and pets <span>+</span></summary><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></details><details><summary>Room requests and check-in <span>+</span></summary><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></details></div></section>
 <section class="section" id="payments"><h2>Payments &amp; fees</h2><div class="payments-grid"><div><strong>Rent instalments</strong><p>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p></div><div><strong>Booking fee</strong><p>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</p></div><div><strong>Deposit and cancellations</strong><p>Request the full written fee schedule and cancellation terms before signing.</p></div><div><strong>Total contract cost</strong><p>Ask for the full-rent total, not just the weekly price.</p></div></div></section>
 <section class="section" id="floorplan"><h2>Floor plans</h2><div class="inline-request"><div><strong>See the layout before you decide.</strong><p>Ask for the floor plan and dimensions for your specific room type. Verified plans aren't available in this design concept.</p></div><button class="outline-button" data-enquire="" type="button">Request floor plan</button></div></section>
@@ -1942,13 +2117,96 @@ function updateSelectedRoom(){
  $('#railRentTotal').textContent='Ask for full total';
  $('#railSource').textContent=room.pricing.verified?'Amber listing snapshot · 28 Oct 2026':'Current rate not listed in source snapshot';
 }
-function redrawRooms(){const list=rooms.filter(room=>filter==='all'||room.type===filter);$('#roomList').innerHTML=list.map(room=>{
+let roomCardsBuilt=false;
+function roomSnapshot(room){
+ const price=room.pricing.verified
+   ?`<strong>${formatGBP(room.pricing.price)}<small>/week</small></strong><span class="room-rate-caption">Dated rate · 28 Oct 2026</span>`
+   :`<strong class="room-price-request">Price on request</strong><span class="room-rate-caption">No dated rate in source snapshot</span>`;
+ return price;
+}
+function renderRoomCard(room){
  const selected=selectedRoom===room.id;
- const media=room.image?`<img loading="lazy" src="${room.image}" alt="${room.name} room concept">`:`<div class="room-photo-placeholder" role="img" aria-label="Room photo not supplied"><svg><use href="#image"></use></svg><span>Room photo not supplied</span></div>`;
- return `<article class="room-card ${selected?'selected-room':''}" data-room="${room.id}"><div class="room-media">${media}</div><div class="room-details"><h3>${room.name}</h3><p class="room-kind">${room.type==='studio'?'Studio · private kitchen':'En suite · shared kitchen'}</p><div class="room-facts"><span>${room.size}</span><span>${room.bathroom}</span><span>${room.kitchen}</span></div><div class="room-bottom"><div class="room-rate">${priceMarkup(room,exampleTerm)}</div><div class="room-actions"><button type="button" class="room-compare" data-compare="${room.id}" aria-pressed="${compared.has(room.id)}">${compared.has(room.id)?'Comparing':'Compare'}</button><button type="button" class="room-enquire" data-select="${room.id}">${selected?'Selected':'Select room'}</button></div></div>${selected?'<span class="room-selection-note">Selected for the enquiry summary</span>':''}</div></article>`;
-}).join('');
- $$('[data-select]',$('#roomList')).forEach(button=>button.addEventListener('click',()=>{selectedRoom=button.dataset.select;updateSelectedRoom();redrawRooms();notify(rooms.find(r=>r.id===selectedRoom).name+' selected');}));
- $$('[data-compare]',$('#roomList')).forEach(button=>button.addEventListener('click',()=>{const id=button.dataset.compare;if(compared.has(id))compared.delete(id);else if(compared.size>=2){notify('You can compare two rooms at once');return;}else compared.add(id);updateCompareCount();redrawRooms();}));
+ const image=room.image
+  ?`<img loading="lazy" decoding="async" alt="Illustrative concept of a ${room.type==='studio'?'studio':'private en suite'}" src="${room.image}"><span class="room-photo-label">Concept imagery</span>`
+  :`<div class="room-photo-placeholder" role="img" aria-label="No room image supplied"><svg viewBox="0 0 24 24"><use href="#image"></use></svg><span>Image not supplied</span></div>`;
+ const type=room.type==='studio'?'Studio':'En suite';
+ const desc=room.type==='studio'?'Private kitchenette & bathroom':'Shared kitchen & private bathroom';
+ const moveIn=room.pricing.availableFrom?`Listed: ${room.pricing.availableFrom}`:'Confirm with property';
+ return `<article class="room-card" data-room="${room.id}" aria-label="${room.name}">
+  <div class="room-primary">
+   <div class="room-media">${image}</div>
+   <div class="room-details">
+    <div class="room-title-line"><div><span class="room-type-label">${type}</span><h3>${room.name}</h3></div><span class="room-checked-label">${room.pricing.verified?'Dated rate':'Enquire for rate'}</span></div>
+    <p class="room-summary-line">${desc}</p>
+    <div class="room-facts" aria-label="Room features">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM7 9h10M7 13h10"/></svg>${room.size}</span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19V7m0 9h18v3M3 11h18v5H3zM7 11V8h10v3"/></svg>${room.bathroom}</span>
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V5h14v16M8 9h8M8 13h8M8 17h8"/></svg>${room.kitchen}</span>
+    </div>
+    <div class="room-primary-actions">
+      <details class="room-more">
+       <summary>View more details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 9 7 7 7-7"/></svg></summary>
+       <div class="room-more-content"><p>${room.type==='studio'?'A self-contained option with a kitchenette and private bathroom.':'A private bedroom and bathroom with a kitchen shared with other residents.'} Exact furnishings, size and access depend on the individual room.</p><p>Confirm the current room specification, move-in date, tenancy duration, any extra charges and full-term price with iQ before committing.</p></div>
+      </details>
+      <button type="button" class="room-compare" data-compare="${room.id}" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6m6 4v6"/></svg><span>Compare</span></button>
+    </div>
+   </div>
+  </div>
+  <div class="room-tenancy-row" aria-label="Tenancy information for ${room.name}">
+    <div class="room-term-fact"><span>Duration</span><strong>Confirm term</strong></div>
+    <div class="room-term-fact"><span>Move in</span><strong>${moveIn}</strong></div>
+    <div class="room-term-fact"><span>Move out</span><strong>Confirm date</strong></div>
+    <div class="room-term-price"><span>Weekly rate</span>${roomSnapshot(room)}</div>
+    <div class="room-term-actions"><button class="room-enquire" type="button" data-room-enquire="${room.id}">Enquire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="room-select" type="button" data-select="${room.id}" aria-pressed="${selected}">${selected?'Selected':'Select room'}</button></div>
+  </div>
+ </article>`;
+}
+function redrawRooms(){
+ const container=$('#roomList');
+ if(!container)return;
+ if(!roomCardsBuilt){
+  // Build the large embedded-image markup once. Filtering and comparing never recreate it.
+  container.innerHTML=rooms.map(renderRoomCard).join('');
+  roomCardsBuilt=true;
+  container.addEventListener('click',event=>{
+   const select=event.target.closest('[data-select]');
+   if(select){
+    selectedRoom=select.dataset.select;
+    updateSelectedRoom();redrawRooms();
+    notify(rooms.find(room=>room.id===selectedRoom).name+' selected');
+    return;
+   }
+   const enquire=event.target.closest('[data-room-enquire]');
+   if(enquire){
+    selectedRoom=enquire.dataset.roomEnquire;
+    updateSelectedRoom();redrawRooms();openEnquiry();
+    return;
+   }
+   const compare=event.target.closest('[data-compare]');
+   if(compare){
+    const id=compare.dataset.compare;
+    if(compared.has(id))compared.delete(id);
+    else if(compared.size>=2){notify('You can compare two rooms at once');return}
+    else compared.add(id);
+    updateCompareCount();redrawRooms();
+   }
+  });
+  container.addEventListener('toggle',()=>scheduleGeometryMeasure(),true);
+ }
+ const titles={all:['En suites & studios','En suites share a kitchen; studios give you your own kitchenette. Both include a private bathroom.'],ensuite:['En suite rooms','Your own bedroom and bathroom, with a kitchen shared with other residents.'],studio:['Studio rooms','A private bathroom and kitchenette for a more self-contained routine.']};
+ const chosen=titles[filter]||titles.all;
+ $('#roomFamilyTitle').textContent=chosen[0];$('#roomFamilyDescription').textContent=chosen[1];
+ for(const card of $$('.room-card',container)){
+  const room=rooms.find(item=>item.id===card.dataset.room);
+  const visible=filter==='all'||room.type===filter;
+  card.hidden=!visible;
+  card.classList.toggle('selected-room',selectedRoom===room.id);
+  const select=card.querySelector('[data-select]');
+  if(select){select.textContent=selectedRoom===room.id?'Selected':'Select room';select.setAttribute('aria-pressed',String(selectedRoom===room.id))}
+  const compare=card.querySelector('[data-compare]');
+  if(compare){const checked=compared.has(room.id);compare.setAttribute('aria-pressed',String(checked));compare.querySelector('span').textContent=checked?'Comparing':'Compare'}
+ }
+ if(typeof scheduleGeometryMeasure==='function')scheduleGeometryMeasure();
 }
 $$('[data-room-filter]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.roomFilter;$$('[data-room-filter]').forEach(b=>{const chosen=b===button;b.classList.toggle('selected',chosen);b.setAttribute('aria-pressed',String(chosen));});redrawRooms();}));
 function updateCompareCount(){$$('.compare-count').forEach(counter=>{counter.textContent=compared.size;counter.hidden=compared.size===0;});const tray=$('#compareTray');tray.hidden=compared.size===0;$('#compareTrayLabel').textContent=`${compared.size} room${compared.size===1?'':'s'} selected`;}
@@ -1957,7 +2215,7 @@ function openCompare(){const list=rooms.filter(room=>compared.has(room.id));cons
  table.innerHTML=`<table class="comparison-table"><thead><tr><th>Compare</th>${list.map(r=>`<th>${r.name}</th>`).join('')}</tr></thead><tbody>${fields.map(([label,extract])=>`<tr><td>${label}</td>${list.map(r=>`<td>${extract(r)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
 }openDialog($('#compareDialog'));}
 $$('[data-compare-open]').forEach(button=>button.addEventListener('click',openCompare));$('#clearCompare').addEventListener('click',()=>{compared.clear();updateCompareCount();redrawRooms();notify('Comparison cleared');});updateCompareCount();updateSelectedRoom();redrawRooms();
-function goToRooms(event){event?.preventDefault();history.replaceState(null,'','#rooms');$('#rooms').scrollIntoView({behavior:'instant'});onScroll();}
+function goToRooms(event){event?.preventDefault();history.replaceState(null,'','#rooms');$('#rooms').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});scheduleGeometryMeasure();}
 $('#railRooms').addEventListener('click',goToRooms);$('[data-gallery-rooms]').addEventListener('click',goToRooms);
 function openEnquiry(){if(dialog)closeDialog(false);$('#enquirySuccess').hidden=true;$('#enquiryForm').hidden=false;$('#enquiryError').hidden=true;openDialog($('#enquiryDialog'));}
 $$('[data-enquire]').forEach(button=>button.addEventListener('click',openEnquiry));
@@ -2016,13 +2274,8 @@ if('ResizeObserver' in window){
  if(content)observer.observe(content);
 }
 measureStickySections();
-if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
- const revealItems=$$('.section:not(.overview-editorial)').flatMap(section=>Array.from(section.children).slice(0,3));
- revealItems.forEach(item=>item.classList.add('reveal-item'));
- document.documentElement.classList.add('motion-ready');
- const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');revealObserver.unobserve(entry.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
- revealItems.forEach(item=>revealObserver.observe(item));
-}
+// Avoid animating large section wrappers while scrolling: keep targeted
+// Overview and modal animations, but do not animate multi-image content lists.
 // Content category shortcuts: open the existing filtered, keyboard-accessible photo viewer.
 $$('[data-open-category]').forEach(button=>button.addEventListener('click',()=>{
   const category=button.dataset.openCategory;
