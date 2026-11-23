@@ -1223,7 +1223,7 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
 #about .about-view-more:hover svg{transform:translateY(3px)}
 #about .about-view-more:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
 html.about-details-open{overflow:hidden}
-dialog#aboutDetailsDialog{
+dialog:is(#aboutDetailsDialog,#amenitiesDialog){
  position:fixed;inset:0 0 0 auto;margin:0 0 0 auto;padding:0;
  width:min(1010px,85vw);max-width:none;height:100vh;height:100dvh;max-height:none;
  overflow:hidden;border:0;border-radius:28px 0 0 28px;background:#fffaf6;color:var(--navy);
@@ -1232,68 +1232,68 @@ dialog#aboutDetailsDialog{
  transition:transform .62s cubic-bezier(.18,.82,.19,1),opacity .38s ease;
  overscroll-behavior:contain
 }
-dialog#aboutDetailsDialog[open]{display:flex;flex-direction:column}
-dialog#aboutDetailsDialog.is-visible{opacity:1;transform:translate3d(0,0,0) scale(1)}
-dialog#aboutDetailsDialog::backdrop{background:rgba(8,20,37,.5);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
-#aboutDetailsDialog .about-detail-shell{display:flex;flex-direction:column;min-height:0;flex:1}
-#aboutDetailsDialog .about-detail-topbar{
+dialog:is(#aboutDetailsDialog,#amenitiesDialog)[open]{display:flex;flex-direction:column}
+dialog:is(#aboutDetailsDialog,#amenitiesDialog).is-visible{opacity:1;transform:translate3d(0,0,0) scale(1)}
+dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{background:rgba(8,20,37,.5);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-shell{display:flex;flex-direction:column;min-height:0;flex:1}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-topbar{
  display:flex;align-items:center;justify-content:space-between;gap:22px;flex:none;
  padding:19px clamp(26px,5vw,74px);background:rgba(255,255,255,.94);
  border-bottom:1px solid #eee7e1
 }
-#aboutDetailsDialog .about-detail-brand{display:flex;align-items:center;gap:11px;color:var(--navy);font:700 22px/1 var(--font-title)}
-#aboutDetailsDialog .about-detail-brand small{display:block;font:700 8px/1.4 var(--font-body);letter-spacing:.13em;color:#7c8795;margin-top:4px}
-#aboutDetailsDialog .about-detail-brand-mark{display:block;width:26px;height:26px;flex:none;border-radius:50%;background:var(--red);position:relative}
-#aboutDetailsDialog .about-detail-brand-mark::after{content:"";width:8px;height:8px;border-radius:50%;position:absolute;right:4px;top:4px;background:white}
-#aboutDetailsDialog .about-detail-close{
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-brand{display:flex;align-items:center;gap:11px;color:var(--navy);font:700 22px/1 var(--font-title)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-brand small{display:block;font:700 8px/1.4 var(--font-body);letter-spacing:.13em;color:#7c8795;margin-top:4px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-brand-mark{display:block;width:26px;height:26px;flex:none;border-radius:50%;background:var(--red);position:relative}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-brand-mark::after{content:"";width:8px;height:8px;border-radius:50%;position:absolute;right:4px;top:4px;background:white}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-close{
  display:grid;place-items:center;flex:none;width:44px;height:44px;
  background:#fff;border:1px solid #e7e2dc;border-radius:50%;color:var(--navy);
  cursor:pointer;transition:background .2s,border-color .2s,transform .2s
 }
-#aboutDetailsDialog .about-detail-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
-#aboutDetailsDialog .about-detail-close:hover{background:#fff0ee;border-color:var(--red);transform:rotate(90deg)}
-#aboutDetailsDialog .about-detail-close:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
-#aboutDetailsDialog .about-detail-content{
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-close:hover{background:#fff0ee;border-color:var(--red);transform:rotate(90deg)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-close:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-content{
  flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;
  padding:0 clamp(26px,5vw,74px) 56px;scrollbar-gutter:stable
 }
-#aboutDetailsDialog .about-detail-hero{padding:55px 0 38px;border-bottom:1px solid #eae1d8}
-#aboutDetailsDialog .about-detail-kicker{color:var(--red);font:700 11px/1.4 var(--font-body);letter-spacing:.16em;margin:0 0 16px}
-#aboutDetailsDialog .about-detail-hero h2{font:700 clamp(38px,4.8vw,65px)/1.04 var(--font-title);letter-spacing:-.05em;color:var(--navy);margin:0 0 22px}
-#aboutDetailsDialog .about-detail-dot{color:var(--red)}
-#aboutDetailsDialog .about-detail-hero>p:last-child{font:500 clamp(18px,2vw,24px)/1.55 var(--font-body);max-width:720px;color:#415269;margin:0}
-#aboutDetailsDialog .about-detail-reading{display:grid;gap:0}
-#aboutDetailsDialog .about-detail-section{padding:32px 0 35px;border-bottom:1px solid #eee6df}
-#aboutDetailsDialog .about-detail-section h3{font:700 clamp(23px,2.8vw,31px)/1.19 var(--font-title);letter-spacing:-.03em;color:var(--navy);margin:0 0 18px}
-#aboutDetailsDialog .about-detail-section p{font:400 15px/1.87 var(--font-body);color:#425168;max-width:800px;margin:0 0 16px}
-#aboutDetailsDialog .about-detail-section p:last-child{margin-bottom:0}
-#aboutDetailsDialog .about-detail-room-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-#aboutDetailsDialog .about-detail-room{
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero{padding:55px 0 38px;border-bottom:1px solid #eae1d8}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-kicker{color:var(--red);font:700 11px/1.4 var(--font-body);letter-spacing:.16em;margin:0 0 16px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero h2{font:700 clamp(38px,4.8vw,65px)/1.04 var(--font-title);letter-spacing:-.05em;color:var(--navy);margin:0 0 22px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-dot{color:var(--red)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero>p:last-child{font:500 clamp(18px,2vw,24px)/1.55 var(--font-body);max-width:720px;color:#415269;margin:0}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-reading{display:grid;gap:0}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section{padding:32px 0 35px;border-bottom:1px solid #eee6df}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section h3{font:700 clamp(23px,2.8vw,31px)/1.19 var(--font-title);letter-spacing:-.03em;color:var(--navy);margin:0 0 18px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section p{font:400 15px/1.87 var(--font-body);color:#425168;max-width:800px;margin:0 0 16px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section p:last-child{margin-bottom:0}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room{
  min-width:0;padding:25px;border-radius:20px;background:#fff;border:1px solid #efe6df;
  box-shadow:0 5px 16px rgba(17,31,53,.035)
 }
-#aboutDetailsDialog .about-detail-room-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:#fff0ed;color:var(--red);margin-bottom:18px}
-#aboutDetailsDialog .about-detail-room-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8}
-#aboutDetailsDialog .about-detail-room h4{font:600 20px/1.3 var(--font-body);margin:0 0 9px;color:var(--navy)}
-#aboutDetailsDialog .about-detail-room p{font-size:13px;line-height:1.7}
-#aboutDetailsDialog .about-detail-chip-row{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0 20px}
-#aboutDetailsDialog .about-detail-chip-row span{display:inline-flex;padding:9px 13px;background:#fff0ed;color:#9d2029;border:1px solid #ffe1da;border-radius:999px;font:600 12px/1.2 var(--font-body)}
-#aboutDetailsDialog .about-detail-landmarks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
-#aboutDetailsDialog .about-detail-landmarks div{display:flex;flex-direction:column;gap:5px;border-radius:17px;padding:20px 15px;background:#fff;border:1px solid #efe6df}
-#aboutDetailsDialog .about-detail-landmarks strong{font:700 26px/1.15 var(--font-title);color:var(--red)}
-#aboutDetailsDialog .about-detail-landmarks span{font:500 12px/1.4 var(--font-body);color:var(--navy)}
-#aboutDetailsDialog .about-detail-fineprint{font-size:11px!important;color:#6f7a8b!important}
-#aboutDetailsDialog .about-detail-footer{display:flex;align-items:center;flex-wrap:wrap;gap:13px;padding:34px 0 8px}
-#aboutDetailsDialog .about-detail-footer a{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:999px;padding:14px 22px;min-height:48px;text-decoration:none;font:600 13px/1.3 var(--font-body);transition:transform .2s,background .2s}
-#aboutDetailsDialog .about-detail-footer a svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
-#aboutDetailsDialog .about-detail-primary{background:var(--red);color:#fff}
-#aboutDetailsDialog .about-detail-primary:hover{background:#ba101b;transform:translateY(-2px)}
-#aboutDetailsDialog .about-detail-secondary{background:white;color:var(--navy);border:1px solid #e5dcd4}
-#aboutDetailsDialog .about-detail-secondary:hover{border-color:var(--red);transform:translateY(-2px)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:#fff0ed;color:var(--red);margin-bottom:18px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room h4{font:600 20px/1.3 var(--font-body);margin:0 0 9px;color:var(--navy)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room p{font-size:13px;line-height:1.7}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-chip-row{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0 20px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-chip-row span{display:inline-flex;padding:9px 13px;background:#fff0ed;color:#9d2029;border:1px solid #ffe1da;border-radius:999px;font:600 12px/1.2 var(--font-body)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-landmarks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-landmarks div{display:flex;flex-direction:column;gap:5px;border-radius:17px;padding:20px 15px;background:#fff;border:1px solid #efe6df}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-landmarks strong{font:700 26px/1.15 var(--font-title);color:var(--red)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-landmarks span{font:500 12px/1.4 var(--font-body);color:var(--navy)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-fineprint{font-size:11px!important;color:#6f7a8b!important}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-footer{display:flex;align-items:center;flex-wrap:wrap;gap:13px;padding:34px 0 8px}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-footer a{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:999px;padding:14px 22px;min-height:48px;text-decoration:none;font:600 13px/1.3 var(--font-body);transition:transform .2s,background .2s}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-footer a svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-primary{background:var(--red);color:#fff}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-primary:hover{background:#ba101b;transform:translateY(-2px)}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-secondary{background:white;color:var(--navy);border:1px solid #e5dcd4}
+:is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-secondary:hover{border-color:var(--red);transform:translateY(-2px)}
 @media(max-width:850px){
  #about.about-editorial .about-editorial-surface{padding:37px 28px 31px;border-radius:26px}
- #aboutDetailsDialog{width:100vw!important;border-radius:0!important}
- #aboutDetailsDialog .about-detail-hero{padding-top:40px}
+ :is(#aboutDetailsDialog,#amenitiesDialog){width:100vw!important;border-radius:0!important}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero{padding-top:40px}
 }
 @media(max-width:550px){
  #about.about-editorial .about-editorial-surface{padding:30px 21px 27px;border-radius:24px}
@@ -1301,29 +1301,29 @@ dialog#aboutDetailsDialog::backdrop{background:rgba(8,20,37,.5);backdrop-filter:
  #about .about-editorial-lede{font-size:17px;margin-bottom:18px}
  #about .about-editorial-preview p{font-size:14px;line-height:1.76}
  #about .about-editorial-actions{margin-top:24px}
- #aboutDetailsDialog .about-detail-topbar{padding:12px 20px}
- #aboutDetailsDialog .about-detail-content{padding:0 23px 35px}
- #aboutDetailsDialog .about-detail-hero{padding:36px 0 28px}
- #aboutDetailsDialog .about-detail-hero h2{font-size:42px}
- #aboutDetailsDialog .about-detail-hero>p:last-child{font-size:17px}
- #aboutDetailsDialog .about-detail-room-grid{grid-template-columns:1fr}
- #aboutDetailsDialog .about-detail-room{padding:19px}
- #aboutDetailsDialog .about-detail-landmarks{grid-template-columns:1fr 1fr}
- #aboutDetailsDialog .about-detail-landmarks div:last-child{grid-column:1/-1}
- #aboutDetailsDialog .about-detail-section{padding:26px 0}
- #aboutDetailsDialog .about-detail-section h3{font-size:24px}
- #aboutDetailsDialog .about-detail-section p{font-size:14px}
- #aboutDetailsDialog .about-detail-footer{display:grid;grid-template-columns:1fr}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-topbar{padding:12px 20px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-content{padding:0 23px 35px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero{padding:36px 0 28px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero h2{font-size:42px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-hero>p:last-child{font-size:17px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room-grid{grid-template-columns:1fr}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-room{padding:19px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-landmarks{grid-template-columns:1fr 1fr}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-landmarks div:last-child{grid-column:1/-1}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section{padding:26px 0}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section h3{font-size:24px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-section p{font-size:14px}
+ :is(#aboutDetailsDialog,#amenitiesDialog) .about-detail-footer{display:grid;grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:no-preference){
- dialog#aboutDetailsDialog.is-visible .about-detail-hero{animation:about-sheet-content-rise .58s .08s ease both}
- dialog#aboutDetailsDialog.is-visible .about-detail-section:first-child{animation:about-sheet-content-rise .66s .18s ease both}
+ dialog:is(#aboutDetailsDialog,#amenitiesDialog).is-visible .about-detail-hero{animation:about-sheet-content-rise .58s .08s ease both}
+ dialog:is(#aboutDetailsDialog,#amenitiesDialog).is-visible .about-detail-section:first-child{animation:about-sheet-content-rise .66s .18s ease both}
  @keyframes about-sheet-content-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 }
 @media(prefers-reduced-motion:reduce){
- dialog#aboutDetailsDialog{transition:none!important;transform:none!important}
+ dialog:is(#aboutDetailsDialog,#amenitiesDialog){transition:none!important;transform:none!important}
  #about .about-view-more,#about .about-view-more svg{transition:none!important}
- dialog#aboutDetailsDialog.is-visible .about-detail-hero,dialog#aboutDetailsDialog.is-visible .about-detail-section{animation:none!important}
+ dialog:is(#aboutDetailsDialog,#amenitiesDialog).is-visible .about-detail-hero,dialog:is(#aboutDetailsDialog,#amenitiesDialog).is-visible .about-detail-section{animation:none!important}
 }
 
 /* Page 2 QA: keep cards compact and stop old #about sticky-heading rules. */
@@ -1350,7 +1350,7 @@ dialog#aboutDetailsDialog::backdrop{background:rgba(8,20,37,.5);backdrop-filter:
 #about.about-editorial .about-editorial-preview p{margin:0;font-size:15px;line-height:1.75}
 #about.about-editorial .about-editorial-actions{position:static;margin-top:27px}
 #overview{scroll-margin-top:106px}
-dialog#aboutDetailsDialog{will-change:transform,opacity}
+dialog:is(#aboutDetailsDialog,#amenitiesDialog){will-change:transform,opacity}
 @media(max-width:900px){
  #overview.overview-editorial{padding:32px 27px}
  #overview .overview-fact.residence-card{min-height:112px;padding:15px 16px;grid-template-columns:48px minmax(0,1fr);gap:12px}
@@ -1371,7 +1371,7 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
  #about.about-editorial .about-editorial-lede{font-size:16px}
  #about.about-editorial .about-editorial-preview p{font-size:14px}
 }
-@media(prefers-reduced-motion:reduce){dialog#aboutDetailsDialog{will-change:auto}}
+@media(prefers-reduced-motion:reduce){dialog:is(#aboutDetailsDialog,#amenitiesDialog){will-change:auto}}
 
 /* Listing Page 2 — quiet white property card, consistent breathing room around booking rail. */
 @media(min-width:1200px){
@@ -1392,6 +1392,43 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
   :root{--rail-inset:32px}
   .cta-aside .cta-sticky{margin-top:24px}
 }
+
+/* Photo-guide replacement: quiet amenities section. */
+#amenities.amenities-redesign{background:transparent;border:0;margin:0 0 30px;padding:0;scroll-margin-top:110px}
+#amenities.amenities-redesign .amx-surface{padding:40px clamp(24px,4vw,46px) 28px;background:#fff;border:1px solid #ece5dd;border-radius:30px;color:var(--navy);box-shadow:0 12px 36px #1120350a}
+#amenities.amenities-redesign h2,#amenities.amenities-redesign h3,#amenities.amenities-redesign strong{color:var(--navy)}
+#amenities .amx-head h2{font:700 clamp(32px,3.3vw,43px)/1.12 var(--font-title);letter-spacing:-.045em;margin:0 0 13px}
+#amenities .amx-head p{font:400 15px/1.7 var(--font-body);color:#59697c;max-width:750px;margin:0 0 29px}
+#amenities .amx-group{border-top:1px solid #eae4dd;padding:24px 0 26px}
+#amenities .amx-group-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 18px;margin-bottom:16px}
+#amenities .amx-group-head h3{font:600 19px/1.3 var(--font-body);margin:0}
+#amenities .amx-group-head small{font:400 12px/1.5 var(--font-body);color:#7b8798}
+#amenities .amx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 18px}
+#amenities .amx-item{display:flex;align-items:center;gap:11px;padding:8px 0;min-width:0;color:var(--navy);font:500 13px/1.45 var(--font-body)}
+#amenities .amx-icon{display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;border-radius:10px;background:#fff0ed;color:var(--red)}
+#amenities .amx-icon svg{width:20px;height:20px}
+#amenities .amx-bottom{display:flex;flex-direction:column;align-items:center;gap:18px;border-top:1px solid #eae4dd;padding-top:23px}
+#amenities .amx-bottom p{margin:0;font:400 11px/1.6 var(--font-body);color:#717e8c;text-align:center}
+#amenities .amx-more{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1.5px solid var(--red);color:var(--red);background:#fff;padding:12px 22px;min-height:48px;border-radius:999px;font:600 13px/1.3 var(--font-body);cursor:pointer;transition:background .24s,color .24s,transform .24s}
+#amenities .amx-more svg{width:17px;height:17px;stroke:currentColor;stroke-width:2;fill:none}
+#amenities .amx-more:hover{color:white;background:var(--red);transform:translateY(-2px)}
+#amenities .amx-more:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+html.amenities-details-open{overflow:hidden}
+#amenitiesDialog .amx-eyebrow{font:700 10px/1.4 var(--font-body);color:var(--red);letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+#amenitiesDialog .amx-rich-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#amenitiesDialog .amx-rich-item{display:grid;grid-template-columns:43px minmax(0,1fr);gap:12px;min-width:0;padding:18px 16px;border:1px solid #eee6dd;border-radius:18px;background:#fff}
+#amenitiesDialog .amx-rich-icon{display:grid;place-items:center;width:43px;height:43px;border-radius:12px;background:#fff0ed;color:var(--red)}
+#amenitiesDialog .amx-rich-icon svg{width:23px;height:23px}
+#amenitiesDialog .amx-rich-item h4{margin:0 0 7px;font:600 15px/1.3 var(--font-body);color:var(--navy)}
+#amenitiesDialog .amx-rich-item p{margin:0;font:400 12px/1.65 var(--font-body);color:#556276}
+#amenitiesDialog .bill-estimate{background:#fff;border:1px solid #eee4dc;border-radius:21px;padding:24px 22px;color:var(--navy);box-shadow:none}
+#amenitiesDialog .bill-estimate h3,#amenitiesDialog .bill-estimate strong{color:var(--navy)}
+#amenitiesDialog .bill-estimate p,#amenitiesDialog .bill-estimate .bill-disclosure{color:#566477!important}
+#amenitiesDialog .amx-back{min-height:48px;border:1px solid #e5dcd5;border-radius:999px;background:white;padding:12px 22px;color:var(--navy);font:600 13px/1.3 var(--font-body);cursor:pointer}
+#amenitiesDialog .amx-back:hover{border-color:var(--red)}
+@media(max-width:950px){#amenities .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:550px){#amenities.amenities-redesign .amx-surface{padding:28px 20px;border-radius:24px}#amenities .amx-head h2{font-size:32px}#amenities .amx-head p{font-size:13px}#amenities .amx-group{padding:20px 0}#amenities .amx-group-head h3{font-size:17px}#amenities .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}#amenities .amx-item{gap:7px;font-size:11px}#amenities .amx-icon{width:30px;height:30px;flex-basis:30px}#amenities .amx-icon svg{width:18px;height:18px}#amenitiesDialog .amx-rich-grid{grid-template-columns:1fr}#amenitiesDialog .bill-estimate{padding:18px 15px}}
+@media(prefers-reduced-motion:reduce){#amenities .amx-more{transition:none;transform:none!important}}
 </style>
 </head>
 <body>
@@ -1451,7 +1488,7 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
 </div>
 <div aria-hidden="true" class="nav-sentinel"></div>
 <nav aria-label="On this listing" class="section-nav" id="scrollNav" inert=""><div class="section-nav-track" id="navTrack">
-<a class="active" href="#overview">Overview</a><a href="#offers">Offers</a><a href="#rooms">Rooms</a><a href="#amenities">Included</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
+<a class="active" href="#overview">Overview</a><a href="#offers">Offers</a><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#rules">Terms</a><a href="#location">Location</a><a href="#faqs">FAQs</a><a href="#reviews">Reviews</a>
 </div><div class="section-nav-actions"><button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button></div></nav>
 <section class="section section-overview overview-editorial" id="overview" aria-labelledby="overview-heading">
   <div class="overview-story">
@@ -1523,19 +1560,9 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
     </div>
   </div>
 </section>
-<section class="section tours-editorial-section" id="tours"><div class="tour-eyebrow">PROPERTY PHOTO GUIDE</div><div class="section-title-row"><h2>A closer look at the spaces</h2><button class="link-button" data-open-gallery="" type="button">View all photos <svg aria-hidden="true"><use href="#chevron"></use></svg></button></div><p class="section-intro">Explore en suites, studios and communal spaces by category. Select an image to open its full-screen gallery.</p><div aria-label="Property photo categories" class="photo-strip photo-category-grid">
-<button data-open-category="bedrooms" type="button"><img alt="Illustrative en suite bedroom" data-asset="assets/hero-bedroom.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>En suite rooms</strong> <small>2 images</small></span></button>
-<button data-open-category="studios" type="button"><img alt="Illustrative studio room" data-asset="assets/studio-room.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Studios</strong> <small>2 images</small></span></button>
-<button data-open-category="shared" type="button"><img alt="Illustrative study and social area" data-asset="assets/study-space.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Shared spaces</strong> <small>2 images</small></span></button>
-<button data-open-category="exterior" type="button"><img alt="Illustrative exterior of a student building" data-asset="assets/building.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><span class="photo-category-label"><strong>Exterior</strong> <small>1 image</small></span></button>
-</div><p class="source-caption">7 concept images for layout demonstration only—not verified photos of iQ Kingston. iQ publishes an official 3D tour, available through the link below.</p><p class="tour-external"><a class="source-link" href="https://my.matterport.com/show/?dh=0&amp;f=0&amp;fp=0&amp;hr=1&amp;m=BDsCpY9882w&amp;play=1&amp;qs=1" rel="noopener noreferrer" target="_blank">View official iQ Kingston virtual tour (external site)</a></p></section>
-<section class="section" id="amenities"><h2>What’s included at iQ Kingston</h2><div class="amenity-groups">
-<div class="amenity-group"><h3>Bills and everyday essentials</h3><div class="amenity-list"><span>Wi-Fi</span><span>Electricity and water</span><span>Heating</span><span>Contents insurance</span></div></div>
-<div class="amenity-group"><h3>Study, relax and socialise</h3><div class="amenity-list"><span>On-site gym</span><span>Study spaces</span><span>Cinema room</span><span>Games and social areas</span><span>Roof terrace</span></div></div>
-<div class="amenity-group"><h3>Practical support</h3><div class="amenity-list"><span>24/7 security coverage</span><span>Reception and parcel collection</span><span>On-site laundry (usage charges may apply)</span><span>Secure bike storage</span></div></div>
-</div><p class="source-caption">Features described by iQ Student Accommodation. Check the room contract for utility limits and insurance terms; laundry may involve separate usage charges.</p>
-<div class="bill-estimate"><div class="bill-estimate-top"><div><span class="bills-note">Included bills · compare your own costs</span><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div>
-</section>
+<section class="section amenities-redesign" id="amenities" aria-labelledby="amenitiesHeading"><div class="amx-surface"><header class="amx-head"><h2 id="amenitiesHeading">Amenities that make a difference.</h2><p>Everyday essentials, shared spaces and practical support listed for iQ Kingston, all in one place.</p></header><div class="amx-groups"><div class="amx-group"><div class="amx-group-head"><h3>Bills included</h3><small>Everyday essentials</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9Q12 1 22 9M5 13q7-6 14 0M9 17q3-3 6 0M12 20h.01"/></svg></span><span>Wi-Fi</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6z"/></svg></span><span>Electricity</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2.5 2.5 0 0 1 5 0v8a4.5 4.5 0 1 1-5 0ZM12.5 9v8"/></svg></span><span>Heating</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 11 5 14a7 7 0 0 0 14 0c0-3-3-7-7-12Z"/></svg></span><span>Water</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5zM8 7h8m-4 4v7m-3-3h6"/></svg></span><span>Contents insurance</span></div></div></div>
+<div class="amx-group"><div class="amx-group-head"><h3>Community & recreation</h3><small>Beyond your room</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1zM12 6v14"/></svg></span><span>Study spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6m4-8v10m10-10v10m4-8v6M7 12h10"/></svg></span><span>On-site gym</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM7 4v16m10-16v16M9 8l6 4-6 4z"/></svg></span><span>Cinema room</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 5 4l1 6a2 2 0 0 1-3 2l-4-2H8l-4 2a2 2 0 0 1-3-2l1-6a5 5 0 0 1 5-4zM8 10v5m-2.5-2.5h5M17 11h.01"/></svg></span><span>Games & social spaces</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-9h12v9M12 12V5m-7 5 7-7 7 7"/></svg></span><span>Roof terrace</span></div></div></div>
+<div class="amx-group"><div class="amx-group-head"><h3>Practical living & security</h3><small>Daily support</small></div><div class="amx-grid"><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><span>Reception & parcels</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><span>On-site laundry</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><span>Secure bike storage</span></div><div class="amx-item"><span class="amx-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><span>24/7 security</span></div></div></div></div><div class="amx-bottom"><p>Check access, charges and availability with iQ before booking.</p><button class="amx-more" id="amenitiesViewAll" type="button" aria-haspopup="dialog" aria-controls="amenitiesDialog">View all 14 amenities <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 10 7 7 7-7"/></svg></button></div></div></section>
 <section class="section section-rooms" id="rooms"><div class="section-title-row"><div><h2>Choose your room</h2></div><p>Compare current weekly-rate snapshots first, then ask for contract dates and the full-term total before deciding.</p></div><div class="room-pricing-summary"><strong>From £315/week</strong><span>3 dated rates · 2 rates to confirm · full-term totals on request</span></div><div aria-label="Filter room types" class="room-filter" role="group"><button aria-pressed="true" class="selected" data-room-filter="all" type="button">All rooms</button><button aria-pressed="false" data-room-filter="ensuite" type="button">En suites</button><button aria-pressed="false" data-room-filter="studio" type="button">Studios</button></div><div class="room-list" id="roomList"></div><p class="source-caption">Rates checked on Amber's iQ Kingston listing on 28 October 2026. Availability and prices can change; two room styles had no traceable current rate in the source snapshot.</p></section>
 <section class="section" id="rules"><h2>House rules &amp; cancellation</h2><div class="disclosure-list"><details><summary>Cancellation and visa conditions <span>+</span></summary><p>Conditions depend on your current signed agreement and may require supporting documents. Request the full policy—including visa refusal or university place changes—before making any payment.</p></details><details><summary>Guests and visitors <span>+</span></summary><p>Visitor rules and overnight stays depend on the property's current house policy. Confirm what is permitted with the site team.</p></details><details><summary>Smoking and pets <span>+</span></summary><p>The listing describes non-smoking accommodation and restrictions on pets. Ask for exceptions or assistance-animal arrangements where applicable.</p></details><details><summary>Room requests and check-in <span>+</span></summary><p>Room allocation preferences depend on availability. Ask for written move-in instructions, check-in requirements and any early-arrival fees.</p></details></div></section>
 <section class="section" id="payments"><h2>Payments &amp; fees</h2><div class="payments-grid"><div><strong>Rent instalments</strong><p>Instalment options may be available with a qualifying guarantor, subject to the current agreement.</p></div><div><strong>Booking fee</strong><p>Amount and refund conditions vary by academic year and contract. Ask for the exact current fee.</p></div><div><strong>Deposit and cancellations</strong><p>Request the full written fee schedule and cancellation terms before signing.</p></div><div><strong>Total contract cost</strong><p>Ask for the full-rent total, not just the weekly price.</p></div></div></section>
@@ -1708,8 +1735,27 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
     </div>
   </div>
 </dialog>
+<dialog id="amenitiesDialog" aria-labelledby="amenitiesDialogTitle" aria-describedby="amenitiesDialogIntro"><div class="about-detail-shell"><header class="about-detail-topbar"><div class="about-detail-brand"><span class="about-detail-brand-mark" aria-hidden="true"></span><span>accom <small>BY EMLEN</small></span></div><button type="button" class="about-detail-close" data-amx-close aria-label="Close amenities"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button></header><div class="about-detail-content"><div class="about-detail-hero"><p class="about-detail-kicker">THE AMENITIES GUIDE</p><h2 id="amenitiesDialogTitle">Every detail, considered<span class="about-detail-dot">.</span></h2><p id="amenitiesDialogIntro">Explore all 14 amenities listed for iQ Kingston, organised for easy comparison.</p></div><div class="about-detail-reading"><section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Everyday essentials</p><h3>Bills included</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9Q12 1 22 9M5 13q7-6 14 0M9 17q3-3 6 0M12 20h.01"/></svg></span><div><h4>Wi-Fi</h4><p>Listed as included. Verify coverage and fair-use conditions.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6z"/></svg></span><div><h4>Electricity</h4><p>Listed as included. Check the utility terms in your contract.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2.5 2.5 0 0 1 5 0v8a4.5 4.5 0 1 1-5 0ZM12.5 9v8"/></svg></span><div><h4>Heating</h4><p>Listed as included. Confirm any usage limits.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 11 5 14a7 7 0 0 0 14 0c0-3-3-7-7-12Z"/></svg></span><div><h4>Water</h4><p>Listed as included. Confirm the agreement terms.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5zM8 7h8m-4 4v7m-3-3h6"/></svg></span><div><h4>Contents insurance</h4><p>Listed as included. Confirm coverage and exclusions.</p></div></article></div></section>
+<section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Beyond your room</p><h3>Community & recreation</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1zM12 6v14"/></svg></span><div><h4>Study spaces</h4><p>Shared study areas are listed for residents.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6m4-8v10m10-10v10m4-8v6M7 12h10"/></svg></span><div><h4>On-site gym</h4><p>Gym facilities are listed. Confirm access and opening times.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM7 4v16m10-16v16M9 8l6 4-6 4z"/></svg></span><div><h4>Cinema room</h4><p>A communal cinema room is listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 5 4l1 6a2 2 0 0 1-3 2l-4-2H8l-4 2a2 2 0 0 1-3-2l1-6a5 5 0 0 1 5-4zM8 10v5m-2.5-2.5h5M17 11h.01"/></svg></span><div><h4>Games & social spaces</h4><p>Spaces for gaming and socialising are listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-9h12v9M12 12V5m-7 5 7-7 7 7"/></svg></span><div><h4>Roof terrace</h4><p>A roof terrace is listed. Check its availability.</p></div></article></div></section>
+<section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Daily support</p><h3>Practical living & security</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><div><h4>Reception & parcels</h4><p>Reception and parcel collection are listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><div><h4>On-site laundry</h4><p>Laundry facilities are listed. Usage may carry charges.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><div><h4>Secure bike storage</h4><p>Bike storage is listed. Confirm access arrangements.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><div><h4>24/7 security</h4><p>Security coverage is listed. Confirm current arrangements.</p></div></article></div></section><section class="about-detail-section amx-bills"><h3>Compare separate bill costs</h3><p>Enter your own estimates; this is not a guaranteed saving.</p><div class="bill-estimate"><div class="bill-estimate-top"><div><span class="bills-note">Included bills · compare your own costs</span><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div></section><section class="about-detail-section"><h3>Before you book</h3><p>Opening hours, usage limits, insurance coverage and fees can change. Verify all features against the latest official property information and room contract.</p></section></div><footer class="about-detail-footer"><a class="about-detail-primary" href="https://www.iqstudentaccommodation.com/kingston/iq-kingston" target="_blank" rel="noopener noreferrer">Official property details <svg><use href="#arrow"></use></svg></a><button type="button" class="amx-back" data-amx-close>Back to listing</button></footer></div></div></dialog>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
 
+<script id="amenitiesInteraction">
+(() => {
+const panel=document.getElementById('amenitiesDialog'),button=document.getElementById('amenitiesViewAll');
+if(!panel||!button)return;
+const closes=panel.querySelectorAll('[data-amx-close]'),scrollArea=panel.querySelector('.about-detail-content');
+let previous=null,timer=null;
+const reduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
+const clear=()=>{if(timer!==null){clearTimeout(timer);timer=null}};
+function hide(){if(!panel.open)return;clear();panel.classList.remove('is-visible');if(reduced())panel.close();else timer=setTimeout(()=>{if(panel.open)panel.close()},560)}
+button.addEventListener('click',()=>{if(panel.open)return;clear();previous=document.activeElement;panel.showModal();panel.classList.remove('is-visible');document.documentElement.classList.add('amenities-details-open');if(scrollArea)scrollArea.scrollTop=0;if(reduced())panel.classList.add('is-visible');else requestAnimationFrame(()=>requestAnimationFrame(()=>{if(panel.open)panel.classList.add('is-visible')}));closes[0]?.focus({preventScroll:true})});
+closes.forEach(x=>x.addEventListener('click',hide));
+panel.addEventListener('cancel',e=>{e.preventDefault();hide()});
+panel.addEventListener('close',()=>{clear();panel.classList.remove('is-visible');document.documentElement.classList.remove('amenities-details-open');if(previous?.isConnected)previous.focus({preventScroll:true})});
+panel.addEventListener('click',e=>{if(e.target!==panel)return;const r=panel.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)hide()});
+})();
+</script>
 <script id="aboutReadingInteraction">
 /* Independent property reading-sheet interaction: survives unrelated listing script errors. */
 (() => {
@@ -1893,7 +1939,7 @@ function onScroll(){const nav=$('#scrollNav');const passed=$('#property-identity
  if(active!==previousActive){previousActive=active;$$('.section-nav-track a').forEach(link=>{const current=link.hash.slice(1)===active;link.classList.toggle('active',current);if(current){link.setAttribute('aria-current','location');if(passed)link.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});}else link.removeAttribute('aria-current');});}framePending=false;}
 window.addEventListener('scroll',()=>{if(!framePending){framePending=true;requestAnimationFrame(onScroll);}}, {passive:true});window.addEventListener('resize',onScroll);onScroll();
 if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
- const revealItems=$('.section:not(.overview-editorial)').flatMap(section=>Array.from(section.children).slice(0,3));
+ const revealItems=$$('.section:not(.overview-editorial)').flatMap(section=>Array.from(section.children).slice(0,3));
  revealItems.forEach(item=>item.classList.add('reveal-item'));
  document.documentElement.classList.add('motion-ready');
  const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');revealObserver.unobserve(entry.target);}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
