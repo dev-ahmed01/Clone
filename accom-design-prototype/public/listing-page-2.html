@@ -1204,14 +1204,9 @@ p,.intro-text,#about .story-detail{font-size:16px;font-weight:400;line-height:1.
  position:relative;isolation:isolate;overflow:hidden;
  display:flex;flex-direction:column;gap:0;width:100%;min-width:0;
  padding:52px clamp(26px,5vw,66px) 37px;
- background:linear-gradient(145deg,#fff 0%,#fffefa 62%,#fff8f2 100%);
+ background:#fff;
  border:1px solid rgba(17,31,53,.07);border-radius:34px;
  box-shadow:0 14px 48px rgba(17,31,53,.045)
-}
-#about .about-editorial-accent{position:absolute;inset:0 auto auto 0;width:5px;height:100%;background:linear-gradient(180deg,#ED2024,#ffb900 75%,transparent);opacity:.94}
-#about .about-editorial-surface::after{
- content:"";position:absolute;z-index:-1;width:320px;height:320px;right:-150px;top:-165px;
- background:radial-gradient(circle,rgba(237,32,36,.065),transparent 70%);pointer-events:none
 }
 #about .about-editorial-surface h2{
  font:700 clamp(38px,4vw,53px)/1.1 var(--font-title);
@@ -1377,6 +1372,26 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
  #about.about-editorial .about-editorial-preview p{font-size:14px}
 }
 @media(prefers-reduced-motion:reduce){dialog#aboutDetailsDialog{will-change:auto}}
+
+/* Listing Page 2 — quiet white property card, consistent breathing room around booking rail. */
+@media(min-width:1200px){
+  :root{--rail-inset:40px}
+  .cta-aside .cta-sticky{
+    position:sticky;
+    top:var(--rail-inset);
+    margin-top:28px;
+    padding:0;
+  }
+  .cta-aside .booking-card{
+    height:calc(100vh - 2 * var(--rail-inset));
+    height:calc(100dvh - 2 * var(--rail-inset));
+    max-height:calc(100dvh - 2 * var(--rail-inset));
+  }
+}
+@media(min-width:1200px) and (max-height:800px){
+  :root{--rail-inset:32px}
+  .cta-aside .cta-sticky{margin-top:24px}
+}
 </style>
 </head>
 <body>
@@ -1495,7 +1510,6 @@ dialog#aboutDetailsDialog{will-change:transform,opacity}
 
 <section class="section property-story-section about-editorial" id="about" aria-labelledby="property-story-heading">
   <div class="about-editorial-surface">
-    <div class="about-editorial-accent" aria-hidden="true"></div>
     <h2 id="property-story-heading">About iQ Kingston</h2>
     <p class="about-editorial-lede">A home base in the heart of Kingston, with room for your own routine.</p>
     <div class="about-editorial-preview">
