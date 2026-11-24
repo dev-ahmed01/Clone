@@ -2387,7 +2387,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 <section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
   <div class="rooms-wrap">
     <header class="rooms-heading">
-      <div><h2 id="roomsTitle">Find a room that fits.</h2></div>
+      <div><h2 id="roomsTitle">Find a room that fits.</h2><p style="font:400 12px/1.5 var(--font-body);color:var(--ae-muted,#526079);margin:8px 0 0">Illustrative prices and dates · confirm before booking.</p></div>
     </header>
     <nav class="rooms-toolbar" aria-label="Room type categories">
       <div class="room-filter" role="group" aria-label="Filter rooms by type">
@@ -2538,7 +2538,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
       </div>
       <div class="rail-summary">
         <div class="rail-title">Price starting from</div>
-        <div class="price-line"><strong id="railPrice">£315</strong><span id="railPriceUnit">/week</span></div>
+        <div class="price-line"><strong id="railPrice">£315</strong><span id="railPriceUnit">/week</span></div><div style="font:400 11px/1.4 var(--font-body);color:inherit;opacity:.85;margin-top:5px">Illustrative rate</div>
       </div>
       <div class="rail-controls">
         <button class="primary-button full" id="railRooms" type="button">View room types <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
@@ -2558,7 +2558,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </div>
 </main>
 <footer class="page-footer-shell"><div class="page-footer"><span>accom <small>BY EMLEN</small></span><p>Student accommodation, made simpler.</p><a href="#top">Back to top ↑</a></div></footer>
-<div class="mobile-cta"><div><small>From · checked 28 Oct</small><strong id="mobilePrice">£315/wk</strong></div><button class="primary-button" data-enquire="" type="button">Enquire <svg><use href="#arrow"></use></svg></button></div>
+<div class="mobile-cta"><div><small>From · sample rate</small><strong id="mobilePrice">£315/wk</strong></div><button class="primary-button" data-enquire="" type="button">Enquire <svg><use href="#arrow"></use></svg></button></div>
 <div class="compare-tray" hidden="" id="compareTray"><span id="compareTrayLabel">1 room selected</span><button class="primary-button" data-compare-open="" type="button">Compare</button><button class="compare-clear" id="clearCompare" type="button">Clear</button></div>
 <div class="we-lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Workspace photo gallery" aria-hidden="true" hidden>
 <div class="we-lb__bg" aria-hidden="true"><img id="lbBgA" alt=""><img id="lbBgB" alt=""></div>
@@ -2812,11 +2812,11 @@ const photos = [
   {image:embeddedAssets["assets/ensuite-second.webp"],category:'bedrooms',title:'En suite room details',alt:'Furnished en suite room concept'}
 ];
 const rooms = [
- {id:'saver',name:'Saver En Suite',type:'ensuite',pricing:{price:null,reference:null,referenceSource:null,referenceDate:null,verified:false},size:'12 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-bedroom.webp"]},
- {id:'silver',name:'Silver En Suite',type:'ensuite',pricing:{price:315,reference:null,availableFrom:'2 Jan 2027',referenceSource:'Amber iQ Kingston listing',referenceDate:'2026-10-28',verified:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/ensuite-second.webp"]},
- {id:'gold',name:'Gold En Suite',type:'ensuite',pricing:{price:334,reference:null,availableFrom:'24 Oct 2026',referenceSource:'Amber iQ Kingston listing',referenceDate:'2026-10-28',verified:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-suite.webp"]},
- {id:'platinum',name:'Platinum En Suite',type:'ensuite',pricing:{price:360,reference:null,availableFrom:'24 Oct 2026',referenceSource:'Amber iQ Kingston listing',referenceDate:'2026-10-28',verified:true},size:'18 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:null},
- {id:'silver-studio',name:'Silver Studio',type:'studio',pricing:{price:null,reference:null,referenceSource:null,referenceDate:null,verified:false},size:'14–16 m² (approx.)',kitchen:'Private kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/studio-room.webp"]}
+ {id:'saver',name:'Saver En Suite',type:'ensuite',pricing:{price:315,weeks:44,availableFrom:'11 Sep 2027',moveOut:'15 Jul 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'12 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-bedroom.webp"]},
+ {id:'silver',name:'Silver En Suite',type:'ensuite',pricing:{price:325,weeks:44,availableFrom:'11 Sep 2027',moveOut:'15 Jul 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/ensuite-second.webp"]},
+ {id:'gold',name:'Gold En Suite',type:'ensuite',pricing:{price:345,weeks:44,availableFrom:'11 Sep 2027',moveOut:'15 Jul 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-suite.webp"]},
+ {id:'platinum',name:'Platinum En Suite',type:'ensuite',pricing:{price:365,weeks:51,availableFrom:'11 Sep 2027',moveOut:'2 Sep 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'18 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:null},
+ {id:'silver-studio',name:'Silver Studio',type:'studio',pricing:{price:395,weeks:51,availableFrom:'11 Sep 2027',moveOut:'2 Sep 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Private kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/studio-room.webp"]}
 ];
 function getDiscount(pricing, weeks=44) {
   if(!pricing?.verified||!pricing.referenceSource||!pricing.referenceDate||!Number.isFinite(pricing.price)||!Number.isFinite(pricing.reference)||pricing.price<=0||pricing.reference<=pricing.price||!Number.isFinite(weeks)||weeks<=0) return null;
@@ -2826,6 +2826,7 @@ function getDiscount(pricing, weeks=44) {
 }
 function priceMarkup(room,weeks,{compact=false}={}){
   const deal=getDiscount(room.pricing,weeks);
+  if(room.pricing.illustrative)return compact?'':`<div class="room-price-label"><span>ILLUSTRATIVE RATE</span></div><div class="room-price-line"><strong>${formatGBP(room.pricing.price)}<small>/week</small></strong></div><span class="availability-note">${room.pricing.availableFrom} to ${room.pricing.moveOut}</span><span class="contract-status">${room.pricing.weeks} weeks · ${formatGBP(room.pricing.price*room.pricing.weeks)} sample total</span>`;
   if(!room.pricing.verified)return compact?'':'<div class="rate-unavailable"><div class="room-price-label"><span>RATE TO CONFIRM</span></div><div class="room-price-line"><strong>Price on request</strong></div><span class="weekly-difference neutral">No traceable current rate in the dated source snapshot</span><span class="contract-status">Contract length and full total: ask the operator</span></div>';
   const badge=deal?.highlight?`<span class="deal-badge">${deal.displayPercent}% off</span>`:'';
   if(compact)return badge;
@@ -2874,16 +2875,16 @@ $$('[data-term]').forEach(button=>button.addEventListener('click',()=>{exampleTe
 
 function updateSelectedRoom(){
  // Sticky rail is an advertised starting price, not a changing selection quote.
- const advertised=rooms.filter(r=>r.pricing.verified&&Number.isFinite(r.pricing.price))
+ const advertised=rooms.filter(r=>(r.pricing.verified||r.pricing.illustrative)&&Number.isFinite(r.pricing.price))
                        .sort((a,b)=>a.pricing.price-b.pricing.price)[0];
  const selected=selectedRoom?rooms.find(r=>r.id===selectedRoom):advertised;
  $('#railPrice').textContent=advertised?formatGBP(advertised.pricing.price):'Price on request';
  $('#railPriceUnit').hidden=!advertised;
- $('#mobilePrice').textContent=selected?.pricing.verified?formatGBP(selected.pricing.price)+'/wk':'Price on request';
+ $('#mobilePrice').textContent=(selected?.pricing.verified||selected?.pricing.illustrative)?formatGBP(selected.pricing.price)+'/wk':'Price on request';
 }
 let roomCardsBuilt=false;
 function roomSnapshot(room){
- const price=room.pricing.verified
+ const price=room.pricing.verified||room.pricing.illustrative
    ?`<strong>${formatGBP(room.pricing.price)}<small>/week</small></strong>`
    :`<strong class="room-price-request">Price on request</strong>`;
  return price;
@@ -2893,7 +2894,7 @@ function renderRoomCard(room){
  const image=room.image
   ?`<img loading="lazy" decoding="async" alt="Example image of a ${room.type==='studio'?'studio':'private en suite'}" src="${room.image}">`
   :`<div class="room-photo-placeholder" role="img" aria-label="No room image supplied"><svg viewBox="0 0 24 24"><use href="#image"></use></svg><span>Image not supplied</span></div>`;
- const moveIn=room.pricing.availableFrom?`Listed: ${room.pricing.availableFrom}`:'Confirm with property';
+ const moveIn=room.pricing.availableFrom||'Confirm with property';
  return `<article class="room-card" data-room="${room.id}" aria-label="${room.name}">
   <div class="room-primary">
    <div class="room-media">${image}</div>
@@ -2914,9 +2915,9 @@ function renderRoomCard(room){
    </div>
   </div>
   <div class="room-tenancy-row" aria-label="Tenancy information for ${room.name}">
-    <div class="room-term-fact"><span>Duration</span><strong>Confirm term</strong></div>
+    <div class="room-term-fact"><span>Duration</span><strong>${room.pricing.weeks} weeks</strong></div>
     <div class="room-term-fact"><span>Move in</span><strong>${moveIn}</strong></div>
-    <div class="room-term-fact"><span>Move out</span><strong>Confirm date</strong></div>
+    <div class="room-term-fact"><span>Move out</span><strong>${room.pricing.moveOut}</strong></div>
     <div class="room-term-price"><span>Weekly rate</span>${roomSnapshot(room)}</div>
     <div class="room-term-actions"><button class="room-enquire" type="button" data-room-enquire="${room.id}">Enquire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="room-select" type="button" data-select="${room.id}" aria-pressed="${selected}">${selected?'Selected':'Select room'}</button></div>
   </div>
@@ -2969,7 +2970,7 @@ function redrawRooms(){
 $$('[data-room-filter]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.roomFilter;$$('[data-room-filter]').forEach(b=>{const chosen=b===button;b.classList.toggle('selected',chosen);b.setAttribute('aria-pressed',String(chosen));});redrawRooms();}));
 function updateCompareCount(){$$('.compare-count').forEach(counter=>{counter.textContent=compared.size;counter.hidden=compared.size===0;});const tray=$('#compareTray');tray.hidden=compared.size===0;$('#compareTrayLabel').textContent=`${compared.size} room${compared.size===1?'':'s'} selected`;}
 function openCompare(){const list=rooms.filter(room=>compared.has(room.id));const table=$('#comparisonTable');if(!list.length)table.innerHTML='<p class="compare-empty">Choose up to two rooms using the Compare buttons in the room list.</p>';else{
- const fields=[['Room type',r=>r.type==='studio'?'Studio':'En suite'],['Approx. size',r=>r.size],['Bathroom',r=>r.bathroom],['Kitchen',r=>r.kitchen],['Current rate',r=>r.pricing.verified?formatGBP(r.pricing.price)+'/week':'Price on request'],['Available from',r=>r.pricing.availableFrom||'Ask the operator'],['Rate checked',r=>r.pricing.referenceDate||'Not listed'],['Contract length',()=> 'Not supplied'],['Full-term total',()=> 'Ask the operator']];
+ const fields=[['Room type',r=>r.type==='studio'?'Studio':'En suite'],['Approx. size',r=>r.size],['Bathroom',r=>r.bathroom],['Kitchen',r=>r.kitchen],['Sample weekly rate',r=>formatGBP(r.pricing.price)+'/week'],['Sample move in',r=>r.pricing.availableFrom],['Sample move out',r=>r.pricing.moveOut],['Contract length',r=>r.pricing.weeks+' weeks'],['Sample full-term total',r=>formatGBP(r.pricing.price*r.pricing.weeks)]];
  table.innerHTML=`<table class="comparison-table"><thead><tr><th>Compare</th>${list.map(r=>`<th>${r.name}</th>`).join('')}</tr></thead><tbody>${fields.map(([label,extract])=>`<tr><td>${label}</td>${list.map(r=>`<td>${extract(r)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
 }openDialog($('#compareDialog'));}
 $$('[data-compare-open]').forEach(button=>button.addEventListener('click',openCompare));$('#clearCompare').addEventListener('click',()=>{compared.clear();updateCompareCount();redrawRooms();notify('Comparison cleared');});updateCompareCount();updateSelectedRoom();redrawRooms();
