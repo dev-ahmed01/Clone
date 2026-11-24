@@ -2201,18 +2201,18 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 #rooms .room-primary .room-details{justify-content:center;gap:12px}
 #rooms .room-primary .room-tenancy-row{display:block;padding:0;border:0;background:none}
 #rooms .room-tenancy-dates{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:440px}
-#rooms .room-card-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;margin-top:3px;min-width:0}
-#rooms .room-card-bottom .room-primary-actions{display:flex;align-items:center;gap:12px;flex:0 1 auto;margin:0}
+#rooms .room-card-bottom{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;margin-top:3px;min-width:0}
+#rooms .room-card-bottom .room-primary-actions{display:flex;align-items:center;gap:12px;flex:0 1 auto;margin:0 0 7px}
 #rooms .room-card-bottom .room-details-trigger{white-space:nowrap;margin-left:14px}
 @container(max-width:420px){#rooms .room-card-bottom .room-details-trigger{margin-left:6px}}
-#rooms .room-bottom-booking{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex:0 0 auto;margin-left:auto}
-#rooms .room-bottom-booking .room-term-price{text-align:right;gap:2px}
+#rooms .room-bottom-booking{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px;flex:0 0 auto;margin-left:auto}
+#rooms .room-bottom-booking .room-term-price{text-align:center;gap:2px}
 #rooms .room-bottom-booking .room-term-price>strong{font-size:26px!important;line-height:1.12!important}
 #rooms .room-bottom-booking .room-enquire{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:10px 17px;white-space:nowrap;border-radius:999px;background:var(--red,#ed2024);border:1px solid var(--red,#ed2024);color:#fff;font:600 13px/1.25 var(--font-body);cursor:pointer;transition:background .2s,color .2s}
 #rooms .room-bottom-booking .room-enquire svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
 #rooms .room-bottom-booking .room-enquire:hover{background:#fff;color:var(--red,#ed2024)}
-@container(max-width:680px){#rooms .room-card-bottom{gap:8px}#rooms .room-bottom-booking{flex:1 1 100%;justify-content:flex-end}#rooms .room-card-bottom .room-primary-actions{flex:1 1 100%}}
-@container(max-width:420px){#rooms .room-tenancy-dates{gap:7px}#rooms .room-bottom-booking{justify-content:space-between}#rooms .room-bottom-booking .room-term-price{text-align:left}#rooms .room-bottom-booking .room-term-price>strong{font-size:24px!important}}
+@container(max-width:680px){#rooms .room-card-bottom{gap:8px}#rooms .room-bottom-booking{flex:0 0 auto;justify-content:flex-end}#rooms .room-card-bottom .room-primary-actions{flex:0 1 auto}}
+@container(max-width:420px){#rooms .room-tenancy-dates{gap:7px}#rooms .room-bottom-booking .room-term-price>strong{font-size:24px!important}}
 /* Large room sheet: stable header, scrollable gallery and grouped sections. */
 #roomDetailsDialog{background:rgba(16,29,51,.48);backdrop-filter:blur(5px)}
 #roomDetailsDialog .room-detail-surface{display:flex;flex-direction:column;width:min(980px,calc(100vw - 32px));max-width:980px;height:auto;max-height:calc(100dvh - 36px);overflow:hidden;padding:0!important;border-radius:22px;background:#fffcf9;box-sizing:border-box;box-shadow:0 22px 70px #101d3333}
