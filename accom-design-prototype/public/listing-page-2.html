@@ -3213,12 +3213,13 @@ html body .site-container .content-column > #similar-properties.section{margin-b
 @media(min-width:901px){
  html body .layout > .cta-aside{--rail-edge-gap:16px;padding-block-start:0!important}
  html body .cta-aside .cta-sticky{position:sticky!important;top:var(--ae-rail-top)!important;bottom:auto!important;margin:0!important}
- html body .cta-aside .booking-card.booking-card--compact{height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;display:flex!important;flex-direction:column;justify-content:flex-start!important;gap:16px!important;padding:22px 21px!important;scrollbar-width:none!important}
+ html body .cta-aside .booking-card.booking-card--compact{height:auto!important;min-height:max(0px,calc(100dvh - var(--ae-rail-top) - var(--rail-edge-gap)))!important;max-height:none!important;overflow:visible!important;display:flex!important;flex-direction:column;justify-content:space-between!important;gap:16px!important;padding:22px 21px!important;scrollbar-width:none!important}
  html body .cta-aside .booking-card--compact .rail-property-head{padding:0 0 12px!important;margin:0!important;gap:0!important}
  html body .cta-aside .booking-card--compact .rail-property-name{font:700 36px/1.13 var(--font-title)!important;letter-spacing:-.042em!important;white-space:normal;overflow-wrap:normal}
  html body .cta-aside .booking-card--compact .rail-summary{padding:0!important;margin:0!important}
  html body .cta-aside .booking-card--compact .rail-title{font:600 var(--ae-card-heading)/1.25 var(--font-title)!important}
  html body .cta-aside .booking-card--compact .price-line{margin:7px 0 0!important}
+ html body .cta-aside .booking-card.booking-card--compact .price-line #railPrice{font:700 24px/1.13 var(--font-title)!important;letter-spacing:-.035em!important}
  html body .cta-aside .booking-card--compact .rail-controls{display:grid!important;gap:10px!important;margin:0!important}
  html body .cta-aside .booking-card--compact .rail-controls > button,html body .cta-aside .booking-card--compact .rail-controls > .primary-button + .outline-button{min-height:43px!important;padding:10px 12px!important;margin:0!important;font:600 var(--ae-button-size)/1.4 var(--font-body)!important}
  html body .cta-aside .booking-card--compact .rail-nearby.rail-nearby--compact{padding:13px 14px!important;margin:0!important}
