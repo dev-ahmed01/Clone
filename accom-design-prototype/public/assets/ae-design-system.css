@@ -807,3 +807,105 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   .cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row{min-height:35px;padding:6px 0!important}
   .cta-aside .booking-card--compact .rail-controls button{min-height:43px!important;padding:10px 12px!important}
 }
+
+/* Listing Page 2 — concise offer rows, with only the amount, key condition,
+   savings and enquiry action. Avoid stretched or multi-line cards on desktop. */
+#offers.offers-showcase{
+  padding:30px 30px 27px!important;
+}
+#offers .offers-header{margin-bottom:18px}
+#offers .offers-list{gap:10px}
+#offers .offers-card{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr) auto;
+  align-items:center;
+  gap:12px;
+  min-height:74px;
+  height:auto;
+  padding:13px 17px!important;
+  border-radius:18px;
+}
+#offers .offers-icon{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+}
+#offers .offers-icon svg{width:22px;height:22px}
+#offers .offers-card-copy{min-width:0;align-self:center}
+#offers .offers-card-copy h3{
+  margin:0 0 3px!important;
+  font:600 21px/1.22 var(--font-title)!important;
+  letter-spacing:-.022em;
+}
+#offers .offers-card-copy p{
+  margin:0!important;
+  font:400 14px/1.4 var(--font-body)!important;
+  color:var(--ae-muted,#526079)!important;
+}
+#offers .offers-card-actions{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  min-width:0;
+  gap:10px;
+}
+#offers .offers-card-actions .offers-saving{
+  flex:0 0 auto;
+  min-width:0;
+  padding:8px 12px;
+  font:700 12px/1.15 var(--font-body);
+}
+#offers .offers-card-actions .offers-action{
+  flex:0 0 auto;
+  grid-column:auto;
+  justify-self:auto;
+  min-width:146px;
+  min-height:41px;
+  margin:0;
+  padding:10px 14px;
+  box-shadow:none!important;
+  transform:none;
+}
+@media(max-width:1199px){
+  #offers.offers-showcase{padding:28px 25px!important}
+}
+@media(max-width:1000px){
+  #offers .offers-card{grid-template-columns:42px minmax(0,1fr);gap:8px 12px}
+  #offers .offers-card-actions{
+    grid-column:2;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+}
+@media(max-width:800px){
+  #offers.offers-showcase{padding:25px 21px!important}
+  #offers .offers-card{padding:13px 14px!important}
+  #offers .offers-card-copy h3{font-size:19px!important}
+  #offers .offers-card-copy p{font-size:13px!important}
+}
+@media(max-width:550px){
+  #offers.offers-showcase{padding:22px 15px!important}
+  #offers .offers-header{margin-bottom:15px}
+  #offers .offers-card{
+    grid-template-columns:36px minmax(0,1fr);
+    gap:9px 10px;
+    padding:12px!important;
+    min-height:0;
+    border-radius:16px;
+  }
+  #offers .offers-icon{width:36px;height:36px;border-radius:10px}
+  #offers .offers-icon svg{width:19px;height:19px}
+  #offers .offers-card-copy h3{font-size:18px!important}
+  #offers .offers-card-copy p{font-size:12px!important}
+  #offers .offers-card-actions{grid-column:1/-1;justify-content:space-between;flex-wrap:nowrap}
+  #offers .offers-card-actions .offers-saving{font-size:11px;padding:7px 10px}
+  #offers .offers-card-actions .offers-action{
+    flex:0 1 auto;
+    min-width:136px;
+    min-height:39px;
+    padding:9px 12px;
+    white-space:nowrap;
+  }
+}
