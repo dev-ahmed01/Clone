@@ -166,6 +166,33 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 @media(min-width:851px) and (max-height:730px){.ae-guidance-card{padding:18px 17px 16px;gap:12px}.ae-guidance-intro{padding-bottom:10px}.ae-guidance-intro h2{font-size:26px}.ae-guidance-intro p{font-size:13px}.ae-guidance-pills li{min-height:35px;padding-block:5px}.ae-guidance-pills{gap:6px}.ae-guidance-card .ae-guidance-cta{min-height:43px}.ae-ticket-slot{height:109px}.ae-savings-ticket{min-height:102px;padding-top:15px}.ae-savings-ticket strong{font-size:41px}}
 @media(prefers-reduced-motion:reduce){.ae-guidance-card.is-playing .ae-savings-ticket{animation:none!important}}
 
+
+/* Final consultation composition: centred headline, ordered entrance, falling ticket. */
+.ae-guidance-card{gap:17px;padding:22px 18px 21px;overflow:visible}
+.ae-guidance-card::before{width:100%;height:100%;inset:0;transform:none;border-radius:inherit;background:radial-gradient(ellipse at top right,#ffffff38,transparent 48%);z-index:-1}
+.ae-guidance-intro{text-align:center;padding-bottom:0;border-bottom:0}
+.ae-guidance-intro h2{font-size:clamp(22px,2vw,29px);line-height:1.14;letter-spacing:-.045em;margin:0 0 12px}
+.ae-guidance-intro h2 span{display:block}.ae-guidance-intro h2 span:first-child{white-space:nowrap}
+.ae-guidance-intro p{margin:0;font-size:14px;line-height:1.5}
+.ae-guidance-pills{margin-top:6px;gap:9px}
+.ae-guidance-pills li{min-height:40px;padding-block:7px}
+.ae-guidance-card.is-playing .ae-guidance-pills li{animation:ae-guidance-enter .52s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--pill-index,0) * 220ms)}
+.ae-guidance-offer .ae-guidance-cta{z-index:3;transform-origin:center}
+.ae-guidance-card.is-playing .ae-guidance-cta{animation:ae-cta-appear .42s cubic-bezier(.2,.8,.2,1) .99s backwards}
+@keyframes ae-cta-appear{from{opacity:0;transform:translateY(9px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.ae-ticket-slot{height:146px;margin-top:-21px;padding:0 14px 0 10px;perspective:800px;overflow:visible}
+.ae-savings-ticket{min-height:126px;padding:23px 15px 12px;border-radius:15px;align-items:flex-start;justify-content:center;transform:translate(1px,5px) rotate(8deg);transform-origin:12% 0;background:linear-gradient(145deg,#fff5c9,#ffdf72 62%,#ffc535);border:1px solid #fff6cf;box-shadow:0 8px 18px #9c4f0038,inset 0 1px 0 #ffffffa0}
+.ae-ticket-label{font:500 12px/1.35 var(--body)}
+.ae-savings-ticket strong{font:700 46px/.98 var(--title);letter-spacing:-.065em;margin-top:3px}
+.ae-ticket-note{font:500 11px/1.3 var(--body);margin-top:6px;padding-top:6px;color:#49360d;border-top:1px dashed #bd8a256b}
+.ae-guidance-card.is-playing .ae-savings-ticket{animation:ae-ticket-fall .9s cubic-bezier(.22,.8,.25,1) 1.42s backwards}
+@keyframes ae-ticket-fall{0%{opacity:0;transform:translate(1px,-66px) rotate(-3deg) scale(.92)}30%{opacity:1}70%{opacity:1;transform:translate(1px,9px) rotate(10deg)}100%{opacity:1;transform:translate(1px,5px) rotate(8deg)}}
+@media(max-width:1050px){.ae-guidance-card{padding-inline:15px}.ae-guidance-intro h2{font-size:clamp(20px,2.4vw,25px)}.ae-ticket-slot{height:143px;padding-inline:9px}.ae-savings-ticket strong{font-size:43px}}
+@media(max-width:850px){.ae-guidance-card{padding:20px;gap:17px}.ae-guidance-intro h2{font-size:26px}.ae-guidance-pills{margin-top:0}.ae-guidance-offer{max-width:330px}.ae-ticket-slot{height:149px}}
+@media(max-width:560px){.ae-guidance-intro h2{font-size:29px}.ae-guidance-pills{margin-top:6px}.ae-guidance-offer{max-width:none}.ae-ticket-slot{height:150px;padding-inline:15px}}
+@media(min-width:851px) and (max-height:730px){.ae-guidance-card{padding-block:17px 17px;gap:13px}.ae-guidance-intro h2{margin-bottom:9px}.ae-guidance-intro p{font-size:13px}.ae-guidance-pills{gap:6px;margin-top:3px}.ae-guidance-pills li{min-height:35px;padding-block:5px}.ae-ticket-slot{height:130px}.ae-savings-ticket{min-height:113px;padding-top:20px}.ae-savings-ticket strong{font-size:40px}}
+@media(prefers-reduced-motion:reduce){.ae-guidance-card.is-playing .ae-guidance-cta,.ae-guidance-card.is-playing .ae-savings-ticket{animation:none!important}}
+
 </style></head><body>
 <a class="skip" href="#results">Skip to results</a>
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 4.9-8.8 10.5-8.8 10.5S3.2 13.6 3.2 8.7a5 5 0 0 1 8.8-3 5 5 0 0 1 8.8 3Z"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol><symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol><symbol id="left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol><symbol id="right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol><symbol id="compare" viewBox="0 0 24 24"><path d="M5 7h14M5 17h14M9 4v6M15 14v6"/></symbol><symbol id="list" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol><symbol id="close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol></svg>
@@ -175,7 +202,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 <div class="wrap results-layout" id="results"><section aria-label="Accommodation results"><div class="result-toolbar"><strong id="count" aria-live="polite">6 properties</strong></div><div id="cards" class="list"></div><p class="note">Indicative weekly rents from the existing listing catalogue. Other properties open their current external listing; iQ Kingston opens the Accom detail page.</p></section>
 <aside class="aside ae-guidance-rail" aria-label="Student accommodation guidance">
 <section class="ae-guidance-card" aria-labelledby="guidanceHeading">
-  <div class="ae-guidance-intro"><h2 id="guidanceHeading">Not sure what<br class="ae-guidance-break"> to choose?</h2><p>Our team will help you</p></div>
+  <div class="ae-guidance-intro"><h2 id="guidanceHeading"><span>Not sure what to</span><span>choose?</span></h2><p>Our team will help you</p></div>
   <ul class="ae-guidance-pills" aria-label="How we can help">
     <li><span class="ae-guidance-tick"><svg aria-hidden="true"><use href="#check"/></svg></span><span>Find the right room</span></li>
     <li><span class="ae-guidance-tick"><svg aria-hidden="true"><use href="#check"/></svg></span><span>Within your budget</span></li>
@@ -183,9 +210,9 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
   </ul>
   <div class="ae-guidance-offer">
     <a class="btn ae-guidance-cta" href="https://accombyemlen.com/consult-expert/" target="_blank" rel="noopener noreferrer">Talk to our team <svg aria-hidden="true"><use href="#arrow"/></svg></a>
-    <div class="ae-ticket-slot"><div class="ae-savings-ticket" aria-label="Illustrative offer: save up to 30 percent, subject to confirmation">
-      <span class="ae-ticket-label">Save up to</span><strong>30<span>%</span></strong>
-      <span class="ae-ticket-note">Illustrative offer · subject to confirmation</span>
+    <div class="ae-ticket-slot"><div class="ae-savings-ticket">
+      <span class="ae-ticket-label">Students saved up to</span><strong>30<span>%</span></strong>
+      <span class="ae-ticket-note">after talking to our team.</span>
     </div></div>
   </div>
 </section>
