@@ -2203,7 +2203,8 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 #rooms .room-tenancy-dates{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:440px}
 #rooms .room-card-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;margin-top:3px;min-width:0}
 #rooms .room-card-bottom .room-primary-actions{display:flex;align-items:center;gap:12px;flex:0 1 auto;margin:0}
-#rooms .room-card-bottom .room-details-trigger{white-space:nowrap}
+#rooms .room-card-bottom .room-details-trigger{white-space:nowrap;margin-left:14px}
+@container(max-width:420px){#rooms .room-card-bottom .room-details-trigger{margin-left:6px}}
 #rooms .room-bottom-booking{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex:0 0 auto;margin-left:auto}
 #rooms .room-bottom-booking .room-term-price{text-align:right;gap:2px}
 #rooms .room-bottom-booking .room-term-price>strong{font-size:26px!important;line-height:1.12!important}
