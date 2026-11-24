@@ -3181,6 +3181,28 @@ html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-a
 @supports not (backdrop-filter:blur(1px)){html body > #scrollNav.section-nav.ae-nav-ready{background:rgba(68,64,62,.95)!important}}
 @media(prefers-reduced-motion:reduce){html body > #scrollNav.section-nav.ae-nav-ready,html body > #scrollNav .ae-nav-liquid-thumb,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-track a{transition:none!important;animation:none!important}}
 </style>
+<style id="ae-clear-liquid-glass">
+/* Shared clear liquid-glass material for gallery and sticky section navigation.
+   Keep background detail visible; no opaque navy or stacked dark scrim. */
+html body{--ae-clear-glass:linear-gradient(125deg,rgba(255,255,255,.24),rgba(255,255,255,.055) 48%,rgba(255,255,255,.16));--ae-clear-rim:rgba(255,255,255,.78);--ae-clear-shadow:0 8px 24px rgba(16,29,51,.10),inset 0 1px 1px rgba(255,255,255,.85),inset 0 -1px 1px rgba(255,255,255,.23)}
+html body .accom-we-gallery .we-dock,html body .we-lb .we-dock,html body > #scrollNav.section-nav.ae-nav-ready{
+ background:var(--ae-clear-glass)!important;
+ border:1px solid var(--ae-clear-rim)!important;
+ -webkit-backdrop-filter:blur(12px) saturate(160%)!important;backdrop-filter:blur(12px) saturate(160%)!important;
+ box-shadow:var(--ae-clear-shadow)!important;
+}
+html body .accom-we-gallery .we-dock::before,html body .we-lb .we-dock::before{background:rgba(16,29,51,.10)!important}
+html body > #scrollNav.section-nav.ae-nav-ready::before{display:none!important}
+html body .accom-we-gallery .we-dock button,html body .we-lb .we-dock button{color:#fff!important;text-shadow:0 1px 3px rgba(0,0,0,.86),0 1px 9px rgba(0,0,0,.55)}
+html body .accom-we-gallery .we-dock button.is-on,html body .we-lb .we-dock button.is-on{color:#15243d!important;text-shadow:none}
+html body > #scrollNav.section-nav.ae-nav-ready .section-nav-track a,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-action,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-action span,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-action svg{color:#15243d!important;text-shadow:0 0 5px rgba(255,255,255,.85),0 1px 2px rgba(255,255,255,.8)}
+html body > #scrollNav.section-nav.ae-nav-ready .section-nav-track a:hover,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-action:hover,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-action:hover span,html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions .tiny-nav-action:hover svg{color:#ed2024!important;background:transparent!important}
+html body > #scrollNav.section-nav.ae-nav-ready .section-nav-track a.active{color:#15243d!important;text-shadow:none}
+html body > #scrollNav.section-nav.ae-nav-ready .section-nav-actions{border-left:1px solid rgba(21,36,61,.15)}
+html body > #scrollNav .ae-nav-liquid-thumb,html body .accom-we-gallery .we-dock__thumb,html body .we-lb .we-dock__thumb{background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(255,255,255,.87))!important;box-shadow:0 3px 12px rgba(16,29,51,.14),inset 0 1px #fff!important}
+@supports not (backdrop-filter:blur(1px)){html body > #scrollNav.section-nav.ae-nav-ready{background:rgba(255,255,255,.87)!important}html body .accom-we-gallery .we-dock,html body .we-lb .we-dock{background:rgba(16,29,51,.58)!important}}
+@media(prefers-contrast:more){html body > #scrollNav.section-nav.ae-nav-ready{background:rgba(255,255,255,.94)!important}html body .accom-we-gallery .we-dock,html body .we-lb .we-dock{background:rgba(16,29,51,.75)!important}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
