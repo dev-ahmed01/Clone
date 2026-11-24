@@ -2146,6 +2146,27 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </style>
 <link rel="stylesheet" href="assets/ae-design-system.css?v=20261124o"/>
 <link rel="stylesheet" href="assets/accom-we-gallery.css?v=20261124a"/>
+<style id="ae-page2-ambassador-compact">
+/* Listing page 2 only: compact post-amenities lead magnet. */
+#ambassadors .ae-ambassador-compact{box-sizing:border-box;position:relative;isolation:isolate;overflow:hidden;padding:20px 22px 16px;border:1px solid rgba(237,32,36,.13);border-radius:22px;background:linear-gradient(115deg,rgba(255,255,255,.94),rgba(255,244,244,.87));box-shadow:0 8px 24px rgba(21,36,61,.055),inset 0 1px 0 rgba(255,255,255,.95)}
+#ambassadors .ae-ambassador-intro{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+#ambassadors .ae-ambassador-intro>div{min-width:0}
+#ambassadors .ae-ambassador-intro h2{margin:0 0 5px!important;color:#15243d!important;font:600 clamp(23px,2.15vw,30px)/1.13 var(--font-title,'Bricolage Grotesque',sans-serif)!important;letter-spacing:-.035em!important}
+#ambassadors .ae-ambassador-intro h2 span{color:#ed2024}
+#ambassadors .ae-ambassador-intro p,#ambassadors .ae-ambassador-type p{margin:0!important;color:#526078!important;font:400 12px/1.55 var(--font-body,'Poppins',sans-serif)!important}
+#ambassadors .ae-ambassador-types{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#ambassadors .ae-ambassador-type{min-width:0;padding:12px 14px;border-radius:14px;border:1px solid rgba(237,32,36,.12);background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(255,255,255,.52));box-shadow:inset 0 1px 0 #fff;transition:background .2s ease,border-color .2s ease}
+#ambassadors .ae-ambassador-type h3{margin:0 0 3px!important;color:#15243d!important;font:600 16px/1.25 var(--font-title,'Bricolage Grotesque',sans-serif)!important;letter-spacing:-.015em!important}
+#ambassadors .ae-ambassador-type:hover{background:#fff;border-color:rgba(237,32,36,.3)}
+#ambassadors .ae-ambassador-eligibility{margin:10px 0 0!important;color:#526078!important;font:400 11px/1.5 var(--font-body,'Poppins',sans-serif)!important}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book{position:relative;isolation:isolate;overflow:hidden;flex:0 0 auto;min-width:0;min-height:42px;padding:9px 15px;gap:10px;white-space:nowrap;background:#ed2024;color:#fff;border:1px solid #ed2024;transition:color .2s ease,background .2s ease,border-color .2s ease}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book::before{content:"";position:absolute;inset:-40% auto -40% -60%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-20deg);pointer-events:none;transition:left .45s ease}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book:hover,#ambassadors .ae-ambassador-compact .ae-ambassador-book:focus-visible{color:#ed2024;background:#fff;border-color:#ed2024;transform:none}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book:hover::before{left:120%}
+@media(max-width:600px){#ambassadors .ae-ambassador-compact{padding:16px;border-radius:18px}#ambassadors .ae-ambassador-intro{flex-wrap:wrap;gap:10px;margin-bottom:12px}#ambassadors .ae-ambassador-intro h2{font-size:25px!important}#ambassadors .ae-ambassador-type{padding:10px}#ambassadors .ae-ambassador-type h3{font-size:15px!important}}
+@media(max-width:350px){#ambassadors .ae-ambassador-types{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){#ambassadors .ae-ambassador-type,#ambassadors .ae-ambassador-book,#ambassadors .ae-ambassador-book::before{transition:none!important}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2347,21 +2368,25 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
   </div>
 </section>
 <section class="section ae-ambassador-section" id="ambassadors" aria-labelledby="ambassadorsHeading">
-  <div class="ae-ambassador-panel">
-    <div class="ae-ambassador-message">
-      <span class="ae-ambassador-eyebrow">A LITTLE EXTRA WITH ACCOM</span>
-      <h2 id="ambassadorsHeading">Book with us.<br/><span>Then connect.</span></h2>
-      <p>Book through Accom by Emlen, then ask to speak with accommodation and university ambassadors.</p>
-    </div>
-    <div class="ae-ambassador-action">
-      <div class="ae-ambassador-steps" aria-label="How it works">
-        <div class="ae-ambassador-step"><b>01</b><span>Book with Accom</span></div>
-        <span class="ae-ambassador-step-connector" aria-hidden="true"></span>
-        <div class="ae-ambassador-step"><b>02</b><span>Ask for an introduction</span></div>
+  <div class="ae-ambassador-compact">
+    <div class="ae-ambassador-intro">
+      <div>
+        <h2 id="ambassadorsHeading">Book here and meet our <span>ambassadors.</span></h2>
+        <p>Book with us, then request an introduction to help you settle in.</p>
       </div>
       <button class="ae-ambassador-book" data-enquire="" data-booking="iQ Kingston through Accom by Emlen" type="button">Book with us <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
-      <small>Introductions are subject to availability.</small>
     </div>
+    <div class="ae-ambassador-types">
+      <div class="ae-ambassador-type">
+        <h3>Accommodation ambassadors</h3>
+        <p>Get to know your new home.</p>
+      </div>
+      <div class="ae-ambassador-type">
+        <h3>University ambassadors</h3>
+        <p>Find your feet on campus.</p>
+      </div>
+    </div>
+    <p class="ae-ambassador-eligibility">After booking, you can also apply to become an ambassador. Introductions subject to availability.</p>
   </div>
 </section>
 <section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
