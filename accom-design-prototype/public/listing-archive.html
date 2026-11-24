@@ -237,6 +237,19 @@ html body .hero h1 .heading-place{display:inline-block!important;position:relati
 html body .hero h1 .heading-place::after{display:none!important}
 @media(max-width:550px){html body .hero h1 .heading-place{padding-bottom:5px;background-size:100% 3px!important}}
 </style>
+<style id="ae-final-archive-rhythm">
+/* Same section-to-section spacing as Listing Page 2. Controls remain grouped with their heading. */
+:root{--ae-listing-panel-gap:90px;--ae-heading-content-gap:24px;--ae-heading-copy-gap:12px;--ae-card-gap:16px}
+html body .hero{padding-bottom:var(--ae-heading-content-gap)}
+html body .filter-shell{padding-block:0!important}
+html body .results-layout{padding-top:var(--ae-listing-panel-gap);padding-bottom:var(--ae-listing-panel-gap)}
+html body .result-toolbar{margin-bottom:var(--ae-heading-content-gap)}
+html body .list{gap:var(--ae-card-gap)}
+html body .list > .lead{margin-block:calc(var(--ae-listing-panel-gap) - var(--ae-card-gap))}
+@media(max-width:1199px){:root{--ae-listing-panel-gap:68px}}
+@media(max-width:800px){:root{--ae-listing-panel-gap:48px;--ae-heading-content-gap:20px;--ae-heading-copy-gap:10px;--ae-card-gap:12px}}
+@media(max-width:550px){:root{--ae-listing-panel-gap:40px;--ae-heading-content-gap:18px}}
+</style>
 </head><body>
 <a class="skip" href="#results">Skip to results</a>
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true"><symbol id="heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 4.9-8.8 10.5-8.8 10.5S3.2 13.6 3.2 8.7a5 5 0 0 1 8.8-3 5 5 0 0 1 8.8 3Z"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol><symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol><symbol id="left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol><symbol id="right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol><symbol id="compare" viewBox="0 0 24 24"><path d="M5 7h14M5 17h14M9 4v6M15 14v6"/></symbol><symbol id="list" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol><symbol id="close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol></svg>
