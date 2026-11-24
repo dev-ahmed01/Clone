@@ -3084,6 +3084,46 @@ html body main.site-container{padding-top:80px!important;margin-top:0!important}
 html body main.site-container > .gallery-ribbon-frame:first-child{margin-top:0!important}
 html body main.site-container > .gallery-ribbon-frame > #weGal{margin-top:0!important}
 </style>
+<style id="ae-listing-final-detail-refinement">
+/* Keep the same inset at the start of the rail and at the viewport edges. */
+@media(min-width:1200px){
+ html body .layout > .cta-aside{padding-block-start:var(--rail-edge-gap,20px)!important;box-sizing:border-box}
+}
+html body .cta-aside .booking-card.booking-card--compact .price-line #railPrice{
+ font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;
+ letter-spacing:-.042em!important;
+}
+html body .content-column #about.about-editorial .about-editorial-actions{margin-top:14px!important}
+html body .content-column #about.about-editorial .about-editorial-lede{margin-bottom:0!important}
+dialog#aboutDetailsDialog{
+ inset:0 0 auto!important;margin:0!important;width:100%!important;max-width:none!important;
+ height:75vh!important;height:75dvh!important;max-height:75dvh!important;
+ border-radius:0 0 28px 28px!important;
+ transform:translate3d(0,-105%,0);transform-origin:top center;
+ box-shadow:0 22px 70px rgba(16,29,51,.18);
+ transition:transform .42s cubic-bezier(.2,.8,.2,1),opacity .28s ease;
+}
+dialog#aboutDetailsDialog.is-visible{transform:translate3d(0,0,0);opacity:1}
+dialog#aboutDetailsDialog::backdrop{background:rgba(16,29,51,.19)}
+dialog#aboutDetailsDialog .about-detail-content{width:100%;max-width:none;box-sizing:border-box;padding-inline:max(24px,calc((100vw - 1120px)/2))}
+@media(prefers-reduced-motion:reduce){dialog#aboutDetailsDialog{transition:none!important;transform:none!important}}
+/* More map height and more useful zoom without introducing map chrome. */
+dialog#aeLandmarksDialog{height:86vh!important;height:86dvh!important;max-height:86dvh!important}
+#aeLandmarksDialog .ae-landmarks-body{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:22px}
+#aeLandmarksDialog .ae-landmarks-map-stage{min-height:0}
+#aeLandmarksDialog .ae-map-home-icon span{background:var(--ae-red,#ed2024);font-size:13px}
+#aeLandmarksDialog .ae-home-tooltip{border:0;border-radius:8px;background:#ed2024;color:white;font:600 11px/1.3 var(--font-body);padding:5px 8px;box-shadow:0 2px 8px #101d3330}
+#aeLandmarksDialog .ae-home-tooltip::before{border-top-color:#ed2024}
+#aeLandmarksDialog .leaflet-container .leaflet-control-attribution{font-size:9px!important;line-height:1.4}
+#aeLandmarksDialog .ae-landmark-entry>a{font:500 12px/1.4 var(--font-body)!important;padding:7px 9px!important;border:0!important;background:transparent!important}
+html body .content-column #rooms.rooms-redesign .room-primary .room-facts{gap:8px 16px;margin:0!important}
+html body .content-column #rooms.rooms-redesign .room-primary .room-facts>span{
+ font:400 var(--ae-body-size,14px)/1.5 var(--font-body)!important;
+}
+html body .content-column #rooms.rooms-redesign .room-primary .room-facts svg{width:18px;height:18px}
+@media(max-width:760px){#aeLandmarksDialog .ae-landmarks-body{grid-template-columns:1fr;grid-template-rows:minmax(145px,43%) minmax(0,1fr);gap:12px}}
+@media(max-width:550px){dialog#aboutDetailsDialog .about-detail-content{padding-inline:18px}html body .content-column #rooms.rooms-redesign .room-primary .room-facts>span{font-size:13px!important}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -3320,7 +3360,7 @@ html body main.site-container > .gallery-ribbon-frame > #weGal{margin-top:0!impo
 <section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
   <div class="rooms-wrap">
     <header class="rooms-heading">
-      <div><h2 id="roomsTitle">Find a room that fits.</h2><p style="font:400 12px/1.5 var(--font-body);color:var(--ae-muted,#526079);margin:8px 0 0">Confirm current prices and availability.</p></div>
+      <div><h2 id="roomsTitle">Find a room that fits.</h2></div>
     </header>
     <nav class="rooms-toolbar" aria-label="Room type categories">
       <div class="room-filter" role="group" aria-label="Filter rooms by type">
@@ -3330,7 +3370,7 @@ html body main.site-container > .gallery-ribbon-frame > #weGal{margin-top:0!impo
       </div>
     </nav>
     <div class="room-list" id="roomList" aria-label="Available room styles in the listing"></div>
-    <p class="rooms-source-note">Indicative prices and images; confirm room details and availability before booking.</p>
+    
   </div>
 </section>
 <section class="section house-rules-redesign" id="rules" aria-labelledby="rulesTitle">
@@ -4279,11 +4319,11 @@ if(orderedOverview){
  const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
  let map=null,loading=null,closing=false,markers=new Map(),active=null;
  const rows=Array.from(list.querySelectorAll('[data-point]'));
- const fit=()=>{if(!map)return;map.invalidateSize();map.fitBounds([home,...points.map(p=>[p.lat,p.lng])],{padding:[35,35],maxZoom:16,animate:false});};
- const select=(id,fromMap=false)=>{const p=points.find(p=>p.id===id);if(!p)return;active=id;rows.forEach(row=>row.setAttribute('aria-pressed',String(row.dataset.point===id)));if(map){markers.forEach((m,k)=>{m.getElement()?.classList.toggle('ae-pin-active',k===id);m.setZIndexOffset(k===id?1000:0);});const marker=markers.get(id);map.panTo([p.lat,p.lng],{animate:!reduced()});marker?.openTooltip();}else if(fallback){fallback.src='https://maps.google.com/maps?q='+encodeURIComponent(p.name+', Kingston upon Thames, United Kingdom')+'&z=16&output=embed';}if(fromMap){const row=rows.find(row=>row.dataset.point===id);if(row){const r=row.getBoundingClientRect(),l=list.getBoundingClientRect();if(r.top<l.top||r.bottom>l.bottom)list.scrollTop+=r.top-l.top-20;}}};
- const setup=()=>{if(map||!window.L)return;const L=window.L;map=L.map(mapEl,{zoomControl:false,scrollWheelZoom:false,attributionControl:true,keyboard:true,preferCanvas:true});const tile=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});tile.addTo(map);let tileErrors=0;tile.on('tileerror',()=>{if(++tileErrors>=8&&!mapEl.classList.contains('is-ready')){fallback.hidden=false;}});tile.on('tileload',()=>{mapEl.classList.add('is-ready');fallback.hidden=true;});
- const markerIcon=(text,homePin=false)=>L.divIcon({className:homePin?'ae-map-home-icon':'ae-map-number-icon',html:'<span>'+text+'</span>',iconSize:homePin?[84,30]:[26,26],iconAnchor:homePin?[42,15]:[13,13]});
- L.marker(home,{icon:markerIcon('iQ Kingston',true),zIndexOffset:1500,title:'iQ Kingston'}).addTo(map);
+ const fit=()=>{if(!map)return;map.invalidateSize();map.fitBounds([home,...points.map(p=>[p.lat,p.lng])],{padding:[24,24],maxZoom:16.5,animate:false});};
+ const select=(id,fromMap=false)=>{const p=points.find(p=>p.id===id);if(!p)return;active=id;rows.forEach(row=>row.setAttribute('aria-pressed',String(row.dataset.point===id)));if(map){markers.forEach((m,k)=>{m.getElement()?.classList.toggle('ae-pin-active',k===id);m.setZIndexOffset(k===id?1000:0);});const marker=markers.get(id);map.setView([p.lat,p.lng],Math.max(map.getZoom(),17),{animate:!reduced()});marker?.openTooltip();}else if(fallback){fallback.src='https://maps.google.com/maps?q='+encodeURIComponent(p.name+', Kingston upon Thames, United Kingdom')+'&z=16&output=embed';}if(fromMap){const row=rows.find(row=>row.dataset.point===id);if(row){const r=row.getBoundingClientRect(),l=list.getBoundingClientRect();if(r.top<l.top||r.bottom>l.bottom)list.scrollTop+=r.top-l.top-20;}}};
+ const setup=()=>{if(map||!window.L)return;const L=window.L;map=L.map(mapEl,{zoomControl:false,scrollWheelZoom:false,attributionControl:true,keyboard:true,preferCanvas:true,zoomSnap:0.25,zoomDelta:0.5});const tile=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});tile.addTo(map);let tileErrors=0;tile.on('tileerror',()=>{if(++tileErrors>=8&&!mapEl.classList.contains('is-ready')){fallback.hidden=false;}});tile.on('tileload',()=>{mapEl.classList.add('is-ready');fallback.hidden=true;});
+ const markerIcon=(text,homePin=false)=>L.divIcon({className:homePin?'ae-map-home-icon':'ae-map-number-icon',html:homePin?'<span aria-hidden="true">●</span>':'<span>'+text+'</span>',iconSize:homePin?[26,26]:[24,24],iconAnchor:homePin?[13,13]:[12,12]});
+ L.marker(home,{icon:markerIcon('iQ Kingston',true),zIndexOffset:1500,title:'iQ Kingston'}).addTo(map).bindTooltip('iQ Kingston',{direction:'top',offset:[0,-12],permanent:true,className:'ae-home-tooltip'});
  points.forEach((p,i)=>{const m=L.marker([p.lat,p.lng],{icon:markerIcon(i+1),title:p.name,alt:p.name,riseOnHover:true}).addTo(map).bindTooltip(p.name,{direction:'top',offset:[0,-12]});m.on('click',()=>select(p.id,true));markers.set(p.id,m);});
  reset.hidden=false;fit();if(active)select(active);};
  const load=()=>{if(map){fit();return;}if(window.L){setup();return;}if(loading)return;loading=true;const css=document.createElement('link');css.rel='stylesheet';css.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';css.integrity='sha256-p4NxAoJBhIINfQ3ynhG+rmnHjYpJmZpFvoPpV3nxR8M=';css.removeAttribute('integrity');document.head.append(css);const script=document.createElement('script');script.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';script.crossOrigin='anonymous';script.integrity='sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';script.onload=()=>{loading=false;setup();};script.onerror=()=>{loading=false;script.remove();};document.head.append(script);};
