@@ -167,31 +167,34 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 @media(prefers-reduced-motion:reduce){.ae-guidance-card.is-playing .ae-savings-ticket{animation:none!important}}
 
 
-/* Final consultation composition: centred headline, ordered entrance, falling ticket. */
-.ae-guidance-card{gap:17px;padding:22px 18px 21px;overflow:visible}
+
+/* Final consultation composition: generous spacing and deliberate sequential motion. */
+.ae-guidance-card{gap:23px;padding:29px 22px 27px;min-height:520px;overflow:visible}
 .ae-guidance-card::before{width:100%;height:100%;inset:0;transform:none;border-radius:inherit;background:radial-gradient(ellipse at top right,#ffffff38,transparent 48%);z-index:-1}
 .ae-guidance-intro{text-align:center;padding-bottom:0;border-bottom:0}
-.ae-guidance-intro h2{font-size:clamp(22px,2vw,29px);line-height:1.14;letter-spacing:-.045em;margin:0 0 12px}
+.ae-guidance-intro h2{font-size:clamp(22px,2vw,29px);line-height:1.14;letter-spacing:-.045em;margin:0 0 15px}
 .ae-guidance-intro h2 span{display:block}.ae-guidance-intro h2 span:first-child{white-space:nowrap}
-.ae-guidance-intro p{margin:0;font-size:14px;line-height:1.5}
-.ae-guidance-pills{margin-top:6px;gap:9px}
-.ae-guidance-pills li{min-height:40px;padding-block:7px}
-.ae-guidance-card.is-playing .ae-guidance-pills li{animation:ae-guidance-enter .52s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--pill-index,0) * 220ms)}
-.ae-guidance-offer .ae-guidance-cta{z-index:3;transform-origin:center}
-.ae-guidance-card.is-playing .ae-guidance-cta{animation:ae-cta-appear .42s cubic-bezier(.2,.8,.2,1) .99s backwards}
-@keyframes ae-cta-appear{from{opacity:0;transform:translateY(9px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-.ae-ticket-slot{height:146px;margin-top:-21px;padding:0 14px 0 10px;perspective:800px;overflow:visible}
-.ae-savings-ticket{min-height:126px;padding:23px 15px 12px;border-radius:15px;align-items:flex-start;justify-content:center;transform:translate(1px,5px) rotate(8deg);transform-origin:12% 0;background:linear-gradient(145deg,#fff5c9,#ffdf72 62%,#ffc535);border:1px solid #fff6cf;box-shadow:0 8px 18px #9c4f0038,inset 0 1px 0 #ffffffa0}
-.ae-ticket-label{font:500 12px/1.35 var(--body)}
-.ae-savings-ticket strong{font:700 46px/.98 var(--title);letter-spacing:-.065em;margin-top:3px}
-.ae-ticket-note{font:500 11px/1.3 var(--body);margin-top:6px;padding-top:6px;color:#49360d;border-top:1px dashed #bd8a256b}
-.ae-guidance-card.is-playing .ae-savings-ticket{animation:ae-ticket-fall .9s cubic-bezier(.22,.8,.25,1) 1.42s backwards}
-@keyframes ae-ticket-fall{0%{opacity:0;transform:translate(1px,-66px) rotate(-3deg) scale(.92)}30%{opacity:1}70%{opacity:1;transform:translate(1px,9px) rotate(10deg)}100%{opacity:1;transform:translate(1px,5px) rotate(8deg)}}
-@media(max-width:1050px){.ae-guidance-card{padding-inline:15px}.ae-guidance-intro h2{font-size:clamp(20px,2.4vw,25px)}.ae-ticket-slot{height:143px;padding-inline:9px}.ae-savings-ticket strong{font-size:43px}}
-@media(max-width:850px){.ae-guidance-card{padding:20px;gap:17px}.ae-guidance-intro h2{font-size:26px}.ae-guidance-pills{margin-top:0}.ae-guidance-offer{max-width:330px}.ae-ticket-slot{height:149px}}
-@media(max-width:560px){.ae-guidance-intro h2{font-size:29px}.ae-guidance-pills{margin-top:6px}.ae-guidance-offer{max-width:none}.ae-ticket-slot{height:150px;padding-inline:15px}}
-@media(min-width:851px) and (max-height:730px){.ae-guidance-card{padding-block:17px 17px;gap:13px}.ae-guidance-intro h2{margin-bottom:9px}.ae-guidance-intro p{font-size:13px}.ae-guidance-pills{gap:6px;margin-top:3px}.ae-guidance-pills li{min-height:35px;padding-block:5px}.ae-ticket-slot{height:130px}.ae-savings-ticket{min-height:113px;padding-top:20px}.ae-savings-ticket strong{font-size:40px}}
-@media(prefers-reduced-motion:reduce){.ae-guidance-card.is-playing .ae-guidance-cta,.ae-guidance-card.is-playing .ae-savings-ticket{animation:none!important}}
+.ae-guidance-intro p{margin:0;font-size:14px;line-height:1.55}
+.ae-guidance-pills{margin-top:10px;gap:12px}
+.ae-guidance-pills li{min-height:46px;padding:9px 13px;font-size:13px}
+.ae-guidance-card.is-playing .ae-guidance-pills li{animation:ae-guidance-enter .65s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--pill-index,0) * 650ms)}
+.ae-guidance-card.is-playing .ae-guidance-pills li::after,.ae-guidance-card.is-playing .ae-guidance-pills li .ae-guidance-tick{animation-delay:calc(4.4s + var(--pill-index,0) * 1.15s);animation-duration:6.6s}
+.ae-guidance-offer{margin-top:3px}
+.ae-guidance-offer .ae-guidance-cta{z-index:3;transform-origin:center;min-height:51px}
+.ae-guidance-card.is-playing .ae-guidance-cta{animation:ae-cta-appear .55s cubic-bezier(.2,.8,.2,1) 2.12s backwards}
+@keyframes ae-cta-appear{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.ae-ticket-slot{height:164px;margin-top:-17px;padding:0 17px 0 12px;perspective:800px;overflow:visible}
+.ae-savings-ticket{min-height:136px;padding:25px 16px 14px;border-radius:15px;align-items:flex-start;justify-content:center;transform:translate(1px,7px) rotate(8deg);transform-origin:12% 0;background:linear-gradient(145deg,#fff5c9,#ffdf72 62%,#ffc535);border:1px solid #fff6cf;box-shadow:0 10px 22px #9c4f0033,inset 0 1px 0 #ffffffa0}
+.ae-ticket-label{font:500 13px/1.35 var(--body)}
+.ae-savings-ticket strong{font:700 49px/.98 var(--title);letter-spacing:-.065em;margin-top:4px}
+.ae-ticket-note{font:500 12px/1.35 var(--body);margin-top:8px;padding-top:8px;color:#49360d;border-top:1px dashed #bd8a256b}
+.ae-guidance-card.is-playing .ae-savings-ticket{animation:ae-ticket-fall 1.25s cubic-bezier(.22,.8,.25,1) 2.85s backwards}
+@keyframes ae-ticket-fall{0%{opacity:0;transform:translate(1px,-74px) rotate(-4deg) scale(.92)}28%{opacity:1}72%{opacity:1;transform:translate(1px,13px) rotate(10deg)}100%{opacity:1;transform:translate(1px,7px) rotate(8deg)}}
+@media(max-width:1050px){.ae-guidance-card{padding-inline:17px;min-height:500px}.ae-guidance-intro h2{font-size:clamp(20px,2.4vw,25px)}.ae-guidance-pills{gap:10px}.ae-ticket-slot{height:158px;padding-inline:11px}.ae-savings-ticket strong{font-size:45px}}
+@media(max-width:850px){.ae-guidance-card{padding:25px 20px;gap:21px;min-height:0}.ae-guidance-intro h2{font-size:27px}.ae-guidance-pills{margin-top:10px}.ae-guidance-offer{max-width:340px}.ae-ticket-slot{height:161px}}
+@media(max-width:560px){.ae-guidance-card{padding:25px 18px}.ae-guidance-intro h2{font-size:29px}.ae-guidance-offer{max-width:none}.ae-ticket-slot{height:165px;padding-inline:15px}}
+@media(min-width:851px) and (max-height:730px){.ae-guidance-card{padding-block:23px 23px;gap:18px;min-height:0}.ae-guidance-intro h2{margin-bottom:12px}.ae-guidance-intro p{font-size:13px}.ae-guidance-pills{gap:9px;margin-top:7px}.ae-guidance-pills li{min-height:40px;padding-block:7px}.ae-ticket-slot{height:151px}.ae-savings-ticket{min-height:123px;padding-top:21px}.ae-savings-ticket strong{font-size:44px}.ae-guidance-offer .ae-guidance-cta{min-height:47px}}
+@media(prefers-reduced-motion:reduce){.ae-guidance-card.is-playing .ae-guidance-pills li,.ae-guidance-card.is-playing .ae-guidance-cta,.ae-guidance-card.is-playing .ae-savings-ticket{animation:none!important}}
 
 </style></head><body>
 <a class="skip" href="#results">Skip to results</a>
