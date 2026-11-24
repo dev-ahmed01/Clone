@@ -2357,33 +2357,56 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @media(prefers-reduced-motion:reduce){#reviews .ae-review-window{mask-image:none}}
 </style>
 <style id="ae-final-faq-review-rail">
-#faqs .ae-faq-more{display:grid;gap:24px;margin-top:24px}
-#faqs .ae-faq-more[hidden]{display:none!important}
-#faqs .ae-faq-category{display:grid;gap:10px;min-width:0}
-#faqs .ae-faq-category h3{font:600 21px/1.3 var(--font-title)!important;margin:0 0 3px!important;color:var(--ae-ink,#101d33)}
-#reviews .ae-review-heading{position:relative;padding:0 38px;margin-bottom:20px}
-#reviews .ae-review-pause{position:absolute;top:50%;right:3px;transform:translateY(-50%);width:32px;height:32px;padding:7px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.65);border:1px solid rgba(17,31,53,.08)}
-#reviews .ae-review-pause svg{width:16px;height:16px}
+html.ae-faq-dialog-open{overflow:hidden!important}
+#aeFaqDialog.ae-faq-sheet{position:fixed;inset:0 0 auto!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;height:75vh!important;height:75dvh!important;max-height:75dvh!important;box-sizing:border-box;border:0;border-radius:0 0 28px 28px;background:rgba(252,249,246,.98);color:var(--ae-ink,#101d33);box-shadow:0 22px 70px rgba(16,29,51,.2);overflow:hidden}
+#aeFaqDialog:not([open]){display:none!important}
+#aeFaqDialog[open]{display:flex!important;flex-direction:column}
+#aeFaqDialog::backdrop{background:rgba(16,29,51,.19);backdrop-filter:none}
+#aeFaqDialog .ae-faq-sheet-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px max(24px,calc((100vw - 1000px)/2));border-bottom:1px solid rgba(16,29,51,.09);background:rgba(255,255,255,.8);flex-shrink:0}
+#aeFaqDialog .ae-faq-sheet-head h2{font:700 clamp(23px,3vw,36px)/1.15 var(--font-title);letter-spacing:-.04em;margin:0;color:var(--ae-ink,#101d33)}
+#aeFaqDialog .ae-faq-sheet-close{width:44px;height:44px;flex:0 0 44px;display:grid;place-items:center;border:1px solid #edd7d4;border-radius:50%;background:#fff;color:var(--ae-red,#ed2024);cursor:pointer}
+#aeFaqDialog .ae-faq-sheet-close svg{width:22px;height:22px}
+#aeFaqDialog .ae-faq-sheet-close:hover{background:var(--ae-red,#ed2024);color:#fff}
+#aeFaqDialog .ae-faq-sheet-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:24px max(24px,calc((100vw - 1000px)/2)) 32px}
+#aeFaqDialog .ae-faq-more{display:grid;gap:25px}
+#aeFaqDialog .ae-faq-category{display:grid;gap:10px;min-width:0}
+#aeFaqDialog .ae-faq-category h3{font:600 21px/1.3 var(--font-title);margin:0 0 3px;color:var(--ae-ink,#101d33)}
+#aeFaqDialog .ae-faq-list{display:grid;gap:10px}
+#aeFaqDialog .ae-faq-item{background:#fff;border:1px solid #e8e4e1;border-radius:16px;overflow:hidden}
+#aeFaqDialog .ae-faq-item[open]{border-color:#edd7d4}
+#aeFaqDialog .ae-faq-q{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;min-height:58px;box-sizing:border-box;list-style:none;font:600 15px/1.4 var(--font-body);cursor:pointer;color:var(--ae-ink,#101d33)}
+#aeFaqDialog .ae-faq-q::-webkit-details-marker{display:none}
+#aeFaqDialog .ae-faq-q::marker{content:""}
+#aeFaqDialog .ae-faq-plus{position:relative;flex:0 0 32px;height:32px;border-radius:50%;background:#fff2f1;color:var(--ae-red,#ed2024)}
+#aeFaqDialog .ae-faq-plus::before,#aeFaqDialog .ae-faq-plus::after{content:"";position:absolute;top:50%;left:50%;width:12px;height:2px;border-radius:2px;background:currentColor;transform:translate(-50%,-50%)}
+#aeFaqDialog .ae-faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .2s}
+#aeFaqDialog details[open] .ae-faq-plus::after{transform:translate(-50%,-50%)}
+#aeFaqDialog details[open] .ae-faq-plus{background:var(--ae-red,#ed2024);color:#fff}
+#aeFaqDialog .ae-faq-answer-inner p{margin:0;padding:0 18px 17px;color:#526079;font:400 14px/1.65 var(--font-body)}
+#aeFaqDialog :focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:-3px}
+@media(max-width:600px){#aeFaqDialog .ae-faq-sheet-head{padding:16px 18px}#aeFaqDialog .ae-faq-sheet-body{padding:18px 15px 24px}#aeFaqDialog .ae-faq-q{padding:12px 14px;font-size:14px}}
+#reviews .ae-review-heading{padding:0;margin-bottom:20px}
 #reviews .ae-review-card{flex-basis:320px;width:320px;min-height:224px;padding:21px 21px 18px;gap:14px;border-radius:19px;border:1px solid rgba(17,31,53,.07)}
 #reviews .ae-review-person{border-top:1px solid rgba(17,31,53,.085);padding-top:14px;margin-top:auto}
-#reviews .ae-review-person a{color:inherit;text-decoration:none}
-#reviews .ae-review-person a:hover{text-decoration:underline}
+#reviews .ae-review-person a{color:inherit;text-decoration:none;font:inherit}
 #reviews .ae-review-person a:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:2px}
 #reviews .ae-review-card::after{left:21px;right:21px}
 #reviews .ae-review-window{padding-bottom:24px}
 #reviews.section.ae-review-section{margin-bottom:36px!important}
-@container(max-width:540px){#reviews .ae-review-card{flex-basis:260px;width:260px;padding:17px;min-height:224px}#reviews .ae-review-heading{padding:0 30px}#reviews .ae-review-person{padding-top:12px}}
+@container(max-width:540px){#reviews .ae-review-card{flex-basis:260px;width:260px;padding:17px;min-height:224px}#reviews .ae-review-person{padding-top:12px}}
 @media(min-width:1200px){
- :root{--ae-sticky-gap:20px;--ae-sticky-top:calc(var(--listing-header-height) + var(--listing-tabs-height) + var(--ae-sticky-gap))}
- .cta-aside .cta-sticky{top:var(--ae-sticky-top);margin-top:0}
- .cta-aside .booking-card.booking-card--compact{height:calc(100dvh - var(--ae-sticky-top) - var(--ae-sticky-gap));max-height:calc(100dvh - var(--ae-sticky-top) - var(--ae-sticky-gap));min-height:0;box-sizing:border-box;padding:20px 24px!important;gap:12px;justify-content:space-between;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:auto}
- .cta-aside .booking-card.booking-card--compact .rail-nearby{margin-bottom:0}
+ body .cta-aside{--rail-edge-gap:20px;--ae-rail-top:calc(var(--listing-header-height,82px) + var(--rail-edge-gap))}
+ body .cta-aside .cta-sticky{position:sticky!important;top:var(--ae-rail-top)!important;bottom:auto!important;margin:0!important;padding:0!important}
+ body .cta-aside .booking-card.booking-card--compact{height:calc(100dvh - var(--ae-rail-top) - var(--rail-edge-gap))!important;max-height:calc(100dvh - var(--ae-rail-top) - var(--rail-edge-gap))!important;min-height:0!important;box-sizing:border-box;padding:20px 22px!important;gap:12px!important;justify-content:space-between!important;overflow-y:auto!important;overflow-x:hidden!important;scrollbar-width:thin}
+ body .cta-aside .booking-card--compact .rail-nearby{margin-bottom:0!important}
+ body .cta-aside .booking-card--compact .rail-property-head{padding-bottom:12px!important}
 }
 @media(min-width:1200px) and (max-height:800px){
- :root{--ae-sticky-gap:14px}
- .cta-aside .booking-card.booking-card--compact{padding:16px 20px!important;gap:8px}
- .cta-aside .booking-card.booking-card--compact .rail-property-head{padding-bottom:10px}
- .cta-aside .booking-card.booking-card--compact .rail-controls>.primary-button+.outline-button{margin-top:8px!important}
+ body .cta-aside{--rail-edge-gap:16px}
+ body .cta-aside .booking-card.booking-card--compact{padding:16px 20px!important;gap:9px!important}
+ body .cta-aside .booking-card--compact .rail-controls button{min-height:40px!important;padding:9px 12px!important}
+ body .cta-aside .booking-card--compact .rail-nearby.rail-nearby--compact{padding:10px 12px!important}
+ body .cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row{min-height:30px!important;padding:5px 0!important}
 }
 </style>
 </head>
@@ -2662,37 +2685,9 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
     <details class="ae-faq-item"><summary class="ae-faq-q"><span>Is there a guarantor requirement?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></div></div></details>
     <details class="ae-faq-item"><summary class="ae-faq-q"><span>Are viewings available?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Ask the property team for the latest viewing or virtual tour options.</p></div></div></details>
   </div>
-  <div id="aeFaqMore" class="ae-faq-more">
-    <div class="ae-faq-category"><h3>Rooms & amenities</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I choose a studio instead of an en suite?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Yes, studios have their own kitchenette and bathroom. Ask about current studio availability.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>Is Wi-Fi included?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Wi-Fi is included in the listed rent. Confirm the service details in your tenancy agreement.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>Are there shared study and social spaces?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The property lists study and social spaces. Ask about access and opening arrangements.</p></div></div></details></div></div>
-    <div class="ae-faq-category"><h3>Booking & payments</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I pay my rent in instalments?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Instalment options may be available with a qualifying guarantor. Confirm the payment schedule before booking.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>Do I need to pay a booking fee or deposit?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Any fee or deposit depends on the current contract. Ask for the amount and refund terms in writing.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>What happens if I need to cancel?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Cancellation conditions depend on the signed tenancy agreement. Check deadlines and evidence requirements before booking.</p></div></div></details></div></div>
-    <div class="ae-faq-category"><h3>Living & moving in</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>Are pets allowed?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Check the property’s current house rules before bringing any pet.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>Can friends or family visit?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Guest access and overnight stays are subject to the property’s visitor policy.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I move in early?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Ask the property team about early arrival availability, charges and check-in arrangements.</p></div></div></details></div></div>
-    <div class="ae-faq-category"><h3>Location & transport</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>How far is the nearest railway station?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Kingston Railway Station is approximately four minutes away on foot.</p></div></div></details>
-<details class="ae-faq-item"><summary class="ae-faq-q"><span>How far is Kingston University?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The listing indicates approximately 15 minutes on foot; the journey varies by campus and route.</p></div></div></details></div></div>
-  </div>
-  <div class="ae-faq-footer"><button id="aeFaqViewAll" class="ae-faq-view-all" type="button" aria-controls="aeFaqMore" aria-expanded="false" hidden><span>View more</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button></div>
+  <div class="ae-faq-footer"><button id="aeFaqViewAll" class="ae-faq-view-all" type="button" aria-controls="aeFaqDialog" aria-haspopup="dialog" hidden><span>View more</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button></div>
 </section>
-<script id="aeFaqViewAllInteraction">
-(() => {
-  const more=document.getElementById('aeFaqMore'),button=document.getElementById('aeFaqViewAll');
-  if(!more||!button)return;
-  const label=button.querySelector('span');
-  if(!label)return;
-  more.hidden=true;button.hidden=false;
-  button.addEventListener('click',()=>{
-    const expand=more.hidden;
-    more.hidden=!expand;button.setAttribute('aria-expanded',String(expand));
-    label.textContent=expand?'View less':'View more';button.classList.toggle('is-expanded',expand);
-    if(expand&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&more.animate){more.animate([{opacity:0,transform:'translateY(-6px)'},{opacity:1,transform:'translateY(0)'}],{duration:220,easing:'ease-out'});}
-    if(!expand&&button.getBoundingClientRect().top<0)button.scrollIntoView({block:'center',behavior:'instant'});
-  });
-})();
-</script>
+
 <section class="section" id="location"><h2>Nearby landmarks</h2><div class="location-panel"><div aria-hidden="true" class="location-illustration"><span class="route-a"></span><span class="route-b"></span><span class="location-pin"><svg><use href="#pin"></use></svg></span></div><div class="landmarks-detail">
 <strong>iQ Kingston</strong><p>15 Wood Street, Kingston upon Thames, KT1 1TY</p>
 <div class="landmark-groups">
@@ -2718,16 +2713,16 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 <a class="source-link" href="https://www.google.com/maps/search/?api=1&amp;query=15+Wood+Street+Kingston+upon+Thames+KT1+1TY" rel="noopener noreferrer" target="_blank">Get directions <svg><use href="#arrow"></use></svg></a>
 </div></div><p class="source-caption">Walking times are approximate and vary by route.</p></section>
 <section class="section ae-review-section" id="reviews" aria-labelledby="aeReviewsTitle">
-  <header class="ae-review-heading"><h2 id="aeReviewsTitle">Stories that make <span>student life feel better.</span></h2><button type="button" id="aeReviewPause" class="ae-review-pause" hidden aria-label="Pause reviews" title="Pause reviews"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 5v14M15 5v14"/></svg></button></header>
+  <header class="ae-review-heading"><h2 id="aeReviewsTitle">Stories that make <span>student life feel better.</span></h2></header>
   <div class="ae-review-window" id="aeReviewWindow" tabindex="0" aria-label="Student review summaries, scroll horizontally to explore">
     <div class="ae-review-track" id="aeReviewTrack">
       <div class="ae-review-group" id="aeReviewGroup">
-        <article class="ae-review-card"><div class="ae-review-top"><h3>Friendly team</h3><span aria-hidden="true">“</span></div><p>Praised the welcoming staff and said her silver en suite was clean when she arrived.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">LJ</span><div><strong>Lisa J</strong><small><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0">Kingston University · Amber review</a></small></div></div></article>
-        <article class="ae-review-card"><div class="ae-review-top"><h3>Facilities and support</h3><span aria-hidden="true">“</span></div><p>Enjoyed the facilities and gym, and appreciated the helpful team during his studies.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">EN</span><div><strong>Evans N</strong><small><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0">Kingston University · Amber review</a></small></div></div></article>
-        <article class="ae-review-card"><div class="ae-review-top"><h3>Central location</h3><span aria-hidden="true">“</span></div><p>Valued the nearby shops and transport links, as well as the spacious rooms and gym.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">AS</span><div><strong>Alexander S</strong><small><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0">Kingston University · Amber review</a></small></div></div></article>
-        <article class="ae-review-card"><div class="ae-review-top"><h3>Everyday convenience</h3><span aria-hidden="true">“</span></div><p>Highlighted the cleanliness, friendly staff and convenient town-centre setting.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">HP</span><div><strong>Himali P</strong><small><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0">Kingston University · Amber review</a></small></div></div></article>
-        <article class="ae-review-card"><div class="ae-review-top"><h3>Space to connect</h3><span aria-hidden="true">“</span></div><p>Liked the furnished room, social spaces and opportunities to relax between study sessions.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">SF</span><div><strong>Stephen F</strong><small><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0">Kingston University · Amber review</a></small></div></div></article>
-        <article class="ae-review-card"><div class="ae-review-top"><h3>Comfortable living</h3><span aria-hidden="true">“</span></div><p>Appreciated the riverside location, helpful team and on-site facilities, while noting summer heat.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">SL</span><div><strong>Sierra L</strong><small><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0">Kingston University · Amber review</a></small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Friendly team</h3><span aria-hidden="true">“</span></div><p>Praised the welcoming staff and said her silver en suite was clean when she arrived.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">LJ</span><div><strong><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Lisa J, original review">Lisa J</a></strong><small>Student review</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Facilities and support</h3><span aria-hidden="true">“</span></div><p>Enjoyed the facilities and gym, and appreciated the helpful team during his studies.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">EN</span><div><strong><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Evans N, original review">Evans N</a></strong><small>Student review</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Central location</h3><span aria-hidden="true">“</span></div><p>Valued the nearby shops and transport links, as well as the spacious rooms and gym.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">AS</span><div><strong><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Alexander S, original review">Alexander S</a></strong><small>Student review</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Everyday convenience</h3><span aria-hidden="true">“</span></div><p>Highlighted the cleanliness, friendly staff and convenient town-centre setting.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">HP</span><div><strong><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Himali P, original review">Himali P</a></strong><small>Student review</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Space to connect</h3><span aria-hidden="true">“</span></div><p>Liked the furnished room, social spaces and opportunities to relax between study sessions.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">SF</span><div><strong><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Stephen F, original review">Stephen F</a></strong><small>Student review</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Comfortable living</h3><span aria-hidden="true">“</span></div><p>Appreciated the riverside location, helpful team and on-site facilities, while noting summer heat.</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">SL</span><div><strong><a href="https://amberstudent.com/places/iq-kingston-1709160215838" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Sierra L, original review">Sierra L</a></strong><small>Student review</small></div></div></article>
       </div>
     </div>
   </div>
@@ -2735,39 +2730,29 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </section>
 <script id="aeReviewsInteraction">
 (() => {
-  const viewport=document.getElementById('aeReviewWindow'),track=document.getElementById('aeReviewTrack'),group=document.getElementById('aeReviewGroup'),pause=document.getElementById('aeReviewPause');
-  if(!viewport||!track||!group||!pause)return;
-  const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
-  let clone=null,frame=0,previous=0,position=0,period=0,paused=false,hover=false,focused=false,touching=false,visible=false,manualUntil=0;
-  const stop=()=>{if(frame)cancelAnimationFrame(frame);frame=0;previous=0;};
-  const measure=()=>{period=group.getBoundingClientRect().width+parseFloat(getComputedStyle(track).columnGap||0);};
-  const tick=now=>{
-    frame=0;
-    if(!visible||paused||hover||focused||touching||motion.matches||document.hidden){previous=0;return;}
-    if(now<manualUntil){previous=0;frame=requestAnimationFrame(tick);return;}
-    if(period>0){position=(position+Math.min(previous?now-previous:0,50)*.026)%period;viewport.scrollLeft=position;}
-    previous=now;frame=requestAnimationFrame(tick);
-  };
-  const start=()=>{if(!frame&&visible&&!paused&&!hover&&!focused&&!touching&&!motion.matches&&!document.hidden)frame=requestAnimationFrame(tick);};
-  const configure=()=>{
-    stop();
-    if(motion.matches){clone?.remove();clone=null;pause.hidden=true;return;}
-    if(!clone){clone=group.cloneNode(true);clone.removeAttribute('id');clone.setAttribute('aria-hidden','true');clone.inert=true;track.append(clone);}
-    measure();position=viewport.scrollLeft%Math.max(period,1);pause.hidden=false;start();
-  };
-  pause.addEventListener('click',()=>{paused=!paused;pause.setAttribute('aria-label',paused?'Play reviews':'Pause reviews');pause.title=paused?'Play reviews':'Pause reviews';pause.querySelector('path').setAttribute('d',paused?'M9 5l11 7-11 7Z':'M9 5v14M15 5v14');if(paused)stop();else{position=viewport.scrollLeft%Math.max(period,1);start();}});
-  viewport.addEventListener('pointerenter',()=>{hover=true;stop();});
-  viewport.addEventListener('pointerleave',()=>{hover=false;position=viewport.scrollLeft%Math.max(period,1);start();});
-  viewport.addEventListener('focusin',()=>{focused=true;stop();});
-  viewport.addEventListener('focusout',()=>{focused=false;position=viewport.scrollLeft%Math.max(period,1);start();});
-  viewport.addEventListener('touchstart',()=>{touching=true;stop();},{passive:true});
-  const endTouch=()=>{touching=false;position=viewport.scrollLeft%Math.max(period,1);manualUntil=performance.now()+1800;start();};
-  viewport.addEventListener('touchend',endTouch,{passive:true});viewport.addEventListener('touchcancel',endTouch,{passive:true});
-  viewport.addEventListener('scroll',()=>{if(hover||focused||touching||paused||performance.now()<manualUntil)position=viewport.scrollLeft%Math.max(period,1);},{passive:true});
-  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible){measure();start();}else stop();},{threshold:0.05}).observe(viewport);
-  new ResizeObserver(()=>{measure();position=viewport.scrollLeft%Math.max(period,1);}).observe(group);
-  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else start();});
-  motion.addEventListener('change',configure);configure();
+ const viewport=document.getElementById('aeReviewWindow'),track=document.getElementById('aeReviewTrack'),group=document.getElementById('aeReviewGroup');
+ if(!viewport||!track||!group)return;
+ const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ let clone=null,frame=0,previous=0,position=0,period=0,visible=false,keyboardFocus=false,touching=false;
+ const stop=()=>{if(frame)cancelAnimationFrame(frame);frame=0;previous=0;};
+ const measure=()=>{period=group.getBoundingClientRect().width+parseFloat(getComputedStyle(track).columnGap||0);};
+ const tick=now=>{
+  frame=0;if(!visible||keyboardFocus||touching||motion.matches||document.hidden){previous=0;return;}
+  if(period>0){position=(position+Math.min(previous?now-previous:0,50)*.026)%period;viewport.scrollLeft=position;}
+  previous=now;frame=requestAnimationFrame(tick);
+ };
+ const start=()=>{if(!frame&&visible&&!keyboardFocus&&!touching&&!motion.matches&&!document.hidden)frame=requestAnimationFrame(tick);};
+ const resume=()=>{position=viewport.scrollLeft%Math.max(period,1);start();};
+ const configure=()=>{stop();if(motion.matches){clone?.remove();clone=null;return;}if(!clone){clone=group.cloneNode(true);clone.removeAttribute('id');clone.setAttribute('aria-hidden','true');clone.inert=true;track.append(clone);}measure();resume();};
+ viewport.addEventListener('focusin',event=>{if(event.target.matches(':focus-visible')){keyboardFocus=true;stop();}});
+ viewport.addEventListener('focusout',event=>{if(!viewport.contains(event.relatedTarget)){keyboardFocus=false;resume();}});
+ viewport.addEventListener('touchstart',()=>{touching=true;stop();},{passive:true});
+ const endTouch=()=>{touching=false;resume();};
+ viewport.addEventListener('touchend',endTouch,{passive:true});viewport.addEventListener('touchcancel',endTouch,{passive:true});
+ new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible){measure();resume();}else stop();},{threshold:.05}).observe(viewport);
+ new ResizeObserver(()=>{measure();position=viewport.scrollLeft%Math.max(period,1);}).observe(group);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else resume();});
+ motion.addEventListener('change',configure);configure();
 })();
 </script>
 </div>
@@ -3370,4 +3355,64 @@ if(orderedOverview){
 <script src="assets/about-pill-hover.js?v=20261124b" defer></script>
 <script src="assets/offers-ribbon.js?v=20261124b" defer></script>
 <script src="assets/accom-we-gallery.js?v=40521f4" defer></script>
+<dialog id="aeFaqDialog" class="ae-faq-sheet" aria-labelledby="aeFaqDialogTitle">
+ <header class="ae-faq-sheet-head"><h2 id="aeFaqDialogTitle">Frequently asked questions</h2><button id="aeFaqClose" type="button" aria-label="Close FAQs" class="ae-faq-sheet-close" autofocus><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></header>
+ <div class="ae-faq-sheet-body"><div id="aeFaqMore" class="ae-faq-more">
+    <div class="ae-faq-category"><h3>Rooms & amenities</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I choose a studio instead of an en suite?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Yes, studios have their own kitchenette and bathroom. Ask about current studio availability.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>Is Wi-Fi included?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Wi-Fi is included in the listed rent. Confirm the service details in your tenancy agreement.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>Are there shared study and social spaces?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The property lists study and social spaces. Ask about access and opening arrangements.</p></div></div></details></div></div>
+    <div class="ae-faq-category"><h3>Booking & payments</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I pay my rent in instalments?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Instalment options may be available with a qualifying guarantor. Confirm the payment schedule before booking.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>Do I need to pay a booking fee or deposit?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Any fee or deposit depends on the current contract. Ask for the amount and refund terms in writing.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>What happens if I need to cancel?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Cancellation conditions depend on the signed tenancy agreement. Check deadlines and evidence requirements before booking.</p></div></div></details></div></div>
+    <div class="ae-faq-category"><h3>Living & moving in</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>Are pets allowed?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Check the property’s current house rules before bringing any pet.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>Can friends or family visit?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Guest access and overnight stays are subject to the property’s visitor policy.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I move in early?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Ask the property team about early arrival availability, charges and check-in arrangements.</p></div></div></details></div></div>
+    <div class="ae-faq-category"><h3>Location & transport</h3><div class="ae-faq-list"><details class="ae-faq-item"><summary class="ae-faq-q"><span>How far is the nearest railway station?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Kingston Railway Station is approximately four minutes away on foot.</p></div></div></details>
+<details class="ae-faq-item"><summary class="ae-faq-q"><span>How far is Kingston University?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The listing indicates approximately 15 minutes on foot; the journey varies by campus and route.</p></div></div></details></div></div>
+  </div></div>
+</dialog>
+<script id="aeFaqViewAllInteraction">
+(() => {
+ const button=document.getElementById('aeFaqViewAll'),panel=document.getElementById('aeFaqDialog'),closeButton=document.getElementById('aeFaqClose');
+ if(!button||!panel||!closeButton||typeof panel.showModal!=='function')return;
+ const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let closing=false;
+ const close=()=>{
+  if(!panel.open||closing)return;
+  closing=true;
+  const finish=()=>{if(panel.open)panel.close();closing=false;};
+  if(reduced()||!panel.animate){finish();return;}
+  const animation=panel.animate([{transform:'translateY(0)',opacity:1},{transform:'translateY(-105%)',opacity:.9}],{duration:260,easing:'cubic-bezier(.4,0,.8,.3)',fill:'forwards'});
+  animation.onfinish=()=>{finish();animation.cancel();};animation.oncancel=finish;
+ };
+ button.addEventListener('click',()=>{
+  if(panel.open)return;
+  panel.showModal();document.documentElement.classList.add('ae-faq-dialog-open');
+  panel.querySelector('.ae-faq-sheet-body').scrollTop=0;
+  closeButton.focus({preventScroll:true});
+  if(!reduced()&&panel.animate)panel.animate([{transform:'translateY(-105%)',opacity:.9},{transform:'translateY(0)',opacity:1}],{duration:380,easing:'cubic-bezier(.2,.85,.25,1)'});
+ });
+ closeButton.addEventListener('click',close);
+ panel.addEventListener('cancel',event=>{event.preventDefault();close();});
+ panel.addEventListener('click',event=>{if(event.target===panel){const rect=panel.getBoundingClientRect();if(event.clientY>rect.bottom||event.clientY<rect.top||event.clientX<rect.left||event.clientX>rect.right)close();}});
+ panel.addEventListener('close',()=>{document.documentElement.classList.remove('ae-faq-dialog-open');button.focus({preventScroll:true});});
+ button.hidden=false;
+})();
+</script>
+<script id="aeRailViewportSpacing">
+(() => {
+ const rail=document.querySelector('.cta-aside'),header=document.querySelector('.site-header'),nav=document.getElementById('scrollNav');if(!rail||!header)return;
+ const update=()=>{
+  const gap=parseFloat(getComputedStyle(rail).getPropertyValue('--rail-edge-gap'))||20;
+  const headerBottom=header.getBoundingClientRect().bottom;
+  const navStyle=nav&&getComputedStyle(nav);
+  const navVisible=nav&&nav.classList.contains('shown')&&navStyle.display!=='none'&&navStyle.visibility!=='hidden';
+  const navBottom=navVisible?nav.getBoundingClientRect().bottom:0;
+  rail.style.setProperty('--ae-rail-top',Math.max(0,headerBottom,navBottom)+gap+'px');
+ };
+ update();window.addEventListener('resize',update,{passive:true});
+ new ResizeObserver(update).observe(header);
+ if(nav){new MutationObserver(update).observe(nav,{attributes:true,attributeFilter:['class']});nav.addEventListener('transitionend',update);}
+})();
+</script>
 </body></html>
