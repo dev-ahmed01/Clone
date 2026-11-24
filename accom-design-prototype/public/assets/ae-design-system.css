@@ -909,3 +909,67 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
     white-space:nowrap;
   }
 }
+
+/* Listing Page 2: truly compact cashback lines, not oversized cards. */
+#offers.offers-showcase.offers-compact{
+  padding:25px 28px 22px!important;
+}
+#offers.offers-compact .offers-header{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;margin:0 0 10px!important;
+}
+#offers.offers-compact .offers-header h2{margin:0!important}
+#offers.offers-compact .offers-inline-enquire{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  flex:0 0 auto;min-height:36px;padding:9px 14px;
+  border:1px solid rgba(237,32,36,.35);border-radius:999px;
+  color:var(--ae-red,#ED2024);background:transparent;
+  font:700 12px/1.25 var(--font-body)!important;cursor:pointer;
+  transition:background .2s,color .2s;
+}
+#offers.offers-compact .offers-inline-enquire svg{width:14px;height:14px}
+#offers.offers-compact .offers-inline-enquire:hover{
+  background:var(--ae-red,#ED2024);color:#fff;
+}
+#offers.offers-compact .offers-compact-list{
+  display:grid;list-style:none;gap:0;padding:0;margin:0;
+}
+#offers.offers-compact .offers-compact-item{
+  display:flex;align-items:center;gap:12px;
+  padding:8px 2px;min-height:43px;
+  border-bottom:1px solid rgba(16,29,51,.08);
+}
+#offers.offers-compact .offers-compact-item:last-child{border-bottom:0}
+#offers.offers-compact .offer-inline-icon{
+  flex:0 0 22px;width:22px;height:22px;fill:none;
+  stroke:var(--ae-red,#ED2024);stroke-width:1.7;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+#offers.offers-compact .offers-compact-item p{
+  flex:1;min-width:0;margin:0!important;
+  color:var(--ae-ink,#101D33)!important;
+  font:400 15px/1.45 var(--font-body)!important;
+  letter-spacing:0!important;
+}
+#offers.offers-compact .offers-compact-item strong{font-weight:700}
+#offers.offers-compact .offer-inline-underline{
+  text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;
+}
+@media(max-width:1199px){
+  #offers.offers-showcase.offers-compact{padding:23px 24px!important}
+}
+@media(max-width:800px){
+  #offers.offers-showcase.offers-compact{padding:22px 20px!important}
+  #offers.offers-compact .offers-compact-item p{font-size:14px!important}
+}
+@media(max-width:550px){
+  #offers.offers-showcase.offers-compact{padding:18px 15px!important}
+  #offers.offers-compact .offers-header{align-items:flex-start;flex-wrap:wrap;gap:10px}
+  #offers.offers-compact .offers-header h2{font-size:27px!important}
+  #offers.offers-compact .offers-compact-item{align-items:flex-start;gap:9px;padding:9px 0}
+  #offers.offers-compact .offer-inline-icon{flex-basis:19px;width:19px;height:19px;margin-top:2px}
+  #offers.offers-compact .offers-compact-item p{font-size:13px!important;line-height:1.5!important}
+}
+@media(prefers-reduced-motion:reduce){
+  #offers.offers-compact .offers-inline-enquire{transition:none!important}
+}
