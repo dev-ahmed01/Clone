@@ -2197,19 +2197,21 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @container(max-width:600px){#rooms .room-primary .room-details{padding-left:14px!important}#rooms .room-primary .room-tenancy-row{grid-template-columns:1fr;gap:9px}#rooms .room-primary .room-term-actions{grid-column:1;justify-content:flex-start}#rooms .room-primary .room-term-actions button{flex:1}}
 @container(max-width:420px){#rooms .room-primary{display:block;padding:12px}#rooms .room-primary .room-media{height:200px;min-height:200px;max-height:200px;margin:0 0 12px}#rooms .room-primary .room-details{padding:0 3px 3px!important}#rooms .room-primary .room-term-actions{justify-content:stretch}}
 @media(prefers-reduced-motion:reduce){#rooms .room-details-trigger svg{transition:none;transform:none!important}}
-/* Compact top-right booking cluster; tenancy remains in the continuous card. */
-#rooms .room-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;min-width:0}
-#rooms .room-card-top h3{flex:1;min-width:0}
-#rooms .room-top-booking{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex:0 0 auto}
-#rooms .room-top-booking .room-term-price{text-align:right;gap:2px}
-#rooms .room-top-booking .room-term-price>strong{font-size:25px!important;line-height:1.12!important}
-#rooms .room-top-booking .room-enquire{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:8px 15px;white-space:nowrap;border-radius:999px;background:var(--red,#ed2024);border:1px solid var(--red,#ed2024);color:#fff;font:600 12px/1.25 var(--font-body);cursor:pointer;transition:background .2s,color .2s}
-#rooms .room-top-booking .room-enquire svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
-#rooms .room-top-booking .room-enquire:hover{background:#fff;color:var(--red,#ed2024)}
-#rooms .room-primary .room-tenancy-row{display:block;padding:2px 0 0;border:0;background:none}
-#rooms .room-tenancy-dates{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:440px}
-@container(max-width:650px){#rooms .room-card-top{flex-wrap:wrap;gap:9px}#rooms .room-top-booking{flex:1 1 100%;justify-content:space-between}#rooms .room-top-booking .room-term-price{text-align:left}}
-@container(max-width:420px){#rooms .room-tenancy-dates{gap:7px}#rooms .room-top-booking .room-term-price>strong{font-size:24px!important}}
+/* One continuous room card; paired pricing and enquiry at bottom right. */
+#rooms .room-primary .room-details{justify-content:center;gap:12px}
+#rooms .room-primary .room-tenancy-row{display:block;padding:0;border:0;background:none}
+#rooms .room-tenancy-dates{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:440px}
+#rooms .room-card-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;margin-top:3px;min-width:0}
+#rooms .room-card-bottom .room-primary-actions{display:flex;align-items:center;gap:12px;flex:0 1 auto;margin:0}
+#rooms .room-card-bottom .room-details-trigger{white-space:nowrap}
+#rooms .room-bottom-booking{display:flex;align-items:center;justify-content:flex-end;gap:14px;flex:0 0 auto;margin-left:auto}
+#rooms .room-bottom-booking .room-term-price{text-align:right;gap:2px}
+#rooms .room-bottom-booking .room-term-price>strong{font-size:26px!important;line-height:1.12!important}
+#rooms .room-bottom-booking .room-enquire{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:10px 17px;white-space:nowrap;border-radius:999px;background:var(--red,#ed2024);border:1px solid var(--red,#ed2024);color:#fff;font:600 13px/1.25 var(--font-body);cursor:pointer;transition:background .2s,color .2s}
+#rooms .room-bottom-booking .room-enquire svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
+#rooms .room-bottom-booking .room-enquire:hover{background:#fff;color:var(--red,#ed2024)}
+@container(max-width:680px){#rooms .room-card-bottom{gap:8px}#rooms .room-bottom-booking{flex:1 1 100%;justify-content:flex-end}#rooms .room-card-bottom .room-primary-actions{flex:1 1 100%}}
+@container(max-width:420px){#rooms .room-tenancy-dates{gap:7px}#rooms .room-bottom-booking{justify-content:space-between}#rooms .room-bottom-booking .room-term-price{text-align:left}#rooms .room-bottom-booking .room-term-price>strong{font-size:24px!important}}
 /* Large room sheet: stable header, scrollable gallery and grouped sections. */
 #roomDetailsDialog{background:rgba(16,29,51,.48);backdrop-filter:blur(5px)}
 #roomDetailsDialog .room-detail-surface{display:flex;flex-direction:column;width:min(980px,calc(100vw - 32px));max-width:980px;height:auto;max-height:calc(100dvh - 36px);overflow:hidden;padding:0!important;border-radius:22px;background:#fffcf9;box-sizing:border-box;box-shadow:0 22px 70px #101d3333}
@@ -2983,15 +2985,11 @@ function renderRoomCard(room){
   <div class="room-primary">
    <div class="room-media">${image}</div>
    <div class="room-details">
-    <div class="room-title-line room-card-top"><h3>${room.name}</h3><div class="room-top-booking"><div class="room-term-price"><span>Weekly rate</span>${roomSnapshot(room)}</div><button class="room-enquire" type="button" data-room-enquire="${room.id}">Enquire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div></div>
+    <div class="room-title-line"><h3>${room.name}</h3></div>
     <div class="room-facts" aria-label="Room features">
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM7 9h10M7 13h10"/></svg>${room.size}</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19V7m0 9h18v3M3 11h18v5H3zM7 11V8h10v3"/></svg>${room.bathroom}</span>
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V5h14v16M8 9h8M8 13h8M8 17h8"/></svg>${room.kitchen}</span>
-    </div>
-    <div class="room-primary-actions">
-      <button class="room-details-trigger" type="button" data-room-details="${room.id}" aria-haspopup="dialog" aria-controls="roomDetailsDialog">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
-      <button type="button" class="room-compare" data-compare="${room.id}" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6m6 4v6"/></svg><span>Compare</span></button>
     </div>
     <div class="room-tenancy-row" aria-label="Tenancy information for ${room.name}">
     <div class="room-tenancy-dates" aria-label="Tenancy dates">
@@ -2999,6 +2997,13 @@ function renderRoomCard(room){
     <div class="room-term-fact"><span>Move in</span><strong>${moveIn}</strong></div>
     <div class="room-term-fact"><span>Move out</span><strong>${room.pricing.moveOut}</strong></div>
     </div>
+    </div>
+    <div class="room-card-bottom">
+    <div class="room-primary-actions">
+      <button class="room-details-trigger" type="button" data-room-details="${room.id}" aria-haspopup="dialog" aria-controls="roomDetailsDialog">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+      <button type="button" class="room-compare" data-compare="${room.id}" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6m6 4v6"/></svg><span>Compare</span></button>
+    </div>
+      <div class="room-bottom-booking"><div class="room-term-price"><span>Weekly rate</span>${roomSnapshot(room)}</div><button class="room-enquire" type="button" data-room-enquire="${room.id}">Enquire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div>
     </div>
    </div>
   </div>
