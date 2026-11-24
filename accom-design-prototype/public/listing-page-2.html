@@ -2287,32 +2287,32 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @media(prefers-reduced-motion:reduce){:is(#rules,#payments) .rule-card,:is(#rules,#payments) .rule-card *,:is(#rules,#payments) .rule-toggle::before,:is(#rules,#payments) .rule-toggle::after{transition:none!important;transform:none!important}:is(#rules,#payments) .rule-toggle::after{transform:translate(-50%,-50%) rotate(90deg)!important}:is(#rules,#payments) .rule-toggle::before{transform:translate(-50%,-50%)!important}}
 </style>
 <style id="ae-workspace-faq-style">
-/* Workspace by Emlen /workspaces/ FAQ pattern, fitted to the listing content rail. */
+/* Full-width FAQ within the listing rail. Native disclosure works without JavaScript. */
 #faqs.section.ae-workspace-faq{padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;border-radius:0!important;container-type:inline-size;overflow:visible}
-#faqs .ae-faq-grid{display:grid;grid-template-columns:minmax(0,.64fr) minmax(0,.92fr);gap:28px;align-items:start}
-#faqs .ae-faq-side{min-width:0;padding-top:4px}
-#faqs.section .ae-faq-side h2{font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;letter-spacing:-.042em!important;margin:0!important;color:var(--ae-ink,#101d33)!important}
-#faqs .ae-faq-side h2 span{color:var(--ae-red,#ed2024)}
-#faqs .ae-faq-side p{font:400 14px/1.7 var(--font-body)!important;max-width:320px;margin:18px 0 24px!important;color:#526079!important}
-#faqs .ae-faq-contact{display:inline-flex;align-items:center;justify-content:space-between;gap:19px;min-height:48px;padding:12px 20px;border-radius:13px;border:1px solid var(--ae-red,#ed2024);background:var(--ae-red,#ed2024);color:#fff;font:600 14px/1.4 var(--font-body);cursor:pointer;box-shadow:0 9px 22px rgba(237,32,36,.15);transition:background .25s,color .25s,box-shadow .25s}
-#faqs .ae-faq-contact svg{width:18px;height:18px;stroke:currentColor;fill:none;flex:none}
-#faqs .ae-faq-contact:hover{background:#fff;color:var(--ae-red,#ed2024);box-shadow:0 4px 14px rgba(237,32,36,.08)}
+#faqs.section #aeFaqTitle{font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;letter-spacing:-.042em!important;margin:0 0 24px!important;color:var(--ae-ink,#101d33)!important}
 #faqs .ae-faq-list{display:grid;gap:12px;min-width:0}
-#faqs .ae-faq-item{min-width:0;overflow:hidden;background:#fff;border:1px solid #e8e4e1;border-radius:20px;box-shadow:0 10px 25px rgba(16,29,51,.055);transition:box-shadow .32s,border-color .32s}
-#faqs .ae-faq-item.open{border-color:#edd7d4;box-shadow:0 12px 27px rgba(16,29,51,.055)}
-#faqs .ae-faq-q{display:flex;width:100%;align-items:center;justify-content:space-between;gap:14px;text-align:left;min-height:68px;padding:17px 20px;border:0;background:none;color:var(--ae-ink,#101d33);font:600 16px/1.4 var(--font-body);cursor:pointer}
+#faqs .ae-faq-item{min-width:0;overflow:hidden;background:#fff;border:1px solid #e8e4e1;border-radius:20px;box-shadow:0 10px 25px rgba(16,29,51,.055);transition:box-shadow .28s,border-color .28s}
+#faqs .ae-faq-item[open]{border-color:#edd7d4;box-shadow:0 12px 27px rgba(16,29,51,.055)}
+#faqs .ae-faq-q{display:flex;width:100%;box-sizing:border-box;align-items:center;justify-content:space-between;gap:14px;text-align:left;min-height:62px;padding:14px 20px;border:0;background:none;color:var(--ae-ink,#101d33);font:600 16px/1.4 var(--font-body);cursor:pointer;list-style:none;position:relative;touch-action:manipulation}
+#faqs .ae-faq-q::-webkit-details-marker{display:none}
+#faqs .ae-faq-q::marker{content:""}
 #faqs .ae-faq-q>span:first-child{min-width:0}
-#faqs .ae-faq-q:focus-visible,#faqs .ae-faq-contact:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:-3px}
-#faqs .ae-faq-plus{position:relative;display:grid;place-items:center;flex:0 0 34px;height:34px;border-radius:50%;background:#fff2f1;color:var(--ae-red,#ed2024);transition:background .32s,color .32s}
-#faqs .ae-faq-plus::before,#faqs .ae-faq-plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;border-radius:2px;background:currentColor;transform:translate(-50%,-50%);transition:transform .32s ease,opacity .32s ease}
+#faqs .ae-faq-q:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:-3px;border-radius:19px}
+#faqs .ae-faq-plus{position:relative;display:grid;place-items:center;flex:0 0 34px;height:34px;border-radius:50%;background:#fff2f1;color:var(--ae-red,#ed2024);pointer-events:none;transition:background .28s,color .28s}
+#faqs .ae-faq-plus::before,#faqs .ae-faq-plus::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;border-radius:2px;background:currentColor;transform:translate(-50%,-50%);transition:transform .28s ease,opacity .28s ease}
 #faqs .ae-faq-plus::after{transform:translate(-50%,-50%) rotate(90deg)}
-#faqs .ae-faq-item.open .ae-faq-plus::after{transform:translate(-50%,-50%) rotate(0);opacity:0}
-#faqs .ae-faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s ease}
-#faqs .ae-faq-item.open .ae-faq-a{grid-template-rows:1fr}
-#faqs .ae-faq-answer-inner{overflow:hidden;min-height:0}
+#faqs .ae-faq-item[open] .ae-faq-plus::after{transform:translate(-50%,-50%) rotate(0);opacity:0}
+#faqs .ae-faq-item[open] .ae-faq-plus{background:var(--ae-red,#ed2024);color:#fff}
 #faqs .ae-faq-answer-inner p{font:400 14px/1.65 var(--font-body)!important;color:#526079!important;padding:0 20px 18px!important;margin:0!important}
-@container(max-width:640px){#faqs .ae-faq-grid{grid-template-columns:1fr;gap:23px}#faqs .ae-faq-side p{margin:12px 0 16px!important;max-width:430px}#faqs .ae-faq-q{min-height:62px;padding:14px 17px;font-size:15px}#faqs .ae-faq-answer-inner p{padding:0 17px 16px!important}}
-@media(prefers-reduced-motion:reduce){#faqs .ae-faq-a,#faqs .ae-faq-item,#faqs .ae-faq-plus,#faqs .ae-faq-plus::after,#faqs .ae-faq-contact{transition:none!important}}
+#faqs .ae-faq-item[open] .ae-faq-a{animation:aeFaqReveal .24s ease-out both}
+@keyframes aeFaqReveal{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@supports (interpolate-size:allow-keywords) and selector(details::details-content){
+ #faqs .ae-faq-item{interpolate-size:allow-keywords}
+ #faqs .ae-faq-item::details-content{height:0;overflow:clip;transition:height .32s cubic-bezier(.22,.61,.36,1),content-visibility .32s allow-discrete}
+ #faqs .ae-faq-item[open]::details-content{height:auto}
+}
+@container(max-width:640px){#faqs.section #aeFaqTitle{margin-bottom:18px!important}#faqs .ae-faq-q{min-height:58px;padding:12px 17px;font-size:15px}#faqs .ae-faq-answer-inner p{padding:0 17px 16px!important}}
+@media(prefers-reduced-motion:reduce){#faqs .ae-faq-item,#faqs .ae-faq-plus,#faqs .ae-faq-plus::after{transition:none!important}#faqs .ae-faq-item[open] .ae-faq-a{animation:none!important}#faqs .ae-faq-item::details-content{transition:none!important}}
 </style>
 </head>
 <body>
@@ -2579,11 +2579,16 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </section>
 
 
-<section class="section ae-workspace-faq" id="faqs" aria-labelledby="aeFaqTitle"><div class="ae-faq-grid"><div class="ae-faq-side"><h2 id="aeFaqTitle">Before you <span>decide.</span></h2><p>Answers to the practical questions that matter when choosing your student accommodation.</p><button class="ae-faq-contact" data-enquire="" type="button">Talk to our team <svg aria-hidden="true"><use href="#arrow"></use></svg></button></div><div class="ae-faq-list" id="faqList"><article class="ae-faq-item"><button class="ae-faq-q" id="ae-faq-control-0" type="button" aria-expanded="false" aria-controls="ae-faq-answer-0"><span>What is included in the rent?</span><span class="ae-faq-plus" aria-hidden="true"></span></button><div class="ae-faq-a" id="ae-faq-answer-0" role="region" aria-labelledby="ae-faq-control-0" aria-hidden="true" inert><div class="ae-faq-answer-inner"><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></div></div></article>
-<article class="ae-faq-item"><button class="ae-faq-q" id="ae-faq-control-1" type="button" aria-expanded="false" aria-controls="ae-faq-answer-1"><span>What is the difference between an en suite and a studio?</span><span class="ae-faq-plus" aria-hidden="true"></span></button><div class="ae-faq-a" id="ae-faq-answer-1" role="region" aria-labelledby="ae-faq-control-1" aria-hidden="true" inert><div class="ae-faq-answer-inner"><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></div></div></article>
-<article class="ae-faq-item"><button class="ae-faq-q" id="ae-faq-control-2" type="button" aria-expanded="false" aria-controls="ae-faq-answer-2"><span>Can I reserve a specific room?</span><span class="ae-faq-plus" aria-hidden="true"></span></button><div class="ae-faq-a" id="ae-faq-answer-2" role="region" aria-labelledby="ae-faq-control-2" aria-hidden="true" inert><div class="ae-faq-answer-inner"><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></div></div></article>
-<article class="ae-faq-item"><button class="ae-faq-q" id="ae-faq-control-3" type="button" aria-expanded="false" aria-controls="ae-faq-answer-3"><span>Is there a guarantor requirement?</span><span class="ae-faq-plus" aria-hidden="true"></span></button><div class="ae-faq-a" id="ae-faq-answer-3" role="region" aria-labelledby="ae-faq-control-3" aria-hidden="true" inert><div class="ae-faq-answer-inner"><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></div></div></article>
-<article class="ae-faq-item"><button class="ae-faq-q" id="ae-faq-control-4" type="button" aria-expanded="false" aria-controls="ae-faq-answer-4"><span>Are viewings available?</span><span class="ae-faq-plus" aria-hidden="true"></span></button><div class="ae-faq-a" id="ae-faq-answer-4" role="region" aria-labelledby="ae-faq-control-4" aria-hidden="true" inert><div class="ae-faq-answer-inner"><p>Ask the property team for the latest viewing or virtual tour options.</p></div></div></article></div></div></section>
+<section class="section ae-workspace-faq" id="faqs" aria-labelledby="aeFaqTitle">
+  <h2 id="aeFaqTitle">FAQs</h2>
+  <div class="ae-faq-list" id="faqList">
+    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>What is included in the rent?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></div></div></details>
+    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>What is the difference between an en suite and a studio?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></div></div></details>
+    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>Can I reserve a specific room?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></div></div></details>
+    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>Is there a guarantor requirement?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></div></div></details>
+    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>Are viewings available?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Ask the property team for the latest viewing or virtual tour options.</p></div></div></details>
+  </div>
+</section>
 <section class="section" id="location"><h2>Nearby landmarks</h2><div class="location-panel"><div aria-hidden="true" class="location-illustration"><span class="route-a"></span><span class="route-b"></span><span class="location-pin"><svg><use href="#pin"></use></svg></span></div><div class="landmarks-detail">
 <strong>iQ Kingston</strong><p>15 Wood Street, Kingston upon Thames, KT1 1TY</p>
 <div class="landmark-groups">
@@ -3182,15 +3187,6 @@ $$('[data-enquire]').forEach(button=>button.addEventListener('click',openEnquiry
 $('#enquiryForm').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget, name=form.elements.namedItem('name').value.trim(), email=form.elements.namedItem('email').value.trim(), consent=form.elements.namedItem('consent').checked;
  let error=!name?'Enter your name.':!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)?'Enter a valid email address.':!consent?'Please acknowledge that this form is a demo.':'';
  const display=$('#enquiryError');display.hidden=!error;if(error){display.textContent=error;return;}form.hidden=true;$('#enquirySuccess').hidden=false;$('#enquirySuccess button').focus();});
-// Workspace FAQ pattern: a single open answer, with animated height and a true plus/minus.
-$$('#faqList .ae-faq-q').forEach(btn=>btn.addEventListener('click',()=>{
- const item=btn.closest('.ae-faq-item'),wasOpen=item.classList.contains('open');
- $$('#faqList .ae-faq-item').forEach(el=>{
-  const open=el===item&&!wasOpen;el.classList.toggle('open',open);
-  const trigger=el.querySelector('.ae-faq-q'),answer=el.querySelector('.ae-faq-a');
-  trigger.setAttribute('aria-expanded',String(open));answer.setAttribute('aria-hidden',String(!open));answer.inert=!open;
- });
-}));
 $('#shareButton').addEventListener('click',async()=>{const url=window.location.href;try{if(navigator.share)await navigator.share({title:document.title,url});else{await navigator.clipboard.writeText(url);notify('Listing link copied');}}catch(error){if(error?.name!=='AbortError')notify('Copy this page address to share');}});
 // Lightweight index: geometry is cached on resize/content changes, not read on each scroll.
 const stickyNav=$('#scrollNav'),stickyTrack=$('#navTrack'),propertyIntro=$('#property-identity');
