@@ -1182,15 +1182,14 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   }
 }
 
-/* Listing Page 2 — Accom-inspired amenity categories with small rounded chips.
-   The existing 14 amenity facts and full-details dialog remain unchanged. */
+/* Listing Page 2 — editorial amenity cards, reference-led; text only.
+   Three categories; Bills Included is its own subtly tinted panel. */
 #amenities.amenities-redesign.amenities-compact .amx-surface{
-  padding:32px 35px 23px!important;
-  border-radius:28px!important;
+  padding:36px 36px 28px!important;
+  border-radius:30px!important;
+  box-shadow:none!important;
 }
-#amenities.amenities-compact .amx-head h2{
-  margin:0 0 24px!important;
-}
+#amenities.amenities-compact .amx-head h2{margin:0 0 22px!important}
 #amenities.amenities-compact .amx-groups{
   display:flex;
   flex-direction:column;
@@ -1199,112 +1198,119 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 #amenities.amenities-compact .amx-groups .amx-group,
 #amenities.amenities-compact .amx-groups .amx-group:first-child,
 #amenities.amenities-compact .amx-groups .amx-group:not(:first-child){
-  margin:0;
-  padding:17px 0 18px!important;
-  border:0!important;
-  border-top:1px solid rgba(16,29,51,.10)!important;
-  border-radius:0!important;
+  display:block;
+  margin:0!important;
+  padding:19px 0 24px!important;
   background:transparent!important;
   box-shadow:none!important;
+  border:0!important;
+  border-radius:0!important;
+  border-top:1px solid #ece8e4!important;
 }
 #amenities.amenities-compact .amx-groups .amx-group:first-child{
-  padding-top:4px!important;
   border-top:0!important;
+  padding-top:0!important;
+}
+#amenities.amenities-compact .amx-groups .amx-group.amx-group-bills{
+  margin:2px 0 3px!important;
+  padding:21px!important;
+  border:1px solid #d8ebe0!important;
+  border-radius:24px!important;
+  background:linear-gradient(135deg,#e6f4ec,#eff8f2)!important;
 }
 #amenities.amenities-compact .amx-group-head{
-  margin:0 0 12px!important;
-  gap:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 15px!important;
 }
 #amenities.amenities-compact .amx-group-head h3{
   margin:0!important;
+  color:var(--ae-ink,#101D33)!important;
   font:600 21px/1.3 var(--font-title,'Bricolage Grotesque',Arial,sans-serif)!important;
   letter-spacing:-.025em;
-  color:var(--ae-ink,#101D33)!important;
+}
+#amenities.amenities-compact .amx-included-note{
+  display:inline-flex;
+  align-items:center;
+  min-height:27px;
+  padding:5px 10px;
+  border:1px solid #c9e6d5;
+  border-radius:999px;
+  background:#fff;
+  color:#357455;
+  font:600 11px/1.2 var(--font-body,'Montserrat',Arial,sans-serif);
+  white-space:nowrap;
 }
 #amenities.amenities-compact .amx-grid{
-  display:flex!important;
-  flex-wrap:wrap;
-  align-items:center;
-  gap:8px!important;
-  grid-template-columns:none!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:12px!important;
 }
 #amenities.amenities-compact .amx-item{
   box-sizing:border-box;
-  display:inline-flex!important;
+  display:flex!important;
   align-items:center;
   justify-content:flex-start;
-  flex:0 1 auto;
   width:auto!important;
-  max-width:100%;
-  min-height:39px!important;
-  padding:7px 12px!important;
+  min-width:0;
+  min-height:76px!important;
   margin:0!important;
-  gap:8px!important;
-  border:1px solid rgba(16,29,51,.11)!important;
-  border-radius:999px!important;
+  padding:17px 20px!important;
+  border:1px solid #e9e6e4!important;
+  border-radius:23px!important;
   background:#fff!important;
-  box-shadow:none!important;
-  color:var(--ae-ink,#101D33)!important;
-  font:400 13px/1.4 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+  color:#181818!important;
+  font:400 16px/1.4 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+  box-shadow:0 5px 17px rgba(16,29,51,.045)!important;
   white-space:normal;
 }
-#amenities.amenities-compact .amx-icon{
-  display:grid;
-  place-items:center;
-  width:23px!important;
-  height:23px!important;
-  flex:0 0 23px!important;
-  border-radius:50%!important;
-  background:rgba(237,32,36,.065)!important;
-  color:var(--ae-red,#ED2024)!important;
+#amenities.amenities-compact .amx-item > span{
+  min-width:0;
+  overflow-wrap:break-word;
 }
-#amenities.amenities-compact .amx-icon svg{
-  width:15px!important;
-  height:15px!important;
-  stroke-width:1.9;
+#amenities.amenities-compact .amx-group-bills .amx-item{
+  border-color:#d9e8e0!important;
+  box-shadow:0 3px 10px rgba(33,76,53,.035)!important;
 }
 #amenities.amenities-compact .amx-bottom{
-  border-top:1px solid rgba(16,29,51,.10);
-  padding-top:17px;
-  gap:0;
+  padding-top:20px!important;
+  border-top:1px solid #ece8e4;
 }
 #amenities.amenities-compact .amx-more{
-  min-height:42px!important;
-  padding:10px 17px!important;
+  min-height:44px!important;
+  padding:10px 19px!important;
   font:700 13px/1.3 var(--font-body,'Montserrat',Arial,sans-serif)!important;
 }
 @media(max-width:1199px){
-  #amenities.amenities-redesign.amenities-compact .amx-surface{
-    padding:29px 27px 22px!important;
-  }
+  #amenities.amenities-redesign.amenities-compact .amx-surface{padding:30px 29px 24px!important}
+  #amenities.amenities-compact .amx-grid{gap:10px!important}
+  #amenities.amenities-compact .amx-item{padding:16px!important;min-height:70px!important;font-size:15px!important}
 }
-@media(max-width:800px){
-  #amenities.amenities-redesign.amenities-compact .amx-surface{
-    padding:27px 23px 20px!important;
-  }
-  #amenities.amenities-compact .amx-group-head h3{font-size:20px!important}
-  #amenities.amenities-compact .amx-item{min-height:38px!important;padding:7px 10px!important}
+@media(max-width:850px){
+  #amenities.amenities-redesign.amenities-compact .amx-surface{padding:27px 24px 22px!important}
+  #amenities.amenities-compact .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  #amenities.amenities-compact .amx-group-bills.amx-group{padding:17px!important}
 }
 @media(max-width:550px){
-  #amenities.amenities-redesign.amenities-compact .amx-surface{
-    padding:23px 17px 19px!important;
-    border-radius:22px!important;
-  }
-  #amenities.amenities-compact .amx-head h2{margin-bottom:18px!important}
-  #amenities.amenities-compact .amx-groups .amx-group{padding:15px 0!important}
-  #amenities.amenities-compact .amx-group-head{margin-bottom:9px!important}
+  #amenities.amenities-redesign.amenities-compact .amx-surface{padding:24px 17px 21px!important;border-radius:24px!important}
+  #amenities.amenities-compact .amx-head h2{margin-bottom:19px!important}
+  #amenities.amenities-compact .amx-groups .amx-group{padding:18px 0 21px!important}
+  #amenities.amenities-compact .amx-group-head{margin-bottom:12px!important}
   #amenities.amenities-compact .amx-group-head h3{font-size:19px!important}
-  #amenities.amenities-compact .amx-grid{gap:7px!important}
+  #amenities.amenities-compact .amx-included-note{font-size:10px;min-height:25px}
+  #amenities.amenities-compact .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
   #amenities.amenities-compact .amx-item{
-    font-size:12px!important;
-    min-height:36px!important;
-    padding:6px 10px!important;
-    gap:7px!important;
+    min-height:61px!important;
+    padding:12px!important;
+    border-radius:18px!important;
+    font-size:13px!important;
   }
-  #amenities.amenities-compact .amx-icon{
-    width:21px!important;height:21px!important;flex-basis:21px!important;
-  }
-  #amenities.amenities-compact .amx-icon svg{width:14px!important;height:14px!important}
-  #amenities.amenities-compact .amx-bottom{padding-top:14px}
-  #amenities.amenities-compact .amx-more{min-height:39px!important;font-size:12px!important}
+  #amenities.amenities-compact .amx-groups .amx-group.amx-group-bills{padding:13px!important;border-radius:20px!important}
+  #amenities.amenities-compact .amx-bottom{padding-top:16px!important}
+}
+@media(max-width:360px){
+  #amenities.amenities-compact .amx-grid{grid-template-columns:1fr!important}
 }
