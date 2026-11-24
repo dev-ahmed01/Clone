@@ -1247,25 +1247,25 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 #amenities.amenities-compact .amx-grid{
   display:grid!important;
   grid-template-columns:repeat(3,minmax(0,1fr))!important;
-  gap:10px!important;
+  gap:8px!important;
 }
 #amenities.amenities-compact .amx-item{
   box-sizing:border-box;
   display:flex!important;
   align-items:center;
   justify-content:space-between;
-  gap:12px!important;
+  gap:10px!important;
   width:auto!important;
   min-width:0;
-  min-height:56px!important;
+  min-height:46px!important;
   margin:0!important;
-  padding:11px 15px!important;
+  padding:8px 13px!important;
   border:1px solid #e9e6e4!important;
-  border-radius:18px!important;
+  border-radius:15px!important;
   background:#fff!important;
   color:#181818!important;
   font:400 14px/1.36 var(--font-body,'Poppins',Arial,sans-serif)!important;
-  box-shadow:0 3px 10px rgba(16,29,51,.035)!important;
+  box-shadow:0 2px 8px rgba(16,29,51,.028)!important;
   white-space:normal;
 }
 #amenities.amenities-compact .amx-item > span{
@@ -1276,18 +1276,20 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 #amenities.amenities-compact .amx-item::after{
   content:"";
   display:block;
-  flex:0 0 6px;
-  width:6px;
-  height:11px;
+  flex:0 0 8px;
+  width:8px;
+  height:13px;
   margin-left:auto;
   margin-right:4px;
-  border-right:2px solid var(--ae-red,#ED2024);
-  border-bottom:2px solid var(--ae-red,#ED2024);
-  border-radius:0;
+  border-right:2.5px solid var(--ae-red,#ED2024);
+  border-bottom:2.5px solid var(--ae-red,#ED2024);
+  border-radius:1px;
   transform:translateY(-2px) rotate(45deg);
+  filter:drop-shadow(0 0 1.5px rgba(237,32,36,.32));
 }
 #amenities.amenities-compact .amx-group-bills .amx-item::after{
   border-color:#218b53;
+  filter:drop-shadow(0 0 1.5px rgba(33,139,83,.30));
 }
 #amenities.amenities-compact .amx-group-bills .amx-item{
   border-color:#d9e8e0!important;
@@ -1305,7 +1307,7 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 @media(max-width:1199px){
   #amenities.amenities-redesign.amenities-compact .amx-surface{padding:30px 29px 24px!important}
   #amenities.amenities-compact .amx-grid{gap:10px!important}
-  #amenities.amenities-compact .amx-item{padding:10px 13px!important;min-height:54px!important;font-size:14px!important}
+  #amenities.amenities-compact .amx-item{padding:8px 12px!important;min-height:45px!important;font-size:13px!important}
 }
 @media(max-width:850px){
   #amenities.amenities-redesign.amenities-compact .amx-surface{padding:27px 24px 22px!important}
@@ -1319,15 +1321,15 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   #amenities.amenities-compact .amx-group-head{margin-bottom:12px!important}
   #amenities.amenities-compact .amx-group-head h3{font-size:19px!important}
   #amenities.amenities-compact .amx-included-note{font-size:10px;min-height:25px}
-  #amenities.amenities-compact .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+  #amenities.amenities-compact .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
   #amenities.amenities-compact .amx-item{
-    min-height:51px!important;
-    padding:10px 12px!important;
-    border-radius:15px!important;
+    min-height:43px!important;
+    padding:8px 10px!important;
+    border-radius:13px!important;
     gap:8px!important;
     font-size:12px!important;
   }
-  #amenities.amenities-compact .amx-item::after{flex-basis:5px;width:5px;height:9px;margin-right:2px;border-width:0 2px 2px 0}
+  #amenities.amenities-compact .amx-item::after{flex-basis:7px;width:7px;height:11px;margin-right:2px;border-width:0 2.5px 2.5px 0}
   #amenities.amenities-compact .amx-groups .amx-group.amx-group-bills{padding:12px!important;border-radius:19px!important}
   #amenities.amenities-compact .amx-bottom{padding-top:16px!important}
 }
@@ -1453,4 +1455,40 @@ body,button,input,select,textarea{font-family:var(--font-body)!important}
  #amenities.amenities-compact .amx-item::before,
  #amenities.amenities-compact .amx-item::after,
  #amenities.amenities-compact .amx-item>span{transition:none!important}
+}
+
+/* Listing 2 amenity micro-card and polished tick shine.
+   Directional fill remains under text and CSS-only right-side checks. */
+#amenities.amenities-compact .amx-item::before{
+  background-image:
+    linear-gradient(110deg,transparent 20%,rgba(255,255,255,.20) 47%,transparent 67%),
+    linear-gradient(0deg,var(--amenity-fill-color,var(--ae-red,#ED2024)),var(--amenity-fill-color,var(--ae-red,#ED2024)));
+  background-size:250% 100%,100% 100%;
+  background-position:130% 0,0 0;
+  background-repeat:no-repeat;
+  transition:clip-path .54s cubic-bezier(.2,.85,.23,1),background-position .78s ease;
+}
+#amenities.amenities-compact .amx-item::after{
+  transition:border-color .28s ease,filter .28s ease;
+}
+@keyframes ae-amenity-tick-glint{
+  0%{filter:drop-shadow(0 0 0 rgba(255,255,255,0)) brightness(1)}
+  45%{filter:drop-shadow(0 0 4px rgba(255,255,255,.95)) brightness(1.4)}
+  100%{filter:drop-shadow(0 0 2px rgba(255,255,255,.6)) brightness(1)}
+}
+@media(hover:hover) and (pointer:fine){
+  #amenities.amenities-compact .amx-item:hover::before{
+    background-position:-95% 0,0 0;
+  }
+  #amenities.amenities-compact .amx-item:hover::after{
+    animation:ae-amenity-tick-glint .82s ease-out both;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #amenities.amenities-compact .amx-item::before{
+    transition:none!important;
+  }
+  #amenities.amenities-compact .amx-item::after{
+    animation:none!important;transition:none!important;
+  }
 }
