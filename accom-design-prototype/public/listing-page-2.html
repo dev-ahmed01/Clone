@@ -2263,6 +2263,9 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 :is(#rules,#payments) .rule-card.is-open{background:linear-gradient(120deg,#fffdfb,#fff8f6)!important;border-color:#edcec6!important;box-shadow:0 4px 14px rgba(16,29,51,.025)!important}
 :is(#rules,#payments) .rule-card-trigger{display:flex;align-items:center;gap:14px;width:100%;min-height:62px;padding:13px 19px;background:none;border:0;cursor:pointer;text-align:left;color:var(--navy)}
 :is(#rules,#payments) .rule-card-trigger:focus-visible{outline:2px solid var(--red);outline-offset:-3px;border-radius:14px}
+/* Tighten expanded title-to-description spacing while retaining collapsed card dimensions. */
+:is(#rules,#payments) .rule-card.is-open .rule-card-trigger{min-height:52px;padding-bottom:4px}
+@media(max-width:600px){:is(#rules,#payments) .rule-card.is-open .rule-card-trigger{min-height:48px;padding-bottom:4px}}
 :is(#rules,#payments) .rule-icon{display:grid;place-items:center;flex:0 0 29px;width:29px;height:29px;border:0;border-radius:0;background:transparent!important;color:#526079;transition:color .35s ease}
 :is(#rules,#payments) .rule-icon svg{width:23px;height:23px;display:block;stroke-width:1.65;fill:none}
 :is(#rules,#payments) .rule-card.is-open .rule-icon,:is(#rules,#payments) .rule-card-trigger:hover .rule-icon{color:var(--red)}
