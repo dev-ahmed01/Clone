@@ -974,71 +974,38 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   #offers.offers-compact .offers-inline-enquire{transition:none!important}
 }
 
-/* Listing Page 2: red hanging ribbons drop in as each offer row enters view.
-   Scoped to the revised compact offer area; no scroll hijacking. */
+
+/* Listing page 2: gift-wrap ribbon now belongs to each Unlock offer CTA.
+   The cross ribbon + bow loosen and drop away when the row scrolls into view. */
 #offers.offers-showcase.offers-compact.offers-ribbon{
-  padding:29px 28px 22px!important;
+  padding:27px 28px 22px!important;
   overflow:visible;
 }
-#offers.offers-ribbon .offers-header{margin:0 0 15px!important}
+#offers.offers-ribbon .offers-header{margin:0 0 14px!important}
 #offers.offers-ribbon .offers-title-group{min-width:0}
-#offers.offers-ribbon .offers-subline{
-  margin:5px 0 0!important;
-  font:400 14px/1.4 var(--font-body)!important;
-  color:var(--ae-muted,#526079)!important;
-}
-#offers.offers-ribbon .offers-compact-list{
-  display:grid;
-  gap:9px;
-  padding:0;
-  margin:0;
-}
+#offers.offers-ribbon .offers-compact-list{display:grid;gap:9px;padding:0;margin:0}
 #offers.offers-ribbon .offers-compact-item.offer-ribbon-row{
   display:grid;
-  grid-template-columns:39px minmax(0,1fr) auto;
+  grid-template-columns:minmax(0,1fr) auto;
   align-items:center;
-  min-width:0;
-  min-height:70px;
-  gap:12px;
-  padding:10px 13px!important;
+  gap:13px;
+  min-height:67px;
+  padding:12px 15px!important;
+  background:#fffdfa;
   border:1px solid #eee1da!important;
   border-radius:17px;
-  background:#fffdfa;
   box-shadow:0 3px 10px rgba(16,29,51,.025);
+  overflow:visible;
   transition:background .22s ease,border-color .22s ease,box-shadow .22s ease;
 }
 #offers.offers-ribbon .offers-compact-item.offer-ribbon-row:hover{
-  border-color:rgba(237,32,36,.30)!important;
   background:#fff;
+  border-color:rgba(237,32,36,.28)!important;
   box-shadow:0 7px 17px rgba(16,29,51,.055);
-}
-#offers.offers-ribbon .offer-drop-ribbon{
-  position:relative;
-  display:flex;align-items:center;justify-content:center;
-  width:36px;height:50px;
-  align-self:start;
-  color:#fff;
-  background:linear-gradient(115deg,#ee3136,#d81020);
-  clip-path:polygon(0 0,100% 0,100% 79%,50% 100%,0 79%);
-  transform-origin:50% 0;
-  backface-visibility:hidden;
-  filter:drop-shadow(0 3px 2px rgba(141,11,20,.08));
-}
-#offers.offers-ribbon .offer-drop-ribbon::before{
-  content:"";position:absolute;
-  top:0;left:6px;width:6px;height:100%;
-  transform:skewX(-12deg);
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.24),transparent);
-  pointer-events:none;
-}
-#offers.offers-ribbon .offer-drop-ribbon span{
-  position:relative;top:-5px;
-  font:700 13px/1 var(--font-body);
-  color:#fff;
 }
 #offers.offers-ribbon .offer-ribbon-copy{min-width:0}
 #offers.offers-ribbon .offer-ribbon-copy h3{
-  margin:0 0 3px;
+  margin:0 0 4px;
   color:var(--ae-ink,#101D33);
   font:600 19px/1.2 var(--font-title)!important;
   letter-spacing:-.022em;
@@ -1049,18 +1016,20 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   font:400 13px/1.42 var(--font-body)!important;
 }
 #offers.offers-ribbon .offer-ribbon-copy strong{
-  font-weight:700;
   color:var(--ae-ink,#101D33);
+  font-weight:700;
 }
 #offers.offers-ribbon .offer-unlock-button{
+  position:relative;
+  isolation:isolate;
   display:inline-flex;
   align-items:center;
   justify-content:center;
   gap:8px;
-  flex:none;
-  min-width:124px;
-  min-height:39px;
-  padding:9px 13px;
+  min-width:144px;
+  min-height:43px;
+  padding:10px 14px;
+  overflow:visible;
   border:1px solid rgba(237,32,36,.46);
   border-radius:999px;
   background:#fff;
@@ -1068,11 +1037,14 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   font:700 12px/1.25 var(--font-body)!important;
   white-space:nowrap;
   cursor:pointer;
-  transition:color .22s ease,border-color .22s ease,background .22s ease,transform .22s ease;
+  transition:background .22s ease,color .22s ease,border-color .22s ease,transform .22s ease;
 }
-#offers.offers-ribbon .offer-unlock-button svg{
-  width:15px;height:15px;flex:0 0 15px;
-  stroke:currentColor;
+#offers.offers-ribbon .offer-unlock-label,
+#offers.offers-ribbon .offer-unlock-button > svg{
+  position:relative;z-index:2;pointer-events:none;
+}
+#offers.offers-ribbon .offer-unlock-button > svg{
+  width:15px;height:15px;flex:0 0 15px;stroke:currentColor;
 }
 #offers.offers-ribbon .offer-unlock-button:hover,
 #offers.offers-ribbon .offer-unlock-button:focus-visible{
@@ -1080,65 +1052,132 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   border-color:var(--ae-red,#ED2024);
   transform:translateY(-1px);
 }
-#offers.offers-ribbon .offers-terms-note{
-  margin:12px 2px 0!important;
-  font:400 11px/1.5 var(--font-body)!important;
-  color:var(--ae-muted,#526079)!important;
+/* No extra click target: the gift embellishment never blocks the button. */
+#offers.offers-ribbon .offer-gift-wrap{
+  position:absolute;
+  inset:0;
+  z-index:4;
+  pointer-events:none;
+  overflow:visible;
 }
-@keyframes offer-ribbon-drop{
-  0%{opacity:0;transform:translateY(-45px) rotateX(-78deg) scaleY(.38)}
-  57%{opacity:1;transform:translateY(5px) rotateX(12deg) scaleY(1.07)}
-  78%{transform:translateY(-2px) rotateX(-5deg) scaleY(.99)}
-  100%{opacity:1;transform:translateY(0) rotateX(0deg) scaleY(1)}
+#offers.offers-ribbon .offer-gift-band{
+  position:absolute;display:block;
+  background:linear-gradient(90deg,#bd0920 0%,#ed2024 48%,#ff5d62 56%,#cf1026 100%);
+  box-shadow:0 2px 4px rgba(116,8,22,.18);
+  backface-visibility:hidden;
+  transform-origin:center;
+}
+#offers.offers-ribbon .offer-gift-band--vertical{
+  top:-8px;bottom:-8px;left:calc(50% - 5px);width:10px;
+  border-radius:3px;
+}
+#offers.offers-ribbon .offer-gift-band--horizontal{
+  left:-6px;right:-6px;top:calc(50% - 5px);height:10px;
+  border-radius:3px;
+}
+#offers.offers-ribbon .offer-gift-bow{
+  position:absolute;top:-17px;left:calc(50% - 14px);
+  width:28px;height:18px;
+  transform-origin:50% 80%;
+  filter:drop-shadow(0 2px 2px rgba(102,0,18,.12));
+}
+#offers.offers-ribbon .offer-gift-bow::before,
+#offers.offers-ribbon .offer-gift-bow::after{
+  content:"";position:absolute;top:1px;
+  width:15px;height:11px;
+  border:4px solid #dd102c;
+  background:rgba(255,255,255,.90);
+  border-radius:70% 50% 70% 50%;
+}
+#offers.offers-ribbon .offer-gift-bow::before{
+  right:calc(50% - 2px);transform:rotate(27deg);
+}
+#offers.offers-ribbon .offer-gift-bow::after{
+  left:calc(50% - 2px);transform:scaleX(-1) rotate(27deg);
+}
+#offers.offers-ribbon .offers-terms-note{
+  margin:13px 2px 0!important;
+  color:var(--ae-muted,#526079)!important;
+  font:400 11px/1.5 var(--font-body)!important;
+}
+/* Ribbon peels off in separate directions like an unwrapped gift. */
+@keyframes ae-gift-strip-vertical-fall{
+  0%,16%{opacity:1;transform:translate(0,0) rotate(0deg) scaleY(1)}
+  36%{opacity:1;transform:translate(-9px,8px) rotate(-14deg) scaleY(.96)}
+  100%{opacity:0;transform:translate(-44px,105px) rotate(-62deg) scaleY(.72)}
+}
+@keyframes ae-gift-strip-horizontal-fall{
+  0%,16%{opacity:1;transform:translate(0,0) rotate(0deg) scaleX(1)}
+  36%{opacity:1;transform:translate(8px,5px) rotate(11deg) scaleX(.98)}
+  100%{opacity:0;transform:translate(51px,88px) rotate(54deg) scaleX(.65)}
+}
+@keyframes ae-gift-bow-fall{
+  0%,13%{opacity:1;transform:translate(0,0) rotate(0deg) scale(1)}
+  34%{opacity:1;transform:translate(2px,-6px) rotate(18deg) scale(1.08)}
+  100%{opacity:0;transform:translate(31px,100px) rotate(115deg) scale(.68)}
 }
 @media(prefers-reduced-motion:no-preference){
-  #offers.offers-ribbon.offers-motion .offer-ribbon-row:not(.offer-revealed) .offer-drop-ribbon{
-    opacity:0;transform:translateY(-45px) rotateX(-70deg) scaleY(.35);
-  }
   #offers.offers-ribbon.offers-motion .offer-ribbon-row:not(.offer-revealed) .offer-ribbon-copy,
   #offers.offers-ribbon.offers-motion .offer-ribbon-row:not(.offer-revealed) .offer-unlock-button{
-    opacity:0;transform:translateY(8px);
+    opacity:.7;transform:translateY(7px);
   }
-  #offers.offers-ribbon.offers-motion .offer-ribbon-row.offer-revealed .offer-drop-ribbon{
-    animation:offer-ribbon-drop .77s cubic-bezier(.22,.87,.26,1) both;
-    animation-delay:calc(var(--offer-sequence,0) * 70ms);
+  #offers.offers-ribbon.offers-motion .offer-ribbon-row.offer-revealed .offer-ribbon-copy,
+  #offers.offers-ribbon.offers-motion .offer-ribbon-row.offer-revealed .offer-unlock-button{
+    animation:ae-offer-content-show .42s ease both;
   }
-  #offers.offers-ribbon .offer-ribbon-copy,
-  #offers.offers-ribbon .offer-unlock-button{
-    transition:opacity .45s ease,transform .45s ease,background .22s ease,color .22s ease;
+  #offers.offers-ribbon .offer-ribbon-copy{
+    transition:opacity .35s ease,transform .35s ease;
   }
+  #offers.offers-ribbon .offer-ribbon-row.offer-revealed .offer-gift-band--vertical,
+  #offers.offers-ribbon .offer-unlock-button.unwrap-replay .offer-gift-band--vertical{
+    animation:ae-gift-strip-vertical-fall .95s cubic-bezier(.25,.8,.28,1) .35s both;
+  }
+  #offers.offers-ribbon .offer-ribbon-row.offer-revealed .offer-gift-band--horizontal,
+  #offers.offers-ribbon .offer-unlock-button.unwrap-replay .offer-gift-band--horizontal{
+    animation:ae-gift-strip-horizontal-fall .95s cubic-bezier(.25,.8,.28,1) .35s both;
+  }
+  #offers.offers-ribbon .offer-ribbon-row.offer-revealed .offer-gift-bow,
+  #offers.offers-ribbon .offer-unlock-button.unwrap-replay .offer-gift-bow{
+    animation:ae-gift-bow-fall 1.05s cubic-bezier(.2,.8,.35,1) .3s both;
+  }
+  #offers.offers-ribbon .offer-unlock-button.unwrap-replay .offer-gift-band--vertical{
+    animation:ae-gift-strip-vertical-fall .87s cubic-bezier(.25,.8,.28,1) 0s both;
+  }
+  #offers.offers-ribbon .offer-unlock-button.unwrap-replay .offer-gift-band--horizontal{
+    animation:ae-gift-strip-horizontal-fall .87s cubic-bezier(.25,.8,.28,1) 0s both;
+  }
+  #offers.offers-ribbon .offer-unlock-button.unwrap-replay .offer-gift-bow{
+    animation:ae-gift-bow-fall .95s cubic-bezier(.2,.8,.35,1) 0s both;
+  }
+}
+@keyframes ae-offer-content-show{
+  from{opacity:.7;transform:translateY(7px)}
+  to{opacity:1;transform:translateY(0)}
 }
 @media(max-width:1050px){
   #offers.offers-ribbon .offer-ribbon-copy h3{font-size:18px!important}
-  #offers.offers-ribbon .offers-compact-item.offer-ribbon-row{grid-template-columns:36px minmax(0,1fr) auto;gap:10px}
-  #offers.offers-ribbon .offer-unlock-button{min-width:112px;padding:9px 11px}
+  #offers.offers-ribbon .offers-compact-item.offer-ribbon-row{gap:10px}
+  #offers.offers-ribbon .offer-unlock-button{min-width:128px;padding:9px 12px}
 }
 @media(max-width:800px){
-  #offers.offers-showcase.offers-compact.offers-ribbon{padding:24px 21px!important}
-  #offers.offers-ribbon .offers-compact-item.offer-ribbon-row{
-    grid-template-columns:36px minmax(0,1fr);
-    min-height:65px;padding:11px!important;
-    gap:8px 10px;
+  #offers.offers-showcase.offers-compact.offers-ribbon{padding:23px 21px!important}
+  #offers.offers-ribbon .offer-ribbon-row.offer-ribbon-row{
+    grid-template-columns:minmax(0,1fr);
+    gap:9px;min-height:0;padding:13px!important;
   }
-  #offers.offers-ribbon .offer-unlock-button{
-    grid-column:2;justify-self:start;min-height:35px;
-  }
+  #offers.offers-ribbon .offer-unlock-button{justify-self:start;min-height:38px}
 }
 @media(max-width:550px){
-  #offers.offers-showcase.offers-compact.offers-ribbon{padding:22px 16px!important}
-  #offers.offers-ribbon .offers-subline{font-size:12px!important}
+  #offers.offers-showcase.offers-compact.offers-ribbon{padding:21px 15px!important}
   #offers.offers-ribbon .offers-compact-list{gap:8px}
-  #offers.offers-ribbon .offers-compact-item.offer-ribbon-row{padding:11px!important}
-  #offers.offers-ribbon .offer-drop-ribbon{width:32px;height:44px}
   #offers.offers-ribbon .offer-ribbon-copy h3{font-size:17px!important}
   #offers.offers-ribbon .offer-ribbon-copy p{font-size:12px!important}
-  #offers.offers-ribbon .offer-unlock-button{font-size:11px!important;min-height:34px}
+  #offers.offers-ribbon .offer-unlock-button{font-size:11px!important;min-height:36px}
 }
 @media(prefers-reduced-motion:reduce){
-  #offers.offers-ribbon .offer-drop-ribbon,
-  #offers.offers-ribbon .offer-ribbon-copy,
-  #offers.offers-ribbon .offer-unlock-button{
-    opacity:1!important;transform:none!important;
-    animation:none!important;transition:none!important;
+  #offers.offers-ribbon .offer-gift-wrap{display:none!important}
+  #offers.offers-ribbon .offer-unlock-button,
+  #offers.offers-ribbon .offer-ribbon-copy{
+    opacity:1!important;transform:none!important;animation:none!important;
   }
 }
