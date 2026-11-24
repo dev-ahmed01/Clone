@@ -2315,9 +2315,9 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @media(prefers-reduced-motion:reduce){#faqs .ae-faq-item,#faqs .ae-faq-plus,#faqs .ae-faq-plus::after{transition:none!important}#faqs .ae-faq-item[open] .ae-faq-a{animation:none!important}#faqs .ae-faq-item::details-content{transition:none!important}}
 
 #faqs .ae-faq-heading{margin-bottom:24px}
-#faqs .ae-faq-footer{display:flex;justify-content:center;align-items:center;margin-top:20px}
+#faqs .ae-faq-footer{display:flex;justify-content:center;align-items:center;margin-top:10px}
 #faqs.section .ae-faq-heading #aeFaqTitle{margin:0!important}
-#faqs .ae-faq-view-all{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-height:44px;padding:9px 16px;border:1px solid #edd7d4;border-radius:999px;background:rgba(255,255,255,.72);color:var(--ae-red,#ed2024);font:600 13px/1.4 var(--font-body);cursor:pointer;transition:background .22s,color .22s,border-color .22s}
+#faqs .ae-faq-view-all{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-height:44px;min-width:174px;padding:9px 25px;border:1px solid #edd7d4;border-radius:999px;background:rgba(255,255,255,.72);color:var(--ae-red,#ed2024);font:600 13px/1.4 var(--font-body);cursor:pointer;transition:background .22s,color .22s,border-color .22s}
 #faqs .ae-faq-view-all[hidden]{display:none!important}
 #faqs .ae-faq-view-all:hover{background:var(--ae-red,#ed2024);border-color:var(--ae-red,#ed2024);color:white}
 #faqs .ae-faq-view-all:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:3px}
@@ -2325,6 +2325,36 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 #faqs .ae-faq-view-all.is-expanded svg{transform:rotate(180deg)}
 @container(max-width:640px){#faqs .ae-faq-heading{margin-bottom:18px}}
 @media(prefers-reduced-motion:reduce){#faqs .ae-faq-view-all,#faqs .ae-faq-view-all svg{transition:none!important}}
+</style>
+<style id="ae-reviews-marquee-style">
+#reviews.section.ae-review-section{padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;overflow:hidden;container-type:inline-size;border-radius:0!important}
+#reviews .ae-review-heading{text-align:center;margin:0 0 24px}
+#reviews.section .ae-review-heading h2{font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;letter-spacing:-.042em!important;margin:0 0 10px!important;color:var(--ae-ink,#101d33)!important}
+#reviews .ae-review-heading h2 span{color:var(--ae-red,#ed2024)}
+#reviews .ae-review-heading p{font:400 14px/1.6 var(--font-body)!important;color:#526079;margin:0!important}
+#reviews .ae-review-window{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;overscroll-behavior-inline:contain;scroll-behavior:auto!important;padding:12px 0 20px;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+#reviews .ae-review-window::-webkit-scrollbar{display:none}
+#reviews .ae-review-window:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:-2px;mask-image:none}
+#reviews .ae-review-track,#reviews .ae-review-group{display:flex;align-items:stretch;gap:14px;width:max-content}
+#reviews .ae-review-card{position:relative;box-sizing:border-box;display:flex;flex:0 0 300px;width:300px;min-height:214px;flex-direction:column;gap:12px;padding:18px 18px 17px;border:1px solid rgba(17,31,53,.06);border-radius:16px;background:linear-gradient(145deg,#fff,rgba(255,255,255,.82));box-shadow:0 7px 20px rgba(16,29,51,.065);overflow:hidden}
+#reviews .ae-review-card::after{content:"";position:absolute;bottom:0;left:15px;right:15px;height:2px;background:linear-gradient(90deg,var(--ae-red,#ed2024),#ffb900);border-radius:2px}
+#reviews .ae-review-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+#reviews .ae-review-top h3{font:600 13px/1.4 var(--font-body)!important;color:var(--ae-red,#ed2024)!important;text-transform:uppercase;letter-spacing:.015em;margin:0!important}
+#reviews .ae-review-top>span{font:700 30px/.75 Georgia,serif;color:var(--ae-red,#ed2024)}
+#reviews .ae-review-card p{font:400 14px/1.62 var(--font-body)!important;color:var(--ae-ink,#101d33)!important;margin:0!important}
+#reviews .ae-review-person{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:8px}
+#reviews .ae-review-initial{display:grid;place-items:center;flex:0 0 34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#fff0ec,#fff3d7);font:600 12px/1 var(--font-body);color:var(--ae-ink,#101d33)}
+#reviews .ae-review-person strong,#reviews .ae-review-person small{display:block;font-family:var(--font-body)}
+#reviews .ae-review-person strong{font-size:13px;font-weight:600;line-height:1.45;color:var(--ae-ink,#101d33)}
+#reviews .ae-review-person small{font-size:11px;font-weight:400;color:#526079}
+#reviews .ae-review-controls{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;margin:0}
+#reviews .ae-review-source,#reviews .ae-review-pause{font:500 13px/1.4 var(--font-body);color:#526079;background:none;border:0;padding:8px 2px;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+#reviews .ae-review-source svg{width:15px;height:15px;fill:none;stroke:currentColor}
+#reviews .ae-review-pause[hidden]{display:none!important}
+#reviews .ae-review-source:hover,#reviews .ae-review-pause:hover{color:var(--ae-red,#ed2024)}
+#reviews .ae-review-source:focus-visible,#reviews .ae-review-pause:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:2px}
+@container(max-width:540px){#reviews .ae-review-card{flex-basis:260px;width:260px;padding:16px;min-height:225px}#reviews .ae-review-window{mask-image:none}#reviews .ae-review-heading{margin-bottom:18px}}
+@media(prefers-reduced-motion:reduce){#reviews .ae-review-window{mask-image:none}}
 </style>
 </head>
 <body>
@@ -2651,70 +2681,59 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </div>
 <a class="source-link" href="https://www.google.com/maps/search/?api=1&amp;query=15+Wood+Street+Kingston+upon+Thames+KT1+1TY" rel="noopener noreferrer" target="_blank">Explore the area and check routes <svg><use href="#arrow"></use></svg></a>
 </div></div><p class="source-caption">*University times vary by campus and route. Walking times are approximate figures stated by iQ; other places are identified by iQ or Kingston Council without invented timings. Check live directions before travelling.</p></section>
-<section class="section" id="reviews"><h2>Student reviews</h2><div class="reviews-summary"><div class="reviews-score"><svg aria-hidden="true"><use href="#star"></use></svg><strong>4.9</strong><span>/ 5</span></div><div><strong>11 reviews on Amber</strong><p>This is an attributed listing snapshot, not a claim of Accom-verified reviews. Read the original reviews for first-hand context.</p><a class="source-link" href="https://amberstudent.com/places/iq-kingston-1709160215838" rel="noopener noreferrer" target="_blank">Read reviews on Amber <svg><use href="#arrow"></use></svg></a></div></div>
-  <div class="review-preview-intro">
-  <div><span class="review-section-eyebrow">YOUR NEXT HOME, THROUGH STUDENT EYES</span><h3>What students might say</h3></div>
-  <p><strong>Fictional sample reviews.</strong> These names and quotes are fictional layout examples, not feedback submitted by iQ Kingston residents. See the source-attributed reviews above for real experiences.</p>
-</div>
-<div class="review-example-grid" aria-label="Six fictional sample review cards">
-  <article class="review-example">
-      <div class="review-card-head">
-        <span class="review-avatar" aria-hidden="true">AR</span>
-        <div class="review-card-person"><strong>Aisha R.</strong><span>Location</span></div>
-        <span class="review-quote-mark" aria-hidden="true">“</span>
+<section class="section ae-review-section" id="reviews" aria-labelledby="aeReviewsTitle">
+  <header class="ae-review-heading"><h2 id="aeReviewsTitle">Stories that make <span>student life feel better.</span></h2><p>Fictional student perspectives for this design preview.</p></header>
+  <div class="ae-review-window" id="aeReviewWindow" tabindex="0" aria-label="Sample review cards, scroll horizontally to explore">
+    <div class="ae-review-track" id="aeReviewTrack">
+      <div class="ae-review-group" id="aeReviewGroup">
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Getting around</h3><span aria-hidden="true">“</span></div><p>“Having Kingston station so close made exploring London easy, while Kingston itself was a lovely place to come home to after a busy day.”</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">AR</span><div><strong>Aisha R.</strong><small>Fictional student perspective</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>A place of my own</h3><span aria-hidden="true">“</span></div><p>“I loved having my own en suite and a comfortable space to unwind. The shared areas made it easy to meet people without feeling crowded.”</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">OC</span><div><strong>Oliver C.</strong><small>Fictional student perspective</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Simpler budgeting</h3><span aria-hidden="true">“</span></div><p>“Having the bills included made such a difference when planning my weekly budget. It was one less thing to worry about during term.”</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">MP</span><div><strong>Maya P.</strong><small>Fictional student perspective</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Space to study and connect</h3><span aria-hidden="true">“</span></div><p>“The study spaces were a real highlight for me. I could focus when I needed to and still find somewhere relaxed to spend time with friends.”</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">DE</span><div><strong>Daniel E.</strong><small>Fictional student perspective</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>Everything close by</h3><span aria-hidden="true">“</span></div><p>“The location was ideal for everyday life. Shops, cafés and the riverside were close enough that I rarely had to plan a long journey.”</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">SB</span><div><strong>Sofia B.</strong><small>Fictional student perspective</small></div></div></article>
+        <article class="ae-review-card"><div class="ae-review-top"><h3>An easy start</h3><span aria-hidden="true">“</span></div><p>“Settling into a new city felt much easier with a room ready for me and the everyday essentials nearby. It quickly started to feel like home.”</p><div class="ae-review-person"><span class="ae-review-initial" aria-hidden="true">AM</span><div><strong>Arjun M.</strong><small>Fictional student perspective</small></div></div></article>
       </div>
-      <h4 class="review-card-title">Getting around</h4>
-      <p>“Having Kingston station so close made exploring London easy, while Kingston itself was a lovely place to come home to after a busy day.”</p>
-      <div class="review-card-footer"><span class="review-card-rule"></span><span>Student perspective</span></div>
-    </article><article class="review-example">
-      <div class="review-card-head">
-        <span class="review-avatar" aria-hidden="true">OC</span>
-        <div class="review-card-person"><strong>Oliver C.</strong><span>Room comfort</span></div>
-        <span class="review-quote-mark" aria-hidden="true">“</span>
-      </div>
-      <h4 class="review-card-title">A place of my own</h4>
-      <p>“I loved having my own en suite and a comfortable space to unwind. The shared areas made it easy to meet people without feeling crowded.”</p>
-      <div class="review-card-footer"><span class="review-card-rule"></span><span>Student perspective</span></div>
-    </article><article class="review-example">
-      <div class="review-card-head">
-        <span class="review-avatar" aria-hidden="true">MP</span>
-        <div class="review-card-person"><strong>Maya P.</strong><span>Bills included</span></div>
-        <span class="review-quote-mark" aria-hidden="true">“</span>
-      </div>
-      <h4 class="review-card-title">Simpler budgeting</h4>
-      <p>“Having the bills included made such a difference when planning my weekly budget. It was one less thing to worry about during term.”</p>
-      <div class="review-card-footer"><span class="review-card-rule"></span><span>Student perspective</span></div>
-    </article><article class="review-example">
-      <div class="review-card-head">
-        <span class="review-avatar" aria-hidden="true">DE</span>
-        <div class="review-card-person"><strong>Daniel E.</strong><span>Student life</span></div>
-        <span class="review-quote-mark" aria-hidden="true">“</span>
-      </div>
-      <h4 class="review-card-title">Space to study and connect</h4>
-      <p>“The study spaces were a real highlight for me. I could focus when I needed to and still find somewhere relaxed to spend time with friends.”</p>
-      <div class="review-card-footer"><span class="review-card-rule"></span><span>Student perspective</span></div>
-    </article><article class="review-example">
-      <div class="review-card-head">
-        <span class="review-avatar" aria-hidden="true">SB</span>
-        <div class="review-card-person"><strong>Sofia B.</strong><span>Neighbourhood</span></div>
-        <span class="review-quote-mark" aria-hidden="true">“</span>
-      </div>
-      <h4 class="review-card-title">Everything close by</h4>
-      <p>“The location was ideal for everyday life. Shops, cafés and the riverside were close enough that I rarely had to plan a long journey.”</p>
-      <div class="review-card-footer"><span class="review-card-rule"></span><span>Student perspective</span></div>
-    </article><article class="review-example">
-      <div class="review-card-head">
-        <span class="review-avatar" aria-hidden="true">AM</span>
-        <div class="review-card-person"><strong>Arjun M.</strong><span>Moving in</span></div>
-        <span class="review-quote-mark" aria-hidden="true">“</span>
-      </div>
-      <h4 class="review-card-title">An easy start</h4>
-      <p>“Settling into a new city felt much easier with a room ready for me and the everyday essentials nearby. It quickly started to feel like home.”</p>
-      <div class="review-card-footer"><span class="review-card-rule"></span><span>Student perspective</span></div>
-    </article>
-</div>
-<p class="review-example-disclosure">These are fictional examples for design review only. Replace with permissioned, attributable resident feedback before publishing.</p>
+    </div>
+  </div>
+  <div class="ae-review-controls"><a href="https://amberstudent.com/places/iq-kingston-1709160215838" rel="noopener noreferrer" target="_blank" class="ae-review-source">4.9/5 · 11 reviews on Amber <svg aria-hidden="true"><use href="#arrow"></use></svg></a><button type="button" id="aeReviewPause" class="ae-review-pause" hidden>Pause reviews</button></div>
 </section>
+<script id="aeReviewsInteraction">
+(() => {
+  const viewport=document.getElementById('aeReviewWindow'),track=document.getElementById('aeReviewTrack'),group=document.getElementById('aeReviewGroup'),pause=document.getElementById('aeReviewPause');
+  if(!viewport||!track||!group||!pause)return;
+  const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
+  let clone=null,frame=0,previous=0,position=0,period=0,paused=false,hover=false,focused=false,touching=false,visible=false,manualUntil=0;
+  const stop=()=>{if(frame)cancelAnimationFrame(frame);frame=0;previous=0;};
+  const measure=()=>{period=group.getBoundingClientRect().width+parseFloat(getComputedStyle(track).columnGap||0);};
+  const tick=now=>{
+    frame=0;
+    if(!visible||paused||hover||focused||touching||motion.matches||document.hidden){previous=0;return;}
+    if(now<manualUntil){previous=0;frame=requestAnimationFrame(tick);return;}
+    if(period>0){position=(position+Math.min(previous?now-previous:0,50)*.026)%period;viewport.scrollLeft=position;}
+    previous=now;frame=requestAnimationFrame(tick);
+  };
+  const start=()=>{if(!frame&&visible&&!paused&&!hover&&!focused&&!touching&&!motion.matches&&!document.hidden)frame=requestAnimationFrame(tick);};
+  const configure=()=>{
+    stop();
+    if(motion.matches){clone?.remove();clone=null;pause.hidden=true;return;}
+    if(!clone){clone=group.cloneNode(true);clone.removeAttribute('id');clone.setAttribute('aria-hidden','true');clone.inert=true;track.append(clone);}
+    measure();position=viewport.scrollLeft%Math.max(period,1);pause.hidden=false;start();
+  };
+  pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Play reviews':'Pause reviews';if(paused)stop();else{position=viewport.scrollLeft%Math.max(period,1);start();}});
+  viewport.addEventListener('pointerenter',()=>{hover=true;stop();});
+  viewport.addEventListener('pointerleave',()=>{hover=false;position=viewport.scrollLeft%Math.max(period,1);start();});
+  viewport.addEventListener('focusin',()=>{focused=true;stop();});
+  viewport.addEventListener('focusout',()=>{focused=false;position=viewport.scrollLeft%Math.max(period,1);start();});
+  viewport.addEventListener('touchstart',()=>{touching=true;stop();},{passive:true});
+  const endTouch=()=>{touching=false;position=viewport.scrollLeft%Math.max(period,1);manualUntil=performance.now()+1800;start();};
+  viewport.addEventListener('touchend',endTouch,{passive:true});viewport.addEventListener('touchcancel',endTouch,{passive:true});
+  viewport.addEventListener('scroll',()=>{if(hover||focused||touching||paused||performance.now()<manualUntil)position=viewport.scrollLeft%Math.max(period,1);},{passive:true});
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible){measure();start();}else stop();},{threshold:0.05}).observe(viewport);
+  new ResizeObserver(()=>{measure();position=viewport.scrollLeft%Math.max(period,1);}).observe(group);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else start();});
+  motion.addEventListener('change',configure);configure();
+})();
+</script>
 </div>
 <aside aria-label="Starting room price and enquiry" class="cta-aside">
   <div class="cta-sticky">
