@@ -2464,6 +2464,35 @@ html.ae-faq-dialog-open{overflow:hidden!important}
 @container(max-width:490px){#similar-properties .ae-sim-row{grid-auto-columns:83%;gap:12px}#similar-properties .ae-sim-tabs{gap:19px}#similar-properties .ae-sim-info h3{font-size:19px!important}}
 @media(prefers-reduced-motion:reduce){#similar-properties *{animation:none!important;transition:none!important}#similar-properties .ae-sim-card:hover .ae-sim-photo-secondary{opacity:1}}
 </style>
+<style id="ae-location-reference-style">
+#location.section.ae-location-section{padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible;min-width:0;container-type:inline-size}
+#location.section.ae-location-section #aeLocationTitle{font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;letter-spacing:-.042em!important;margin:0 0 24px!important;color:var(--ae-ink,#101d33)!important}
+#location .ae-location-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:16px;align-items:stretch}
+#location .ae-location-card{min-width:0;box-sizing:border-box;background:linear-gradient(145deg,rgba(255,255,255,.95),rgba(255,255,255,.77));border:1px solid rgba(16,29,51,.075);border-radius:28px;box-shadow:0 10px 28px rgba(16,29,51,.065);display:flex;flex-direction:column;padding:16px;gap:12px}
+#location .ae-location-map-head,#location .ae-location-map-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0;padding:0 3px}
+#location .ae-location-map-head h3,#location .ae-location-landmarks h3{font:500 16px/1.4 var(--font-body)!important;letter-spacing:-.015em!important;color:var(--ae-ink,#101d33)!important;margin:0!important}
+#location .ae-location-map-head h3{display:flex;align-items:center;gap:8px;white-space:nowrap}
+#location .ae-location-dot{display:inline-block;flex:0 0 9px;width:9px;height:9px;border-radius:50%;background:var(--ae-red,#ed2024);box-shadow:0 0 0 5px rgba(237,32,36,.13)}
+#location .ae-location-map-head>span,#location .ae-location-map-foot>span{font:400 13px/1.5 var(--font-body);color:#526079}
+#location .ae-location-map-head>span{text-align:right}
+#location .ae-location-frame{position:relative;min-height:330px;flex:1;overflow:hidden;border-radius:18px;background:#e7ece7;isolation:isolate}
+#location .ae-location-frame iframe{display:block;width:100%;height:100%;min-height:330px;position:absolute;inset:0;border:0}
+#location .ae-location-map-foot a,#location .ae-location-landmark a{font:400 13px/1.5 var(--font-body)!important;color:var(--ae-red,#ed2024)!important;text-decoration:none;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+#location .ae-location-map-foot a svg,#location .ae-location-landmark a svg{width:13px;height:13px;flex:none}
+#location .ae-location-map-foot a:hover,#location .ae-location-landmark a:hover{text-decoration:underline}
+#location .ae-location-landmarks{padding:22px 21px;gap:12px}
+#location .ae-location-landmark-list{display:flex;flex-direction:column}
+#location .ae-location-landmark{display:flex;flex-direction:column;gap:3px;padding:13px 0;border-bottom:1px solid rgba(16,29,51,.10)}
+#location .ae-location-landmark:first-child{padding-top:4px}
+#location .ae-location-landmark:last-child{border-bottom:0}
+#location .ae-location-landmark strong{font:500 14px/1.45 var(--font-body)!important;color:var(--ae-ink,#101d33)!important}
+#location .ae-location-landmark>span{font:400 14px/1.45 var(--font-body);color:var(--ae-red,#ed2024)}
+#location .ae-location-landmark a{color:#526079!important;text-decoration:underline;text-underline-offset:3px;align-self:flex-start}
+#location .ae-location-landmarks p{font:400 12px/1.6 var(--font-body)!important;color:#526079!important;margin:auto 0 0!important;padding-top:8px}
+#location a:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:3px}
+@container(max-width:650px){#location .ae-location-grid{grid-template-columns:1fr;gap:12px}#location .ae-location-frame,#location .ae-location-frame iframe{min-height:290px}#location .ae-location-card{border-radius:22px}#location .ae-location-landmark-list{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}#location .ae-location-landmark:first-child{padding-top:13px}#location .ae-location-landmark:nth-last-child(-n+2){border-bottom:0}}
+@container(max-width:390px){#location .ae-location-map-head{align-items:flex-start;flex-direction:column;gap:5px}#location .ae-location-map-head>span{padding-left:17px}#location .ae-location-card{padding:13px}#location .ae-location-landmark-list{grid-template-columns:1fr}#location .ae-location-landmark:nth-last-child(2){border-bottom:1px solid rgba(16,29,51,.10)}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2522,13 +2551,13 @@ html.ae-faq-dialog-open{overflow:hidden!important}
   <a class="active" href="#overview">Description</a>
   <a href="#offers">Offers</a>
   <a href="#amenities">Amenities</a>
+  <a href="#location">Location</a>
   <a href="#rooms">Room Types</a>
   <a href="#rules">House Rules</a>
   <a href="#payments">Payment &amp; Fees</a>
   
   
   <a href="#faqs">FAQs</a>
-  <a href="#location">Location</a>
   <a href="#reviews">Reviews</a>
   <a href="#similar-properties">Similar properties</a>
  </div>
@@ -2665,6 +2694,28 @@ html.ae-faq-dialog-open{overflow:hidden!important}
     </div>
   </div>
 </section>
+<section class="section ae-location-section" id="location" aria-labelledby="aeLocationTitle">
+  <h2 id="aeLocationTitle">Location</h2>
+  <div class="ae-location-grid">
+    <article class="ae-location-card ae-location-map-card">
+      <div class="ae-location-map-head"><h3><span class="ae-location-dot" aria-hidden="true"></span>Neighbourhood map</h3><span>Kingston upon Thames</span></div>
+      <div class="ae-location-frame">
+        <iframe title="Google Maps showing iQ Kingston and its neighbourhood" src="https://maps.google.com/maps?q=iQ%20Kingston%2C%2015%20Wood%20Street%2C%20Kingston%20upon%20Thames%2C%20KT1%201TY%2C%20United%20Kingdom&amp;z=15&amp;output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="ae-location-map-foot"><span>Explore the area</span><a href="https://www.google.com/maps/search/?api=1&amp;query=iQ%20Kingston%2C%2015%20Wood%20Street%2C%20Kingston%20upon%20Thames%2C%20KT1%201TY%2C%20United%20Kingdom" target="_blank" rel="noopener noreferrer">Open in Maps <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 18 6M8 6h10v10"/></svg></a></div>
+    </article>
+    <article class="ae-location-card ae-location-landmarks">
+      <h3>Nearby landmarks</h3>
+      <div class="ae-location-landmark-list">
+        <div class="ae-location-landmark"><strong>Kingston Railway Station</strong><span>4 min walk</span></div>
+        <div class="ae-location-landmark"><strong>Kingston College</strong><span>9 min walk</span></div>
+        <div class="ae-location-landmark"><strong>Kingston University</strong><span>15 min walk</span></div>
+        <div class="ae-location-landmark"><strong>The Bentall Centre</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Bentall%20Centre%2C%20Kingston%20upon%20Thames%2C%20United%20Kingdom" target="_blank" rel="noopener noreferrer">Find on map <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 18 6M8 6h10v10"/></svg></a></div>
+      </div>
+      <p>Approximate walking times from this property.</p>
+    </article>
+  </div>
+</section>
 <section class="section ae-ambassador-section" id="ambassadors" aria-labelledby="ambassadorsHeading">
   <div class="ae-ambassador-compact">
     <header class="ae-ambassador-intro">
@@ -2744,30 +2795,7 @@ html.ae-faq-dialog-open{overflow:hidden!important}
   <div class="ae-faq-footer"><button id="aeFaqViewAll" class="ae-faq-view-all" type="button" aria-controls="aeFaqDialog" aria-haspopup="dialog" hidden><span>View more</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button></div>
 </section>
 
-<section class="section" id="location"><h2>Nearby landmarks</h2><div class="location-panel"><div aria-hidden="true" class="location-illustration"><span class="route-a"></span><span class="route-b"></span><span class="location-pin"><svg><use href="#pin"></use></svg></span></div><div class="landmarks-detail">
-<strong>iQ Kingston</strong><p>15 Wood Street, Kingston upon Thames, KT1 1TY</p>
-<div class="landmark-groups">
-<div class="landmark-group" data-landmark-category="universities"><h3>Universities and colleges</h3>
-<div class="landmark-row"><span>Kingston College</span><strong>Approx. 9 min walk</strong></div>
-<div class="landmark-row"><span>Kingston University</span><strong>Approx. 15 min walk*</strong></div>
-</div>
-<div class="landmark-group" data-landmark-category="transport"><h3>Transport</h3>
-<div class="landmark-row"><span>Kingston Railway Station</span><strong>Approx. 4 min walk</strong></div>
-<div class="landmark-row"><span>Wood Street bus stops</span><strong>Nearby · check routes</strong></div>
-</div>
-<div class="landmark-group" data-landmark-category="shopping"><h3>Shopping and essentials</h3>
-<div class="landmark-row"><span>The Bentall Centre</span><strong>Wood Street entrance</strong></div>
-<div class="landmark-row"><span>Sainsbury’s and Waitrose</span><strong>Local supermarkets</strong></div>
-</div>
-<div class="landmark-group" data-landmark-category="leisure"><h3>Places to explore</h3>
-<div class="landmark-row"><span>River Thames riverside</span><strong>Close to the property</strong></div>
-<div class="landmark-row"><span>Kingston Ancient Market Place</span><strong>Town-centre landmark</strong></div>
-<div class="landmark-row"><span>Canbury Gardens</span><strong>Kingston green space</strong></div>
-<div class="landmark-row"><span>Rose Theatre</span><strong>Town-centre arts venue</strong></div>
-</div>
-</div>
-<a class="source-link" href="https://www.google.com/maps/search/?api=1&amp;query=15+Wood+Street+Kingston+upon+Thames+KT1+1TY" rel="noopener noreferrer" target="_blank">Get directions <svg><use href="#arrow"></use></svg></a>
-</div></div><p class="source-caption">Walking times are approximate and vary by route.</p></section>
+
 <section class="section ae-review-section" id="reviews" aria-labelledby="aeReviewsTitle">
   <header class="ae-review-heading"><h2 id="aeReviewsTitle">Stories that make <span>student life feel better.</span></h2></header>
   <div class="ae-review-window" id="aeReviewWindow" tabindex="0" aria-label="Student review summaries, scroll horizontally to explore">
