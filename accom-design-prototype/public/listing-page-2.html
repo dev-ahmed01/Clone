@@ -2170,6 +2170,30 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @container (max-width:470px){#ambassadors .ae-ambassador-types{grid-template-columns:1fr;gap:9px}#ambassadors .ae-ambassador-type{min-height:74px;padding:11px 15px}#ambassadors .ae-ambassador-portraits img{width:48px;height:48px}#ambassadors .ae-ambassador-intro{margin-bottom:16px}#ambassadors .ae-ambassador-eligibility{margin-top:15px!important}}
 @media(max-width:600px){#ambassadors .ae-ambassador-compact{padding:22px 16px 19px;border-radius:19px}}
 @media(prefers-reduced-motion:reduce){#ambassadors .ae-ambassador-type,#ambassadors .ae-ambassador-type::after,#ambassadors .ae-ambassador-portraits img{transition:none!important;transform:none!important}}
+
+/* Locked community benefit. This is a public preview, not an authorization mechanism. */
+#ambassadors .ae-ambassador-compact{padding:26px 25px 23px}
+#ambassadors .ae-ambassador-intro{margin-bottom:19px}
+#ambassadors .ae-ambassador-type{min-height:102px;cursor:default;gap:10px}
+#ambassadors .ae-ambassador-card-copy{min-width:0;flex:1}
+#ambassadors .ae-ambassador-state{display:block;margin-top:6px;color:#fff;font:400 11px/1.35 var(--font-body);letter-spacing:0}
+#ambassadors .ae-ambassador-locked-art{position:relative;flex:none;display:grid;place-items:center;isolation:isolate}
+#ambassadors[data-access="locked"] .ae-ambassador-portraits{filter:blur(4px) saturate(.75);opacity:.72;pointer-events:none}
+#ambassadors[data-access="locked"] .ae-ambassador-portraits img{transform:none!important}
+#ambassadors .ae-ambassador-lock{position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:43px;height:43px;border:1px solid rgba(255,255,255,.78);border-radius:50%;background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(255,234,232,.94));box-shadow:0 5px 18px rgba(100,0,0,.23),inset 0 1px 0 #fff;color:#b70f19}
+#ambassadors .ae-ambassador-lock svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.7}
+#ambassadors .ae-ambassador-footer{display:flex;align-items:center;flex-direction:column;gap:8px;margin-top:17px}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;min-width:0;padding:10px 18px;border:1px solid #fff;border-radius:999px;background:#fff;color:#b70f19;box-shadow:0 4px 12px rgba(100,0,0,.1);font:600 13px/1.35 var(--font-body)!important;transition:background .24s,color .24s}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.7}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.28) 50%,transparent 80%);transform:translateX(-120%);transition:transform .45s ease;pointer-events:none}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book:hover,#ambassadors .ae-ambassador-compact .ae-ambassador-book:focus-visible{background:#a50e17;color:#fff;transform:none}
+#ambassadors .ae-ambassador-compact .ae-ambassador-book:hover::after{transform:translateX(120%)}
+#ambassadors .ae-ambassador-book:focus-visible{outline:2px solid white;outline-offset:3px}
+#ambassadors .ae-ambassador-footer .ae-ambassador-eligibility{margin:0!important;font-size:11px!important;line-height:1.5!important}
+@container(max-width:620px){#ambassadors .ae-ambassador-type{min-height:86px}#ambassadors .ae-ambassador-lock{width:36px;height:36px}#ambassadors .ae-ambassador-lock svg{width:19px;height:19px}}
+@container(max-width:470px){#ambassadors .ae-ambassador-type{min-height:78px}#ambassadors .ae-ambassador-footer{margin-top:15px}#ambassadors .ae-ambassador-footer .ae-ambassador-eligibility span{display:block}}
+@media(max-width:600px){#ambassadors .ae-ambassador-compact{padding:22px 16px 19px}}
+@media(prefers-reduced-motion:reduce){#ambassadors .ae-ambassador-compact .ae-ambassador-book,#ambassadors .ae-ambassador-compact .ae-ambassador-book::after{transition:none!important}}
 </style>
 </head>
 <body>
@@ -2371,17 +2395,17 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
     </div>
   </div>
 </section>
-<section class="section ae-ambassador-section" id="ambassadors" aria-labelledby="ambassadorsHeading">
+<section class="section ae-ambassador-section" id="ambassadors" data-access="locked" aria-labelledby="ambassadorsHeading">
   <div class="ae-ambassador-compact">
     <header class="ae-ambassador-intro">
       <h2 id="ambassadorsHeading">Book here and meet our ambassadors.</h2>
-      <p>Book with us and connect with student ambassadors who can help you settle in and make friends from day one.</p>
+      <p>Unlock introductions to student ambassadors when you book your stay with us.</p>
     </header>
     <div class="ae-ambassador-types">
-      <div class="ae-ambassador-type"><h3>Accommodation<br/> Ambassadors</h3><div class="ae-ambassador-portraits" aria-hidden="true"><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy2-rjxn6t0vmznhq17p9irg4l2adyuhjpib03ksl4opac.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/image-rjxmn1h1xelfl7x9oh6v72mcpa9mou1hy9q8anzq4k.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy1-rjxn6s31g5m7ef92f0ctk3atskz4c0eknyxb3uq3gk.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/></div></div>
-      <div class="ae-ambassador-type"><h3>University<br/> Ambassadors</h3><div class="ae-ambassador-portraits" aria-hidden="true"><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy2-rjxn6t0vmznhq17p9irg4l2adyuhjpib03ksl4opac.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/image-rjxmn1h1xelfl7x9oh6v72mcpa9mou1hy9q8anzq4k.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy1-rjxn6s31g5m7ef92f0ctk3atskz4c0eknyxb3uq3gk.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/></div></div>
+      <div class="ae-ambassador-type"><div class="ae-ambassador-card-copy"><h3>Accommodation<br/> Ambassadors</h3><span class="ae-ambassador-state">Locked until booking</span></div><div class="ae-ambassador-locked-art" aria-hidden="true"><div class="ae-ambassador-portraits" aria-hidden="true"><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy2-rjxn6t0vmznhq17p9irg4l2adyuhjpib03ksl4opac.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/image-rjxmn1h1xelfl7x9oh6v72mcpa9mou1hy9q8anzq4k.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy1-rjxn6s31g5m7ef92f0ctk3atskz4c0eknyxb3uq3gk.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/></div><span class="ae-ambassador-lock"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="5.5" y="10" width="13" height="10" rx="2.5"/><path d="M8.5 10V7a3.5 3.5 0 0 1 7 0v3M12 14v2"/></svg></span></div></div>
+      <div class="ae-ambassador-type"><div class="ae-ambassador-card-copy"><h3>University<br/> Ambassadors</h3><span class="ae-ambassador-state">Locked until booking</span></div><div class="ae-ambassador-locked-art" aria-hidden="true"><div class="ae-ambassador-portraits" aria-hidden="true"><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy2-rjxn6t0vmznhq17p9irg4l2adyuhjpib03ksl4opac.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/image-rjxmn1h1xelfl7x9oh6v72mcpa9mou1hy9q8anzq4k.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/><img src="https://accombyemlen.com/wp-content/uploads/elementor/thumbs/boy1-rjxn6s31g5m7ef92f0ctk3atskz4c0eknyxb3uq3gk.png" alt="" width="62" height="62" loading="lazy" decoding="async" onerror="this.hidden=true"/></div><span class="ae-ambassador-lock"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="5.5" y="10" width="13" height="10" rx="2.5"/><path d="M8.5 10V7a3.5 3.5 0 0 1 7 0v3M12 14v2"/></svg></span></div></div>
     </div>
-    <p class="ae-ambassador-eligibility">Book iQ Kingston with us and <strong>become eligible to apply as an ambassador.</strong><span class="ae-ambassador-note">Introductions subject to availability.</span></p>
+    <div class="ae-ambassador-footer"><button class="ae-ambassador-book" data-enquire="" data-booking="iQ Kingston through Accom by Emlen" type="button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="5.5" y="10" width="13" height="10" rx="2.5"/><path d="M8.5 10V7a3.5 3.5 0 0 1 7 0v3M12 14v2"/></svg><span>Book to unlock</span><svg class="ae-unlock-arrow" aria-hidden="true"><use href="#arrow"></use></svg></button><p class="ae-ambassador-eligibility">Available after a confirmed booking with us. <span>Introductions subject to availability.</span></p></div>
   </div>
 </section>
 <section class="section section-rooms rooms-redesign" id="rooms" aria-labelledby="roomsTitle">
