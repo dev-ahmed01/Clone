@@ -2689,6 +2689,329 @@ html.ae-landmarks-open{overflow:hidden!important}
 @container(max-width:690px){html body .content-column #location .ae-location-grid{grid-template-columns:1fr}html body .content-column #location .ae-location-landmark-list{grid-template-columns:1fr}#location .ae-location-view-all{margin-top:12px}}
 @media(max-width:650px){#aeLandmarksDialog .ae-landmarks-list{grid-template-columns:1fr}#aeLandmarksDialog .ae-landmarks-head{padding:16px 18px}#aeLandmarksDialog .ae-landmarks-body{padding:18px}}
 </style>
+<style id="ae-amenities-dialog-parity">
+#amenitiesDialog.amenities-redesign .amx-surface{padding:40px clamp(24px,4vw,46px) 28px;background:#fff;border:1px solid #ece5dd;border-radius:30px;color:var(--navy);box-shadow:0 12px 36px #1120350a}
+#amenitiesDialog .amx-head h2{font:700 clamp(32px,3.3vw,43px)/1.12 var(--font-title);letter-spacing:-.045em;margin:0 0 13px}
+#amenitiesDialog .amx-head p{font:400 15px/1.7 var(--font-body);color:#59697c;max-width:750px;margin:0 0 29px}
+#amenitiesDialog .amx-group{border-top:1px solid #eae4dd;padding:24px 0 26px}
+#amenitiesDialog .amx-group-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 18px;margin-bottom:16px}
+#amenitiesDialog .amx-group-head h3{font:600 19px/1.3 var(--font-body);margin:0}
+#amenitiesDialog .amx-group-head small{font:400 12px/1.5 var(--font-body);color:#7b8798}
+#amenitiesDialog .amx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 18px}
+#amenitiesDialog .amx-item{display:flex;align-items:center;gap:11px;padding:8px 0;min-width:0;color:var(--navy);font:500 13px/1.45 var(--font-body)}
+#amenitiesDialog .amx-icon{display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;border-radius:10px;background:#fff0ed;color:var(--red)}
+#amenitiesDialog .amx-icon svg{width:20px;height:20px}
+#amenitiesDialog .amx-bottom{display:flex;flex-direction:column;align-items:center;gap:18px;border-top:1px solid #eae4dd;padding-top:23px}
+#amenitiesDialog .amx-bottom p{margin:0;font:400 11px/1.6 var(--font-body);color:#717e8c;text-align:center}
+#amenitiesDialog .amx-more{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1.5px solid var(--red);color:var(--red);background:#fff;padding:12px 22px;min-height:48px;border-radius:999px;font:600 13px/1.3 var(--font-body);cursor:pointer;transition:background .24s,color .24s,transform .24s}
+#amenitiesDialog .amx-more svg{width:17px;height:17px;stroke:currentColor;stroke-width:2;fill:none}
+#amenitiesDialog .amx-more:hover{color:white;background:var(--red);transform:translateY(-2px)}
+#amenitiesDialog .amx-more:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+@media(max-width:950px){#amenitiesDialog .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:550px){#amenitiesDialog.amenities-redesign .amx-surface{padding:28px 20px;border-radius:24px}
+#amenitiesDialog .amx-head h2{font-size:32px}
+#amenitiesDialog .amx-head p{font-size:13px}
+#amenitiesDialog .amx-group{padding:20px 0}
+#amenitiesDialog .amx-group-head h3{font-size:17px}
+#amenitiesDialog .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#amenitiesDialog .amx-item{gap:7px;font-size:11px}
+#amenitiesDialog .amx-icon{width:30px;height:30px;flex-basis:30px}
+#amenitiesDialog .amx-icon svg{width:18px;height:18px}
+}
+@media(prefers-reduced-motion:reduce){#amenitiesDialog .amx-more{transition:none;transform:none!important}
+}
+#amenitiesDialog.amenities-redesign .amx-head{margin-bottom:19px}
+#amenitiesDialog.amenities-redesign .amx-head h2{margin-bottom:0}
+#amenitiesDialog .amx-head{
+ margin-block:0 var(--ae-heading-content-gap)!important;
+}
+html body #amenitiesDialog.amenities-redesign.amenities-compact .amx-surface{
+ padding:var(--ae-surface-padding)!important;
+}
+html body #amenitiesDialog .amx-group-head h3{
+ font:600 var(--ae-card-heading)/1.25 var(--font-title)!important;
+ letter-spacing:-.025em!important;
+}
+html body #amenitiesDialog.amenities-compact .amx-item{
+ font:500 var(--ae-subheading)/1.45 var(--font-body)!important;letter-spacing:0!important;
+}
+#amenitiesDialog .amx-group-head h3{font:600 21px/1.33 var(--font-title);letter-spacing:-.025em}
+#amenitiesDialog .amx-surface{
+ background:var(--ae-card)!important;
+ border:1px solid var(--ae-line)!important;
+ border-radius:28px!important;
+ box-shadow:none!important;
+}
+#amenitiesDialog .amx-surface{
+ padding:44px!important;
+}
+#amenitiesDialog .amx-group:first-child{
+ padding:24px;border:1px solid #D9E9DF;border-radius:22px;background:var(--ae-mint);
+}
+#amenitiesDialog .amx-group:not(:first-child){padding:22px 0;border-bottom:1px solid var(--ae-line)}
+#amenitiesDialog .amx-group-head h3{font:600 21px/1.3 var(--font-title)!important}
+#amenitiesDialog .amx-grid{gap:12px}
+#amenitiesDialog .amx-item{
+ background:var(--ae-card)!important;color:var(--ae-ink);
+ border:1px solid rgba(16,29,51,.08);border-radius:16px;
+ box-shadow:none!important;min-height:72px;padding:12px 14px;
+ font:400 16px/1.5 var(--font-body)!important;
+}
+#amenitiesDialog .amx-icon{color:var(--ae-red);background:rgba(237,32,36,.06)}
+#amenitiesDialog .amx-more{border-color:var(--ae-line)}
+@media(max-width:1199px){#amenitiesDialog .amx-surface{padding:34px!important}
+}
+@media(max-width:800px){#amenitiesDialog .amx-surface{padding:26px!important;border-radius:22px!important}
+}
+@media(max-width:550px){#amenitiesDialog .amx-surface{padding:22px 17px!important;border-radius:20px!important}
+#amenitiesDialog .amx-group:first-child{padding:15px}
+#amenitiesDialog .amx-item{min-height:60px;padding:9px 10px;font-size:13px!important}
+#amenitiesDialog .amx-icon{width:35px;height:35px}
+}
+#amenitiesDialog .amx-group-head h3{
+ font:600 var(--ae-card-heading)/1.34 var(--font-title)!important;
+ letter-spacing:-.022em!important;
+}
+#amenitiesDialog .amx-item{
+ font:400 var(--ae-body-size)/1.7 var(--font-body)!important;
+ letter-spacing:normal!important;
+}
+#amenitiesDialog.amenities-redesign.amenities-compact .amx-surface{
+  padding:31px 33px 25px!important;
+  border-radius:30px!important;
+  box-shadow:none!important;
+}
+#amenitiesDialog.amenities-compact .amx-head h2{margin:0 0 18px!important}
+#amenitiesDialog.amenities-compact .amx-groups{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+#amenitiesDialog.amenities-compact .amx-groups .amx-group,#amenitiesDialog.amenities-compact .amx-groups .amx-group:first-child,#amenitiesDialog.amenities-compact .amx-groups .amx-group:not(:first-child){
+  display:block;
+  margin:0!important;
+  padding:15px 0 18px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  border:0!important;
+  border-radius:0!important;
+  border-top:1px solid #ece8e4!important;
+}
+#amenitiesDialog.amenities-compact .amx-groups .amx-group:first-child{
+  border-top:0!important;
+  padding-top:0!important;
+}
+#amenitiesDialog.amenities-compact .amx-groups .amx-group.amx-group-bills{
+  margin:2px 0 3px!important;
+  padding:17px!important;
+  border:1px solid #d8ebe0!important;
+  border-radius:24px!important;
+  background:linear-gradient(135deg,#e6f4ec,#eff8f2)!important;
+}
+#amenitiesDialog.amenities-compact .amx-group-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:0 0 11px!important;
+}
+#amenitiesDialog.amenities-compact .amx-group-head h3{
+  margin:0!important;
+  color:var(--ae-ink,#101D33)!important;
+  font:600 21px/1.3 var(--font-title,'Bricolage Grotesque',Arial,sans-serif)!important;
+  letter-spacing:-.025em;
+}
+#amenitiesDialog.amenities-compact .amx-included-note{
+  display:inline-flex;
+  align-items:center;
+  min-height:27px;
+  padding:5px 10px;
+  border:1px solid #c9e6d5;
+  border-radius:999px;
+  background:#fff;
+  color:#357455;
+  font:600 11px/1.2 var(--font-body,'Poppins',Arial,sans-serif);
+  white-space:nowrap;
+}
+#amenitiesDialog.amenities-compact .amx-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:8px!important;
+}
+#amenitiesDialog.amenities-compact .amx-item{
+  box-sizing:border-box;
+  display:flex!important;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px!important;
+  width:auto!important;
+  min-width:0;
+  min-height:46px!important;
+  margin:0!important;
+  padding:8px 13px!important;
+  border:1px solid #e9e6e4!important;
+  border-radius:15px!important;
+  background:#fff!important;
+  color:#181818!important;
+  font:400 14px/1.36 var(--font-body,'Poppins',Arial,sans-serif)!important;
+  box-shadow:0 2px 8px rgba(16,29,51,.028)!important;
+  white-space:normal;
+}
+#amenitiesDialog.amenities-compact .amx-item > span{
+  min-width:0;
+  overflow-wrap:break-word;
+}
+#amenitiesDialog.amenities-compact .amx-item::after{
+  content:"";
+  display:block;
+  flex:0 0 8px;
+  width:8px;
+  height:13px;
+  margin-left:auto;
+  margin-right:4px;
+  border-right:2.5px solid var(--ae-red,#ED2024);
+  border-bottom:2.5px solid var(--ae-red,#ED2024);
+  border-radius:1px;
+  transform:translateY(-2px) rotate(45deg);
+  filter:drop-shadow(0 0 1.5px rgba(237,32,36,.32));
+}
+#amenitiesDialog.amenities-compact .amx-group-bills .amx-item::after{
+  border-color:#218b53;
+  filter:drop-shadow(0 0 1.5px rgba(33,139,83,.30));
+}
+#amenitiesDialog.amenities-compact .amx-group-bills .amx-item{
+  border-color:#d9e8e0!important;
+  box-shadow:0 3px 10px rgba(33,76,53,.035)!important;
+}
+#amenitiesDialog.amenities-compact .amx-bottom{
+  padding-top:15px!important;
+  border-top:1px solid #ece8e4;
+}
+#amenitiesDialog.amenities-compact .amx-more{
+  min-height:44px!important;
+  padding:10px 19px!important;
+  font:700 13px/1.3 var(--font-body,'Poppins',Arial,sans-serif)!important;
+}
+@media(max-width:1199px){#amenitiesDialog.amenities-redesign.amenities-compact .amx-surface{padding:30px 29px 24px!important}
+#amenitiesDialog.amenities-compact .amx-grid{gap:10px!important}
+#amenitiesDialog.amenities-compact .amx-item{padding:8px 12px!important;min-height:45px!important;font-size:13px!important}
+}
+@media(max-width:850px){#amenitiesDialog.amenities-redesign.amenities-compact .amx-surface{padding:27px 24px 22px!important}
+#amenitiesDialog.amenities-compact .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#amenitiesDialog.amenities-compact .amx-group-bills.amx-group{padding:17px!important}
+}
+@media(max-width:550px){#amenitiesDialog.amenities-redesign.amenities-compact .amx-surface{padding:24px 17px 21px!important;border-radius:24px!important}
+#amenitiesDialog.amenities-compact .amx-head h2{margin-bottom:16px!important}
+#amenitiesDialog.amenities-compact .amx-groups .amx-group{padding:18px 0 21px!important}
+#amenitiesDialog.amenities-compact .amx-group-head{margin-bottom:12px!important}
+#amenitiesDialog.amenities-compact .amx-group-head h3{font-size:19px!important}
+#amenitiesDialog.amenities-compact .amx-included-note{font-size:10px;min-height:25px}
+#amenitiesDialog.amenities-compact .amx-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+#amenitiesDialog.amenities-compact .amx-item{
+    min-height:43px!important;
+    padding:8px 10px!important;
+    border-radius:13px!important;
+    gap:8px!important;
+    font-size:12px!important;
+  }
+#amenitiesDialog.amenities-compact .amx-item::after{flex-basis:7px;width:7px;height:11px;margin-right:2px;border-width:0 2.5px 2.5px 0}
+#amenitiesDialog.amenities-compact .amx-groups .amx-group.amx-group-bills{padding:12px!important;border-radius:19px!important}
+#amenitiesDialog.amenities-compact .amx-bottom{padding-top:16px!important}
+}
+@media(max-width:360px){#amenitiesDialog.amenities-compact .amx-grid{grid-template-columns:1fr!important}
+}
+#amenitiesDialog.amenities-compact .amx-head h2{
+ font:700 var(--ae-h2)/1.16 var(--font-title)!important;
+ letter-spacing:-.025em!important;
+}
+#amenitiesDialog.amenities-compact .amx-group-head h3{
+ font-family:var(--font-title)!important;
+ font-size:var(--ae-card-heading)!important;
+ font-weight:600!important;
+ line-height:1.25!important;
+ letter-spacing:-.02em!important;
+}
+#amenitiesDialog.amenities-compact .amx-item{font-family:var(--font-body)!important}
+#amenitiesDialog.amenities-compact .amx-more{
+ font-family:var(--font-body)!important;
+ font-size:13px!important;
+ font-weight:600!important;
+}
+#amenitiesDialog.amenities-compact .amx-item{
+ position:relative;isolation:isolate;overflow:hidden;
+ transition:color .32s ease,border-color .32s ease,box-shadow .32s ease;
+}
+#amenitiesDialog.amenities-compact .amx-item::before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:var(--amenity-fill-color,var(--ae-red,#ED2024));
+ clip-path:circle(0% at var(--amenity-fill-x,50%) var(--amenity-fill-y,50%));
+ transition:clip-path .56s cubic-bezier(.2,.85,.23,1);
+}
+#amenitiesDialog.amenities-compact .amx-item>span{
+ position:relative;z-index:1;color:inherit!important;
+ transition:color .25s ease;
+}
+#amenitiesDialog.amenities-compact .amx-item::after{
+ position:relative;z-index:1;transition:border-color .25s ease;
+}
+#amenitiesDialog.amenities-compact .amx-group-bills .amx-item{
+ --amenity-fill-color:#218b53;
+}
+@media(hover:hover) and (pointer:fine){#amenitiesDialog.amenities-compact .amx-item:hover{
+  color:#fff!important;border-color:var(--ae-red,#ED2024)!important;
+  box-shadow:0 7px 18px rgba(237,32,36,.12)!important;
+ }
+#amenitiesDialog.amenities-compact .amx-group-bills .amx-item:hover{
+  border-color:#218b53!important;
+  box-shadow:0 7px 18px rgba(33,139,83,.12)!important;
+ }
+#amenitiesDialog.amenities-compact .amx-item:hover::before{
+  clip-path:circle(165% at var(--amenity-fill-x,50%) var(--amenity-fill-y,50%));
+ }
+#amenitiesDialog.amenities-compact .amx-item:hover::after{
+  border-color:#fff!important;
+ }
+}
+@media(prefers-reduced-motion:reduce){#amenitiesDialog.amenities-compact .amx-item,#amenitiesDialog.amenities-compact .amx-item::before,#amenitiesDialog.amenities-compact .amx-item::after,#amenitiesDialog.amenities-compact .amx-item>span{transition:none!important}
+}
+#amenitiesDialog.amenities-compact .amx-item::before{
+  background-image:
+    linear-gradient(110deg,transparent 20%,rgba(255,255,255,.20) 47%,transparent 67%),
+    linear-gradient(0deg,var(--amenity-fill-color,var(--ae-red,#ED2024)),var(--amenity-fill-color,var(--ae-red,#ED2024)));
+  background-size:250% 100%,100% 100%;
+  background-position:130% 0,0 0;
+  background-repeat:no-repeat;
+  transition:clip-path .54s cubic-bezier(.2,.85,.23,1),background-position .78s ease;
+}
+#amenitiesDialog.amenities-compact .amx-item::after{
+  transition:border-color .28s ease,filter .28s ease;
+}
+@media(hover:hover) and (pointer:fine){#amenitiesDialog.amenities-compact .amx-item:hover::before{
+    background-position:-95% 0,0 0;
+  }
+#amenitiesDialog.amenities-compact .amx-item:hover::after{
+    animation:ae-amenity-tick-glint .82s ease-out both;
+  }
+}
+@media(prefers-reduced-motion:reduce){#amenitiesDialog.amenities-compact .amx-item::before{
+    transition:none!important;
+  }
+#amenitiesDialog.amenities-compact .amx-item::after{
+    animation:none!important;transition:none!important;
+  }
+}
+
+html body #amenitiesDialog.amenities-redesign.amenities-compact .about-detail-content{padding:24px max(24px,calc((100vw - 1120px)/2)) 28px!important;width:100%;max-width:none;box-sizing:border-box}
+html body #amenitiesDialog.amenities-redesign.amenities-compact .amx-surface{padding:var(--ae-surface-padding,32px)!important;border:1px solid #ece5dd;border-radius:30px!important;background:#fffdfa!important}
+html body #amenitiesDialog.amenities-compact .amx-head{margin:0 0 var(--ae-heading-content-gap,24px)!important}
+html body #amenitiesDialog.amenities-compact .amx-head h2{font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;letter-spacing:-.042em!important;margin:0!important}
+html body #amenitiesDialog.amenities-compact .amx-group-head h3{font:600 var(--ae-card-heading,21px)/1.25 var(--font-title)!important;letter-spacing:-.025em!important}
+html body #amenitiesDialog.amenities-compact .amx-item{font:500 var(--ae-subheading,16px)/1.45 var(--font-body)!important;letter-spacing:0!important}
+html body #amenitiesDialog.amenities-compact .amx-more{font:600 var(--ae-button-size,13px)/1.4 var(--font-body)!important}
+@media(max-width:550px){html body #amenitiesDialog.amenities-redesign.amenities-compact .about-detail-content{padding:14px 12px 20px!important}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -3341,9 +3664,7 @@ html.ae-landmarks-open{overflow:hidden!important}
     </div>
   </div>
 </dialog>
-<dialog id="amenitiesDialog" aria-labelledby="amenitiesDialogTitle" aria-describedby="amenitiesDialogIntro"><div class="about-detail-shell"><header class="about-detail-topbar"><div class="about-detail-brand"><span class="about-detail-brand-mark" aria-hidden="true"></span><span>accom <small>BY EMLEN</small></span></div><button type="button" class="about-detail-close" data-amx-close aria-label="Close amenities"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button></header><div class="about-detail-content"><div class="about-detail-hero"><p class="about-detail-kicker">THE AMENITIES GUIDE</p><h2 id="amenitiesDialogTitle">Every detail, considered<span class="about-detail-dot">.</span></h2><p id="amenitiesDialogIntro">Explore all 14 amenities listed for iQ Kingston, organised for easy comparison.</p></div><div class="about-detail-reading"><section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Everyday essentials</p><h3>Bills included</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9Q12 1 22 9M5 13q7-6 14 0M9 17q3-3 6 0M12 20h.01"/></svg></span><div><h4>Wi-Fi</h4><p>Listed as included. Verify coverage and fair-use conditions.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-8 11h6l-1 9 9-12h-6z"/></svg></span><div><h4>Electricity</h4><p>Listed as included. Check the utility terms in your contract.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V5a2.5 2.5 0 0 1 5 0v8a4.5 4.5 0 1 1-5 0ZM12.5 9v8"/></svg></span><div><h4>Heating</h4><p>Listed as included. Confirm any usage limits.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 7 5 11 5 14a7 7 0 0 0 14 0c0-3-3-7-7-12Z"/></svg></span><div><h4>Water</h4><p>Listed as included. Confirm the agreement terms.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5zM8 7h8m-4 4v7m-3-3h6"/></svg></span><div><h4>Contents insurance</h4><p>Listed as included. Confirm coverage and exclusions.</p></div></article></div></section>
-<section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Beyond your room</p><h3>Community & recreation</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1zM12 6v14"/></svg></span><div><h4>Study spaces</h4><p>Shared study areas are listed for residents.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6m4-8v10m10-10v10m4-8v6M7 12h10"/></svg></span><div><h4>On-site gym</h4><p>Gym facilities are listed. Confirm access and opening times.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3zM7 4v16m10-16v16M9 8l6 4-6 4z"/></svg></span><div><h4>Cinema room</h4><p>A communal cinema room is listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 0 1 5 4l1 6a2 2 0 0 1-3 2l-4-2H8l-4 2a2 2 0 0 1-3-2l1-6a5 5 0 0 1 5-4zM8 10v5m-2.5-2.5h5M17 11h.01"/></svg></span><div><h4>Games & social spaces</h4><p>Spaces for gaming and socialising are listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21v-9h12v9M12 12V5m-7 5 7-7 7 7"/></svg></span><div><h4>Roof terrace</h4><p>A roof terrace is listed. Check its availability.</p></div></article></div></section>
-<section class="about-detail-section amx-rich-group"><p class="amx-eyebrow">Daily support</p><h3>Practical living & security</h3><div class="amx-rich-grid"><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM3 11h18M8 7V5a4 4 0 0 1 8 0v2"/></svg></span><div><h4>Reception & parcels</h4><p>Reception and parcel collection are listed.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 8h16M7 5h.01M11 5h6M12 15m-5 0a5 5 0 1 0 10 0a5 5 0 1 0-10 0"/></svg></span><div><h4>On-site laundry</h4><p>Laundry facilities are listed. Usage may carry charges.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M18.5 17.5m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m-13 0 4-9 5 9H5.5m4-9h4m1 0 4 9"/></svg></span><div><h4>Secure bike storage</h4><p>Bike storage is listed. Confirm access arrangements.</p></div></article><article class="amx-rich-item"><span class="amx-rich-icon"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 8 4v6c0 5-3 8-8 10-5-2-8-5-8-10V6zM9 12l2 2 4-4"/></svg></span><div><h4>24/7 security</h4><p>Security coverage is listed. Confirm current arrangements.</p></div></article></div></section><section class="about-detail-section amx-bills"><h3>Compare separate bill costs</h3><p>Enter your own estimates; this is not a guaranteed saving.</p><div class="bill-estimate"><div class="bill-estimate-top"><div><span class="bills-note">Included bills · compare your own costs</span><h3>What might separate bills cost you?</h3><p>Enter what you would normally pay each week for utilities and insurance. The calculator shows a personal comparison, not a guaranteed saving.</p></div><div class="bill-total"><strong id="billTotal">£0</strong><span>per week</span><small>your example, not a quoted saving</small></div></div><div class="bill-inputs" id="billInputs"></div><div class="estimate-foot"><strong><span id="billTermValue">£0</span> over a <span id="billWeeks">44</span>-week tenancy</strong><div aria-label="Contract length" class="term-options" role="group"><button class="chosen" data-term="44" type="button">44 weeks</button><button data-term="51" type="button">51 weeks</button></div></div><p class="bill-disclosure">Budgeting example only. Enter your own costs; an initial £0 is not a statement that bills have no value. Verify included services and insurance terms with iQ before booking.</p></div></section><section class="about-detail-section"><h3>Before you book</h3><p>Opening hours, usage limits, insurance coverage and fees can change. Verify all features against the latest official property information and room contract.</p></section></div><footer class="about-detail-footer"><a class="about-detail-primary" href="https://www.iqstudentaccommodation.com/kingston/iq-kingston" target="_blank" rel="noopener noreferrer">Official property details <svg><use href="#arrow"></use></svg></a><button type="button" class="amx-back" data-amx-close>Back to listing</button></footer></div></div></dialog>
+<dialog id="amenitiesDialog" class="amenities-redesign amenities-compact" aria-labelledby="amenitiesDialogTitle"><div class="about-detail-shell"><header class="about-detail-topbar"><div class="about-detail-brand"><span class="about-detail-brand-mark" aria-hidden="true"></span><span>accom <small>BY EMLEN</small></span></div><button type="button" class="about-detail-close" data-amx-close aria-label="Close amenities"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19M19 5 5 19"/></svg></button></header><div class="about-detail-content"><div class="amx-surface"><header class="amx-head"><h2 id="amenitiesDialogTitle">Amenities that make a difference.</h2></header><div class="amx-groups"><section class="amx-group amx-group-special" aria-labelledby="amx-dialog-special"><div class="amx-group-head"><h3 id="amx-dialog-special">Special Amenities</h3></div><div class="amx-grid" role="list" aria-label="Special Amenities"><div class="amx-item" role="listitem"><span>Study spaces</span></div><div class="amx-item" role="listitem"><span>On-site gym</span></div><div class="amx-item" role="listitem"><span>Cinema room</span></div><div class="amx-item" role="listitem"><span>Games &amp; social spaces</span></div><div class="amx-item" role="listitem"><span>Roof terrace</span></div><div class="amx-item" role="listitem"><span>Outdoor table tennis</span></div><div class="amx-item" role="listitem"><span>TV lounge</span></div><div class="amx-item" role="listitem"><span>Terrace courtyard</span></div><div class="amx-item" role="listitem"><span>Resident events</span></div></div></section><section class="amx-group amx-group-bills" aria-labelledby="amx-dialog-bills"><div class="amx-group-head"><h3 id="amx-dialog-bills">Bills Included</h3><span class="amx-included-note">Included in rent</span></div><div class="amx-grid" role="list" aria-label="Bills Included"><div class="amx-item" role="listitem"><span>Wi-Fi</span></div><div class="amx-item" role="listitem"><span>Electricity</span></div><div class="amx-item" role="listitem"><span>Heating</span></div><div class="amx-item" role="listitem"><span>Water</span></div><div class="amx-item" role="listitem"><span>Contents insurance</span></div></div></section><section class="amx-group amx-group-common" aria-labelledby="amx-dialog-common"><div class="amx-group-head"><h3 id="amx-dialog-common">Common Amenities</h3></div><div class="amx-grid" role="list" aria-label="Common Amenities"><div class="amx-item" role="listitem"><span>Reception &amp; parcels</span></div><div class="amx-item" role="listitem"><span>On-site laundry</span></div><div class="amx-item" role="listitem"><span>Secure bike storage</span></div><div class="amx-item" role="listitem"><span>24/7 security</span></div><div class="amx-item" role="listitem"><span>Residents’ app</span></div><div class="amx-item" role="listitem"><span>Wellbeing support</span></div><div class="amx-item" role="listitem"><span>On-site management</span></div><div class="amx-item" role="listitem"><span>On-site maintenance</span></div></div></section></div><div class="amx-bottom"><button type="button" class="amx-more" data-amx-close>Back to listing</button></div></div></div></div></dialog>
 <div aria-live="polite" class="toast" id="toast" role="status"></div>
 
 <script id="rulesScrollInteraction">
@@ -3513,7 +3834,7 @@ function priceMarkup(room,weeks,{compact=false}={}){
   return `<div class="room-price-label"><span>LISTING SNAPSHOT</span></div><div class="room-price-line">${deal?`<del>${formatGBP(room.pricing.reference)}</del>`:''}<strong>${formatGBP(room.pricing.price)}<small>/week</small></strong></div>${deal?`<span class="weekly-difference">${formatGBP(deal.termSaving)} across ${weeks} weeks</span>`:''}<span class="availability-note">Available from ${room.pricing.availableFrom}</span><span class="contract-status">Contract length and full total: ask the operator</span><small class="room-price-foot">Source: ${room.pricing.referenceSource} · ${room.pricing.referenceDate}</small>`;
 }
 window.accomPricingDemo={getDiscount};
-let filter='all',selectedRoom=null,exampleTerm=44,saved=false,photoCategory='all',photoIndex=0,dialog=null,focusBeforeDialog=null,dialogScrollY=0,toastTimeout;
+let filter='all',selectedRoom=null,saved=false,photoCategory='all',photoIndex=0,dialog=null,focusBeforeDialog=null,dialogScrollY=0,toastTimeout;
 const compared=new Set();
 function notify(message){const toast=$('#toast');toast.textContent=message;toast.classList.add('shown');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>toast.classList.remove('shown'),2400);}
 function openDialog(node){if(dialog)closeDialog(false);dialog=node;focusBeforeDialog=document.activeElement;dialogScrollY=window.scrollY;node.hidden=false;document.body.classList.add('lock-scroll');const close=$('[data-close]',node);close?.focus();}
@@ -3546,12 +3867,6 @@ let swipeStart=0;$('#photoActive').addEventListener('touchstart',e=>{swipeStart=
 try{saved=localStorage.getItem('accom-v4-favourite')==='true';}catch{}
 function drawSaveState(){$$('.save-toggle').forEach(button=>{button.setAttribute('aria-pressed',String(saved));button.setAttribute('aria-label',saved?'Remove iQ Kingston from saved properties':'Save iQ Kingston');let span=$('span',button);if(span)span.textContent=saved?'Saved':'Save';});}
 $$('.save-toggle').forEach(button=>button.addEventListener('click',()=>{saved=!saved;try{localStorage.setItem('accom-v4-favourite',String(saved));}catch{}drawSaveState();notify(saved?'Saved for this browser':'Removed from saved properties');}));drawSaveState();
-
-const billExamples=[{key:'wifi',label:'Wi-Fi',price:0},{key:'electricity',label:'Electricity',price:0},{key:'heating',label:'Heating',price:0},{key:'water',label:'Water',price:0},{key:'insurance',label:'Insurance',price:0}];
-function redrawBills(){const total=billExamples.reduce((acc,item)=>acc+item.price,0);$('#billTotal').textContent=formatGBP(total);$('#billTermValue').textContent=formatGBP(total*exampleTerm);$('#billWeeks').textContent=String(exampleTerm);}
-$('#billInputs').innerHTML=billExamples.map(item=>`<label for="utility-${item.key}"><span>${item.label}</span><div>£<input type="number" min="0" max="250" step="1" id="utility-${item.key}" aria-label="Weekly budget for ${item.label}" placeholder="0"><em>/wk</em></div></label>`).join('');
-billExamples.forEach(item=>$('#utility-'+item.key).addEventListener('input',e=>{const input=e.currentTarget;item.price=Math.max(0,Math.min(250,Number(input.value)||0));redrawBills();}));
-$$('[data-term]').forEach(button=>button.addEventListener('click',()=>{exampleTerm=Number(button.dataset.term);$$('[data-term]').forEach(b=>{b.classList.toggle('chosen',b===button);b.setAttribute('aria-pressed',String(b===button));});redrawBills();}));redrawBills();
 
 function updateSelectedRoom(){
  // Sticky rail is an advertised starting price, not a changing selection quote.
@@ -3892,6 +4207,15 @@ if(orderedOverview){
  const close=()=>{if(!dialog.open||closing)return;closing=true;const finish=()=>{if(dialog.open)dialog.close();closing=false;};if(reduced()||!dialog.animate){finish();return;}const a=dialog.animate([{transform:'translateY(0)'},{transform:'translateY(-105%)'}],{duration:240,easing:'ease-in'});a.onfinish=finish;a.oncancel=finish;};
  trigger.addEventListener('click',()=>{if(dialog.open)return;dialog.showModal();document.documentElement.classList.add('ae-landmarks-open');dialog.querySelector('.ae-landmarks-body').scrollTop=0;if(!reduced()&&dialog.animate)dialog.animate([{transform:'translateY(-105%)'},{transform:'translateY(0)'}],{duration:360,easing:'cubic-bezier(.2,.85,.25,1)'});});
  closeButton.addEventListener('click',close);dialog.addEventListener('cancel',e=>{e.preventDefault();close();});dialog.addEventListener('click',e=>{if(e.target===dialog&&e.clientY>dialog.getBoundingClientRect().bottom)close();});dialog.addEventListener('close',()=>{document.documentElement.classList.remove('ae-landmarks-open');trigger.focus({preventScroll:true});});
+})();
+</script>
+<script id="aeExpandedAmenitiesHover">
+(() => {
+ if(!matchMedia('(hover: hover) and (pointer: fine)').matches)return;
+ document.querySelectorAll('#amenitiesDialog .amx-item').forEach(item=>{
+  const set=event=>{const r=item.getBoundingClientRect();if(!r.width||!r.height)return;const clamp=n=>Math.max(0,Math.min(100,n));item.style.setProperty('--amenity-fill-x',clamp((event.clientX-r.left)/r.width*100).toFixed(1)+'%');item.style.setProperty('--amenity-fill-y',clamp((event.clientY-r.top)/r.height*100).toFixed(1)+'%');};
+  item.addEventListener('pointerenter',set,{passive:true});item.addEventListener('pointerleave',set,{passive:true});
+ });
 })();
 </script>
 </body></html>
