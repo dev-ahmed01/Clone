@@ -2640,9 +2640,7 @@ html body #aeFaqDialog .ae-faq-sheet-head h2{font:700 var(--ae-h2)/1.13 var(--fo
 html body #aeFaqDialog .ae-faq-category h3{font:600 var(--ae-card-heading)/1.25 var(--font-title)!important}
 html body #aeFaqDialog .ae-faq-q{font:600 var(--ae-subheading)/1.45 var(--font-body)!important}
 html body #aeFaqDialog .ae-faq-answer-inner p{font:400 var(--ae-body-size)/1.65 var(--font-body)!important}
-@media(min-width:1200px){
- html body .site-container .crumbs{padding-top:80px!important}
-}
+
 @media(max-width:1199px){
  :root{--ae-listing-panel-gap:68px;--ae-surface-padding:28px}
 }
@@ -3080,6 +3078,12 @@ html body .content-column #similar-properties .ae-sim-arrow{width:38px;height:38
 #aeLandmarksDialog .leaflet-tooltip{font:500 12px/1.4 var(--font-body);color:#101d33}
 @media(max-width:760px){#aeLandmarksDialog .ae-landmarks-body{grid-template-columns:1fr;grid-template-rows:minmax(145px,38%) minmax(0,1fr);gap:12px;padding:12px 16px 18px}#aeLandmarksDialog .ae-landmarks-map-card{padding:9px;gap:7px;border-radius:17px}#aeLandmarksDialog .ae-landmarks-map-head strong{font-size:16px}#aeLandmarksDialog .ae-landmarks-map-foot{font-size:10px}#aeLandmarksDialog .ae-landmark-select{gap:6px}#aeLandmarksDialog .ae-landmark-select strong{font-size:13px}#aeLandmarksDialog .ae-landmark-entry>a{font-size:11px}}
 </style>
+<style id="ae-hero-gallery-spacing">
+/* The sticky header remains in normal flow. One 80px gap before the gallery. */
+html body main.site-container{padding-top:80px!important;margin-top:0!important}
+html body main.site-container > .gallery-ribbon-frame:first-child{margin-top:0!important}
+html body main.site-container > .gallery-ribbon-frame > #weGal{margin-top:0!important}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -3114,7 +3118,6 @@ html body .content-column #similar-properties .ae-sim-arrow{width:38px;height:38
 </div></header>
 
 <main class="site-container">
-<div class="crumbs"><a href="#top">Student accommodation</a><span>/</span><a href="#location">Kingston upon Thames</a><span>/</span><strong>iQ Kingston</strong></div>
 <div class="gallery-ribbon-frame">
 <section class="we-gal accom-we-gallery" id="weGal" aria-label="Student accommodation room and shared-space photo examples">
   <div class="we-gal__shell">
