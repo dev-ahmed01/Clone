@@ -15,7 +15,7 @@
  --navy:var(--ae-ink);--red:var(--ae-red);--red-deep:var(--ae-deep);
  --yellow:var(--ae-sun);--cream:var(--ae-paper);
  --font-title:'Bricolage Grotesque',Arial,sans-serif;
- --font-body:'Montserrat',Arial,sans-serif;
+ --font-body:'Poppins',Arial,sans-serif;
 }
 html{scroll-behavior:smooth;scroll-padding-top:170px}
 body{
@@ -75,7 +75,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
 #scrollNav .section-nav-track a.active{color:var(--ae-action)!important}
 #scrollNav .section-nav-track a::after{background:var(--ae-red)}
 #scrollNav .section-nav-actions .tiny-nav-action{color:var(--ae-ink);font:700 12px/1.3 var(--font-body)}
-/* AE buttons: 12–13px Montserrat, no default drop shadows. */
+/* AE buttons: 12–13px Poppins, no default drop shadows. */
 .primary-button,.header-contact,.offers-action,#rooms .room-enquire,
 #rooms .room-term-actions button[data-enquire],.mobile-cta .primary-button,
 .compare-tray .primary-button{
@@ -279,7 +279,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  color:var(--ae-ink);font:400 16px/1.4 var(--font-body)
 }
 .comparison-table{background:var(--ae-card);overflow-x:auto;max-width:100%}
-.about-detail-dialog,.about-detail-shell,#amenitiesDialog{--font-body:'Montserrat',Arial,sans-serif}
+.about-detail-dialog,.about-detail-shell,#amenitiesDialog{--font-body:'Poppins',Arial,sans-serif}
 .about-detail-dialog h2,#amenitiesDialog h2{font-family:var(--font-title);font-weight:700}
 .about-detail-dialog p,#amenitiesDialog p{font-family:var(--font-body)}
 /* Footer and the mobile action rail follow AE palette. */
@@ -395,7 +395,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
 }
 .cta-aside .booking-card--compact .rail-title{
  margin:0!important;
- font:600 18px/1.45 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ font:600 18px/1.45 var(--font-body,'Poppins',Arial,sans-serif)!important;
  color:rgba(255,255,255,.89)!important;
  letter-spacing:0!important;
 }
@@ -413,7 +413,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  color:white!important;
 }
 .cta-aside .booking-card--compact .price-line span{
- font:400 15px/1.4 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ font:400 15px/1.4 var(--font-body,'Poppins',Arial,sans-serif)!important;
  color:rgba(255,255,255,.79)!important;
 }
 .cta-aside .booking-card--compact .rail-controls{
@@ -428,7 +428,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  margin:0!important;
  padding:12px 14px!important;
  border-radius:999px!important;
- font:700 13px/1.35 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ font:700 13px/1.35 var(--font-body,'Poppins',Arial,sans-serif)!important;
  white-space:normal;
 }
 .cta-aside .booking-card--compact .rail-controls .primary-button{
@@ -493,7 +493,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  color:#fff;
 }
 .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header span{
- font:400 11px/1.4 var(--font-body,'Montserrat',Arial,sans-serif);
+ font:400 11px/1.4 var(--font-body,'Poppins',Arial,sans-serif);
  color:rgba(255,255,255,.70);
 }
 .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-list{
@@ -512,7 +512,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  padding:8px 0!important;
  margin:0!important;
  border-bottom:1px solid rgba(255,255,255,.10)!important;
- font:400 12.5px/1.45 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ font:400 12.5px/1.45 var(--font-body,'Poppins',Arial,sans-serif)!important;
  color:#edf0f6!important;
 }
 .cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row:last-child{border-bottom:0!important}
@@ -526,7 +526,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  stroke:currentColor!important;stroke-width:1.8;
 }
 .cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row > strong{
- font:700 13px/1.35 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+ font:700 13px/1.35 var(--font-body,'Poppins',Arial,sans-serif)!important;
  color:var(--ae-sun,#FFB900)!important;
  white-space:nowrap;
 }
@@ -541,8 +541,8 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
 /*
  * Attached AE spec:
  * H1 Bricolage 48 / 700; H2 Bricolage 36 / 700;
- * card H3/H4 Bricolage 21 / 600; body Montserrat 16 / 400;
- * buttons Montserrat 12–13 / 600–700; links Montserrat ~14 / 700.
+ * card H3/H4 Bricolage 21 / 600; body Poppins 16 / 400;
+ * buttons Poppins 12–13 / 600–700; links Poppins ~14 / 700.
  * Small counters, prices, badges and supporting metadata remain distinct UI
  * elements rather than being incorrectly treated as body paragraphs.
  */
@@ -550,7 +550,7 @@ textarea:focus-visible{outline:3px solid var(--ae-cobalt);outline-offset:3px}
  --ae-h1:48px;--ae-h2:36px;--ae-card-heading:21px;
  --ae-body-size:16px;--ae-button-size:13px;--ae-anchor-size:14px;
  --font-title:'Bricolage Grotesque',Arial,sans-serif;
- --font-body:'Montserrat',Arial,sans-serif;
+ --font-body:'Poppins',Arial,sans-serif;
 }
 html,body{font-family:var(--font-body)!important}
 body{font-size:var(--ae-body-size)!important;font-weight:400!important;line-height:1.65}
@@ -632,7 +632,7 @@ body{font-size:var(--ae-body-size)!important;font-weight:400!important;line-heig
 .cta-aside .booking-card--compact .rail-nearby--compact .rail-nearby-header strong{
  font:600 var(--ae-card-heading)/1.3 var(--font-title)!important;
 }
-/* Every text button uses the document's Montserrat 12–13 / 600–700 scale.
+/* Every text button uses the document's Poppins 12–13 / 600–700 scale.
    Icon-only controls keep their dimensions and do not need large type. */
 button,input,select,textarea{font-family:var(--font-body)!important}
 button{font-size:var(--ae-button-size);font-weight:600}
@@ -710,7 +710,7 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   background:rgba(255,255,255,.82);
   box-shadow:0 4px 14px rgba(16,29,51,.025);
   color:var(--ae-ink,#101D33);
-  font:600 14px/1.3 var(--font-body,'Montserrat',Arial,sans-serif);
+  font:600 14px/1.3 var(--font-body,'Poppins',Arial,sans-serif);
 }
 #about .about-feature-pill svg{
   flex:0 0 23px;
@@ -1241,7 +1241,7 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   border-radius:999px;
   background:#fff;
   color:#357455;
-  font:600 11px/1.2 var(--font-body,'Montserrat',Arial,sans-serif);
+  font:600 11px/1.2 var(--font-body,'Poppins',Arial,sans-serif);
   white-space:nowrap;
 }
 #amenities.amenities-compact .amx-grid{
@@ -1264,7 +1264,7 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
   border-radius:18px!important;
   background:#fff!important;
   color:#181818!important;
-  font:400 14px/1.36 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+  font:400 14px/1.36 var(--font-body,'Poppins',Arial,sans-serif)!important;
   box-shadow:0 3px 10px rgba(16,29,51,.035)!important;
   white-space:normal;
 }
@@ -1300,7 +1300,7 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 #amenities.amenities-compact .amx-more{
   min-height:44px!important;
   padding:10px 19px!important;
-  font:700 13px/1.3 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+  font:700 13px/1.3 var(--font-body,'Poppins',Arial,sans-serif)!important;
 }
 @media(max-width:1199px){
   #amenities.amenities-redesign.amenities-compact .amx-surface{padding:30px 29px 24px!important}
@@ -1333,4 +1333,124 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
 }
 @media(max-width:360px){
   #amenities.amenities-compact .amx-grid{grid-template-columns:1fr!important}
+}
+
+/* WE-based page type and amenity hover v1 — sourced from Workspace by Emlen
+   site-typography.css / site-polish.css: 48/36/21/16/14/13 and 90px rhythm. */
+:root{
+ --font-title:'Bricolage Grotesque',Arial,sans-serif;
+ --font-body:'Poppins',Arial,sans-serif;
+ --ae-body-size:14px;
+ --ae-h1:48px;
+ --ae-h2:36px;
+ --ae-card-heading:21px;
+ --ae-listing-panel-gap:90px;
+}
+body,button,input,select,textarea{font-family:var(--font-body)!important}
+.content-column>.section{margin-bottom:var(--ae-listing-panel-gap)!important}
+.content-column>#overview.property-about-slot{margin-bottom:var(--ae-listing-panel-gap)!important}
+.content-column>.section:last-of-type{margin-bottom:0!important}
+.property-heading h1{
+ font:700 var(--ae-h1)/1.1 var(--font-title)!important;
+ letter-spacing:-.035em!important;
+}
+#about.about-editorial h2,
+#offers.offers-ribbon h2,
+#amenities.amenities-compact .amx-head h2,
+#rooms.rooms-redesign .rooms-heading h2,
+#rules.house-rules-redesign h2,
+#payments.payments-redesign h2,
+#floorplan.section h2,
+#neighbourhood.section h2,
+#faqs.section h2,
+#location.section h2,
+#reviews.section h2{
+ font:700 var(--ae-h2)/1.16 var(--font-title)!important;
+ letter-spacing:-.025em!important;
+}
+#amenities.amenities-compact .amx-group-head h3,
+#offers.offers-ribbon .offer-ribbon-copy h3,
+#rooms.rooms-redesign .room-title-line h3,
+#payments.payments-redesign .payment-item h3,
+#reviews.section .review-preview-intro h3{
+ font-family:var(--font-title)!important;
+ font-size:var(--ae-card-heading)!important;
+ font-weight:600!important;
+ line-height:1.25!important;
+ letter-spacing:-.02em!important;
+}
+#about.about-editorial .about-editorial-lede{
+ font:400 16px/1.65 var(--font-body)!important;
+ letter-spacing:0!important;
+}
+#offers.offers-ribbon .offer-ribbon-copy p,
+#rooms.rooms-redesign .room-more-content p,
+#rules.house-rules-redesign .rule-body-inner p,
+#payments.payments-redesign .payment-item p,
+#floorplan.section .inline-request p,
+#neighbourhood.section .neighbourhood-layout p,
+#faqs.section .disclosure-list details p,
+#reviews.section .review-preview-intro p{
+ font:400 14px/1.65 var(--font-body)!important;
+ letter-spacing:0!important;
+}
+#amenities.amenities-compact .amx-item{font-family:var(--font-body)!important}
+#amenities.amenities-compact .amx-more,
+#offers.offers-ribbon .offer-unlock-button,
+#about.about-editorial .about-view-more{
+ font-family:var(--font-body)!important;
+ font-size:13px!important;
+ font-weight:600!important;
+}
+@media(max-width:1199px){:root{--ae-listing-panel-gap:68px}}
+@media(max-width:800px){
+ :root{
+  --ae-listing-panel-gap:48px;
+  --ae-h1:clamp(32px,8.8vw,38px);
+  --ae-h2:clamp(27px,7.2vw,32px);
+ }
+}
+@media(max-width:550px){:root{--ae-listing-panel-gap:38px}}
+/* Entrance/exit directional red fill. Bills Included fills green. */
+#amenities.amenities-compact .amx-item{
+ position:relative;isolation:isolate;overflow:hidden;
+ transition:color .32s ease,border-color .32s ease,box-shadow .32s ease;
+}
+#amenities.amenities-compact .amx-item::before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:var(--amenity-fill-color,var(--ae-red,#ED2024));
+ clip-path:circle(0% at var(--amenity-fill-x,50%) var(--amenity-fill-y,50%));
+ transition:clip-path .56s cubic-bezier(.2,.85,.23,1);
+}
+#amenities.amenities-compact .amx-item>span{
+ position:relative;z-index:1;color:inherit!important;
+ transition:color .25s ease;
+}
+#amenities.amenities-compact .amx-item::after{
+ position:relative;z-index:1;transition:border-color .25s ease;
+}
+#amenities.amenities-compact .amx-group-bills .amx-item{
+ --amenity-fill-color:#218b53;
+}
+@media(hover:hover) and (pointer:fine){
+ #amenities.amenities-compact .amx-item:hover{
+  color:#fff!important;border-color:var(--ae-red,#ED2024)!important;
+  box-shadow:0 7px 18px rgba(237,32,36,.12)!important;
+ }
+ #amenities.amenities-compact .amx-group-bills .amx-item:hover{
+  border-color:#218b53!important;
+  box-shadow:0 7px 18px rgba(33,139,83,.12)!important;
+ }
+ #amenities.amenities-compact .amx-item:hover::before{
+  clip-path:circle(165% at var(--amenity-fill-x,50%) var(--amenity-fill-y,50%));
+ }
+ #amenities.amenities-compact .amx-item:hover::after{
+  border-color:#fff!important;
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ #amenities.amenities-compact .amx-item,
+ #amenities.amenities-compact .amx-item::before,
+ #amenities.amenities-compact .amx-item::after,
+ #amenities.amenities-compact .amx-item>span{transition:none!important}
 }

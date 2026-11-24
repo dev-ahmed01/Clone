@@ -1,6 +1,6 @@
-/* Entry/exit-point red fill for the six About iQ Kingston feature pills. */
+/* Directional fill for About feature pills and text-only amenity cards. */
 (() => {
-  const pills = document.querySelectorAll('#about .about-feature-pill');
+  const pills = document.querySelectorAll('#about .about-feature-pill, #amenities .amx-item');
   if (!pills.length || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
 
   const setFillOrigin = (pill, event) => {
@@ -9,8 +9,9 @@
     const clamp = (value) => Math.min(100, Math.max(0, value));
     const x = clamp(((event.clientX - rect.left) / rect.width) * 100);
     const y = clamp(((event.clientY - rect.top) / rect.height) * 100);
-    pill.style.setProperty('--pill-fill-x', `${x.toFixed(1)}%`);
-    pill.style.setProperty('--pill-fill-y', `${y.toFixed(1)}%`);
+    const prefix = pill.matches('.amx-item') ? 'amenity' : 'pill';
+    pill.style.setProperty(`--${prefix}-fill-x`, `${x.toFixed(1)}%`);
+    pill.style.setProperty(`--${prefix}-fill-y`, `${y.toFixed(1)}%`);
   };
 
   for (const pill of pills) {
