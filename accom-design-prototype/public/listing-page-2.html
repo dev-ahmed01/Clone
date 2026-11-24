@@ -2144,7 +2144,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
  #scrollNav.section-nav,#scrollNav .section-nav-track a,#scrollNav .section-nav-track button,#scrollNav .section-nav-track a::after{transition:none!important}
 }
 </style>
-<link rel="stylesheet" href="assets/ae-design-system.css?v=20261124n"/>
+<link rel="stylesheet" href="assets/ae-design-system.css?v=20261124o"/>
 <link rel="stylesheet" href="assets/accom-we-gallery.css?v=20261124a"/>
 </head>
 <body>
@@ -2348,43 +2348,19 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </section>
 <section class="section ae-ambassador-section" id="ambassadors" aria-labelledby="ambassadorsHeading">
   <div class="ae-ambassador-panel">
-    <div class="ae-ambassador-intro">
-      <div class="ae-ambassador-intro-copy">
-        <span class="ae-ambassador-eyebrow"><span class="ae-ambassador-eyebrow-dot" aria-hidden="true"></span> BEYOND YOUR BOOKING</span>
-        <h2 id="ambassadorsHeading">Your room is just<br/><em>the beginning.</em></h2>
-        <p>Getting to know a new city is easier with people around you. Discover the two ambassador pathways you can ask our team about.</p>
-      </div>
-      <div class="ae-ambassador-orbit" aria-hidden="true">
-        <span class="ae-orbit ae-orbit-a"><b>STAY</b></span>
-        <span class="ae-orbit ae-orbit-b"><b>MEET</b></span>
-        <span class="ae-orbit ae-orbit-c"><b>BELONG</b></span>
-        <span class="ae-orbit-dash ae-orbit-dash-a"></span>
-        <span class="ae-orbit-dash ae-orbit-dash-b"></span>
-      </div>
+    <div class="ae-ambassador-message">
+      <span class="ae-ambassador-eyebrow">A LITTLE EXTRA WITH ACCOM</span>
+      <h2 id="ambassadorsHeading">Book with us.<br/><span>Then connect.</span></h2>
+      <p>Book through Accom by Emlen, then ask to speak with accommodation and university ambassadors.</p>
     </div>
-    <div class="ae-ambassador-paths">
-      <article class="ae-ambassador-path">
-        <div class="ae-path-meta"><span class="ae-path-index">01 / TWO WAYS TO CONNECT</span><span class="ae-path-mark" aria-hidden="true">A</span></div>
-        <h3>Accommodation<br/>ambassadors</h3>
-        <p>Ask about student connections, useful local tips and finding your feet in your new accommodation.</p>
-        <button class="ae-ambassador-cta" data-enquire="" data-offer="Accommodation ambassador pathway at iQ Kingston" type="button" aria-label="Ask about accommodation ambassador opportunities">
-          Ask about this pathway <svg aria-hidden="true"><use href="#arrow"></use></svg>
-        </button>
-      </article>
-      <article class="ae-ambassador-path ae-ambassador-path--university">
-        <div class="ae-path-meta"><span class="ae-path-index">02 / TWO WAYS TO CONNECT</span><span class="ae-path-mark" aria-hidden="true">U</span></div>
-        <h3>University<br/>ambassadors</h3>
-        <p>Learn about ways to connect with the wider student community and make your first weeks more familiar.</p>
-        <button class="ae-ambassador-cta" data-enquire="" data-offer="University ambassador pathway at iQ Kingston" type="button" aria-label="Ask about university ambassador opportunities">
-          Ask about this pathway <svg aria-hidden="true"><use href="#arrow"></use></svg>
-        </button>
-      </article>
-    </div>
-    <div class="ae-ambassador-foot">
-      <p><strong>Booked or planning to book?</strong> Ask our team how ambassador opportunities work. Participation and eligibility are subject to confirmation.</p>
-      <button class="ae-ambassador-footer-cta" data-enquire="" data-offer="Student ambassador programme at iQ Kingston" type="button">
-        Talk to our team <svg aria-hidden="true"><use href="#arrow"></use></svg>
-      </button>
+    <div class="ae-ambassador-action">
+      <div class="ae-ambassador-steps" aria-label="How it works">
+        <div class="ae-ambassador-step"><b>01</b><span>Book with Accom</span></div>
+        <span class="ae-ambassador-step-connector" aria-hidden="true"></span>
+        <div class="ae-ambassador-step"><b>02</b><span>Ask for an introduction</span></div>
+      </div>
+      <button class="ae-ambassador-book" data-enquire="" data-booking="iQ Kingston through Accom by Emlen" type="button">Book with us <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+      <small>Introductions are subject to availability.</small>
     </div>
   </div>
 </section>
@@ -2983,12 +2959,19 @@ function openEnquiry(event){
   if(dialog)closeDialog(false);
   const panel=$('#enquiryDialog');
   const offer=event?.currentTarget?.dataset?.offer||'';
+  const booking=event?.currentTarget?.dataset?.booking||'';
   const form=$('#enquiryForm');
   const message=form.elements.namedItem('message');
   const topic=form.elements.namedItem('topic');
   const context=panel.querySelector('.modal-context');
-  if(context)context.textContent=offer?'iQ Kingston · '+offer:'iQ Kingston · Accom by Emlen';
-  if(offer){
+  if(context)context.textContent=booking?'iQ Kingston · Booking enquiry':offer?'iQ Kingston · '+offer:'iQ Kingston · Accom by Emlen';
+  if(booking){
+    topic.value='Room availability';
+    if(!message.value.trim()||message.dataset.offerPrefill==='true'){
+      message.value='I would like to book '+booking+'. Please share the next steps and how ambassador introductions work after booking.';
+      message.dataset.offerPrefill='true';
+    }
+  }else if(offer){
     topic.value='Other question';
     if(!message.value.trim()||message.dataset.offerPrefill==='true'){
       message.value='Please confirm eligibility, availability and terms for '+offer+'.';
@@ -3097,6 +3080,5 @@ if(orderedOverview){
 </script>
 <script src="assets/about-pill-hover.js?v=20261124b" defer></script>
 <script src="assets/offers-ribbon.js?v=20261124b" defer></script>
-<script src="assets/ambassador-reveal.js?v=20261124a" defer></script>
 <script src="assets/accom-we-gallery.js?v=40521f4" defer></script>
 </body></html>
