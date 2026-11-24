@@ -2313,6 +2313,17 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 }
 @container(max-width:640px){#faqs.section #aeFaqTitle{margin-bottom:18px!important}#faqs .ae-faq-q{min-height:58px;padding:12px 17px;font-size:15px}#faqs .ae-faq-answer-inner p{padding:0 17px 16px!important}}
 @media(prefers-reduced-motion:reduce){#faqs .ae-faq-item,#faqs .ae-faq-plus,#faqs .ae-faq-plus::after{transition:none!important}#faqs .ae-faq-item[open] .ae-faq-a{animation:none!important}#faqs .ae-faq-item::details-content{transition:none!important}}
+
+#faqs .ae-faq-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+#faqs.section .ae-faq-heading #aeFaqTitle{margin:0!important}
+#faqs .ae-faq-view-all{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-height:44px;padding:9px 16px;border:1px solid #edd7d4;border-radius:999px;background:rgba(255,255,255,.72);color:var(--ae-red,#ed2024);font:600 13px/1.4 var(--font-body);cursor:pointer;transition:background .22s,color .22s,border-color .22s}
+#faqs .ae-faq-view-all[hidden]{display:none!important}
+#faqs .ae-faq-view-all:hover{background:var(--ae-red,#ed2024);border-color:var(--ae-red,#ed2024);color:white}
+#faqs .ae-faq-view-all:focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:3px}
+#faqs .ae-faq-view-all svg{width:16px;height:16px;transition:transform .24s ease}
+#faqs .ae-faq-view-all.is-expanded svg{transform:rotate(180deg)}
+@container(max-width:640px){#faqs .ae-faq-heading{margin-bottom:18px}}
+@media(prefers-reduced-motion:reduce){#faqs .ae-faq-view-all,#faqs .ae-faq-view-all svg{transition:none!important}}
 </style>
 </head>
 <body>
@@ -2580,15 +2591,41 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 
 
 <section class="section ae-workspace-faq" id="faqs" aria-labelledby="aeFaqTitle">
-  <h2 id="aeFaqTitle">FAQs</h2>
+  <div class="ae-faq-heading">
+    <h2 id="aeFaqTitle">FAQs</h2>
+    <button id="aeFaqViewAll" class="ae-faq-view-all" type="button" aria-controls="faqList" hidden><span>View all</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+  </div>
   <div class="ae-faq-list" id="faqList">
-    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>What is included in the rent?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></div></div></details>
-    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>What is the difference between an en suite and a studio?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></div></div></details>
-    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>Can I reserve a specific room?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></div></div></details>
-    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>Is there a guarantor requirement?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></div></div></details>
-    <details class="ae-faq-item" name="ae-listing-faq"><summary class="ae-faq-q"><span>Are viewings available?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Ask the property team for the latest viewing or virtual tour options.</p></div></div></details>
+    <details class="ae-faq-item"><summary class="ae-faq-q"><span>What is included in the rent?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>The listing includes Wi-Fi, electricity, water, heating and contents insurance. Confirm details and any exclusions in your contract.</p></div></div></details>
+    <details class="ae-faq-item"><summary class="ae-faq-q"><span>What is the difference between an en suite and a studio?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>An en suite has its own bathroom and a shared kitchen. A studio has a private bathroom and its own kitchenette.</p></div></div></details>
+    <details class="ae-faq-item"><summary class="ae-faq-q"><span>Can I reserve a specific room?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Request a specific room or floor plan, subject to the operator's confirmed availability. An Accom enquiry is not a reservation.</p></div></div></details>
+    <details class="ae-faq-item"><summary class="ae-faq-q"><span>Is there a guarantor requirement?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>A guarantor may be required for instalment payments. Confirm the current requirement before paying a booking fee.</p></div></div></details>
+    <details class="ae-faq-item"><summary class="ae-faq-q"><span>Are viewings available?</span><span class="ae-faq-plus" aria-hidden="true"></span></summary><div class="ae-faq-a"><div class="ae-faq-answer-inner"><p>Ask the property team for the latest viewing or virtual tour options.</p></div></div></details>
   </div>
 </section>
+<script id="aeFaqViewAllInteraction">
+(() => {
+  const list=document.getElementById('faqList');
+  const button=document.getElementById('aeFaqViewAll');
+  if(!list||!button)return;
+  const items=Array.from(list.querySelectorAll('details.ae-faq-item'));
+  const label=button.querySelector('span');
+  if(!items.length||!label)return;
+  const sync=()=>{
+    const expanded=items.every(item=>item.open);
+    label.textContent=expanded?'Collapse all':'View all';
+    button.classList.toggle('is-expanded',expanded);
+  };
+  button.addEventListener('click',()=>{
+    const expand=!items.every(item=>item.open);
+    items.forEach(item=>{item.open=expand;});
+    sync();
+  });
+  items.forEach(item=>item.addEventListener('toggle',sync));
+  sync();
+  button.hidden=false;
+})();
+</script>
 <section class="section" id="location"><h2>Nearby landmarks</h2><div class="location-panel"><div aria-hidden="true" class="location-illustration"><span class="route-a"></span><span class="route-b"></span><span class="location-pin"><svg><use href="#pin"></use></svg></span></div><div class="landmarks-detail">
 <strong>iQ Kingston</strong><p>15 Wood Street, Kingston upon Thames, KT1 1TY</p>
 <div class="landmark-groups">
