@@ -2144,7 +2144,7 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
  #scrollNav.section-nav,#scrollNav .section-nav-track a,#scrollNav .section-nav-track button,#scrollNav .section-nav-track a::after{transition:none!important}
 }
 </style>
-<link rel="stylesheet" href="assets/ae-design-system.css?v=20261124f"/>
+<link rel="stylesheet" href="assets/ae-design-system.css?v=20261124g"/>
 <link rel="stylesheet" href="assets/accom-we-gallery.css?v=20261124a"/>
 </head>
 <body>
@@ -2239,17 +2239,56 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
   </div>
 </section>
 </div>
-<section class="section offers-showcase offers-compact" id="offers" aria-labelledby="offers-heading">
+<section class="section offers-showcase offers-compact offers-ribbon" id="offers" aria-labelledby="offers-heading">
   <div class="offers-header">
-    <h2 id="offers-heading">Cashback &amp; Offers</h2>
-    <button class="offers-inline-enquire" type="button" data-enquire="" aria-label="Ask about cashback and offers">Ask about offers <svg aria-hidden="true"><use href="#arrow"></use></svg></button>
+    <div class="offers-title-group">
+      <h2 id="offers-heading">Cashback &amp; Offers</h2>
+      <p class="offers-subline">Explore cashback, group benefits and student opportunities.</p>
+    </div>
   </div>
-  <ul class="offers-compact-list" aria-label="Cashback, group discount and internship opportunities">
-    <li class="offers-compact-item"><svg aria-hidden="true" class="offer-inline-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.2"/><path d="M5.5 6c0 2-1.5 3.5-3.5 3.5m19.9 0C20 9.5 18.5 8 18.5 6M2 14.5c2 0 3.5 1.5 3.5 3.5M18.5 18c0-2 1.5-3.5 3.5-3.5"/></svg><p>Book any room and <span class="offer-inline-underline">Accomm by Emlen</span> will give assured <strong>Cashback of upto £100*</strong></p></li>
-    <li class="offers-compact-item"><svg aria-hidden="true" class="offer-inline-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.2"/><path d="M5.5 6c0 2-1.5 3.5-3.5 3.5m19.9 0C20 9.5 18.5 8 18.5 6M2 14.5c2 0 3.5 1.5 3.5 3.5M18.5 18c0-2 1.5-3.5 3.5-3.5"/></svg><p>Book any room and <span class="offer-inline-underline">Property</span> will give assured <strong>Cashback of upto £0*</strong></p></li>
-    <li class="offers-compact-item"><svg aria-hidden="true" class="offer-inline-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.2"/><path d="M5.5 6c0 2-1.5 3.5-3.5 3.5m19.9 0C20 9.5 18.5 8 18.5 6M2 14.5c2 0 3.5 1.5 3.5 3.5M18.5 18c0-2 1.5-3.5 3.5-3.5"/></svg><p>Increase benefit with friends &amp; get additional <strong>Group Discount of £50*</strong></p></li>
-    <li class="offers-compact-item"><svg aria-hidden="true" class="offer-inline-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.2"/><path d="M5.5 6c0 2-1.5 3.5-3.5 3.5m19.9 0C20 9.5 18.5 8 18.5 6M2 14.5c2 0 3.5 1.5 3.5 3.5M18.5 18c0-2 1.5-3.5 3.5-3.5"/></svg><p>AE students get internship opportunities to earn upto <strong>£500/month*</strong></p></li>
+  <ul class="offers-compact-list offer-ribbon-list" aria-label="Cashback, discounts and student opportunities">
+    <li class="offers-compact-item offer-ribbon-row" style="--offer-sequence:0">
+      <span class="offer-drop-ribbon" aria-hidden="true"><span>01</span></span>
+      <div class="offer-ribbon-copy">
+        <h3>Accomm by Emlen cashback</h3>
+        <p>Get <strong>up to £100 cashback*</strong> on eligible room bookings.</p>
+      </div>
+      <button class="offer-unlock-button" data-enquire="" data-offer="Accomm by Emlen cashback (up to £100)" type="button" aria-label="Unlock offer: Accomm by Emlen cashback (up to £100)">
+        <span>Unlock offer</span><svg aria-hidden="true"><use href="#arrow"></use></svg>
+      </button>
+    </li>
+    <li class="offers-compact-item offer-ribbon-row" style="--offer-sequence:1">
+      <span class="offer-drop-ribbon" aria-hidden="true"><span>02</span></span>
+      <div class="offer-ribbon-copy">
+        <h3>Property cashback</h3>
+        <p>Currently listed at <strong>£0*</strong>. Check for any updated property offer.</p>
+      </div>
+      <button class="offer-unlock-button" data-enquire="" data-offer="Property cashback (currently £0)" type="button" aria-label="Unlock offer: Property cashback (currently £0)">
+        <span>Unlock offer</span><svg aria-hidden="true"><use href="#arrow"></use></svg>
+      </button>
+    </li>
+    <li class="offers-compact-item offer-ribbon-row" style="--offer-sequence:2">
+      <span class="offer-drop-ribbon" aria-hidden="true"><span>03</span></span>
+      <div class="offer-ribbon-copy">
+        <h3>Group booking discount</h3>
+        <p>Book with friends for an additional <strong>£50 discount*</strong>.</p>
+      </div>
+      <button class="offer-unlock-button" data-enquire="" data-offer="Group discount (£50)" type="button" aria-label="Unlock offer: Group discount (£50)">
+        <span>Unlock offer</span><svg aria-hidden="true"><use href="#arrow"></use></svg>
+      </button>
+    </li>
+    <li class="offers-compact-item offer-ribbon-row" style="--offer-sequence:3">
+      <span class="offer-drop-ribbon" aria-hidden="true"><span>04</span></span>
+      <div class="offer-ribbon-copy">
+        <h3>AE student internships</h3>
+        <p>Explore opportunities to earn <strong>up to £500/month*</strong>.</p>
+      </div>
+      <button class="offer-unlock-button" data-enquire="" data-offer="AE student internship opportunities (up to £500/month)" type="button" aria-label="Unlock offer: AE student internship opportunities (up to £500/month)">
+        <span>Unlock offer</span><svg aria-hidden="true"><use href="#arrow"></use></svg>
+      </button>
+    </li>
   </ul>
+  <p class="offers-terms-note">*Offers and internship opportunities are subject to eligibility, availability and terms. Please confirm details before booking.</p>
 </section>
 
 
@@ -2843,7 +2882,30 @@ function openCompare(){const list=rooms.filter(room=>compared.has(room.id));cons
 $$('[data-compare-open]').forEach(button=>button.addEventListener('click',openCompare));$('#clearCompare').addEventListener('click',()=>{compared.clear();updateCompareCount();redrawRooms();notify('Comparison cleared');});updateCompareCount();updateSelectedRoom();redrawRooms();
 function goToRooms(event){event?.preventDefault();history.replaceState(null,'','#rooms');$('#rooms').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});scheduleGeometryMeasure();}
 $('#railRooms').addEventListener('click',goToRooms);$('[data-gallery-rooms]')?.addEventListener('click',goToRooms);
-function openEnquiry(){if(dialog)closeDialog(false);$('#enquirySuccess').hidden=true;$('#enquiryForm').hidden=false;$('#enquiryError').hidden=true;openDialog($('#enquiryDialog'));}
+function openEnquiry(event){
+  if(dialog)closeDialog(false);
+  const panel=$('#enquiryDialog');
+  const offer=event?.currentTarget?.dataset?.offer||'';
+  const form=$('#enquiryForm');
+  const message=form.elements.namedItem('message');
+  const topic=form.elements.namedItem('topic');
+  const context=panel.querySelector('.modal-context');
+  if(context)context.textContent=offer?'iQ Kingston · '+offer:'iQ Kingston · Accom by Emlen';
+  if(offer){
+    topic.value='Other question';
+    if(!message.value.trim()||message.dataset.offerPrefill==='true'){
+      message.value='Please confirm eligibility, availability and terms for '+offer+'.';
+      message.dataset.offerPrefill='true';
+    }
+  }else if(message.dataset.offerPrefill==='true'){
+    message.value='';
+    delete message.dataset.offerPrefill;
+  }
+  $('#enquirySuccess').hidden=true;
+  form.hidden=false;
+  $('#enquiryError').hidden=true;
+  openDialog(panel);
+}
 $$('[data-enquire]').forEach(button=>button.addEventListener('click',openEnquiry));
 $('#enquiryForm').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget, name=form.elements.namedItem('name').value.trim(), email=form.elements.namedItem('email').value.trim(), consent=form.elements.namedItem('consent').checked;
  let error=!name?'Enter your name.':!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)?'Enter a valid email address.':!consent?'Please acknowledge that this form is a demo.':'';
@@ -2937,5 +2999,6 @@ if(orderedOverview){
 
 </script>
 <script src="assets/about-pill-hover.js?v=20261124a" defer></script>
+<script src="assets/offers-ribbon.js?v=20261124a" defer></script>
 <script src="assets/accom-we-gallery.js?v=40521f4" defer></script>
 </body></html>
