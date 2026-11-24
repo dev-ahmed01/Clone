@@ -2409,6 +2409,61 @@ html.ae-faq-dialog-open{overflow:hidden!important}
  body .cta-aside .booking-card--compact .rail-nearby--compact .rail-walk-row{min-height:30px!important;padding:5px 0!important}
 }
 </style>
+<style id="ae-similar-properties-style">
+#similar-properties.section.ae-similar-section{padding:0!important;margin:0 0 64px!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;container-type:inline-size;min-width:0}
+#similar-properties .ae-sim-heading{margin:0 0 22px}
+#similar-properties.section h2{font:700 var(--ae-h2,36px)/1.13 var(--font-title)!important;letter-spacing:-.042em!important;color:var(--ae-ink,#101d33)!important;margin:0!important}
+#similar-properties .ae-sim-tabs{display:flex;gap:25px;align-items:center;border-bottom:1px solid rgba(16,29,51,.12);margin-bottom:22px;overflow-x:auto;scrollbar-width:none}
+#similar-properties .ae-sim-tab{position:relative;flex:0 0 auto;background:transparent;border:0;border-radius:0;padding:0 2px 13px;font:500 14px/1.4 var(--font-body);color:#526079;cursor:pointer;white-space:nowrap}
+#similar-properties .ae-sim-tab[aria-selected=true]{color:var(--ae-red,#ed2024);font-weight:600}
+#similar-properties .ae-sim-tab::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;border-radius:2px;background:var(--ae-red,#ed2024);transform:scaleX(0);transition:transform .24s ease}
+#similar-properties .ae-sim-tab[aria-selected=true]::after{transform:scaleX(1)}
+#similar-properties .ae-sim-panel[hidden]{display:none!important}
+#similar-properties .ae-sim-row{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 28px)/3);gap:14px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain;padding:3px 0 13px;scroll-behavior:auto!important}
+#similar-properties .ae-sim-row::-webkit-scrollbar{display:none}
+#similar-properties .ae-sim-card{position:relative;min-width:0;display:flex;flex-direction:column;overflow:hidden;scroll-snap-align:start;border:1px solid rgba(16,29,51,.09);background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(255,255,255,.82));border-radius:20px;box-shadow:0 7px 18px rgba(16,29,51,.055);transition:border-color .25s,box-shadow .25s}
+#similar-properties .ae-sim-card:hover{border-color:rgba(237,32,36,.25);box-shadow:0 10px 22px rgba(16,29,51,.09)}
+#similar-properties .ae-sim-media{position:relative;display:block;aspect-ratio:1.58;overflow:hidden;margin:7px 7px 0;border-radius:14px;background:linear-gradient(135deg,#f6e9e2,#f7f0e6)}
+#similar-properties .ae-sim-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+#similar-properties .ae-sim-photo-secondary{opacity:0;transition:opacity .4s ease}
+#similar-properties .ae-sim-image-dots{position:absolute;bottom:9px;left:50%;transform:translateX(-50%);display:flex;gap:4px;padding:5px 7px;background:rgba(16,29,51,.3);border-radius:999px;pointer-events:none}
+#similar-properties .ae-sim-image-dots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.55)}
+#similar-properties .ae-sim-image-dots i:first-child{background:white}
+#similar-properties .ae-sim-save{position:absolute;z-index:2;top:16px;right:16px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.8);color:var(--ae-red,#ed2024);cursor:pointer;box-shadow:0 3px 10px #101d3315}
+#similar-properties .ae-sim-save svg{width:18px;height:18px}
+#similar-properties .ae-sim-save[aria-pressed=true] svg{fill:var(--ae-red,#ed2024)}
+#similar-properties .ae-sim-info{display:flex;flex-direction:column;flex:1;padding:13px 15px 15px;text-decoration:none!important;color:var(--ae-ink,#101d33)}
+#similar-properties .ae-sim-info h3{font:600 20px/1.18 var(--font-title)!important;letter-spacing:-.025em!important;color:var(--ae-ink,#101d33)!important;margin:0 0 4px!important}
+#similar-properties .ae-sim-location{font:400 12px/1.5 var(--font-body);color:#526079}
+#similar-properties .ae-sim-bottom{margin-top:auto;padding-top:13px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+#similar-properties .ae-sim-rate{display:flex;align-items:baseline;gap:4px;white-space:nowrap}
+#similar-properties .ae-sim-rate small,#similar-properties .ae-sim-rate span{font:400 11px/1.4 var(--font-body);color:#526079}
+#similar-properties .ae-sim-rate strong{font:700 25px/1 var(--font-title);letter-spacing:-.04em}
+#similar-properties .ae-sim-arrow{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;border-radius:50%;background:#fff1ef;color:var(--ae-red,#ed2024);transition:background .2s,color .2s}
+#similar-properties .ae-sim-arrow svg{width:18px;height:18px;fill:none;stroke:currentColor}
+#similar-properties .ae-sim-info:hover .ae-sim-arrow{background:var(--ae-red,#ed2024);color:white}
+#similar-properties .ae-sim-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:4px}
+#similar-properties .ae-sim-foot small,#similar-properties .ae-sim-foot small a{font:400 11px/1.4 var(--font-body);color:#526079}
+#similar-properties .ae-sim-pagination{display:flex;gap:7px}
+#similar-properties .ae-sim-pagination button{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(16,29,51,.13);background:#fff;color:var(--ae-ink,#101d33);cursor:pointer}
+#similar-properties .ae-sim-pagination svg{width:17px;height:17px}
+#similar-properties .ae-sim-pagination button:disabled{opacity:.32;cursor:default}
+#similar-properties :focus-visible{outline:2px solid var(--ae-red,#ed2024);outline-offset:-2px}
+#similar-properties .ae-sim-no-preview .ae-sim-photo-secondary,#similar-properties .ae-sim-no-preview .ae-sim-image-dots{display:none}
+#similar-properties .ae-sim-primary-missing:not(.ae-sim-no-preview) .ae-sim-photo-secondary{opacity:1!important}
+@media(hover:hover) and (pointer:fine){
+ #similar-properties .ae-sim-card:hover .ae-sim-media:not(.ae-sim-no-preview) .ae-sim-photo-secondary{animation:aeSimPhotoCycle 4s linear infinite;opacity:1}
+ #similar-properties .ae-sim-card:hover .ae-sim-media:not(.ae-sim-no-preview) .ae-sim-image-dots i:first-child{animation:aeSimDotFirst 4s linear infinite}
+ #similar-properties .ae-sim-card:hover .ae-sim-media:not(.ae-sim-no-preview) .ae-sim-image-dots i:last-child{animation:aeSimDotSecond 4s linear infinite}
+}
+#similar-properties .ae-sim-media:focus-visible:not(.ae-sim-no-preview) .ae-sim-photo-secondary{opacity:1}
+@keyframes aeSimPhotoCycle{0%{opacity:0}10%,48%{opacity:1}58%,100%{opacity:0}}
+@keyframes aeSimDotFirst{0%,58%,100%{background:white}10%,48%{background:rgba(255,255,255,.55)}}
+@keyframes aeSimDotSecond{0%,58%,100%{background:rgba(255,255,255,.55)}10%,48%{background:white}}
+@container(max-width:780px){#similar-properties .ae-sim-row{grid-auto-columns:calc((100% - 14px)/2)}}
+@container(max-width:490px){#similar-properties .ae-sim-row{grid-auto-columns:83%;gap:12px}#similar-properties .ae-sim-tabs{gap:19px}#similar-properties .ae-sim-info h3{font-size:19px!important}}
+@media(prefers-reduced-motion:reduce){#similar-properties *{animation:none!important;transition:none!important}#similar-properties .ae-sim-card:hover .ae-sim-photo-secondary{opacity:1}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2475,6 +2530,7 @@ html.ae-faq-dialog-open{overflow:hidden!important}
   <a href="#faqs">FAQs</a>
   <a href="#location">Location</a>
   <a href="#reviews">Reviews</a>
+  <a href="#similar-properties">Similar properties</a>
  </div>
  <div class="section-nav-actions">
   <button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button>
@@ -2755,6 +2811,175 @@ html.ae-faq-dialog-open{overflow:hidden!important}
  motion.addEventListener('change',configure);configure();
 })();
 </script>
+<section class="section ae-similar-section" id="similar-properties" aria-labelledby="aeSimilarTitle">
+ <div class="ae-sim-heading"><h2 id="aeSimilarTitle">Similar properties</h2></div>
+ <div class="ae-sim-tabs" role="tablist" aria-label="Similar property categories">
+ <button type="button" id="aeSimTab-rent" class="ae-sim-tab" role="tab" aria-selected="true" aria-controls="aeSimPanel-rent" tabindex="0">Similar Rent</button>
+ <button type="button" id="aeSimTab-nearby" class="ae-sim-tab" role="tab" aria-selected="false" aria-controls="aeSimPanel-nearby" tabindex="-1">Nearby</button>
+ <button type="button" id="aeSimTab-popular" class="ae-sim-tab" role="tab" aria-selected="false" aria-controls="aeSimPanel-popular" tabindex="-1">Popular</button>
+ </div>
+ <div class="ae-sim-panel" id="aeSimPanel-rent" role="tabpanel" aria-labelledby="aeSimTab-rent" ><div class="ae-sim-row" tabindex="0" aria-label="Similar Rent properties, scroll horizontally for more">
+ <article class="ae-sim-card" data-property="quebec">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/quebec-house" target="_blank" rel="noopener noreferrer" aria-label="Explore Quebec House">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Quebec_House_room_1.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="Quebec House room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Quebec_House_common_area_1.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save Quebec House" aria-pressed="false" data-save-property="quebec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/quebec-house" target="_blank" rel="noopener noreferrer">
+  <h3>Quebec House</h3><span class="ae-sim-location">Cromwell Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£325</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="axo">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/axo-kingston" target="_blank" rel="noopener noreferrer" aria-label="Explore AXO Kingston">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Standard_Studio_room_XRge4za.jpeg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="AXO Kingston room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Standard_Studio_room1_9hbMKhF.jpeg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save AXO Kingston" aria-pressed="false" data-save-property="axo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/axo-kingston" target="_blank" rel="noopener noreferrer">
+  <h3>AXO Kingston</h3><span class="ae-sim-location">London Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£325</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="davidson">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/davidson-house" target="_blank" rel="noopener noreferrer" aria-label="Explore Davidson House">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Classic_Ensuite_room_1FhvHKP.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="Davidson House room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Davidson_House_kitchen.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save Davidson House" aria-pressed="false" data-save-property="davidson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/davidson-house" target="_blank" rel="noopener noreferrer">
+  <h3>Davidson House</h3><span class="ae-sim-location">Penrhyn Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£295</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="penrhyn">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/one-penrhyn-road" target="_blank" rel="noopener noreferrer" aria-label="Explore One Penrhyn Road">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Studio_swkbgG0.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="One Penrhyn Road room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Studio1_jrUtQP7.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save One Penrhyn Road" aria-pressed="false" data-save-property="penrhyn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/one-penrhyn-road" target="_blank" rel="noopener noreferrer">
+  <h3>One Penrhyn Road</h3><span class="ae-sim-location">Penrhyn Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£295</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ </div></div>
+ <div class="ae-sim-panel" id="aeSimPanel-nearby" role="tabpanel" aria-labelledby="aeSimTab-nearby" hidden><div class="ae-sim-row" tabindex="0" aria-label="Nearby properties, scroll horizontally for more">
+ <article class="ae-sim-card" data-property="quebec">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/quebec-house" target="_blank" rel="noopener noreferrer" aria-label="Explore Quebec House">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Quebec_House_room_1.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="Quebec House room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Quebec_House_common_area_1.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save Quebec House" aria-pressed="false" data-save-property="quebec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/quebec-house" target="_blank" rel="noopener noreferrer">
+  <h3>Quebec House</h3><span class="ae-sim-location">Cromwell Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£325</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="penrhyn">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/one-penrhyn-road" target="_blank" rel="noopener noreferrer" aria-label="Explore One Penrhyn Road">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Studio_swkbgG0.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="One Penrhyn Road room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Studio1_jrUtQP7.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save One Penrhyn Road" aria-pressed="false" data-save-property="penrhyn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/one-penrhyn-road" target="_blank" rel="noopener noreferrer">
+  <h3>One Penrhyn Road</h3><span class="ae-sim-location">Penrhyn Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£295</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="davidson">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/davidson-house" target="_blank" rel="noopener noreferrer" aria-label="Explore Davidson House">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Classic_Ensuite_room_1FhvHKP.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="Davidson House room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Davidson_House_kitchen.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save Davidson House" aria-pressed="false" data-save-property="davidson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/davidson-house" target="_blank" rel="noopener noreferrer">
+  <h3>Davidson House</h3><span class="ae-sim-location">Penrhyn Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£295</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="vibe">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/vibe-student-living" target="_blank" rel="noopener noreferrer" aria-label="Explore ViBe Student Living">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/9_Bed_Cluster_En-suite_-_Ground_Floo_room.jpeg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="ViBe Student Living room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/9_Bed_Cluster_En-suite_-_Ground_Floo_kitchen.jpeg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save ViBe Student Living" aria-pressed="false" data-save-property="vibe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/vibe-student-living" target="_blank" rel="noopener noreferrer">
+  <h3>ViBe Student Living</h3><span class="ae-sim-location">Cambridge Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£252</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ </div></div>
+ <div class="ae-sim-panel" id="aeSimPanel-popular" role="tabpanel" aria-labelledby="aeSimTab-popular" hidden><div class="ae-sim-row" tabindex="0" aria-label="Popular properties, scroll horizontally for more">
+ <article class="ae-sim-card" data-property="vibe">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/vibe-student-living" target="_blank" rel="noopener noreferrer" aria-label="Explore ViBe Student Living">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/9_Bed_Cluster_En-suite_-_Ground_Floo_room.jpeg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="ViBe Student Living room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/9_Bed_Cluster_En-suite_-_Ground_Floo_kitchen.jpeg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save ViBe Student Living" aria-pressed="false" data-save-property="vibe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/vibe-student-living" target="_blank" rel="noopener noreferrer">
+  <h3>ViBe Student Living</h3><span class="ae-sim-location">Cambridge Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£252</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="davidson">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/davidson-house" target="_blank" rel="noopener noreferrer" aria-label="Explore Davidson House">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Classic_Ensuite_room_1FhvHKP.jpg?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="Davidson House room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Davidson_House_kitchen.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save Davidson House" aria-pressed="false" data-save-property="davidson"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/davidson-house" target="_blank" rel="noopener noreferrer">
+  <h3>Davidson House</h3><span class="ae-sim-location">Penrhyn Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£295</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ <article class="ae-sim-card" data-property="quebec">
+ <a class="ae-sim-media" href="https://uniacco.com/uk/kingston/quebec-house" target="_blank" rel="noopener noreferrer" aria-label="Explore Quebec House">
+  <img class="ae-sim-photo ae-sim-photo-primary" src="https://uniacco.imgix.net/inventory/Quebec_House_room_1.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="Quebec House room">
+  <img class="ae-sim-photo ae-sim-photo-secondary" src="https://uniacco.imgix.net/inventory/Quebec_House_common_area_1.webp?auto=format&amp;fit=max&amp;w=800" loading="lazy" decoding="async" alt="" aria-hidden="true">
+  <span class="ae-sim-image-dots" aria-hidden="true"><i></i><i></i></span>
+ </a>
+ <button type="button" class="ae-sim-save" aria-label="Save Quebec House" aria-pressed="false" data-save-property="quebec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></button>
+ <a class="ae-sim-info" href="https://uniacco.com/uk/kingston/quebec-house" target="_blank" rel="noopener noreferrer">
+  <h3>Quebec House</h3><span class="ae-sim-location">Cromwell Road, Kingston</span>
+  <div class="ae-sim-bottom"><div class="ae-sim-rate"><small>From</small> <strong>£325</strong><span>/week</span></div><span class="ae-sim-arrow" aria-hidden="true"><svg><use href="#arrow"></use></svg></span></div>
+ </a>
+</article>
+ </div></div>
+ <div class="ae-sim-foot"><small>Indicative starting prices · <a href="https://uniacco.com/uk/kingston-university" target="_blank" rel="noopener noreferrer">Source</a></small><div class="ae-sim-pagination" aria-label="Browse properties"><button type="button" data-sim-scroll="-1" aria-label="Previous properties"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg></button><button type="button" data-sim-scroll="1" aria-label="Next properties"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></button></div></div>
+</section>
+<script id="aeSimilarPropertiesInteraction">
+(() => {
+ const root=document.getElementById('similar-properties');if(!root)return;
+ const tabs=Array.from(root.querySelectorAll('[role=tab]')),panels=Array.from(root.querySelectorAll('[role=tabpanel]')),arrows=Array.from(root.querySelectorAll('[data-sim-scroll]')),saves=Array.from(root.querySelectorAll('[data-save-property]'));
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ let active=0,saved=new Set();
+ try{saved=new Set(JSON.parse(localStorage.getItem('ae-similar-saved-v1')||'[]'));}catch{}
+ const row=()=>panels[active].querySelector('.ae-sim-row');
+ const syncArrows=()=>{const el=row(),end=el.scrollWidth-el.clientWidth;arrows[0].disabled=el.scrollLeft<=2;arrows[1].disabled=el.scrollLeft>=end-2;};
+ const select=(i,focus=false)=>{active=i;tabs.forEach((tab,n)=>{tab.setAttribute('aria-selected',String(n===i));tab.tabIndex=n===i?0:-1;panels[n].hidden=n!==i;});if(focus)tabs[i].focus();requestAnimationFrame(syncArrows);};
+ tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>select(i));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(i+1)%tabs.length;else if(event.key==='ArrowLeft')next=(i+tabs.length-1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();select(next,true);});});
+ panels.forEach(panel=>panel.querySelector('.ae-sim-row').addEventListener('scroll',syncArrows,{passive:true}));
+ arrows.forEach(button=>button.addEventListener('click',()=>{const el=row(),card=el.querySelector('.ae-sim-card');const step=card.getBoundingClientRect().width+parseFloat(getComputedStyle(el).columnGap||0);el.scrollBy({left:Number(button.dataset.simScroll)*step,behavior:reduced.matches?'instant':'smooth'});}));
+ const syncSaved=()=>saves.forEach(button=>{const on=saved.has(button.dataset.saveProperty);button.setAttribute('aria-pressed',String(on));const name=button.closest('.ae-sim-card').querySelector('h3').textContent;button.setAttribute('aria-label',(on?'Remove saved ':'Save ')+name);});
+ saves.forEach(button=>button.addEventListener('click',()=>{const id=button.dataset.saveProperty;saved.has(id)?saved.delete(id):saved.add(id);try{localStorage.setItem('ae-similar-saved-v1',JSON.stringify([...saved]));}catch{}syncSaved();}));
+ root.querySelectorAll('.ae-sim-photo-secondary').forEach(img=>{const fallback=()=>img.closest('.ae-sim-media').classList.add('ae-sim-no-preview');img.addEventListener('error',fallback);if(img.complete&&!img.naturalWidth)fallback();});
+ root.querySelectorAll('.ae-sim-photo-primary').forEach(img=>{const fallback=()=>img.closest('.ae-sim-media').classList.add('ae-sim-primary-missing');img.addEventListener('error',fallback);if(img.complete&&!img.naturalWidth)fallback();});
+ if(window.ResizeObserver)new ResizeObserver(syncArrows).observe(root);else window.addEventListener('resize',syncArrows,{passive:true});
+ syncSaved();select(0);
+})();
+</script>
+
 </div>
 <aside aria-label="Starting room price and enquiry" class="cta-aside">
   <div class="cta-sticky">
