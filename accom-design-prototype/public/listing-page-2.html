@@ -2172,39 +2172,76 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @media(prefers-reduced-motion:reduce){#ambassadors .ae-ambassador-type,#ambassadors .ae-ambassador-type::after,#ambassadors .ae-ambassador-portraits img{transition:none!important;transform:none!important}}
 </style>
 <style id="ae-room-details-popup">
-#rooms .room-details-trigger{display:inline-flex;align-items:center;gap:7px;padding:5px 0;min-height:32px;background:none;border:0;color:var(--ae-cobalt,#1f47c7);font:600 14px/1.4 var(--font-body);cursor:pointer;text-align:left}
+/* Student-first listing cards: room photography / essentials / price and dates. */
+#rooms #roomList{container-type:inline-size}
+#rooms .room-student-card{display:block!important;overflow:hidden}
+#rooms .room-student-card .room-primary{display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(180px,.82fr);gap:0;padding:14px;align-items:stretch}
+#rooms .room-student-card .room-media{position:relative;display:block;width:100%;height:100%;min-height:224px;max-height:none;margin:0;border:0;padding:0;cursor:pointer;border-radius:15px;overflow:hidden}
+#rooms .room-student-card .room-media img{width:100%;height:100%;min-height:224px;object-fit:cover;transition:filter .25s}
+#rooms .room-student-card .room-media:hover img{filter:brightness(.9)}
+#rooms .rs-photo-label{position:absolute;bottom:9px;left:9px;background:rgba(16,29,51,.76);color:#fff;border:1px solid #ffffff40;padding:5px 9px;border-radius:999px;font:500 10px/1.35 var(--font-body)}
+#rooms .room-student-card .room-details{padding:14px 16px!important;display:flex;flex-direction:column;justify-content:center;gap:13px;min-width:0}
+#rooms .room-student-card .room-title-line h3{font:600 clamp(19px,2.5cqi,24px)/1.15 var(--font-title)!important}
+#rooms .room-student-card .room-facts{display:grid;gap:9px;margin:0}
+#rooms .room-student-card .room-facts span{font:400 12px/1.45 var(--font-body);gap:8px}
+#rooms .room-student-card .room-primary-actions{display:flex;flex-wrap:wrap;gap:4px 13px;margin:0}
+#rooms .room-details-trigger{display:inline-flex;align-items:center;gap:5px;padding:5px 0;min-height:32px;background:none;border:0;color:var(--ae-cobalt,#1f47c7);font:600 12px/1.4 var(--font-body);cursor:pointer;text-align:left;white-space:nowrap}
 #rooms .room-details-trigger svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.7;fill:none;transition:transform .2s}
 #rooms .room-details-trigger:hover{color:var(--red)}
 #rooms .room-details-trigger:hover svg{transform:translateX(3px)}
-#rooms .room-tenancy-row{gap:13px;align-items:center}
-#rooms .room-term-fact>span,#rooms .room-term-price>span{font:400 12px/1.35 var(--font-body)!important;color:#526079!important}
-#rooms .room-term-fact strong{font:600 14px/1.4 var(--font-body)!important;letter-spacing:.01em;font-variant-numeric:tabular-nums!important}
-#rooms .room-term-price>strong{font:700 21px/1.2 var(--font-title)!important}
-#roomDetailsDialog .room-detail-surface{width:min(740px,calc(100vw - 28px));max-width:740px;max-height:calc(100dvh - 32px);overflow:auto;padding:28px;border-radius:24px;background:#fffcf9;box-sizing:border-box}
-#roomDetailsDialog .rd-header{padding-right:36px;margin-bottom:18px}
-#roomDetailsDialog .rd-header h2{margin:0 0 4px!important;font:700 clamp(26px,4vw,34px)/1.15 var(--font-title)!important;letter-spacing:-.035em}
-#roomDetailsDialog .rd-header p{margin:0!important;color:#526079;font:400 13px/1.5 var(--font-body)!important}
-#roomDetailsDialog .rd-overview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px;align-items:start}
-#roomDetailsDialog .rd-no-image{grid-template-columns:1fr}
-#roomDetailsDialog .rd-image{width:100%;height:210px;object-fit:cover;border-radius:15px}
-#roomDetailsDialog h3{font:600 20px/1.25 var(--font-title);margin:0 0 10px;color:var(--navy)}
-#roomDetailsDialog .rd-copy p{font:400 13px/1.65 var(--font-body)!important;margin:0 0 12px;color:#526079}
-#roomDetailsDialog dl{margin:0;display:grid;gap:9px}
-#roomDetailsDialog .rd-features>div{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding-bottom:8px;border-bottom:1px solid #eee5de}
-#roomDetailsDialog dt{color:#526079;font:400 12px/1.4 var(--font-body)}
-#roomDetailsDialog dd{margin:0;color:var(--navy);font:600 13px/1.4 var(--font-body);font-variant-numeric:tabular-nums;text-align:right}
-#roomDetailsDialog .rd-tenancy-heading{margin-top:22px}
-#roomDetailsDialog .rd-tenancy{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-#roomDetailsDialog .rd-tenancy>div{display:flex;flex-direction:column;gap:5px;background:#fff;border:1px solid #e9e1d9;border-radius:11px;padding:12px 10px}
-#roomDetailsDialog .rd-tenancy dd{text-align:left;font-size:14px;white-space:nowrap}
-#roomDetailsDialog dd small{font-size:10px;font-weight:400}
-#roomDetailsDialog .rd-total{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;background:#f5f0eb;border-radius:12px;padding:12px 14px;font:500 13px/1.4 var(--font-body)}
-#roomDetailsDialog .rd-total strong{font:700 22px/1.2 var(--font-title);color:var(--navy)}
-#roomDetailsDialog .rd-note{font:400 11px/1.5 var(--font-body)!important;margin:9px 0 0!important;color:#526079!important}
-#roomDetailsDialog .rd-footer{display:flex;justify-content:flex-end;gap:9px;margin-top:20px}
-#roomDetailsDialog .rd-footer button{border-radius:999px;min-height:42px}
-@media(max-width:600px){#roomDetailsDialog .room-detail-surface{padding:20px 16px}#roomDetailsDialog .rd-overview{grid-template-columns:1fr;gap:12px}#roomDetailsDialog .rd-image{height:160px}#roomDetailsDialog .rd-tenancy{grid-template-columns:repeat(2,minmax(0,1fr))}#roomDetailsDialog .rd-footer button{flex:1}#rooms .room-term-fact strong{font-size:13px!important}}
-@media(prefers-reduced-motion:reduce){#rooms .room-details-trigger svg{transition:none;transform:none!important}}
+#rooms .room-student-card .room-compare{font-size:12px!important;white-space:nowrap}
+#rooms .room-student-card .room-tenancy-row{display:flex!important;flex-direction:column;align-items:stretch;justify-content:center;gap:11px;padding:10px 2px 10px 15px;border:0;border-left:1px solid #e9e1d9;background:transparent}
+#rooms .room-student-card .room-term-price{gap:1px}
+#rooms .room-student-card .room-term-price>span{font:400 11px/1.4 var(--font-body);color:#526079}
+#rooms .room-student-card .room-term-price>strong{font:700 30px/1.05 var(--font-title)!important;letter-spacing:-.04em}
+#rooms .room-student-card .room-term-price>strong small{font:400 11px/1.2 var(--font-body);letter-spacing:0}
+#rooms .rs-dates{display:grid;gap:6px;padding:10px 0;border-top:1px solid #eee5de}
+#rooms .room-student-card .room-term-fact{flex-direction:row;justify-content:space-between;align-items:baseline;gap:7px}
+#rooms .room-student-card .room-term-fact>span{font:400 11px/1.4 var(--font-body)!important;color:#526079!important}
+#rooms .room-student-card .room-term-fact strong{font:600 13px/1.4 var(--font-body)!important;white-space:nowrap;font-variant-numeric:tabular-nums}
+#rooms .room-student-card .room-term-actions{display:grid;grid-template-columns:1fr;gap:7px}
+#rooms .room-student-card .room-term-actions button{min-height:36px;padding:8px 10px;font:600 12px/1.25 var(--font-body)!important;justify-content:center;width:100%}
+@container(max-width:700px){#rooms .room-student-card .room-primary{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}#rooms .room-student-card .room-details{padding:10px 8px!important}#rooms .room-student-card .room-media,#rooms .room-student-card .room-media img{min-height:190px}#rooms .room-student-card .room-tenancy-row{grid-column:1/-1;border-left:0;border-top:1px solid #e9e1d9;padding:12px 0 0;display:grid!important;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center}#rooms .rs-dates{padding:0 10px;border:0;border-left:1px solid #e9e1d9}#rooms .room-student-card .room-term-actions{min-width:95px}}
+@container(max-width:440px){#rooms .room-student-card .room-primary{display:flex!important;flex-direction:column;padding:11px}#rooms .room-student-card .room-media{height:205px;min-height:205px}#rooms .room-student-card .room-media img{min-height:0}#rooms .room-student-card .room-details{padding:5px 3px!important;gap:10px}#rooms .room-student-card .room-facts{display:flex;flex-wrap:wrap;gap:8px 12px}#rooms .room-student-card .room-tenancy-row{grid-template-columns:auto minmax(0,1fr)}#rooms .room-student-card .room-term-actions{grid-column:1/-1;grid-template-columns:1fr 1fr}#rooms .room-student-card .room-term-price>strong{font-size:27px!important}}
+/* Large room sheet: stable header, scrollable gallery and grouped sections. */
+#roomDetailsDialog{background:rgba(16,29,51,.48);backdrop-filter:blur(5px)}
+#roomDetailsDialog .room-detail-surface{display:flex;flex-direction:column;width:min(980px,calc(100vw - 32px));max-width:980px;height:auto;max-height:calc(100dvh - 36px);overflow:hidden;padding:0!important;border-radius:22px;background:#fffcf9;box-sizing:border-box;box-shadow:0 22px 70px #101d3333}
+#roomDetailsDialog .rd-header{position:relative;flex:none;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 26px;border-bottom:1px solid #e9e1d9;background:#fffcf9;text-align:left}
+#roomDetailsDialog .rd-header h2{margin:0 0 3px!important;font:700 clamp(24px,3vw,30px)/1.15 var(--font-title)!important;letter-spacing:-.035em}
+#roomDetailsDialog .rd-header p{margin:0!important;font:400 12px/1.45 var(--font-body)!important;color:#526079}
+#roomDetailsDialog .rd-header .modal-close{position:static;flex:none}
+#roomDetailsDialog .rd-scroll{overflow-y:auto;overscroll-behavior:contain;min-height:0;scrollbar-width:thin;scrollbar-color:#c8bfb7 transparent}
+#roomDetailsDialog .rd-section{padding:23px 26px;border-bottom:1px solid #e9e1d9}
+#roomDetailsDialog .rd-section:last-child{border-bottom:0}
+#roomDetailsDialog .rd-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+#roomDetailsDialog .rd-gallery:has(.rd-photo:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+#roomDetailsDialog .rd-gallery:has(.rd-photo:only-child){grid-template-columns:1fr}
+#roomDetailsDialog .rd-photo{position:relative;border:0;padding:0;overflow:hidden;border-radius:12px;background:#f2ece5;cursor:pointer;min-width:0;height:clamp(140px,22vw,225px)}
+#roomDetailsDialog .rd-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s}
+#roomDetailsDialog .rd-photo:hover img{transform:scale(1.035)}
+#roomDetailsDialog .rd-photo-count{position:absolute;bottom:9px;right:9px;background:#101d33c9;border-radius:6px;color:white;font:500 11px/1.3 var(--font-body);padding:5px 7px}
+#roomDetailsDialog .rd-photo-note,#roomDetailsDialog .rd-note{font:400 11px/1.55 var(--font-body)!important;color:#526079!important;margin:8px 0 0!important}
+#roomDetailsDialog .rd-intro-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:15px 0 12px}
+#roomDetailsDialog .rd-availability{border:1px solid #cddfd2;background:#edf5ef;color:#24573b;border-radius:999px;padding:6px 10px;font:500 12px/1.35 var(--font-body)}
+#roomDetailsDialog .rd-intro-meta>strong{font:700 26px/1.1 var(--font-title);color:var(--navy);white-space:nowrap}
+#roomDetailsDialog .rd-intro-meta small,#roomDetailsDialog .rd-rate small{font:400 11px/1.4 var(--font-body);color:#526079}
+#roomDetailsDialog .rd-description{font:400 14px/1.65 var(--font-body)!important;margin:0!important;color:var(--navy)}
+#roomDetailsDialog h3{font:600 21px/1.2 var(--font-title)!important;margin:0 0 17px;color:var(--navy)}
+#roomDetailsDialog .rd-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px 20px}
+#roomDetailsDialog .rd-feature{display:flex;flex-direction:column;gap:4px;min-width:0}
+#roomDetailsDialog .rd-feature>span,#roomDetailsDialog .rd-tenancy-row>div>span{font:400 12px/1.4 var(--font-body);color:#526079}
+#roomDetailsDialog .rd-feature>strong,#roomDetailsDialog .rd-tenancy-row>div>strong{font:500 14px/1.4 var(--font-body);color:var(--navy);font-variant-numeric:tabular-nums}
+#roomDetailsDialog .rd-tenancy-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.1fr) auto;align-items:center;gap:13px;padding:17px 0;border-top:1px solid #e9e1d9;border-bottom:1px solid #e9e1d9}
+#roomDetailsDialog .rd-tenancy-row>div{display:flex;flex-direction:column;gap:4px;min-width:0}
+#roomDetailsDialog .rd-tenancy-row>div>strong{font-weight:600;white-space:nowrap}
+#roomDetailsDialog .rd-tenancy-row .rd-rate strong{font:700 22px/1.2 var(--font-title)}
+#roomDetailsDialog .rd-book{min-height:42px;border-radius:999px;white-space:nowrap}
+#roomDetailsDialog .rd-total{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;font:400 12px/1.4 var(--font-body)}
+#roomDetailsDialog .rd-total strong{font:600 19px/1.2 var(--font-title)}
+#roomDetailsDialog .rd-contact{display:flex;flex-wrap:wrap;gap:6px;font:400 13px/1.5 var(--font-body);margin-top:16px}
+#roomDetailsDialog .rd-contact button{border:0;padding:0;background:none;color:var(--red);font-weight:600;cursor:pointer}
+@media(max-width:600px){#roomDetailsDialog .room-detail-surface{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);border-radius:16px}#roomDetailsDialog .rd-header,#roomDetailsDialog .rd-section{padding:17px}#roomDetailsDialog .rd-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}#roomDetailsDialog .rd-photo{height:120px}#roomDetailsDialog .rd-gallery:has(.rd-photo:nth-child(3)) .rd-photo-main{grid-column:1/-1;height:180px}#roomDetailsDialog .rd-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#roomDetailsDialog .rd-tenancy-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#roomDetailsDialog .rd-book{grid-column:1/-1}#roomDetailsDialog .rd-availability{font-size:10px}#roomDetailsDialog .rd-intro-meta>strong{font-size:22px}}
+@media(prefers-reduced-motion:reduce){#rooms .room-details-trigger svg,#rooms .room-student-card .room-media img,#roomDetailsDialog .rd-photo img{transition:none!important;transform:none!important}}
 </style>
 </head>
 <body>
@@ -2614,12 +2651,10 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </div>
 <div aria-label="Property photo tour" aria-modal="true" class="modal-layer photo-modal" hidden="" id="galleryDialog" role="dialog"><div class="photo-modal-content"><img class="photo-ambient" id="photoAmbient" alt="" aria-hidden="true"/><header class="modal-header"><div><strong>iQ Kingston</strong><small>Photo tour · concept imagery</small></div><button aria-label="Close photo tour" class="modal-icon" data-close=""><svg><use href="#close"></use></svg></button></header><div class="photo-tabs" id="photoTabs"><button class="selected" data-photo-category="all" type="button">All photos <span>7</span></button><button data-photo-category="bedrooms" type="button">En suites <span>2</span></button><button data-photo-category="studios" type="button">Studios <span>2</span></button><button data-photo-category="shared" type="button">Shared spaces <span>2</span></button><button data-photo-category="exterior" type="button">Exterior <span>1</span></button></div><div class="photo-body" id="photoBody"><div class="photo-viewer"><button aria-label="Previous image" class="photo-arrow prev" id="photoPrev" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><img alt="" data-asset="assets/hero-bedroom.webp" id="photoActive" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><button aria-label="Next image" class="photo-arrow next" id="photoNext" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><div class="photo-footer"><div class="photo-description"><span class="photo-category-caption" id="photoCategoryCaption">All photos</span><strong id="photoTitle">En suite bedroom</strong><small>Concept imagery may not depict the actual building or rooms.</small></div><div class="photo-thumbnails" id="photoThumbnails" aria-label="Photo thumbnails"></div><div class="photo-position"><span id="photoIndex" aria-live="polite">01 / 07</span><div class="photo-progress" aria-hidden="true"><i id="photoProgress"></i></div></div></div></div><div class="missing-media" hidden="" id="missingMedia"><h3>Official video tour not supplied</h3><p>Contact Accom to request the property’s current video or 360° media.</p><a id="officialTourLink" class="outline-button" href="https://my.matterport.com/show/?dh=0&amp;f=0&amp;fp=0&amp;hr=1&amp;m=BDsCpY9882w&amp;play=1&amp;qs=1" target="_blank" rel="noopener noreferrer" hidden>Open official 3D tour</a> <button class="outline-button" data-enquire="" type="button">Request a tour</button></div></div></div>
 <div class="modal-layer" id="roomDetailsDialog" role="dialog" aria-modal="true" aria-labelledby="roomDetailsTitle" hidden>
-  <div class="dialog-surface room-detail-surface">
-    <button aria-label="Close room details" class="modal-icon modal-close" data-close="" type="button"><svg aria-hidden="true"><use href="#close"></use></svg></button>
-    <header class="rd-header"><h2 id="roomDetailsTitle"></h2><p id="roomDetailsType"></p></header>
-    <div id="roomDetailsBody"></div>
-    <div class="rd-footer"><button class="outline-button" data-close="" type="button">Back to rooms</button><button class="primary-button" id="roomDetailEnquire" type="button">Enquire <svg aria-hidden="true"><use href="#arrow"></use></svg></button></div>
-  </div>
+ <div class="dialog-surface room-detail-surface">
+  <header class="rd-header"><div><h2 id="roomDetailsTitle"></h2><p id="roomDetailsType"></p></div><button aria-label="Close room details" class="modal-icon modal-close" data-close="" type="button"><svg aria-hidden="true"><use href="#close"></use></svg></button></header>
+  <div class="rd-scroll" id="roomDetailsBody"></div>
+ </div>
 </div>
 <div aria-label="Room comparison" aria-modal="true" class="modal-layer" hidden="" id="compareDialog" role="dialog"><div class="dialog-surface"><button aria-label="Close comparison" class="modal-icon modal-close" data-close=""><svg><use href="#close"></use></svg></button><h2>Compare rooms</h2><p>Compare up to two room styles without losing the details.</p><div id="comparisonTable"></div><button class="outline-button" data-close="" type="button">Back to listing</button></div></div>
 <div aria-label="Property enquiry" aria-modal="true" class="modal-layer" hidden="" id="enquiryDialog" role="dialog"><div class="dialog-surface enquiry-surface"><button aria-label="Close enquiry" class="modal-icon modal-close" data-close=""><svg><use href="#close"></use></svg></button><p class="modal-context">iQ Kingston · Accom by Emlen</p><h2>Ask about this property</h2><p>Questions about a room, contract or move-in date? Tell us what you need to know.</p><form id="enquiryForm" novalidate=""><label>Your name<input autocomplete="name" name="name" placeholder="Full name" required=""/></label><label>Email address<input autocomplete="email" name="email" placeholder="student@university.ac.uk" required="" type="email"/></label><label>Enquiry about<select name="topic"><option>Room availability</option><option>Viewing or floor plan</option><option>Current pricing</option><option>Fees and payments</option><option>Other question</option></select></label><label>University (optional)<input autocomplete="organization" name="university" placeholder="Your university"/></label><label>Preferred move-in date (optional)<input name="moveIn" type="date"/></label><label>Phone (optional)<input autocomplete="tel" name="phone" placeholder="Phone number" type="tel"/></label><label>Your question (optional)<input name="message" placeholder="What would help you decide?"/></label><label class="consent-line"><input name="consent" type="checkbox"/><span>I agree Accom may contact me about this property.</span></label><p class="form-error" hidden="" id="enquiryError"></p><button class="primary-button full" type="submit">Check enquiry <svg><use href="#arrow"></use></svg></button></form><div hidden="" id="enquirySuccess"><h3>Form checked</h3><p>Your details are complete. This prototype does not transmit them.</p><button class="outline-button" data-close="" type="button">Back to listing</button></div></div></div>
@@ -2936,11 +2971,10 @@ function renderRoomCard(room){
  const selected=selectedRoom===room.id;
  const image=room.image
   ?`<img loading="lazy" decoding="async" alt="Example image of a ${room.type==='studio'?'studio':'private en suite'}" src="${room.image}">`
-  :`<div class="room-photo-placeholder" role="img" aria-label="No room image supplied"><svg viewBox="0 0 24 24"><use href="#image"></use></svg><span>Image not supplied</span></div>`;
- const moveIn=room.pricing.availableFrom||'Confirm with property';
- return `<article class="room-card" data-room="${room.id}" aria-label="${room.name}">
+  :`<div class="room-photo-placeholder" role="img" aria-label="No room image supplied"><svg viewBox="0 0 24 24"><use href="#image"></use></svg><span>Room photos on request</span></div>`;
+ return `<article class="room-card room-student-card" data-room="${room.id}" aria-label="${room.name}">
   <div class="room-primary">
-   <div class="room-media">${image}</div>
+   <button class="room-media" type="button" data-room-details="${room.id}" aria-haspopup="dialog" aria-controls="roomDetailsDialog" aria-label="View details for ${room.name}">${image}<span class="rs-photo-label">View room</span></button>
    <div class="room-details">
     <div class="room-title-line"><h3>${room.name}</h3></div>
     <div class="room-facts" aria-label="Room features">
@@ -2953,33 +2987,54 @@ function renderRoomCard(room){
       <button type="button" class="room-compare" data-compare="${room.id}" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6m6 4v6"/></svg><span>Compare</span></button>
     </div>
    </div>
-  </div>
-  <div class="room-tenancy-row" aria-label="Tenancy information for ${room.name}">
-    <div class="room-term-fact"><span>Duration</span><strong>${room.pricing.weeks} weeks</strong></div>
-    <div class="room-term-fact"><span>Move in</span><strong>${moveIn}</strong></div>
-    <div class="room-term-fact"><span>Move out</span><strong>${room.pricing.moveOut}</strong></div>
-    <div class="room-term-price"><span>Weekly rate</span>${roomSnapshot(room)}</div>
+   <div class="room-tenancy-row" aria-label="Tenancy information for ${room.name}">
+    <div class="room-term-price"><span>From</span>${roomSnapshot(room)}</div>
+    <div class="rs-dates">
+     <div class="room-term-fact"><span>Duration</span><strong>${room.pricing.weeks} weeks</strong></div>
+     <div class="room-term-fact"><span>Move in</span><strong>${room.pricing.availableFrom}</strong></div>
+     <div class="room-term-fact"><span>Move out</span><strong>${room.pricing.moveOut}</strong></div>
+    </div>
     <div class="room-term-actions"><button class="room-enquire" type="button" data-room-enquire="${room.id}">Enquire <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button><button class="room-select" type="button" data-select="${room.id}" aria-pressed="${selected}">${selected?'Selected':'Select room'}</button></div>
+   </div>
   </div>
  </article>`;
 }
-let detailRoomId=null;
+let detailRoomId=null, detailGallery=[], detailGalleryIndex=0;
+function paintRoomGallery(){
+ const el=$('#rdGallery');
+ if(!el||!detailGallery.length)return;
+ const order=detailGallery.map((_,i)=>(detailGalleryIndex+i)%detailGallery.length);
+ el.innerHTML=order.map((i,n)=>`<button type="button" data-rd-photo="${i}" class="rd-photo ${n===0?'rd-photo-main':''}" aria-label="Show ${detailGallery[i].title}" aria-pressed="${n===0}"><img src="${detailGallery[i].image}" alt="${detailGallery[i].alt}" decoding="async">${n===0?'<span class="rd-photo-count">'+(detailGalleryIndex+1)+' / '+detailGallery.length+'</span>':''}</button>`).join('');
+}
 function openRoomDetails(id){
  const room=rooms.find(item=>item.id===id);
  if(!room)return;
- detailRoomId=id;
+ detailRoomId=id;detailGalleryIndex=0;
+ const category=room.type==='studio'?'studios':'bedrooms';
+ detailGallery=photos.filter(p=>p.category===category);
+ if(room.image&&!detailGallery.some(p=>p.image===room.image))detailGallery.unshift({image:room.image,title:'Room concept image',alt:'Illustrative room interior'});
+ if(room.image){const primary=detailGallery.findIndex(p=>p.image===room.image);if(primary>0)detailGallery.unshift(...detailGallery.splice(primary,1));}
  $('#roomDetailsTitle').textContent=room.name;
- $('#roomDetailsType').textContent=room.type==='studio'?'Studio · iQ Kingston':'En suite · iQ Kingston';
- const image=room.image?`<img src="${room.image}" alt="Example of a ${room.type==='studio'?'studio':'private en suite'}" class="rd-image">`:'';
- const details=room.type==='studio'?'A self-contained room with a private kitchen and bathroom.':'A private bedroom and bathroom with a kitchen shared with other residents.';
- $('#roomDetailsBody').innerHTML=`<div class="rd-overview ${image?'':'rd-no-image'}">${image}<div class="rd-copy"><h3>About this room</h3><p>${details}</p><dl class="rd-features"><div><dt>Room size</dt><dd>${room.size}</dd></div><div><dt>Bathroom</dt><dd>${room.bathroom}</dd></div><div><dt>Kitchen</dt><dd>${room.kitchen}</dd></div></dl></div></div><h3 class="rd-tenancy-heading">Tenancy details</h3><dl class="rd-tenancy"><div><dt>Duration</dt><dd>${room.pricing.weeks} weeks</dd></div><div><dt>Move in</dt><dd>${room.pricing.availableFrom}</dd></div><div><dt>Move out</dt><dd>${room.pricing.moveOut}</dd></div><div><dt>Weekly rent</dt><dd>${formatGBP(room.pricing.price)}<small> /week</small></dd></div></dl><div class="rd-total"><span>Sample full-term rent</span><strong>${formatGBP(room.pricing.price*room.pricing.weeks)}</strong></div><p class="rd-note">Illustrative dates and rates. Confirm availability, furnishings and final contract terms before booking.</p>`;
- openDialog($('#roomDetailsDialog'));
+ $('#roomDetailsType').textContent='iQ Kingston · '+(room.type==='studio'?'Studio':'En suite');
+ const studio=room.type==='studio';
+ const description=studio?'Your own space to study, cook and unwind, with a private kitchen and bathroom.':'Your own bedroom and bathroom, with a shared kitchen for everyday cooking and meeting other residents.';
+ const group=(title,items,note='')=>`<section class="rd-section"><h3>${title}</h3><div class="rd-feature-grid">${items.map(([label,value])=>`<div class="rd-feature"><span>${label}</span><strong>${value}</strong></div>`).join('')}</div>${note?`<p class="rd-note">${note}</p>`:''}</section>`;
+ const p=room.pricing;
+ $('#roomDetailsBody').innerHTML=`<section class="rd-section rd-intro"><div class="rd-gallery" id="rdGallery"></div><p class="rd-photo-note">Illustrative room photography · exact room images on request</p><div class="rd-intro-meta"><span class="rd-availability">Sample move in · ${p.availableFrom}</span><strong>${formatGBP(p.price)}<small> /week</small></strong></div><p class="rd-description">${description}</p></section>
+ ${group('Room details',[['Room type',studio?'Studio':'En suite'],['Room size',room.size],['Bathroom',room.bathroom],['Kitchen',room.kitchen]])}
+ ${group('Bedroom',[['Sleeping space','Private bedroom'],['Furnishings','Confirm with property'],['Study space','Confirm with property']])}
+ ${group('Kitchen',[['Kitchen access',room.kitchen],['Appliances','Confirm with property']])}
+ ${group('Bathroom',[['Bathroom access',room.bathroom],['Fittings','Confirm with property']])}
+ <section class="rd-section rd-tenancy-section"><h3>Choose your tenancy</h3><div class="rd-tenancy-row"><div><span>Duration</span><strong>${p.weeks} weeks</strong></div><div><span>Move in</span><strong>${p.availableFrom}</strong></div><div><span>Move out</span><strong>${p.moveOut}</strong></div><div class="rd-rate"><span>Weekly rent</span><strong>${formatGBP(p.price)}<small>/week</small></strong></div><button class="primary-button rd-book" type="button" data-rd-enquire>Enquire <svg aria-hidden="true"><use href="#arrow"></use></svg></button></div><div class="rd-total"><span>Sample full-term rent</span><strong>${formatGBP(p.price*p.weeks)}</strong></div><p class="rd-note">Illustrative prices and dates. Confirm availability, furnishings and contract terms before booking.</p><div class="rd-contact">Looking for different dates? <button type="button" data-rd-enquire>Contact us</button></div></section>`;
+ paintRoomGallery();openDialog($('#roomDetailsDialog'));$('#roomDetailsBody').scrollTop=0;
 }
-$('#roomDetailEnquire').addEventListener('click',()=>{
- if(!detailRoomId)return;
+$('#roomDetailsBody').addEventListener('click',event=>{
+ const photo=event.target.closest('[data-rd-photo]');
+ if(photo){const index=Number(photo.dataset.rdPhoto);if(index===detailGalleryIndex)return;detailGalleryIndex=index;paintRoomGallery();$('#rdGallery [data-rd-photo="'+index+'"]')?.focus({preventScroll:true});return;}
+ const enquiry=event.target.closest('[data-rd-enquire]');
+ if(!enquiry||!detailRoomId)return;
  const trigger=focusBeforeDialog;
- selectedRoom=detailRoomId;
- updateSelectedRoom();redrawRooms();closeDialog(false);
+ selectedRoom=detailRoomId;updateSelectedRoom();redrawRooms();closeDialog(false);
  if(trigger?.isConnected)trigger.focus({preventScroll:true});
  openEnquiry();
 });
