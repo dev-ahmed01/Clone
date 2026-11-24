@@ -2171,6 +2171,41 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 @media(max-width:600px){#ambassadors .ae-ambassador-compact{padding:22px 16px 19px;border-radius:19px}}
 @media(prefers-reduced-motion:reduce){#ambassadors .ae-ambassador-type,#ambassadors .ae-ambassador-type::after,#ambassadors .ae-ambassador-portraits img{transition:none!important;transform:none!important}}
 </style>
+<style id="ae-room-details-popup">
+#rooms .room-details-trigger{display:inline-flex;align-items:center;gap:7px;padding:5px 0;min-height:32px;background:none;border:0;color:var(--ae-cobalt,#1f47c7);font:600 14px/1.4 var(--font-body);cursor:pointer;text-align:left}
+#rooms .room-details-trigger svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.7;fill:none;transition:transform .2s}
+#rooms .room-details-trigger:hover{color:var(--red)}
+#rooms .room-details-trigger:hover svg{transform:translateX(3px)}
+#rooms .room-tenancy-row{gap:13px;align-items:center}
+#rooms .room-term-fact>span,#rooms .room-term-price>span{font:400 12px/1.35 var(--font-body)!important;color:#526079!important}
+#rooms .room-term-fact strong{font:600 14px/1.4 var(--font-body)!important;letter-spacing:.01em;font-variant-numeric:tabular-nums!important}
+#rooms .room-term-price>strong{font:700 21px/1.2 var(--font-title)!important}
+#roomDetailsDialog .room-detail-surface{width:min(740px,calc(100vw - 28px));max-width:740px;max-height:calc(100dvh - 32px);overflow:auto;padding:28px;border-radius:24px;background:#fffcf9;box-sizing:border-box}
+#roomDetailsDialog .rd-header{padding-right:36px;margin-bottom:18px}
+#roomDetailsDialog .rd-header h2{margin:0 0 4px!important;font:700 clamp(26px,4vw,34px)/1.15 var(--font-title)!important;letter-spacing:-.035em}
+#roomDetailsDialog .rd-header p{margin:0!important;color:#526079;font:400 13px/1.5 var(--font-body)!important}
+#roomDetailsDialog .rd-overview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px;align-items:start}
+#roomDetailsDialog .rd-no-image{grid-template-columns:1fr}
+#roomDetailsDialog .rd-image{width:100%;height:210px;object-fit:cover;border-radius:15px}
+#roomDetailsDialog h3{font:600 20px/1.25 var(--font-title);margin:0 0 10px;color:var(--navy)}
+#roomDetailsDialog .rd-copy p{font:400 13px/1.65 var(--font-body)!important;margin:0 0 12px;color:#526079}
+#roomDetailsDialog dl{margin:0;display:grid;gap:9px}
+#roomDetailsDialog .rd-features>div{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding-bottom:8px;border-bottom:1px solid #eee5de}
+#roomDetailsDialog dt{color:#526079;font:400 12px/1.4 var(--font-body)}
+#roomDetailsDialog dd{margin:0;color:var(--navy);font:600 13px/1.4 var(--font-body);font-variant-numeric:tabular-nums;text-align:right}
+#roomDetailsDialog .rd-tenancy-heading{margin-top:22px}
+#roomDetailsDialog .rd-tenancy{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+#roomDetailsDialog .rd-tenancy>div{display:flex;flex-direction:column;gap:5px;background:#fff;border:1px solid #e9e1d9;border-radius:11px;padding:12px 10px}
+#roomDetailsDialog .rd-tenancy dd{text-align:left;font-size:14px;white-space:nowrap}
+#roomDetailsDialog dd small{font-size:10px;font-weight:400}
+#roomDetailsDialog .rd-total{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;background:#f5f0eb;border-radius:12px;padding:12px 14px;font:500 13px/1.4 var(--font-body)}
+#roomDetailsDialog .rd-total strong{font:700 22px/1.2 var(--font-title);color:var(--navy)}
+#roomDetailsDialog .rd-note{font:400 11px/1.5 var(--font-body)!important;margin:9px 0 0!important;color:#526079!important}
+#roomDetailsDialog .rd-footer{display:flex;justify-content:flex-end;gap:9px;margin-top:20px}
+#roomDetailsDialog .rd-footer button{border-radius:999px;min-height:42px}
+@media(max-width:600px){#roomDetailsDialog .room-detail-surface{padding:20px 16px}#roomDetailsDialog .rd-overview{grid-template-columns:1fr;gap:12px}#roomDetailsDialog .rd-image{height:160px}#roomDetailsDialog .rd-tenancy{grid-template-columns:repeat(2,minmax(0,1fr))}#roomDetailsDialog .rd-footer button{flex:1}#rooms .room-term-fact strong{font-size:13px!important}}
+@media(prefers-reduced-motion:reduce){#rooms .room-details-trigger svg{transition:none;transform:none!important}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -2578,6 +2613,14 @@ html{scroll-padding-top:calc(var(--listing-header-height) + var(--listing-tabs-h
 </div>
 </div>
 <div aria-label="Property photo tour" aria-modal="true" class="modal-layer photo-modal" hidden="" id="galleryDialog" role="dialog"><div class="photo-modal-content"><img class="photo-ambient" id="photoAmbient" alt="" aria-hidden="true"/><header class="modal-header"><div><strong>iQ Kingston</strong><small>Photo tour · concept imagery</small></div><button aria-label="Close photo tour" class="modal-icon" data-close=""><svg><use href="#close"></use></svg></button></header><div class="photo-tabs" id="photoTabs"><button class="selected" data-photo-category="all" type="button">All photos <span>7</span></button><button data-photo-category="bedrooms" type="button">En suites <span>2</span></button><button data-photo-category="studios" type="button">Studios <span>2</span></button><button data-photo-category="shared" type="button">Shared spaces <span>2</span></button><button data-photo-category="exterior" type="button">Exterior <span>1</span></button></div><div class="photo-body" id="photoBody"><div class="photo-viewer"><button aria-label="Previous image" class="photo-arrow prev" id="photoPrev" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><img alt="" data-asset="assets/hero-bedroom.webp" id="photoActive" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><button aria-label="Next image" class="photo-arrow next" id="photoNext" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><div class="photo-footer"><div class="photo-description"><span class="photo-category-caption" id="photoCategoryCaption">All photos</span><strong id="photoTitle">En suite bedroom</strong><small>Concept imagery may not depict the actual building or rooms.</small></div><div class="photo-thumbnails" id="photoThumbnails" aria-label="Photo thumbnails"></div><div class="photo-position"><span id="photoIndex" aria-live="polite">01 / 07</span><div class="photo-progress" aria-hidden="true"><i id="photoProgress"></i></div></div></div></div><div class="missing-media" hidden="" id="missingMedia"><h3>Official video tour not supplied</h3><p>Contact Accom to request the property’s current video or 360° media.</p><a id="officialTourLink" class="outline-button" href="https://my.matterport.com/show/?dh=0&amp;f=0&amp;fp=0&amp;hr=1&amp;m=BDsCpY9882w&amp;play=1&amp;qs=1" target="_blank" rel="noopener noreferrer" hidden>Open official 3D tour</a> <button class="outline-button" data-enquire="" type="button">Request a tour</button></div></div></div>
+<div class="modal-layer" id="roomDetailsDialog" role="dialog" aria-modal="true" aria-labelledby="roomDetailsTitle" hidden>
+  <div class="dialog-surface room-detail-surface">
+    <button aria-label="Close room details" class="modal-icon modal-close" data-close="" type="button"><svg aria-hidden="true"><use href="#close"></use></svg></button>
+    <header class="rd-header"><h2 id="roomDetailsTitle"></h2><p id="roomDetailsType"></p></header>
+    <div id="roomDetailsBody"></div>
+    <div class="rd-footer"><button class="outline-button" data-close="" type="button">Back to rooms</button><button class="primary-button" id="roomDetailEnquire" type="button">Enquire <svg aria-hidden="true"><use href="#arrow"></use></svg></button></div>
+  </div>
+</div>
 <div aria-label="Room comparison" aria-modal="true" class="modal-layer" hidden="" id="compareDialog" role="dialog"><div class="dialog-surface"><button aria-label="Close comparison" class="modal-icon modal-close" data-close=""><svg><use href="#close"></use></svg></button><h2>Compare rooms</h2><p>Compare up to two room styles without losing the details.</p><div id="comparisonTable"></div><button class="outline-button" data-close="" type="button">Back to listing</button></div></div>
 <div aria-label="Property enquiry" aria-modal="true" class="modal-layer" hidden="" id="enquiryDialog" role="dialog"><div class="dialog-surface enquiry-surface"><button aria-label="Close enquiry" class="modal-icon modal-close" data-close=""><svg><use href="#close"></use></svg></button><p class="modal-context">iQ Kingston · Accom by Emlen</p><h2>Ask about this property</h2><p>Questions about a room, contract or move-in date? Tell us what you need to know.</p><form id="enquiryForm" novalidate=""><label>Your name<input autocomplete="name" name="name" placeholder="Full name" required=""/></label><label>Email address<input autocomplete="email" name="email" placeholder="student@university.ac.uk" required="" type="email"/></label><label>Enquiry about<select name="topic"><option>Room availability</option><option>Viewing or floor plan</option><option>Current pricing</option><option>Fees and payments</option><option>Other question</option></select></label><label>University (optional)<input autocomplete="organization" name="university" placeholder="Your university"/></label><label>Preferred move-in date (optional)<input name="moveIn" type="date"/></label><label>Phone (optional)<input autocomplete="tel" name="phone" placeholder="Phone number" type="tel"/></label><label>Your question (optional)<input name="message" placeholder="What would help you decide?"/></label><label class="consent-line"><input name="consent" type="checkbox"/><span>I agree Accom may contact me about this property.</span></label><p class="form-error" hidden="" id="enquiryError"></p><button class="primary-button full" type="submit">Check enquiry <svg><use href="#arrow"></use></svg></button></form><div hidden="" id="enquirySuccess"><h3>Form checked</h3><p>Your details are complete. This prototype does not transmit them.</p><button class="outline-button" data-close="" type="button">Back to listing</button></div></div></div>
 <dialog id="aboutDetailsDialog" class="about-detail-dialog" aria-labelledby="aboutDetailTitle" aria-describedby="aboutDetailLead">
@@ -2906,10 +2949,7 @@ function renderRoomCard(room){
       <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V5h14v16M8 9h8M8 13h8M8 17h8"/></svg>${room.kitchen}</span>
     </div>
     <div class="room-primary-actions">
-      <details class="room-more">
-       <summary>View more details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 9 7 7 7-7"/></svg></summary>
-       <div class="room-more-content"><p>${room.type==='studio'?'A self-contained option with a kitchenette and private bathroom.':'A private bedroom and bathroom with a kitchen shared with other residents.'} Exact furnishings, size and access depend on the individual room.</p><p>Confirm the current room specification, move-in date, tenancy duration, any extra charges and full-term price with iQ before committing.</p></div>
-      </details>
+      <button class="room-details-trigger" type="button" data-room-details="${room.id}" aria-haspopup="dialog" aria-controls="roomDetailsDialog">View details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
       <button type="button" class="room-compare" data-compare="${room.id}" aria-pressed="false"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M9 4v6m6 4v6"/></svg><span>Compare</span></button>
     </div>
    </div>
@@ -2923,6 +2963,26 @@ function renderRoomCard(room){
   </div>
  </article>`;
 }
+let detailRoomId=null;
+function openRoomDetails(id){
+ const room=rooms.find(item=>item.id===id);
+ if(!room)return;
+ detailRoomId=id;
+ $('#roomDetailsTitle').textContent=room.name;
+ $('#roomDetailsType').textContent=room.type==='studio'?'Studio · iQ Kingston':'En suite · iQ Kingston';
+ const image=room.image?`<img src="${room.image}" alt="Example of a ${room.type==='studio'?'studio':'private en suite'}" class="rd-image">`:'';
+ const details=room.type==='studio'?'A self-contained room with a private kitchen and bathroom.':'A private bedroom and bathroom with a kitchen shared with other residents.';
+ $('#roomDetailsBody').innerHTML=`<div class="rd-overview ${image?'':'rd-no-image'}">${image}<div class="rd-copy"><h3>About this room</h3><p>${details}</p><dl class="rd-features"><div><dt>Room size</dt><dd>${room.size}</dd></div><div><dt>Bathroom</dt><dd>${room.bathroom}</dd></div><div><dt>Kitchen</dt><dd>${room.kitchen}</dd></div></dl></div></div><h3 class="rd-tenancy-heading">Tenancy details</h3><dl class="rd-tenancy"><div><dt>Duration</dt><dd>${room.pricing.weeks} weeks</dd></div><div><dt>Move in</dt><dd>${room.pricing.availableFrom}</dd></div><div><dt>Move out</dt><dd>${room.pricing.moveOut}</dd></div><div><dt>Weekly rent</dt><dd>${formatGBP(room.pricing.price)}<small> /week</small></dd></div></dl><div class="rd-total"><span>Sample full-term rent</span><strong>${formatGBP(room.pricing.price*room.pricing.weeks)}</strong></div><p class="rd-note">Illustrative dates and rates. Confirm availability, furnishings and final contract terms before booking.</p>`;
+ openDialog($('#roomDetailsDialog'));
+}
+$('#roomDetailEnquire').addEventListener('click',()=>{
+ if(!detailRoomId)return;
+ const trigger=focusBeforeDialog;
+ selectedRoom=detailRoomId;
+ updateSelectedRoom();redrawRooms();closeDialog(false);
+ if(trigger?.isConnected)trigger.focus({preventScroll:true});
+ openEnquiry();
+});
 function redrawRooms(){
  const container=$('#roomList');
  if(!container)return;
@@ -2931,6 +2991,8 @@ function redrawRooms(){
   container.innerHTML=rooms.map(renderRoomCard).join('');
   roomCardsBuilt=true;
   container.addEventListener('click',event=>{
+   const detail=event.target.closest('[data-room-details]');
+   if(detail){openRoomDetails(detail.dataset.roomDetails);return;}
    const select=event.target.closest('[data-select]');
    if(select){
     selectedRoom=select.dataset.select;
