@@ -3148,6 +3148,13 @@ html body #scrollNav .section-nav-track a.active.ae-nav-enter{animation:ae-nav-a
 @media(max-width:550px){html body #scrollNav.section-nav{width:calc(100vw - 18px)}html body #scrollNav .section-nav-track a{font-size:12px!important;padding-inline:11px}}
 @media(prefers-reduced-motion:reduce){html body #scrollNav.section-nav,html body #scrollNav .section-nav-track a,html body #scrollNav .tiny-nav-action{transition:none!important;animation:none!important}}
 </style>
+<style id="ae-nav-visibility-fix">
+html body > #scrollNav.section-nav.ae-nav-ready{display:flex!important;position:fixed!important;top:var(--ae-nav-actual-top,94px)!important;left:50%!important;right:auto!important;z-index:95!important;max-width:none!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;transform:translateX(-50%)!important;margin:0!important}
+html body > #scrollNav.section-nav.ae-nav-ready:not(.shown){visibility:hidden!important;opacity:0!important;pointer-events:none!important;transform:translate(-50%,-10px)!important}
+html body > #scrollNav.section-nav.ae-nav-ready .section-nav-track{display:flex!important;visibility:visible!important;opacity:1!important}
+html body > #scrollNav.section-nav.ae-nav-ready .section-nav-track a{display:inline-flex!important;visibility:visible!important;opacity:1}
+html body .content-column > :is(.section[id],#overview.property-about-slot){scroll-margin-top:var(--ae-nav-actual-clearance,175px)!important}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
@@ -3180,6 +3187,26 @@ html body #scrollNav .section-nav-track a.active.ae-nav-enter{animation:ae-nav-a
 <nav aria-label="Top navigation" class="header-links"><a class="ae-site-home" href="/">Home</a><a class="ae-site-listings" href="listing-archive.html">Listings</a><a href="#rooms">Explore rooms</a><a href="#amenities">Amenities</a><a href="#location">Location</a></nav>
 <div class="header-actions"><button aria-label="Save property" aria-pressed="false" class="icon-button save-toggle" type="button"><svg><use href="#heart"></use></svg></button><button class="header-contact" data-enquire="" type="button">Get help <svg><use href="#arrow"></use></svg></button></div>
 </div></header>
+<nav aria-label="Jump to listing sections" class="section-nav listing-wide-nav ae-nav-ready" id="scrollNav">
+ <div class="section-nav-track" id="navTrack">
+  <a class="active" href="#overview" aria-current="location">Overview</a>
+  <a href="#offers">Offers</a>
+  <a href="#amenities">Amenities</a>
+  <a href="#location">Location</a>
+  <a href="#ambassadors">Ambassadors</a>
+  <a href="#rooms">Room Types</a>
+  <a href="#rules">House Rules</a>
+  <a href="#payments">Payment &amp; Fees</a>
+
+  <a href="#faqs">FAQs</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#similar-properties">Similar properties</a>
+ </div>
+ <div class="section-nav-actions">
+  <button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button>
+  <button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button>
+ </div>
+</nav>
 
 <main class="site-container">
 <div class="gallery-ribbon-frame">
@@ -3200,26 +3227,7 @@ html body #scrollNav .section-nav-track a.active.ae-nav-enter{animation:ae-nav-a
 <div class="heading-end"><div class="heading-actions"><button aria-pressed="false" class="text-action save-toggle" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button><button class="text-action" id="shareButton" type="button"><svg><use href="#share"></use></svg> Share</button></div></div>
 </div>
 <div aria-hidden="true" class="nav-sentinel"></div>
-<nav aria-label="Jump to listing sections" class="section-nav listing-wide-nav" id="scrollNav" inert="">
- <div class="section-nav-track" id="navTrack">
-  <a class="active" href="#overview" aria-current="location">Overview</a>
-  <a href="#offers">Offers</a>
-  <a href="#amenities">Amenities</a>
-  <a href="#location">Location</a>
-  <a href="#ambassadors">Ambassadors</a>
-  <a href="#rooms">Room Types</a>
-  <a href="#rules">House Rules</a>
-  <a href="#payments">Payment &amp; Fees</a>
 
-  <a href="#faqs">FAQs</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#similar-properties">Similar properties</a>
- </div>
- <div class="section-nav-actions">
-  <button aria-pressed="false" class="tiny-nav-action save-toggle" title="Save property" type="button"><svg><use href="#heart"></use></svg><span>Save</span></button>
-  <button class="tiny-nav-action" data-compare-open="" title="Compare rooms" type="button"><svg><use href="#compare"></use></svg><span>Compare</span><b class="compare-count" hidden="">0</b></button>
- </div>
-</nav>
 <div id="overview" class="property-about-slot">
 <section class="section property-story-section about-editorial" id="about" aria-labelledby="property-story-heading">
   <div class="about-editorial-surface">
@@ -4184,68 +4192,7 @@ $('#enquiryForm').addEventListener('submit',event=>{event.preventDefault();const
  const display=$('#enquiryError');display.hidden=!error;if(error){display.textContent=error;return;}form.hidden=true;$('#enquirySuccess').hidden=false;$('#enquirySuccess button').focus();});
 $('#shareButton').addEventListener('click',async()=>{const url=window.location.href;try{if(navigator.share)await navigator.share({title:document.title,url});else{await navigator.clipboard.writeText(url);notify('Listing link copied');}}catch(error){if(error?.name!=='AbortError')notify('Copy this page address to share');}});
 // Lightweight index: geometry is cached on resize/content changes, not read on each scroll.
-const stickyNav=$('#scrollNav'),stickyTrack=$('#navTrack'),propertyIntro=$('#property-identity');
-const stickyLinks=$$('.section-nav-track a');
-let stickyMarkers=[],introBottomY=0,previousActive='',previousVisibility=null,scrollFrame=0,geometryFrame=0;
-function updateActiveSection(){
- if(!stickyNav||!propertyIntro)return;
- const y=window.scrollY,header=document.querySelector('.site-header'),headerBottom=Math.max(0,header?.getBoundingClientRect().bottom||0);
- const navHeight=stickyNav.offsetHeight||58,navGap=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ae-floating-nav-gap'))||12;
- const clearance=headerBottom+navGap+navHeight+20;
- const passed=y+clearance>=introBottomY;
- if(passed!==previousVisibility){previousVisibility=passed;stickyNav.classList.toggle('shown',passed);stickyNav.inert=!passed}
- let active=stickyMarkers[0]?.id||'overview';
- for(const marker of stickyMarkers){if(marker.y>y+clearance+12)break;active=marker.id}
- if(active===previousActive)return;
- previousActive=active;let selectedLink=null;
- for(const link of stickyLinks){
-  const current=link.hash.slice(1)===active;
-  link.classList.toggle('active',current);link.classList.remove('ae-nav-enter');
-  if(current){link.setAttribute('aria-current','location');selectedLink=link;if(passed)link.classList.add('ae-nav-enter')}
-  else link.removeAttribute('aria-current');
- }
- if(passed&&selectedLink&&stickyTrack){
-  const track=stickyTrack.getBoundingClientRect(),link=selectedLink.getBoundingClientRect();
-  if(link.left<track.left+8||link.right>track.right-8){
-   const left=Math.max(0,stickyTrack.scrollLeft+link.left-track.left-(track.width-link.width)/2);
-   stickyTrack.scrollTo({left,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-  }
- }
-}
-function measureStickySections(){
- geometryFrame=0;if(!stickyNav||!propertyIntro)return;
- const y=window.scrollY;
- introBottomY=propertyIntro.getBoundingClientRect().bottom+y;
- stickyMarkers=stickyLinks.map(link=>{
-  const id=link.hash.slice(1),el=id?document.getElementById(id):null;
-  return el?{id,y:el.getBoundingClientRect().top+y}:null;
- }).filter(Boolean).sort((m,n)=>m.y-n.y);
- updateActiveSection();
-}
-function scheduleGeometryMeasure(){if(!geometryFrame)geometryFrame=requestAnimationFrame(measureStickySections)}
-function scheduleSectionUpdate(){
- if(scrollFrame)return;
- scrollFrame=requestAnimationFrame(()=>{scrollFrame=0;updateActiveSection()});
-}
-window.addEventListener('scroll',scheduleSectionUpdate,{passive:true});
-window.addEventListener('resize',scheduleGeometryMeasure,{passive:true});
-window.addEventListener('load',scheduleGeometryMeasure,{once:true});
-document.fonts?.ready.then(scheduleGeometryMeasure);
-if('ResizeObserver' in window){
- const observer=new ResizeObserver(scheduleGeometryMeasure),content=$('.content-column');
- if(content)observer.observe(content);
-}
-measureStickySections();
-stickyLinks.forEach(link=>link.addEventListener('click',event=>{
- if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
- const target=document.getElementById(link.hash.slice(1));if(!target)return;
- event.preventDefault();
- const header=document.querySelector('.site-header'),headerBottom=Math.max(0,header?.getBoundingClientRect().bottom||0);
- const gap=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ae-floating-nav-gap'))||12;
- const y=target.getBoundingClientRect().top+window.scrollY-headerBottom-gap-stickyNav.offsetHeight-20;
- history.replaceState(null,'',link.hash);
- window.scrollTo({top:Math.max(0,y),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
-}));
+function scheduleGeometryMeasure(){window.dispatchEvent(new Event('ae-section-geometry'));}
 // Avoid animating large section wrappers while scrolling: keep targeted
 // Overview and modal animations, but do not animate multi-image content lists.
 // Content category shortcuts: open the existing filtered, keyboard-accessible photo viewer.
@@ -4379,6 +4326,31 @@ if(orderedOverview){
   const set=event=>{const r=item.getBoundingClientRect();if(!r.width||!r.height)return;const clamp=n=>Math.max(0,Math.min(100,n));item.style.setProperty('--amenity-fill-x',clamp((event.clientX-r.left)/r.width*100).toFixed(1)+'%');item.style.setProperty('--amenity-fill-y',clamp((event.clientY-r.top)/r.height*100).toFixed(1)+'%');};
   item.addEventListener('pointerenter',set,{passive:true});item.addEventListener('pointerleave',set,{passive:true});
  });
+})();
+</script>
+<script id="ae-section-nav-independent">
+(()=> {
+ const nav=document.getElementById('scrollNav'),track=document.getElementById('navTrack'),header=document.querySelector('.site-header'),intro=document.getElementById('property-identity'),root=document.documentElement;
+ if(!nav||!track||!header)return;
+ const links=[...track.querySelectorAll('a[href^="#"]')],items=links.map(a=>({a,el:document.getElementById(a.hash.slice(1))})).filter(x=>x.el);
+ if(!items.length)return;
+ let frame=0,active=null,shown=null,markers=[],introY=0,clearance=170,dirty=true;
+ const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function measure(){const y=window.scrollY, gap=innerWidth<=800?8:12, bottom=Math.max(0,header.getBoundingClientRect().bottom),top=bottom+gap;
+ root.style.setProperty('--ae-nav-actual-top',top+'px');clearance=top+(nav.offsetHeight||58)+20;root.style.setProperty('--ae-nav-actual-clearance',clearance+'px');
+ introY=intro?intro.getBoundingClientRect().top+y:items[0].el.getBoundingClientRect().top+y;
+ markers=items.map(item=>({...item,y:item.el.getBoundingClientRect().top+y})).sort((a,b)=>a.y-b.y);dirty=false;}
+ function tick(){frame=0;if(dirty)measure();const y=window.scrollY,visible=y+clearance>=introY;
+ if(shown!==visible){shown=visible;nav.classList.toggle('shown',visible);nav.inert=!visible;}
+ let current=markers[0];for(const m of markers){if(m.y>y+clearance+18)break;current=m;}
+ if(window.innerHeight+y>=document.documentElement.scrollHeight-8)current=markers[markers.length-1];
+ if(current&&active!==current.a){active=current.a;links.forEach(a=>{const yes=a===active;a.classList.toggle('active',yes);if(yes)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});if(visible){const a=active.getBoundingClientRect(),t=track.getBoundingClientRect();if(a.left<t.left+8||a.right>t.right-8)track.scrollTo({left:Math.max(0,track.scrollLeft+a.left-t.left-(t.width-a.width)/2),behavior:reduced()?'auto':'smooth'})}}
+ }
+ function schedule(remeasure=false){if(remeasure)dirty=true;if(!frame)frame=requestAnimationFrame(tick)}
+ links.forEach(a=>a.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;const item=items.find(x=>x.a===a);if(!item)return;e.preventDefault();measure();history.replaceState(null,'',a.hash);window.scrollTo({top:Math.max(0,item.el.getBoundingClientRect().top+scrollY-clearance),behavior:reduced()?'auto':'smooth'});}));
+ window.addEventListener('scroll',()=>schedule(),{passive:true});window.addEventListener('resize',()=>schedule(true),{passive:true});window.addEventListener('load',()=>schedule(true));window.addEventListener('ae-section-geometry',()=>schedule(true));document.fonts?.ready.then(()=>schedule(true));
+ if('ResizeObserver'in window){const ro=new ResizeObserver(()=>schedule(true));ro.observe(header);const content=document.querySelector('.content-column');if(content)ro.observe(content);}
+ tick();
 })();
 </script>
 </body></html>
