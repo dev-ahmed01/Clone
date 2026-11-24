@@ -1181,3 +1181,130 @@ main a:not(.gallery-ribbon-tab):not(.we-tile),
     opacity:1!important;transform:none!important;animation:none!important;
   }
 }
+
+/* Listing Page 2 — Accom-inspired amenity categories with small rounded chips.
+   The existing 14 amenity facts and full-details dialog remain unchanged. */
+#amenities.amenities-redesign.amenities-compact .amx-surface{
+  padding:32px 35px 23px!important;
+  border-radius:28px!important;
+}
+#amenities.amenities-compact .amx-head h2{
+  margin:0 0 24px!important;
+}
+#amenities.amenities-compact .amx-groups{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+#amenities.amenities-compact .amx-groups .amx-group,
+#amenities.amenities-compact .amx-groups .amx-group:first-child,
+#amenities.amenities-compact .amx-groups .amx-group:not(:first-child){
+  margin:0;
+  padding:17px 0 18px!important;
+  border:0!important;
+  border-top:1px solid rgba(16,29,51,.10)!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+#amenities.amenities-compact .amx-groups .amx-group:first-child{
+  padding-top:4px!important;
+  border-top:0!important;
+}
+#amenities.amenities-compact .amx-group-head{
+  margin:0 0 12px!important;
+  gap:0;
+}
+#amenities.amenities-compact .amx-group-head h3{
+  margin:0!important;
+  font:600 21px/1.3 var(--font-title,'Bricolage Grotesque',Arial,sans-serif)!important;
+  letter-spacing:-.025em;
+  color:var(--ae-ink,#101D33)!important;
+}
+#amenities.amenities-compact .amx-grid{
+  display:flex!important;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:8px!important;
+  grid-template-columns:none!important;
+}
+#amenities.amenities-compact .amx-item{
+  box-sizing:border-box;
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:flex-start;
+  flex:0 1 auto;
+  width:auto!important;
+  max-width:100%;
+  min-height:39px!important;
+  padding:7px 12px!important;
+  margin:0!important;
+  gap:8px!important;
+  border:1px solid rgba(16,29,51,.11)!important;
+  border-radius:999px!important;
+  background:#fff!important;
+  box-shadow:none!important;
+  color:var(--ae-ink,#101D33)!important;
+  font:400 13px/1.4 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+  white-space:normal;
+}
+#amenities.amenities-compact .amx-icon{
+  display:grid;
+  place-items:center;
+  width:23px!important;
+  height:23px!important;
+  flex:0 0 23px!important;
+  border-radius:50%!important;
+  background:rgba(237,32,36,.065)!important;
+  color:var(--ae-red,#ED2024)!important;
+}
+#amenities.amenities-compact .amx-icon svg{
+  width:15px!important;
+  height:15px!important;
+  stroke-width:1.9;
+}
+#amenities.amenities-compact .amx-bottom{
+  border-top:1px solid rgba(16,29,51,.10);
+  padding-top:17px;
+  gap:0;
+}
+#amenities.amenities-compact .amx-more{
+  min-height:42px!important;
+  padding:10px 17px!important;
+  font:700 13px/1.3 var(--font-body,'Montserrat',Arial,sans-serif)!important;
+}
+@media(max-width:1199px){
+  #amenities.amenities-redesign.amenities-compact .amx-surface{
+    padding:29px 27px 22px!important;
+  }
+}
+@media(max-width:800px){
+  #amenities.amenities-redesign.amenities-compact .amx-surface{
+    padding:27px 23px 20px!important;
+  }
+  #amenities.amenities-compact .amx-group-head h3{font-size:20px!important}
+  #amenities.amenities-compact .amx-item{min-height:38px!important;padding:7px 10px!important}
+}
+@media(max-width:550px){
+  #amenities.amenities-redesign.amenities-compact .amx-surface{
+    padding:23px 17px 19px!important;
+    border-radius:22px!important;
+  }
+  #amenities.amenities-compact .amx-head h2{margin-bottom:18px!important}
+  #amenities.amenities-compact .amx-groups .amx-group{padding:15px 0!important}
+  #amenities.amenities-compact .amx-group-head{margin-bottom:9px!important}
+  #amenities.amenities-compact .amx-group-head h3{font-size:19px!important}
+  #amenities.amenities-compact .amx-grid{gap:7px!important}
+  #amenities.amenities-compact .amx-item{
+    font-size:12px!important;
+    min-height:36px!important;
+    padding:6px 10px!important;
+    gap:7px!important;
+  }
+  #amenities.amenities-compact .amx-icon{
+    width:21px!important;height:21px!important;flex-basis:21px!important;
+  }
+  #amenities.amenities-compact .amx-icon svg{width:14px!important;height:14px!important}
+  #amenities.amenities-compact .amx-bottom{padding-top:14px}
+  #amenities.amenities-compact .amx-more{min-height:39px!important;font-size:12px!important}
+}
