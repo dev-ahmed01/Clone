@@ -1557,14 +1557,14 @@ dialog:is(#aboutDetailsDialog,#amenitiesDialog)::backdrop{
 #rooms .room-compare svg{width:17px;height:17px;stroke:currentColor;stroke-width:1.8;fill:none;flex:none}
 #rooms .room-compare[aria-pressed="true"]{color:var(--red)}
 #rooms .room-tenancy-row{
- display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr) minmax(0,.95fr) minmax(0,1.3fr) auto;
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.15fr) auto;
  gap:12px;align-items:center;padding:14px 17px 16px;border-top:1px solid #eee9e6;background:#fdfbf9
 }
 #rooms .room-term-fact,#rooms .room-term-price{display:flex;flex-direction:column;gap:5px;min-width:0}
-#rooms .room-term-fact>span,#rooms .room-term-price>span{font:400 10px/1.2 var(--font-body);color:#788493}
-#rooms .room-term-fact strong{font:600 11px/1.4 var(--font-body);color:var(--navy)}
-#rooms .room-term-price>strong{font:700 18px/1.2 var(--font-title);color:var(--navy);white-space:nowrap}
-#rooms .room-term-price>strong small{font:500 10px var(--font-body);color:#6e7a88}
+#rooms .room-term-fact>span,#rooms .room-term-price>span{font:400 11px/1.35 var(--font-body);color:#526079}
+#rooms .room-term-fact strong{font:600 13px/1.45 var(--font-body);color:var(--navy);font-variant-numeric:tabular-nums;white-space:nowrap}
+#rooms .room-term-price>strong{font:700 19px/1.25 var(--font-title);color:var(--navy);white-space:nowrap;font-variant-numeric:tabular-nums}
+#rooms .room-term-price>strong small{font:400 11px var(--font-body);color:#526079;margin-left:3px}
 #rooms .room-rate-caption{font:400 9px/1.3 var(--font-body);color:#8390a0}
 #rooms .room-term-price>strong.room-price-request{white-space:normal;font-size:15px}
 #rooms .room-term-actions{display:flex;align-items:center;gap:8px;justify-content:flex-end}
@@ -2812,11 +2812,11 @@ const photos = [
   {image:embeddedAssets["assets/ensuite-second.webp"],category:'bedrooms',title:'En suite room details',alt:'Furnished en suite room concept'}
 ];
 const rooms = [
- {id:'saver',name:'Saver En Suite',type:'ensuite',pricing:{price:315,weeks:44,availableFrom:'11 Sep 2027',moveOut:'15 Jul 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'12 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-bedroom.webp"]},
- {id:'silver',name:'Silver En Suite',type:'ensuite',pricing:{price:325,weeks:44,availableFrom:'11 Sep 2027',moveOut:'15 Jul 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/ensuite-second.webp"]},
- {id:'gold',name:'Gold En Suite',type:'ensuite',pricing:{price:345,weeks:44,availableFrom:'11 Sep 2027',moveOut:'15 Jul 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-suite.webp"]},
- {id:'platinum',name:'Platinum En Suite',type:'ensuite',pricing:{price:365,weeks:51,availableFrom:'11 Sep 2027',moveOut:'2 Sep 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'18 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:null},
- {id:'silver-studio',name:'Silver Studio',type:'studio',pricing:{price:395,weeks:51,availableFrom:'11 Sep 2027',moveOut:'2 Sep 2028',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Private kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/studio-room.webp"]}
+ {id:'saver',name:'Saver En Suite',type:'ensuite',pricing:{price:315,weeks:44,availableFrom:'11/09/27',moveOut:'15/07/28',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'12 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-bedroom.webp"]},
+ {id:'silver',name:'Silver En Suite',type:'ensuite',pricing:{price:325,weeks:44,availableFrom:'11/09/27',moveOut:'15/07/28',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/ensuite-second.webp"]},
+ {id:'gold',name:'Gold En Suite',type:'ensuite',pricing:{price:345,weeks:44,availableFrom:'11/09/27',moveOut:'15/07/28',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/hero-suite.webp"]},
+ {id:'platinum',name:'Platinum En Suite',type:'ensuite',pricing:{price:365,weeks:51,availableFrom:'11/09/27',moveOut:'02/09/28',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'18 m² (approx.)',kitchen:'Shared kitchen',bathroom:'Private bathroom',image:null},
+ {id:'silver-studio',name:'Silver Studio',type:'studio',pricing:{price:395,weeks:51,availableFrom:'11/09/27',moveOut:'02/09/28',reference:null,referenceSource:null,referenceDate:null,verified:false,illustrative:true},size:'14–16 m² (approx.)',kitchen:'Private kitchen',bathroom:'Private bathroom',image:embeddedAssets["assets/studio-room.webp"]}
 ];
 function getDiscount(pricing, weeks=44) {
   if(!pricing?.verified||!pricing.referenceSource||!pricing.referenceDate||!Number.isFinite(pricing.price)||!Number.isFinite(pricing.reference)||pricing.price<=0||pricing.reference<=pricing.price||!Number.isFinite(weeks)||weeks<=0) return null;
