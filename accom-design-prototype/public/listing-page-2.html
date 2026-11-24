@@ -2508,6 +2508,158 @@ html.ae-faq-dialog-open{overflow:hidden!important}
 @container(max-width:480px){#location .ae-location-map-head{align-items:flex-start}#location .ae-location-map-head h3{font-size:18px!important}#location .ae-location-card{padding:12px}#location .ae-location-landmark-list{grid-template-columns:1fr}#location .ae-location-landmark:nth-last-child(2){border-bottom:1px solid rgba(16,29,51,.085)}#location .ae-location-open{padding:9px 10px;font-size:11px!important}#location .ae-location-map-foot{gap:7px}}
 @media(prefers-reduced-motion:reduce){#location .ae-location-open,#location .ae-location-landmark{transition:none}}
 </style>
+<style id="ae-we-aligned-typography">
+/* Listing 2 only. Consolidated Emlen typography and vertical rhythm.
+   Source reference: WE /workspaces/ base, polished typography and section heads;
+   Accom's existing WE-based 48/36/21/16/14/13 and 90px design contract.
+   Structural, colour, component and interaction rules remain independent. */
+:root{
+ --ae-h1:48px;--ae-h2:36px;--ae-card-heading:21px;
+ --ae-subheading:16px;--ae-body-size:14px;--ae-button-size:13px;--ae-anchor-size:13px;
+ --ae-listing-panel-gap:90px;--ae-heading-content-gap:24px;--ae-heading-copy-gap:12px;
+ --ae-surface-padding:32px;--ae-card-padding:20px;--ae-card-gap:16px;
+}
+html body .site-container .content-column{min-width:0}
+/* One owner of inter-section spacing: the outer section, not its internal surface. */
+html body .content-column > :is(.section[id],#overview.property-about-slot){
+ margin-block:0 var(--ae-listing-panel-gap)!important;
+}
+html body .content-column > :is(#amenities,#location,#ambassadors,#rooms,#rules,#payments,#faqs,#reviews,#similar-properties),
+html body .content-column > #overview.property-about-slot > #about{
+ padding-block:0!important;
+}
+html body .content-column > #overview.property-about-slot{padding:0!important}
+html body .content-column > #overview.property-about-slot > #about{margin:0!important}
+html body .content-column > #similar-properties.section{margin-bottom:var(--ae-listing-panel-gap)!important}
+html body #similar-properties .ae-sim-group+.ae-sim-group{margin-top:var(--ae-listing-panel-gap)!important}
+/* Main property title and section heading hierarchy. */
+html body .site-container .property-heading h1{
+ font:700 var(--ae-h1)/1.1 var(--font-title)!important;letter-spacing:-.035em!important;
+ margin:0!important;
+}
+html body .site-container .property-heading .property-address{
+ font:400 var(--ae-subheading)/1.65 var(--font-body)!important;letter-spacing:0!important;
+ margin:var(--ae-heading-copy-gap) 0 0!important;
+}
+html body .site-container .property-heading{padding-block:40px var(--ae-listing-panel-gap)!important}
+html body .site-container .content-column :is(#property-story-heading,#offers-heading,#amenitiesHeading,#aeLocationTitle,#ambassadorsHeading,#roomsTitle,#rulesTitle,#paymentsTitle,#aeFaqTitle,#aeReviewsTitle,#aeSimHeading-rent,#aeSimHeading-nearby,#aeSimHeading-popular){
+ font:700 var(--ae-h2)/1.13 var(--font-title)!important;
+ letter-spacing:-.042em!important;margin:0!important;max-width:none;
+}
+/* 24px from heading to content, with 12px from title to optional description. */
+html body .content-column #about .about-editorial-surface > h2,
+html body .content-column :is(#rules,#payments) .rules-surface > h2,
+html body .content-column #location > #aeLocationTitle{margin-bottom:var(--ae-heading-content-gap)!important}
+html body .content-column #about .about-feature-pills{margin-top:0!important;margin-bottom:var(--ae-heading-content-gap)!important}
+html body .content-column :is(#offers .offers-header,#amenities .amx-head,#rooms .rooms-heading,#faqs .ae-faq-heading,#reviews .ae-review-heading,#similar-properties .ae-sim-heading){
+ margin-block:0 var(--ae-heading-content-gap)!important;
+}
+html body .content-column #rooms .rooms-heading p,
+html body .content-column #ambassadors .ae-ambassador-intro p{
+ font:400 var(--ae-subheading)/1.65 var(--font-body)!important;letter-spacing:0!important;
+ margin-top:var(--ae-heading-copy-gap)!important;
+}
+/* Same inset for all large framed panels. Special cards keep their layouts. */
+html body .content-column #about.about-editorial .about-editorial-surface,
+html body .content-column #offers.offers-showcase.offers-compact.offers-ribbon,
+html body .content-column #amenities.amenities-redesign.amenities-compact .amx-surface,
+html body .content-column #rooms.rooms-redesign .rooms-wrap,
+html body .content-column :is(#rules,#payments) .rules-surface{
+ padding:var(--ae-surface-padding)!important;
+}
+html body .content-column #offers .offer-ribbon-copy h3,
+html body .content-column #amenities .amx-group-head h3,
+html body .content-column #location .ae-location-map-head h3,
+html body .content-column #location .ae-location-landmarks h3,
+html body .content-column #ambassadors .ae-ambassador-type h3,
+html body .content-column #rooms .room-title-line h3,
+html body .content-column #rooms .room-primary h3,
+html body .content-column :is(#rules,#payments) .rule-title,
+html body .content-column #similar-properties .ae-sim-info h3{
+ font:600 var(--ae-card-heading)/1.25 var(--font-title)!important;
+ letter-spacing:-.025em!important;
+}
+html body .content-column :is(#offers .offer-ribbon-copy p,#rooms .room-more-content p,#rooms .room-primary p,#rules .rule-body-inner p,#payments .rule-body-inner p,#faqs .ae-faq-answer-inner p,#reviews .ae-review-card p){
+ font:400 var(--ae-body-size)/1.65 var(--font-body)!important;letter-spacing:0!important;
+}
+html body .content-column #about .about-editorial-lede,
+html body .content-column #about .about-editorial-preview p{
+ font:400 var(--ae-subheading)/1.65 var(--font-body)!important;letter-spacing:0!important;
+}
+html body .content-column #amenities.amenities-compact .amx-item,
+html body .content-column #faqs .ae-faq-q,
+html body .content-column #location .ae-location-landmark-text strong{
+ font:500 var(--ae-subheading)/1.45 var(--font-body)!important;letter-spacing:0!important;
+}
+html body .content-column #faqs .ae-faq-q{font-weight:600!important}
+html body .content-column #reviews .ae-review-top h3{
+ font:600 var(--ae-button-size)/1.4 var(--font-body)!important;letter-spacing:.01em!important;
+}
+html body .content-column #reviews .ae-review-person strong{
+ font:600 var(--ae-body-size)/1.45 var(--font-body)!important;
+}
+html body .content-column #reviews .ae-review-person small,
+html body .content-column #similar-properties .ae-sim-location{
+ font:400 var(--ae-body-size)/1.5 var(--font-body)!important;
+}
+html body .content-column #location .ae-location-landmark-text>span{font:400 12px/1.4 var(--font-body)!important}
+html body .content-column :is(#offers .offer-ribbon-row,#faqs .ae-faq-item,#reviews .ae-review-card,#similar-properties .ae-sim-card){
+ box-sizing:border-box;
+}
+html body .content-column #offers .offer-ribbon-row{padding:14px var(--ae-card-padding)!important}
+html body .content-column #reviews .ae-review-card{padding:var(--ae-card-padding)!important;gap:14px!important}
+html body .content-column #similar-properties .ae-sim-info{padding:14px var(--ae-card-padding) var(--ae-card-padding)!important}
+html body .content-column #location .ae-location-landmarks{padding:var(--ae-card-padding)!important}
+html body .content-column #location .ae-location-grid{gap:var(--ae-card-gap)!important}
+html body .content-column #offers .offer-ribbon-list,
+html body .content-column #faqs .ae-faq-list{gap:12px!important}
+html body .content-column #similar-properties .ae-sim-row{gap:var(--ae-card-gap)!important}
+html body .content-column #faqs .ae-faq-q{padding:14px var(--ae-card-padding)!important}
+html body .content-column #faqs .ae-faq-answer-inner p{padding:0 var(--ae-card-padding) 18px!important}
+html body .content-column #reviews .ae-review-person{padding-top:14px!important}
+html body .content-column #rooms .rooms-toolbar{margin-bottom:var(--ae-heading-content-gap)!important}
+html body .content-column #rooms .room-filter button{
+ font:500 var(--ae-subheading)/1.4 var(--font-body)!important;
+}
+html body .content-column :is(.about-view-more,.amx-more,.offer-unlock-button,.ae-faq-view-all,.ae-location-open,.room-primary-actions button,.room-term-actions button,.ae-ambassador-cta),
+html body .cta-aside .booking-card .rail-controls button,
+html body .site-header .header-contact,
+html body #aeFaqDialog .ae-faq-sheet-close{
+ font:600 var(--ae-button-size)/1.4 var(--font-body)!important;
+}
+html body .site-header .header-links a,html body #scrollNav .section-nav-track a{
+ font:500 14px/1.3 var(--font-body)!important;
+}
+html body #scrollNav .section-nav-track a.active{font-weight:600!important}
+html body .cta-aside .booking-card--compact .rail-title{font:600 var(--ae-card-heading)/1.25 var(--font-title)!important}
+html body .cta-aside .booking-card--compact .rail-property-description{font:400 var(--ae-body-size)/1.5 var(--font-body)!important}
+html body .cta-aside .booking-card--compact .rail-nearby-header strong{font:600 var(--ae-card-heading)/1.25 var(--font-title)!important}
+html body .cta-aside .booking-card--compact .rail-walk-row{font:400 var(--ae-body-size)/1.45 var(--font-body)!important}
+/* The reading sheet uses the same hierarchy as the main page. */
+html body #aeFaqDialog .ae-faq-sheet-head h2{font:700 var(--ae-h2)/1.13 var(--font-title)!important;letter-spacing:-.042em!important}
+html body #aeFaqDialog .ae-faq-category h3{font:600 var(--ae-card-heading)/1.25 var(--font-title)!important}
+html body #aeFaqDialog .ae-faq-q{font:600 var(--ae-subheading)/1.45 var(--font-body)!important}
+html body #aeFaqDialog .ae-faq-answer-inner p{font:400 var(--ae-body-size)/1.65 var(--font-body)!important}
+@media(min-width:1200px){
+ html body .site-container .crumbs{padding-top:80px!important}
+}
+@media(max-width:1199px){
+ :root{--ae-listing-panel-gap:68px;--ae-surface-padding:28px}
+}
+@media(max-width:800px){
+ :root{--ae-h1:38px;--ae-h2:32px;--ae-card-heading:20px;--ae-subheading:15px;
+ --ae-listing-panel-gap:48px;--ae-heading-content-gap:20px;--ae-heading-copy-gap:10px;
+ --ae-surface-padding:22px;--ae-card-padding:16px;--ae-card-gap:12px}
+ html body .site-container .property-heading{padding-block:28px var(--ae-listing-panel-gap)!important}
+ html body #scrollNav .section-nav-track a{font-size:13px!important}
+}
+@media(max-width:550px){
+ :root{--ae-h1:34px;--ae-h2:30px;--ae-card-heading:19px;--ae-subheading:14px;
+ --ae-listing-panel-gap:40px;--ae-heading-content-gap:18px;--ae-surface-padding:17px;--ae-card-padding:15px}
+ html body .content-column #location .ae-location-map-head h3{font-size:18px!important}
+ html body .content-column #similar-properties .ae-sim-info{padding:12px 14px 15px!important}
+}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
