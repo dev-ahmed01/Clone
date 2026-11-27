@@ -1,0 +1,55 @@
+/* Accom by Emlen: responsive layout foundation. Preserve desktop geometry
+   at the default browser font size; use rem for text and spacing, em for breakpoints. */
+:root{
+  --ae-touch-target:2.75rem;
+  --ae-mobile-gutter:1rem;
+  --ae-h1:3rem;
+  --ae-h2:2.25rem;
+  --ae-card-heading:1.3125rem;
+  --ae-subheading:1rem;
+  --ae-body-size:.875rem;
+  --ae-button-size:.8125rem;
+  --ae-anchor-size:.8125rem;
+}
+@media(max-width:50em){
+  :root{--ae-h1:2.375rem;--ae-h2:2rem;--ae-card-heading:1.25rem;--ae-subheading:.9375rem;--ae-listing-panel-gap:3rem;--ae-heading-content-gap:1.25rem;--ae-heading-copy-gap:.625rem;--ae-card-gap:.75rem;--ae-card-padding:1rem}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  html body :is(.site-container,.layout,.content-column,.results-layout,.ae-results-column,.property-content,.room-details){min-width:0}
+  html body :is(.site-header,.header) .header-inner{min-width:0;gap:.625rem}
+  html body :is(.header-contact,.header nav .btn,.mobile-cta button,.room-term-actions button,.room-primary-actions button,.choice-trigger,.ae-guidance-cta){min-height:var(--ae-touch-target)}
+  html body :is(input:not([type=checkbox]):not([type=radio]):not([type=hidden]),select,textarea){font-size:1rem!important;max-width:100%;box-sizing:border-box}
+  html body :is(.dialog-surface,.about-detail-dialog,.ae-faq-sheet){max-width:100%;box-sizing:border-box}
+  html body .mobile-cta{padding-bottom:max(.625rem,env(safe-area-inset-bottom))}
+  html body .layout .cta-sticky{position:static}
+  html body #scrollNav .section-nav-track{min-width:0;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none}
+  html body #scrollNav .section-nav-track a{min-height:var(--ae-touch-target)}
+  html body .ae-guidance-rail{position:static!important;min-width:0}
+}
+@media(max-width:35em){
+  :root{--ae-h1:clamp(1.75rem,7.6vw,2.125rem);--ae-h2:1.875rem;--ae-card-heading:1.1875rem;--ae-subheading:.875rem;--ae-listing-panel-gap:2.5rem;--ae-heading-content-gap:1.125rem;--ae-card-padding:.9375rem;--ae-surface-padding:1.0625rem}
+  html body main.site-container{padding-inline:var(--ae-mobile-gutter)}
+  html body .header .header-inner{padding-inline:.75rem}
+  html body .hero h1{overflow-wrap:break-word}
+  html body .hero h1 .heading-place{white-space:normal}
+  html body .results-layout{grid-template-columns:minmax(0,1fr)}
+  html body .results-layout > .result-toolbar{grid-column:1;grid-row:1}
+  html body .results-layout > .ae-results-column{grid-column:1;grid-row:2}
+  html body .results-layout > .ae-guidance-rail{grid-column:1;grid-row:3}
+  html body .list .property{min-width:0;max-width:100%}
+  html body .list .property-top{flex-wrap:wrap;gap:.5rem}
+  html body .list .property-top h3{overflow-wrap:anywhere;font-size:var(--ae-h2)!important}
+  html body .filter-shell .filters{min-width:0}
+  html body .filter-shell .search{min-width:0}
+  html body .filter-shell .choice-trigger{white-space:normal;text-align:left}
+  html body .content-column #location .ae-location-grid{grid-template-columns:minmax(0,1fr)!important}
+  html body .content-column #rooms .room-primary .room-details{min-width:0}
+  html body .content-column #rooms .room-primary .room-tenancy-row{grid-template-columns:minmax(0,1fr) minmax(5.5rem,6.75rem)}
+  html body .content-column #rooms .room-primary .room-tenancy-row .room-term-price>strong{font-size:1.5rem!important}
+  html body .content-column #rooms .room-primary .room-facts{flex-wrap:wrap}
+  html body .content-column :is(h2,h3,p){overflow-wrap:break-word}
+}
+@media(max-width:22.5em){
+  html body .content-column #rooms .room-primary .room-tenancy-row{grid-template-columns:minmax(0,1fr)}
+  html body .content-column #rooms .room-primary .room-term-actions{grid-column:1}
+  html body .header nav{gap:.375rem}
+}

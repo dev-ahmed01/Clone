@@ -2514,10 +2514,10 @@ html.ae-faq-dialog-open{overflow:hidden!important}
    Accom's existing WE-based 48/36/21/16/14/13 and 90px design contract.
    Structural, colour, component and interaction rules remain independent. */
 :root{
- --ae-h1:48px;--ae-h2:36px;--ae-card-heading:21px;
- --ae-subheading:16px;--ae-body-size:14px;--ae-button-size:13px;--ae-anchor-size:13px;
- --ae-listing-panel-gap:90px;--ae-heading-content-gap:24px;--ae-heading-copy-gap:12px;
- --ae-surface-padding:32px;--ae-card-padding:20px;--ae-card-gap:16px;
+ --ae-h1:3rem;--ae-h2:2.25rem;--ae-card-heading:1.3125rem;
+ --ae-subheading:1rem;--ae-body-size:0.875rem;--ae-button-size:0.8125rem;--ae-anchor-size:0.8125rem;
+ --ae-listing-panel-gap:5.625rem;--ae-heading-content-gap:1.5rem;--ae-heading-copy-gap:0.75rem;
+ --ae-surface-padding:2rem;--ae-card-padding:1.25rem;--ae-card-gap:1rem;
 }
 html body .site-container .content-column{min-width:0}
 /* One owner of inter-section spacing: the outer section, not its internal surface. */
@@ -2642,18 +2642,18 @@ html body #aeFaqDialog .ae-faq-q{font:600 var(--ae-subheading)/1.45 var(--font-b
 html body #aeFaqDialog .ae-faq-answer-inner p{font:400 var(--ae-body-size)/1.65 var(--font-body)!important}
 
 @media(max-width:1199px){
- :root{--ae-listing-panel-gap:68px;--ae-surface-padding:28px}
+ :root{--ae-listing-panel-gap:4.25rem;--ae-surface-padding:1.75rem}
 }
 @media(max-width:800px){
- :root{--ae-h1:38px;--ae-h2:32px;--ae-card-heading:20px;--ae-subheading:15px;
- --ae-listing-panel-gap:48px;--ae-heading-content-gap:20px;--ae-heading-copy-gap:10px;
- --ae-surface-padding:22px;--ae-card-padding:16px;--ae-card-gap:12px}
+ :root{--ae-h1:2.375rem;--ae-h2:2rem;--ae-card-heading:1.25rem;--ae-subheading:0.9375rem;
+ --ae-listing-panel-gap:3rem;--ae-heading-content-gap:1.25rem;--ae-heading-copy-gap:0.625rem;
+ --ae-surface-padding:1.375rem;--ae-card-padding:1rem;--ae-card-gap:0.75rem}
  html body .site-container .property-heading{padding-block:28px var(--ae-listing-panel-gap)!important}
  html body #scrollNav .section-nav-track a{font-size:13px!important}
 }
 @media(max-width:550px){
- :root{--ae-h1:34px;--ae-h2:30px;--ae-card-heading:19px;--ae-subheading:14px;
- --ae-listing-panel-gap:40px;--ae-heading-content-gap:18px;--ae-surface-padding:17px;--ae-card-padding:15px}
+ :root{--ae-h1:2.125rem;--ae-h2:1.875rem;--ae-card-heading:1.1875rem;--ae-subheading:0.875rem;
+ --ae-listing-panel-gap:2.5rem;--ae-heading-content-gap:1.125rem;--ae-surface-padding:1.0625rem;--ae-card-padding:0.9375rem}
  html body .content-column #location .ae-location-map-head h3{font-size:18px!important}
  html body .content-column #similar-properties .ae-sim-info{padding:12px 14px 15px!important}
 }
@@ -3239,6 +3239,7 @@ html body .site-container .content-column > #similar-properties.section{margin-b
 }
 @media(min-width:901px) and (max-height:520px){html body .cta-aside .cta-sticky{position:static!important}}
 </style>
+<link rel="stylesheet" href="responsive.css?v=1">
 </head>
 <body>
 <a class="skip-link" href="#overview">Skip to listing details</a>
